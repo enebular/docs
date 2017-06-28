@@ -13,8 +13,8 @@
     - mbed Cloud 
     - Mode Inc 
 - INFOMOTION
-  - [Setting DataSource](InfoMotion/Setting DataSource.md)
-  - [Create First InfoMotion](InfoMotion/Create First InfoMotion.md)
+  - [Setting DataSource](InfoMotion/SettingDataSource.md)
+  - [Create First InfoMotion](InfoMotion/CreateFirstInfoMotion.md)
 - INFOMOTION Type
   - Develop First InfoMotion Type
 - Other Assets
