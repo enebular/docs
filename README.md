@@ -1,5 +1,4 @@
 # docs
-documents
 
 - [Create Flow](Flow/index.md)
   - [Flow Editor](Flow/FlowEditor.md)
@@ -14,8 +13,8 @@ documents
     - mbed Cloud 
     - Mode Inc 
 - INFOMOTION
-  - Setting DataSource
-  - Create First InfoMotion
+  - [Setting DataSource](InfoMotion/Setting DataSource.md)
+  - [Create First InfoMotion](InfoMotion/Create First InfoMotion.md)
 - INFOMOTION Type
   - Develop First InfoMotion Type
 - Other Assets
