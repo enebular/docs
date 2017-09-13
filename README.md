@@ -1,5 +1,9 @@
 # ver2
 
+## Get Started
+
+- Create Flow -> Create DataSource -> InfoMotion
+
 ## Flow
 
 - Flowの作成・保存
