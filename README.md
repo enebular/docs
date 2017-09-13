@@ -1,21 +1,53 @@
-# docs
+# ver2
 
-- [Create Flow](Flow/index.md)
-  - [Flow Editor](Flow/FlowEditor.md)
-  - Local Editor
-- Deploy
-  - Setting Credential Definition
-  - Setting Credentials
-  - Setting Connection
-  - Deploy Flow
-    - AWS IoT
-    - AWS Lambda
-    - mbed Cloud 
-    - Mode Inc 
-- INFOMOTION
-  - [Setting DataSource](InfoMotion/SettingDataSource.md)
-  - [Create First InfoMotion](InfoMotion/CreateFirstInfoMotion.md)
-- INFOMOTION Type
-  - Develop First InfoMotion Type
-- Other Assets
-  - Upload Asset(upload a file using from flow)
+## Flow
+
+- Flowの作成・保存
+  - [Flow Editor](Flow/CreateFlow.md)
+  - Local Editor 
+- Flowの編集・公開・インポート
+
+## InfoMotion
+
+- [InfoMotionの作成](InfoMotion/CreateDataSource.md)
+- [Datasourceの作成・編集](InfoMotion/CreateFirstInfoMotion.md)
+
+## InfoMotion Type
+
+- InfoMotion Typeの作成
+- API Reference
+- InfoMotion Toolの使い方
+
+## InfoDash
+
+- How to use
+
+## IoT System Diagram
+
+- How to use
+
+## Deploy
+
+- Setting Credential Definition
+- Setting Credentials
+
+### Deploy Flow
+
+  - [AWS IoT](Deploy/DeployFlow/AWSIoT.md)
+  - AWS Lambda
+  - mbed Cloud 
+  - Mode Inc
+    - [settings](Deploy/DeployFlow/Mode/Settings.md)
+
+### Deploy InfoMotion
+
+### Deploy InfoDash
+
+## Access
+
+- プロジェクトのアクセス権の作成・編集
+- Asset のアクセス権の作成・編集
+
+## Other Assets
+
+- Upload Asset(upload a file using from flow)
