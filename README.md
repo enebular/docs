@@ -8,7 +8,7 @@
 
 - Flowの作成・保存
   - [Flow Editor](Flow/CreateFlow.md)
-  - Local Editor 
+  - ~~Local Editor~~ 
 - Flowの編集・公開・インポート
 
 ## InfoMotion
