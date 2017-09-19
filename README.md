@@ -8,7 +8,7 @@
 
 - Flowの作成・保存
   - [Flow Editor](Flow/CreateFlow.md)
-  - Local Editor 
+  - ~~Local Editor~~ 
 - Flowの編集・公開・インポート
 
 ## InfoMotion
@@ -18,9 +18,9 @@
 
 ## InfoMotion Type
 
-- InfoMotion Typeの作成
-- API Reference
-- InfoMotion Toolの使い方
+- [InfoMotion Typeの作成](InfoMotionType/CreateInfoMotionType.md)
+- [API Reference](InfoMotionType/APIReference.md)
+- [InfoMotion Toolの使い方](InfoMotionType/InfoMotionTool.md)
 
 ## InfoDash
 
@@ -32,21 +32,25 @@
 
 ## Deploy
 
-- Setting Credential Definition
-- Setting Credentials
+- ~~Setting Credential Definition（まだ保留）~~
+- ~~Setting Credentials（まだ保留）~~
 
 ### Deploy Flow
 
   - [AWS IoT](Deploy/DeployFlow/AWSIoT.md)
-  - AWS Lambda
-  - ~~mbed Cloud（まだ保留）~~
+  - AWS Lambda 
+  -  ~~mbed Cloud（まだ保留）~~
   - Heroku
   - Mode Inc
     - [settings](Deploy/DeployFlow/Mode/Settings.md)
 
 ### Deploy InfoMotion
 
+- Web
+
 ### Deploy InfoDash
+
+- Web
 
 ## Access
 
@@ -55,4 +59,4 @@
 
 ## Other Assets
 
-- Upload Asset(upload a file using from flow)
+- ~~Upload Asset(upload a file using from flow)（まだ保留）~~
