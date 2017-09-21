@@ -2,7 +2,7 @@
 
 ## Get Started
 
-- Create Flow -> Create DataSource -> InfoMotion
+- [Create Flow -> Create DataSource -> InfoMotion](GetStarted/index.md)
 
 ## Flow
 
@@ -37,7 +37,7 @@
 
 ### Deploy Flow
 
-  - [AWS IoT](Deploy/DeployFlow/AWSIoT.md)
+  - [AWS IoT](Deploy/DeployFlow/AWSIoT/index.md)
   - AWS Lambda 
   -  ~~mbed Cloud（まだ保留）~~
   - Heroku
