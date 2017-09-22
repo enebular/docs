@@ -1,19 +1,20 @@
 # Flow の作成
 
-Flowは、ハードウェアデバイス/APIおよびオンラインサービスを接続するためのツール <a href="https://nodered.jp/" target="_blank">Node-RED</a> ベースのFlow Editorを用いて、DataSourceに対してInfoMotionが扱いやすいようにデータを加工するenebularの機能です。
+Flow は、ハードウェアデバイス・API およびオンラインサービスを接続するためのツール <a href="https://nodered.jp/" target="_blank">Node-RED</a> ベースの Flow Editor を用いて、DataSource に対して InfoMotion が扱いやすいようにデータを加工する enebular の機能です（DataSource のデータを加工をする以外の用途にも使えます）。
 
+![](/public/images/developers/enebular-developers-aboutflow.png)
 
 ## DataSourceを確認する（Milkcocoa DataSource の場合）
 
-今回操作したいDataSourceを確認しておきます。
-
-![image.png (52.0 kB)](https://img.esa.io/uploads/production/attachments/3062/2017/07/24/8131/361b6671-3ad9-4260-ada3-2a3b2ae04e6a.png)
-
-DataSource対象のデータストアを確認します。今回の場合、mbedというMilkcocoaデータストアです。
+今回、操作したい DataSource を確認しておきます。この Flow を作成する前に、Milkcocoa の[チュートリアルページのMilkcocoaを使う準備をする](https://mlkcca.com/tutorial/page2.html)を参考に、アプリを作成して `app_id` と、Milkcocoa 管理画面内の「認証」タブから作成出来る`API Key`と`API Secret`を控えておいて下さい。
 
 ![image.png (64.8 kB)](https://img.esa.io/uploads/production/attachments/3062/2017/07/24/8131/89356819-eb04-4ea9-b5ae-895f87fef220.png)
 
-API Key ・ API Sercret についても確認しておきます。
+DataSource 対象のデータストアを確認します。今回の場合、mbed という Milkcocoa データストアを使いましょう。
+
+![image.png (52.0 kB)](https://img.esa.io/uploads/production/attachments/3062/2017/07/24/8131/361b6671-3ad9-4260-ada3-2a3b2ae04e6a.png)
+
+
 
 ## Projectを作成
 
