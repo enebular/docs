@@ -40,7 +40,7 @@
   - [AWS IoT](Deploy/DeployFlow/AWSIoT/index.md)
   - AWS Lambda 
   -  ~~mbed Cloud（まだ保留）~~
-  - Heroku
+  - [Heroku](Deploy/DeployFlow/Heroku/index.md)
   - Mode Inc
     - [settings](Deploy/DeployFlow/Mode/Settings.md)
 
