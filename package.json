@@ -1,0 +1,19 @@
+{
+  "name": "@uhuru/enebular-docs",
+  "version": "0.1.0",
+  "description": "## Get Started",
+  "main": "README.md",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enebular/docs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enebular/docs/issues"
+  },
+  "homepage": "https://github.com/enebular/docs#readme"
+}
