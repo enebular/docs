@@ -1,4 +1,30 @@
-# ver2
+# Preview
+
+https://enebular-docs.now.sh
+
+```
+$ npm i
+$ npm run build
+```
+
+## Test at local
+
+```
+$ npm run serve
+```
+
+## Deploy
+
+Log in to https://zeit.co/now & Install `now` to global.
+
+```
+$ cd _book
+$ now
+$ now alias https://book-*******.now.sh enebular-docs
+```
+
+
+# Docs
 
 ## [Get Started](GetStarted/index.md)
 
