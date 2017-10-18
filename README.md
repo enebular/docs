@@ -70,8 +70,7 @@ $ now alias https://book-*******.now.sh enebular-docs
 
 ## Access
 
-- プロジェクトのアクセス権の作成・編集
-- Asset のアクセス権の作成・編集
+- アクセス権の作成・編集
 
 ## Other Assets
 

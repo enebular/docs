@@ -8,7 +8,7 @@
 
 ## Projectの作成
 
-enebular を始めるには、まず Project を作成します。**Project** とは文字通りプロジェクトの単位です。Project は、データフローである **Flow** 、データの可視化を行うグラフである **InfoMotion** や、InfoMotion をパネル上で並べた **InfoDash** などの **Asset** を複数持つことが出来ます。
+enebular を始めるには、まず Project を作成します。**Project** とは文字通りプロジェクトの単位です。Project は、データフローである **Flow** 、データの可視化を行うグラフである **InfoMotion** などの **Asset** を複数持つことが出来ます。
 
 ![](/public/images/developers/enebular-developers-aboutproject.png)
 
