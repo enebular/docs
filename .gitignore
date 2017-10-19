@@ -1,3 +1,7 @@
 .DS_Store
 _book
 node_modules
+
+# IntelliJ IDEA
+*.iml
+.idea
