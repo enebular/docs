@@ -1,6 +1,6 @@
 # Summary
 
-* [Index](README.md)
+* [Introduction](INDEX.md)
 * [GetStarted](GetStarted/index.md)
 * Flow
   * [Flowの作成](Flow/CreateFlow.md)
