@@ -12,7 +12,7 @@ enebular を始めるには、まず Project を作成します。**Project** �
 
 ![](/public/images/developers/enebular-developers-aboutproject.png)
 
-それでは Add Project からプロジェクトを作成します。
+それではログイン後の画面にある Add Project からプロジェクトを作成します。
 
 ![](/public/images/developers/enebular-developers-createproject.png)
 
@@ -20,33 +20,41 @@ enebular を始めるには、まず Project を作成します。**Project** �
 
 ![](/public/images/developers/enebular-developers-createprojectmodal.png)
 
+![](/public/images/developers/enebular-developers-projects.png)
+
 ## 新規Flowの作成
 
-Project を作成したら、まず Flow を作成しましょう。作成した Project を選択して Project の管理画面に移動した後、Create Asset を押すと Asset を作成するモーダルが開きます。
+Project を作成したら、まず Flow を作成しましょう。作成した Project を選択して Project の管理画面に移動します。
 
 ![](/public/images/developers/enebular-developers-projectdashboard.png)
 
-Asset Type は `flow` を選択、適当なアイコンを選択して、Flow のタイトルをつけます。
+Create Asset を押すと Asset を作成するモーダルが開きます。
+
+![](/public/images/developers/enebular-developers-createassetmodalbefore.png)
+
+Asset Type は `flow` を選択して、Flow のタイトルをつけます。Flow へのデフォルトのアクセス権（default role to asset）は今回はとりあえず `admin` に設定してください。一番下の category は何でも良いです。
 
 ![](/public/images/developers/enebular-developers-createassetmodal.png)
 
-下部には、アクセス権を設定するラジオボタンがあるので、`admin` に設定してください。Continue を押すと作成が完了します。
+Continue を押すと作成が完了します。
 
-![](/public/images/developers/enebular-developers-createassetaccess.png)
-
-作成が完了すると、Flow の詳細ページに移動します。Edit Flow を押すと、Node-RED の編集画面が立ち上がります。この編集画面でデータフローを編集して Flow を作成します。
+作成が完了すると、Flow の詳細ページに移動します。
 
 ![](/public/images/developers/enebular-developers-flowdashboard.png)
+
+Edit Flow を押すと、Node-RED の編集画面が立ち上がります。
+
+![](/public/images/developers/enebular-developers-nodered-before.png)
 
 ## データフローの編集・デプロイ
 
 編集画面にて、左に並んでいる Node(APIの名前がついているボックス)をシートに置いて、Node 同士を繋いでデータフローを作成します。作成したら、右上の **Deploy** を押すとデプロイできます。
 
-![](/public/images/developers/enebular-developers-nodered.png)
+![](https://i.gyazo.com/2dd11f23a605ec41b73d413176d206c2.png)
 
 図のフローは、10秒に1回、[Milkcocoa（クラウドサービス）](//mlkcca.com) のデータストアに、ランダムな7種類のID（`dataid`）をラベルとした 0〜50 のランダムな値（`v`）を保存するものです。
 
-下記の図を参考に、フローを作成ください。**timestamp node** で10秒ごとにフローが実行されるよう設定し、**function node** で `dataid` と `v` の値を設定し、**milkcocoa node** で保存先である Milkcocoa のアプリ情報（`app_id`）・データストア情報（`datastore`）・認証情報（`API Key`、`API Secret`）を設定します。
+下記の図を参考に、フローを作成ください。**timestamp node** で10秒ごとにフローが実行されるよう設定し、**function node** で プロパティを設定し、**milkcocoa node** で保存先である Milkcocoa のアプリ情報（`app_id`）・データストア情報（`datastore`）・認証情報（`API Key`、`API Secret`）を設定します。
 
 ![](/public/images/developers/enebular-developers-milkcocoaflow.png)
 
@@ -56,8 +64,9 @@ function node のコードは以下です。
 var newMes = {};
 
 newMes.payload = {};
-newMes.payload.dataid = Math.floor(Math.random()*7 + 1);
-newMes.payload.v = Math.floor(Math.random()*50 + 1);
+newMes.payload.total_sessions = Math.floor(Math.random()*500 + 1);
+newMes.payload.social_buzz = Math.floor(Math.random()*50 + 1);
+newMes.payload.created = new Date().getTime();
 
 return newMes;
 ```
@@ -70,14 +79,16 @@ milkcocoa node の **Data Store** は `tutorial`、**Operation** は `Push` で�
 
 **※注2**：Flow の編集画面を開いたまま放置すると、Deploy 時に「Unauthorized」と失敗するようになりますので、その場合はリロードして下さい。
 
-## データの可視化（DataSource の登録と InfoMotion の作成）
+
+## DataSource の登録
 
 データプローのデプロイが完了したら、データの可視化をしましょう。
 
 可視化をする前に、用語として以下を理解しておいて下さい。
 
-*   InfoMotion: いわゆるグラフです。「Infographic よりも動きがあるもの」という意味で、Info と Motion を組み合わせた造語です。
-*   DataSource: グラフに表示するデータです。現在、データを受け取る種類に `apiGateway` と `milkcocoa` があり、今回は `milkcocoa` を使用します。
+* InfoMotion: 実際に見るグラフダッシュボードのことです。InfoType と DataSource を組み合わせて作成します。「Infographic よりも動きがあるもの」という意味で、Info と Motion を組み合わせた造語です。
+* InfoType: グラフの種類（円グラフや棒グラフなど）のことです。
+* DataSource: グラフに表示するデータです。現在、データを受け取る種類に `apiGateway` と `milkcocoa` があり、今回は `milkcocoa` を使用します。
 
 では、最初にサイドバーの DataSource タブから DataSource の登録をします。Create DataSource から DataSource 作成モーダルを開きます。
 
@@ -87,20 +98,41 @@ milkcocoa node の **Data Store** は `tutorial`、**Operation** は `Push` で�
 
 ![](/public/images/developers/enebular-developers-createdatasource.png)
 
-DataSource の登録が終わったら、InfoMotion を作成しましょう。
+## InfoType のアップロード
 
-![](/public/images/developers/enebular-developers-createinfomotion.png)
+DataSource の登録が終わったら、InfoType をアップロードします。今回はサンプルの折れ線グラフを使います。
 
-今回は、デフォルトで用意されているInfoMotion Type（※）である棒グラフ（`core-barchart`）を使用します。
-※InfoMotion Typeとは、グラフの種類（いわゆる棒グラフや円グラフ）のことを差します。
+<ul>
+  <li><a href="/public/sample/sample-line-chart.zip" target="_blank">サンプル InfoType のダウンロード(zip形式)</a></li>
+</ul>
 
-下図のように設定します。`DATASOURCE`には、さきほど登録したDataSourceを設定します。さらに、棒グラフには`label`（x軸）と`value`（y軸）となるkeyを設定します。今回はデータのIDを`dataid`、値を`v`としたので、それぞれを`label`、`value`に設定します。
+ダウンロードが終わったら、サイドバーの InfoType タブをクリックします。
 
-![](/public/images/developers/enebular-developers-infomotionsettings.png)
+![](/public/images/developers/enebular-developers-asset-infotype.png)
 
-作成されたグラフをクリックすると、グラフへ移動します。
+Upload InfoType からモーダルを開きます。ファイルをドロップできるエリアがあるので、ダウンロードした zip ファイルの中身をドラックアンドドロップします。
 
-![](/public/images/developers/enebular-developers-infomotiongraph.png)
+![](https://i.gyazo.com/190ba78589cc1e1b678b544b404ebbf7.png)
+
+`category` は好きなものを選択して Upload ボタンをクリックします。
+
+![](/public/images/developers/enebular-developers-upload-infotype.png)
+
+アップロードが終わったら、サイドバーの InfoMotion タブをクリックします。
+
+##  InfoMotionの作成
+
+DataSource と InfoType を使って InfoMotion を作成しましょう。Create Infomotion を押してモーダルを開きます。
+
+![](/public/images/developers/enebular-developers-asset-infomotion.png)
+
+InfoMotion のタイトルをつけます。InfoMotion へのデフォルトのアクセス権（default role to asset）は今回はとりあえず `admin` に設定してください。一番下の category は何でも良いです。
+
+![](/public/images/developers/enebular-developers-asset-infomotion-modal.png)
+
+```
+WIP
+```
 
 ## Well Done!
 
