@@ -64,9 +64,8 @@ function node のコードは以下です。
 var newMes = {};
 
 newMes.payload = {};
-newMes.payload.total_sessions = Math.floor(Math.random()*500 + 1);
-newMes.payload.social_buzz = Math.floor(Math.random()*50 + 1);
-newMes.payload.created = new Date().getTime();
+newMes.payload.v = Math.floor(Math.random()*50 + 1);
+newMes.payload.dataid = 'data-'+Math.floor(Math.random()*7 + 1);
 
 return newMes;
 ```
@@ -100,10 +99,10 @@ milkcocoa node の **Data Store** は `tutorial`、**Operation** は `Push` で�
 
 ## InfoType のアップロード
 
-DataSource の登録が終わったら、InfoType をアップロードします。今回はサンプルの折れ線グラフを使います。
+DataSource の登録が終わったら、InfoType をアップロードします。今回はサンプルの棒グラフを使います。
 
 <ul>
-  <li><a href="/public/sample/sample-line-chart.zip" target="_blank">サンプル InfoType のダウンロード(zip形式)</a></li>
+  <li><a href="/public/sample/sample-bar-chart.zip" target="_blank">サンプル InfoType のダウンロード(zip形式)</a></li>
 </ul>
 
 ダウンロードが終わったら、サイドバーの InfoType タブをクリックします。
@@ -112,7 +111,7 @@ DataSource の登録が終わったら、InfoType をアップロードします
 
 Upload InfoType からモーダルを開きます。ファイルをドロップできるエリアがあるので、ダウンロードした zip ファイルの中身をドラックアンドドロップします。
 
-![](https://i.gyazo.com/190ba78589cc1e1b678b544b404ebbf7.png)
+![](https://i.gyazo.com/5b461780e0d2afe6758d87ecb7ae7801.png)
 
 `category` は好きなものを選択して Upload ボタンをクリックします。
 
@@ -130,10 +129,39 @@ InfoMotion のタイトルをつけます。InfoMotion へのデフォルトの�
 
 ![](/public/images/developers/enebular-developers-asset-infomotion-modal.png)
 
-```
-WIP
-```
+作成したら、InfoMotion のダッシュボード画面に移動します。
+
+![](/public/images/developers/enebular-developers-infomotion-dashboard-before.png)
+
+Add Graph でサイドバーを開きます。このサイドバーには、ダッシュボードで表示するグラフのリストが表示されます。
+
+![](/public/images/developers/enebular-developers-infomotion-add-graph.png)
+
+グラフを登録してみましょう。Create Graph を押します。
+
+![](/public/images/developers/enebular-developers-infomotion-create-graph.png)
+
+NAME は適当に入力して、 TYPE は さきほどアップロードした InfoType の `sample-bar-chart`、 DATASOURCE は さきほど作成した DataSource の `test-datasource` が選択されているかと思います。
+
+label は x軸、value は y軸なので、 label に `dataid` を、value に `v` を設定します（LabelNames は今回省略します）。
+
+![](/public/images/developers/enebular-developers-infomotion-create-graph-filled.png)
+
+Create Graph を押すと、test-graph がリストに追加されます。
+
+![](/public/images/developers/enebular-developers-infomotion-graphs.png)
+
+test-graph の左にあるプラスアイコンを押すと、ダッシュボードに追加されます。
+
+![](/public/images/developers/enebular-developers-infomotion-dashboard.png)
+
+パネルの右下をひっぱって横に伸ばして、 Save を押すとレイアウトが保存されます。
+
+![](/public/images/developers/enebular-developers-infomotion-dashboard-full.png)
+
 
 ## Well Done!
+
+これで無事、データフローの作成から、そのデータを使ったグラフの表示まで一通りできました。
 
 今回は、データを用意されたシンプルな棒グラフで表示しましたが、自身でInfoMotion Typeを作成してアップロードして使用することも出来ます。詳しい方法については、[InfoMotion Type作成のチュートリアル](/developers/infomotion-type-tutorial)をご覧下さい。
