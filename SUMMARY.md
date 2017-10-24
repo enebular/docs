@@ -17,5 +17,7 @@
     * [Heroku](Deploy/DeployFlow/Heroku/index.md)
     * Mode Inc
       * [settings](Deploy/DeployFlow/Mode/Settings.md)
+  * Share Infomotion
+    *[Share Infomtion](Deploy/ShareInfoMotion/index.md)
 * Access
   * [アクセス権の編集](Access/index.md)
