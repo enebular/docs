@@ -33,7 +33,7 @@ $ now alias https://book-*******.now.sh enebular-docs
 - Flowの作成・保存
   - [Flow Editor](Flow/CreateFlow.md)
   - ~~Local Editor~~
-- Flowの編集・公開・インポート
+- - [Flowの編集・公開・インポート](Flow/EditFlow.md)
 
 ## InfoMotion
 

@@ -6,6 +6,7 @@
 ## Flow
 
 * [Flowの作成](Flow/CreateFlow.md)
+* [Flowの編集・公開・インポート](Flow/EditFlow.md)
 
 ## InfoMotion
 
