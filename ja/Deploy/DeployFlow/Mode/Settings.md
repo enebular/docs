@@ -6,15 +6,15 @@ Mode へデプロイする際に必要な設定の方法です。
 
 enebular MODE deployの内容を把握しておきましょう。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_01.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_01.png)
 
 「Export to Other Services」でDeployの設定に行きます。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_02.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_02.png)
 
 Modeを選択します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_03.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_03.png)
 
 Createを押します。
 
@@ -39,33 +39,33 @@ Connection Nameは自由な名前をつけて良いです。MODE Project ID・MO
 MODE – Make IoT a reality for your business
 http://www.tinkermode.com/
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_04.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_04.png)
 
 こちらにアクセスします。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_05.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_05.png)
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_06.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_06.png)
 
 最下部のフッターにあるDevelopersを押しましょう。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_07.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_07.png)
 
 Developersページに遷移します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_08.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_08.png)
 
 右上のGO TO CONSOLEボタンを押します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_09.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_09.png)
 
 LOGINページに移動します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_10.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_10.png)
 
 Sign up!でユーザー登録をしましょう。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_11.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_11.png)
 
 メールが届くのでアクティベーションしましょう。
 
@@ -73,21 +73,21 @@ Sign up!でユーザー登録をしましょう。
 
 MyProjectページがトップページです。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_12.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_12.png)
 
 右上のNewボタンからプロジェクトを作成します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_13.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_13.png)
 
 User Accountsは「Your users will log in with their email addresses.」にします。
 
 プロジェクト設定画面に移動するのでプロジェクトをわかりやすい名前で設定しましょう。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_14.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_14.png)
 
 作成すると、Project Dashboardに移動します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_15.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_15.png)
 
 Project IDをメモしておきましょう。
 
@@ -102,25 +102,25 @@ Project IDをメモしておきましょう。
 
 ## Project API Key
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_16.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_16.png)
 
 つづいてSettingページに移動します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_17.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_17.png)
 
 API KEYSに移動して New ボタンを押してAPI Keyを作成します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_18.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_18.png)
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_19.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_19.png)
 
 API KEYできました。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_20.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_20.png)
 
 詳細をクリックして見に行きます。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_21.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_21.png)
 
 v1ではじまるAPI KEYがあるのでこれをMODE Project API Keyとしてメモしておきます。
 
@@ -137,31 +137,31 @@ v1ではじまるAPI KEYがあるのでこれをMODE Project API Keyとしてメ
 
 HomeIDをつくるためにデバイスとAPPが必要です。まずデバイスを作成します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_22.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_22.png)
 
 Deviceに移動します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_23.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_23.png)
 
 DEVICE CLASSESのところでNewを押します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_24.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_24.png)
 
 適当な名前で作成します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_25.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_25.png)
 
 デバイスが出来たら、クリックしてデバイス詳細に移動します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_26.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_26.png)
 
 DIVICE LISTがまだ No Device Yet !なのでNewボタンを押して作成します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_27.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_27.png)
 
 TAGは適当でOKです。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_28.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_28.png)
 
 デバイスの作成完了です。
 
@@ -169,105 +169,105 @@ TAGは適当でOKです。
 
 APPを作成します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_29.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_29.png)
 
 Appページに移動します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_30.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_30.png)
 
 Newボタンを押して新規作成します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_31.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_31.png)
 
 適当な名前で作成します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_32.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_32.png)
 
 ## ユーザーの作成
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_33.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_33.png)
 
 ユーザーメニューに移動します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_34.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_34.png)
 
 まだ作成されていないので作成します。
 
 ### アプリシミュレーターでユーザーを登録する
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_35.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_35.png)
 
 接続したいアプリをに移動します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_36.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_36.png)
 
 アプリシミュレーターを起動します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_37.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_37.png)
 
 アプリシミュレーター画面です。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_38.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_38.png)
 
 アプリシミュレータで、アカウントも認証します。Register New Userをクリックします。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_39.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_39.png)
 
 Sign Upページに移動するので、各項目を入力しましてRegister しましょう。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_40.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_40.png)
 
 メールが送られるので認証しましょう。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_41.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_41.png)
 
 認証しました。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_42.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_42.png)
 
 認証されたので、IM Verifiedを押します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_43.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_43.png)
 
 これでユーザーの登録が完了です。
 
 ### ホーム画面の作成
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_44.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_44.png)
 
 まだホーム画面が作成されていないの作成します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_45.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_45.png)
 
 Newボタンを押します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_46.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_46.png)
 
 適当な名前をつけます。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_47.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_47.png)
 
 ホーム画面の作成完了です。
 
 ### ホーム画面のデバイスの関連付け
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_48.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_48.png)
 
 上部のアラートを見ましょう
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_49.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_49.png)
 
 hereをクリックします。右メニューのDevicesで移動してもOKです。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_50.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_50.png)
 
 Devices画面に移動します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_51.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_51.png)
 
 Newボタンを押します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_52.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_52.png)
 
 Newボタンを押すとCLAIM CODEというコードが聞かれるのでそのままにします。
 
@@ -277,47 +277,47 @@ CLAIM CODEはデバイスシミュレータで取得します。
 
 デバイスシミュレータを起動します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_53.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_53.png)
 
 デバイスページに移動します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_54.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_54.png)
 
 接続したいデバイスをクリックします。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_55.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_55.png)
 
 デバイスシミュレータがあるのでボタンを押します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_56.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_56.png)
 
 デバイスシミュレータが起動します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_57.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_57.png)
 
 Claim Codeをメモします。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_58.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_58.png)
 
 CLAIM MODEボタンを押します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_59.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_59.png)
 
 カウントダウンが始まります。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_60.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_60.png)
 
 アプリシミュレーターに戻ってCodeを入力します。ADDを押します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_61.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_61.png)
 
 登録されました。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_62.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_62.png)
 
 ホーム画面の右メニューからSettings画面に移動します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_63.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_63.png)
 
 Home IDがあるのでメモします。
 
@@ -332,29 +332,29 @@ Home IDがあるのでメモします。
 
 ## 反映
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_64.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_64.png)
 
 enebularのDeploy画面に戻り反映します。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_65.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_65.png)
 
 反映後みてみましょう。connectedになったら成功です。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_66.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_66.png)
 
 Deployを押すと反映されます。
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_67.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_67.png)
 
 Devicesのログにも無事残りました。
 
 ### disconnectになっていたら
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_68.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_68.png)
 
 disconnectになっていたら
 
-![image](/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_69.png)
+![image](/ja/public/images/developers/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_69.png)
 
 デバイスシミュレーションをONにして接続状態にして再度選択し直して見てみましょう。
 
