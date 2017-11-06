@@ -1,4 +1,4 @@
-## Setting DataSource
+## DataSource Settings
 
 データを取得する元となるDataSourceの設定を行います。
 
