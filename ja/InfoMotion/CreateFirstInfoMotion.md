@@ -1,94 +1,67 @@
 # Create First InfoMotion
 
-[先ほどの章]() でDataSourceが出来たらInfoMotionを作りましょう。
+[先ほどの章]() で DataSource が出来たら InfoMotion を作りましょう。
 
-InfoMotionとはDataSourceで取り出したデータをグラフで分かりやすく見えるようにする機能です。
+InfoMotion とは DataSource で取り出したデータをグラフで分かりやすく見えるようにする機能です。
 
-![image](/public/images/developers/InfoMotion/CreateFirstInfoMotion/infomotion-create-first-infomotion_01.png)
+## InfoType のアップロード
 
-はじめにDataSourceのデータを確認しておきます。今回はmbedから取得したセンサーデータがValue列にvとして入っているデータ群を使います。
+DataSource の登録が終わったら、InfoType をアップロードします。今回はサンプルの棒グラフを使います。
 
-## Infomotion作成ページへ
+<ul>
+  <li><a href="/public/sample/sample-bar-chart.zip" target="_blank">サンプル InfoType のダウンロード(zip形式)</a></li>
+</ul>
 
-![image](/public/images/developers/InfoMotion/CreateFirstInfoMotion/infomotion-create-first-infomotion_02.png)
+ダウンロードが終わったら、サイドバーの InfoType タブをクリックします。
 
-ナビゲーションからInfomotionの一覧ページに移動します。
+![](/public/images/developers/enebular-developers-asset-infotype.png)
 
-![image](/public/images/developers/InfoMotion/CreateFirstInfoMotion/infomotion-create-first-infomotion_03.png)
+Upload InfoType からモーダルを開きます。ファイルをドロップできるエリアがあるので、ダウンロードした zip ファイルの中身をドラックアンドドロップします。
 
-一覧ページからCREATE Infomotionボタンを押してInfomotionを作成開始します。
+![](https://i.gyazo.com/5b461780e0d2afe6758d87ecb7ae7801.png)
 
-![image](/public/images/developers/InfoMotion/CreateFirstInfoMotion/infomotion-create-first-infomotion_04.png)
+`category` は好きなものを選択して Upload ボタンをクリックします。
 
-アイコンから内容が想像しやすいものを選びます。
+![](/public/images/developers/enebular-developers-upload-infotype.png)
 
-![image](/public/images/developers/InfoMotion/CreateFirstInfoMotion/infomotion-create-first-infomotion_05.png)
+アップロードが終わったら、サイドバーの InfoMotion タブをクリックします。
 
-タイトルと詳細を決めます。
+##  InfoMotionの作成
 
-![image](/public/images/developers/InfoMotion/CreateFirstInfoMotion/infomotion-create-first-infomotion_06.png)
+DataSource と InfoType を使って InfoMotion を作成しましょう。Create Infomotion を押してモーダルを開きます。
 
-今回のinfomotionの権限を指定します。Continueボタンを押します。
+![](/public/images/developers/enebular-developers-asset-infomotion.png)
 
-![image](/public/images/developers/InfoMotion/CreateFirstInfoMotion/infomotion-create-first-infomotion_07.png)
+InfoMotion のタイトルをつけます。InfoMotion へのデフォルトのアクセス権（default role to asset）は今回はとりあえず `admin` に設定してください。一番下の category は何でも良いです。
 
-こちらでInfomotionの作成は完了です。
+![](/public/images/developers/enebular-developers-asset-infomotion-modal.png)
 
-### Infomotionの設定
+作成したら、InfoMotion のダッシュボード画面に移動します。
 
-![image](/public/images/developers/InfoMotion/CreateFirstInfoMotion/infomotion-create-first-infomotion_08.png)
+![](/public/images/developers/enebular-developers-infomotion-dashboard-before.png)
 
-Infomotionの作成ができると、すぐに詳細設定ウィンドウが表示されます。
+Add Graph でサイドバーを開きます。このサイドバーには、ダッシュボードで表示するグラフのリストが表示されます。
 
-![image](/public/images/developers/InfoMotion/CreateFirstInfoMotion/infomotion-create-first-infomotion_09.png)
+![](/public/images/developers/enebular-developers-infomotion-add-graph.png)
 
-CREATE GRAPHボタンを押すと画面中央に設定ウィンドウが表示されるので以下のように設定します。
+グラフを登録してみましょう。Create Graph を押します。
 
-* NAME
-    * 任意の分かりやすいタイトル
-* TYPE
-    * barchart
-* DATASOURSE
-    * 取得したいDataSource 今回は milkcocoa mbed
-* label 横軸に対応する値の対象
-    * created
-* value グラフ表示したい値の対象
-    * v
+![](/public/images/developers/enebular-developers-infomotion-create-graph.png)
 
-OKボタンを押して設定を保存します。
+NAME は適当に入力して、 TYPE は さきほどアップロードした InfoType の `sample-bar-chart`、 DATASOURCE は さきほど作成した DataSource の `test-datasource` が選択されているかと思います。
 
-![image](/public/images/developers/InfoMotion/CreateFirstInfoMotion/infomotion-create-first-infomotion_10.png)
+label は x軸、value は y軸なので、 label に `dataid` を、value に `v` を設定します（LabelNames は今回省略します）。
 
-今回設定した内容でグラフが作成されデータが可視化されます。
+![](/public/images/developers/enebular-developers-infomotion-create-graph-filled.png)
 
-## 各InfoMotion Typeの説明
+Create Graph を押すと、test-graph がリストに追加されます。
 
-![image](/public/images/developers/InfoMotion/CreateFirstInfoMotion/infomotion-create-first-infomotion_11.png)
+![](/public/images/developers/enebular-developers-infomotion-graphs.png)
 
-### barchart
+test-graph の左にあるプラスアイコンを押すと、ダッシュボードに追加されます。
 
-![image](/public/images/developers/InfoMotion/CreateFirstInfoMotion/infomotion-create-first-infomotion_12.png)
+![](/public/images/developers/enebular-developers-infomotion-dashboard.png)
 
-### linechart
+パネルの右下をひっぱって横に伸ばして、 Save を押すとレイアウトが保存されます。
 
-![image](/public/images/developers/InfoMotion/CreateFirstInfoMotion/infomotion-create-first-infomotion_13.png)
-
-### piechart
-
-![image](/public/images/developers/InfoMotion/CreateFirstInfoMotion/infomotion-create-first-infomotion_14.png)
-
-### valuerangepiechart
-
-![image](/public/images/developers/InfoMotion/CreateFirstInfoMotion/infomotion-create-first-infomotion_15.png)
-
-### simple-text-example
-
-![image](/public/images/developers/InfoMotion/CreateFirstInfoMotion/infomotion-create-first-infomotion_16.png)
-
-### combinationchart
-
-![image](/public/images/developers/InfoMotion/CreateFirstInfoMotion/infomotion-create-first-infomotion_17.png)
-
-### metricsgraphics
-
-![image](/public/images/developers/InfoMotion/CreateFirstInfoMotion/infomotion-create-first-infomotion_18.png)
+![](/public/images/developers/enebular-developers-infomotion-dashboard-full.png)

@@ -1,65 +1,54 @@
-## Setting DataSource
+# DataSource について
 
-データを取得する元となるDataSourceの設定を行います。
+DataSource とは、InfoMotion（グラフ）に表示する際に参照するデータ先です。
 
-![image](/public/images/developers/InfoMotion/CreateDataSource/infomotion-create-datasource_01.png)
+InfoMotion を利用するためには DataSource の登録が必要です。
 
-Project一覧から今回DataSourceを設定したいProjectをクリックし。Projectトップページに移動します。
+Flow である場所にデータを保存して、そのデータを DataSource と設定するのが主な使い方になります。
 
-![image](/public/images/developers/InfoMotion/CreateDataSource/infomotion-create-datasource_02.png)
+![](/public/images/developers/enebular-developers-aboutdatasource.png)
 
-Projectトップページが表示されたらDataSourceをクリックし、DataSource作成ページに移動します。
+ダッシュボードの DataSource タブから作成・編集ができます。
 
-![image](/public/images/developers/InfoMotion/CreateDataSource/infomotion-create-datasource_03.png)
+![](/public/images/developers/enebular-developers-datasource.png)
 
-DataSource作成ページが表示されたら、新しくDataSource作成をはじめます。Create DataSourceボタンをクリックします。
+## Milkcocoa DataSource の場合
 
-![image](/public/images/developers/InfoMotion/CreateDataSource/infomotion-create-datasource_04.png)
+[Milkcocoa](https://mlkcca.com/) DataSource の場合は以下のように設定します。
 
-DataSource Setting メニューが表示されるので、詳細を設定していきます。
+![](https://i.gyazo.com/7b0b7eebebe0828e564fdcb2863a47b9.png)
 
-![image](/public/images/developers/InfoMotion/CreateDataSource/infomotion-create-datasource_05.png)
-
-## Milkcocoa  DataSourceの場合
-
-[Milkcoco](https://mlkcca.com/) DataSourceの場合は以下のように設定します。
-
-![image](/public/images/developers/InfoMotion/CreateDataSource/infomotion-create-datasource_06.png)
-
-Datasource Typeからmilkcocoaを選択します。
-
-![image](/public/images/developers/InfoMotion/CreateDataSource/infomotion-create-datasource_07.png)
-
-すると、Milkcocoa用の設定が表示されるので、MilkcocoaでのDataSourceを取得したいAppID・DataStore・APIKey・APISercretを設定します。
-
-* AppID
-    * MilkcocoaでDataSourceを取得したいAppID
+* App Id
+    * Milkcocoa で DataSource を取得したい App Id
 * DataStore
-    * 上記のAppIDにてDataSourceを取得したいDataStore
-* APIKey
-    * 上記のAppIDのAPIKey
-* APISercret
-    * 上記のAppIDのAPISercret
-
-設定ができたらSaveボタンをクリックしDataSourceの設定を終わります。
-
-![image](/public/images/developers/InfoMotion/CreateDataSource/infomotion-create-datasource_08.png)
+    * 上記の App ID にて DataSource を取得したい DataStore
+* API Key
+    * 上記の App Id の API Key
+* Secret Key
+    * 上記の App Id の API Sercret
 
 
-### apiGateWay DataSourceの場合
+設定ができたら Save をクリックし DataSource の設定を終わります。
 
-apiGateWay DataSourceの場合は以下のように設定します。
+![](https://i.gyazo.com/1fe28e143e56eaa179ba463d5469b1b9.png)
 
-<div>[html]
-検討：APIゲートウェイの方が良い？
-[/html]</div>
+### API Gateway DataSource の場合
 
-![image](/public/images/developers/InfoMotion/CreateDataSource/infomotion-create-datasource_09.png)
+API Gateway DataSource の場合は以下のように設定します。
+
+![](https://i.gyazo.com/da5d21890b47ed034526fee49e247e54.png)
 
 * Endpoint
-    * APIゲートウェイのエンドポイントを設定します
+    * API Gateway のエンドポイントを設定します
 * API Key
-    * APIゲートウェイのAPI Keyを設定します
+    * API Gateway のAPI Keyを設定します
 
-設定ができたらSaveボタンをクリックしDataSourceの設定を終わります。
+設定ができたら Save をクリックし DataSource の設定を終わります。
 
+![](https://i.gyazo.com/bc19b7fbd7338fc99961b36b0b8d1835.png)
+
+## DataSource の利用
+
+登録した DataSource は InfoMotion の グラフ作成の際に選択できるようになります。
+
+![](https://i.gyazo.com/be55d7ae149fe186fb5d57ed391b2da6.png)
