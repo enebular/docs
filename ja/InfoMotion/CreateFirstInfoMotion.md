@@ -1,6 +1,6 @@
 # Create First InfoMotion
 
-[先ほどの章]() で DataSource が出来たら InfoMotion を作りましょう。
+[DataSourceについて](../CreateDataSource.html) で DataSource が出来たら InfoMotion を作りましょう。
 
 InfoMotion とは DataSource で取り出したデータをグラフで分かりやすく見えるようにする機能です。
 
