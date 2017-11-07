@@ -27,7 +27,6 @@ Flow である場所にデータを保存して、そのデータを DataSource 
 * Secret Key
     * 上記の App Id の API Sercret
 
-
 設定ができたら Save をクリックし DataSource の設定を終わります。
 
 ![](https://i.gyazo.com/1fe28e143e56eaa179ba463d5469b1b9.png)

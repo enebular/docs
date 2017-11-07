@@ -20,6 +20,7 @@ Upload InfoType からモーダルを開きます。ファイルをドロップ�
 
 ![](https://i.gyazo.com/5b461780e0d2afe6758d87ecb7ae7801.png)
 
+
 `category` は好きなものを選択して Upload ボタンをクリックします。
 
 ![](/public/images/developers/enebular-developers-upload-infotype.png)
@@ -50,11 +51,13 @@ Add Graph でサイドバーを開きます。このサイドバーには、ダ�
 
 NAME は適当に入力して、 TYPE は さきほどアップロードした InfoType の `sample-bar-chart`、 DATASOURCE は さきほど作成した DataSource の `test-datasource` が選択されているかと思います。
 
+
 label は x軸、value は y軸なので、 label に `dataid` を、value に `v` を設定します（LabelNames は今回省略します）。
 
 ![](/public/images/developers/enebular-developers-infomotion-create-graph-filled.png)
 
 Create Graph を押すと、test-graph がリストに追加されます。
+
 
 ![](/public/images/developers/enebular-developers-infomotion-graphs.png)
 
