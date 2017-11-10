@@ -42,27 +42,12 @@ flowを指定すると、アイコンやタイトルの指定、および、ア�
 
 ![image](/public/images/developers/Flow/CreateFlow/flow-create-flow_09.png)
 
-* アイコン
-    * 今回の用途に合ったアイコンを指定
+* カテゴリ
+    * 今回の用途に合ったカテゴリを指定
 * title
     * フロータイトル
 * アクセス権限
     * admin
-
-<div>[html]
-TODO：各権限について詳細を書く。
-
-admin
-Members can view, edit, deploy, share, and add collaborators to asset
-superdev
-Members can view, edit, and deploy asset
-developer
-Members can view and edit asset
-operator
-Members can view and deploy asset
-user
-Members can view asset
-[/html]</div>
 
 ![image](/public/images/developers/Flow/CreateFlow/flow-create-flow_10.png)
 
