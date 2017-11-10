@@ -25,6 +25,8 @@
   * [AWS IoT](Deploy/DeployFlow/AWSIoT/index.md)
   * [Heroku](Deploy/DeployFlow/Heroku/index.md)
   * [Mode](Deploy/DeployFlow/Mode/index.md)
+* Share Infomotion
+  * [Share Infomtion](Deploy/ShareInfoMotion/index.md)
 
 ## Access
 
