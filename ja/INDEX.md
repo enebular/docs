@@ -1,6 +1,6 @@
 # Introduction
 
-![](/public/images/developers/enebular-developers-main.svg)
+![](/_asset/images/enebular-developers-main.svg)
 
 enebular は多様なデバイスやサーバーへのデプロイが可能な Node-RED ベースの IoT プラットフォームです。
 
@@ -10,7 +10,7 @@ Node-RED を使ってフローの開発が出来ます。開発したフロー�
 
 ## [Get Started](/GetStarted/index.md)
 
-![](/public/images/developers/enebular-developers-getstarted.png)
+![](/_asset/images/enebular-developers-getstarted.png)
 
 まずはこちらから enebular を始めてください。このチュートリアルには、以下の手順が含まれます。
 

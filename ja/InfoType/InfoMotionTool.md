@@ -30,7 +30,7 @@ eit create myfirstgraph
 
 `create`すると、以下のようなファイル群ができます。
 
-![](/public/images/developers/enebular-developers-infomotion-type-directory.png)
+![](/_asset/images/enebular-developers-infomotion-type-directory.png)
 
 主に`plugin.js`を編集することで、オリジナルのグラフ（InfoMotion Type）を作成します。
 

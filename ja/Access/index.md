@@ -10,7 +10,7 @@ enebular の Project や Asset のアクセス権についてのドキュメン�
 - Project Collaborator
 - Outside Collaborator
 
-![](/public/images/developers/enebular-developers-aboutaccess.png)
+![](/_asset/images/enebular-developers-aboutaccess.png)
 
 **Project Owener** は、Project の管理者です。Project のメンバーの編集、その Project に属するすべての Asset のアクセス管理ができます。
 
@@ -39,7 +39,7 @@ Outside Collaborator は Flow の詳細画面の Access タブから行くこと
 - operator: 閲覧・デプロイ
 - user: 閲覧
 
-![](/public/images/developers/enebular-developers-assetprivilege.png)
+![](/_asset/images/enebular-developers-assetprivilege.png)
 
 Asset privilege は Flow の詳細画面の Access タブから行くことができる Access ページで設定できます。
 

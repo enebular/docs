@@ -6,11 +6,11 @@ InfoMotion を利用するためには DataSource の登録が必要です。
 
 Flow である場所にデータを保存して、そのデータを DataSource と設定するのが主な使い方になります。
 
-![](/public/images/developers/enebular-developers-aboutdatasource.png)
+![](/_asset/images/enebular-developers-aboutdatasource.png)
 
 ダッシュボードの DataSource タブから作成・編集ができます。
 
-![](/public/images/developers/enebular-developers-datasource.png)
+![](/_asset/images/enebular-developers-datasource.png)
 
 ## Milkcocoa DataSource の場合
 

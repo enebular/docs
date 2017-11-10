@@ -1,10 +1,10 @@
 Flowを選択すると、Flowの詳細画面に移動します。
 
-![image.png (66.5 kB)](/public/images/developers/Flow/EditFlow/flow-edit-flow_01.png)
+![image.png (66.5 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_01.png)
 
 詳細画面ではFlow情報の編集、Flowの削除・公開ができます。Flow情報は、Flowを公開した際に他のユーザーが見てどういうFlowか理解しやすくする手助けになりますので、出来るだけすべての情報について記載することをおすすめします。
 
-![image.png (93.7 kB)](/public/images/developers/Flow/EditFlow/flow-edit-flow_02.png)
+![image.png (93.7 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_02.png)
 
 Flowの詳細画面で出来ることは以下です。
 
@@ -18,11 +18,11 @@ Flowの詳細画面で出来ることは以下です。
 
 Edit Flow ボタンをクリックすることで、Flow編集画面を立ち上げます。
 
-![image.png (99.2 kB)](/public/images/developers/Flow/EditFlow/flow-edit-flow_03.png)
+![image.png (99.2 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_03.png)
 
 またSettings > Delete Flowボタンから、Flowの削除ができます。
 
-![image.png (73.3 kB)](/public/images/developers/Flow/EditFlow/flow-edit-flow_04.png)
+![image.png (73.3 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_04.png)
 
 # アクセス権の編集・作成
 
@@ -32,18 +32,18 @@ Edit Flow ボタンをクリックすることで、Flow編集画面を立ち上
 
 Publishボタンからフローを公開することが出来ます。公開されたフローは他のユーザーがインポートすることができます。
 
-![image.png (98.7 kB)](/public/images/developers/Flow/EditFlow/flow-edit-flow_05.png)
+![image.png (98.7 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_05.png)
 
 公開されたフローは、上部のグローバルナビの Discover から探すことが出来ます。
 
-![image.png (51.4 kB)](/public/images/developers/Flow/EditFlow/flow-edit-flow_06.png)
+![image.png (51.4 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_06.png)
 
-![image.png (168.3 kB)](/public/images/developers/Flow/EditFlow/flow-edit-flow_07.png)
+![image.png (168.3 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_07.png)
 
 公開されたフローのインポートは、フロー情報の Forkボタンで選択したプロジェクトにインポートできます。
 
-![image.png (85.0 kB)](/public/images/developers/Flow/EditFlow/flow-edit-flow_08.png)
+![image.png (85.0 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_08.png)
 
-![image.png (85.4 kB)](/public/images/developers/Flow/EditFlow/flow-edit-flow_09.png)
+![image.png (85.4 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_09.png)
 
 

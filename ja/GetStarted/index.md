@@ -10,41 +10,41 @@
 
 enebular を始めるには、まず Project を作成します。**Project** とは文字通りプロジェクトの単位です。Project は、データフローである **Flow** 、データの可視化を行うグラフである **InfoMotion** などの **Asset** を複数持つことが出来ます。
 
-![](/public/images/developers/enebular-developers-aboutproject.png)
+![](/_asset/images/enebular-developers-aboutproject.png)
 
 それではログイン後の画面にある Add Project からプロジェクトを作成します。
 
-![](/public/images/developers/enebular-developers-createproject.png)
+![](/_asset/images/enebular-developers-createproject.png)
 
 適当な title を入力して、作成します。
 
-![](/public/images/developers/enebular-developers-createprojectmodal.png)
+![](/_asset/images/enebular-developers-createprojectmodal.png)
 
-![](/public/images/developers/enebular-developers-projects.png)
+![](/_asset/images/enebular-developers-projects.png)
 
 ## 新規Flowの作成
 
 Project を作成したら、まず Flow を作成しましょう。作成した Project を選択して Project の管理画面に移動します。
 
-![](/public/images/developers/enebular-developers-projectdashboard.png)
+![](/_asset/images/enebular-developers-projectdashboard.png)
 
 Create Asset を押すと Asset を作成するモーダルが開きます。
 
-![](/public/images/developers/enebular-developers-createassetmodalbefore.png)
+![](/_asset/images/enebular-developers-createassetmodalbefore.png)
 
 Asset Type は `flow` を選択して、Flow のタイトルをつけます。Flow へのデフォルトのアクセス権（default role to asset）は今回はとりあえず `admin` に設定してください。一番下の category は何でも良いです。
 
-![](/public/images/developers/enebular-developers-createassetmodal.png)
+![](/_asset/images/enebular-developers-createassetmodal.png)
 
 Continue を押すと作成が完了します。
 
 作成が完了すると、Flow の詳細ページに移動します。
 
-![](/public/images/developers/enebular-developers-flowdashboard.png)
+![](/_asset/images/enebular-developers-flowdashboard.png)
 
 Edit Flow を押すと、Node-RED の編集画面が立ち上がります。
 
-![](/public/images/developers/enebular-developers-nodered-before.png)
+![](/_asset/images/enebular-developers-nodered-before.png)
 
 ## データフローの編集・デプロイ
 
@@ -56,7 +56,7 @@ Edit Flow を押すと、Node-RED の編集画面が立ち上がります。
 
 下記の図を参考に、フローを作成ください。**timestamp node** で10秒ごとにフローが実行されるよう設定し、**function node** で プロパティを設定し、**milkcocoa node** で保存先である Milkcocoa のアプリ情報（`app_id`）・データストア情報（`datastore`）・認証情報（`API Key`、`API Secret`）を設定します。
 
-![](/public/images/developers/enebular-developers-milkcocoaflow.png)
+![](/_asset/images/enebular-developers-milkcocoaflow.png)
 
 function node のコードは以下です。
 
@@ -91,7 +91,7 @@ milkcocoa node の **Data Store** は `tutorial`、**Operation** は `Push` で�
 
 では、最初にサイドバーの DataSource タブから DataSource の登録をします。Create DataSource から DataSource 作成モーダルを開きます。
 
-![](/public/images/developers/enebular-developers-datasource.png)
+![](/_asset/images/enebular-developers-datasource.png)
 
 「Select DataSource Type」で「milkcocoa」を選択し、必要な情報を入力します。Node-RED Edtior 内の milkcocoa node で指定した`App Id`、`DataStore`、`API Key`、`Secret Key`(API Secret)　を入力します。Save をクリックして保存します。
 
@@ -102,12 +102,12 @@ milkcocoa node の **Data Store** は `tutorial`、**Operation** は `Push` で�
 DataSource の登録が終わったら、InfoType をアップロードします。今回はサンプルの棒グラフを使います。
 
 <ul>
-  <li><a href="/public/sample/sample-bar-chart.zip" target="_blank">サンプル InfoType のダウンロード(zip形式)</a></li>
+  <li><a href="/_asset/sample/sample-bar-chart.zip" target="_blank">サンプル InfoType のダウンロード(zip形式)</a></li>
 </ul>
 
 ダウンロードが終わったら、サイドバーの InfoType タブをクリックします。
 
-![](/public/images/developers/enebular-developers-asset-infotype.png)
+![](/_asset/images/enebular-developers-asset-infotype.png)
 
 Upload InfoType からモーダルを開きます。ファイルをドロップできるエリアがあるので、ダウンロードした zip ファイルの中身をドラックアンドドロップします。
 
@@ -115,7 +115,7 @@ Upload InfoType からモーダルを開きます。ファイルをドロップ�
 
 `category` は好きなものを選択して Upload ボタンをクリックします。
 
-![](/public/images/developers/enebular-developers-upload-infotype.png)
+![](/_asset/images/enebular-developers-upload-infotype.png)
 
 アップロードが終わったら、サイドバーの InfoMotion タブをクリックします。
 
@@ -123,41 +123,41 @@ Upload InfoType からモーダルを開きます。ファイルをドロップ�
 
 DataSource と InfoType を使って InfoMotion を作成しましょう。Create Infomotion を押してモーダルを開きます。
 
-![](/public/images/developers/enebular-developers-asset-infomotion.png)
+![](/_asset/images/enebular-developers-asset-infomotion.png)
 
 InfoMotion のタイトルをつけます。InfoMotion へのデフォルトのアクセス権（default role to asset）は今回はとりあえず `admin` に設定してください。一番下の category は何でも良いです。
 
-![](/public/images/developers/enebular-developers-asset-infomotion-modal.png)
+![](/_asset/images/enebular-developers-asset-infomotion-modal.png)
 
 作成したら、InfoMotion のダッシュボード画面に移動します。
 
-![](/public/images/developers/enebular-developers-infomotion-dashboard-before.png)
+![](/_asset/images/enebular-developers-infomotion-dashboard-before.png)
 
 Add Graph でサイドバーを開きます。このサイドバーには、ダッシュボードで表示するグラフのリストが表示されます。
 
-![](/public/images/developers/enebular-developers-infomotion-add-graph.png)
+![](/_asset/images/enebular-developers-infomotion-add-graph.png)
 
 グラフを登録してみましょう。Create Graph を押します。
 
-![](/public/images/developers/enebular-developers-infomotion-create-graph.png)
+![](/_asset/images/enebular-developers-infomotion-create-graph.png)
 
 NAME は適当に入力して、 TYPE は さきほどアップロードした InfoType の `sample-bar-chart`、 DATASOURCE は さきほど作成した DataSource の `test-datasource` が選択されているかと思います。
 
 label は x軸、value は y軸なので、 label に `dataid` を、value に `v` を設定します（LabelNames は今回省略します）。
 
-![](/public/images/developers/enebular-developers-infomotion-create-graph-filled.png)
+![](/_asset/images/enebular-developers-infomotion-create-graph-filled.png)
 
 Create Graph を押すと、test-graph がリストに追加されます。
 
-![](/public/images/developers/enebular-developers-infomotion-graphs.png)
+![](/_asset/images/enebular-developers-infomotion-graphs.png)
 
 test-graph の左にあるプラスアイコンを押すと、ダッシュボードに追加されます。
 
-![](/public/images/developers/enebular-developers-infomotion-dashboard.png)
+![](/_asset/images/enebular-developers-infomotion-dashboard.png)
 
 パネルの右下をひっぱって横に伸ばして、 Save を押すとレイアウトが保存されます。
 
-![](/public/images/developers/enebular-developers-infomotion-dashboard-full.png)
+![](/_asset/images/enebular-developers-infomotion-dashboard-full.png)
 
 
 ## Well Done!

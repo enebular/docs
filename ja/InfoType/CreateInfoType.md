@@ -2,7 +2,7 @@
 
 InfoMotion で可視化するためには、グラフの形を決める InfoType とそのグラフに使うデータである DataSource が必要です。
 
-![](/public/images/developers/enebular-developers-aboutinfotype.png)
+![](/_asset/images/enebular-developers-aboutinfotype.png)
 
 enebular では自身で作成したグラフタイプ（InfoType）をアップロードして利用することが出来ます。
 
@@ -49,7 +49,7 @@ $ eit run
 $ open http://localhost:3000
 ```
 
-![tutorial1](/public/images/developers/gif/type1.gif)
+![tutorial1](/_asset/images/gif/type1.gif)
 
 具体的にどういうふうに`plugin.js`を編集するかについては、[API Reference](/developers/infomotion-type-api)をご覧下さい。
 
@@ -76,15 +76,15 @@ Side Menuの「InfoMotion」、タブの「InfoType」を選択します。
 
 アップロード画面が出てきます。
 
-![](/public/images/developers/enebular-developers-infomotiontype-tutorial-upload.png)
+![](/_asset/images/enebular-developers-infomotiontype-tutorial-upload.png)
 
 `eit package`コマンドで生成した`build/target`フォルダ内の`plugin.js`と`plugin.css`（フォルダごとではなく中身）をドロップし、名前をつけ「アップロードする」ボタンをクリックするとアップロード完了です。
 
-![](/public/images/developers/enebular-developers-infomotiontype-tutorial-upload-dropped.png)
+![](/_asset/images/enebular-developers-infomotiontype-tutorial-upload-dropped.png)
 
 アップロードができたら、「Uploaded InfoType」のリストに追加されます。
 
-![](/public/images/developers/enebular-developers-infomotiontype-tutorial-upload-uploaded.png)
+![](/_asset/images/enebular-developers-infomotiontype-tutorial-upload-uploaded.png)
 
 チュートリアル
 -------
@@ -111,21 +111,21 @@ eit package
 
 プロジェクトディレクトリに`build`フォルダが生成されます。
 
-![](/public/images/developers/enebular-developers-infomotiontype-tutorial-build.png)
+![](/_asset/images/enebular-developers-infomotiontype-tutorial-build.png)
 
 ### InfoTypeのアップロード
 
 enebularのお好きなProjectに移動し、Side Menuの「InfoMotion」、タブの「InfoType」を選択します。
 
-![](/public/images/developers/enebular-developers-infomotiontype-tutorial-upload.png)
+![](/_asset/images/enebular-developers-infomotiontype-tutorial-upload.png)
 
 アップロード画面が出てくるので、生成した`build/target`フォルダ内の`plugin.js`と`plugin.css`（フォルダごとではなく中身）をドロップし、名前をつけ、「アップロードする」ボタンをクリックします。
 
-![](/public/images/developers/enebular-developers-infomotiontype-tutorial-upload-dropped.png)
+![](/_asset/images/enebular-developers-infomotiontype-tutorial-upload-dropped.png)
 
 アップロードができたら、「Uploaded InfoType」のリストに追加されます。
 
-![](/public/images/developers/enebular-developers-infomotiontype-tutorial-upload-uploaded.png)
+![](/_asset/images/enebular-developers-infomotiontype-tutorial-upload-uploaded.png)
 
 ### InfoTypeを利用する
 
@@ -137,7 +137,7 @@ enebularのお好きなProjectに移動し、Side Menuの「InfoMotion」、タ�
 
 「New Flow」ボタンから、フローの編集画面(Node-RED)を開いて、以下のようなフローを作成します。
 
-![](/public/images/developers/enebular-developers-nodered.png)
+![](/_asset/images/enebular-developers-nodered.png)
 
 #### Milkcocoaノードの設定
 
@@ -174,26 +174,26 @@ timestampノードは、`interval`にして、`every 10 seconds`にしておき�
 
 可視化するデータである「Datasource」の追加をします。「New Data Source」ボタンから作成し、作成されたDatasourceをクリックして詳細画面へ移動します。
 
-![](/public/images/developers/enebular-developers-createdatasource-type.png)
+![](/_asset/images/enebular-developers-createdatasource-type.png)
 
 「Select Datasource Type」で「milkcocoa」を選択し、必要な情報を入力します。データフローで指定した`app_id`、`datastore`、`API Key`、`API Secret`を入力します。「SAVE」ボタンをクリックして保存します。
 
-![](/public/images/developers/enebular-developers-datasource-type.png)
+![](/_asset/images/enebular-developers-datasource-type.png)
 
 ### InfoMotionを作成する
 
 Datasourceの登録が終わったら、InfoMotionを作成しましょう。「CREATE GRAPH...」ボタンから作成します。
 
-![](/public/images/developers/enebular-developers-createinfomotion.png)
+![](/_asset/images/enebular-developers-createinfomotion.png)
 
 作成したInfoType（`grouped-bar-chart`）を使用します。
 
 下図のように設定します。
 
-![](/public/images/developers/enebular-developers-infomotionsettings-type.png)
+![](/_asset/images/enebular-developers-infomotionsettings-type.png)
 
 `DATASOURCE`には、さきほど登録したDatasourceを設定します。さらに、棒グラフには`label`（x軸）と`values`（y軸）となるkeyを設定します。今回はデータのIDを`dataid`、値を`v`,`v2`としたので、それぞれを`label`、`values`に設定します。
 
 作成されたグラフをクリックすると、グラフへ移動します。
 
-![](/public/images/developers/enebular-developers-infomotiongraph-type.png)
+![](/_asset/images/enebular-developers-infomotiongraph-type.png)
