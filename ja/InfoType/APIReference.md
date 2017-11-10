@@ -1,7 +1,7 @@
-InfoMotion Type API
+InfoType API
 ===================
 
-`infomotion-tool`で`create`した際にできる`plugin.js`で使用するAPIの説明です。こちらを参考にInfomotion Typeの開発を行って下さい。
+`infomotion-tool`で`create`した際にできる`plugin.js`で使用するAPIの説明です。こちらを参考にInfoTypeの開発を行って下さい。
 
 addData
 -------

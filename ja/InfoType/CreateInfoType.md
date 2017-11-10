@@ -1,30 +1,27 @@
-InfoMotion Typeの作成
-==================
+# InfoType の作成
 
-[Get Started](/developers/getstarted)や[InfoMotionの作成](/developers/infomotion-start)で行った可視化では、デフォルトで用意されているInfomotion Typeを利用しました。
+InfoMotion で可視化するためには、グラフの形を決める InfoType とそのグラフに使うデータである DataSource が必要です。
 
-しかし、enebularでは自身で作成したグラフタイプ（InfoMotion Type）をアップロードして利用することが出来ます。
+![](/public/images/developers/enebular-developers-aboutinfotype.png)
+
+enebular では自身で作成したグラフタイプ（InfoType）をアップロードして利用することが出来ます。
 
 このページでは、作成からアップロードまでの手順を説明します。
 
-InfoMotion Typeの作成
-------------------
+## InfoType の作成
 
-### infomotion-toolのインストール
+### `infomotion-tool` のインストール
 
-InfoMotion Typeを作成するには、お使いのパソコンに`infomotion-tool`をインストールする必要があります。以下でインストールを行います。
+InfoType を作成するには、お使いのパソコンに `infomotion-tool` をインストールする必要があります。以下でグローバルインストールを行います。
 
-```
-# グローバルインストールします。
-sudo npm install infomotion-tool -g
+```bash
+$ sudo npm install infomotion-tool -g
 ```
 
-これで、お使いのパソコンで`infomotion-tool`コマンドが使えるようになります。[infomotion-toolの詳細についてはこちらを参照下さい](/developers/infomotion-type-tool)。
+これで、お使いのパソコンで `infomotion-tool` コマンドが使えるようになります。[`infomotion-tool` の詳細についてはこちらを参照下さい](/developers/infomotion-type-tool)。
 
-```
-Usage
-
-eit create [graph name]  = InfoMotion Typeプロジェクトの作成（複数ファイルを含んだフォルダが作成されます）
+```bash
+eit create [graph name]  = InfoTypeプロジェクトの作成（複数ファイルを含んだフォルダが作成されます）
 eit run [graph name]     = サーバーを起動して、ブラウザで挙動を確認出来るようになる
 eit package [graph name] = enebularにアップロード出来るかたちにパッケージ化
 eit help                 = help
@@ -32,24 +29,24 @@ eit help                 = help
 
 ### グラフ作成
 
+以下のコマンドで `myfirstgraph` というフォルダができます。
+
+```bash
+$ eit create myfirstgraph
 ```
-eit create myfirstgraph
-```
 
-`create`すると、以下のようなファイル群ができます。
+![](https://i.gyazo.com/c49913d11e9a12bf6578419a3166b399.png)
 
-![](/public/images/developers/enebular-developers-infomotion-type-directory.png)
-
-主に`plugin.js`を編集することで、オリジナルのグラフ（InfoMotion Type）を作成します。
+主に `plugin.js` を編集することで、オリジナルのグラフ（InfoType）を作成します。
 
 ### 実行（ブラウザでの挙動のテスト）
 
-`run`すると、ブラウザで挙動をテストできます。
+`eit run` で、ブラウザで挙動をテストできます。
 
-```
-cd myfirstgraph
-eit run
-open http://localhost:3000
+```bash
+$ cd myfirstgraph
+$ eit run
+$ open http://localhost:3000
 ```
 
 ![tutorial1](/public/images/developers/gif/type1.gif)
@@ -58,7 +55,7 @@ open http://localhost:3000
 
 なお、標準でD3（グローバル変数の`d3`）を利用できます。
 
-InfoMotion Typeをビルド（パッケージ化）
+InfoTypeをビルド（パッケージ化）
 ---------------------------
 
 `package`すると、enebularにアップロード出来るかたちにパッケージ化できます。
@@ -70,12 +67,12 @@ eit package
 
 実行すると、`build/target/plugin.js`と`build/target/plugin.css`が生成されます。これを、enebular上にアップロードすることで利用可能になります。
 
-InfoMotion Typeのアップロード
+InfoTypeのアップロード
 ----------------------
 
-InfoMotion Typeのアップロードはenebularの管理画面で行います。
+InfoTypeのアップロードはenebularの管理画面で行います。
 
-Side Menuの「InfoMotion」、タブの「InfoMotion Type」を選択します。
+Side Menuの「InfoMotion」、タブの「InfoType」を選択します。
 
 アップロード画面が出てきます。
 
@@ -85,20 +82,20 @@ Side Menuの「InfoMotion」、タブの「InfoMotion Type」を選択します�
 
 ![](/public/images/developers/enebular-developers-infomotiontype-tutorial-upload-dropped.png)
 
-アップロードができたら、「Uploaded InfoMotion Type」のリストに追加されます。
+アップロードができたら、「Uploaded InfoType」のリストに追加されます。
 
 ![](/public/images/developers/enebular-developers-infomotiontype-tutorial-upload-uploaded.png)
 
 チュートリアル
 -------
 
-アップロードしたInfoMotion Typeを実際に利用するチュートリアルです。
+アップロードしたInfoTypeを実際に利用するチュートリアルです。
 
-### サンプルのInfoMotion Typeのダウンロード・ビルド
+### サンプルのInfoTypeのダウンロード・ビルド
 
-本来はご自分でInfoMotion Typeを作成しますが、今回はあらかじめ用意した以下のInfoMotion Typeを利用します。
+本来はご自分でInfoTypeを作成しますが、今回はあらかじめ用意した以下のInfoTypeを利用します。
 
-* [サンプルのInfoMotion Typeのソースコード](https://github.com/moriuchi/visualization-type)
+* [サンプルのInfoTypeのソースコード](https://github.com/moriuchi/visualization-type)
 
 こちらを手元にクローン（ダウンロード）します。今回は`grouped-bar-chart`を利用するので、`grouped-bar-chart`へ移動します。
 
@@ -116,9 +113,9 @@ eit package
 
 ![](/public/images/developers/enebular-developers-infomotiontype-tutorial-build.png)
 
-### InfoMotion Typeのアップロード
+### InfoTypeのアップロード
 
-enebularのお好きなProjectに移動し、Side Menuの「InfoMotion」、タブの「InfoMotion Type」を選択します。
+enebularのお好きなProjectに移動し、Side Menuの「InfoMotion」、タブの「InfoType」を選択します。
 
 ![](/public/images/developers/enebular-developers-infomotiontype-tutorial-upload.png)
 
@@ -126,13 +123,13 @@ enebularのお好きなProjectに移動し、Side Menuの「InfoMotion」、タ�
 
 ![](/public/images/developers/enebular-developers-infomotiontype-tutorial-upload-dropped.png)
 
-アップロードができたら、「Uploaded InfoMotion Type」のリストに追加されます。
+アップロードができたら、「Uploaded InfoType」のリストに追加されます。
 
 ![](/public/images/developers/enebular-developers-infomotiontype-tutorial-upload-uploaded.png)
 
-### InfoMotion Typeを利用する
+### InfoTypeを利用する
 
-実際に、InfoMotion Typeを利用するには、まずFlowを作成してMilkcocoaにデータを貯める必要があります。
+実際に、InfoTypeを利用するには、まずFlowを作成してMilkcocoaにデータを貯める必要があります。
 
 このFlowを作成する前に、Milkcocoaの[チュートリアルページのMilkcocoaを使う準備をする](https://mlkcca.com/tutorial/page2.html)を参考に、アプリを作成して`app_id`と、Milkcocoa管理画面内の「認証」タブから作成出来る`API Key`と`API Secret`を控えておいて下さい。
 
@@ -189,7 +186,7 @@ Datasourceの登録が終わったら、InfoMotionを作成しましょう。「
 
 ![](/public/images/developers/enebular-developers-createinfomotion.png)
 
-作成したInfoMotion Type（`grouped-bar-chart`）を使用します。
+作成したInfoType（`grouped-bar-chart`）を使用します。
 
 下図のように設定します。
 

@@ -8,11 +8,11 @@
 * [Flowの作成](Flow/CreateFlow.md)
 * [Flowの編集・公開・インポート](Flow/EditFlow.md)
 
-## InfoMotion Type
+## InfoType
 
-* [InfoMotion Typeの作成](InfoMotionType/CreateInfoMotionType.md)
-* [API Reference](InfoMotionType/APIReference.md)
-* [InfoMotion Toolの使い方](InfoMotionType/InfoMotionTool.md)
+* [InfoTypeの作成](InfoType/CreateInfoType.md)
+* [API Reference](InfoType/APIReference.md)
+* [InfoMotion Toolの使い方](InfoType/InfoMotionTool.md)
 
 ## InfoMotion
 
