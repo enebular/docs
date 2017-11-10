@@ -24,8 +24,7 @@
 * Deploy Flow
   * [AWS IoT](Deploy/DeployFlow/AWSIoT/index.md)
   * [Heroku](Deploy/DeployFlow/Heroku/index.md)
-  * Mode Inc
-    * [settings](Deploy/DeployFlow/Mode/Settings.md)
+  * [Mode](Deploy/DeployFlow/Mode/index.md)
 
 ## Access
 
