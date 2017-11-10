@@ -1,6 +1,7 @@
 .DS_Store
 _book
 node_modules
+npm-debug.log
 
 # IntelliJ IDEA
 *.iml
