@@ -62,6 +62,8 @@ A basic key/value input setting.
 }
 ```
 
+--- IMAGE OF BASIC KEY/VALUE INPUT ----
+
 A list of key/value input settings. 
 
 ```
@@ -85,6 +87,7 @@ A list of key/value input settings.
     ]
 }
 ```
+---- IMAGE OF LIST OF KEY/VALUE INPUTS ----
 
 A select option setting.
 
@@ -104,6 +107,8 @@ A select option setting.
 }
 ```
 
+---- IMAGE OF SELECT AND OPTOINS ----
+
 An on/off switch.
 
 ```
@@ -120,3 +125,5 @@ An on/off switch.
     "switch":true
 }
 ```
+
+---- IMAGE OF ON AND OFF SWITCH ----

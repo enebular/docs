@@ -3,8 +3,8 @@
 ## InfoMotion
 
 * [InfoMotion Tool](InfoMotion/InfoMotionTool.md)
-* [API Reference](InfoMotion/APIReference.md)
 * [Upload InfoMotion](InfoMotion/UploadInfoType.md)
+* [API Reference](InfoMotion/APIReference.md)
 
 ## Dashboard 
 
