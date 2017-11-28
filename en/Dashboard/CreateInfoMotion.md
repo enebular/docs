@@ -24,4 +24,7 @@ infomotions created.
 
 once settings is filed out add graph by clicking the plus to dsplay the infomotion on the dashboard. 
 
-![](/_asset/images/enebular-developers-display-infomotion.png)
+![](/_asset/images/enebular-developers-display-infomotion.png) 
+
+InfoMOtion Dashboards can be customizable for specific needs. 
+Please see [infomotion share]() for more details.
