@@ -1,6 +1,5 @@
 # Summary
 
-* [Introduction](INDEX.md)
 * [GetStarted](GetStarted/index.md)
 
 ## Flow

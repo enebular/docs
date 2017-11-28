@@ -1,9 +1,12 @@
 # Summary
 
-* [Introduction](INDEX.md)
+## InfoMotion
 
-## InfoType
+* [InfoMotion Tool](InfoMotion/InfoMotionTool.md)
+* [API Reference](InfoMotion/APIReference.md)
+* [Upload InfoMotion](InfoMotion/UploadInfoType.md)
 
-* [Create InfoType](InfoType/CreateInfoType.md)
-* [API Reference](InfoType/APIReference.md)
-* [InfoMotion Tool Manual](InfoType/InfoMotionTool.md)
+## Dashboard 
+
+* [DataSource](Dashboard/CreateDatasource.md) 
+* [Dashboard](Dashboard/CreateInfomotion.md) 
