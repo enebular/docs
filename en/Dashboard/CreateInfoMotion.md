@@ -1,6 +1,18 @@
 ##Infomotion Dashboard
 
-Now with dataSource created and an InfoTYpe uploaded select「Create InfoMotion」. 
+InfoMotion Dashboard allows users more interaction with InfoMotions.
+
+Interations: 
+- Edit graph settings 
+- viewing multiple graphs at once 
+- sharing single or multiple InfoMotions for external use 
+- changing DataSources 
+- filtering data 
+- exporting data 
+- using live mode, timeline and date range 
+
+
+With dataSource created and an InfoTYpe uploaded select「Create InfoMotion」. 
 Enebular will load the InfoMotion Dashbaord.
 
 ![](/_asset/images/enebular-developers-create-dashboard.png)
