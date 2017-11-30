@@ -4,7 +4,7 @@
   "description": "## Get Started",
   "main": "README.md",
   "scripts": {
-    "test": "gulp",
+    "test": "mocha check.js",
     "build": "gitbook build",
     "serve": "gitbook serve"
   },
@@ -25,6 +25,7 @@
     "assert": "^1.4.1",
     "glob": "^7.1.2",
     "markdown-it": "^8.4.0",
-    "markdown-it-meta": "0.0.1"
+    "markdown-it-meta": "0.0.1",
+    "mocha": "^4.0.1"
   }
 }
