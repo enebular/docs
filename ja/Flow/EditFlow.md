@@ -1,3 +1,7 @@
+---
+lastUpdated: 2017-12-01
+---
+
 Flowを選択すると、Flowの詳細画面に移動します。
 
 ![image.png (66.5 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_01.png)

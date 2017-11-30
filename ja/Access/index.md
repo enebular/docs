@@ -1,3 +1,7 @@
+---
+lastUpdated: 2017-12-01
+---
+
 # アクセス権の編集
 
 enebular の Project や Asset のアクセス権についてのドキュメントです。

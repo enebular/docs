@@ -1,3 +1,7 @@
+---
+lastUpdated: 2017-12-01
+---
+
 # InfoType の作成
 
 InfoMotion で可視化するためには、グラフの形を決める InfoType とそのグラフに使うデータである DataSource が必要です。

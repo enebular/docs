@@ -1,3 +1,7 @@
+---
+lastUpdated: 2017-12-01
+---
+
 # AWS Lambdaへのデプロイ
 
 Flowのデプロイ先はそのままデプロイボタンを押すと、enebularが利用しているサーバーにデプロイされます。enebularでAWS Lambdaにデプロイすることも可能です。

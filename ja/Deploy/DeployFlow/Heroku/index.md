@@ -1,3 +1,7 @@
+---
+lastUpdated: 2017-12-01
+---
+
 このページではHeroku Deployの説明をします。Heroku Deployはenebularで作成したFlowをHerokuで作成したenebular Node-REDにDeployする機能です。
 
 ## Herokuに送るFlowを作成

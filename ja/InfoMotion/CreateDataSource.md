@@ -1,3 +1,7 @@
+---
+lastUpdated: 2017-12-01
+---
+
 # DataSource について
 
 DataSource とは、InfoMotion（グラフ）に表示する際に参照するデータ先です。

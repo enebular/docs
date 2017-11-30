@@ -1,3 +1,7 @@
+---
+lastUpdated: 2017-12-01
+---
+
 # Create First InfoMotion
 
 [DataSourceについて](../CreateDataSource.html) で DataSource が出来たら InfoMotion を作りましょう。

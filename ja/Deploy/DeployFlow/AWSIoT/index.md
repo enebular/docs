@@ -1,3 +1,7 @@
+---
+lastUpdated: 2017-12-01
+---
+
 # AWS IoT へのデプロイ
 
 enebularでは作成したFlowをAWS IoTにも書き出すことができます。

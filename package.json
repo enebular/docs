@@ -4,7 +4,7 @@
   "description": "## Get Started",
   "main": "README.md",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "gulp",
     "build": "gitbook build",
     "serve": "gitbook serve"
   },
@@ -20,5 +20,11 @@
   "homepage": "https://github.com/enebular/docs#readme",
   "dependencies": {
     "gitbook-cli": "^2.3.2"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "glob": "^7.1.2",
+    "markdown-it": "^8.4.0",
+    "markdown-it-meta": "0.0.1"
   }
 }
