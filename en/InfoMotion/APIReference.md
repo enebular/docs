@@ -4,8 +4,6 @@ InfoType API
 plugin.js created by `infomotion-tool` has a set of apis.
 addData, clearData, resize and getEl.
 
-![](/_asset/images/enebular-developers-upload-info.png)
-
 addData
 -------
 
