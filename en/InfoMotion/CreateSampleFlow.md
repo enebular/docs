@@ -44,9 +44,4 @@ The milkcocoa node requires the following settings to work.
 * **Data Store**: `type-tutorial`
 * **Operation**: `Push`
 
-##Connecting Datasource
-
-Click「DataSource」and create dataSource using milkcocoa 
-After all inputs are filled save the data source. 
-
-![](/_asset/images/enebular-developers-datasource2.png)
+See [Create Datasource]() to create a DataSource. from this flow.
