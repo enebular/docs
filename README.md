@@ -13,16 +13,6 @@ $ npm run build
 $ npm run serve
 ```
 
-## Deploy
-
-Log in to https://zeit.co/now & Install `now` to global.
-
-```
-$ cd _book
-$ now
-$ now alias https://book-*******.now.sh enebular-docs
-```
-
 # Docs
 
 **※Github上で画像は表示されません**
