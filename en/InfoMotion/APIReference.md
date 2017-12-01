@@ -1,10 +1,10 @@
 InfoType API
-===================
+============
 
 plugin.js created by `infomotion-tool` has a set of apis.
 addData, clearData, resize and getEl.
 
----- Images of daterange, timeline and live ----
+![](/_asset/images/enebular-developers-upload-info.png)
 
 addData
 -------
@@ -18,16 +18,14 @@ The data passed is based on the daterange or toggled dates/time.
 clearData 
 --------- 
 
-When date range is selected or timeline is toggled or live mod is activted clearData is called 
-then addData is called. 
-
+When date range is selected, timeline is toggled or live mode is activted clearData is called.
 
 * Parameter: N/A
 
 resize
 ------
 
-When browsers widnow changes size resize is called.
+When the browser window changes size resize is called. 
 
 * Parameter: option.width, option.height
 
@@ -58,11 +56,11 @@ A basic key/value input setting.
 
 * Default
 {
-    "tag":"main-tag"
+    "tag":"tag-name"
 }
 ```
 
---- IMAGE OF BASIC KEY/VALUE INPUT ----
+![](/_asset/images/enebular-developers-type-text.png)
 
 A list of key/value input settings. 
 
@@ -81,13 +79,14 @@ A list of key/value input settings.
 * Default 
 {
     "list-of-tags":[
-        {tag:"tag-name-1"},
-        {tag:"tag-name-2"},
-        {tag:"tag-name-3"}
+        {tag:"tag1"},
+        {tag:"tag2"},
+        {tag:"tag3"}
     ]
 }
 ```
----- IMAGE OF LIST OF KEY/VALUE INPUTS ----
+
+![](/_asset/images/enebular-developers-type-list.png)
 
 A select option setting.
 
@@ -107,7 +106,7 @@ A select option setting.
 }
 ```
 
----- IMAGE OF SELECT AND OPTOINS ----
+![](/_asset/images/enebular-developers-type-select.png)
 
 An on/off switch.
 
@@ -126,4 +125,4 @@ An on/off switch.
 }
 ```
 
----- IMAGE OF ON AND OFF SWITCH ----
+![](/_asset/images/enebular-developers-type-switch.png)

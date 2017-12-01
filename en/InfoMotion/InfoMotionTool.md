@@ -1,14 +1,14 @@
 #InfoMotion Tool
 
 In order to create an InfoMotion the infomotion-tool must be installed. 
-The infmotion-tool runs locally and allows the developer to test and edit.
-Once the InfoMotion is completed then intomotion-tool packages the scripts to be uploaded to enebular. 
-
-#Installing infomotion-tool
+The infomotion-tool allows the developer to runs, test and edit locally. 
+Once the InfoMotion is completed intomotion-tool packages the scripts to be uploaded to enebular. 
+ 
+#Installing infomotion-tool 
 
 ```
 #Installing globally。
-sudo npm install infomotion-tool -g
+sudo npm install infomotion-tool -g 
 ```
 
 #Commands 
@@ -18,7 +18,7 @@ Usage
 
 eit create [graph name]  = Creates an InfoType with the [graph name] 
 eit run [graph name]     = Runs [graph name] on localhost:3000 
-eit package [graph name] = Create a packge to upload on enebular 
+eit package [graph name] = Creates a packge to upload on enebular 
 eit help                 = help 
 ```
 
@@ -31,25 +31,26 @@ eit create myfirstgraph
 
 `create` builds the following files
 
-`plugin.js`,
+`datasource.json`,
+`package.json`,
 `plugin.css`,
-`plugin.json`
+`plugin.js`,
+`plugin.json`,
 
-
-![](/_asset/images/enebular-developers-about-infomotion-files.png)
-
+![](/_asset/images/enebular-developers-about-infomotion-files.png) 
+ 
 #### datasource.json 
 
 This file allows you to connect your infomotion to datasources. 
 You can use one adapter per infomotion. 
 
 The adapter types are 
-`random`, `milkcocoa`,`pubnnub`,`ajax` and `apigateway` 
+`random`, `mock`, `milkcocoa`,`pubnnub`,`ajax` and `apigateway` 
 
-For `random`, `milkcocoa`,`ajax` and `apigateway` use the following.
-Replace `milkcocoa` with any other adapter listed above. 
+For `random`, `milkcocoa`,`ajax` and `apigateway` use the following. 
+Replace `milkcocoa` with any other adapter just listed. 
 
-``` 
+```
   {
     "adaptor": "milkcocoa",
     "apikey": "api123",
@@ -82,6 +83,8 @@ For `pubnub`
    }        
 ```
 
+For `random`
+
 Random is give as a default datastore and generates sets of the following data schema.
 
 ```
@@ -89,6 +92,27 @@ Random is give as a default datastore and generates sets of the following data s
 	country:String,
 	value:Number
 }
+```
+
+For Mock Adapter 
+
+Mock adapter allows for an array of data to be passed to the InfoMotion 
+for quick testing. Live and Daterange picker return this same piece of data. 
+
+```javascript
+[
+    {
+        "adaptor": "mock",
+        "apikey": "",
+        "apisecret": "",
+        "appId": "",
+        "dataStore": "mock",
+        "id": "mock",
+        "title": "mock",
+        "name": "mock"
+        "data": [{"id": "a", "value": 1}, {"id": "b", "value": 21}, {"id": "c", "value": 512}]
+    }
+]
 ```
 
 #### package.json 
@@ -100,18 +124,17 @@ For more information see [NPM](https://docs.npmjs.com/files/package.json).
 
 Stying for the InfoMotion. 
 
-#### plugin.js
+#### plugin.js 
 
 This file contains the main logic for the InfoMotion. 
 D3.js is globally installed by default. 
-See here for full [API Reference](/en/InfoMotion/APIReference) 
+See [API Reference](/en/InfoMotion/APIReference) for more details. 
 
 #### plugin.json 
 
-The plugin.json is created to give a preview of what the InfoMotion 
-visualizes. 
+The plugin.json is created to supply the InfoMotion with sample data to preview the visualization.  
 `sampleSettings` is a defualt setting to the InfoMotion. 
-`sampleData` is a data set that can be passed through the InfoMotion for preview.
+`sampleData` is a data set that's passed to InfoMotion to visualize. 
 
 ``` 
 {
@@ -124,7 +147,7 @@ visualizes.
 
 #InfoType templates 
 
-The default graph is `DataLogger` Infomotion. 
+The default graph is `DataLogger` InfoMotion. 
 `Data Logger` simply logs data to the screen. 
 
 Here are avaiable templates that can be pre-made. 

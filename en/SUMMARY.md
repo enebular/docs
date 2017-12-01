@@ -5,11 +5,8 @@
 * [InfoMotion Tool](InfoMotion/InfoMotionTool.md)
 * [Upload InfoMotion](InfoMotion/UploadInfoType.md)
 * [API Reference](InfoMotion/APIReference.md)
-
-## Dashboard 
-
-* [DataSource](Dashboard/CreateDatasource.md) 
-* [Dashboard](Dashboard/CreateInfomotion.md) 
+* [DataSource](InfoMotion/CreateDatasource.md) 
+* [Dashboard](InfoMotion/CreateInfomotion.md) 
 
 ## Deploy/Share
 

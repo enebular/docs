@@ -48,7 +48,7 @@ options - paths of plugins/infomotions
 
 ### GraphContext 
 
-A graph context binds grphs and components. 
+A graph context binds graphs and components. 
 
 Before we crate graphs and componets we need to set up a graphContext. 
 
@@ -73,12 +73,10 @@ make - creates a date picker
 
 ```javascript
     var timeline = infomotionUI.timeline(
-                document.querySelector('#timeline'),
-                document.querySelector('#minDate'),
-                document.querySelector('#maxDate'),
-                document.querySelector('#btnControl')
-        ).withRange([new Date('2016-12-30'), new Date()])
-        .make();
+                    document.querySelector('#timeline'),
+                    document.querySelector('#btnControl')
+            ).withRange([new Date('2016-12-30'), new Date()])
+             .make();
 ```
 
 ### LiveButton 
@@ -101,11 +99,11 @@ When all parts are ready you can bind components to graphContext
 
 ### Graph settings 
 
-graph settings is made up of 3 components 
+graph settings is made up of 3 components.
 
-adapter - type of data source adaptor, appId, secret and key. 
+adapter - type of datasource adaptor.
 
-graph settings - settings for the infomotion Type 
+graph settings - settings for the infomotion.
 
 options - pluginPaths
 
@@ -272,7 +270,7 @@ var settingGraph = {
                 
   </div>
                 
-  <div class="control-timeline">
+ <div class="control-timeline">
                     
     <div class="infomotion-timeline">
                         
@@ -286,21 +284,11 @@ var settingGraph = {
                         
       </div>
                         
-      <div class="timeline-wrapper">
-                            
-        <div id="timeline"></div>
-                            
-        <span id="minDate" class="enebular-min-date"></span>
-                            
-        <span id="maxDate" class="enebular-max-date"></span>
-                        
-      </div>
+      <div class="timeline-wrapper" id="timeline"></div>
                         
       <div class="enebular-clear-both"></div>
                     
     </div>
-                
-  </div>
                 
   <div class="enebular-clear-both"></div>
                 
@@ -345,8 +333,6 @@ var settingGraph = {
 
             var timeline = infomotionUI.timeline(
                     document.querySelector('#timeline'),
-                    document.querySelector('#minDate'),
-                    document.querySelector('#maxDate'),
                     document.querySelector('#btnControl')
             ).withRange([new Date('2016-12-30'), new Date()])
              .make();
