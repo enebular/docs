@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/enebular/docs.svg?style=svg)](https://circleci.com/gh/enebular/docs)
+
 # Preview
 
 https://enebular-docs.now.sh
