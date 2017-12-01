@@ -4,7 +4,7 @@
 
 ![](/_asset/images/enebular-developers-datasource2.png) 
 
-##API Gateway
+##API Gateway 
 
 ![](/_asset/images/enebular-developers-datasource-apigateway.png)
 

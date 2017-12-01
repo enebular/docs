@@ -4,10 +4,11 @@
 
 * [InfoMotion Tool](InfoMotion/InfoMotionTool.md)
 * [Upload InfoMotion](InfoMotion/UploadInfoType.md)
-* [API Reference](InfoMotion/APIReference.md)
+* [API Reference](InfoMotion/APIReference.md) 
+* [Sample flow](InfoMotion/CreateSampleFlow.md) 
 * [DataSource](InfoMotion/CreateDatasource.md) 
 * [Dashboard](InfoMotion/CreateInfomotion.md) 
 
-## Deploy/Share
+## Deploy/Share 
 
-* [Share Infomtion](Deploy/ShareInfoMotion/index.md)
+* [Share Infomtion](Deploy/ShareInfoMotion/index.md) 

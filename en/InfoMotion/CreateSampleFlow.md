@@ -21,34 +21,12 @@ Set timestamp node interval for every 10 seconds.
 
 The following script generates dummy data.
 
-```bash
-
-function getRandomNumber(min,max){
-    return Math.floor((Math.random() * max) + min);    
-}
-
-function getDateNow(){
-    return Date.now();
-}
-
-var countries = [
-    "Japan",
-    "USA",
-    "India",
-    "China",
-    "Germany"
-]
-
-function getCountry(){
-    var countryIndex = countries.length;
-    var index = getRandomNumber(0,countryIndex)
-    return countries[index]
-}
+```javascript
 
 var data = {
-    "datetime":getDateNow(),
-    "country":getCountry(),
-    "value":getRandomNumber(1,100)
+    "country": ["Japan","China","USA"][ parseInt(Math.random() * 3)],
+    "value": parseInt(Math.random() * 1000),
+    "created":Date.now()
 }
 
 msg.payload = data;
