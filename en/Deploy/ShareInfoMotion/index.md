@@ -18,7 +18,7 @@ Settings is composed of three parts.
 
 cache - default is blackhole which does not cache any data 
 
-daterange - set the initial start and end date 
+dateRange - set the initial start and end date 
 
 options - paths of plugins/infomotions 
 
@@ -48,7 +48,7 @@ options - paths of plugins/infomotions
 
 ### GraphContext 
 
-A graph context binds graphs and components. 
+A graphContext binds graphs and components. 
 
 Before we crate graphs and componets we need to set up a graphContext. 
 
@@ -87,7 +87,7 @@ make - creates a date picker
 ```
 
 ### Binding components to graphContext 
-When all parts are ready you can bind components to graphContext 
+When all components are ready they can be bound to graphContext. 
 
 ```javascript 
     graphContext 
@@ -103,7 +103,7 @@ graph settings is made up of 3 components.
 
 adapter - type of datasource adaptor.
 
-graph settings - settings for the infomotion.
+graph - settings for the infomotion.
 
 options - pluginPaths
 
@@ -131,7 +131,6 @@ var settingGraph = {
          "line type":"linear"
       },
       "v":[  
-
       ]
    },
    "options":{ 
@@ -150,7 +149,7 @@ var settingGraph = {
 }
 ```
 
-### Binding graph settings to a div 
+### Binding an InfoMotion to a div 
 
 ```javascript 
 

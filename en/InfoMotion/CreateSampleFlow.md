@@ -24,7 +24,7 @@ The following script generates dummy data.
 ```javascript
 
 var data = {
-    "country": ["Japan","China","USA"][ parseInt(Math.random() * 3)],
+    "lang": ["JP","CN","EN"][ parseInt(Math.random() * 3)],
     "value": parseInt(Math.random() * 1000),
     "created":Date.now()
 }
