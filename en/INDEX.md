@@ -4,16 +4,30 @@ An `InfoMotion` visualizes data of a `DataSource`.
 
 ![](/_asset/images/enebular-developers-aboutinfotype.png) 
 
-You can either use the default `InfoMotions`, purchase more complex graphs or create your own. 
+You can either use a default `InfoMotion`, purchase more complex graphs or create your own. 
 Here are a few samples of `InfomMotion` and `DataSource` 
 
-##Bar chart 
-Data and Graph image 
+```javascript
+// multiple pieces of data with the following key/values.
+{
+created:Number,
+lang:String,
+node_id:Number,
+ss:Number,
+uu:Number
+}
 
-##Line Chart  
-Data and Graph image 
+```
 
-##Pie Chart 
-Data and Graph image 
+####Bar Chart 
+![](/_asset/images/enebular-developers-template-bar.png) 
 
-To get started with creating an InfoMotion please continue to `InfoMotion Tool`   
+####Line Chart 
+
+![](/_asset/images/enebular-developers-template-line.png) 
+
+####Pie Chart 
+
+![](/_asset/images/enebular-developers-template-pie.png) 
+
+To get started with creating an InfoMotion please continue to `InfoMotion Tool`
