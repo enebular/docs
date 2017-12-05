@@ -7,8 +7,7 @@ In enebular select `InfoType` and click on `upload InfoMotion`
 
 ![](/_asset/images/enebular-developers-upload-infomotion.png) 
 
-As stated the required files are `plugin.js`, `plugin.css` and `plugin.json`. 
-Here you can choose to drag and drop or select files. 
+You can choose to drag and drop `plugin.js`, `plugin.css` and `plugin.json`. 
 
 If the files have been successfully uploaded 
 a preview of the InfoMotion will be displayed along with the 
@@ -17,4 +16,4 @@ a preview of the InfoMotion will be displayed along with the
 ![](/_asset/images/enebuar-developer-uploaded-infotype.png) 
 
 Now the Infomotion is loaded to Enebular let's see how we can 
-connect it to a [DataSource]() and view/edit it in [Dashboard]().  
+connect it to a [DataSource]() and view/edit it in [Dashboard](). 

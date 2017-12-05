@@ -38,9 +38,9 @@ InfoType settings modal
 -----------------------
 
 To make infotypes flexable to different data sets a settings schema 
-is needed. There are 4 types `text`, `list`, `select` and `bool`.
+is needed. There are 4 types `text`, `list`, `select` and `bool`. 
 
-An InfoType has a schmea and a default settings.
+An InfoType has a schmea and a default settings. 
 
 A basic key/value input setting. 
 

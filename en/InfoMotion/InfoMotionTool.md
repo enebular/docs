@@ -1,8 +1,7 @@
 #InfoMotion Tool
 
 In order to create an InfoMotion the infomotion-tool must be installed. 
-The infomotion-tool allows the developer to runs, test and edit locally. 
-Once the InfoMotion is completed intomotion-tool packages the scripts to be uploaded to enebular. 
+The infomotion-tool allows the developer to run, test and edit InfoMotions locally. Once the InfoMotion is completed intomotion-tool packages the scripts to be uploaded to enebular. 
  
 #Installing infomotion-tool 
 
@@ -18,7 +17,7 @@ Usage
 
 eit create [graph name]  = Creates an InfoType with the [graph name] 
 eit run [graph name]     = Runs [graph name] on localhost:3000 
-eit package [graph name] = Creates a packge to upload on enebular 
+eit package [graph name] = Creates files to upload on enebular 
 eit help                 = help 
 ```
 
@@ -120,7 +119,7 @@ for quick testing. Live and Daterange picker return this same piece of data.
 A usual package json for node.js for package handling. 
 For more information see [NPM](https://docs.npmjs.com/files/package.json). 
 
-#### plugin.css
+#### plugin.css 
 
 Stying for the InfoMotion. 
 
@@ -132,7 +131,7 @@ See [API Reference](/en/InfoMotion/APIReference) for more details.
 
 #### plugin.json 
 
-The plugin.json is created to supply the InfoMotion with sample data to preview the visualization.  
+The plugin.json is created to supply the InfoMotion with sample data to preview the visualization. 
 `sampleSettings` is a defualt setting to the InfoMotion. 
 `sampleData` is a data set that's passed to InfoMotion to visualize. 
 
@@ -150,7 +149,7 @@ The plugin.json is created to supply the InfoMotion with sample data to preview 
 The default graph is `DataLogger` InfoMotion. 
 `Data Logger` simply logs data to the screen. 
 
-Here are avaiable templates that can be pre-made. 
+Here are available templates that are be pre-made. 
 
 ``` 
 eit create myfirstgraph -t barchart 

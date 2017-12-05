@@ -5,7 +5,7 @@
 * [InfoMotion Tool](InfoMotion/InfoMotionTool.md)
 * [Upload InfoMotion](InfoMotion/UploadInfoType.md)
 * [API Reference](InfoMotion/APIReference.md) 
-* [Sample flow](InfoMotion/CreateSampleFlow.md) 
+* [Sample Flow](InfoMotion/CreateSampleFlow.md) 
 * [DataSource](InfoMotion/CreateDatasource.md) 
 * [Dashboard](InfoMotion/CreateInfomotion.md) 
 
