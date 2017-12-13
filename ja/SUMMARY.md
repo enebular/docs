@@ -4,7 +4,6 @@ lastUpdated: 2017-12-01
 
 # Summary
 
-* [Introduction](INDEX.md)
 * [GetStarted](GetStarted/index.md)
 
 ## Flow
