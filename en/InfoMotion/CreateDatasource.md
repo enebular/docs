@@ -1,16 +1,16 @@
-##Connecting Datasource 
+##Connecting Datasource
 
-`Milkcocoa`, `API Gateway`, `Pubnub` are the available datasources for InfoMotion. 
+`Milkcocoa`, `API Gateway`, `Pubnub` are the available datasources for InfoMotion.
 
-##Milkcocoa 
+##Milkcocoa
 See [Sample Flow]() to get started with a simple data flow with Milkcocoa.
 
-![](/_asset/images/enebular-developers-datasource2.png) 
+![](/_asset/images/InfoMotion/enebular-developers-datasource2.png)
 
-##API Gateway 
+##API Gateway
 
-![](/_asset/images/enebular-developers-datasource-apigateway.png)
+![](/_asset/images/InfoMotion/enebular-developers-datasource-apigateway.png)
 
-##Pubnub 
+##Pubnub
 
 coming soon.

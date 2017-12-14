@@ -1,47 +1,51 @@
-##Infomotion Dashboard 
+---
+lastUpdated: 2017-12-14
+---
 
-With dataSource created and an InfoType uploaded select「Create InfoMotion」to create a dashboard. 
+# InfoMotion ダッシュボード
 
-A Dashboard requires a `name`, `discription`, `access` and `type`. 
+DataSource の作成と InfoType のアップロードが完了したら、InfoMotioin ダッシュボード が作成できます。
 
-![](/_asset/images/enebular-developers-create-dashboard.png) 
+enebular の管理画面の Create InfoMotion から作成できます。
 
-Click 「add graph」to display the side bar where InfoMotions 
-are created.
+- `name`：名前
+- `description`：説明
+- `default previllege`：デフォルトのアクセス権（詳しくは [Access](../Access/index.md)を ご覧ください）
+- `category`：カテゴリー
 
-Creating an InfoMotion requires a `name`, `type` and `datasource`. 
+![](/_asset/images/InfoMotion/enebular-developers-create-dashboard.png)
 
-![](/_asset/images/enebular-developers-create-infomotion.png) 
+「Add graph」を押すとグラフ作成を行うサイドバーが出てきます。以下項目を埋めましょう。
 
-Once settings is filed out add graph by clicking the plus to display the infomotion on the dashboard. 
+- `name`：名前
+- `type`：グラフのタイプ（infomotion-toolで作成したもの）
+- `datasource`：利用する DataSource
+- グラフ固有のスキーマ設定
 
-![](/_asset/images/enebular-developers-display-infomotion.png) 
+![](/_asset/images/InfoMotion/enebular-developers-create-infomotion.png)
 
-InfoMOtion Dashboards can be customizable for specific needs. 
-Please see [infomotion share]() for more details. 
+項目を埋めたら Add graph で作成後、プラスボタンでダッシュボードに追加できます。
 
-## Dashboard options 
-`save` - saves dashboard positions. 
+![](/_asset/images/InfoMotion/enebular-developers-display-infomotion.png)
 
-`filters` - create filters for InfoMotions. 
+## ダッシュボードの操作
 
-`share` - share dashboard source code. 
+ダッシュボードでいくつかの操作ができます。
 
-![](/_asset/images/enebular-developer-dashboard-options.png) 
+- `save` - ダッシュボードの配置を保存します。
+- `filters` - データにフィルターをかけることができます。
+- `share` - ダッシュボードを外部に貼り付けることができます。詳しくは [Share InfoMotion](../Deploy/ShareInfoMotion.md) をご覧ください。
 
-## InfoMotion options 
+![](/_asset/images/InfoMotion/enebular-developer-dashboard-options.png)
 
-*Order left to right.
+## グラフの操作
 
-`download data` - download a json file of InfoMotion data 
+グラフに対してもいくつかの操作ができます。
 
-`share infomotion` - share single InfoMotion 
+- `download data` - グラフのデータを json 形式でダウンロードできます。
+- `share infomotion` - グラフをシェアできます。
+- `filter` - データにフィルターをかけることができます。
+- `edit` - グラフの設定を変更できます。
+- `remove` - ダッシュボードからグラフを削除します。
 
-`filter` - filter InfoMotion 
-
-`edit` - open sidebar to edit InfoMotion 
-
-`remove` - remove Infomotion from dashboard 
-
-![](/_asset/images/enebular-developers-infomotion-options.png) 
-
+![](/_asset/images/InfoMotion/enebular-developers-infomotion-options.png)

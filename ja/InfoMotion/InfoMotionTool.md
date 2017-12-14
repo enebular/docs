@@ -1,184 +1,221 @@
-#InfoMotion Tool
+---
+lastUpdated: 2017-12-01
+---
 
-In order to create an InfoMotion the infomotion-tool must be installed. 
-The infomotion-tool allows the developer to run, test and edit InfoMotions locally. Once the InfoMotion is completed intomotion-tool packages the scripts to be uploaded to enebular. 
- 
-#Installing infomotion-tool 
+# InfoMotion Tool
 
-```
-#Installing globally。
-sudo npm install infomotion-tool -g 
-```
+InfoMotion を作成するには `infomotion-tool` が必要です。
 
-#Commands 
+`infomotion-tool` を使ってローカル環境で編集とテストができます。完成した InfoMotion はパッケージにして enebular にアップロードすることができます。
+
+## infomotion-tool のインストール
 
 ```
-Usage
-
-eit create [graph name]  = Creates an InfoType with the [graph name] 
-eit run [graph name]     = Runs [graph name] on localhost:3000 
-eit package [graph name] = Creates files to upload on enebular 
-eit help                 = help 
+sudo npm install infomotion-tool -g
 ```
 
-Creating a graph
------
+## 利用可能なコマンド
+
+```
+eit create [graph name]  = Creates an InfoType with the [graph name]
+eit run [graph name]     = Runs [graph name] on localhost:3000
+eit package [graph name] = Creates files to upload on enebular
+eit help                 = help
+```
+
+## グラフの作成
+
+以下のコマンドから始めます。
 
 ```
 eit create myfirstgraph
 ```
 
-`create` builds the following files
+以下のファイルが作成されます。
 
-`datasource.json`,
-`package.json`,
-`plugin.css`,
-`plugin.js`,
-`plugin.json`,
+- `datasource.json`
+- `package.json`
+- `plugin.css`
+- `plugin.js`
+- `plugin.json`
 
-![](/_asset/images/enebular-developers-about-infomotion-files.png) 
- 
-#### datasource.json 
+![](/_asset/images/InfoMotion/enebular-developers-about-infomotion-files.png)
 
-This file allows you to connect your infomotion to datasources. 
-You can use one adapter per infomotion. 
+### datasource.json
 
-The adapter types are 
-`random`, `mock`, `milkcocoa`,`pubnnub`,`ajax` and `apigateway` 
+このファイルはテスト用途です。
 
-For `random`, `milkcocoa`,`ajax` and `apigateway` use the following. 
-Replace `milkcocoa` with any other adapter just listed. 
+ブラウザでテストする際に利用する DataSource の指定ができます。
 
-```
-  {
-    "adaptor": "milkcocoa",
-    "apikey": "api123",
-    "apisecret": "secret123",
-    "appId": "appId123",
-    "dataStore": "test",
-    "id": "milkcocoa",
-    "title": "milkcocoa",
-    "name": "milkcocoa"
-  }
-  * If no apikey or secret leave blank.
-```
+`adaptor` に DataSource の種類を指定します。具体的には以下があります。
 
-For `pubnub` 
+- `random`
+- `mock`
+- `milkcocoa`
+- `pubnnub`
+- `ajax`
+- `apigateway`
 
-```
-  {
-    "adaptor": "pubnub",
-    "pubnub": {
-                "publishKey": "",
-                "subscribeKey": "",
-                "ssl": true,
-            },
-    "chanel" : "sampleChannel",
-    "count" : 100
-    "appId": "pubnub",
-    "id": "pubnub",
-    "title": "pubnub",
-    "name": "pubnub"
-   }        
+具体的には以下のように指定します。
+
+#### Milkcocoa adaptor
+
+[Milkcocoa](https://mlkcca.com) のデータを使います。いくつかの値を自分のアプリのもので置き換えてください。
+
+```json
+[{
+  "adaptor": "milkcocoa",
+  "apikey": "YOUR_API_KEY",
+  "apisecret": "YOUR_API_SECRET",
+  "appId": "YOUR_APP_ID",
+  "dataStore": "YOUR_DATASTORE",
+  "id": "milkcocoa",
+  "title": "milkcocoa",
+  "name": "milkcocoa"
+}]
 ```
 
-For `random`
+#### Pubnub adaptor
 
-Random is give as a default datastore and generates sets of the following data schema.
+[Pubnub](https://pubnub.com) のデータを使います。いくつかの値を自分のアプリのもので置き換えてください。
 
+```json
+[{
+  "adaptor": "pubnub",
+  "pubnub": {
+    "publishKey": "YOUR_PUBLISH_KEY",
+    "subscribeKey": "YOUR_SUBSCRIBE_KEY",
+    "ssl": true,
+  },
+  "chanel" : "YOUR_CHANNEL",
+  "count" : 100
+  "appId": "pubnub",
+  "id": "pubnub",
+  "title": "pubnub",
+  "name": "pubnub"
+}]
 ```
-{
-	country:String,
-	value:Number
-}
+
+#### Random adaptor
+
+ランダムに生成されるデータを使います。
+
+```json
+[{
+  "adaptor": "random",
+  "id": "random",
+  "title": "random",
+  "name": "random"
+}]
 ```
 
-For Mock Adapter 
-
-Mock adapter allows for an array of data to be passed to the InfoMotion 
-for quick testing. Live and Daterange picker return this same piece of data. 
+データは以下のようなスキームになります。
 
 ```javascript
-[
-    {
-        "adaptor": "mock",
-        "apikey": "",
-        "apisecret": "",
-        "appId": "",
-        "dataStore": "mock",
-        "id": "mock",
-        "title": "mock",
-        "name": "mock"
-        "data": [{"id": "a", "value": 1}, {"id": "b", "value": 21}, {"id": "c", "value": 512}]
-    }
-]
-```
-
-#### package.json 
-
-A usual package json for node.js for package handling. 
-For more information see [NPM](https://docs.npmjs.com/files/package.json). 
-
-#### plugin.css 
-
-Stying for the InfoMotion. 
-
-#### plugin.js 
-
-This file contains the main logic for the InfoMotion. 
-D3.js is globally installed by default. 
-See [API Reference](/en/InfoMotion/APIReference) for more details. 
-
-#### plugin.json 
-
-The plugin.json is created to supply the InfoMotion with sample data to preview the visualization. 
-`sampleSettings` is a defualt setting to the InfoMotion. 
-`sampleData` is a data set that's passed to InfoMotion to visualize. 
-
-``` 
 {
-	"sampleSettings":{
-	},
-	"sampleData":[
-	]
+  country: String,
+  value: Number
 }
 ```
 
-#InfoType templates 
+#### Mock Adaptor
 
-The default graph is `DataLogger` InfoMotion. 
-`Data Logger` simply logs data to the screen. 
+素早くテストするために、自分で書いたデータを使うことができます。データ数が少ない場合、同じデータが繰り返して補完されます。
 
-Here are available templates that are be pre-made. 
 
-``` 
-eit create myfirstgraph -t barchart 
-eit create myfirstgraph -t linechart 
-eit create myfirstgraph -t piechart 
-eit create myfirstgraph -t map 
+```json
+[{
+  "adaptor": "mock",
+  "id": "mock",
+  "title": "mock",
+  "name": "mock"
+  "data": [{"id": "a", "value": 1}, {"id": "b", "value": 21}, {"id": "c", "value": 512}]
+}]
 ```
 
-#Running locally in the browser 
+#### Ajax Adaptor
 
-The `run` command 
+comming soon.
 
-``` 
-cd myfirstgraph 
-eit run 
-open http://localhost:3000 
-``` 
+### API Gateway Adaptor
 
-#Packaging 
+comming soon.
 
-Once the InfoMotion is ready to be uploaded to Enebualr run the command. 
+### package.json
 
-```bash 
-eit package 
-``` 
+npm のプロジェクトで利用するものです。詳しくは [NPM 公式サイトのドキュメント](https://docs.npmjs.com/files/package.json)をご覧ください。
 
-This will create a target folder containing three files.
-`plugin.js`, `plugin.css` and `plugin.json`.
+### plugin.css
 
-![](/_asset/images/enebular-developers-build.png)
+グラフで利用する CSS です。グローバルに指定されるので、衝突しないように命名に注意してください。
 
-Continue to [Upload InfoMotion]() to upload the InfoMotion to enebular.
+### plugin.js
+
+グラフの主なロジックが入った、メインとなるファイルです。
+
+デフォルトで D3.js がグローバルにインストールされています。詳しくは [API Reference](./APIReference.md) をご覧ください。
+
+### plugin.json
+
+グラフを enebular にアップロードした際のプレビューのために必要なファイルです。
+
+`sampleSettings` はデフォルトのスキーマ設定、`sampleData` はサンプルデータです。
+
+```json
+{
+  "defaultSettings": {
+    "label" : "country",
+    "value": "v"
+  },
+  "sampleData": [
+    {
+      "country": "JP",
+      "v": 1
+    },
+    {
+      "country": "CN",
+      "v": 2
+    }
+  ]
+}
+```
+
+## テンプレート
+
+デフォルトで作成されるグラフはデータをそのまま表示する `DataLogger` です。
+
+以下に、利用可能なテンプレートを示します。
+
+```
+eit create myfirstgraph -t barchart
+eit create myfirstgraph -t linechart
+eit create myfirstgraph -t piechart
+eit create myfirstgraph -t map
+```
+
+## ブラウザでのテスト
+
+以下のコマンドで http://localhost:3000 にアクセスすることで、テストできます。
+
+```
+cd myfirstgraph
+eit run
+```
+
+## パッケージング
+
+編集が終わったら、以下でパッケージできます。
+
+```bash
+eit package
+```
+
+以下の3つが入った `target` というフォルダが作成されます。
+
+- `plugin.js`
+- `plugin.css`
+- `plugin.json`
+
+![](/_asset/images/InfoMotion/enebular-developers-build.png)
+
+次に、[Upload InfoMotion](./UploadInfoType.md) で enebular へのグラフのアップロード方法を学びましょう。

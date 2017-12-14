@@ -1,51 +1,60 @@
+---
+lastUpdated: 2017-12-14
+---
+
 InfoType API
 ============
 
-plugin.js created by `infomotion-tool` has a set of apis.
-addData, clearData, resize and getEl.
+`infomotion-tool` で作成された `plugin.js` はいくつかの API を持っています。
 
 addData
 -------
 
-addData is called when date range is selected or timeline is toggled.
+Datarange picker かタイムラインが変更されたタイミングで呼ばれます。
 
-* Parameter: data 
+* Parameter: data
 
-The data passed is based on the daterange or toggled dates/time. 
+`data`　は Datarange picker とタイムラインで指定された範囲のものになります。
 
-clearData 
---------- 
+clearData
+---------
 
-When date range is selected, timeline is toggled or live mode is activted clearData is called.
+Datarange picker かタイムラインが変更されたタイミングで addData の前に呼ばれます。
 
 * Parameter: N/A
 
 resize
 ------
 
-When the browser window changes size resize is called. 
+ブラウザウインドウのサイズが変更されたら呼ばれます。
 
 * Parameter: option.width, option.height
 
 getEl
 -----
 
-Returns the dom
+DOM を返します。
 
 * Parameter： N/A
 
-InfoType settings modal 
+InfoType のスキーマ
 -----------------------
 
-To make infotypes flexable to different data sets a settings schema 
-is needed. There are 4 types `text`, `list`, `select` and `bool`. 
+柔軟にデータを利用するために、4種類のグラフのスキーマを用意しています。
 
-An InfoType has a schmea and a default settings. 
+- text
+- list
+- select
+- bool
 
-A basic key/value input setting. 
+スキーマに加え、デフォルトの設定を指定することができます。
+
+### text
+
+基本的な key-value の設定です。
 
 ```
-* Schmea 
+* Schmea
 
 {
   type: "text",
@@ -54,73 +63,77 @@ A basic key/value input setting.
 
 * Default
 {
-    "tag":"tag-name"
+  "tag" : "tag-name"
 }
 ```
 
-![](/_asset/images/enebular-developers-type-text.png)
+![](/_asset/images/InfoMotion/enebular-developers-type-text.png)
 
-A list of key/value input settings. 
+### list
 
-```
-* Schema 
-{
-    type: "list",
-    name: "list-of-tags",
-    help: "Set name of each tag",
-    children: [{
-        type: "text",
-        name: "tag"
-    }]
-}
-
-* Default 
-{
-    "list-of-tags":[
-        {tag:"tag1"},
-        {tag:"tag2"},
-        {tag:"tag3"}
-    ]
-}
-```
-
-![](/_asset/images/enebular-developers-type-list.png)
-
-A select option setting.
+基本的な key-value のリストです。
 
 ```
 * Schema
 {
-    type: "select",
-    name: "mode",
-    help: "please select a mode",
-    options: ["mode1", "mode2"]
+  type: "list",
+  name: "list-of-tags",
+  help: "Set name of each tag",
+  children: [{
+    type: "text",
+    name: "tag"
+  }]
 }
 
-* Default 
-
+* Default
 {
-    "mode":"mode2"
+  "list-of-tags":[
+    {tag:"tag1"},
+    {tag:"tag2"},
+    {tag:"tag3"}
+  ]
 }
 ```
 
-![](/_asset/images/enebular-developers-type-select.png)
+![](/_asset/images/InfoMotion/enebular-developers-type-list.png)
 
-An on/off switch.
+### select
+
+用意された選択肢から選択する場合に利用します。
 
 ```
 * Schema
 {
-	type : "bool",
-	name : "switch",
-  	help : "turning on will display something"
+  type: "select",
+  name: "mode",
+  help: "please select a mode",
+  options: ["mode1", "mode2"]
 }
 
-* Default 
-
+* Default
 {
-    "switch":true
+  "mode":"mode2"
 }
 ```
 
-![](/_asset/images/enebular-developers-type-switch.png)
+![](/_asset/images/InfoMotion/enebular-developers-type-select.png)
+
+### bool
+
+true / false を選択させるときに利用します。
+
+```
+* Schema
+{
+  type : "bool",
+  name : "switch",
+  help : "turning on will display something"
+}
+
+* Default
+{
+  "switch": true
+}
+```
+
+![](/_asset/images/InfoMotion/enebular-developers-type-switch.png)

@@ -9,12 +9,12 @@ addData
 
 addData is called when date range is selected or timeline is toggled.
 
-* Parameter: data 
+* Parameter: data
 
-The data passed is based on the daterange or toggled dates/time. 
+The data passed is based on the daterange or toggled dates/time.
 
-clearData 
---------- 
+clearData
+---------
 
 When date range is selected, timeline is toggled or live mode is activted clearData is called.
 
@@ -23,7 +23,7 @@ When date range is selected, timeline is toggled or live mode is activted clearD
 resize
 ------
 
-When the browser window changes size resize is called. 
+When the browser window changes size resize is called.
 
 * Parameter: option.width, option.height
 
@@ -34,18 +34,18 @@ Returns the dom
 
 * Parameter： N/A
 
-InfoType settings modal 
+InfoType settings modal
 -----------------------
 
-To make infotypes flexable to different data sets a settings schema 
-is needed. There are 4 types `text`, `list`, `select` and `bool`. 
+To make infotypes flexable to different data sets a settings schema
+is needed. There are 4 types `text`, `list`, `select` and `bool`.
 
-An InfoType has a schmea and a default settings. 
+An InfoType has a schmea and a default settings.
 
-A basic key/value input setting. 
+A basic key/value input setting.
 
 ```
-* Schmea 
+* Schmea
 
 {
   type: "text",
@@ -58,12 +58,12 @@ A basic key/value input setting.
 }
 ```
 
-![](/_asset/images/enebular-developers-type-text.png)
+![](/_asset/images/InfoMotion/enebular-developers-type-text.png)
 
-A list of key/value input settings. 
+A list of key/value input settings.
 
 ```
-* Schema 
+* Schema
 {
     type: "list",
     name: "list-of-tags",
@@ -74,7 +74,7 @@ A list of key/value input settings.
     }]
 }
 
-* Default 
+* Default
 {
     "list-of-tags":[
         {tag:"tag1"},
@@ -84,7 +84,7 @@ A list of key/value input settings.
 }
 ```
 
-![](/_asset/images/enebular-developers-type-list.png)
+![](/_asset/images/InfoMotion/enebular-developers-type-list.png)
 
 A select option setting.
 
@@ -97,14 +97,14 @@ A select option setting.
     options: ["mode1", "mode2"]
 }
 
-* Default 
+* Default
 
 {
     "mode":"mode2"
 }
 ```
 
-![](/_asset/images/enebular-developers-type-select.png)
+![](/_asset/images/InfoMotion/enebular-developers-type-select.png)
 
 An on/off switch.
 
@@ -116,11 +116,11 @@ An on/off switch.
   	help : "turning on will display something"
 }
 
-* Default 
+* Default
 
 {
     "switch":true
 }
 ```
 
-![](/_asset/images/enebular-developers-type-switch.png)
+![](/_asset/images/InfoMotion/enebular-developers-type-switch.png)

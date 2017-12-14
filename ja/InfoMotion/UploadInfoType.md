@@ -1,19 +1,19 @@
-#Uploading to Enebular 
+---
+lastUpdated: 2017-12-14
+---
 
-Once the InfoMotion has been packaged [see InfoMotion tool]() 
-The infomotion is ready to be uploaded. 
+# InfoMotion を enebular へのアップロード
 
-In enebular select `InfoType` and click on `upload InfoMotion` 
+`infomotion-tool` を使ってパッケージしたものを enebular にアップロードにできます。
 
-![](/_asset/images/enebular-developers-upload-infomotion.png) 
+enebular の管理画面にて `InfoType` を選択し、`upload InfoMotion` を押します。
 
-You can choose to drag and drop `plugin.js`, `plugin.css` and `plugin.json`. 
+![](/_asset/images/InfoMotion/enebular-developers-upload-infomotion.png)
 
-If the files have been successfully uploaded 
-a preview of the InfoMotion will be displayed along with the 
-`sampleData` and `sampleSettings` from the plugin.json. 
+パッケージした `target` フォルダにある `plugin.js`、`plugin.css`、`plugin.json`をドラッグ＆ドロップして、カテゴリを選択してアップロードします。
 
-![](/_asset/images/enebuar-developer-uploaded-infotype.png) 
+アップロードが完了したら、`plugin.json` で指定したスキーマとサンプルデータをもとにプレビューが表示されます。
 
-Now the Infomotion is loaded to Enebular let's see how we can 
-connect it to a [DataSource]() and view/edit it in [Dashboard](). 
+![](/_asset/images/InfoMotion/enebuar-developer-uploaded-infotype.png)
+
+グラフの型ができたので、次は [DataSource](./CreateDatasource.md) で enebular への DataSource の追加の仕方を学びましょう。
