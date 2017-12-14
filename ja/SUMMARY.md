@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2017-12-01
+lastUpdated: 2017-12-14
 ---
 
 # Summary
@@ -8,7 +8,9 @@ lastUpdated: 2017-12-01
 
 ## Flow
 
-* [Flowの作成](Flow/CreateFlow.md)
+* [Introduction](Flow/CreateFlow.md)
+* Flow Example
+  * [Milkcocoa](Flow/FlowExampleMilkcocoa.md)
 * [Flowの編集・公開・インポート](Flow/EditFlow.md)
 
 ## InfoMotion
@@ -17,8 +19,10 @@ lastUpdated: 2017-12-01
 * [InfoMotion Tool](InfoMotion/InfoMotionTool.md)
 * [Upload InfoMotion](InfoMotion/UploadInfoType.md)
 * [DataSource](InfoMotion/CreateDatasource.md)
+  * [API Gateway](InfoMotion/DatasourceAPIGateway.md)
 * [Dashboard](InfoMotion/CreateInfomotion.md)
 * [API Reference](InfoMotion/APIReference.md)
+
 
 
 ## Deploy/Share

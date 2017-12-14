@@ -18,7 +18,7 @@ Flow である場所にデータを保存して、そのデータを DataSource 
 
 ## Milkcocoa DataSource の場合
 
-[Milkcocoa](https://mlkcca.com/) DataSource の場合は以下のように設定します。
+[Milkcocoa](https://mlkcca.com/) DataSource の場合は以下のように設定します。Milkcocoa へデータを保存するフローの作成方法は [Example: Milkcocoa](../Flow/FlowExampleMilkcocoa.md) をご覧ください。
 
 ![](https://i.gyazo.com/7b0b7eebebe0828e564fdcb2863a47b9.png)
 
@@ -37,7 +37,7 @@ Flow である場所にデータを保存して、そのデータを DataSource 
 
 ### API Gateway DataSource の場合
 
-API Gateway DataSource の場合は以下のように設定します。
+API Gateway DataSource の場合は以下のように設定します。[DataSource - API Gateway](./DatasourceAPIGateway.md) で簡単な作成方法を学ぶことができます。
 
 ![](https://i.gyazo.com/da5d21890b47ed034526fee49e247e54.png)
 

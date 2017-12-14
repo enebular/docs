@@ -49,12 +49,12 @@ eit create myfirstgraph
 
 `adaptor` に DataSource の種類を指定します。具体的には以下があります。
 
-- `random`
-- `mock`
 - `milkcocoa`
 - `pubnnub`
-- `ajax`
 - `apigateway`
+- `random`
+- `mock`
+
 
 具体的には以下のように指定します。
 
@@ -96,6 +96,10 @@ eit create myfirstgraph
 }]
 ```
 
+### API Gateway Adaptor
+
+comming soon.
+
 #### Random adaptor
 
 ランダムに生成されるデータを使います。
@@ -132,14 +136,6 @@ eit create myfirstgraph
   "data": [{"id": "a", "value": 1}, {"id": "b", "value": 21}, {"id": "c", "value": 512}]
 }]
 ```
-
-#### Ajax Adaptor
-
-comming soon.
-
-### API Gateway Adaptor
-
-comming soon.
 
 ### package.json
 
