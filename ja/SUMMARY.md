@@ -4,14 +4,15 @@ lastUpdated: 2017-12-14
 
 # Summary
 
-* [GetStarted](GetStarted/index.md)
+* [Get Started](GetStarted/index.md)
 
 ## Flow
 
 * [Introduction](Flow/CreateFlow.md)
 * Flow Example
   * [Milkcocoa](Flow/FlowExampleMilkcocoa.md)
-* [Flowの編集・公開・インポート](Flow/EditFlow.md)
+* [Flow Settings](Flow/FlowSettings.md)
+* [Publish Flow](Flow/PublishFlow.md)
 
 ## InfoMotion
 

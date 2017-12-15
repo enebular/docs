@@ -3,9 +3,9 @@
 
 Milkcocoa にデータを保存するフローを作成します。Milkcocoa DataSource として利用できます。
 
-## DataSourceを確認する（Milkcocoa DataSource の場合）
+## DataSource を確認
 
-今回、操作したい DataSource を確認しておきます。この Flow を作成する前に、Milkcocoa の[チュートリアルページのMilkcocoaを使う準備をする](https://mlkcca.com/tutorial/page2.html)を参考に、アプリを作成して `app_id` と、Milkcocoa 管理画面内の「認証」タブから作成出来る`API Key`と`API Secret`を控えておいて下さい。
+今回、操作したい DataSource を確認しておきます。この Flow を作成する前に、Milkcocoa の[チュートリアルページの Milkcocoa を使う準備をする](https://mlkcca.com/tutorial/page2.html)を参考に、アプリを作成して `app_id` と、Milkcocoa 管理画面内の「認証」タブから作成出来る`API Key`と`API Secret`を控えておいて下さい。
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_01.png)
 
@@ -14,9 +14,9 @@ DataSource 対象のデータストアを確認します。今回の場合、mbe
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_02.png)
 
 
-## Data Flowを起動
+## Data Flow を起動
 
-Data Flowを準備してDataSourceに向けてデータを加工して入力していきます。
+Data Flow を準備してDataSourceに向けてデータを加工して入力していきます。
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_12.png)
 
@@ -24,9 +24,9 @@ Edit Flow ボタンをクリックします。
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_13.png)
 
-Flow Editorが別ウィンドウで開きます。
+Flow Editor が別ウィンドウで開きます。
 
-## DataSourceにデータを加工する例
+## DataSource にデータを加工する例
 
 ### 今回の仕組み
 
@@ -54,12 +54,12 @@ functionノードは以下の設定を行います。
 
 このスクリプトは、Milkcocoaに対して0～1023のランダム値を送る内容です。
 
-<div>[html]
+```html
 msg.payload = {
     v:Math.floor(Math.random() * 1023)
 }
 return msg;
-[/html]</div>
+```
 
 ### Milkcocoa出力ノードの設定
 

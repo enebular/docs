@@ -1,6 +1,8 @@
 ---
-lastUpdated: 2017-12-01
+lastUpdated: 2017-12-15
 ---
+
+# Flow の設定
 
 Flowを選択すると、Flowの詳細画面に移動します。
 
@@ -18,7 +20,7 @@ Flowの詳細画面で出来ることは以下です。
 * Flowの削除
 * Flowの公開
 
-# Flowの編集・削除
+## Flowの編集・削除
 
 Edit Flow ボタンをクリックすることで、Flow編集画面を立ち上げます。
 
@@ -28,26 +30,6 @@ Edit Flow ボタンをクリックすることで、Flow編集画面を立ち上
 
 ![image.png (73.3 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_04.png)
 
-# アクセス権の編集・作成
+## アクセス権の編集・作成
 
 →　[アクセス権の編集・作成](/Access)
-
-# Flowの公開・公開されたFlowのインポート
-
-Publishボタンからフローを公開することが出来ます。公開されたフローは他のユーザーがインポートすることができます。
-
-![image.png (98.7 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_05.png)
-
-公開されたフローは、上部のグローバルナビの Discover から探すことが出来ます。
-
-![image.png (51.4 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_06.png)
-
-![image.png (168.3 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_07.png)
-
-公開されたフローのインポートは、フロー情報の Forkボタンで選択したプロジェクトにインポートできます。
-
-![image.png (85.0 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_08.png)
-
-![image.png (85.4 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_09.png)
-
-
