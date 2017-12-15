@@ -1,3 +1,7 @@
+---
+lastUpdated: 2017-12-15
+---
+
 InfoType API
 ============
 
@@ -38,9 +42,16 @@ InfoType settings modal
 -----------------------
 
 To make infotypes flexable to different data sets a settings schema
-is needed. There are 4 types `text`, `list`, `select` and `bool`.
+is needed. There are 4 types
+
+- `text`
+- `list`
+- `select`
+- `bool`.
 
 An InfoType has a schmea and a default settings.
+
+### text
 
 A basic key/value input setting.
 
@@ -54,72 +65,76 @@ A basic key/value input setting.
 
 * Default
 {
-    "tag":"tag-name"
+  "tag" : "tag-name"
 }
 ```
 
 ![](/_asset/images/InfoMotion/enebular-developers-type-text.png)
+
+### list
 
 A list of key/value input settings.
 
 ```
 * Schema
 {
-    type: "list",
-    name: "list-of-tags",
-    help: "Set name of each tag",
-    children: [{
-        type: "text",
-        name: "tag"
-    }]
+  type: "list",
+  name: "list-of-tags",
+  help: "Set name of each tag",
+  children: [{
+    type: "text",
+    name: "tag"
+  }]
 }
 
 * Default
 {
-    "list-of-tags":[
-        {tag:"tag1"},
-        {tag:"tag2"},
-        {tag:"tag3"}
-    ]
+  "list-of-tags":[
+    {tag:"tag1"},
+    {tag:"tag2"},
+    {tag:"tag3"}
+  ]
 }
 ```
 
 ![](/_asset/images/InfoMotion/enebular-developers-type-list.png)
+
+### select
 
 A select option setting.
 
 ```
 * Schema
 {
-    type: "select",
-    name: "mode",
-    help: "please select a mode",
-    options: ["mode1", "mode2"]
+  type: "select",
+  name: "mode",
+  help: "please select a mode",
+  options: ["mode1", "mode2"]
 }
 
 * Default
-
 {
-    "mode":"mode2"
+  "mode":"mode2"
 }
 ```
 
 ![](/_asset/images/InfoMotion/enebular-developers-type-select.png)
+
+### bool
 
 An on/off switch.
 
 ```
 * Schema
 {
-	type : "bool",
-	name : "switch",
-  	help : "turning on will display something"
+  type : "bool",
+  name : "switch",
+  help : "turning on will display something"
 }
 
 * Default
-
 {
-    "switch":true
+  "switch": true
 }
 ```
 

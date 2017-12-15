@@ -20,7 +20,7 @@ lastUpdated: 2017-12-14
 * [InfoMotion Tool](InfoMotion/InfoMotionTool.md)
 * [Upload InfoMotion](InfoMotion/UploadInfoType.md)
 * [DataSource](InfoMotion/CreateDataSource.md)
-  * [API Gateway](InfoMotion/DatasourceAPIGateway.md)
+  * [API Gateway](InfoMotion/DataSourceAPIGateway.md)
 * [Dashboard](InfoMotion/CreateInfoMotion.md)
 * [API Reference](InfoMotion/APIReference.md)
 * [Share Infomtion](InfoMotion/ShareInfoMotion.md)

@@ -16,4 +16,4 @@ enebular の管理画面にて `InfoType` を選択し、`upload InfoMotion` を
 
 ![](/_asset/images/InfoMotion/enebuar-developer-uploaded-infotype.png)
 
-グラフの型ができたので、次は [DataSource](./CreateDatasource.md) で enebular への DataSource の追加の仕方を学びましょう。
+グラフの型ができたので、次は [DataSource](./CreateDataSource.md) で enebular への DataSource の追加の仕方を学びましょう。

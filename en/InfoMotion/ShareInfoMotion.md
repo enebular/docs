@@ -2,24 +2,27 @@
 lastUpdated: 2017-12-14
 ---
 
-# Share InfoMotioin
+# Share infomotion
 
-ダッシュボードを外部サイトへ埋め込む場合、API を使って自由にダッシュボードの表示をカスタマイズできます。
+The following code is subject to change.
 
-埋め込みには以下の2つのファイルを読み込む必要があります。
+The InfoMotion source code gives developers a little more freedom in customizing or altering the behaviour of their Dashboards.
+
+
+infomotion and infomotionUI script tags are needed to use infomotion.
 
 ```html
 <script src="http://enebular-v2.herokuapp.com/emi/enebular-infomotion/infomotion.js"></script>
 <script src="http://enebular-v2.herokuapp.com/emi/enebular-infomotion/infomotionUI.js"></script>
 ```
 
-### settings
+### Settings for graph component
 
-ダッシュボードの設定です。3つの設定があります。
+Settings is composed of three parts.
 
-- cache - キャッシュを使用するかどうかを設定できます。デフォルトは `blackhole` でキャッシュを使用しない設定になっています。
-- dateRange - Datarange picker のデフォルト値を設定できます。
-- options - プラグインのURLを指定しています。ダッシュボードでシェアしたときに自動で生成されるので手入力で打つ必要はありません。
+- cache - default is blackhole which does not cache any data
+- dateRange - set the initial start and end date
+- options - paths of plugins/infomotions
 
 ```javascript
 var settings = {
@@ -35,9 +38,9 @@ var settings = {
 
 ### GraphContext
 
-グラフとコンポーネントをバインドします。
+A graphContext binds graphs and components.
 
-グラフやコンポーネントを作る前に、 `graphContext` を作成する必要があります。
+Before we crate graphs and componets we need to set up a graphContext.
 
 ```javascript
 var graphContext = infomotion.graphContext(settings);
@@ -45,10 +48,8 @@ var graphContext = infomotion.graphContext(settings);
 
 ### DatePicker
 
-日付指定コンポーネントです。
-
-- withRange([start, end]) - 開始と終了をしていします。
-- make() - コンポーネントを作成します。
+- withRange - start and end date
+- make - creates a date picker
 
 ```javascript
 var datePicker = infomotionUI.datePicker(document.querySelector('#enebularDatePicker'))
@@ -57,8 +58,6 @@ var datePicker = infomotionUI.datePicker(document.querySelector('#enebularDatePi
 
 
 ### Timeline
-
-DatePicker より細かい時間指定をするコンポーネントです。
 
 ```javascript
 var timeline = infomotionUI.timeline(
@@ -69,16 +68,14 @@ var timeline = infomotionUI.timeline(
 
 ### LiveButton
 
-リアルタイムモードに切り替えるボタンコンポーネントです。
-
 ```javascript
 var liveButton = infomotionUI.liveButton(document.querySelector('#btnLive'))
                  .make();
 ```
 
-### GraphContext  へコンポーネントを登録
+### Binding components to graphContext
 
-すべてのコンポーネントが `make` されたら、GraphContext へ登録します。
+When all components are ready they can be bound to graphContext.
 
 ```javascript
 graphContext
@@ -89,11 +86,11 @@ graphContext
 
 ### Graph settings
 
-グラフの設定です。3つの設定があります。
+graph settings is made up of 3 components.
 
-- adapter - DataSource の adaptor 設定です。
-- graph - グラフ設定です。
-- options - プラグインのパスです。
+- adapter - type of datasource adaptor.
+- graph - settings for the infomotion.
+- options - pluginPaths
 
 ```javascript
 var settingGraph = {
@@ -134,31 +131,32 @@ var settingGraph = {
 }
 ```
 
-### DOM の作成
+### Binding an InfoMotion to a div
 
 ```javascript
 var graph1 = infomotionUI.graph(document.querySelector('#graph'), settingGraph);
 ```
 
-### Topic の設定
+### Setting graphs topic
 
 ```javascript
 graph1.useTopic('country-data');
 ```
 
-### graphContext へのグラフの登録
+### Adding and displaying graphs to graphContext
 
 ```javascript
 graphContext.useGraphs(graph1);
 ```
 
-### graphContext からグラフを削除
+
+### Removing graphs from graphContext
 
 ```javascript
 graphContext.removeGraph(graph1)
 ```
 
-### フィルターの設定
+### Setting filters
 
 ```javascript
 graph0.useFilter([{
@@ -167,7 +165,7 @@ graph0.useFilter([{
 }]);
 ```
 
-### 例
+### Example shared html
 
 ```html
 <link rel="stylesheet" href="http://localhost:3000/emi/enebular-infomotion/css/app.css">

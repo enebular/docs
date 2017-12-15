@@ -43,7 +43,7 @@ eit create myfirstgraph
 
 ### datasource.json
 
-このファイルはテスト用途です。
+*このファイルはテスト用途です。*
 
 ブラウザでテストする際に利用する DataSource の指定ができます。
 
@@ -63,7 +63,7 @@ eit create myfirstgraph
 [Milkcocoa](https://mlkcca.com) のデータを使います。いくつかの値を自分のアプリのもので置き換えてください。
 
 ```json
-[{
+{
   "adaptor": "milkcocoa",
   "apikey": "YOUR_API_KEY",
   "apisecret": "YOUR_API_SECRET",
@@ -72,7 +72,8 @@ eit create myfirstgraph
   "id": "milkcocoa",
   "title": "milkcocoa",
   "name": "milkcocoa"
-}]
+}
+* API Key, API Secret がない場合は空にします。
 ```
 
 #### Pubnub adaptor
@@ -80,7 +81,7 @@ eit create myfirstgraph
 [Pubnub](https://pubnub.com) のデータを使います。いくつかの値を自分のアプリのもので置き換えてください。
 
 ```json
-[{
+{
   "adaptor": "pubnub",
   "pubnub": {
     "publishKey": "YOUR_PUBLISH_KEY",
@@ -93,7 +94,7 @@ eit create myfirstgraph
   "id": "pubnub",
   "title": "pubnub",
   "name": "pubnub"
-}]
+}
 ```
 
 ### API Gateway Adaptor
@@ -105,12 +106,12 @@ comming soon.
 ランダムに生成されるデータを使います。
 
 ```json
-[{
+{
   "adaptor": "random",
   "id": "random",
   "title": "random",
   "name": "random"
-}]
+}
 ```
 
 データは以下のようなスキームになります。
@@ -128,13 +129,13 @@ comming soon.
 
 
 ```json
-[{
+{
   "adaptor": "mock",
   "id": "mock",
   "title": "mock",
   "name": "mock"
   "data": [{"id": "a", "value": 1}, {"id": "b", "value": 21}, {"id": "c", "value": 512}]
-}]
+}
 ```
 
 ### package.json

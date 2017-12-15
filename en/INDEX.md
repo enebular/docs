@@ -1,33 +1,23 @@
-#InfoMotion 
+---
+lastUpdated: 2017-12-01
+---
 
-An `InfoMotion` visualizes data of a `DataSource`. 
+# Introduction
 
-![](/_asset/images/enebular-developers-aboutinfotype.png) 
+![](/_asset/images/enebular-developers-main.svg)
 
-You can either use a default `InfoMotion`, purchase more complex graphs or create your own. 
-Here are a few samples of `InfomMotion` and `DataSource` 
+enebular は多様なデバイスやサーバーへのデプロイが可能な Node-RED ベースの IoT プラットフォームです。
 
-```javascript
-// multiple pieces of data with the following key/values.
-{
-created:Number,
-lang:String,
-node_id:Number,
-ss:Number,
-uu:Number
-}
+Node-RED を使ってフローの開発が出来ます。開発したフローは多様なデバイスやサーバーへのデプロイが可能です。フローを公開することで事例への活用を促すことが出来ます。
 
-```
+[Node-RED](https://nodered.org/) とは、処理をカプセル化したノードを GUI 上でつなぐ操作で、簡単に一連の操作を実現できる Node.js 製の開発環境（オープンソース）です。
 
-####Bar Chart 
-![](/_asset/images/enebular-developers-template-bar.png) 
+## [Get Started](/GetStarted/index.md)
 
-####Line Chart 
+![](/_asset/images/enebular-developers-getstarted.png)
 
-![](/_asset/images/enebular-developers-template-line.png) 
+まずはこちらから enebular を始めてください。このチュートリアルには、以下の手順が含まれます。
 
-####Pie Chart 
-
-![](/_asset/images/enebular-developers-template-pie.png) 
-
-To get started with creating an InfoMotion please continue to `InfoMotion Tool`
+- Project の作成
+- Milkcocoa を利用した Flow の作成
+- 作成した Flow のデータを使用したグラフ（InfoMotion）の作成

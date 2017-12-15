@@ -1,6 +1,10 @@
-#Uploading to Enebular
+---
+lastUpdated: 2017-12-15
+---
 
-Once the InfoMotion has been packaged [see InfoMotion tool]()
+# Uploading to Enebular
+
+Once the InfoMotion has been packaged [see InfoMotion tool](./InfoMotionTool.md)
 The infomotion is ready to be uploaded.
 
 In enebular select `InfoType` and click on `upload InfoMotion`
@@ -16,4 +20,4 @@ a preview of the InfoMotion will be displayed along with the
 ![](/_asset/images/InfoMotion/enebuar-developer-uploaded-infotype.png)
 
 Now the Infomotion is loaded to Enebular let's see how we can
-connect it to a [DataSource]() and view/edit it in [Dashboard]().
+connect it to a [DataSource](./CreateDataSource.md) and view/edit it in [Dashboard](./CreateInfoMotion.md).
