@@ -104,7 +104,7 @@ URL の呼び出しの URL に 今回作成したリソース名 `/test` をつ�
 https://*********.execute-api.ap-northeast-1.amazonaws.com/teststage/test
 ```
 
-https://i.gyazo.com/bf0452fd54e62bc5bed17c5188a2c94b.png
+![](https://i.gyazo.com/bf0452fd54e62bc5bed17c5188a2c94b.png)
 
 次に API Key を作成します。
 
