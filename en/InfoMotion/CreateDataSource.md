@@ -4,7 +4,12 @@ lastUpdated: 2017-12-15
 
 # Connecting DataSource
 
-(What's datasource)
+A datasource is a connetion to a database repository.
+	
+A typical project has three components Flow, DataSource and InfoMotion. 
+- Flow collects data and pushes the data to a database.
+- Datasorce contains the connection to the database.
+- InfoMotion gets data via the datasource connection to visualize.
 
 ![](/_asset/images/enebular-developers-aboutdatasource.png)
 

@@ -94,7 +94,16 @@ Replace `milkcocoa` with any other adaptor just listed.
 
 ### API Gateway Adaptor
 
-comming soon.
+```json
+    {
+      "apiKey": "YOUR_API_KEY",
+      "endpoint": "YOUR_ENDPOINT",
+      "id": "apigateway",
+      "projectId": "YOUR_PROJECT_ID",
+      "title": "apigateway",
+      "adaptor": "apigateway"
+    }
+```
 
 #### Random adaptor
 
