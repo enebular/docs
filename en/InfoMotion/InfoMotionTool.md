@@ -43,9 +43,8 @@ eit create myfirstgraph
 
 *This file is for testing.*
 
-This file allows you to connect your infomotion to datasources.
-
-You can use one adapter per infomotion.
+This file allows you to connect your infomotion to datasources
+for local browser tests. 
 
 The adapter types are
 
@@ -57,7 +56,8 @@ The adapter types are
 
 #### Milkcocoa adoptor
 
-Replace `milkcocoa` with any other adaptor just listed.
+Using [Milkcocoa](https://mlkcca.com) datasource. 
+Replace the specified values with your app details. 
 
 ```json
 {
@@ -74,6 +74,9 @@ Replace `milkcocoa` with any other adaptor just listed.
 ```
 
 #### Pubnub adaptor
+
+Using [Pubnub](https://www.pubnub.com/) as a datasource.
+Replace the specified values with your app details. 
 
 ```json
 {
@@ -93,6 +96,9 @@ Replace `milkcocoa` with any other adaptor just listed.
 ```
 
 ### API Gateway Adaptor
+
+Using [AWS Lambda](https://aws.amazon.com/) as a datasource.
+Replace the specified values with your app details.
 
 ```json
     {
