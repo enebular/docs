@@ -9,7 +9,7 @@ An `InfoMotion` visualizes data of a `DataSource`.
 ![](/_asset/images/InfoMotion/enebular-developers-aboutinfotype.png)
 
 You can either use a default `InfoMotion`, purchase more complex graphs or create your own.
-Here are a few samples of `InfomMotion` and `DataSource`
+Here are a few samples of `InfoMotion` and `DataSource`
 
 ```javascript
 // multiple pieces of data with the following key/values.

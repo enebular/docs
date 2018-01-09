@@ -2,7 +2,7 @@
 lastUpdated: 2017-12-15
 ---
 
-# Uploading to Enebular
+# Uploading InfoMotion to Enebular
 
 Once the InfoMotion has been packaged [see InfoMotion tool](./InfoMotionTool.md)
 The infomotion is ready to be uploaded.
