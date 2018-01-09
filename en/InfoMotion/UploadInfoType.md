@@ -7,13 +7,13 @@ lastUpdated: 2017-12-15
 Once the InfoMotion has been packaged [see InfoMotion tool](./InfoMotionTool.md)
 The infomotion is ready to be uploaded.
 
-In enebular select `InfoType` and click on `upload InfoMotion`
+In enebular select `InfoType` and click on `upload`
 
 ![](/_asset/images/InfoMotion/enebular-developers-upload-infomotion.png)
 
-You can choose to drag and drop `plugin.js`, `plugin.css` and `plugin.json`.
+You can choose to select or drag and drop `plugin.js`, `plugin.css` and `plugin.json`.
 
-If the files have been successfully uploaded
+Once the files have been successfully uploaded
 a preview of the InfoMotion will be displayed along with the
 `sampleData` and `sampleSettings` from the plugin.json.
 

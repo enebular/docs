@@ -1,6 +1,6 @@
 # Creating an API Gateway DataSource 
 
-The following section is An example of using API Gateway as a datasource. 
+The following section is an example of using API Gateway as a datasource. 
 
 ## Using Lambda to return data 
 
@@ -56,7 +56,7 @@ With resource completed create a GET method.
 
 ![](/_asset/images/infomotion/api-gateway/create-get-method.png) 
 
-Settings a method.
+Setting a method.
 Select the Lamnda function created (It will not appear unless you select the region where you created Lamdba).
 
 ![](/_asset/images/infomotion/api-gateway/setup-a-method.png) 
@@ -81,8 +81,6 @@ Lastly, change "Intergration Request".
 
 ![](/_asset/images/infomotion/api-gateway/intergration-request.png) 
 
-以下のように「本文マッピングテンプレート」を「`application/json`」で以下のようなマッピングを作成します。
-
 Create the following mapping of "body mapping template" with "application / json" as shown below
 
 ```json
@@ -94,7 +92,7 @@ Create the following mapping of "body mapping template" with "application / json
 
 ![](/_asset/images/infomotion/api-gateway/body-mapping.png) 
 
-Next create an "deploy api". 
+Next create a "deploy api". 
 
 ![](/_asset/images/infomotion/api-gateway/deploy-api.png) 
 

@@ -153,12 +153,12 @@ For more information see [NPM](https://docs.npmjs.com/files/package.json).
 
 #### plugin.css
 
-Stying for the InfoMotion.
+Styling for the InfoMotion.
 
 #### plugin.js
 
 This file contains the main logic for the InfoMotion.
-D3.js is globally installed by default.
+D3.js (version 3.0.0) is globally installed by default.
 See [API Reference](/en/InfoMotion/APIReference) for more details.
 
 #### plugin.json

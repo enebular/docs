@@ -6,7 +6,7 @@ lastUpdated: 2017-12-15
 
 A DataSource is a data connection used by an InfoMotion (Graph). 
 Registering a DataSource is necessary to use InfoMotion. 
-A Flow saves data to a DataSource. 
+A Flow can save data to a DataSource. 
 
 ![](/_asset/images/enebular-developers-aboutdatasource.png) 
 

@@ -41,7 +41,7 @@ In this example we are using two graphs `data logger` and `line chart`
 
 Data passed though InfoMotions can be controlled with daterange, timeline, play and live button. 
 
-- Daterange - calander with start and end date. 
+- Daterange - calendar with start and end date. 
 
 ![daterange](/_asset/images/InfoMotion/enenbular-developers-infomotion-daterange.png) 
 

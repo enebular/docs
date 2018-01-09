@@ -28,7 +28,7 @@ Settings is composed of three parts.
 var settings = {
   "cache": "blackhole",
   "dateRange": [new Date('Mon Dec 04 2017 09:35:32 GMT+1100 (AEDT)'), new Date('Thu Dec 07 2017 09:35:33 GMT+1100 (AEDT)')],
-  "options": {"pluginPath":"http://localhost:9000","iframePath":"/emi/iframe/iframe.html","plugins":[{"title":"Data-Logger",
+  "options": {"pluginPath":"https://enebular-v2.herokuapp.com","iframePath":"/emi/iframe/iframe.html","plugins":[{"title":"Data-Logger",
   "name":"f9f25f2a-c0c6-4c11-89f0-e947cc6bbd33","jsPath":"api/v1/infotype/f9f25f2a-c0c6-4c11-89f0-e947cc6bbd33/download?ext=js",
   "cssPath":"api/v1/infotype/f9f25f2a-c0c6-4c11-89f0-e947cc6bbd33/download?ext=css"}],
   "loadingMode":"loadScript"}
@@ -118,8 +118,8 @@ var settingGraph = {
     ]
   },
   "options":{
-    "pluginPath":"https://enebular-uhuru.herokuapp.com",
-    "iframePath":"http://localhost:3000/emi/iframe/iframe.html",
+    "pluginPath":"https://enebular-v2.herokuapp.com",
+    "iframePath":"https://enebular-v2.herokuapp.com/emi/iframe/iframe.html",
     "plugins":[{
       "title":"drag-force-plugins",
       "name":"59a842c462f53a110029a5e0",
@@ -168,7 +168,7 @@ graph0.useFilter([{
 ### Example shared html
 
 ```html
-<link rel="stylesheet" href="http://localhost:3000/emi/enebular-infomotion/css/app.css">
+<link rel="stylesheet" href="https://enebular-v2.herokuapp.com/emi/enebular-infomotion/css/app.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://cdn.mlkcca.com/v2.0.0/milkcocoa.js"></script>
 <script src="https://enebular-v2.herokuapp.com/emi/enebular-infomotion/infomotion.js"></script>
@@ -290,7 +290,7 @@ var settings = {
   "cache": "blackhole",
   "dateRange": [new Date('Mon Dec 04 2017 09:35:32 GMT+1100 (AEDT)'), new Date('Thu Dec 07 2017 09:35:33 GMT+1100 (AEDT)')],
   "options": {
-    "pluginPath":"http://localhost:9000",
+    "pluginPath":"https://enebular-v2.herokuapp.com",
     "iframePath":"/emi/iframe/iframe.html","plugins":[
     {"title":"Data-Logger","name":"f9f25f2a-c0c6-4c11-89f0-e947cc6bbd33","jsPath":"api/v1/infotype/f9f25f2a-c0c6-4c11-89f0-e947cc6bbd33/download?ext=js","cssPath":"api/v1/infotype/f9f25f2a-c0c6-4c11-89f0-e947cc6bbd33/download?ext=css"}],"loadingMode":"loadScript"}
 }
