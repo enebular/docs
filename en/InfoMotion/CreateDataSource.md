@@ -23,7 +23,7 @@ See [Sample Flow](../Flow/FlowExampleMilkcocoa.md) to get started with a simple 
 ![](/_asset/images/InfoMotion/enebular-developers-datasource2.png) 
 
 * App Id 
-	* An App Id of Milkcocoa a project 
+	* An App Id of a Milkcocoa project 
 * DataStore 
 	* A DataStore to save in a Milkcocoa App 
 * API Key 

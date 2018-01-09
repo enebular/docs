@@ -23,7 +23,7 @@ lastUpdated: 2017-12-14
   * [API Gateway](InfoMotion/DataSourceAPIGateway.md)
 * [Dashboard](InfoMotion/CreateInfoMotion.md)
 * [API Reference](InfoMotion/APIReference.md)
-* [Share Infomtion](InfoMotion/ShareInfoMotion.md)
+* [Share InfoMotion](InfoMotion/ShareInfoMotion.md)
 
 ## Deploy
 
