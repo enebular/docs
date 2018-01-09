@@ -89,15 +89,15 @@ Before creating this Flow, refer to Milkcocoa's [Prepare to use Milkcocoa on the
 
 Next the deployed flows data will be visualized. 
 
-Before visulaizing the following should be understood. 
+Before visulaizing a DataSource the following should be understood. 
 
 * InfoMotion: 
-A visualization/graph on the dashbaord. 
+An InfoMotion is a visualization/graph on a dashbaord. 
 The visualization is based on the data of a DataSource. 
-InfoMotion gives Movement to Information. 
+InfoMotion gives Movement to Information using the two components `InfoType` and `DataSource`.
 * InfoType: The type of graph (pie chart, bar graph, etc.). 
 * DataSource: Data to be displayed on the graph. 
-The current datasources are ` apiGateway` ,` milkcocoa` and ` pubnub` that retrieve data. The following example will be using `milkcocoa`. 
+The current datasource adapters are ` apiGateway` ,` milkcocoa` and ` pubnub` . The following example will be using `milkcocoa`. 
 
 Register the DataSource from the DataSource tab on the sidebar. 
 Open the DataSource creation modal from Create DataSource. 
@@ -125,7 +125,7 @@ Upload Opens a modal from InfoType. Drag and drop or select the contents of the 
 
 ![](https://i.gyazo.com/5b461780e0d2afe6758d87ecb7ae7801.png) 
 
-Select a `category` and click the Upload button
+Select a `category` and click Upload.
 
 ![](/_asset/images/enebular-developers-upload-infotype.png)
 
@@ -155,7 +155,7 @@ Register a graph by clicking Create Graph.
 ![](/_asset/images/enebular-developers-infomotion-create-graph.png)
 
 Input a NAME, select a TYPE `bar-chart` (previously uploaded InfoType). 
-DATASOURCE is` test-datasource` of the DataSource we (previously created datasource). 
+DataSource is` test-datasource` of the DataSource we (previously created datasource). 
 
 Since label is the x axis and value is the y axis, set `dataid` to label and value to` v` (LabelNames are omitted in this example). 
 
@@ -176,6 +176,6 @@ To resize the graph drag the right bottom corner then click save the save layout
 
 ## Well Done!
 
-We were able to create a data flow, a graph with data. 
+We were able to create a data flow and a graph with data. 
 
 In This example we used a simple bar chart, but you can create and upload an InfoMotion Type yourself. For details, please refer to [InfoMotion Type Creation Tutorial](/developers/infomotion-type-tutorial).
