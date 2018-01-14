@@ -99,7 +99,18 @@ eit create myfirstgraph
 
 ### API Gateway Adaptor
 
-comming soon.
+[AWS API Gateway](https://aws.amazon.com/) をエンドポイントとしてデータを取得します。いくつかの値を自分のアプリのもので置き換えてください。
+
+```json
+{
+  "apiKey": "YOUR_API_KEY",
+  "endpoint": "YOUR_ENDPOINT",
+  "id": "apigateway",
+  "projectId": "YOUR_PROJECT_ID",
+  "title": "apigateway",
+  "adaptor": "apigateway"
+}
+```
 
 #### Random adaptor
 

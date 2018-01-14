@@ -44,7 +44,7 @@ eit create myfirstgraph
 *This file is for testing.*
 
 This file allows you to connect your infomotion to datasources
-for local browser tests. 
+for local browser tests.
 
 The adapter types are
 
@@ -56,8 +56,8 @@ The adapter types are
 
 #### Milkcocoa adoptor
 
-Using [Milkcocoa](https://mlkcca.com) datasource. 
-Replace the specified values with your app details. 
+Using [Milkcocoa](https://mlkcca.com) datasource.
+Replace the specified values with your app details.
 
 ```json
 {
@@ -76,7 +76,7 @@ Replace the specified values with your app details.
 #### Pubnub adaptor
 
 Using [Pubnub](https://www.pubnub.com/) as a datasource.
-Replace the specified values with your app details. 
+Replace the specified values with your app details.
 
 ```json
 {
@@ -97,18 +97,18 @@ Replace the specified values with your app details.
 
 ### API Gateway Adaptor
 
-Using [AWS Lambda](https://aws.amazon.com/) as a datasource.
+Using [AWS API Gateway](https://aws.amazon.com/) as a datasource.
 Replace the specified values with your app details.
 
 ```json
-    {
-      "apiKey": "YOUR_API_KEY",
-      "endpoint": "YOUR_ENDPOINT",
-      "id": "apigateway",
-      "projectId": "YOUR_PROJECT_ID",
-      "title": "apigateway",
-      "adaptor": "apigateway"
-    }
+{
+  "apiKey": "YOUR_API_KEY",
+  "endpoint": "YOUR_ENDPOINT",
+  "id": "apigateway",
+  "projectId": "YOUR_PROJECT_ID",
+  "title": "apigateway",
+  "adaptor": "apigateway"
+}
 ```
 
 #### Random adaptor
