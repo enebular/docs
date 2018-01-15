@@ -1,3 +1,6 @@
+---
+lastUpdated: 2017-01-15
+---
 
 # Milkcocoa のフロー
 
@@ -116,4 +119,7 @@ Flow一覧に今回のFlowが表示されます。
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_27.png)
 
+inject ノードの左のトリガーをクリックすると、データが保存されます。Milkcocoa の管理画面で保存されたデータを確認できます。
+
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_28.png)
+

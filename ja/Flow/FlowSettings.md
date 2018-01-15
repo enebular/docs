@@ -1,35 +1,45 @@
 ---
-lastUpdated: 2017-12-15
+lastUpdated: 2017-01-15
 ---
 
 # Flow の設定
 
 Flowを選択すると、Flowの詳細画面に移動します。
 
-![image.png (66.5 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_01.png)
+![](https://i.gyazo.com/df15e18b0f61680b23773a7d8ca4ae6c.png)
 
-詳細画面ではFlow情報の編集、Flowの削除・公開ができます。Flow情報は、Flowを公開した際に他のユーザーが見てどういうFlowか理解しやすくする手助けになりますので、出来るだけすべての情報について記載することをおすすめします。
+## Overview
 
-![image.png (93.7 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_02.png)
+Overview ではFlow情報の編集、Flowの公開ができます。Flow情報は、Flowを公開した際に他のユーザーが見てどういうFlowか理解しやすくする手助けになりますので、出来るだけすべての情報について記載することをおすすめします。
 
-Flowの詳細画面で出来ることは以下です。
+![](https://i.gyazo.com/7cb9b53259022696e7cc47e4fa81d89b.png)
 
-* タイトル・説明文・カテゴリー・タグの編集
-* Flow編集画面の立ち上げ
-* アクセス権の編集・作成
-* Flowの削除
-* Flowの公開
+Flow の公開については [Publish Flow](./PublishFlow.md) をご覧ください。
 
-## Flowの編集・削除
+## Deploy
 
-Edit Flow ボタンをクリックすることで、Flow編集画面を立ち上げます。
+Deploy では Flow を特定のサービスへデプロイできます。
 
-![image.png (99.2 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_03.png)
+![](https://i.gyazo.com/176869beb11cdec73fe02c8c09c4288f.png)
 
-またSettings > Delete Flowボタンから、Flowの削除ができます。
+それぞれのサービスへの詳しいデプロイ方法は [Deploy](../Deploy/index.md) をご覧ください。
 
-![image.png (73.3 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_04.png)
+## Devices
 
-## アクセス権の編集・作成
+Devices では外部サービスへデプロイしたデバイスの一覧を見ることができます。
 
-→　[アクセス権の編集・作成](/Access)
+![](https://i.gyazo.com/9f26dd5fa222389b4b90cb2eea5a1df7.png)
+
+## Access
+
+Access では Flow のアクセス権を編集できます。
+
+![](https://i.gyazo.com/6b4babe394ae110c62ba181718849c0b.png)
+
+詳しくは [Access Control](../Access/index.md) をご覧ください。
+
+## Settings
+
+Settings では Flow の名前や説明の編集、Flowの削除ができます。
+
+![](https://i.gyazo.com/9e8637beeeb0d53009f4eb71d046291a.png)

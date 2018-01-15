@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2017-12-14
+lastUpdated: 2017-01-15
 ---
 
 # Flow の作成
@@ -13,15 +13,15 @@ Flow は、ハードウェアデバイス・API およびオンラインサー�
 
 Data Flowを準備してDataSourceに向けてデータを加工して入力していきます。
 
-![image](/_asset/images/Flow/CreateFlow/flow-create-flow_03.png)
+![](https://i.gyazo.com/1e90909b5ecefe56ff1934aa41e5a7b9.png)
 
-![image](/_asset/images/Flow/CreateFlow/flow-create-flow_04.png)
+![](/_asset/images/enebular-developers-createprojectmodal.png)
 
-![image](/_asset/images/Flow/CreateFlow/flow-create-flow_05.png)
+![](https://i.gyazo.com/69a5b817e8681349f45373eb7aead486.png)
 
 ## Assetsを作成
 
-![image](/_asset/images/Flow/CreateFlow/flow-create-flow_06.png)
+![](https://i.gyazo.com/e521afd4d489291aa774fe9429cf3321.png)
 
 まずアセットを作成します。
 
