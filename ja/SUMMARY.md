@@ -40,6 +40,8 @@ lastUpdated: 2018-01-16
   * [Heroku](Deploy/DeployFlow/Heroku/index.md)
   * [Mode](Deploy/DeployFlow/Mode/index.md)
   * [Lambda](Deploy/DeployFlow/Lambda/index.md)
+  * [mbed Cloud](Deploy/DeployFlow/mbed/index.md)
+  * [Uhuru](Deploy/DeployFlow/Uhuru/index.md)
 
 ## Access
 

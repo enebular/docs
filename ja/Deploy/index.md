@@ -10,3 +10,5 @@ Flow は以下の場所にデプロイできます。
 * [Heroku](./DeployFlow/Heroku/index.md)
 * [Mode](./DeployFlow/Mode/index.md)
 * [Lambda](./DeployFlow/Lambda/index.md)
+* [mbed Cloud](./DeployFlow/mbed/index.md)
+* [Uhuru](./DeployFlow/Uhuru/index.md)
