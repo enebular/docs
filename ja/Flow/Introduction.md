@@ -2,11 +2,21 @@
 lastUpdated: 2018-01-15
 ---
 
-# Flow の設定
+# Flow
 
-Flowを選択すると、Flowの詳細画面に移動します。
+Flow は、ハードウェアデバイス・API およびオンラインサービスを接続するためのツール <a href="https://nodered.jp/" target="_blank">Node-RED</a> ベースの Flow Editor を用いて、DataSource に対して InfoMotion が扱いやすいようにデータを加工する enebular の機能です（DataSource のデータを加工をする以外の用途にも使えます）。
+
+![](/_asset/images/enebular-developers-aboutflow.png)
+
+- [Flow の作成方法はこちら](./CreateFlow.md)
+
+作成した Flow は enebular 上で確認できます。
 
 ![](https://i.gyazo.com/df15e18b0f61680b23773a7d8ca4ae6c.png)
+
+Flow を選択すると、Flow の詳細画面に移動します。
+
+![](https://i.gyazo.com/7cb9b53259022696e7cc47e4fa81d89b.png)
 
 ## Overview
 
@@ -40,6 +50,6 @@ Access では Flow のアクセス権を編集できます。
 
 ## Settings
 
-Settings では Flow の名前や説明の編集、Flowの削除ができます。
+Settings では Flow の名前や説明の編集、Flow の削除ができます。
 
 ![](https://i.gyazo.com/9e8637beeeb0d53009f4eb71d046291a.png)

@@ -6,6 +6,27 @@ lastUpdated: 2018-01-16
 
 InfoType とは InfoMotion で利用するグラフのタイプのことです。
 
+以下に、デフォルトのグラフの例を示します。
+
+```javascript
+// 以下のようなデータが複数個あるとします
+{
+  created: Number,
+  lang: String,
+  node_id: Number,
+  ss: Number,
+  uu: Number
+}
+```
+
+- Bar Chart
+![](/_asset/images/InfoMotion/enebular-developers-template-bar.png)
+
+- Line Chart
+![](/_asset/images/InfoMotion/enebular-developers-template-line.png)
+- Pie Chart
+![](/_asset/images/InfoMotion/enebular-developers-template-pie.png)
+
 - [InfoType の作成方法はこちら](./InfoMotionTool.md)
 - [作成した InfoType を enebular へアップロードする方法はこちら](./UploadInfoType.md)
 

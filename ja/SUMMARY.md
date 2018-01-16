@@ -14,10 +14,10 @@ lastUpdated: 2018-01-16
 
 ## Flow
 
-* [Introduction](Flow/CreateFlow.md)
+* [Introduction](Flow/Introduction.md)
+* [Create Flow](Flow/CreateFlow.md)
 * Flow Example
   * [Milkcocoa](Flow/FlowExampleMilkcocoa.md)
-* [Flow Settings](Flow/FlowSettings.md)
 * [Publish Flow](Flow/PublishFlow.md)
 
 ## InfoMotion
