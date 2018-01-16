@@ -43,6 +43,11 @@ lastUpdated: 2018-01-16
   * [mbed Cloud](Deploy/DeployFlow/mbed/index.md)
   * [Uhuru](Deploy/DeployFlow/Uhuru/index.md)
 
+## Devices
+
+* [Introduction](Device/Introduction.md)
+* [Manage Licence](Device/ManageLicence.md)
+
 ## Access
 
 * [Access Control](Access/index.md)
