@@ -12,11 +12,7 @@ lastUpdated: 2017-12-01
 
 ## Projectの作成
 
-enebular を始めるには、まず Project を作成します。**Project** とは文字通りプロジェクトの単位です。Project は、データフローである **Flow** 、データの可視化を行うグラフである **InfoMotion** などの **Asset** を複数持つことが出来ます。
-
-![](/_asset/images/enebular-developers-aboutproject.png)
-
-それではログイン後の画面にある Create Project からプロジェクトを作成します。
+enebular を始めるには、まず Project を作成します。ログイン後の画面にある Create Project からプロジェクトを作成します。
 
 ![](https://i.gyazo.com/1e90909b5ecefe56ff1934aa41e5a7b9.png)
 

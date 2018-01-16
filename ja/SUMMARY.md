@@ -1,10 +1,16 @@
 ---
-lastUpdated: 2017-01-15
+lastUpdated: 2018-01-15
 ---
 
 # Summary
 
 * [Get Started](GetStarted/index.md)
+
+## Project
+
+* [About Project](Project/index.md)
+* [Project Settings](Project/Settings.md)
+* [Billing Information](Project/Billing.md)
 
 ## Flow
 
