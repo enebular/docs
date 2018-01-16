@@ -2,7 +2,7 @@
 
 # Preview
 
-https://enebular-docs.now.sh
+https://enebular-docs.netlify.com
 
 ```
 $ npm i
