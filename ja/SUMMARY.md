@@ -23,7 +23,7 @@ lastUpdated: 2018-01-16
 ## InfoMotion
 
 * [Introduction](InfoMotion/Introduction.md)
-* InfoType
+* [InfoType](InfoMotion/InfoTypeIntroduction.md)
   * [Create InfoType](InfoMotion/InfoMotionTool.md)
   * [Upload InfoType](InfoMotion/UploadInfoType.md)
   * [API Reference](InfoMotion/APIReference.md)
