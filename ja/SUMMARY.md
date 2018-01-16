@@ -40,14 +40,17 @@ lastUpdated: 2018-01-16
   * [Mode](Deploy/DeployFlow/Mode/index.md)
   * [Lambda](Deploy/DeployFlow/Lambda/index.md)
 
-## Account / Access
+## Access
 
 * [Access Control](Access/index.md)
-* [Account Settings](Access/Account.md)
 
 ## Discover
 
 * [Discover Assets](Discover/index.md)
+
+## Account
+
+* [Account Settings](Account/index.md)
 
 ## Appendix
 
