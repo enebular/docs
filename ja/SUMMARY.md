@@ -23,12 +23,13 @@ lastUpdated: 2018-01-16
 ## InfoMotion
 
 * [Introduction](InfoMotion/Introduction.md)
-* [InfoMotion Tool](InfoMotion/InfoMotionTool.md)
-* [Upload InfoMotion](InfoMotion/UploadInfoType.md)
+* InfoType
+  * [Create InfoType](InfoMotion/InfoMotionTool.md)
+  * [Upload InfoType](InfoMotion/UploadInfoType.md)
+  * [API Reference](InfoMotion/APIReference.md)
 * [DataSource](InfoMotion/CreateDataSource.md)
   * [API Gateway](InfoMotion/DataSourceAPIGateway.md)
 * [Dashboard](InfoMotion/CreateInfoMotion.md)
-* [API Reference](InfoMotion/APIReference.md)
 * [Share Infomtion](InfoMotion/ShareInfoMotion.md)
 
 ## Deploy

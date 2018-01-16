@@ -4,9 +4,9 @@ lastUpdated: 2017-12-01
 
 # InfoMotion Tool
 
-InfoMotion を作成するには `infomotion-tool` が必要です。
+InfoType を作成するには `infomotion-tool` が必要です。
 
-`infomotion-tool` を使ってローカル環境で編集とテストができます。完成した InfoMotion はパッケージにして enebular にアップロードすることができます。
+`infomotion-tool` を使ってローカル環境で編集とテストができます。完成した InfoType はパッケージにして enebular にアップロードすることができます。
 
 ## infomotion-tool のインストール
 
@@ -226,4 +226,4 @@ eit package
 
 ![](/_asset/images/InfoMotion/enebular-developers-build.png)
 
-次に、[Upload InfoMotion](./UploadInfoType.md) で enebular へのグラフのアップロード方法を学びましょう。
+次に、[Upload InfoType](./UploadInfoType.md) で enebular へのグラフのアップロード方法を学びましょう。

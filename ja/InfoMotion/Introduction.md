@@ -35,4 +35,4 @@ lastUpdated: 2017-12-13
 
 ![](/_asset/images/InfoMotion/enebular-developers-template-pie.png)
 
-次に、[InfoMotioin Tool](./InfoMotionTool.md) でグラフの作成方法を学びましょう。
+次に、[Create InfoType](./InfoMotionTool.md) でグラフの作成方法を学びましょう。

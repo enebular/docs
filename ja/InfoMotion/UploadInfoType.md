@@ -2,11 +2,11 @@
 lastUpdated: 2017-12-14
 ---
 
-# InfoMotion を enebular へのアップロード
+# InfoType を enebular へのアップロード
 
 `infomotion-tool` を使ってパッケージしたものを enebular にアップロードにできます。
 
-enebular の管理画面にて `InfoType` を選択し、`upload InfoMotion` を押します。
+enebular の管理画面にて `InfoType` を選択し、右下の + を押します。
 
 ![](/_asset/images/InfoMotion/enebular-developers-upload-infomotion.png)
 
