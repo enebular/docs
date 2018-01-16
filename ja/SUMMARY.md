@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-01-15
+lastUpdated: 2018-01-16
 ---
 
 # Summary
@@ -44,6 +44,10 @@ lastUpdated: 2018-01-15
 
 * [Access Control](Access/index.md)
 * [Account Settings](Access/Account.md)
+
+## Discover
+
+* [Discover Assets](Discover/index.md)
 
 ## Appendix
 
