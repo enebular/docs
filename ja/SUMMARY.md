@@ -16,8 +16,7 @@ lastUpdated: 2018-01-16
 
 * [Introduction](Flow/Introduction.md)
 * [Create Flow](Flow/CreateFlow.md)
-* Flow Example
-  * [Milkcocoa](Flow/FlowExampleMilkcocoa.md)
+* [Example: Milkcocoa](Flow/FlowExampleMilkcocoa.md)
 * [Publish Flow](Flow/PublishFlow.md)
 
 ## InfoMotion
@@ -35,11 +34,10 @@ lastUpdated: 2018-01-16
 ## Deploy
 
 * [Introduction](Deploy/index.md)
-* Deploy Flow
-  * [AWS IoT](Deploy/DeployFlow/AWSIoT/index.md)
-  * [Heroku](Deploy/DeployFlow/Heroku/index.md)
-  * [Lambda](Deploy/DeployFlow/Lambda/index.md)
-  * [mbed Cloud](Deploy/DeployFlow/mbed/index.md)
+* [Example: AWS IoT](Deploy/DeployFlow/AWSIoT/index.md)
+* [Example: Heroku](Deploy/DeployFlow/Heroku/index.md)
+* [Example: Lambda](Deploy/DeployFlow/Lambda/index.md)
+* [Example: mbed Cloud](Deploy/DeployFlow/mbed/index.md)
 
 ## Devices
 
