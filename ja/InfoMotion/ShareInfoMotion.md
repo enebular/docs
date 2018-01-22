@@ -2,7 +2,7 @@
 lastUpdated: 2017-12-14
 ---
 
-# Share InfoMotioin
+# Share InfoMotion
 
 ダッシュボードを外部サイトへ埋め込む場合、API を使って自由にダッシュボードの表示をカスタマイズできます。
 
@@ -13,7 +13,7 @@ lastUpdated: 2017-12-14
 <script src="http://enebular-v2.herokuapp.com/emi/enebular-infomotion/infomotionUI.js"></script>
 ```
 
-### settings
+### Settings for graph component
 
 ダッシュボードの設定です。3つの設定があります。
 

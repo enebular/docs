@@ -2,10 +2,10 @@
 lastUpdated: 2017-12-15
 ---
 
-# Uploading InfoMotion to Enebular
+# Uploading InfoType to enebular
 
-Once the InfoMotion has been packaged [see InfoMotion tool](./InfoMotionTool.md)
-The infomotion is ready to be uploaded.
+Once the InfoType has been packaged [see InfoMotion tool](./InfoMotionTool.md)
+The InfoType is ready to be uploaded.
 
 In enebular select `InfoType` and click on `upload`
 

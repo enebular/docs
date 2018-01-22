@@ -4,7 +4,8 @@
   "description": "## Get Started",
   "main": "README.md",
   "scripts": {
-    "test": "mocha check.js",
+    "test": "mocha test.js",
+    "check": "node check.js",
     "build": "gitbook build",
     "serve": "gitbook serve"
   },

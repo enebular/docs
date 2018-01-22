@@ -2,10 +2,12 @@ const fs = require('fs')
 const MarkdownIt = require('markdown-it')
 const meta = require('markdown-it-meta')
 const glob = require('glob')
+const assert = require('assert')
+
 const md = new MarkdownIt()
 md.use(meta)
 
-var jaDones = []
+var jaWIPs = []
 var enWIPs = []
 
 function jaTask (cb) {
@@ -13,7 +15,7 @@ function jaTask (cb) {
     files.forEach(function (path) {
       var data = fs.readFileSync(path)
       md.render(data.toString('utf-8', 0, data.length))
-      if(!md.meta.WIP) jaDones.push(path.replace('ja/', ''))
+      if(md.meta.WIP) jaWIPs.push(path.replace('ja/', ''))
     })
     cb()
   })
@@ -30,11 +32,13 @@ function enTask (cb) {
   })
 }
 
-jaTask(function () {
-  enTask(function () {
-    enWIPs = enWIPs.filter(function (en, i) {
-      return jaDones.indexOf(en) >= 0
+describe('en & ja', function () {
+  it('should be same.', function (done) {
+    jaTask(function () {
+      enTask(function () {
+        assert.deepEqual({ja: jaWIPs, en: enWIPs}, {ja:[], en:[]})
+        done()
+      })
     })
-    console.log('Please translate:', enWIPs);
   })
 })

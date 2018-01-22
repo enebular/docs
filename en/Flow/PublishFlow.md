@@ -1,6 +1,5 @@
 ---
 lastUpdated: 2017-12-15
-WIP: true
 ---
 
 # Flowの公開
