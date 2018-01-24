@@ -11,7 +11,6 @@ enebular では作成した Flow などを enebular 内で動作させた後、�
 
 Flow は以下の場所にデプロイできます。
 
-* [AWS IoT](./DeployFlow/AWSIoT/index.md)
 * [Heroku](./DeployFlow/Heroku/index.md)
 * [Lambda](./DeployFlow/Lambda/index.md)
 * [mbed Cloud](./DeployFlow/mbed/index.md)

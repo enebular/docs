@@ -34,7 +34,6 @@ lastUpdated: 2018-01-16
 ## Deploy
 
 * [Introduction](Deploy/index.md)
-* [Example: AWS IoT](Deploy/DeployFlow/AWSIoT/index.md)
 * [Example: Heroku](Deploy/DeployFlow/Heroku/index.md)
 * [Example: Lambda](Deploy/DeployFlow/Lambda/index.md)
 * [Example: mbed Cloud](Deploy/DeployFlow/mbed/index.md)
