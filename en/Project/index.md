@@ -1,44 +1,43 @@
 ---
 lastUpdated: 2018-01-16
-WIP: true
 ---
 
-# Project
+# Projects
 
-**Project** とは文字通りプロジェクトの単位です。Project は、データフローである **Flow** 、データの可視化を行うグラフである **InfoMotion** などの **Asset** を複数持つことが出来ます。
+A **Project** is, as the name suggests, the unit for organizing a set of work as a single project. Projects can contain multiple assets such as the **Flow** type for data flows and the **InfoMotion** type for data visualization graphs.
 
 ![](/_asset/images/enebular-developers-aboutproject.png)
 
-ログイン後の画面でプロジェクト一覧を確認できます。**Create Project** からプロジェクトを作成できます。
+The list of projects can be seen on the screen after logging in. Projects can be created with **Create Project**.
 
 ![](https://i.gyazo.com/51acafe4528d30c62373d866d86cc76b.png)
 
-プロジェクトを選択すると、プロジェクトの管理画面に移動します。
+Selecting a project will take you to the project management screen.
 
 ![](https://i.gyazo.com/ec81d095001a8187fe8a0321bdd89590.png)
 
-プロジェクトの管理画面には以下のようなページがあります。
+The project management screen includes the following pages.
 
 ## Assets
 
-プロジェクト内で管理するコンテンツです。
+The content managed within the project.
 
-- [Flow](../Flow/Introduction.md): Node-RED で作成したデータフロー
-- [InfoMotion](../InfoMotion/Introduction.md): データの可視化を行うグラフダッシュボード
-- [InfoType](../InfoMotion/InfoTypeIntroduction.md): InfoMotion で利用するグラフのタイプ
+- [Flow](../Flow/Introduction.md): Data flows created with Node-RED
+- [InfoMotion](../InfoMotion/Introduction.md): Data visualization graphs dashboard
+- [InfoType](../InfoMotion/InfoTypeIntroduction.md): Graph types used with InfoMotion
 
 ## Devices
 
-プロジェクト内で管理するデバイスです。ここでいうデバイスとは Asset がデプロイされているデバイスを指します。
+The devices managed within the project. The devices here are those to which assets have been deployed.
 
-- [Device List](../Device/Introduction.md): デバイスの一覧
-- [Licence Manager](../Device/ManageLicence.md): 有償機能を利用するためのライセンス管理
+- [Device List](../Device/Introduction.md): The list of devices
+- [Licence Manager](../Device/ManageLicence.md): License management for using paid functionality
 
 ## Config
 
-プロジェクトに関する設定です。
+Project related configuration.
 
-- [Data Source](../InfoMotion/CreateDataSource.md): グラフに利用するデータソースの登録
-- [Access](../Access/index.md): プロジェクトのアクセスコントロール管理
-- [Settings](../Project/Settings.md): プロジェクトの設定
-- [Billing](../Project/Billing.md): 請求情報の管理
+- [Data Source](../InfoMotion/CreateDataSource.md): Registration of data sources for use with graphs
+- [Access](../Access/index.md): Project access control management
+- [Settings](../Project/Settings.md): Project settings
+- [Billing](../Project/Billing.md):  Billing information management

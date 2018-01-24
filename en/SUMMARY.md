@@ -8,7 +8,7 @@ lastUpdated: 2018-01-16
 
 ## Project
 
-* [About Project](Project/index.md)
+* [About Projects](Project/index.md)
 * [Project Settings](Project/Settings.md)
 * [Billing Information](Project/Billing.md)
 
