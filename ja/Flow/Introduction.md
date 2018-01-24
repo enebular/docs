@@ -1,6 +1,5 @@
 ---
-lastUpdated: 2018-01-15
-WIP: true
+lastUpdated: 2018-01-24
 ---
 
 # Flow
@@ -9,9 +8,13 @@ Flow は、ハードウェアデバイス・API およびオンラインサー�
 
 ![](/_asset/images/enebular-developers-aboutflow.png)
 
-- [Flow の作成方法はこちら](./CreateFlow.md)
+なお、下の画像のように、Node-RED 上でフローをデプロイすることができますが、こちらはフローを保存することが目的で、フローの動作は数分間で止まります。
 
-作成した Flow は enebular 上で確認できます。
+![](https://i.gyazo.com/bfb9c0e25ad5e4a372a149336bdef8b8.png)
+
+フローを長い時間稼働させたい場合は、[他のサービスへデプロイ](../Deploy/index.md)する必要があります。
+
+[作成した Flow](./CreateFlow.md) は enebular 上で確認できます。
 
 ![](https://i.gyazo.com/df15e18b0f61680b23773a7d8ca4ae6c.png)
 
