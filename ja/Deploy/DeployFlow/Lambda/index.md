@@ -3,15 +3,15 @@ lastUpdated: 2017-12-01
 WIP: true
 ---
 
-# AWS Lambdaへのデプロイ
+# AWS Lambda へのデプロイ
 
-Flowのデプロイ先はそのままデプロイボタンを押すと、enebularが利用しているサーバーにデプロイされます。enebularでAWS Lambdaにデプロイすることも可能です。
+フローのデプロイ先はそのままデプロイボタンを押すと、enebular が利用しているサーバーにデプロイされますが、一時的にしか動作しません。
 
-このページでは、AWS LambdaにFlowをデプロイする手順を説明します。
+このページでは、長時間稼働させるために AWS Lambda にフローをデプロイする手順を説明します。
 
-## 新規Flowの作成
+## 新規フローの作成
 
-作成したフローをAWS Lambdaにデプロイするまでの方法です。まずLambdaへDeployするFlowを作成しましょう。（Projectは作成済みとします）。
+作成したフローを AWS Lambda にデプロイするまでの方法です。まず Lambda へデプロイするフローを作成しましょう（プロジェクトは作成済みとします）。
 
 ![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-lambda_01.png)
 
