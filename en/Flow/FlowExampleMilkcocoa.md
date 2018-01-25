@@ -1,62 +1,60 @@
 ---
-lastUpdated: 2018-01-15
-WIP: true
+lastUpdated: 2018-01-25
 ---
 
-# Milkcocoa のフロー
+# A Milkcocoa Flow
 
-Milkcocoa にデータを保存するフローを作成します。Milkcocoa DataSource として利用できます。
+Here we create a flow to save data to Milkcocoa. The stored data can be used as a Milkcocoa DataSource.
 
-## DataSource を確認
+## Check the DataSource
 
-今回、操作したい DataSource を確認しておきます。この Flow を作成する前に、Milkcocoa の[チュートリアルページの Milkcocoa を使う準備をする](https://mlkcca.com/tutorial/page2.html)を参考に、アプリを作成して `app_id` と、Milkcocoa 管理画面内の「認証」タブから作成出来る`API Key`と`API Secret`を控えておいて下さい。
+First, confirm the details of the DataSource that will be used. Before creating the flow, refer to the Milkcocoa tutorial page [Preparing to use Milkcocoa](https://mlkcca.com/tutorial/page2.html), create an app and make note of the `app_id`, and then also the `API Key` and `API Secret` from the  authentication tab in the Milkcocoa management screen.
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_01.png)
 
-DataSource 対象のデータストアを確認します。今回の場合、mbed という Milkcocoa データストアを使いましょう。
+Confirm the data store to be used for the DataSource. Here, we'll use a Milkcocoa data store called mbed.
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_02.png)
 
+## Starting the Data Flow
 
-## Data Flow を起動
-
-Data Flow を準備してDataSourceに向けてデータを加工して入力していきます。
+Here we prepare the data flow to process and input the data into the DataSource.
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_12.png)
 
-Edit Flow ボタンをクリックします。
+Click the "Edit Flow" button.
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_13.png)
 
-Flow Editor が別ウィンドウで開きます。
+The Flow Editor opens in a new window.
 
-## DataSource にデータを加工する例
+## An Example of Processing Data into a DataSource
 
-### 今回の仕組み
+### The Structure
 
-DataSourceにデータを加工する例では以下のように構成します。
+The example of processing data into a DataSource is structured as described below.
 
-### フロー
+### Flow
 
-injectノード→functionノード→milkcocoaノード→debugノードの順に配置します。
+The flow is configured in the order: inject node → function node → milkcocoa node → debug node.
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_14.png)
 
-### injectノードの設定
+### inject Node Settings
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_15.png)
 
-injectノードの設定は配置時そのままの設定でOKです。
+The inject node settings are OK as they are when the node is added.
 
-### functionノードの設定
+### function Node Settings
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_16.png)
 
-functionノードは以下の設定を行います。
+The following settings are used for the function node.
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_17.png)
 
-このスクリプトは、Milkcocoaに対して0～1023のランダム値を送る内容です。
+This script sends a random value between 0 and 1023 to Milkcocoa.
 
 ```html
 msg.payload = {
@@ -65,62 +63,59 @@ msg.payload = {
 return msg;
 ```
 
-### Milkcocoa出力ノードの設定
+### Milkcocoa Output Node Settings
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_18.png)
 
-Milkcocoa DataSourceにデータを送るときはMilkcocoa出力ノードを使用します。
+A Milkcocoa output node is used to to send data to the Milkcocoa DataSource.
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_19.png)
 
-パレットからMilkcocoa出力ノードを配置します。
+Place a Milkcocoa output node from the pallet.
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_20.png)
 
-プロパティを表示して鉛筆ボタンを押してMilkcocoaのアプリ情報を設定します。
+Show the properties, press the pencil button and set the Milkcocoa app information.
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_21.png)
 
-先ほど確認したアプリ情報をそれぞれ入力します。
+Enter all of the app information noted earlier.
 
 * App ID
-    * 今回のDataSourceにおけるMilkcocoaのAPP ID
+    * The Milkcocoa APP ID for the DataSource
 * API Key
-    * 今回のDataSourceにおけるAPI Key
-* API Sercret
-    * 今回のDataSourceにおけるAPI Sercret
+    * The API Key for the DataSource
+* API Secret
+    * The API Secret for the DataSource
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_22.png)
 
-Addを押して設定を登録します。
+Press the Add button to register the settings.
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_23.png)
 
-先ほどのMilkcocoa 出力ノードの設定に戻りDataSource名も設定します。
+Returning to the Milkcocoa output node settings, also set the DataSource name.
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_24.png)
 
-
-### debugノードの設定
+### debug Node Settings
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_25.png)
 
-debugノードの設定は配置時そのままの設定でOKです。
+The debug node settings are OK as they are when the node is added.
 
-### デプロイ
+### Deploying
 
-デプロイをしてウィンドウを閉じます。これでFlow Editorによる設定は終了です。
+Deploy and close the window. This completes all configuration using the Flow Editor.
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_26.png)
 
+The new flow is shown in the flow list.
 
-Flow一覧に今回のFlowが表示されます。
-
-### 動かしてみる
+### Running It
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_27.png)
 
-inject ノードの左のトリガーをクリックすると、データが保存されます。Milkcocoa の管理画面で保存されたデータを確認できます。
+Data will be stored when you click the trigger on the left of the inject node. The stored data can be confirmed in the Milkcocoa management screen.
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_28.png)
-
