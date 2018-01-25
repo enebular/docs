@@ -1,6 +1,5 @@
 ---
-lastUpdated: 2018-01-15
-WIP: true
+lastUpdated: 2018-01-25
 ---
 
 # A Milkcocoa Flow
