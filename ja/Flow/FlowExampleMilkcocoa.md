@@ -86,8 +86,8 @@ Milkcocoa DataSourceにデータを送るときはMilkcocoa出力ノードを使
     * 今回のDataSourceにおけるMilkcocoaのAPP ID
 * API Key
     * 今回のDataSourceにおけるAPI Key
-* API Sercret
-    * 今回のDataSourceにおけるAPI Sercret
+* API Secret
+    * 今回のDataSourceにおけるAPI Secret
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_22.png)
 
