@@ -1,118 +1,117 @@
 ---
-lastUpdated: 2017-01-24
-WIP: true
+lastUpdated: 2017-01-27
 ---
 
-# Heroku へのデプロイ
+# Deploying to Heroku
 
-このページでは Heroku Deploy の説明をします。Heroku Deploy は enebular で作成したフローを Heroku で作成した enebular Node-RED に Deploy する機能です。
+This page covers Heroku deploys. A Heroku deploy is the ability to deploy a flow created in enebular to an enebular Node-RED on Heroku.
 
-## Heroku に送るフローを作成
+## Creating the Flow to Send to Heroku
 
 ![](https://i.gyazo.com/194b5c56abc221193690461193e159a0.png)
 
-まず、Assets から新しいフローを作成します。
+First, create a new flow from "Assets".
 
 ![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_02.png)
 
-Heroku に送りたいフローを作成して、デプロイして保存します。
+Create the flow you want to send to Heroku, and then deploy it to save it.
 
 ![](https://i.gyazo.com/bfb9c0e25ad5e4a372a149336bdef8b8.png)
 
-## デプロイの設定
+## Deploy Settings
 
-つづいて、デプロイの設定をします。
+Following that we configure the deploy.
 
 ![](https://i.gyazo.com/16c258270a9b0f0d609fce45da7df221.png)
 
-フローが作成できたら上部のメニューから Deploy ページに移動します。
+Once the flow has been created, move to the "Deploy" page from the menu at the top.
 
 ![](https://i.gyazo.com/b016e602e7e679ade922a9ed1546120d.png)
 
-Select Connection Type から Heroku を選択します。
+Select "Heroku" for "Select Connection Type".
 
 ![](https://i.gyazo.com/bf6f7c21b8ef82d8747e4bda706d2997.png)
 
-Heroku を選択すると右のカラムに出てくる [Deploy to Heroku] からアプリを作成します。
+After selecting "Heroku", we create a Heroku app from the "Deploy to Heroku" that appears in the right column.
 
-## Heroku ボタンでアプリを作成
+## Creating an app with the Heroku Button
 
-Heroku ボタンでアプリを作成します。すでに作成されている方は読み飛ばして下さい。
+Use the Heroku button to create the app. This step can be skipped for those who have already created one.
 
 ![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_07.png)
 
-Heroku ボタンを押すとログインしていない場合、Heroku のログイン画面が出てくるのでログインします。
+After pressing the Heroku button, log in with the Heroku login screen that appears if you weren't already logged in.
 
 ![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_08.png)
 
-Heroku のアプリ設定が表示されます。
+The Heroku app settings will be displayed.
 
 ![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_09.png)
 
-App name をわかりやすい名前で設定します。
+Set an easy to understand name for the App name.
 
 ![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_10.png)
 
-作成後 のenebular Node-RED のログインするための USERNAME/PASSWORD を設定します。
+Set the USERNAME and PASSWORD to be used for login after the enebular Node-RED has been created.
 
 ![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_11.png)
 
-設定を確認したら Deploy ボタンを押します。
+After confirming the settings press the "Deploy" button.
 
 ![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_12.png)
 
-アプリが作成されていきます・・・
+The app is being created...
 
 ![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_13.png)
 
-作成完了されたら View ボタンを押して確認します。
+Once it has been created press the "View" button to check it.
 
 ![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_14.png)
 
-enebular Node-RED のログインするための USERNAME/PASSWORD が聞かれるので、さきほど設定したものを入力してログインします。
+You'll be asked to provide the USERNAME and PASSWORD to log into the enebular Node-RED, so enter those that you set above.
 
-## デプロイ設定
+## Deploy Settings
 
-Heroku アプリが作成できたらデプロイ設定をします。さきほどの画面に戻って設定を続けます。
+Once the Heroku app has been created we configure the deploy settings. Return to the previous screen and continue on with the configuration.
 
 ![](https://i.gyazo.com/de104b3c5331776e71db63c1ed4e2562.png)
 
-[New] を押します。
+Press "New".
 
 ![](https://i.gyazo.com/2377f74621a7ad3cd79d06691dac0031.png)
 
-Connection Name はわかりやすい名前をつけます。Heroku API Token は Heroku の設定画面で確認します。
+Assign an easy to understand name to the "Connection Name". The "Heroku API Token" can be seen on the Heroku settings screen.
 
 ![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_17.png)
 
-[Account Settings] を押します。
+Press "Account Settings".
 
 ![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_18.png)
 
-Manage Account ページで Account ページに行きます。
+Go to "Account" on the "Manage Account" page.
 
 ![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_19.png)
 
-API Key 欄に移動し [Reveal] で API Key を表示します。
+Go to the API Key section and display the API Key with "Reveal".
 
 ![](https://i.gyazo.com/8972e5c2fc9b08ffd88541cff90518fd.png)
 
-Heroku API Token に API Key をコピーして、[Save] を押します。
+Copy the API Key into "Heroku API Token" and press "Save".
 
-## デプロイ
+## Deploying
 
-保存されると Select Connection Type から Heroku を選択すると、Heroku アカウントが持つアプリ一覧が出てきます。
+With the connection saved and Heroku selected for the "Select Connection Type", a list of the apps on the Heroku account will be displayed.
 
 ![](https://i.gyazo.com/08a53d358e13c1115fc091cc6ed33802.png)
 
-こちらから、さきほど作成した Heroku アプリをひとつチェックし [Deploy] を押します。
+From here, select the Heroku application you just created and press "Deploy".
 
 ![](https://i.gyazo.com/e12c8bf818aec63ff674ff648916e8ab.png)
 
-しばらく待っていると Deploy Added が表示されてデプロイが完了します。
+After wating for some time "Deploy Added" will be displayed once the deploy has finished.
 
 ![](https://i.gyazo.com/133531b98309d31e45957138a7784d1c.png)
 
-Heroku アプリで確認すると無事フローがデプロイされています。
+If you check the Heroku app you will be able to see that the flow has been deployed.
 
 ![](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_02.png)
