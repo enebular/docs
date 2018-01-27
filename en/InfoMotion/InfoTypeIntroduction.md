@@ -1,16 +1,15 @@
 ---
-lastUpdated: 2018-01-16
-WIP: true
+lastUpdated: 2018-01-27
 ---
 
 # InfoType
 
-InfoType とは InfoMotion で利用するグラフのタイプのことです。
+An InfoType represents the graph type which can be used with InfoMotion.
 
-以下に、デフォルトのグラフの例を示します。
+The following are examples of default graphs.
 
 ```javascript
-// 以下のようなデータが複数個あるとします
+// It assumed that there is a number of data points like the following
 {
   created: Number,
   lang: String,
@@ -28,28 +27,27 @@ InfoType とは InfoMotion で利用するグラフのタイプのことです�
 - Pie Chart
 ![](/_asset/images/InfoMotion/enebular-developers-template-pie.png)
 
-- [InfoType の作成方法はこちら](./InfoMotionTool.md)
-- [作成した InfoType を enebular へアップロードする方法はこちら](./UploadInfoType.md)
+- [See here for creating an InfoType](./InfoMotionTool.md)
+- [See here for uploading a created InfoType to enebular](./UploadInfoType.md)
 
-InfoType をアップロードすると、enebular 上で確認できます。
+InfoType that are uploaded can be seen on enebular.
 
 ![](https://i.gyazo.com/9e7c26c3948b2ebbd77734439afdcc63.png)
 
-InfoType を選択すると InfoType の詳細画面へ移動します。
+Selecting an InfoType will take you to the InfoType details screen.
 
 ## Overview
 
-Overview ではグラフのプレビューができます。左からグラフ、スキーマ設定、データになります。スキーマとデータを変更して Preview を押すとグラフプレビューを更新できます。
+You can preview the graph here. From the left is the graph, schema settings and then the data. If you change the schema and data and then press "Preview" the preview of the graph will update.
 
 ![](https://i.gyazo.com/8da16592e6374c03b7b03798b31742e7.png)
 
-右上の Update から InfoType のファイルが更新ができます。
+The InfoType's files can be updated with the "Update" at the top right.
 
 ![](https://i.gyazo.com/1c831878fc0adc47a97394e075ced78d.png)
 
-
 ## Settings
 
-Settings では InfoType の名前や説明の編集、InfoType の削除ができます。
+You can change the name and description of the InfoType and delete the InfoType here.
 
 ![](https://i.gyazo.com/9c99f2ce91a7aeb6e542c18662191ab7.png)
