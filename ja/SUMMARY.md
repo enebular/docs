@@ -35,7 +35,6 @@ lastUpdated: 2018-01-25
 
 * [Introduction](Deploy/index.md)
 * [Example: Heroku](Deploy/DeployFlow/Heroku/index.md)
-* [Example: Lambda](Deploy/DeployFlow/Lambda/index.md)
 * [Example: mbed Cloud](Deploy/DeployFlow/mbed/index.md)
 
 ## Devices
