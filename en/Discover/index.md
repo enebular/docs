@@ -1,9 +1,9 @@
 ---
-lastUpdated: 2018-01-16
+lastUpdated: 2018-01-28
 WIP: true
 ---
 
-## Discover
+# 他のユーザーのアセットを検索する
 
 Asset は enebular.com 上に公開することで、他のユーザーに使ってもらうことができます。
 
