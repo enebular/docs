@@ -7,8 +7,10 @@ lastUpdated: 2017-12-01
 このチュートリアルでは、以下のことを行います。
 
 *   Projectの作成
-*   Milkcocoaを利用したFlowの作成
+*   Milkcocoa (※) を利用したFlowの作成
 *   作成したFlowのデータを使用したグラフ（InfoMotion）の作成
+
+※ [Milkcocoa](https://mlkcca.com) とは、IoTデバイス・スマートフォン・PC間で簡単にリアルタイムなデータのやり取りが出来るようになるクラウドプラットフォームです。
 
 ## Projectの作成
 
@@ -50,7 +52,7 @@ Edit Flow を押すと、Node-RED の編集画面が立ち上がります。
 
 ![](https://i.gyazo.com/2dd11f23a605ec41b73d413176d206c2.png)
 
-図のフローは、10秒に1回、[Milkcocoa（クラウドサービス）](https://mlkcca.com) のデータストアに、ランダムな7種類のID（`dataid`）をラベルとした 0〜50 のランダムな値（`v`）を保存するものです。
+図のフローは、10秒に1回、[Milkcocoa](https://mlkcca.com) のデータストアに、ランダムな7種類のID（`dataid`）をラベルとした 0〜50 のランダムな値（`v`）を保存するものです。
 
 下記の図を参考に、フローを作成ください。**timestamp node** で10秒ごとにフローが実行されるよう設定し、**function node** で プロパティを設定し、**milkcocoa node** で保存先である Milkcocoa のアプリ情報（`app_id`）・データストア情報（`datastore`）・認証情報（`API Key`、`API Secret`）を設定します。
 
