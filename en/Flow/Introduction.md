@@ -1,12 +1,12 @@
 ---
-lastUpdated: 2018-01-25
+lastUpdated: 2018-01-28
 ---
 
 # Flows
 
-Flows are a feature of enebular where you use the Flow Editor based on the <a href="https://nodered.jp/" target="_blank">Node-RED</a> tool (which is designed to connect hardware, APIs and online services) to process data in order to make the DataSource suitable for use with InfoMotion. Flows can also be utilized for uses outside of processing DataSource data.
+Flows are a feature of enebular where you use the Flow Editor based on the <a href="https://nodered.jp/" target="_blank">Node-RED</a> tool (which is designed to connect hardware, APIs and online services) to process data. 
 
-![](/_asset/images/enebular-developers-aboutflow.png)
+![](https://i.gyazo.com/893f5d6ee3a233e4db918fcfde4323f0.png)
 
 Note that as shown in the image below, while it is possible to deploy flows within Node-RED, here the purpose of this is to save the flow, and when doing this the flow execution will stop after a few minutes.
 
@@ -40,7 +40,7 @@ Please see [Deploying](../Deploy/index.md) for detailed information on deploying
 
 ## Devices
 
-You can see a list of devices that have been deployed to with external services here.
+You can see a list of devices that have been deployed to with external services here. This is a paid feature, which will be implemented soon.
 
 ![](https://i.gyazo.com/9f26dd5fa222389b4b90cb2eea5a1df7.png)
 

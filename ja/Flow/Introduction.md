@@ -1,18 +1,18 @@
 ---
-lastUpdated: 2018-01-24
+lastUpdated: 2018-01-28
 ---
 
 # Flow
 
-Flow は、ハードウェアデバイス・API およびオンラインサービスを接続するためのツール <a href="https://nodered.jp/" target="_blank">Node-RED</a> ベースの Flow Editor を用いて、DataSource に対して InfoMotion が扱いやすいようにデータを加工する enebular の機能です（DataSource のデータを加工をする以外の用途にも使えます）。
+Flow は、ハードウェアデバイス・API およびオンラインサービスを接続するためのツール <a href="https://nodered.jp/" target="_blank">Node-RED</a> ベースのフローエディタを利用して作成する、データフローのことです。
 
-![](/_asset/images/enebular-developers-aboutflow.png)
+![](https://i.gyazo.com/893f5d6ee3a233e4db918fcfde4323f0.png)
 
-なお、下の画像のように、Node-RED 上でフローをデプロイすることができますが、こちらはフローを保存することが目的で、フローの動作は数分間で止まります。
+なお、下の画像のように、Node-RED 上で Flow をデプロイすることができますが、こちらは Flow を保存することが目的で、**数分間でスリープする**点に注意して下さい。
 
 ![](https://i.gyazo.com/bfb9c0e25ad5e4a372a149336bdef8b8.png)
 
-フローを長い時間稼働させたい場合は、[他のサービスへデプロイ](../Deploy/index.md)する必要があります。
+データフローを長い時間稼働させたい場合は、[他のサービスへデプロイ](../Deploy/index.md)する必要があります。
 
 [作成した Flow](./CreateFlow.md) は enebular 上で確認できます。
 
@@ -24,7 +24,7 @@ Flow を選択すると、Flow の詳細画面に移動します。
 
 ## Overview
 
-Overview ではFlow情報の編集、Flowの公開ができます。Flow情報は、Flowを公開した際に他のユーザーが見てどういうFlowか理解しやすくする手助けになりますので、出来るだけすべての情報について記載することをおすすめします。
+Overview では Flow 情報の編集、Flow の公開ができます。Flow 情報は、Flow を公開した際に他のユーザーが見てどういう Flow か理解しやすくする手助けになりますので、出来るだけすべての情報について記載することをおすすめします。
 
 ![](https://i.gyazo.com/7cb9b53259022696e7cc47e4fa81d89b.png)
 
@@ -40,9 +40,10 @@ Deploy では Flow を特定のサービスへデプロイできます。
 
 ## Devices
 
-Devices では外部サービスへデプロイしたデバイスの一覧を見ることができます。
+Devices では外部サービスへデプロイしたデバイスの状態を一覧で見ることができます。なお、こちらは実装予定の有償機能になります。
 
 ![](https://i.gyazo.com/9f26dd5fa222389b4b90cb2eea5a1df7.png)
+
 
 ## Access
 
