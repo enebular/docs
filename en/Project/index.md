@@ -1,12 +1,14 @@
 ---
-lastUpdated: 2018-01-25
+lastUpdated: 2018-01-28
+WIP: true
+memo: 冒頭の文章を若干変更しました（英訳できずすみません。。）
 ---
 
 # Projects
 
-A **Project** is, as the name suggests, the unit for organizing a set of work as a single project. Projects can contain multiple assets such as the **Flow** type for data flows and the **InfoMotion** type for data visualization graphs.
+A **Project** is, as the name suggests, the unit for organizing a set of work as a single project. [Introduction](INDEX.md) でも触れたように、アセットやデバイスの管理ができます（画像内でデバイスがプロジェクトに含まれていないのは、デプロイされている実際の場所が外部のサービスの環境であるためです）。
 
-![](/_asset/images/enebular-developers-aboutproject.png)
+![enebular overview](/_asset/images/Introduction/enebular-developers-project-overview.png)
 
 The list of projects can be seen on the screen after logging in. Projects can be created with **Create Project**.
 

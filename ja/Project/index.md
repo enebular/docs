@@ -1,12 +1,12 @@
 ---
-lastUpdated: 2018-01-16
+lastUpdated: 2018-01-28
 ---
 
 # Project
 
-**Project** とは文字通りプロジェクトの単位です。Project は、データフローである **Flow** 、データの可視化を行うグラフである **InfoMotion** などの **Asset** を複数持つことが出来ます。
+**Project** とは文字通りプロジェクトの単位です。[Introduction](INDEX.md) でも触れたように、アセットやデバイスの管理ができます（画像内でデバイスがプロジェクトに含まれていないのは、デプロイされている実際の場所が外部のサービスの環境であるためです）。
 
-![](/_asset/images/enebular-developers-aboutproject.png)
+![enebular overview](/_asset/images/Introduction/enebular-developers-project-overview.png)
 
 ログイン後の画面でプロジェクト一覧を確認できます。**Create Project** からプロジェクトを作成できます。
 
