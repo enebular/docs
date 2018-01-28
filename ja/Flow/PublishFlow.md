@@ -1,24 +1,27 @@
 ---
-lastUpdated: 2017-12-15
-WIP: true
+lastUpdated: 2018-01-28
 ---
 
-# Flowの公開
+# Flow の公開
 
-Publishボタンからフローを公開することが出来ます。公開されたフローは他のユーザーがインポートすることができます。
+Flow の Overview ページの [Publish] から Flow を公開することが出来ます。公開された Flow は他のユーザーがインポートして使うことができます。
 
-![image.png (98.7 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_05.png)
+![](https://i.gyazo.com/e19b017ef07d53f1a3a0959af2af48e4.png)
 
-# 公開されたFlowのインポート
+名前と説明を確認・追記して、公開できます。
+
+![](https://i.gyazo.com/cc23d123e109024feaa6e55fd216cfdf.png)
+
+## 公開された Flow のインポート
 
 公開されたフローは、上部のグローバルナビの Discover から探すことが出来ます。
 
-![image.png (51.4 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_06.png)
+![](https://i.gyazo.com/4136d49b76d386cfa67bf18f2545f58d.png)
 
-![image.png (168.3 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_07.png)
+公開された Flow のインポートは、Flow 情報の [Fork] からできます。
 
-公開されたフローのインポートは、フロー情報の Forkボタンで選択したプロジェクトにインポートできます。
+![](https://i.gyazo.com/499d2c82e2cfdd51eacc79b111dd5853.png)
 
-![image.png (85.0 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_08.png)
+インポートするプロジェクトとデフォルトのアクセス権限を選択して [Fork] を押してインポートします。
 
-![image.png (85.4 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_09.png)
+![](https://i.gyazo.com/274977625533f69f749d83c2855a89b6.png)
