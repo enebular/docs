@@ -32,7 +32,7 @@ Heroku や AWS Lambda などクラウド上に実行環境が存在する場合�
 ### エッジ
 
 * [mbed Cloud](./DeployFlow/mbed/index.md)
-* AWS IoT
+* [AWS IoT](./DeployFlow/AWSIoT/index.md)
 
 ### クラウド
 
