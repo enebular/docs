@@ -33,7 +33,7 @@ The content managed within the project.
 The devices managed within the project. The devices here are those to which assets have been deployed.
 
 - [Device List](../Device/Introduction.md): The list of devices
-- [Licence Manager](../Device/ManageLicence.md): License management for using paid functionality
+- Licence Manager: License management for using paid functionality
 
 ## Config
 

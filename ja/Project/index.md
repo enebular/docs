@@ -31,7 +31,7 @@ lastUpdated: 2018-01-28
 プロジェクト内で管理するデバイスです。ここでいうデバイスとは Asset がデプロイされているデバイスを指します。
 
 - [Device List](../Device/Introduction.md): デバイスの一覧
-- [Licence Manager](../Device/ManageLicence.md): 有償機能を利用するためのライセンス管理
+- Licence Manager: 有償機能を利用するためのライセンス管理
 
 ## Config
 
