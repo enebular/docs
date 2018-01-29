@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-01-24
+lastUpdated: 2018-01-29
 ---
 
 # 動作環境
@@ -23,12 +23,12 @@ enebular では上記のブラウザでの利用を推奨しています。こ�
 
 ### 推奨ハードウェア (Recommended Hardware)
 
-enebular-agentは、Linux上で動作します。
-以下では、Linuxが動作する安価なゲートウェイ環境としての推奨ハードウェアを列挙します。
+enebular-agent は、Linux 上で動作します。
+以下では、Linux が動作する安価なゲートウェイ環境としての推奨ハードウェアを列挙します。
 
 | Product | Version  |
 | --- | --- | 
-| Raspberry PI3 Model B | [Version 3 Model B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) |  |
+| Raspberry PI3 Model B | [Version 3 Model B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) |
 | OpenBlocks | 対応予定 |
 
 ### 必要物
@@ -42,23 +42,32 @@ enebular-agentは、Linux上で動作します。
 ## オペレーティングシステム (Operating System)
 
 enebular-agent は、[Debian GNU/Linux](https://www.debian.org/) 上で動作します。
-推奨ハードウェアである Raspberry PIで は、Debian ベースの [Raspbian OS](https://www.raspbian.org/) が動作するため、これを利用します。
+推奨ハードウェアである Raspberry PI では、Debian ベースの [Raspbian OS](https://www.raspbian.org/) が動作するため、これを利用します。
 
-### サポート対象リリース
+### Raspberry PI3
+
+Raspberry PI3 では以下の OS をサポート対象とします。
+
+- [Raspbian Stretch base](http://archive.raspbian.org/raspbian/dists/stretch/) (9.0)
+- [Raspbian Jessie base](http://archive.raspbian.org/raspbian/dists/jessie/) (8.0)
+
+また、それぞれのミドルウェアのバージョンは以下になります。
+
+|  | [Node.js](https://nodejs.org/ja/download/releases/) | [npm](https://github.com/npm/npm/releases) | [Node-RED](https://github.com/node-red/node-red/releases) |
+| --- | --- | --- | --- |
+| streach base (9.0) | 8.9.0 | 5.5.1 | 0.17.5 |
+| jessie base (8.0) | 8.9.0 | 5.5.1 | 0.17.5 |
+
+### Linux(virtualbox)
+
+Linux では以下の OS をサポート対象とします。
 
 * [Debian GNU/Linux 9 Stretch](https://www.debian.org/releases/stretch/)
 * [Debian GNU/Linux 8 Jessie](https://www.debian.org/releases/jessie/)
 
-### サポート対象リリース(Raspberry PI3)
+また、それぞれのミドルウェアのバージョンは以下になります。
 
-* [Raspbian Stretch base](http://archive.raspbian.org/raspbian/dists/stretch/)
-* [Raspbian Jessie base](http://archive.raspbian.org/raspbian/dists/jessie/)
-
-## ミドルウェア (Middleware)
-
-| Middleware | Version | 
-| --- | --- |
-| [Node.js](https://nodejs.org/ja/download/releases/) | 8.9.0(Carbon(LTS)) or later | 
-| [npm](https://github.com/npm/npm/releases) | 5.5.0 or later | 
-| [Node-RED](https://github.com/node-red/node-red/releases) | 0.17.5 or later |
-
+|  | [Node.js](https://nodejs.org/ja/download/releases/) | [npm](https://github.com/npm/npm/releases) | [Node-RED](https://github.com/node-red/node-red/releases) |
+| --- | --- | --- | --- |
+| Linux 9 Stretch | 9.2.1 | 5.6.0 | 0.17.5 |
+| Linux 8 Jessie | 9.2.0 | 5.5.1 | 0.17.5 |
