@@ -1,74 +1,73 @@
 ---
-lastUpdated: 2018-01-29
-WIP: true
+lastUpdated: 2018-01-30
 ---
 
-# 動作環境
+# Operating Environments
 
-## enebular (Web サイト内の管理画面)
+## enebular (Web Management Screen)
 
-enebular が対象とする Web ブラウザは以下とします。
+The web browsers supported by enebular are as follows.
 
 | Web Browser | Version | OS |
 | --- | --- | --- |
 | Chrome | [63.0 or later](https://chromereleases.googleblog.com/search/label/Desktop%20Update) | Windows/Mac  |
-| Firefox | [57.0 or later](https://www.mozilla.jp/firefox/releases/) | Windows/Mac |
+| Firefox | [57.0 or later](https://www.mozilla.com/firefox/releases/) | Windows/Mac |
 | Safari | 11.0 or later | Mac |
 | Microsoft Edge | - | Windows |
 
-enebular では上記のブラウザでの利用を推奨しています。これらのブラウザで表示が崩れる、機能が動かないなどの問題がある場合はサポートまでご報告ください。
+The above browsers are recommended for use with enebular. Please contact support if an issue occurs such as something not displaying correctly or a function not working correctly.
 
-## enebular-agent （フローの実行環境）
+## enebular-agent (Flow Execution Environment)
 
-対象となるフローをデプロイするデバイスの実行環境は以下とします。
+The supported device execution environments for deploying flows are as follows.
 
-### 推奨ハードウェア (Recommended Hardware)
+### Recommended Hardware
 
-enebular-agent は、Linux 上で動作します。
-以下では、Linux が動作する安価なゲートウェイ環境としての推奨ハードウェアを列挙します。
+The enebular-agent runs on Linux.
+The following are examples of recommended hardware for inexpensive gateway environments which run Linux.
 
 | Product | Version  |
 | --- | --- | 
 | Raspberry PI3 Model B | [Version 3 Model B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) |
-| OpenBlocks | 対応予定 |
+| OpenBlocks | Support planned |
 
-### 必要物
+### Requirements
 
 * Network Interface (ethernet or WiFi)
-    * WiFiについては、IEEE802.11a/b/g等を想定していますが、LinuxからIP接続ができるネットワークが使用できれば良いものとします
+    * For WiFi, IEEE802.11a/b/g etc is assumed, but anything where an IP network connection from Linux can be used is OK.
 * SD-Card
 * RAM
 * Flash Memory
 
-## オペレーティングシステム (Operating System)
+## Operating System
 
-enebular-agent は、[Debian GNU/Linux](https://www.debian.org/) 上で動作します。
-推奨ハードウェアである Raspberry PI では、Debian ベースの [Raspbian OS](https://www.raspbian.org/) が動作するため、これを利用します。
+The enebular-agent runs on [Debian GNU/Linux](https://www.debian.org/).
+For the recommended Raspberry PI hardware, use the Debian based [Raspbian OS](https://www.raspbian.org/).
 
 ### Raspberry PI3
 
-Raspberry PI3 では以下の OS をサポート対象とします。
+The following operating systems are supported for use with the Raspberry PI3.
 
 - [Raspbian Stretch base](http://archive.raspbian.org/raspbian/dists/stretch/) (9.0)
 - [Raspbian Jessie base](http://archive.raspbian.org/raspbian/dists/jessie/) (8.0)
 
-また、それぞれのミドルウェアのバージョンは以下になります。
+The middleware versions for each are as follows.
 
-|  | [Node.js](https://nodejs.org/ja/download/releases/) | [npm](https://github.com/npm/npm/releases) | [Node-RED](https://github.com/node-red/node-red/releases) |
+|  | [Node.js](https://nodejs.org/en/download/releases/) | [npm](https://github.com/npm/npm/releases) | [Node-RED](https://github.com/node-red/node-red/releases) |
 | --- | --- | --- | --- |
 | streach base (9.0) | 8.9.0 | 5.5.1 | 0.17.5 |
 | jessie base (8.0) | 8.9.0 | 5.5.1 | 0.17.5 |
 
-### Linux(virtualbox)
+### Linux (VirtualBox)
 
-Linux では以下の OS をサポート対象とします。
+For Linux, the following operating systems are supported.
 
 * [Debian GNU/Linux 9 Stretch](https://www.debian.org/releases/stretch/)
 * [Debian GNU/Linux 8 Jessie](https://www.debian.org/releases/jessie/)
 
-また、それぞれのミドルウェアのバージョンは以下になります。
+The middleware versions for each are as follows.
 
-|  | [Node.js](https://nodejs.org/ja/download/releases/) | [npm](https://github.com/npm/npm/releases) | [Node-RED](https://github.com/node-red/node-red/releases) |
+|  | [Node.js](https://nodejs.org/en/download/releases/) | [npm](https://github.com/npm/npm/releases) | [Node-RED](https://github.com/node-red/node-red/releases) |
 | --- | --- | --- | --- |
 | Linux 9 Stretch | 9.2.1 | 5.6.0 | 0.17.5 |
 | Linux 8 Jessie | 9.2.0 | 5.5.1 | 0.17.5 |
