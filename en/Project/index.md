@@ -1,12 +1,12 @@
 ---
-lastUpdated: 2018-01-28
-WIP: true
-memo: 冒頭の文章を若干変更しました（英訳できずすみません。。）
+lastUpdated: 2018-01-30
 ---
 
 # Projects
 
-A **Project** is, as the name suggests, the unit for organizing a set of work as a single project. [Introduction](INDEX.md) でも触れたように、アセットやデバイスの管理ができます（画像内でデバイスがプロジェクトに含まれていないのは、デプロイされている実際の場所が外部のサービスの環境であるためです）。
+A **Project** is, as the name suggests, the unit for organizing a set of work as a single project.
+
+As mentioned in the [Introduction](../INDEX.md), you can manage assets and devices in a project (in the image, devices are not included within the project as their actual deploy location is in a third party service environment).
 
 ![enebular overview](/_asset/images/Introduction/enebular-developers-project-overview.png)
 

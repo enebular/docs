@@ -4,7 +4,7 @@ lastUpdated: 2018-01-28
 
 # Project
 
-**Project** とは文字通りプロジェクトの単位です。[Introduction](INDEX.md) でも触れたように、アセットやデバイスの管理ができます（画像内でデバイスがプロジェクトに含まれていないのは、デプロイされている実際の場所が外部のサービスの環境であるためです）。
+**Project** とは文字通りプロジェクトの単位です。[Introduction](../INDEX.md) でも触れたように、アセットやデバイスの管理ができます（画像内でデバイスがプロジェクトに含まれていないのは、デプロイされている実際の場所が外部のサービスの環境であるためです）。
 
 ![enebular overview](/_asset/images/Introduction/enebular-developers-project-overview.png)
 
