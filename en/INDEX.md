@@ -45,7 +45,7 @@ Developed assets can be deployed to devices via third-party services. Currently 
 
 While these services are utilized to deploy assets to devices, when doing a deploy there are two concepts that should be kept in mind.
 
-- **Device**: The device that will be the execution environment of the asset
+- **Device**: The device that will be the execution environment of the asset.
 - **Device Manager**: The managing role that accepts deploy requests from enebular and then deploys to the device, monitors the device and sends logs on to enebular.
 
 Let's look at an example of an actual service.

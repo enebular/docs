@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-01-28
+lastUpdated: 2018-01-30
 ---
 
 # Flows
@@ -8,7 +8,7 @@ Flows are a feature of enebular where you use the flow editor based on the <a hr
 
 ![](https://i.gyazo.com/893f5d6ee3a233e4db918fcfde4323f0.png)
 
-Note that as shown in the image below, while it is possible to deploy flows within Node-RED, here the purpose of this is to just save the flow, and note that when doing this **the flow execution will stop after a few minutes**.
+Note that as shown in the image below, while it is possible to deploy flows within Node-RED, here the purpose of this is to just save the flow, and when doing this **the flow execution will stop after a few minutes**.
 
 ![](https://i.gyazo.com/bfb9c0e25ad5e4a372a149336bdef8b8.png)
 
