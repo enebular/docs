@@ -34,13 +34,13 @@ lastUpdated: 2018-01-25
 ## Deploys
 
 * [Introduction](Deploy/index.md)
+* [Example: AWS IoT](Deploy/DeployFlow/AWSIoT/index.md)
 * [Example: Heroku](Deploy/DeployFlow/Heroku/index.md)
 * [Example: mbed Cloud](Deploy/DeployFlow/mbed/index.md)
 
 ## Devices
 
 * [Introduction](Device/Introduction.md)
-* [Managing Licenses](Device/ManageLicence.md)
 
 ## Access
 
