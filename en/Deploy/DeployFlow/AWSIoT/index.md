@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2017-12-01
+lastUpdated: 2017-01-30
 WIP: true
 ---
 
@@ -52,7 +52,7 @@ AWS IoT で今回用の設定を作成します。
 
 鍵ファイルを全てダウンロードして有効化します。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_10.png)
+![](https://i.gyazo.com/f75929d1eefab6e8a499e85b41434d64.png)
 
 有効化が完了します。
 
@@ -159,32 +159,100 @@ Select Connection の右の [New] を押します。必要な情報を入力し�
 
 ![](https://i.gyazo.com/21ff895a55f684d63b318ef565ba7f41.png)
 
-まだ Disconnected になっています。これはデバイスが AWS IoT に接続が確立していないことを意味します。
+まだ Disconnected になっています。これはデバイスが AWS IoT にデプロイされていないまたは接続が切れていることを意味します。
 
-なので、パソコン上でデバイスを立ち上げて接続をします。
+enebular 側の操作は一旦置いておいて、次はパソコン上でデバイスのセットアップをしましょう。
 
-## デバイス（agent）のセットアップ
+## デバイス（エージェント）のセットアップ
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_26.png)
+デバイスのセットアップを行います。なお、デバイスマネージャーからくる命令を受けて処理を行うコードベースのデバイスのラッパーのことを**エージェント**と呼びます。
 
-<a href="https://github.com/enebular/enebular-awsiot-agent" target="_blank">GitHub</a>からダウンロードしてきます。
+<a href="https://github.com/enebular/enebular-awsiot-agent" target="_blank">GitHub</a> からダウンロードしてきます。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_27.png)
-
-（WIP）
-
-exampleフォルダに移動します。
-
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_28.png)
-
-コマンドを実行します。
-
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_29.png)
+エージェントのコアモジュールをビルドします。
 
 ```
-windows
-
-set AWSIOT_CONFIG_FILE=./config.json
-set NODE_RED_DIR=./node-red
-node_modules\.bin\enebular-awsiot-agent
+cd agent
+npm run build
 ```
+
+Node-RED のインスタンスをインストールします。
+
+```
+cd ../node-red
+npm install
+```
+
+AWS IoT ポートのモジュールをインストールしてビルドします。
+
+```
+cd ../ports/awsiot
+npm install
+npm run build
+```
+
+AWS IoT ポートのディレクトリの下に、AWS IoT ポートを単にラップする `example` というモジュールがあります。`example` モジュールのディレクトリに移動し、モジュールをインストールします。`example` モジュールの `package.json`ファイルを確認すると、Node-RED ディレクトリを指定する環境変数が設定されていることが分かります。
+
+```
+cd example
+npm install
+```
+
+少し前の手順でダウンロードした AWS IoT Thing 用の証明書ファイルを `example` モジュールの `certs` ディレクトリににコピーします。
+
+![](https://i.gyazo.com/2990d00298630a3ccfdffe7827131287.png)
+
+コピーした証明書ファイルの正しいパスを含めて、この接続情報で `example` モジュールの `config.json`ファイルを更新します。
+
+```json
+{
+  "host": "<THING SHADOW REST API ENDPOINT>",
+  "port": 8883,
+  "clientId": "<THING NAME>",
+  "thingName": "<THING NAME>",
+  "caCert": "./certs/VeriSign-Class 3-Public-Primary-Certification-Authority-G5.pem",
+  "clientCert": "./certs/<THING CERT>",
+  "privateKey": "./certs/<THING PRIVATE KEY>",
+  "topic": "aws/things/<THING NAME>/shadow/update"
+}
+```
+
+### 実行
+
+上記のセットアップが完了したら、エージェントは `npm run start` コマンドで `example` モジュールのディレクトリから起動できます。
+
+デフォルトの状態ではエージェントがコンソールにログを出力しませんが、`DEBUG` 環境変数を `info` または `debug` のいずれかに設定することで出力するようにできます。
+
+```
+DEBUG=info npm run start
+```
+
+以下のようなログが表示されるかと思います。
+
+![](https://i.gyazo.com/c2cbd942f6f12c1236703593a14dc94b.png)
+
+エージェントが正常に起動して AWS IoT に接続できていた場合、次のログメッセージが表示されているかと思います。
+
+```
+internal: aws-iot: Connected to AWS IoT
+```
+
+これが表示されると、enebular でデバイスを使用することができます。
+
+## フローのデプロイ
+
+デプロイの準備ができました。再度以下の画面に戻ってください。
+
+![](https://i.gyazo.com/21ff895a55f684d63b318ef565ba7f41.png)
+
+左のチェックマークにチェックして、[Deploy] を押すとデプロイが完了します。デプロイの履歴で Deploy Status にチェックマークがついていれば成功しています。
+
+![](https://i.gyazo.com/698d8cecdc353a76b9f3b84788abfa5d.png)
+
+また、デバイス側のログで更新されているのが確認できるかと思います。
+
+![](https://i.gyazo.com/e2e15ad09331937ff8585c14276d6c65.png)
+
+![](https://i.gyazo.com/a8e64dfb7799bae5b360b64af401f7a1.png)
+
+エージェントのコアを実行する時にさまざまなオプションを指定できます。AWS IoT の場合、このオプションの指定を `ports/awsiot/src/index.js` のソースコードで見ることができます。エージェントのコアがサポートするすべてのオプションには、`agent/src/index.js` のソースコードファイルを参照してください。
