@@ -4,10 +4,10 @@
   "description": "## Get Started",
   "main": "README.md",
   "scripts": {
+    "postinstall": "gitbook install",
     "test": "mocha test.js",
-    "check": "node check.js",
     "build": "gitbook build",
-    "serve": "gitbook serve"
+    "check": "node check.js"
   },
   "repository": {
     "type": "git",

@@ -1,23 +1,27 @@
 ---
-lastUpdated: 2017-12-15
+lastUpdated: 2018-01-30
 ---
 
-# Flowの公開
+# Publishing Flows
 
-Publishボタンからフローを公開することが出来ます。公開されたフローは他のユーザーがインポートすることができます。
+Flows can be published with "Publish" on the flow overview page. Flows that have been published can be imported and used by other users.
 
-![image.png (98.7 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_05.png)
+![](https://i.gyazo.com/e19b017ef07d53f1a3a0959af2af48e4.png)
 
-# 公開されたFlowのインポート
+You can confirm and alter the name and description, and then publish the flow.
 
-公開されたフローは、上部のグローバルナビの Discover から探すことが出来ます。
+![](https://i.gyazo.com/cc23d123e109024feaa6e55fd216cfdf.png)
 
-![image.png (51.4 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_06.png)
+## Importing Published Flows
 
-![image.png (168.3 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_07.png)
+Published flows can be found in "Discover" on the top navigation bar.
 
-公開されたフローのインポートは、フロー情報の Forkボタンで選択したプロジェクトにインポートできます。
+![](https://i.gyazo.com/4136d49b76d386cfa67bf18f2545f58d.png)
 
-![image.png (85.0 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_08.png)
+Importing a published flow can be done with "Fork" on the flow information page.
 
-![image.png (85.4 kB)](/_asset/images/Flow/EditFlow/flow-edit-flow_09.png)
+![](https://i.gyazo.com/499d2c82e2cfdd51eacc79b111dd5853.png)
+
+To import the flow, select the project to import to and the default access permissions, and then press "Fork".
+
+![](https://i.gyazo.com/274977625533f69f749d83c2855a89b6.png)

@@ -1,6 +1,5 @@
 ---
-lastUpdated: 2018-01-16
-WIP: true
+lastUpdated: 2018-01-29
 ---
 
-※実装途中です
+This is a paid feature planned for implementation. Please stand by.

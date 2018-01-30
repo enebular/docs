@@ -1,49 +1,44 @@
 ---
-lastUpdated: 2018-01-15
-WIP: true
+lastUpdated: 2018-01-27
 ---
 
-# Flow の作成
+# Creating Flows
 
-Data Flowを準備してDataSourceに向けてデータを加工して入力していきます。
+The following covers how to create flows.
 
-![](https://i.gyazo.com/1e90909b5ecefe56ff1934aa41e5a7b9.png)
-
-![](/_asset/images/enebular-developers-createprojectmodal.png)
+First, select a project from the project list and you'll be taken to the project management screen.
 
 ![](https://i.gyazo.com/69a5b817e8681349f45373eb7aead486.png)
 
-## Assetsを作成
+Open the dialog box with the "+" button on the bottom right.
 
 ![](https://i.gyazo.com/e521afd4d489291aa774fe9429cf3321.png)
 
-まずアセットを作成します。
+Select "flow" for the asset type in the dialog box.
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_07.png)
 
-Asset Typeはflowを指定します。
+After selecting "flow", you'll be able to set the icon, title and access permissions.
 
-![image](/_asset/images/Flow/CreateFlow/flow-create-flow_08.png)
+![](https://i.gyazo.com/046b8c6b177e0edaf9cc3f56af67e9ac.png)
 
-flowを指定すると、アイコンやタイトルの指定、および、アクセス権限の設定ができます。
-
-![image](/_asset/images/Flow/CreateFlow/flow-create-flow_09.png)
-
-* カテゴリ
-    * 今回の用途に合ったカテゴリを指定
-* title
-    * フロータイトル
-* アクセス権限
-    * admin
+* Title
+    * An appropriate title for the flow
+* Description
+    * This can be left blank
+* Access Permissions
+    * superdev
+* Category
+    * An appropriate category for the flow
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_10.png)
 
-設定ができたらContinueボタンをクリックします。
+Once you've completed the settings, click the "Continue" button.
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_11.png)
 
-フローアセットが作成されました。
+The flow has now been created.
 
-ここからフローエディタを立ち上げて Node-RED を編集します。以下の例を参考ください。
+From here, the flow is edited by starting up the flow editor. Please refer to the following example.
 
-- [Milkcocoa フロー](./FlowExampleMilkcocoa.md)
+- [Milkcocoa Flow](./FlowExampleMilkcocoa.md)

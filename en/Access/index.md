@@ -1,15 +1,14 @@
 ---
-lastUpdated: 2017-12-01
-WIP: true
+lastUpdated: 2018-01-30
 ---
 
-# アクセス権の編集
+# Editing Access Permissions
 
-enebular の Project や Asset のアクセス権についてのドキュメントです。
+The following covers enebular's project and asset access permissions.
 
-## ユーザーの種類
+## User Types
 
-まずはユーザーの種類について把握しましょう。以下の3種類のユーザーがいます。
+First, let's go over the user types. There are the following three types of users.
 
 - Project Owner
 - Project Collaborator
@@ -17,41 +16,41 @@ enebular の Project や Asset のアクセス権についてのドキュメン�
 
 ![](/_asset/images/enebular-developers-aboutaccess.png)
 
-**Project Owener** は、Project の管理者です。Project のメンバーの編集、その Project に属するすべての Asset のアクセス管理ができます。
 
-**Project Collaborator** は、Project のメンバーです。その Project に属するすべての Asset にアクセスができます。
+The **Project Owner** is the project manager. They can edit project members and manage access to all of the assets in a project.
 
-**Outside Collaborator** は、ひとつの Asset に紐付いたメンバーです。ひとつの Asset に対してアクセスできます。
+A **Project Collaborator** is a project member. They can access all of the assets in a project.
 
-Project Owner は Project の作成者が自動的に Project Owner になります。
+An **Outside Collaborator** is a member linked to one asset. They can access that one particular asset.
 
-Project Collaborator は Project のサイドバーの Access から行くことができる Access ページで Invite できます。
+The creator of a project automatically becomes the project owner.
+
+Project collaborators can be invited from the "Access" page which can be navigated to from "Access" in the project sidebar.
 
 ![](https://i.gyazo.com/de4082a2bf03d51d473dbb1e9bf5f78b.png)
 
-Outside Collaborator は Flow の詳細画面の Access タブから行くことができる Access ページで Invite できます。
+Outside collaborators can be invited from the "Access" page which can be navigated to from the "Access" tab in the flow details screen.
 
 ![](https://i.gyazo.com/cc774e8f901c3629f2c79098172dba61.png)
 
+## About Asset Privileges
 
-## Asset privilege について
+Next, permissions called "Asset privileges" can be configured for each of the assets of the three user types.
 
-そして、3種類のユーザーにはそれぞれの Asset に対して Asset privilege という権限を設定できます。
-
-- owner: 閲覧・編集・デプロイ・メンバーの追加
-- superdev: 閲覧・編集・デプロイ
-- developer: 閲覧・編集
-- operator: 閲覧・デプロイ
-- user: 閲覧
+- owner: view / edit / deploy / add members
+- superdev: view / edit / deploy
+- developer: view / edit
+- operator: view / deploy
+- user: view
 
 ![](/_asset/images/enebular-developers-assetprivilege.png)
 
-Asset privilege は Flow の詳細画面の Access タブから行くことができる Access ページで設定できます。
+Asset privileges can be set on the "Access" page which can be navigated to from the "Access" tab in the flow details screen.
 
-メンバーの Role の部分を選択することで権限を変更できます。
+The permissions can be changes by selecting the "Role" for the member.
 
 ![](https://i.gyazo.com/b6ba9650ebedf08291983c7e472146e0.png)
 
-default privilege は Project Collaborator を Invite した際に、そのメンバーに自動的に与えられる権限です。
+The "default privilege" is that automatically assigned to members when invited as a project collaborator.
 
 ![](https://i.gyazo.com/5d2970b4226d5633c2e81f7abc5f721f.png)

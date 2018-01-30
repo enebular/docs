@@ -1,48 +1,53 @@
 ---
-lastUpdated: 2018-01-16
+lastUpdated: 2018-01-30
 ---
 
 # Summary
 
-* [Get Started](GetStarted/index.md)
+* [Release Notes](Releases/index.md)
+  * [enebular](Releases/index.md#enebular)
+    * [2.0.0](Releases/enebular/2.0.0.md)
+  * [enebular agent](Releases/index.md#enebular-agent)
+    * [2.0.0](Releases/enebular-agent/2.0.0.md)
+  * [enebular edge agent](Releases/index.md#enebular-edge-agent)
+    * [0.9.0](Releases/enebular-edge-agent/0.9.0.md)
+* [Getting Started](GetStarted/index.md)
 
-## Project
+## Projects
 
-* [About Project](Project/index.md)
+* [About Projects](Project/index.md)
 * [Project Settings](Project/Settings.md)
 * [Billing Information](Project/Billing.md)
 
-## Flow
+## Flows
 
 * [Introduction](Flow/Introduction.md)
-* [Create Flow](Flow/CreateFlow.md)
+* [Creating Flows](Flow/CreateFlow.md)
 * [Example: Milkcocoa](Flow/FlowExampleMilkcocoa.md)
-* [Publish Flow](Flow/PublishFlow.md)
+* [Publishing Flows](Flow/PublishFlow.md)
 
 ## InfoMotion
 
 * [Introduction](InfoMotion/Introduction.md)
 * [InfoType](InfoMotion/InfoTypeIntroduction.md)
-  * [Create InfoType](InfoMotion/InfoMotionTool.md)
-  * [Upload InfoType](InfoMotion/UploadInfoType.md)
+  * [Creating an InfoType](InfoMotion/InfoMotionTool.md)
+  * [Uploading an InfoType](InfoMotion/UploadInfoType.md)
   * [API Reference](InfoMotion/APIReference.md)
 * [DataSource](InfoMotion/CreateDataSource.md)
   * [API Gateway](InfoMotion/DataSourceAPIGateway.md)
-* [Dashboard](InfoMotion/CreateInfoMotion.md)
-* [Share Infomtion](InfoMotion/ShareInfoMotion.md)
+* [Dashboards](InfoMotion/CreateInfoMotion.md)
+* [Sharing an InfoMotion](InfoMotion/ShareInfoMotion.md)
 
-## Deploy
+## Deploys
 
 * [Introduction](Deploy/index.md)
 * [Example: AWS IoT](Deploy/DeployFlow/AWSIoT/index.md)
 * [Example: Heroku](Deploy/DeployFlow/Heroku/index.md)
-* [Example: Lambda](Deploy/DeployFlow/Lambda/index.md)
 * [Example: mbed Cloud](Deploy/DeployFlow/mbed/index.md)
 
 ## Devices
 
 * [Introduction](Device/Introduction.md)
-* [Manage Licence](Device/ManageLicence.md)
 
 ## Access
 
@@ -50,7 +55,7 @@ lastUpdated: 2018-01-16
 
 ## Discover
 
-* [Discover Assets](Discover/index.md)
+* [Discovering Assets](Discover/index.md)
 
 ## Account
 
@@ -58,4 +63,4 @@ lastUpdated: 2018-01-16
 
 ## Appendix
 
-* [Support Environment](Other/Support.md)
+* [Supported Environments](Other/Support.md)

@@ -16,7 +16,7 @@ enebular の Project や Asset のアクセス権についてのドキュメン�
 
 ![](/_asset/images/enebular-developers-aboutaccess.png)
 
-**Project Owener** は、Project の管理者です。Project のメンバーの編集、その Project に属するすべての Asset のアクセス管理ができます。
+**Project Owner** は、Project の管理者です。Project のメンバーの編集、その Project に属するすべての Asset のアクセス管理ができます。
 
 **Project Collaborator** は、Project のメンバーです。その Project に属するすべての Asset にアクセスができます。
 
