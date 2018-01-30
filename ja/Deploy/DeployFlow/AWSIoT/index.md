@@ -252,6 +252,8 @@ internal: aws-iot: Connected to AWS IoT
 
 ![](https://i.gyazo.com/e2e15ad09331937ff8585c14276d6c65.png)
 
-![](https://i.gyazo.com/a8e64dfb7799bae5b360b64af401f7a1.png)
+![](https://i.gyazo.com/bed3a72a00a9cb68244d52014d273281.jpg)
+
+`unauthenticated` と出ますが、ライセンスが未購入であるということです。購入をしなくてもフローは動作しますが、ライセンスを購入することでステータスやログの監視ができるようになります。
 
 エージェントのコアを実行する時にさまざまなオプションを指定できます。AWS IoT の場合、このオプションの指定を `ports/awsiot/src/index.js` のソースコードで見ることができます。エージェントのコアがサポートするすべてのオプションには、`agent/src/index.js` のソースコードファイルを参照してください。
