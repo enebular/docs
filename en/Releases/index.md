@@ -12,14 +12,14 @@ enebularは2014年11月22日のβリリースから3年の時を経て、大き�
 ### New
 
 #### Enterprise Planの提供
-これまで無償での提供のみでしたが、サポートの充実や安定した運用を望む声に応え、Enterprise Planの提供を開始いたします。Enterprise Planでは、マイコン向けエージェントの利用やデバイスの運用管理機能、プロッフェショナルサポートをご利用いただけます。Enterprise Planの詳細については、support@enebular.comにお問い合わせください。
+これまで無償での提供のみでしたが、サポートの充実や安定した運用を望む声に応え、Enterprise Planの提供を開始いたします。Enterprise Planでは、マイコン向けエージェントの利用やデバイスの運用管理機能、プロッフェショナルサポートをご利用いただけます。Enterprise Planの詳細については、support@enebular.com にお問い合わせください。
 
 #### 一新された管理コンソール
 管理コンソール（ダッシュボード）を一新し、より見やすくなりました。
 管理コンソールからFlowをデプロイできるなど、ユーザービリティを改善しました。
 
 #### デプロイ可能なデバイスの拡充
-これまで対応していたクラウド環境やゲートウェイに加え、Arm Mbed対応マイコンボードへのフローデプロイをサポートしました。ゲートウェイ向けエージェントについては、<link:enebular-agent verion2.0.0リリースノート>を参照してください。マイコン向けエージェントについては、<link:enebular-edge-agent version0.9.0リリースノート>を参照してください。
+これまで対応していたクラウド環境やゲートウェイに加え、Arm Mbed対応マイコンボードへのフローデプロイをサポートしました。ゲートウェイ向けエージェントについては、[enebular-agent verion2.0.0リリースノート](#enebular-agent)を参照してください。マイコン向けエージェントについては、[enebular-edge-agent version0.9.0リリースノート](#enebular-edge-agent)を参照してください。
 
 #### 新しいコネクションタイプの追加
 これまで対応していたAWS IoT、Herokuに加え、Arm Mbed Cloudのサポートが追加されました。Arm Mbed Cloud対応はEnterprise Plan利用者限定の機能となります。
@@ -37,9 +37,8 @@ enebularの動作確認済みWebブラウザは下記の通りです。
 |--|--|--|
 |Google Chrome|63.0 or later|Windows/Mac|
 |Mozilla Firefox|57.0 or later|Windows/Mac| 
-|Safari|11.0 or later|Mac|
 
-enebularは今後もユーザーの声を反映し、新しい機能の追加やユーザービリティの向上を行い、より使いやすいサービスを目指してまいります。enebularについてのご意見お問い合わせはsupport@enebular.comにお寄せください。ユーザーの皆様のフィードバックをお待ちしております。
+enebularは今後もユーザーの声を反映し、新しい機能の追加やユーザービリティの向上を行い、より使いやすいサービスを目指してまいります。enebularについてのご意見お問い合わせは support@enebular.com にお寄せください。ユーザーの皆様のフィードバックをお待ちしております。
 
 ### Release History
 
