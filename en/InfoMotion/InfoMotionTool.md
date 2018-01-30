@@ -11,7 +11,7 @@ The infomotion-tool allows the developer to run, test and edit InfoMotions local
 ## Installing infomotion-tool
 
 ```
-sudo npm install infomotion-tool -g
+sudo npm install @uhuru/enebular-infomotion-tool-v2 -g
 ```
 
 ## Commands
@@ -32,12 +32,12 @@ eit create myfirstgraph
 `create` builds the following files
 
 - `datasource.json`
-- `package.json`
 - `plugin.css`
 - `plugin.js`
 - `plugin.json`
+- `README.md`
 
-![](/_asset/images/InfoMotion/enebular-developers-about-infomotion-files.png)
+![](https://i.gyazo.com/ced32c7e2b9e11ec9b6f25d8a98149e4.png)
 
 ### datasource.json
 
@@ -146,11 +146,6 @@ for quick testing. Live and Daterange picker return this same piece of data.
 }
 ```
 
-#### package.json
-
-A usual package json for node.js for package handling.
-For more information see [NPM](https://docs.npmjs.com/files/package.json).
-
 #### plugin.css
 
 Styling for the InfoMotion.
@@ -201,21 +196,20 @@ eit create myfirstgraph -t piechart
 eit create myfirstgraph -t map
 ```
 
-## Running locally in the browser
-
-The `run` command and open http://localhost:3000 .
-
-```
-cd myfirstgraph
-eit run
-```
-
 ## Packaging
 
-Once the InfoType is ready to be uploaded to Enebualr run the command.
+Once the InfoType is ready to be uploaded to enebular run the command.
 
 ```bash
 eit package
+```
+
+## Running locally in the browser
+
+The `run` command and open http://localhost:3000 after `eit package`.
+
+```
+eit run
 ```
 
 This will create a target folder containing three files.

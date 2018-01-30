@@ -11,7 +11,7 @@ InfoType を作成するには `infomotion-tool` が必要です。
 ## infomotion-tool のインストール
 
 ```
-sudo npm install infomotion-tool -g
+sudo npm install @uhuru/enebular-infomotion-tool-v2 -g
 ```
 
 ## 利用可能なコマンド
@@ -34,12 +34,12 @@ eit create myfirstgraph
 以下のファイルが作成されます。
 
 - `datasource.json`
-- `package.json`
 - `plugin.css`
 - `plugin.js`
 - `plugin.json`
+- `README.md`
 
-![](/_asset/images/InfoMotion/enebular-developers-about-infomotion-files.png)
+![](https://i.gyazo.com/ced32c7e2b9e11ec9b6f25d8a98149e4.png)
 
 ### datasource.json
 
@@ -149,10 +149,6 @@ eit create myfirstgraph
 }
 ```
 
-### package.json
-
-npm のプロジェクトで利用するものです。詳しくは [NPM 公式サイトのドキュメント](https://docs.npmjs.com/files/package.json)をご覧ください。
-
 ### plugin.css
 
 グラフで利用する CSS です。グローバルに指定されるので、衝突しないように命名に注意してください。
@@ -201,21 +197,20 @@ eit create myfirstgraph -t piechart
 eit create myfirstgraph -t map
 ```
 
-## ブラウザでのテスト
-
-以下のコマンドで http://localhost:3000 にアクセスすることで、テストできます。
-
-```
-cd myfirstgraph
-eit run
-```
-
 ## パッケージング
 
-編集が終わったら、以下でパッケージできます。
+以下でパッケージできます。
 
 ```bash
 eit package
+```
+
+## ブラウザでのテスト
+
+以下のコマンドで http://localhost:3000 にアクセスすることで、テストできます。テスト前にはパッケージしてください。
+
+```
+eit run
 ```
 
 以下の3つが入った `target` というフォルダが作成されます。
