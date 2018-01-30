@@ -6,7 +6,7 @@ lastUpdated: 2018-01-30
 
 フローのデプロイ先はそのままデプロイボタンを押すと、enebular が利用しているサーバーにデプロイされます。enebular で Mbed Cloud を経由し、登録されているデバイスへのデプロイすることも可能です。
 
-対応デバイスについては  [Supported Environment](/Other/Support.md) をご覧ください。
+対応デバイスについては [Supported Environment](/Other/Support.md) をご覧ください。
 
 このページでは、Mbed Cloudを経由してデバイスにフローをデプロイする手順を説明します。
 
@@ -53,6 +53,7 @@ enebular edge agent へのデプロイは下記フローを使いましょう。
 
 ![image](/_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_15.png)
 
+
 以下のようなフローが反映されます。
 
 ![image](/_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_16.png)
@@ -89,6 +90,7 @@ Create Connection を画面が開きます。
 
 必要な MBED API Key は [Mbed Cloud Portal](https://portal.us-east-1.mbedcloud.com/) より取得できます。
 
+
 Mbed Cloud Portal の Access manegement の APIキーページの [新しいAPIキーの作成] を選択します。
 
 ![image](/_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_09.png)
@@ -99,12 +101,12 @@ Mbed Cloud Portal の Access manegement の APIキーページの [新しいAPI�
 
 [APIキーの作成] を選択すると、ログイン時のパスワード入力し、  [Enter] を選択してください。
 
+
 ![image](/_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_11.png)
 
 API Key が表示されます。一度しか確認できないので注意してください。
 
 ![image](/_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_12.png)
-
 
 Create Connection の画面に MBED API Key の入力ができたら、[Save]で保存します。
 
