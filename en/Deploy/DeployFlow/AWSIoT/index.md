@@ -1,189 +1,186 @@
 ---
 lastUpdated: 2017-01-30
-WIP: true
 ---
 
-# AWS IoT へのデプロイ
+# Deploying to AWS IoT
 
-enebular では作成した Flow を AWS IoT にも書き出すことができます。
+Flows created on enebular can be deployed to AWS IoT.
 
-## Flow の作成
+## Creating a Flow
 
-今回は以下のような Flow を作成します。
+For this example, make a flow like the following.
 
 ![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_02.png)
 
-フローが出来たら、デプロイして保存します。
+Once the flow is ready, deploy it to save it.
 
 ![](https://i.gyazo.com/bfb9c0e25ad5e4a372a149336bdef8b8.png)
 
-保存したら、フローの Deploy タブから [Deploy] を押します。
+Once it has been saved, press "Deploy" on the flow's "Deploy" tab.
 
 ![](https://i.gyazo.com/16c258270a9b0f0d609fce45da7df221.png)
 
-Deploy Flow 画面に移動するので、 [Select Connection Type] を `AWS IoT` にして待機します。
+This will take you do the "Deploy Flow" screen. Choose `AWS IoT` for "Select Connection Type" and wait.
 
 ![](https://i.gyazo.com/80831b57617fda2ae76ad4f26d3f88c1.png)
 
-## AWS IoT で設定を作成
+## Creating the Configuration on AWS IoT
 
-AWS IoT で今回用の設定を作成します。
+We'll create a configuration on AWS IoT to use this time.
 
-### モノの作成
+### Creating a Thing
 
-メニューから 管理＞モノ を選択し、[モノの登録]を押します。
+Select "Manage > Things" from the menu and press "Register a thing".
 
 ![](https://i.gyazo.com/653f48dfa7b14c3c6e670dbf7862a8be.png)
 
-[単一のモノを作成する]を押します。
+Press "Create a single thing".
 
 ![](https://i.gyazo.com/261575293420845b96a58acbcd4a119a.png)
 
-適当な名前をつけて次に進みます。
+Give it an appropriate name and move to the next step.
 
 ![](https://i.gyazo.com/93bdb0ab9e12d49456adfdd5e4dc87ab.png)
 
+### Creating the Certificates
 
-### 証明書の作成
-
-1-Click 証明書作成の[証明書の作成]を押します。
+Press the "Create certificate" of One-click certificate creation.
 
 ![](https://i.gyazo.com/4d975a2aee62da86c79625a706e17a7f.png)
 
-鍵ファイルを全てダウンロードして有効化します。
+Download all of the files and activate it.
 
 ![](https://i.gyazo.com/f75929d1eefab6e8a499e85b41434d64.png)
 
-有効化が完了します。
+The activation will complete.
 
 ![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_11.png)
 
-### 新規ポリシーの作成
+### Creating the New Policies
 
-メニューの 安全性＞ポリシー から[ポリシーの作成]を押します。
+Select "Secure > Policies" from the menu and press "Create a policy".
 
 ![](https://i.gyazo.com/360b1075f4ee5dfd1019c322b5d1e37e.png)
 
-名前はわかりやすい名前を指定します。
+Specify an easy to understand name.
 
 ![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_14.png)
 
-つづいて、ステートメントを追加します。
+Next we add a statement.
 
 ![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_15.png)
 
-ポリシー構文は以下のように指定します。
+Specify the policy statements as shown below.
 
-* アクション
+* Action
     * iot:*
-* リソース ARN
+* Resource ARN
     * *
 
 ![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_16.png)
 
-このポリシー構文は一旦試すための許可範囲が広い設定です。慣れてきたら、ポリシーも細かく調整してみてください。
+This policy statement configuration provides a wide degree of access to allow for the tests here. Once you're ready, please fine tune the policy.
 
-作成ボタンを押してポリシーを保存します。
+Press the create button to save the policy.
 
 ![](https://i.gyazo.com/7bb0ea26adc7f408941c76caf484185f.png)
 
-## 証明書へポリシーのアタッチ
+## Attaching the Policy to the Certificates
 
-このままだとポリシーと証明書が結びついてないのでアタッチします。さきほど作成したモノの画面に移動して、メニューのセキュリティから作成した証明書を選択します。
+As things are now the policy and certificates are not tied together, so we will attached them here. Move to the details screen of the thing you created just before, and select the certificate from the security section in the menu.
 
 ![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_18.png)
 
-右上の[アクション]から[ポリシーのアタッチ]を選択します。
+Select "Attach policy" from the "Actions" menu at the top right.
 
 ![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_19.png)
 
-さきほど作成したポリシーをアタッチします。
+Attach the policy you created just before.
 
 ![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_20.png)
 
-完了したら、証明書がポリシーとモノに結びついていることを確認します。
+Once that completes, you can confirm that the certificate is tied to the policy and thing.
 
 ![](https://i.gyazo.com/a21acb6987f7f823cfbd6f5cdf42babf.png)
 
 ![](https://i.gyazo.com/1947b0e395d51dd4067d50fbc172f2eb.png)
 
-## AWS IoT 用の IAM ユーザーを作成
+## Creating an IAM User for AWS IoT
 
-enebular から AWS IoT を利用するための Access Key ID と Secret Access Key を作成します。
+In order to use AWS IoT from enebular, create an Access Key ID and Secret Access Key.
 
-IAM のメニューのユーザーから[ユーザーを追加]を押します。
+In the "Users" section of the IAM menu, press "Add user".
 
 ![](https://i.gyazo.com/5365a9c626c6fb82f15aa7450be25b1e.png)
 
-詳細では、わかりやすい名前をつけて [プログラムによるアクセス] にチェックをつけます。
+In the details section, set an easy to understand name and enable "Programmatic access".
 
 ![](https://i.gyazo.com/2dac145aaa109bd6b59e7f02a2c81880.png)
 
-アクセス権限では、[既存のポリシーを直接アタッチ]を選択して、[AWSIoTFullAccess]というポリシーを選択して次に進みます。
+For the permissions, select "Attach existing policies directly", then select the "AWSIoTFullAccess" policy and move to the next step.
 
 ![](https://i.gyazo.com/2ba4485a00fa21bcd11cdfab04070af3.png)
 
-最後に間違いがないか確認します。
+Finally confirm there are no mistakes.
 
 ![](https://i.gyazo.com/b55f423d3380f02e52ad3957f68bb7a1.png)
 
-完了したら、アクセスキー ID とシークレットアクセスキーが記載された CSV ファイルをダウンロードします（このタイミングでしかダウンロードできないので注意して下さい）。
+Once completed, download the CSV file that contains the Access Key ID and Secret Access Key (note that this is the only chance to download it).
 
 ![](https://i.gyazo.com/43887a5e4d39397ac005d05f571082a5.png)
 
+## Update the Flow with the AWS IoT Settings
 
-## フローに AWS IoT の設定を反映
-
-先ほどの AWS IoT 設定画面に戻りフローに AWS IoT の設定を反映します。
+We return to the AWS IoT settings screen from before and update the AWS IoT settings.
 
 ![](https://i.gyazo.com/80831b57617fda2ae76ad4f26d3f88c1.png)
 
-Select Connection の右の [New] を押します。必要な情報を入力して Connection を作成します。
+Press "New" to the right of "Select Connection". Enter the required information and create the connection.
 
 ![](https://i.gyazo.com/b79f9f1beaa467c1b54638afb79c1ee7.png)
 
 * Connection Name
-    * 任意の英数字
+    * Any alphameric characters
 * AWS Access Key ID
-    * ダウンロードした CSV からコピーする
+    * Copy from the downloaded CSV file
 * AWS Secret Access Key
-    * ダウンロードした CSV からコピーする
+    * Copy from the downloaded CSV file
 * Region
-    * 下記 AWS IoT Endpoint URL の `amazonaws.com` の前の部分
+    * The part before the `amazonaws.com` section of the AWS IoT Endpoint URL (below)
 * AWS IoT Endpoint URL
-    * モノのメニューの**操作**より確認できます（下の画像参照）
+    *  This can be seen in the "Interact" section of the thing menu (refer to the image below)
 
 ![](https://i.gyazo.com/e1f3d7ab36d625ec31bbb1e122cdd367.png)
 
-作成した Connection を選択すると登録されているモノが表示されます。
+When you select the created connection the registered things are displayed.
 
 ![](https://i.gyazo.com/21ff895a55f684d63b318ef565ba7f41.png)
 
-まだ Disconnected になっています。これはデバイスが AWS IoT にデプロイされていないまたは接続が切れていることを意味します。
+The thing will still be disconnected. Here, 'disconnected' means that the AWS IoT thing hasn't been deployed to yet or it is actually disconnected.
 
-enebular 側の操作は一旦置いておいて、次はパソコン上でデバイスのセットアップをしましょう。
+Let's now leave the enebular side and prepare a device setup on a PC.
 
-## デバイス（エージェント）のセットアップ
+## Device (Agent) Setup
 
-デバイスのセットアップを行います。なお、デバイスマネージャーからくる命令を受けて処理を行うコードベースのデバイスのラッパーのことを**エージェント**と呼びます。
+Here we set up a device. Note that the wrapper device code base that receives commands from the device manager and carries out the appropriate operations is referred to the **agent** here.
 
-<a href="https://github.com/enebular/enebular-awsiot-agent" target="_blank">GitHub</a> からダウンロードしてきます。
+The agent can be downloaded from <a href="https://github.com/enebular/enebular-awsiot-agent" target="_blank">GitHub</a>.
 
-エージェントのコアモジュールをビルドします。
+Build the core enebular-agent module.
 
 ```
 cd agent
 npm run build
 ```
 
-Node-RED のインスタンスをインストールします。
+Install the Node-RED instance.
 
 ```
 cd ../node-red
 npm install
 ```
 
-AWS IoT ポートのモジュールをインストールしてビルドします。
+Install the AWS IoT port's modules and build it.
 
 ```
 cd ../ports/awsiot
@@ -191,18 +188,18 @@ npm install
 npm run build
 ```
 
-AWS IoT ポートのディレクトリの下に、AWS IoT ポートを単にラップする `example` というモジュールがあります。`example` モジュールのディレクトリに移動し、モジュールをインストールします。`example` モジュールの `package.json`ファイルを確認すると、Node-RED ディレクトリを指定する環境変数が設定されていることが分かります。
+There is an 'example' module under the AWS IoT port's directory that is just a simple wrapper of the actual AWS IoT port module. Go to its directory and install its modules. If you check the example's `package.json` file, you can see that it is setting the environment variable that specifies the Node-RED directory.
 
 ```
 cd example
 npm install
 ```
 
-少し前の手順でダウンロードした AWS IoT Thing 用の証明書ファイルを `example` モジュールの `certs` ディレクトリににコピーします。
+Copy the AWS IoT Thing certificate files you downloaded just before to the `certs` directory in the example folder.
 
 ![](https://i.gyazo.com/2990d00298630a3ccfdffe7827131287.png)
 
-コピーした証明書ファイルの正しいパスを含めて、この接続情報で `example` モジュールの `config.json`ファイルを更新します。
+Update the example's `config.json` file with the connection details (including the correct paths of the certificate files).
 
 ```json
 {
@@ -217,42 +214,45 @@ npm install
 }
 ```
 
-### 実行
+### Running
 
-上記のセットアップが完了したら、エージェントは `npm run start` コマンドで `example` モジュールのディレクトリから起動できます。
+Once the above setup has been completed, enebular-agent can be started from the example directory with the `npm run start` command.
 
-デフォルトの状態ではエージェントがコンソールにログを出力しませんが、`DEBUG` 環境変数を `info` または `debug` のいずれかに設定することで出力するようにできます。
+By default enebular-agent will not log to the console, however this can be enabled by setting the `DEBUG` environment variable to either `info` or `debug`.
 
 ```
 DEBUG=info npm run start
 ```
 
-以下のようなログが表示されるかと思います。
+Log messages similar to the following should be displayed.
 
 ![](https://i.gyazo.com/c2cbd942f6f12c1236703593a14dc94b.png)
 
-エージェントが正常に起動して AWS IoT に接続できていた場合、次のログメッセージが表示されているかと思います。
+
+If enebular-agent successfully starts and connects to AWS IoT, it will display the following log message.
 
 ```
 internal: aws-iot: Connected to AWS IoT
 ```
 
-これが表示されると、enebular でデバイスを使用することができます。
+Once that message is displayed, the device can be used with enebular.
 
-## フローのデプロイ
+## Deploying the Flow
 
-デプロイの準備ができました。再度以下の画面に戻ってください。
+We're now ready to deploy the flow. Move back to the screen below.
 
 ![](https://i.gyazo.com/21ff895a55f684d63b318ef565ba7f41.png)
 
-左のチェックマークにチェックして、[Deploy] を押すとデプロイが完了します。デプロイの履歴で Deploy Status にチェックマークがついていれば成功しています。
+When you select the check-box on the left and press "Deploy" the deploy will complete. If the "Deploy Status" has tick mark in the deploy history, then it has succeeded.
 
 ![](https://i.gyazo.com/698d8cecdc353a76b9f3b84788abfa5d.png)
 
-また、デバイス側のログで更新されているのが確認できるかと思います。
+You'll also be able to see the device side log updating.
 
 ![](https://i.gyazo.com/e2e15ad09331937ff8585c14276d6c65.png)
 
-![](https://i.gyazo.com/a8e64dfb7799bae5b360b64af401f7a1.png)
+![](https://i.gyazo.com/bed3a72a00a9cb68244d52014d273281.jpg)
 
-エージェントのコアを実行する時にさまざまなオプションを指定できます。AWS IoT の場合、このオプションの指定を `ports/awsiot/src/index.js` のソースコードで見ることができます。エージェントのコアがサポートするすべてのオプションには、`agent/src/index.js` のソースコードファイルを参照してください。
+While `unauthenticated` will be displayed, this is just because a license hasn't been purchased. Purchasing a license is not required for the flow to run, but by purchasing a license status and log monitoring becomes available.
+
+When running the agent core you can specify various configuration options. For the AWS IoT port, this can be seen in the `ports/awsiot/src/index.js` source code. For all of the configuration options that the agent core supports, refer to the `agent/src/index.js` source code file.
