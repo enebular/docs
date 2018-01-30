@@ -164,7 +164,7 @@ Let's now leave the enebular side and prepare a device setup on a PC.
 
 Here we set up a device. Note that the wrapper device code base that receives commands from the device manager and carries out the appropriate operations is referred to the **agent** here.
 
-The agent can be downloaded from <a href="https://github.com/enebular/enebular-awsiot-agent" target="_blank">GitHub</a>.
+The agent can be downloaded from <a href="https://github.com/enebular/enebular-runtime-agent" target="_blank">GitHub</a>.
 
 Build the core enebular-agent module.
 

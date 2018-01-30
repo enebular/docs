@@ -166,7 +166,7 @@ enebular 側の操作は一旦置いておいて、次はパソコン上でデ�
 
 デバイスのセットアップを行います。なお、デバイスマスターからくる命令を受けて処理を行うコードベースのデバイスのラッパーのことを**エージェント**と呼びます。
 
-<a href="https://github.com/enebular/enebular-awsiot-agent" target="_blank">GitHub</a> からダウンロードしてきます。
+<a href="https://github.com/enebular/enebular-runtime-agent" target="_blank">GitHub</a> からダウンロードしてきます。
 
 エージェントのコアモジュールをビルドします。
 
