@@ -5,9 +5,7 @@
   "main": "README.md",
   "scripts": {
     "test": "mocha test.js",
-    "check": "node check.js",
-    "build": "gitbook build",
-    "serve": "gitbook serve"
+    "check": "node check.js"
   },
   "repository": {
     "type": "git",
@@ -19,9 +17,7 @@
     "url": "https://github.com/enebular/docs/issues"
   },
   "homepage": "https://github.com/enebular/docs#readme",
-  "dependencies": {
-    "gitbook-cli": "^2.3.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "assert": "^1.4.1",
     "glob": "^7.1.2",
