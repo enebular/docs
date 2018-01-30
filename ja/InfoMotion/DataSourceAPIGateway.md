@@ -1,3 +1,7 @@
+---
+lastUpdated: 2018-01-14
+---
+
 # API Gateway DataSource の作成方法
 
 API Gateway を DataSource として利用する例を紹介します。

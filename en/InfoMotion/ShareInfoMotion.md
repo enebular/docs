@@ -2,12 +2,11 @@
 lastUpdated: 2017-12-14
 ---
 
-# Share infomotion
+# Share InfoMotion
 
 The following code is subject to change.
 
 The InfoMotion source code gives developers a little more freedom in customizing or altering the behaviour of their Dashboards.
-
 
 infomotion and infomotionUI script tags are needed to use infomotion.
 

@@ -7,8 +7,10 @@ lastUpdated: 2017-12-01
 This tutorial contains the following. 
 
 - Create a Project
-- Creating Flow using Milkcocoa
+- Creating Flow using Milkcocoa*
 - Creating a graph (InfoMotion) using data of a Flow
+
+* [Milkcocoa](https://mlkcca.com/en/) is a Realtime Communication Platform for IoT, Mobile, and Web.
 
 ## Create a Project
 
@@ -58,7 +60,7 @@ When ready click **Deploy** to deploy the flow.
 
 ![](https://i.gyazo.com/2dd11f23a605ec41b73d413176d206c2.png) 
 
-This flow shows a data store of [Milkcocoa (cloud service)](//mlkcca.com)  every 10 seconds, with seven random IDs (`dataid`) as random labels 0 to 50 and stores it as values ​​(`v`). 
+This flow shows a data store of [Milkcocoa](//mlkcca.com)  every 10 seconds, with seven random IDs (`dataid`) as random labels 0 to 50 and stores it as values ​​(`v`). 
 
 Please refer to the images below to create a flow. 
 Configure the flow to run every 10 seconds with **timestamp node**, set the properties with **function node**, and **milkcocoa node** will store information to Milkcocoa with the application id (`app_id `) · Data store information to (`datastore`) · Authentication information with (`API Key`,` API Secret`). 

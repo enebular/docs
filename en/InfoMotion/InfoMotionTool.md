@@ -4,9 +4,9 @@ lastUpdated: 2017-12-15
 
 # InfoMotion Tool
 
-In order to create an InfoMotion the infomotion-tool must be installed.
+In order to create an InfoType the infomotion-tool must be installed.
 
-The infomotion-tool allows the developer to run, test and edit InfoMotions locally. Once the InfoMotion is completed intomotion-tool packages the scripts to be uploaded to enebular.
+The infomotion-tool allows the developer to run, test and edit InfoMotions locally. Once the InfoType is completed intomotion-tool packages the scripts to be uploaded to enebular.
 
 ## Installing infomotion-tool
 
@@ -212,7 +212,7 @@ eit run
 
 ## Packaging
 
-Once the InfoMotion is ready to be uploaded to Enebualr run the command.
+Once the InfoType is ready to be uploaded to Enebualr run the command.
 
 ```bash
 eit package
@@ -226,4 +226,4 @@ This will create a target folder containing three files.
 
 ![](/_asset/images/InfoMotion/enebular-developers-build.png)
 
-Continue to [Upload InfoMotion](./UploadInfoType.md) to upload the InfoMotion to enebular.
+Continue to [Upload InfoType](./UploadInfoType.md) to upload the InfoType to enebular.

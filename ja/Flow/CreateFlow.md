@@ -2,38 +2,34 @@
 lastUpdated: 2018-01-15
 ---
 
-# Flow の作成
+# フローの作成
 
-Data Flowを準備してDataSourceに向けてデータを加工して入力していきます。
+フローの作成方法を説明します。
 
-![](https://i.gyazo.com/1e90909b5ecefe56ff1934aa41e5a7b9.png)
-
-![](/_asset/images/enebular-developers-createprojectmodal.png)
+プロジェクト一覧からプロジェクトを選択してプロジェクトの管理画面に移動します。
 
 ![](https://i.gyazo.com/69a5b817e8681349f45373eb7aead486.png)
 
-## Assetsを作成
+右下の + ボタンからモーダルを立ち上げます。
 
 ![](https://i.gyazo.com/e521afd4d489291aa774fe9429cf3321.png)
 
-まずアセットを作成します。
+モーダルが立ち上がるのでまず Asset Type に flow を指定します。
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_07.png)
 
-Asset Typeはflowを指定します。
+flow を指定すると、アイコンやタイトルの指定、および、アクセス権限の設定ができます。
 
-![image](/_asset/images/Flow/CreateFlow/flow-create-flow_08.png)
+![](https://i.gyazo.com/046b8c6b177e0edaf9cc3f56af67e9ac.png)
 
-flowを指定すると、アイコンやタイトルの指定、および、アクセス権限の設定ができます。
-
-![image](/_asset/images/Flow/CreateFlow/flow-create-flow_09.png)
-
-* カテゴリ
-    * 今回の用途に合ったカテゴリを指定
-* title
-    * フロータイトル
+* タイトル
+    * 任意のフローのタイトル
+* 説明
+    * 今回は何も入力しません
 * アクセス権限
-    * admin
+    * superdev
+* カテゴリー
+    * 今回の用途に合ったカテゴリを指定
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_10.png)
 
@@ -41,7 +37,7 @@ flowを指定すると、アイコンやタイトルの指定、および、ア�
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_11.png)
 
-フローアセットが作成されました。
+フローが作成されました。
 
 ここからフローエディタを立ち上げて Node-RED を編集します。以下の例を参考ください。
 

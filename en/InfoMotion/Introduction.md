@@ -1,37 +1,38 @@
 ---
-lastUpdated: 2017-12-15
+lastUpdated: 2017-12-25
 ---
 
 # InfoMotion
 
-An `InfoMotion` visualizes data of a `DataSource`.
+An `InfoMotion` visualizes data from a `DataSource`.
 
 ![](/_asset/images/InfoMotion/enebular-developers-aboutinfotype.png)
 
-You can either use a default `InfoMotion`, purchase more complex graphs or create your own.
-Here are a few samples of `InfoMotion` and `DataSource`
+In addition to the simple graphs available by default, it's also possible to either purchase or create more complex graphs. See [here](./InfoMotionTool.md) for how to create original graphs.
 
-```javascript
-// multiple pieces of data with the following key/values.
-{
-  created: Number,
-  lang: String,
-  node_id: Number,
-  ss: Number,
-  uu: Number
-}
+- See [here](./CreateDataSource.md) for how to create a DataSource
+- See [here](./CreateInfoMotion.md) for how to create an InfoMotion
 
-```
+The created InfoMotion can been checked on enebular.
 
-## Bar Chart
-![](/_asset/images/InfoMotion/enebular-developers-template-bar.png)
+![](https://i.gyazo.com/a92f72b76d3d38eb1409c5ba72964720.png)
 
-## Line Chart
+Selecting an InfoMotion will take you to the InfoMotion details screen.
 
-![](/_asset/images/InfoMotion/enebular-developers-template-line.png)
+## Overview
 
-## Pie Chart
+The dashboard is displayed here. Please see [Dashboards](./CreateInfoMotion.md) for more details.
 
-![](/_asset/images/InfoMotion/enebular-developers-template-pie.png)
+## Access
 
-To get started with creating an InfoMotion please continue to [InfoMotioin Tool](./InfoMotionTool.md).
+You can edit InfoMotion access permissions here.
+
+![](https://i.gyazo.com/e16a84b1278a85d74e024350c6daae4b.png)
+
+Please see [Access Control](../Access/index.md) for more details.
+
+## Settings
+
+You can change the name and description of the InfoMotion and delete the InfoMotion here.
+
+![](https://i.gyazo.com/a5d7bf668507515b5ecf4a52c1821871.png)

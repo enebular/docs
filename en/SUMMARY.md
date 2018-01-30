@@ -1,44 +1,66 @@
 ---
-lastUpdated: 2017-12-14
+lastUpdated: 2018-01-30
 ---
 
 # Summary
 
-* [Get Started](GetStarted/index.md)
+* [Release Notes](Releases/index.md)
+  * [enebular](Releases/index.md#enebular)
+    * [2.0.0](Releases/enebular/2.0.0.md)
+  * [enebular agent](Releases/index.md#enebular-agent)
+    * [2.0.0](Releases/enebular-agent/2.0.0.md)
+  * [enebular edge agent](Releases/index.md#enebular-edge-agent)
+    * [0.9.0](Releases/enebular-edge-agent/0.9.0.md)
+* [Getting Started](GetStarted/index.md)
 
-## Flow
+## Projects
 
-* [Introduction](Flow/CreateFlow.md)
-* Flow Example
-  * [Milkcocoa](Flow/FlowExampleMilkcocoa.md)
-* [Flow Settings](Flow/FlowSettings.md)
-* [Publish Flow](Flow/PublishFlow.md)
+* [About Projects](Project/index.md)
+* [Project Settings](Project/Settings.md)
+* [Billing Information](Project/Billing.md)
+
+## Flows
+
+* [Introduction](Flow/Introduction.md)
+* [Creating Flows](Flow/CreateFlow.md)
+* [Example: Milkcocoa](Flow/FlowExampleMilkcocoa.md)
+* [Publishing Flows](Flow/PublishFlow.md)
 
 ## InfoMotion
 
 * [Introduction](InfoMotion/Introduction.md)
-* [InfoMotion Tool](InfoMotion/InfoMotionTool.md)
-* [Upload InfoMotion](InfoMotion/UploadInfoType.md)
+* [InfoType](InfoMotion/InfoTypeIntroduction.md)
+  * [Creating an InfoType](InfoMotion/InfoMotionTool.md)
+  * [Uploading an InfoType](InfoMotion/UploadInfoType.md)
+  * [API Reference](InfoMotion/APIReference.md)
 * [DataSource](InfoMotion/CreateDataSource.md)
   * [API Gateway](InfoMotion/DataSourceAPIGateway.md)
-* [Dashboard](InfoMotion/CreateInfoMotion.md)
-* [API Reference](InfoMotion/APIReference.md)
-* [Share InfoMotion](InfoMotion/ShareInfoMotion.md)
+* [Dashboards](InfoMotion/CreateInfoMotion.md)
+* [Sharing an InfoMotion](InfoMotion/ShareInfoMotion.md)
 
-## Deploy
+## Deploys
 
 * [Introduction](Deploy/index.md)
-* Deploy Flow
-  * [AWS IoT](Deploy/DeployFlow/AWSIoT/index.md)
-  * [Heroku](Deploy/DeployFlow/Heroku/index.md)
-  * [Mode](Deploy/DeployFlow/Mode/index.md)
-  * [Lambda](Deploy/DeployFlow/Lambda/index.md)
+* [Example: AWS IoT](Deploy/DeployFlow/AWSIoT/index.md)
+* [Example: Heroku](Deploy/DeployFlow/Heroku/index.md)
+* [Example: mbed Cloud](Deploy/DeployFlow/mbed/index.md)
 
-## Account / Access
+## Devices
+
+* [Introduction](Device/Introduction.md)
+
+## Access
 
 * [Access Control](Access/index.md)
-* [Account Settings](Access/Account.md)
+
+## Discover
+
+* [Discovering Assets](Discover/index.md)
+
+## Account
+
+* [Account Settings](Account/index.md)
 
 ## Appendix
 
-* [Support Environment](Other/Support.md)
+* [Supported Environments](Other/Support.md)
