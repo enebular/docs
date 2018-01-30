@@ -19,13 +19,13 @@ To have it run permanantly, it must be deployed to a device using a third party 
 As mentioned in the [Introduction](../INDEX.md), when doing a deploy there are two concepts that should be kept in mind.
 
 - **Device**: The device that will be the execution environment of the asset.
-- **Device Manager**: The managing role that accepts deploy requests from enebular and then deploys to the device, monitors the device and sends logs on to enebular.
+- **Device Master**: The managing role that accepts deploy requests from enebular and then deploys to the device, monitors the device and sends logs on to enebular.
 
 ![deploy diagram](/_asset/images/Introduction/enebular-developers-deploy.png)
 
-For cloud services that deploy to edge devices like AWS IoT and mbed Cloud, the edge device is the **device** and the cloud service is the **device manager**.
+For cloud services that deploy to edge devices like AWS IoT and mbed Cloud, the edge device is the **device** and the cloud service is the **device master**.
 
-If the execution environment exists in the cloud as with Heroku and AWS Lambda, then the cloud service takes on both the **device** and **device manager** roles.
+If the execution environment exists in the cloud as with Heroku and AWS Lambda, then the cloud service takes on both the **device** and **device master** roles.
 
 The actual methods of deploying are as follows.
 
