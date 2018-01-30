@@ -10,8 +10,6 @@ lastUpdated: 2018-01-29
 
 このページでは、mbed Cloudを経由してデバイスにフローをデプロイする手順を説明します。
 
-あらかじめ、デプロイに使用するデバイスの電源を入れて準備し、読み進めてください。
-
 ## 新規フローの作成
 
 まずデバイスへデプロイするフローを作成しましょう。（Projectは作成済みとします）。
@@ -28,6 +26,8 @@ lastUpdated: 2018-01-29
 
 ### raspberryPiへのデプロイの場合
 
+RasPiの Node-RED を起動し、スタンバイの状態にします。
+
 raspberryPiへデプロイするフローを編集しましょう。
 
 ![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-mbed_03.png)
@@ -38,6 +38,8 @@ raspberryPiへデプロイするフローを編集しましょう。
 
 
 ### enebular edge agent へのデプロイの場合
+
+あらかじめ、デプロイに使用するデバイスの電源を入れましょう。
 
 enebular edge agent へのデプロイは下記フローを使いましょう。まずは下記のJSONデータをコピーしましょう。
 `[{"id":"165c03e8.b6cbdc","type":"inject","z":"ebd56ac3.b5f1d8","name":"","topic":"","payload":"","payloadType":"date","repeat":"5","crontab":"","once":false,"x":110,"y":100,"wires":[["c82f1f55.78329"]]},{"id":"c82f1f55.78329","type":"switch","z":"ebd56ac3.b5f1d8","name":"","property":"led","propertyType":"flow","rules":[{"t":"eq","v":"1","vt":"num"},{"t":"else"}],"checkall":"true","outputs":2,"x":170,"y":180,"wires":[["31c8aef7.fda952"],["cf93bcf1.04a5"]]},{"id":"31c8aef7.fda952","type":"digitalout","z":"ebd56ac3.b5f1d8","pinName":"LED2","value":"true","signalInversion":true,"name":"","x":340,"y":140,"wires":[["6d2afea9.fd836"]]},{"id":"cf93bcf1.04a5","type":"digitalout","z":"ebd56ac3.b5f1d8","pinName":"LED2","value":"false","signalInversion":true,"name":"","x":340,"y":240,"wires":[["f8f4c712.0302c8"]]},{"id":"6d2afea9.fd836","type":"change","z":"ebd56ac3.b5f1d8","name":"","rules":[{"p":"led","t":"set","pt":"flow","to":"0","tot":"num"}],"action":"","property":"","from":"","to":"","reg":false,"x":530,"y":140,"wires":[[]]},{"id":"f8f4c712.0302c8","type":"change","z":"ebd56ac3.b5f1d8","name":"","rules":[{"p":"led","t":"set","pt":"flow","to":"1","tot":"num"}],"action":"","property":"","from":"","to":"","reg":false,"x":530,"y":240,"wires":[[]]}]`
@@ -56,14 +58,14 @@ enebular edge agent へのデプロイは下記フローを使いましょう。
 このようなフローが反映されます。
 
 
+## デプロイ
 
 右上の赤色の「Deploy」を押してデプロイします。
 
 ![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-mbed_05.png)
 
-「Deploy」の右にある下矢印から「Export to Other Services」を選択します。
 
-## mbed Cloud経由でデプロイ
+「Deploy」の右にある下矢印から「Export to Other Services」を選択します。
 
 ![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-mded_06.png)
 
@@ -110,11 +112,13 @@ MBED API Key の入力ができたら、「Save」で保存します。
 
 
 
-
 ## 確認
 
 ### raspberryPiへのデプロイの場合
 
+ログでフローが更新されているのが確認できているかと思います。
+
+![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-mbed_17.png)
 
 
 ### enebular edge agent へのデプロイの場合
