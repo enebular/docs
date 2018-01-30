@@ -1,10 +1,10 @@
 ---
-lastUpdated: 2018-01-29
+lastUpdated: 2018-01-30
 ---
 
 # 動作環境
 
-## enebular (Web サイト内の管理画面)
+## enebular {#enebular}
 
 enebular が対象とする Web ブラウザは以下とします。
 
@@ -12,14 +12,16 @@ enebular が対象とする Web ブラウザは以下とします。
 | --- | --- | --- |
 | Chrome | [63.0 or later](https://chromereleases.googleblog.com/search/label/Desktop%20Update) | Windows/Mac  |
 | Firefox | [57.0 or later](https://www.mozilla.jp/firefox/releases/) | Windows/Mac |
-| Safari | 11.0 or later | Mac |
-| Microsoft Edge | - | Windows |
+| Safari | 対応予定 | Mac |
+| Microsoft Edge | 対応予定 | Windows |
 
 enebular では上記のブラウザでの利用を推奨しています。これらのブラウザで表示が崩れる、機能が動かないなどの問題がある場合はサポートまでご報告ください。
 
-## enebular-agent （フローの実行環境）
+## enebular-agent {#enebular-agent}
 
-対象となるフローをデプロイするデバイスの実行環境は以下とします。
+enebular-agent は、Linux OS を搭載したゲートウェイ向けの enebular 用 IoT エージェントソフトウェアです。対象となる環境は以下とします。
+
+なお、詳しい仕様については、弊社サポート(support@enebular.com)までお問い合わせください。
 
 ### 推奨ハードウェア (Recommended Hardware)
 
@@ -71,3 +73,31 @@ Linux では以下の OS をサポート対象とします。
 | --- | --- | --- | --- |
 | Linux 9 Stretch | 9.2.1 | 5.6.0 | 0.17.5 |
 | Linux 8 Jessie | 9.2.0 | 5.5.1 | 0.17.5 |
+
+## enebular-edge-agent {#enebular-edge-agent}
+
+enebular-edge-agent は、[ARM Ltd.](https://www.arm.com/) の [Mbed OS](https://os.mbed.com/) を採用したマイクロコントローラ向けの enebular 用 IoT エージェントソフトウェアです。
+
+なお、詳しい仕様については、弊社サポート(support@enebular.com)までお問い合わせください。
+
+### Operating Environment
+
+#### Operating System
+
+* [Mbed OS 5.6.6](https://github.com/ARMmbed/mbed-os/tree/mbed-os-5.6.6) (ARM Ltd.)
+
+#### Hardware
+
+enebular-edge-agent 1.0.0 は、下記のハードウェアを対象としています。
+
+* [FRDM-K64F](https://www.nxp.com/jp/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F) (NXP Semiconductors N.V.) + Stag Beetle Board (Uhuru Corporation)
+
+#### Communication
+
+* IEEE 802.11 b/g/n (IEEE 802.11n は2.4GHzのみの対応です)
+* WPA/WPA2
+
+### Known Issues
+
+* BME280 ノードの使用時、フローのサイズが大きいと正常に動作しない場合がある
+* Inject ノードにおいて、PayloadにはTimestampのみ、RepeatにIntervalのみしか設定できない
