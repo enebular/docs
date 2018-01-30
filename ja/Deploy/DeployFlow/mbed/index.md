@@ -1,14 +1,14 @@
 ---
-lastUpdated: 2018-01-29
+lastUpdated: 2018-01-30
 ---
 
 # Mbed Cloudへのデプロイ
 
-フローのデプロイ先はそのままデプロイボタンを押すと、enebularが利用しているサーバーにデプロイされます。enebularでMbed Cloudを経由し、登録されているデバイスへのデプロイすることも可能です。
+フローのデプロイ先はそのままデプロイボタンを押すと、enebular が利用しているサーバーにデプロイされます。enebular で Mbed Cloud を経由し、登録されているデバイスへのデプロイすることも可能です。
 
-対応デバイスについては[DEVICES](./../Device/Introduction.md)をご覧ください。
+対応デバイスについては [DEVICES](./../Device/Introduction.md) をご覧ください。
 
-このページでは、mbed Cloudを経由してデバイスにフローをデプロイする手順を説明します。
+このページでは、Mbed Cloudを経由してデバイスにフローをデプロイする手順を説明します。
 
 ## 新規フローの作成
 
@@ -24,11 +24,11 @@ lastUpdated: 2018-01-29
 
 ## データフローの編集
 
-### raspberryPiへのデプロイの場合
+### Raspberry Pi へのデプロイの場合
 
-RasPiの Node-RED を起動し、スタンバイの状態にします。
+Raspberry Pi の Node-RED を起動し、スタンバイの状態にします。
 
-raspberryPiへデプロイするフローを編集しましょう。
+Raspberry Pi へデプロイするフローを編集しましょう。
 
 ![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-mbed_03.png)
 
@@ -41,7 +41,7 @@ raspberryPiへデプロイするフローを編集しましょう。
 
 あらかじめ、デプロイに使用するデバイスの電源を入れましょう。
 
-enebular edge agent へのデプロイは下記フローを使いましょう。まずは下記のJSONデータをコピーしましょう。
+enebular edge agent へのデプロイは下記フローを使いましょう。まずは下記の JSONデータをコピーしましょう。
 `[{"id":"165c03e8.b6cbdc","type":"inject","z":"ebd56ac3.b5f1d8","name":"","topic":"","payload":"","payloadType":"date","repeat":"5","crontab":"","once":false,"x":110,"y":100,"wires":[["c82f1f55.78329"]]},{"id":"c82f1f55.78329","type":"switch","z":"ebd56ac3.b5f1d8","name":"","property":"led","propertyType":"flow","rules":[{"t":"eq","v":"1","vt":"num"},{"t":"else"}],"checkall":"true","outputs":2,"x":170,"y":180,"wires":[["31c8aef7.fda952"],["cf93bcf1.04a5"]]},{"id":"31c8aef7.fda952","type":"digitalout","z":"ebd56ac3.b5f1d8","pinName":"LED2","value":"true","signalInversion":true,"name":"","x":340,"y":140,"wires":[["6d2afea9.fd836"]]},{"id":"cf93bcf1.04a5","type":"digitalout","z":"ebd56ac3.b5f1d8","pinName":"LED2","value":"false","signalInversion":true,"name":"","x":340,"y":240,"wires":[["f8f4c712.0302c8"]]},{"id":"6d2afea9.fd836","type":"change","z":"ebd56ac3.b5f1d8","name":"","rules":[{"p":"led","t":"set","pt":"flow","to":"0","tot":"num"}],"action":"","property":"","from":"","to":"","reg":false,"x":530,"y":140,"wires":[[]]},{"id":"f8f4c712.0302c8","type":"change","z":"ebd56ac3.b5f1d8","name":"","rules":[{"p":"led","t":"set","pt":"flow","to":"1","tot":"num"}],"action":"","property":"","from":"","to":"","reg":false,"x":530,"y":240,"wires":[[]]}]`
 
 
@@ -82,15 +82,15 @@ Connectionのフィールドの右側にある「New」を押して新しいConn
 * MBED API Key
     * mbed Cloud Portalで確認
 
-必要なmbed API Keyは[mbed Cloud Portal](https://portal.us-east-1.mbedcloud.com/)より取得できます。
+必要な MBED API Key は [Mbed Cloud Portal](https://portal.us-east-1.mbedcloud.com/) より取得できます。
 
 ![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-mbed_09.png)
 
-Mbed Cloud PortalのAccess manegementのAPIキーページの「新しいAPIキーの作成」を選択します。
+Mbed Cloud Portal の Access manegement の APIキーページの「新しいAPIキーの作成」を選択します。
 
 ![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-mbed_10.png)
 
-制約に従ってAPI Key名を入力、またグループを選択してください。ここでの設定項目は後で変更が可能です。
+制約に従って API Key 名を入力、またグループを選択してください。ここでの設定項目は後で変更が可能です。
 
 ![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-mbed_11.png)
 
@@ -98,23 +98,23 @@ Mbed Cloud PortalのAccess manegementのAPIキーページの「新しいAPIキ�
 
 ![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-mbed_12.png)
 
-「Enter」を選択すると、API Keyが表示されます。一度しか確認できないので注意してください。
+「Enter」を選択すると、API Key が表示されます。一度しか確認できないので注意してください。
 
 MBED API Key の入力ができたら、「Save」で保存します。
 
 ![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-mbed_13.png)
 
-作成したconnectionを選択できるようになっているので、選択してください。
+作成した connection を選択できるようになっているので、選択してください。
 
 登録されているデバイスのリストが表示されます。
 
-あらかじめ、電源を入れていたデバイスのStatusがconnectedになっているので選択し、「Deploy」からデプロイをします。
+あらかじめ、電源を入れていたデバイスの Status が connected になっているので選択し、「Deploy」からデプロイをします。
 
 
 
 ## 確認
 
-### raspberryPiへのデプロイの場合
+### Raspberry Pi へのデプロイの場合
 
 ログでフローが更新されているのが確認できているかと思います。
 
@@ -123,4 +123,4 @@ MBED API Key の入力ができたら、「Save」で保存します。
 
 ### enebular edge agent へのデプロイの場合
 
-K64FのLEDが緑色で点滅することを確認してください。
+K64F の LED が緑色で点滅することを確認してください。
