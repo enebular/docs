@@ -7,9 +7,7 @@ WIP: true
 
 ## Latest Release - 2.0.0 (Jan 30th, 2018)
 
-enebular has evolved greatly in the three years since its beta release on the 22nd of November, 2014.
-
-In this release we have worked on adding operational management functionality intended for commercial use, increasing the range of supported devices and improving usability.
+enebular has evolved greatly in the three years since its beta release on the 22nd of November, 2014. In this release we have worked on adding operational management functionality intended for commercial use, increasing the range of supported devices and improving usability.
 
 ### New
 
@@ -18,7 +16,7 @@ While enebular was only offered free of charge up until now, in response to requ
 
 #### A Redesigned Management Console
 The management console (dashboard) has been renewed and is now easier to understand.
-Its usability has been improved with, for example, the ability to deplow flows directly from the management console.
+Its usability has been improved with, for example, the ability to deploy flows directly from the management console.
 
 #### Expansion of Deployable Devices
 In addition to the cloud environments and gateways supported up until now, flow deployment to Arm Mbed compatible microcontroller boards is now also supported. For the gateway agent, please refer to the [enebular-agent version 2.0.0 release notes](#enebular-agent). For the microcontroller agent, please refer to the [enebular-edge-agent version 0.9.0 release notes](#enebular-edge-agent).
@@ -50,21 +48,21 @@ We want to continue to have enebular reflect the opinions of its users, add new 
 
 # enebular agent Release Notes {#enebular-agent}
 
-## Latest Release - 2.0.0 (Jan. 30th, 2018)
+## Latest Release - 2.0.0 (Jan 30th, 2018)
 
-enebular-agentは、Linux OSを搭載したゲートウェイ向けのenebular用IoTエージェントソフトウェアです。enebular vesion 2.0.0のリリースにあわせ、enebular-agent version2.0.0をリリースします。
+enebular-agent is IoT agent software for enebular and designed for Linux OS gateways. enebular-agent version 2.0.0 is being released along side the release of enebular vesion 2.0.0.
 
-enebular agentの詳しい仕様については、弊社サポート(support@enebular.com)までお問い合わせください。
+For detailed specifications on the enebular agent, please contact support (support@enebular.com).
 
 ### New
 
-#### Device Management/Logging
-* enebularのデバイス管理機能で、enebular-agentが搭載されたIoTデバイスの状態(ステータス)やログを監視することができるようになりました
-* enenbular-agentは、enebularに対して定期的にデバイスの状態とログを通知します
-* 本機能はEnterprise Planの有償機能として提供されます
+#### Device Management / Logging
+* As an enebular device management feature, it is now possible to monitor device status and logs of IoT devices running enebular-agent
+* enenbular-agent regularly reports device status and logs to enebular
+* These features are offered as Enterprise Plan paid features
 
-#### Connection Type
-これまでサポートしていたAWS IoTに加え、Arm Mbed Cloudを利用してのアセットのデプロイができるようになりました
+#### Connection Types
+In addition to AWS IoT that has been supported up until now, it is now also possible to deploy assets using Arm Mbed Cloud.
 
 ### Fixed
  N/A
@@ -76,32 +74,33 @@ enebular agentの詳しい仕様については、弊社サポート(support@ene
  N/A
 
 ### Recommended Hardware
-推奨動作ハードウェアは下記の通りです。
+The recommended hardware is as follows.
 * Raspberry PI3 Model B
 
 ### Operating Environment
-推奨動作環境は下記の通りです。
+
+The recommended operating environments are as follows.
 
 #### Raspberry PI3 Model B
 
-##### raspbian streach base (9.0)
+##### Raspbian Stretch base (9.0)
 * nodejs 8.9.0
 * npm 5.5.1
 * node-red 0.17.5
 
-#### rasobian jessie base (8.0)
+#### Raspbian Jessie base (8.0)
 * nodejs 8.9.0
 * npm 5.5.1
 * node-red 0.17.5
 
-#### Linux(virtualbox)
+#### Linux (VirtualBox)
 
-##### Debian jessie (8.9)
+##### Debian Jessie (8.9)
 * nodejs 9.2.0
 * npm 5.5.1
 * node-red 0.17.5
 
-##### Debian streach(9.1)
+##### Debian Stretch (9.1)
 * nodejs 9.2.1
 * npm 5.6.0
 * node-red 0.17.5
@@ -114,9 +113,9 @@ enebular agentの詳しい仕様については、弊社サポート(support@ene
 
 # enebular edge agent Release Notes {#enebular-edge-agent}
 
-## Latest Release - 0.9.0 (Jan. 30th, 2018)
+## Latest Release - 0.9.0 (Jan 30th, 2018)
 
-enebular-edge-agentは、[ARM Ltd.](https://www.arm.com/)の[Mbed OS](https://os.mbed.com/)を採用したマイクロコントローラ向けのenebular用IoTエージェントソフトウェアです。enebular version2.0.0のリリースにあわせ、enebular-edge-agent version1.0.0をリリースします。
+enebular-edge-agentは、[ARM Ltd.](https://www.arm.com/)の[Mbed OS](https://os.mbed.com/)を採用したマイクロコントローラ向けのenebular用IoTエージェントソフトウェアです。enebular version 2.0.0のリリースにあわせ、enebular-edge-agent version 1.0.0をリリースします。
 
 enebular-edge-agentの詳しい仕様については、弊社サポート(support@enebular.com)までお問い合わせください。
 

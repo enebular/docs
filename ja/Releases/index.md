@@ -47,9 +47,9 @@ enebularは今後もユーザーの声を反映し、新しい機能の追加や
 
 # enebular agent Release Notes {#enebular-agent}
 
-## Latest Release - 2.0.0 (Jan. 30th, 2018)
+## Latest Release - 2.0.0 (Jan 30th, 2018)
 
-enebular-agentは、Linux OSを搭載したゲートウェイ向けのenebular用IoTエージェントソフトウェアです。enebular vesion 2.0.0のリリースにあわせ、enebular-agent version2.0.0をリリースします。
+enebular-agentは、Linux OSを搭載したゲートウェイ向けのenebular用IoTエージェントソフトウェアです。enebular version 2.0.0のリリースにあわせ、enebular-agent version 2.0.0をリリースします。
 
 enebular agentの詳しい仕様については、弊社サポート(support@enebular.com)までお問い合わせください。
 
@@ -60,7 +60,7 @@ enebular agentの詳しい仕様については、弊社サポート(support@ene
 * enenbular-agentは、enebularに対して定期的にデバイスの状態とログを通知します
 * 本機能はEnterprise Planの有償機能として提供されます
 
-#### Connection Type
+#### Connection Types
 これまでサポートしていたAWS IoTに加え、Arm Mbed Cloudを利用してのアセットのデプロイができるようになりました
 
 ### Fixed
@@ -81,24 +81,24 @@ enebular agentの詳しい仕様については、弊社サポート(support@ene
 
 #### Raspberry PI3 Model B
 
-##### raspbian streach base (9.0)
+##### Raspbian Stretch base (9.0)
 * nodejs 8.9.0
 * npm 5.5.1
 * node-red 0.17.5
 
-#### rasobian jessie base (8.0)
+#### Raspbian Jessie base (8.0)
 * nodejs 8.9.0
 * npm 5.5.1
-* node-red 0.17.5 
+* node-red 0.17.5
 
-#### Linux(virtualbox)
+#### Linux (VirtualBox)
 
-##### Debian jessie (8.9)
+##### Debian Jessie (8.9)
 * nodejs 9.2.0
 * npm 5.5.1
 * node-red 0.17.5
 
-##### Debian streach(9.1)
+##### Debian Stretch (9.1)
 * nodejs 9.2.1
 * npm 5.6.0
 * node-red 0.17.5
@@ -111,9 +111,9 @@ enebular agentの詳しい仕様については、弊社サポート(support@ene
 
 # enebular edge agent Release Notes {#enebular-edge-agent}
 
-## Latest Release - 0.9.0 (Jan. 30th, 2018)
+## Latest Release - 0.9.0 (Jan 30th, 2018)
 
-enebular-edge-agentは、[ARM Ltd.](https://www.arm.com/)の[Mbed OS](https://os.mbed.com/)を採用したマイクロコントローラ向けのenebular用IoTエージェントソフトウェアです。enebular version2.0.0のリリースにあわせ、enebular-edge-agent version1.0.0をリリースします。
+enebular-edge-agentは、[ARM Ltd.](https://www.arm.com/)の[Mbed OS](https://os.mbed.com/)を採用したマイクロコントローラ向けのenebular用IoTエージェントソフトウェアです。enebular version 2.0.0のリリースにあわせ、enebular-edge-agent version 1.0.0をリリースします。
 
 enebular-edge-agentの詳しい仕様については、弊社サポート(support@enebular.com)までお問い合わせください。
 
