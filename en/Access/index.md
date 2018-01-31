@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-01-30
+lastUpdated: 2018-02-01
 ---
 
 # Editing Access Permissions
@@ -55,4 +55,4 @@ The "default privilege" is that automatically assigned to members when invited a
 
 ![](https://i.gyazo.com/5d2970b4226d5633c2e81f7abc5f721f.png)
 
-Outside collaborators is that automatically assigned to `user` regardless of "default privilege".
+Outside collaborators are assigned `user` by default regardless of the "default privilege".
