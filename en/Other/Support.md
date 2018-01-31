@@ -1,12 +1,10 @@
 ---
-lastUpdated: 2018-01-30
-WIP: true
-memo: enebular-agent の冒頭と、enebular-edge-agent のセクションを追加しています
+lastUpdated: 2018-01-31
 ---
 
 # Operating Environments
 
-## enebular
+## enebular {#enebular}
 
 The web browsers supported by enebular are as follows.
 
@@ -14,16 +12,16 @@ The web browsers supported by enebular are as follows.
 | --- | --- | --- |
 | Chrome | [63.0 or later](https://chromereleases.googleblog.com/search/label/Desktop%20Update) | Windows/Mac  |
 | Firefox | [57.0 or later](https://www.mozilla.com/firefox/releases/) | Windows/Mac |
-| Safari | comming soon | Mac |
-| Microsoft Edge | comming soon | Windows |
+| Safari | Coming soon | Mac |
+| Microsoft Edge | Coming soon | Windows |
 
 The above browsers are recommended for use with enebular. Please contact support if an issue occurs such as something not displaying correctly or a function not working correctly.
 
-## enebular-agent (Flow Execution Environment)
+## enebular-agent {#enebular-agent}
 
-The supported device execution environments for deploying flows are as follows.
+enebular-agent is IoT agent software for enebular and designed for Linux OS gateways. The environments are as follows.
 
-なお、詳しい仕様については、弊社サポート(support@enebular.com)までお問い合わせください。
+For detailed specifications, please contact support (support@enebular.com).
 
 ### Recommended Hardware
 
@@ -31,7 +29,7 @@ The enebular-agent runs on Linux.
 The following are examples of recommended hardware for inexpensive gateway environments which run Linux.
 
 | Product | Version  |
-| --- | --- | 
+| --- | --- |
 | Raspberry PI3 Model B | [Version 3 Model B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) |
 | OpenBlocks | Support planned |
 
@@ -78,9 +76,9 @@ The middleware versions for each are as follows.
 
 ## enebular-edge-agent {#enebular-edge-agent}
 
-enebular-edge-agent は、[ARM Ltd.](https://www.arm.com/) の [Mbed OS](https://os.mbed.com/) を採用したマイクロコントローラ向けの enebular 用 IoT エージェントソフトウェアです。
+enebular-edge-agent is IoT agent software for enebular and designed for microcontrollers utilizing [ARM Ltd.](https://www.arm.com/)'s [Mbed OS](https://os.mbed.com/).
 
-なお、詳しい仕様については、弊社サポート(support@enebular.com)までお問い合わせください。
+For detailed specifications, please contact support (support@enebular.com).
 
 ### Operating Environment
 
@@ -90,16 +88,16 @@ enebular-edge-agent は、[ARM Ltd.](https://www.arm.com/) の [Mbed OS](https:/
 
 #### Hardware
 
-enebular-edge-agent 1.0.0 は、下記のハードウェアを対象としています。
+The following hardware is supported in enebular-edge-agent 0.9.0.
 
-* [FRDM-K64F](https://www.nxp.com/jp/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F) (NXP Semiconductors N.V.) + Stag Beetle Board (Uhuru Corporation)
+* [FRDM-K64F](https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/k-seriesperformancem4/k2x-usb/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F) (NXP Semiconductors N.V.) + Stag Beetle Board (Uhuru Corporation)
 
 #### Communication
 
-* IEEE 802.11 b/g/n (IEEE 802.11n は2.4GHzのみの対応です)
+* IEEE 802.11 b/g/n (only 2.4GHz is supported for IEEE 802.11n)
 * WPA/WPA2
 
 ### Known Issues
 
-* BME280 ノードの使用時、フローのサイズが大きいと正常に動作しない場合がある
-* Inject ノードにおいて、PayloadにはTimestampのみ、RepeatにIntervalのみしか設定できない
+* When using a BME280 node, it may not operate correctly if the flow size is large
+* For Inject nodes, it is only possible to set Timestamp for the Payload and Repeat for the Interval
