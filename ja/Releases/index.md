@@ -113,7 +113,7 @@ enebular agentの詳しい仕様については、弊社サポート(support@ene
 
 ## Latest Release - 0.9.0 (Jan 30th, 2018)
 
-enebular-edge-agentは、[ARM Ltd.](https://www.arm.com/)の[Mbed OS](https://os.mbed.com/)を採用したマイクロコントローラ向けのenebular用IoTエージェントソフトウェアです。enebular version 2.0.0のリリースにあわせ、enebular-edge-agent version 1.0.0をリリースします。
+enebular-edge-agentは、[ARM Ltd.](https://www.arm.com/)の[Mbed OS](https://os.mbed.com/)を採用したマイクロコントローラ向けのenebular用IoTエージェントソフトウェアです。enebular version 2.0.0のリリースにあわせ、enebular-edge-agent version 0.9.0をリリースします。
 
 enebular-edge-agentの詳しい仕様については、弊社サポート(support@enebular.com)までお問い合わせください。
 
@@ -121,7 +121,7 @@ enebular-edge-agentの詳しい仕様については、弊社サポート(suppor
 
 #### Authentication
 
-* [enebular](https://enebular.com/)は、[ARM Ltd.](https://www.arm.com/)の[Mbed OS](https://os.mbed.com/)のMbed Cloudサービスを利用してenebular-edge-agentが搭載されたIoTデバイスを認証します。enebular-edge-agentは、MbedCloudのクライアントとして動作します
+* [enebular](https://enebular.com/)は、[ARM Ltd.](https://www.arm.com/)の[Mbed OS](https://os.mbed.com/)のMbed Cloudサービスを利用してenebular-edge-agentが搭載されたIoTデバイスを認証します。enebular-edge-agentは、Mbed Cloudのクライアントとして動作します
 
 #### Flow
 
@@ -149,7 +149,7 @@ enebular-edge-agentの詳しい仕様については、弊社サポート(suppor
 
 ##### Hardware
 
-enebular-edge-agent 1.0.0は、下記のハードウェアを対象としています。
+enebular-edge-agent 0.9.0は、下記のハードウェアを対象としています。
 
 * [FRDM-K64F](https://www.nxp.com/jp/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F) (NXP Semiconductors N.V.) + Stag Beetle Board (Uhuru Corporation)
 

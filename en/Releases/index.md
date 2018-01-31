@@ -1,6 +1,5 @@
 ---
 lastUpdated: 2017-01-31
-WIP: true
 ---
 
 # enebular Release Notes {#enebular}
@@ -50,7 +49,7 @@ We want to continue to have enebular reflect the opinions of its users, add new 
 
 ## Latest Release - 2.0.0 (Jan 30th, 2018)
 
-enebular-agent is IoT agent software for enebular and designed for Linux OS gateways. enebular-agent version 2.0.0 is being released along side the release of enebular vesion 2.0.0.
+enebular-agent is IoT agent software for enebular and designed for Linux OS gateways. enebular-agent version 2.0.0 is being released along side the release of enebular version 2.0.0.
 
 For detailed specifications on the enebular agent, please contact support (support@enebular.com).
 
@@ -115,33 +114,33 @@ The recommended operating environments are as follows.
 
 ## Latest Release - 0.9.0 (Jan 30th, 2018)
 
-enebular-edge-agentは、[ARM Ltd.](https://www.arm.com/)の[Mbed OS](https://os.mbed.com/)を採用したマイクロコントローラ向けのenebular用IoTエージェントソフトウェアです。enebular version 2.0.0のリリースにあわせ、enebular-edge-agent version 1.0.0をリリースします。
+enebular-edge-agent is IoT agent software for enebular and designed for microcontrollers utilizing [ARM Ltd.](https://www.arm.com/)'s [Mbed OS](https://os.mbed.com/). enebular-edge-agent version 0.9.0 is being released along side the release of enebular version 2.0.0.
 
-enebular-edge-agentの詳しい仕様については、弊社サポート(support@enebular.com)までお問い合わせください。
+For detailed specifications on enebular-edge-agent, please contact support (support@enebular.com).
 
 ### New
 
 #### Authentication
 
-* [enebular](https://enebular.com/)は、[ARM Ltd.](https://www.arm.com/)の[Mbed OS](https://os.mbed.com/)のMbed Cloudサービスを利用してenebular-edge-agentが搭載されたIoTデバイスを認証します。enebular-edge-agentは、MbedCloudのクライアントとして動作します
+* [enebular](https://enebular.com/) uses [ARM Ltd.](https://www.arm.com/)'s [Mbed OS](https://os.mbed.com/) Mbed Cloud service to authorize IoT devices running enebular-edge-agent. enebular-edge-agent operates as an Mbed Cloud client
 
-#### Flow
+#### Flows
 
-* [enebular](https://enebular.com/)では、[Node-RED](https://nodered.jp/)ベースのFlow Editorを使用してFlowプログラミングを行うことができます
-* enebularで作成したFlowは、enebular-edge-agentを搭載したIoTデバイスにデプロイして実行することができます (※1)
+* It is possible to do flow programming using the [Node-RED](https://nodered.org) based Flow Editor on [enebular](https://enebular.com/)
+* Flows created on enebular can be deployed and executed on IoT devices running enebular-edge-agent (1)
 
-※1 enebular-edge-agentで実行できるFlowには制限があります。詳しい仕様は、弊社サポート(support@enebular.com)までお問い合わせください
+1) There are limitations to the flows that can be executed with enebular-edge-agent. For detailed specifications, please contact support (support@enebular.com).
 
 #### Device Management
 
-* enebularのデバイス管理機能で、enebular-edge-agentが搭載されたIoTデバイスの状態を監視することができます
-* enenbular-edge-agentは、enebularに対して定期的にデバイスの状態を通知します
-* 本機能はEnterprise Planの有償機能として提供されます
+* As an enebular device management feature, it is now possible to monitor the device status of IoT devices running enenbular-edge-agent
+* enenbular-edge-agent regularly reports device status to enebular
+* These features are offered as Enterprise Plan paid features
 
 #### Logging
 
-* enebular-edge-agentは、ロギング機能としてエラーや動作のログをMicroSDカードに記録します
-* 本機能はEnterprise Planの有償機能として提供されます
+* enebular-edge-agent records error and operational messages to an MicroSD for logging
+* This feature is offered as an Enterprise Plan paid feature
 
 #### Operating Environment
 
@@ -151,13 +150,13 @@ enebular-edge-agentの詳しい仕様については、弊社サポート(suppor
 
 ##### Hardware
 
-enebular-edge-agent 1.0.0は、下記のハードウェアを対象としています。
+The following hardware is supported in enebular-edge-agent 0.9.0.
 
-* [FRDM-K64F](https://www.nxp.com/jp/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F) (NXP Semiconductors N.V.) + Stag Beetle Board (Uhuru Corporation)
+* [FRDM-K64F](https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/k-seriesperformancem4/k2x-usb/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F) (NXP Semiconductors N.V.) + Stag Beetle Board (Uhuru Corporation)
 
 ##### Communication
 
-* IEEE 802.11 b/g/n (IEEE 802.11n は2.4GHzのみの対応です)
+* IEEE 802.11 b/g/n (only 2.4GHz is supported for IEEE 802.11n)
 * WPA/WPA2
 
 ### Fixed
@@ -170,8 +169,8 @@ N/A
 
 ### Known Issues
 
-* BME280 ノードの使用時、フローのサイズが大きいと正常に動作しない場合がある
-* Inject ノードにおいて、PayloadにはTimestampのみ、RepeatにIntervalのみしか設定できない
+* When using a BME280 node, it may not operate correctly if the flow size is large
+* For Inject nodes, it is only possible to set Timestamp for the Payload and Repeat for the Interval
 
 ## Release History
 
