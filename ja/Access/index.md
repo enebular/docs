@@ -54,3 +54,5 @@ Asset privilege は Flow の詳細画面の Access タブから行くことが�
 default privilege は Project Collaborator を Invite した際に、そのメンバーに自動的に与えられる権限です。
 
 ![](https://i.gyazo.com/5d2970b4226d5633c2e81f7abc5f721f.png)
+
+なお Outside Collaborator は、default privilege に関わらずデフォルトで user 権限が与えられます。
