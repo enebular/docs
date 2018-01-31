@@ -2,9 +2,9 @@
 lastUpdated: 2017-01-30
 ---
 
-# enebular Release Note {#enebular}
+# enebular Release Notes {#enebular}
 
-## Latest Release 2.0.0 (Jan. 30th, 2018) 
+## Latest Release - 2.0.0 (Jan 30th, 2018) 
 
 enebularは2014年11月22日のβリリースから3年の時を経て、大きく進化しました。今回のリリースでは、商用利用を意図した運用管理機能の追加や、対応デバイスの拡充、ユーザービリティの向上を図っています。
 
@@ -18,7 +18,7 @@ enebularは2014年11月22日のβリリースから3年の時を経て、大き�
 管理コンソールからFlowをデプロイできるなど、ユーザービリティを改善しました。
 
 #### デプロイ可能なデバイスの拡充
-これまで対応していたクラウド環境やゲートウェイに加え、Arm Mbed対応マイコンボードへのフローデプロイをサポートしました。ゲートウェイ向けエージェントについては、[enebular-agent verion2.0.0リリースノート](#enebular-agent)を参照してください。マイコン向けエージェントについては、[enebular-edge-agent version0.9.0リリースノート](#enebular-edge-agent)を参照してください。
+これまで対応していたクラウド環境やゲートウェイに加え、Arm Mbed対応マイコンボードへのフローデプロイをサポートしました。ゲートウェイ向けエージェントについては、[enebular-agent version 2.0.0リリースノート](#enebular-agent)を参照してください。マイコン向けエージェントについては、[enebular-edge-agent version 0.9.0リリースノート](#enebular-edge-agent)を参照してください。
 
 #### 新しいコネクションタイプの追加
 これまで対応していたAWS IoT、Herokuに加え、Arm Mbed Cloudのサポートが追加されました。Arm Mbed Cloud対応はEnterprise Plan利用者限定の機能となります。
@@ -41,15 +41,15 @@ enebularは今後もユーザーの声を反映し、新しい機能の追加や
 
 ### Release History
 
-- [2.0.0](./enebular/index.md)
+- [2.0.0](./enebular/2.0.0.md)
 
 ---
 
-# enebular agent Release Note {#enebular-agent}
+# enebular agent Release Notes {#enebular-agent}
 
-## Latest Release 2.0.0 (Jan. 30th, 2018)
+## Latest Release - 2.0.0 (Jan 30th, 2018)
 
-enebular-agentは、Linux OSを搭載したゲートウェイ向けのenebular用IoTエージェントソフトウェアです。enebular vesion 2.0.0のリリースにあわせ、enebular-agent version2.0.0をリリースします。
+enebular-agentは、Linux OSを搭載したゲートウェイ向けのenebular用IoTエージェントソフトウェアです。enebular version 2.0.0のリリースにあわせ、enebular-agent version 2.0.0をリリースします。
 
 enebular agentの詳しい仕様については、弊社サポート(support@enebular.com)までお問い合わせください。
 
@@ -60,7 +60,7 @@ enebular agentの詳しい仕様については、弊社サポート(support@ene
 * enenbular-agentは、enebularに対して定期的にデバイスの状態とログを通知します
 * 本機能はEnterprise Planの有償機能として提供されます
 
-#### Connection Type
+#### Connection Types
 これまでサポートしていたAWS IoTに加え、Arm Mbed Cloudを利用してのアセットのデプロイができるようになりました
 
 ### Fixed
@@ -81,24 +81,24 @@ enebular agentの詳しい仕様については、弊社サポート(support@ene
 
 #### Raspberry PI3 Model B
 
-##### raspbian streach base (9.0)
+##### Raspbian Stretch base (9.0)
 * nodejs 8.9.0
 * npm 5.5.1
 * node-red 0.17.5
 
-#### rasobian jessie base (8.0)
+#### Raspbian Jessie base (8.0)
 * nodejs 8.9.0
 * npm 5.5.1
-* node-red 0.17.5 
+* node-red 0.17.5
 
-#### Linux(virtualbox)
+#### Linux (VirtualBox)
 
-##### Debian jessie (8.9)
+##### Debian Jessie (8.9)
 * nodejs 9.2.0
 * npm 5.5.1
 * node-red 0.17.5
 
-##### Debian streach(9.1)
+##### Debian Stretch (9.1)
 * nodejs 9.2.1
 * npm 5.6.0
 * node-red 0.17.5
@@ -109,11 +109,11 @@ enebular agentの詳しい仕様については、弊社サポート(support@ene
 
 ---
 
-# enebular edge agent Release Note {#enebular-edge-agent}
+# enebular edge agent Release Notes {#enebular-edge-agent}
 
-## Latest Release 0.9.0 (Jan. 30th, 2018)
+## Latest Release - 0.9.0 (Jan 30th, 2018)
 
-enebular-edge-agentは、[ARM Ltd.](https://www.arm.com/)の[Mbed OS](https://os.mbed.com/)を採用したマイクロコントローラ向けのenebular用IoTエージェントソフトウェアです。enebular version2.0.0のリリースにあわせ、enebular-edge-agent version1.0.0をリリースします。
+enebular-edge-agentは、[ARM Ltd.](https://www.arm.com/)の[Mbed OS](https://os.mbed.com/)を採用したマイクロコントローラ向けのenebular用IoTエージェントソフトウェアです。enebular version 2.0.0のリリースにあわせ、enebular-edge-agent version 0.9.0をリリースします。
 
 enebular-edge-agentの詳しい仕様については、弊社サポート(support@enebular.com)までお問い合わせください。
 
@@ -121,7 +121,7 @@ enebular-edge-agentの詳しい仕様については、弊社サポート(suppor
 
 #### Authentication
 
-* [enebular](https://enebular.com/)は、[ARM Ltd.](https://www.arm.com/)の[Mbed OS](https://os.mbed.com/)のMbed Cloudサービスを利用してenebular-edge-agentが搭載されたIoTデバイスを認証します。enebular-edge-agentは、MbedCloudのクライアントとして動作します
+* [enebular](https://enebular.com/)は、[ARM Ltd.](https://www.arm.com/)の[Mbed OS](https://os.mbed.com/)のMbed Cloudサービスを利用してenebular-edge-agentが搭載されたIoTデバイスを認証します。enebular-edge-agentは、Mbed Cloudのクライアントとして動作します
 
 #### Flow
 
@@ -149,7 +149,7 @@ enebular-edge-agentの詳しい仕様については、弊社サポート(suppor
 
 ##### Hardware
 
-enebular-edge-agent 1.0.0は、下記のハードウェアを対象としています。
+enebular-edge-agent 0.9.0は、下記のハードウェアを対象としています。
 
 * [FRDM-K64F](https://www.nxp.com/jp/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F) (NXP Semiconductors N.V.) + Stag Beetle Board (Uhuru Corporation)
 

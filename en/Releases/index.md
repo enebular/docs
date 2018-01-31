@@ -1,68 +1,67 @@
 ---
-lastUpdated: 2017-01-30
-WIP: true
+lastUpdated: 2017-01-31
 ---
 
-# enebular Release Note {#enebular}
+# enebular Release Notes {#enebular}
 
-## Latest Release 2.0.0 (Jan. 30th, 2018) 
+## Latest Release - 2.0.0 (Jan 30th, 2018)
 
-enebularは2014年11月22日のβリリースから3年の時を経て、大きく進化しました。今回のリリースでは、商用利用を意図した運用管理機能の追加や、対応デバイスの拡充、ユーザービリティの向上を図っています。
+enebular has evolved greatly in the three years since its beta release on the 22nd of November, 2014. In this release we have worked on adding operational management functionality intended for commercial use, increasing the range of supported devices and improving usability.
 
 ### New
 
-#### Enterprise Planの提供
-これまで無償での提供のみでしたが、サポートの充実や安定した運用を望む声に応え、Enterprise Planの提供を開始いたします。Enterprise Planでは、マイコン向けエージェントの利用やデバイスの運用管理機能、プロッフェショナルサポートをご利用いただけます。Enterprise Planの詳細については、support@enebular.com にお問い合わせください。
+#### An Enterprise Plan
+While enebular was only offered free of charge up until now, in response to requests for enhanced support and high operational stability, we will now also offer an enterprise plan. With the enterprise plan you can make use of the microcontroller agent, device operations management functionality and professional support. For more details on the enterprise plan, please contact support@enebular.com.
 
-#### 一新された管理コンソール
-管理コンソール（ダッシュボード）を一新し、より見やすくなりました。
-管理コンソールからFlowをデプロイできるなど、ユーザービリティを改善しました。
+#### A Redesigned Management Console
+The management console (dashboard) has been renewed and is now easier to understand.
+Its usability has been improved with, for example, the ability to deploy flows directly from the management console.
 
-#### デプロイ可能なデバイスの拡充
-これまで対応していたクラウド環境やゲートウェイに加え、Arm Mbed対応マイコンボードへのフローデプロイをサポートしました。ゲートウェイ向けエージェントについては、[enebular-agent verion2.0.0リリースノート](#enebular-agent)を参照してください。マイコン向けエージェントについては、[enebular-edge-agent version0.9.0リリースノート](#enebular-edge-agent)を参照してください。
+#### Expansion of Deployable Devices
+In addition to the cloud environments and gateways supported up until now, flow deployment to Arm Mbed compatible microcontroller boards is now also supported. For the gateway agent, please refer to the [enebular-agent version 2.0.0 release notes](#enebular-agent). For the microcontroller agent, please refer to the [enebular-edge-agent version 0.9.0 release notes](#enebular-edge-agent).
 
-#### 新しいコネクションタイプの追加
-これまで対応していたAWS IoT、Herokuに加え、Arm Mbed Cloudのサポートが追加されました。Arm Mbed Cloud対応はEnterprise Plan利用者限定の機能となります。
+#### New Connection Types
+In addition to the AWS IoT and Heroku support up until now, support for Arm Mbed Cloud has also been added. Support for Arm Mbed Cloud is available only for Enterprise Plan users.
 
-#### デバイス管理機能の追加
-enebular agentやenebular edge agentが動作しているデバイスの状態（ステータス）とログのリモートモニタリング機能が追加されました。デバイス管理機能はEnterprise Plan利用者限定の機能となります。
+#### Additional Device Management Functionality
+Remote monitoring of status and logging of devices running the enebular agent and enebular edge agent has been added. This device management functionality is available only for Enterprise Plan users.
 
-#### 可視化機能INFOMOTION（インフォモーション）の刷新
-INFOMOTIONも一新され、より簡単にお使いいただけるようになりました。"Dashboard(ダッシュボード)"機能が追加され、複数のサイズ変更可能なグラフを一度に表示できるようになりました。Dashboardは、InfoTypeと同様に他のユーザーと共有することができます。その他、グラフデータをjson形式でダウンロード可能になる、InfoTypeの共有時にデータストアとの接続が不要になるなど、ユーザビリティの向上を行っています。
+#### A Redesign of INFOMOTION Visualization Functionality
+INFOMOTION has also been redesigned making it much easier to use. Dashboard functionality has been added, making it possible to display graphs of various sizes at once. As with InfoType, dashboards can be shared with other users. In addition, usability has been improved by, for example, allowing graph data to be downloaded in json format and not requiring a data store connection when sharing an InfoType.
 
 ### Operating Environment
-enebularの動作確認済みWebブラウザは下記の通りです。
+enebular has been confirmed to work with the following web browsers.
 
 |Web browser|Version|OS|
 |--|--|--|
 |Google Chrome|63.0 or later|Windows/Mac|
-|Mozilla Firefox|57.0 or later|Windows/Mac| 
+|Mozilla Firefox|57.0 or later|Windows/Mac|
 
-enebularは今後もユーザーの声を反映し、新しい機能の追加やユーザービリティの向上を行い、より使いやすいサービスを目指してまいります。enebularについてのご意見お問い合わせは support@enebular.com にお寄せください。ユーザーの皆様のフィードバックをお待ちしております。
+We want to continue to have enebular reflect the opinions of its users, add new functionality and improve usability, and aim for an even easier to use service. For any thoughts on enebular, please get in touch with us at support@enebular.com. We look forward to your feedback.
 
 ### Release History
 
-- [2.0.0](./enebular/index.md)
+- [2.0.0](./enebular/2.0.0.md)
 
 ---
 
-# enebular agent Release Note {#enebular-agent}
+# enebular agent Release Notes {#enebular-agent}
 
-## Latest Release 2.0.0 (Jan. 30th, 2018)
+## Latest Release - 2.0.0 (Jan 30th, 2018)
 
-enebular-agentは、Linux OSを搭載したゲートウェイ向けのenebular用IoTエージェントソフトウェアです。enebular vesion 2.0.0のリリースにあわせ、enebular-agent version2.0.0をリリースします。
+enebular-agent is IoT agent software for enebular and designed for Linux OS gateways. enebular-agent version 2.0.0 is being released along side the release of enebular version 2.0.0.
 
-enebular agentの詳しい仕様については、弊社サポート(support@enebular.com)までお問い合わせください。
+For detailed specifications on the enebular agent, please contact support (support@enebular.com).
 
 ### New
 
-#### Device Management/Logging
-* enebularのデバイス管理機能で、enebular-agentが搭載されたIoTデバイスの状態(ステータス)やログを監視することができるようになりました
-* enenbular-agentは、enebularに対して定期的にデバイスの状態とログを通知します
-* 本機能はEnterprise Planの有償機能として提供されます
+#### Device Management / Logging
+* As an enebular device management feature, it is now possible to monitor device status and logs of IoT devices running enebular-agent
+* enenbular-agent regularly reports device status and logs to enebular
+* These features are offered as Enterprise Plan paid features
 
-#### Connection Type
-これまでサポートしていたAWS IoTに加え、Arm Mbed Cloudを利用してのアセットのデプロイができるようになりました
+#### Connection Types
+In addition to AWS IoT that has been supported up until now, it is now also possible to deploy assets using Arm Mbed Cloud.
 
 ### Fixed
  N/A
@@ -74,32 +73,33 @@ enebular agentの詳しい仕様については、弊社サポート(support@ene
  N/A
 
 ### Recommended Hardware
-推奨動作ハードウェアは下記の通りです。
+The recommended hardware is as follows.
 * Raspberry PI3 Model B
 
 ### Operating Environment
-推奨動作環境は下記の通りです。
+
+The recommended operating environments are as follows.
 
 #### Raspberry PI3 Model B
 
-##### raspbian streach base (9.0)
+##### Raspbian Stretch base (9.0)
 * nodejs 8.9.0
 * npm 5.5.1
 * node-red 0.17.5
 
-#### rasobian jessie base (8.0)
+#### Raspbian Jessie base (8.0)
 * nodejs 8.9.0
 * npm 5.5.1
-* node-red 0.17.5 
+* node-red 0.17.5
 
-#### Linux(virtualbox)
+#### Linux (VirtualBox)
 
-##### Debian jessie (8.9)
+##### Debian Jessie (8.9)
 * nodejs 9.2.0
 * npm 5.5.1
 * node-red 0.17.5
 
-##### Debian streach(9.1)
+##### Debian Stretch (9.1)
 * nodejs 9.2.1
 * npm 5.6.0
 * node-red 0.17.5
@@ -110,37 +110,37 @@ enebular agentの詳しい仕様については、弊社サポート(support@ene
 
 ---
 
-# enebular edge agent Release Note {#enebular-edge-agent}
+# enebular edge agent Release Notes {#enebular-edge-agent}
 
-## Latest Release 0.9.0 (Jan. 30th, 2018)
+## Latest Release - 0.9.0 (Jan 30th, 2018)
 
-enebular-edge-agentは、[ARM Ltd.](https://www.arm.com/)の[Mbed OS](https://os.mbed.com/)を採用したマイクロコントローラ向けのenebular用IoTエージェントソフトウェアです。enebular version2.0.0のリリースにあわせ、enebular-edge-agent version1.0.0をリリースします。
+enebular-edge-agent is IoT agent software for enebular and designed for microcontrollers utilizing [ARM Ltd.](https://www.arm.com/)'s [Mbed OS](https://os.mbed.com/). enebular-edge-agent version 0.9.0 is being released along side the release of enebular version 2.0.0.
 
-enebular-edge-agentの詳しい仕様については、弊社サポート(support@enebular.com)までお問い合わせください。
+For detailed specifications on enebular-edge-agent, please contact support (support@enebular.com).
 
 ### New
 
 #### Authentication
 
-* [enebular](https://enebular.com/)は、[ARM Ltd.](https://www.arm.com/)の[Mbed OS](https://os.mbed.com/)のMbed Cloudサービスを利用してenebular-edge-agentが搭載されたIoTデバイスを認証します。enebular-edge-agentは、MbedCloudのクライアントとして動作します
+* [enebular](https://enebular.com/) uses [ARM Ltd.](https://www.arm.com/)'s [Mbed OS](https://os.mbed.com/) Mbed Cloud service to authorize IoT devices running enebular-edge-agent. enebular-edge-agent operates as an Mbed Cloud client
 
-#### Flow
+#### Flows
 
-* [enebular](https://enebular.com/)では、[Node-RED](https://nodered.jp/)ベースのFlow Editorを使用してFlowプログラミングを行うことができます
-* enebularで作成したFlowは、enebular-edge-agentを搭載したIoTデバイスにデプロイして実行することができます (※1)
+* It is possible to do flow programming using the [Node-RED](https://nodered.org) based Flow Editor on [enebular](https://enebular.com/)
+* Flows created on enebular can be deployed and executed on IoT devices running enebular-edge-agent (1)
 
-※1 enebular-edge-agentで実行できるFlowには制限があります。詳しい仕様は、弊社サポート(support@enebular.com)までお問い合わせください
+1) There are limitations to the flows that can be executed with enebular-edge-agent. For detailed specifications, please contact support (support@enebular.com).
 
 #### Device Management
 
-* enebularのデバイス管理機能で、enebular-edge-agentが搭載されたIoTデバイスの状態を監視することができます
-* enenbular-edge-agentは、enebularに対して定期的にデバイスの状態を通知します
-* 本機能はEnterprise Planの有償機能として提供されます
+* As an enebular device management feature, it is now possible to monitor the device status of IoT devices running enenbular-edge-agent
+* enenbular-edge-agent regularly reports device status to enebular
+* These features are offered as Enterprise Plan paid features
 
 #### Logging
 
-* enebular-edge-agentは、ロギング機能としてエラーや動作のログをMicroSDカードに記録します
-* 本機能はEnterprise Planの有償機能として提供されます
+* enebular-edge-agent records error and operational messages to an MicroSD for logging
+* This feature is offered as an Enterprise Plan paid feature
 
 #### Operating Environment
 
@@ -150,13 +150,13 @@ enebular-edge-agentの詳しい仕様については、弊社サポート(suppor
 
 ##### Hardware
 
-enebular-edge-agent 1.0.0は、下記のハードウェアを対象としています。
+The following hardware is supported in enebular-edge-agent 0.9.0.
 
-* [FRDM-K64F](https://www.nxp.com/jp/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F) (NXP Semiconductors N.V.) + Stag Beetle Board (Uhuru Corporation)
+* [FRDM-K64F](https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/k-seriesperformancem4/k2x-usb/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F) (NXP Semiconductors N.V.) + Stag Beetle Board (Uhuru Corporation)
 
 ##### Communication
 
-* IEEE 802.11 b/g/n (IEEE 802.11n は2.4GHzのみの対応です)
+* IEEE 802.11 b/g/n (only 2.4GHz is supported for IEEE 802.11n)
 * WPA/WPA2
 
 ### Fixed
@@ -169,8 +169,8 @@ N/A
 
 ### Known Issues
 
-* BME280 ノードの使用時、フローのサイズが大きいと正常に動作しない場合がある
-* Inject ノードにおいて、PayloadにはTimestampのみ、RepeatにIntervalのみしか設定できない
+* When using a BME280 node, it may not operate correctly if the flow size is large
+* For Inject nodes, it is only possible to set Timestamp for the Payload and Repeat for the Interval
 
 ## Release History
 

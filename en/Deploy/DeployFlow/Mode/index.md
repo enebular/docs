@@ -1,6 +1,5 @@
 ---
 lastUpdated: 2017-12-01
-WIP: true
 ---
 
 # Mode デプロイ用の設定

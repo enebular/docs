@@ -88,7 +88,7 @@ enebular-edge-agent は、[ARM Ltd.](https://www.arm.com/) の [Mbed OS](https:/
 
 #### Hardware
 
-enebular-edge-agent 1.0.0 は、下記のハードウェアを対象としています。
+enebular-edge-agent 0.9.0 は、下記のハードウェアを対象としています。
 
 * [FRDM-K64F](https://www.nxp.com/jp/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F) (NXP Semiconductors N.V.) + Stag Beetle Board (Uhuru Corporation)
 

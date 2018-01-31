@@ -1,6 +1,5 @@
 ---
 lastUpdated: 2017-01-25
-WIP: true
 ---
 
 # AWS Lambda へのデプロイ
