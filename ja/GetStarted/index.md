@@ -2,7 +2,7 @@
 lastUpdated: 2017-12-01
 ---
 
-# Get Started
+# Getting Started
 
 このチュートリアルでは、以下のことを行います。
 
@@ -93,7 +93,7 @@ milkcocoa node の **Data Store** は `tutorial`、**Operation** は `Push` で�
 
 ![](https://i.gyazo.com/f63357415d983465b637c81dbf4014d3.png)
 
-「Select DataSource Type」で「milkcocoa」を選択し、必要な情報を入力します。Node-RED Edtior 内の milkcocoa node で指定した`App Id`、`DataStore`、`API Key`、`Secret Key`(API Secret)　を入力します。Save をクリックして保存します。
+「Select DataSource Type」で「milkcocoa」を選択し、必要な情報を入力します。Node-RED Editor 内の milkcocoa node で指定した`App Id`、`DataStore`、`API Key`、`Secret Key`(API Secret)　を入力します。Save をクリックして保存します。
 
 ![](https://i.gyazo.com/7b0b7eebebe0828e564fdcb2863a47b9.png)
 
