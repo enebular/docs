@@ -1,73 +1,65 @@
 ---
-lastUpdated: 2017-12-01
+lastUpdated: 2018-02-01
 ---
 
-# Get Started
+# Getting Started
 
-This tutorial contains the following. 
+This tutorial covers the following.
 
-- Create a Project
-- Creating Flow using Milkcocoa*
-- Creating a graph (InfoMotion) using data of a Flow
+- Creating a project
+- Creating a flow using Milkcocoa*
+- Creating a graph (InfoMotion) that uses the flow's data
 
-* [Milkcocoa](https://mlkcca.com/en/) is a Realtime Communication Platform for IoT, Mobile, and Web.
+*[Milkcocoa](https://mlkcca.com) is a cloud platform that enables simple realtime data exchange between IoT devices, smartphones and PCs.
 
-## Create a Project
+## Creating a Project
 
-A Project can have multiple **Assets**.
-The current Assets are **Flows** and **InfoMotions**.
+To start using enebular we first create a project. In the screen after logging in, create a project with "Create Project".
 
-![](/_asset/images/enebular-developers-aboutproject.png) 
+![](https://i.gyazo.com/1e90909b5ecefe56ff1934aa41e5a7b9.png)
 
-After logging in create a project by clicking Add project. 
-
-![](/_asset/images/enebular-developers-createproject.png)
-
-Enter a title and submit. 
+Enter an appropriate title and create the project.
 
 ![](/_asset/images/enebular-developers-createprojectmodal.png)
 
-![](/_asset/images/enebular-developers-projects.png)
+![](https://i.gyazo.com/69a5b817e8681349f45373eb7aead486.png)
 
-## Creating Flow 
+## Creating a Flow
 
-Next create a Flow after creating a Project. Select the Project and go to the project management screen. 
+With the project added let's now create a flow. Select the project to go to the project management screen.
 
-![](/_asset/images/enebular-developers-projectdashboard.png) 
+![](https://i.gyazo.com/e521afd4d489291aa774fe9429cf3321.png)
 
-Clicking Create Asset opens a modal to create Asset. 
+Press the "+" at the bottom right to open the asset creation dialog box.
 
-![](/_asset/images/enebular-developers-createassetmodalbefore.png)
+Select `flow` for the asset type and give the flow a title. For the flow's default access permissions, this time just set it to `superdev`. The category at the bottom can be set to anything appropriate.
 
-Select Asset Type `flow` and give the title of Flow. The access to Flow can be set to `admin` (default role to asset).
+![](https://i.gyazo.com/257abde3b17b7d2bab924b2d0ad32ac8.png)
 
-![](/_asset/images/enebular-developers-createassetmodal.png) 
+Press "Continue" to complete the creation.
 
-Click continue to complete the creation and move to the Flow page. 
+Once created you'll be taken to the flow details page.
 
-![](/_asset/images/enebular-developers-flowdashboard.png) 
+![](https://i.gyazo.com/7cb9b53259022696e7cc47e4fa81d89b.png)
 
-Edit Flow opens a Node-RED edit screen. 
+Press "Edit Flow" to open the Node-RED editor.
 
-![](/_asset/images/enebular-developers-nodered-before.png) 
+![](/_asset/images/enebular-developers-nodered-before.png)
 
-## Edit / deploy data flow 
 
-On the editing screen, 
-select the desired nodes from the left side of the window 
-and connect the nodes to create a flow. 
-When ready click **Deploy** to deploy the flow. 
+## Editing and Deploying the Data Flow
 
-![](https://i.gyazo.com/2dd11f23a605ec41b73d413176d206c2.png) 
+In the editor, you create a data flow by placing the nodes lined up on the left (the boxes with API names) onto the sheet and then connecting those nodes. Once the flow is ready, you deploy it by pressing **Deploy** at the top right.
 
-This flow shows a data store of [Milkcocoa](//mlkcca.com)  every 10 seconds, with seven random IDs (`dataid`) as random labels 0 to 50 and stores it as values ​​(`v`). 
+![](https://i.gyazo.com/2dd11f23a605ec41b73d413176d206c2.png)
 
-Please refer to the images below to create a flow. 
-Configure the flow to run every 10 seconds with **timestamp node**, set the properties with **function node**, and **milkcocoa node** will store information to Milkcocoa with the application id (`app_id `) · Data store information to (`datastore`) · Authentication information with (`API Key`,` API Secret`). 
+The flow in the diagram stores a random number between 0 and 50 (`v`) with a random selection from seven ID types (`dataid`) to a [Milkcocoa](https://mlkcca.com) data store every 10 seconds.
 
-![](/_asset/images/enebular-developers-milkcocoaflow.png) 
+Create the flow by referring to the diagram below. Set the flow to run every 10 seconds with the **timestamp node**, set the properties in the **function node**, and in the **milkcocoa node** set the destination Milkcocoa app information (`app_id`), the data store information (`datastore`) and authentication information (`API Key`, `API Secret`).
 
-The code below is for the function node. 
+![](/_asset/images/enebular-developers-milkcocoaflow.png)
+
+The code for the function node is as follows.
 
 ```
 var newMes = {};
@@ -79,105 +71,105 @@ newMes.payload.dataid = 'data-'+Math.floor(Math.random()*7 + 1);
 return newMes;
 ```
 
-Set the milkcocoa **Data Store** as `tutorial` and **Operation** as` Push`. 
+The milkcocoa node's **Data Store** is `tutorial` and its **Operation** is `Push`.
 
-Before creating this Flow, refer to Milkcocoa's [Prepare to use Milkcocoa on the tutorial page](https://mlkcca.com/tutorial/ page 2. Html), create an app and with `app_id`. `API Key` and` API Secret` which can be created from the "Authentication" tab in the Milkcocoa administration screen. 
+Before creating this flow, refer to the Milkcocoa tutorial page [Preparing to use Milkcocoa](https://mlkcca.com/tutorial/page2.html), create an app and make note of the `app_id`, and then also the `API Key` and `API Secret` from the  authentication tab in the Milkcocoa management screen.
 
-***Note 1**: The free version of enebular sleeps 30 minutes after deployment if there is no access. Currently, only free version is provided. 
+***Note 1**: The free version of enebular automatically sleeps if there is no access for 30 minutues. At present only the free version is available.
 
-***Note 2**: (In the free version) Trying to deply a flow after a an idle 30 minutes will result in an "Unauthorized" error. 
+***Note 2**: If the flow editor is left open and unused for an extended period of time, an attempt to deploy may result with it failing with "Unauthorized". If this happens please reload.
 
-## Registering a DataSource 
 
-Next the deployed flows data will be visualized. 
+## Registering a DataSource
 
-Before visulaizing a DataSource the following should be understood. 
+Once the data flow has been deployed, let's now visualize the data.
 
-* InfoMotion: 
-An InfoMotion is a visualization/graph on a dashbaord. 
-The visualization is based on the data of a DataSource. 
-InfoMotion gives Movement to Information using the two components `InfoType` and `DataSource`.
-* InfoType: The type of graph (pie chart, bar graph, etc.). 
-* DataSource: Data to be displayed on the graph. 
-The current datasource adapters are ` apiGateway` ,` milkcocoa` and ` pubnub` . The following example will be using `milkcocoa`. 
+Before starting on the visualization, you'll need to know the following terminology.
 
-Register the DataSource from the DataSource tab on the sidebar. 
-Open the DataSource creation modal from Create DataSource. 
+* InfoMotion: This is the actual graph dashboard you see. It is created from a combination of a InfoType and a DataSource. The term itself is of course a combination of Info and Motion, based on it having more movement than an "Infographic".
+* InfoType: The graph type (pie graph or bar graph etc).
+* DataSource: The data to be displayed in the graph. At present there are two types of DataSource types - `apiGateway` and `milkcocoa`. This time we'll use `milkcocoa`.
 
-![](/_asset/images/enebular-developers-datasource.png)
+First we register a DataSource from the DataSource section in the sidebar. Press the "+" at the bottom right to open the DataSource creation dialog box.
 
-Select "milkcocoa" in "Select DataSource Type" and enter the necessary information. Enter `App Id`,` DataStore`, `API Key` and ` Secret Key` (API Secret) specified by the milkcocoa node in Node-RED Edtior then save. 
+![](https://i.gyazo.com/f63357415d983465b637c81dbf4014d3.png)
 
-![](https://i.gyazo.com/7b0b7eebebe0828e564fdcb2863a47b9.png) 
+Select "milkcocoa" for the "Select DataSource Type" and enter the required information.
 
-## Uploading an InfoType 
+Enter the `App Id`, `DataStore`, `API Key` and `Secret Key` (API Secret) you specified for the milkcocoa node in the Node-RED editor. Then press "Save" to save it.
 
-After registering the DataSource, upload the InfoType. 
-This example will use a sample bar graph. 
+![](https://i.gyazo.com/7b0b7eebebe0828e564fdcb2863a47b9.png)
 
-<ul> 
-  <li><a href="/_asset/sample/sample-bar-chart.zip" target="_blank">sample InfoType download(zip file)</a></li> 
+## Uploading an InfoType
+
+After registering the DataSource, upload the InfoType. We'll use a sample bar graph here.
+
+<ul>
+  <li><a href="/_asset/sample/sample-bar-chart.zip" target="_blank">Sample InfoType Download (zip)</a></li>
 </ul>
 
-When the download is complete, click the InfoType tab in the sidebar. 
+Once the download is complete, click the InfoType tab in the sidebar.
 
-![](/_asset/images/enebular-developers-asset-infotype.png) 
+![](https://i.gyazo.com/1d6ba758c53ff94c66a9545fd83aa859.png)
 
-Upload Opens a modal from InfoType. Drag and drop or select the contents of the downloaded zip file. 
+Press the "+" at the bottom right to open the dialog box. Drag the contents of the downloaded zip file into the drag and drop area.
 
-![](https://i.gyazo.com/5b461780e0d2afe6758d87ecb7ae7801.png) 
+![](https://i.gyazo.com/5b461780e0d2afe6758d87ecb7ae7801.png)
 
-Select a `category` and click Upload.
+Select whatever `category` you like and then press the "Upload" button.
 
 ![](/_asset/images/enebular-developers-upload-infotype.png)
 
-Once uploaded click the InfoMotion tab in the sidebar. 
+Once the upload completes a preview like the following will be displayed.
 
-##  Creating an InfoMotion 
+![](https://i.gyazo.com/a8b352503ecbfaa14e75c48f032f5636.png)
 
-Create InfoMotion using DataSource and InfoType. 
-Press Create Infomotion to open the modal. 
+With that we've confirmed that the upload succeeded, so use the breadcrumbs to go back to the project screen and select the InfoMotion tab from the sidebar.
 
-![](/_asset/images/enebular-developers-asset-infomotion.png) 
+##  Creating an InfoMotion
 
-Give the title of InfoMotion. The default access right to InfoMotion (default role to asset) is set to `admin`.
+Here we'll create an InfoMotion using a DataSource and an InfoType. Press the "+" at the bottom right to open the dialog box.
 
-![](/_asset/images/enebular-developers-asset-infomotion-modal.png) 
+![](https://i.gyazo.com/7841284aa8720e3b47956d26ebbd5848.png)
 
-The graph can then be used in the InfoMotion dashboard screen. 
+Give the InfoMotion a title. For the InfoMotion's default access permissions, just set it to `superdev` this time. Select whatever you like for the "category" at the bottom.
 
-![](/_asset/images/enebular-developers-infomotion-dashboard-before.png) 
+![](https://i.gyazo.com/4ec89d65f12b4ad742d35afe07b615cc.png)
 
-Click Add Graph to open a graph sidebar. This sidebar displays a list of graphs to display in the dashboard. 
+Once you've created it you'll be taken to the InfoMotion dashboard screen.
+
+![](/_asset/images/enebular-developers-infomotion-dashboard-before.png)
+
+Open the sidebar with "Add Graph". A list of the graphs shown on the dashboard is shown in the sidebar.
 
 ![](/_asset/images/enebular-developers-infomotion-add-graph.png)
 
-Register a graph by clicking Create Graph.
+We register a graph by pressing "Create Graph".
 
-![](/_asset/images/enebular-developers-infomotion-create-graph.png)
+![](https://i.gyazo.com/20840d9afa6a2b70d1b5894f95ba107b.png)
 
-Input a NAME, select a TYPE `bar-chart` (previously uploaded InfoType). 
-DataSource is` test-datasource` of the DataSource we (previously created datasource). 
+Enter something appropriate for the NAME, the TYPE should be set to the `barchart` type of the InfoType you uploaded, and the DATASOURCE should be set to the `test-datasource` DataSource you created.
 
-Since label is the x axis and value is the y axis, set `dataid` to label and value to` v` (LabelNames are omitted in this example). 
+Since the label is the x axis and the value is the y axis, set `dataid` for the label and `v` for the value (LabelNames are omitted in this example).
 
 ![](/_asset/images/enebular-developers-infomotion-create-graph-filled.png)
 
-Create a Graph to add test-graph to the list.
+
+Press "Create Graph" and "test-graph" will be added to the list.
 
 ![](/_asset/images/enebular-developers-infomotion-graphs.png)
 
-If you click the plus icon to the left of test-graph, it will be added to the dashboard.
 
-![](/_asset/images/enebular-developers-infomotion-dashboard.png) 
+If you click the plus icon to the left of test-graph it will be added to the dashboard (if it isn't displayed, please try changing the date range at the top right).
 
-To resize the graph drag the right bottom corner then click save the save layout. 
+![](/_asset/images/enebular-developers-infomotion-dashboard.png)
+
+To resize the graph drag its bottom right corner then press "Save" to save the save layout.
 
 ![](/_asset/images/enebular-developers-infomotion-dashboard-full.png)
 
-
 ## Well Done!
 
-We were able to create a data flow and a graph with data. 
+With that, we've been able to go from creating a data flow right through to displaying a graph that uses the data.
 
-In This example we used a simple bar chart, but you can create and upload an InfoMotion Type yourself. For details, please refer to [InfoMotion Type Creation Tutorial](/developers/infomotion-type-tutorial).
+While in this tutorial we displayed a simple pre-made bar graph, you can also create, upload and use your own InfoMotion Type. For details, please refer to the [InfoMotion Type Creation Tutorial](/developers/infomotion-type-tutorial).
