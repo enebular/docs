@@ -170,6 +170,7 @@ Build the core enebular-agent module.
 
 ```
 cd agent
+npm install
 npm run build
 ```
 

@@ -172,6 +172,7 @@ enebular 側の操作は一旦置いておいて、次はパソコン上でデ�
 
 ```
 cd agent
+npm install
 npm run build
 ```
 
