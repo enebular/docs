@@ -8,7 +8,9 @@ In order to create an InfoType the infomotion-tool must be installed.
 
 The infomotion-tool allows the developer to run, test and edit InfoMotions locally. Once the InfoType is completed intomotion-tool packages the scripts to be uploaded to enebular.
 
-## Installing infomotion-tool
+If you would like to skip this part and upload sample InfoTypes please go to Uploading InfoType. 
+
+## Installing infomotion-tool 
 
 ```
 sudo npm install @uhuru/enebular-infomotion-tool-v2 -g
@@ -154,7 +156,7 @@ Styling for the InfoMotion.
 
 This file contains the main logic for the InfoMotion.
 D3.js (version 3.0.0) is globally installed by default.
-See [API Reference](/en/InfoMotion/APIReference) for more details.
+See [API Reference](/en/InfoMotion/APIReference.html) for more details.
 
 #### plugin.json
 
