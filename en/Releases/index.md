@@ -1,47 +1,31 @@
 ---
-lastUpdated: 2017-01-31
+lastUpdated: 2018-03-07
 ---
 
 # enebular Release Notes {#enebular}
 
-## Latest Release - 2.0.0 (Jan 30th, 2018)
+## Latest Release - 2.0.1 (March 1st, 2018)
 
-enebular has evolved greatly in the three years since its beta release on the 22nd of November, 2014. In this release we have worked on adding operational management functionality intended for commercial use, increasing the range of supported devices and improving usability.
+## New
 
-### New
+- Implemented a mechanism which displays a link to our "Privacy Policy" and requires the user to agree to it when either first registering, logging in for the first time after this release, or using the inquiry form on enebular. It will now not be possible to use enebular if the "Privacy Policy" is not agreed to.
 
-#### An Enterprise Plan
-While enebular was only offered free of charge up until now, in response to requests for enhanced support and high operational stability, we will now also offer an enterprise plan. With the enterprise plan you can make use of the microcontroller agent, device operations management functionality and professional support. For more details on the enterprise plan, please contact support@enebular.com.
+## Fixed
 
-#### A Redesigned Management Console
-The management console (dashboard) has been renewed and is now easier to understand.
-Its usability has been improved with, for example, the ability to deploy flows directly from the management console.
+- Fixed an issue where the entered "Description" would not be saved during InfoType registration.
+- Fixed an issue where a milkcocoa or apigateway DataSource could be registered even if some required information was omitted.
+- Fixed an issue where it was not possible to delete a created DataSource.
+- Fixed an issue where installed nodes would disappear when deploying.
+- Fixed an issue preventing nodes and lines being deleted with the delete key in the Flow editor.
+- Fixed an issue where it was not possible to share a flow with other users.
+- Fixed an issue where the License Manager would not be displayed for paid plan users.
+- Fixed an issue where the Note Editor would not open when attempting to reopen or refresh it.
 
-#### Expansion of Deployable Devices
-In addition to the cloud environments and gateways supported up until now, flow deployment to Arm Mbed compatible microcontroller boards is now also supported. For the gateway agent, please refer to the [enebular-agent version 2.0.0 release notes](#enebular-agent). For the microcontroller agent, please refer to the [enebular-edge-agent version 0.9.0 release notes](#enebular-edge-agent).
 
-#### New Connection Types
-In addition to the AWS IoT and Heroku support up until now, support for Arm Mbed Cloud has also been added. Support for Arm Mbed Cloud is available only for Enterprise Plan users.
+## Release History
 
-#### Additional Device Management Functionality
-Remote monitoring of status and logging of devices running the enebular agent and enebular edge agent has been added. This device management functionality is available only for Enterprise Plan users.
-
-#### A Redesign of INFOMOTION Visualization Functionality
-INFOMOTION has also been redesigned making it much easier to use. Dashboard functionality has been added, making it possible to display graphs of various sizes at once. As with InfoType, dashboards can be shared with other users. In addition, usability has been improved by, for example, allowing graph data to be downloaded in json format and not requiring a data store connection when sharing an InfoType.
-
-### Operating Environment
-enebular has been confirmed to work with the following web browsers.
-
-|Web browser|Version|OS|
-|--|--|--|
-|Google Chrome|63.0 or later|Windows/Mac|
-|Mozilla Firefox|57.0 or later|Windows/Mac|
-
-We want to continue to have enebular reflect the opinions of its users, add new functionality and improve usability, and aim for an even easier to use service. For any thoughts on enebular, please get in touch with us at support@enebular.com. We look forward to your feedback.
-
-### Release History
-
-- [2.0.0](./enebular/2.0.0.md)
+- [2.0.1](./enebular/2.0.1.md) (March 1st, 2018)
+- [2.0.0](./enebular/2.0.0.md) (Jan 30th, 2018)
 
 ---
 
@@ -106,7 +90,7 @@ The recommended operating environments are as follows.
 
 ## Release History
 
-- [2.0.0](./enebular-agent/2.0.0.md)
+- [2.0.0](./enebular-agent/2.0.0.md) (Jan 30th, 2018)
 
 ---
 
@@ -174,4 +158,4 @@ N/A
 
 ## Release History
 
-- [0.9.0](./enebular-edge-agent/0.9.0.md)
+- [0.9.0](./enebular-edge-agent/0.9.0.md) (Jan 30th, 2018)

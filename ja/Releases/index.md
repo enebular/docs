@@ -1,47 +1,30 @@
 ---
-lastUpdated: 2017-01-30
+lastUpdated: 2018-03-07
 ---
 
 # enebular Release Notes {#enebular}
 
-## Latest Release - 2.0.0 (Jan 30th, 2018) 
-
-enebularは2014年11月22日のβリリースから3年の時を経て、大きく進化しました。今回のリリースでは、商用利用を意図した運用管理機能の追加や、対応デバイスの拡充、ユーザービリティの向上を図っています。
+## Latest Release - 2.0.1 (March 1st, 2018)
 
 ### New
 
-#### Enterprise Planの提供
-これまで無償での提供のみでしたが、サポートの充実や安定した運用を望む声に応え、Enterprise Planの提供を開始いたします。Enterprise Planでは、マイコン向けエージェントの利用やデバイスの運用管理機能、プロッフェショナルサポートをご利用いただけます。Enterprise Planの詳細については、support@enebular.com にお問い合わせください。
+- ユーザー新規登録時、本リリース後最初のログイン時、及びenebular上のお問合せフォームご利用時に、弊社の「プライバシーポリシー」へのリンクを表示し、ポリシーに同意を頂戴する仕組みを取り入れました。なお、「プライバシーポリシー」への同意を頂けない場合は、今後enebularのご利用はできなくなります。
 
-#### 一新された管理コンソール
-管理コンソール（ダッシュボード）を一新し、より見やすくなりました。
-管理コンソールからFlowをデプロイできるなど、ユーザービリティを改善しました。
+### Fixed
 
-#### デプロイ可能なデバイスの拡充
-これまで対応していたクラウド環境やゲートウェイに加え、Arm Mbed対応マイコンボードへのフローデプロイをサポートしました。ゲートウェイ向けエージェントについては、[enebular-agent version 2.0.0リリースノート](#enebular-agent)を参照してください。マイコン向けエージェントについては、[enebular-edge-agent version 0.9.0リリースノート](#enebular-edge-agent)を参照してください。
+- InfoType登録時に、Descriptionを入力しても保存されない不具合を修正しました。
+- DataSourceがmilkcocoaもしくはapigatewayの場合、未入力項目がある場合でも登録されてしまう不具合を修正しました。
+- 一度作成したDataSourceを削除できない不具合を修正しました。
+- Deploy操作の際、インストールされたノードが消えてしまう不具合を修正しました。
+- Flowエディタでノードや線をキーボードの削除キーで削除できない不具合を修正しました。
+- Flowを他のユーザーと共有できない不具合を修正しました。
+- 有償プランのお客様にLicenseマネージャが表示できない不具合を修正しました。
+- Node Editorを開き直そうとしたり、画面をリフレッシュしたりした場合に開くことができない不具合を修正しました。
 
-#### 新しいコネクションタイプの追加
-これまで対応していたAWS IoT、Herokuに加え、Arm Mbed Cloudのサポートが追加されました。Arm Mbed Cloud対応はEnterprise Plan利用者限定の機能となります。
+## Release History
 
-#### デバイス管理機能の追加
-enebular agentやenebular edge agentが動作しているデバイスの状態（ステータス）とログのリモートモニタリング機能が追加されました。デバイス管理機能はEnterprise Plan利用者限定の機能となります。
-
-#### 可視化機能INFOMOTION（インフォモーション）の刷新
-INFOMOTIONも一新され、より簡単にお使いいただけるようになりました。"Dashboard(ダッシュボード)"機能が追加され、複数のサイズ変更可能なグラフを一度に表示できるようになりました。Dashboardは、InfoTypeと同様に他のユーザーと共有することができます。その他、グラフデータをjson形式でダウンロード可能になる、InfoTypeの共有時にデータストアとの接続が不要になるなど、ユーザビリティの向上を行っています。
-
-### Operating Environment
-enebularの動作確認済みWebブラウザは下記の通りです。
-
-|Web browser|Version|OS|
-|--|--|--|
-|Google Chrome|63.0 or later|Windows/Mac|
-|Mozilla Firefox|57.0 or later|Windows/Mac| 
-
-enebularは今後もユーザーの声を反映し、新しい機能の追加やユーザービリティの向上を行い、より使いやすいサービスを目指してまいります。enebularについてのご意見お問い合わせは support@enebular.com にお寄せください。ユーザーの皆様のフィードバックをお待ちしております。
-
-### Release History
-
-- [2.0.0](./enebular/2.0.0.md)
+- [2.0.1](./enebular/2.0.1.md) (March 1st, 2018)
+- [2.0.0](./enebular/2.0.0.md) (Jan 30th, 2018)
 
 ---
 
@@ -105,7 +88,7 @@ enebular agentの詳しい仕様については、弊社サポート(support@ene
 
 ## Release History
 
-- [2.0.0](./enebular-agent/2.0.0.md)
+- [2.0.0](./enebular-agent/2.0.0.md) (Jan 30th, 2018)
 
 ---
 
@@ -173,4 +156,4 @@ N/A
 
 ## Release History
 
-- [0.9.0](./enebular-edge-agent/0.9.0.md)
+- [0.9.0](./enebular-edge-agent/0.9.0.md) (Jan 30th, 2018)
