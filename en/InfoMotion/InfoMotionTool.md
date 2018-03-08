@@ -1,14 +1,14 @@
 ---
-lastUpdated: 2017-12-15
+lastUpdated: 2017-12-15 
 ---
 
 # InfoMotion Tool
 
-In order to create an InfoType the infomotion-tool must be installed.
+In order to create an InfoType the infomotion-tool must be installed. 
+
+For ready to use sample InfoTypes see [Sample InfoTypes](./SampleInfoTypes.md) 
 
 The infomotion-tool allows the developer to run, test and edit InfoMotions locally. Once the InfoType is completed intomotion-tool packages the scripts to be uploaded to enebular.
-
-If you would like to skip this part and upload sample InfoTypes please go to Uploading InfoType. 
 
 ## Installing infomotion-tool 
 
