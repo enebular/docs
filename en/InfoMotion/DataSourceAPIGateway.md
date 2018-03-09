@@ -24,14 +24,19 @@ The following code returns data based on the parameters.
 ```javascript
 exports.handler = (event, context, callback) => {
   const timeunit = (Number(event.end) - Number(event.start))/100
-  const lang = ['EN', 'CN', 'JP']
+  const lang = ['EN', 'CN', 'JP','NZ']
   const result = (function () {
     let arr = []
     for (var i = 100; i >= 1; i--) {
       arr.push({
         created: Number(event.start) + Math.floor(timeunit*i),
-        lang: lang[Math.floor(Math.random()*3)],
-        value: Math.floor(Math.random()*50)
+        value:{
+            lang:lang[Math.floor(Math.random()*3)],
+            ss: Math.floor(Math.random()*50),
+            uu: Math.floor(Math.random()*40),
+            value: Math.floor(Math.random()*10),
+            created:Number(event.start) + Math.floor(timeunit*i)
+        }
       })
     }
     return arr
