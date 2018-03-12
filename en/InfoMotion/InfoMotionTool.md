@@ -19,8 +19,9 @@ sudo npm install @uhuru/enebular-infomotion-tool-v2 -g
 ## Commands
 
 ```
-eit create [graph name]  = Creates an InfoType with the [graph name]
-eit run [graph name]     = Runs [graph name] on localhost:3000
+eit create [graph name]  = Creates an InfoType with the [graph name] 
+eit run [graph name]     = Runs [graph name] on localhost:3000 
+eit run [graph name] -l  = Runs livereload [graph name] on localhost:3000 
 eit package [graph name] = Creates files to upload on enebular
 eit help                 = help
 ```
@@ -189,13 +190,13 @@ The plugin.json is created to supply the InfoMotion with sample data to preview 
 The default graph is `DataLogger` InfoMotion.
 `Data Logger` simply logs data to the screen.
 
-Here are available templates that are be pre-made.
+Here are available templates.
 
 ```
-eit create myfirstgraph -t barchart
-eit create myfirstgraph -t linechart
-eit create myfirstgraph -t piechart
-eit create myfirstgraph -t map
+eit create [graph name] -t barchart
+eit create [graph name] -t linechart
+eit create [graph name] -t piechart
+eit create [graph name] -t map
 ```
 
 ## Packaging
@@ -203,15 +204,7 @@ eit create myfirstgraph -t map
 Once the InfoType is ready to be uploaded to enebular run the command.
 
 ```bash
-eit package
-```
-
-## Running locally in the browser
-
-The `run` command and open http://localhost:3000 after `eit package`.
-
-```
-eit run
+eit package [graph name]
 ```
 
 This will create a target folder containing three files.
@@ -219,6 +212,21 @@ This will create a target folder containing three files.
 - `plugin.js`
 - `plugin.css`
 - `plugin.json`
+
+## Running locally in the browser
+
+The `run [graph name]` command and open http://localhost:3000 after `eit package`.
+
+```
+eit run [graph name]
+```
+
+The `run [graph name] -l` command runs scripts in live reload mode. 
+Editing then saving a file will automatically restart the server. 
+
+```
+eit run [graph name] -l
+```
 
 ![](/_asset/images/InfoMotion/enebular-developers-build.png)
 
