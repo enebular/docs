@@ -20,7 +20,9 @@
   },
   "homepage": "https://github.com/enebular/docs#readme",
   "dependencies": {
-    "gitbook-cli": "^2.3.2"
+    "gitbook-cli": "^2.3.2",
+    "gitbook-plugin-expandable-chapters-interactive": "^0.1.0",
+    "gitbook-plugin-language-picker": "^0.1.0"
   },
   "devDependencies": {
     "assert": "^1.4.1",

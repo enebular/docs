@@ -34,6 +34,7 @@ lastUpdated: 2018-03-09
 * [InfoType](InfoMotion/InfoTypeIntroduction.md)
   * [Creating an InfoType](InfoMotion/InfoMotionTool.md)
   * [Uploading an InfoType](InfoMotion/UploadInfoType.md)
+  * [Sample InfoTypes](InfoMotion/SampleInfoTypes.md)
   * [API Reference](InfoMotion/APIReference.md)
 * [DataSource](InfoMotion/CreateDataSource.md)
   * [API Gateway](InfoMotion/DataSourceAPIGateway.md)
