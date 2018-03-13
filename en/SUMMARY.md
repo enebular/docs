@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-03-07
+lastUpdated: 2018-03-09
 ---
 
 # Summary
@@ -12,6 +12,7 @@ lastUpdated: 2018-03-07
     * [2.0.0](Releases/enebular-agent/2.0.0.md)
   * [enebular edge agent](Releases/index.md#enebular-edge-agent)
     * [0.9.0](Releases/enebular-edge-agent/0.9.0.md)
+    * [0.9.1](Releases/enebular-edge-agent/0.9.1.md)
 * [Getting Started](GetStarted/index.md)
 
 ## Projects
@@ -33,6 +34,7 @@ lastUpdated: 2018-03-07
 * [InfoType](InfoMotion/InfoTypeIntroduction.md)
   * [Creating an InfoType](InfoMotion/InfoMotionTool.md)
   * [Uploading an InfoType](InfoMotion/UploadInfoType.md)
+  * [Sample InfoTypes](InfoMotion/SampleInfoTypes.md)
   * [API Reference](InfoMotion/APIReference.md)
 * [DataSource](InfoMotion/CreateDataSource.md)
   * [API Gateway](InfoMotion/DataSourceAPIGateway.md)

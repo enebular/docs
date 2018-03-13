@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-03-07
+lastUpdated: 2018-03-12
 ---
 
 # enebular Release Notes {#enebular}
@@ -96,66 +96,48 @@ The recommended operating environments are as follows.
 
 # enebular edge agent Release Notes {#enebular-edge-agent}
 
-## Latest Release - 0.9.0 (Jan 30th, 2018)
+## Latest Release - 0.9.1 (Feb 28th, 2018)
 
-enebular-edge-agent is IoT agent software for enebular and designed for microcontrollers utilizing [ARM Ltd.](https://www.arm.com/)'s [Mbed OS](https://os.mbed.com/). enebular-edge-agent version 0.9.0 is being released along side the release of enebular version 2.0.0.
+In 0.9.1 release, improved stability of running flow and security.
 
-For detailed specifications on enebular-edge-agent, please contact support (support@enebular.com).
+### Fixed
+N/A
 
-### New
+### Changed
+* Changed to conceal Wi-Fi password on MicroSD.
+    * Rewriting the password on MicroSD to default value after it's saved on flash memory.
+* Flows with setting values less than 1 second are set to 1 second.
+* For Digital Out nodes, added available data types of msg properties.
+    * string(`true` / `false`)
+    * bool(`true` / `false`) **new**
+    * number(`1` /  `0`) **new**
+* When flow is deployed device is rebooted to ensure execution of flow.
 
-#### Authentication
+### Known Issues
 
-* [enebular](https://enebular.com/) uses [ARM Ltd.](https://www.arm.com/)'s [Mbed OS](https://os.mbed.com/) Mbed Cloud service to authorize IoT devices running enebular-edge-agent. enebular-edge-agent operates as an Mbed Cloud client
+* When using a BME280 node, it may not operate correctly if the flow size is large.
+* An Inject node can set only a Timestamp for the Payload and Repetition of the Interval.
+* Excessive deployment within a span of one minute may cause failure of flow initialization.
+    * The device will stop in case of a flow initialization failure. To resolve this, reboot the device by pressing the reset button.
 
-#### Flows
+### Operating Environment
 
-* It is possible to do flow programming using the [Node-RED](https://nodered.org) based Flow Editor on [enebular](https://enebular.com/)
-* Flows created on enebular can be deployed and executed on IoT devices running enebular-edge-agent (1)
-
-1) There are limitations to the flows that can be executed with enebular-edge-agent. For detailed specifications, please contact support (support@enebular.com).
-
-#### Device Management
-
-* As an enebular device management feature, it is now possible to monitor the device status of IoT devices running enenbular-edge-agent
-* enenbular-edge-agent regularly reports device status to enebular
-* These features are offered as Enterprise Plan paid features
-
-#### Logging
-
-* enebular-edge-agent records error and operational messages to an MicroSD for logging
-* This feature is offered as an Enterprise Plan paid feature
-
-#### Operating Environment
-
-##### Operating System
+#### Operating System
 
 * [Mbed OS 5.6.6](https://github.com/ARMmbed/mbed-os/tree/mbed-os-5.6.6) (ARM Ltd.)
 
-##### Hardware
+#### Hardware
 
 The following hardware is supported in enebular-edge-agent 0.9.0.
 
 * [FRDM-K64F](https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/k-seriesperformancem4/k2x-usb/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F) (NXP Semiconductors N.V.) + Stag Beetle Board (Uhuru Corporation)
 
-##### Communication
+#### Communication
 
 * IEEE 802.11 b/g/n (only 2.4GHz is supported for IEEE 802.11n)
 * WPA/WPA2
 
-### Fixed
-
-N/A
-
-### Changed
-
-N/A
-
-### Known Issues
-
-* When using a BME280 node, it may not operate correctly if the flow size is large
-* For Inject nodes, it is only possible to set Timestamp for the Payload and Repeat for the Interval
-
 ## Release History
 
 - [0.9.0](./enebular-edge-agent/0.9.0.md) (Jan 30th, 2018)
+- [0.9.1](./enebular-edge-agent/0.9.1.md) (Feb 28th, 2018)
