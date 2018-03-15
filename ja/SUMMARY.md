@@ -11,8 +11,8 @@ lastUpdated: 2018-03-09
   * [enebular agent](Releases/index.md#enebular-agent)
     * [2.0.0](Releases/enebular-agent/2.0.0.md)
   * [enebular edge agent](Releases/index.md#enebular-edge-agent)
-    * [0.9.0](Releases/enebular-edge-agent/0.9.0.md)
     * [0.9.1](Releases/enebular-edge-agent/0.9.1.md)
+    * [0.9.0](Releases/enebular-edge-agent/0.9.0.md)
 * [Getting Started](GetStarted/index.md)
 
 ## Projects
