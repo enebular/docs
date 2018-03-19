@@ -51,11 +51,14 @@ Editable properties:
 - Label to categorize data 
 - Value to be represented from Labeled data 
 
-![](/_asset/images/InfoMotion/enebular-developers-template-pie.png)
+## Pie Chart 
+
 <ul> 
   <li> 
-  	<a href="/_asset/sample/piechart.zip" target="_blank">Sample Pie Chart Download (zip)</a></li> 
+    <a href="/_asset/sample/piechart.zip" target="_blank">Sample Pie Chart Download (zip)</a></li> 
 </ul> 
+
+![](/_asset/images/InfoMotion/enebular-developers-template-pie.png)
 
 
 Discription: 
