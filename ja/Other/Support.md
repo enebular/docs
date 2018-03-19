@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-01-30
+lastUpdated: 2018-03-09
 ---
 
 # 動作環境
@@ -88,7 +88,7 @@ enebular-edge-agent は、[ARM Ltd.](https://www.arm.com/) の [Mbed OS](https:/
 
 #### Hardware
 
-enebular-edge-agent 0.9.0 は、下記のハードウェアを対象としています。
+enebular-edge-agent 0.9.1 は、下記のハードウェアを対象としています。
 
 * [FRDM-K64F](https://www.nxp.com/jp/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F) (NXP Semiconductors N.V.) + Stag Beetle Board (Uhuru Corporation)
 
@@ -98,6 +98,7 @@ enebular-edge-agent 0.9.0 は、下記のハードウェアを対象としてい
 * WPA/WPA2
 
 ### Known Issues
-
-* BME280 ノードの使用時、フローのサイズが大きいと正常に動作しない場合がある
-* Inject ノードにおいて、PayloadにはTimestampのみ、RepeatにIntervalのみしか設定できない
+* BME280 ノードの使用時、フローのサイズが大きいと正常に動作しない場合があります
+* Inject ノードにおいて、PayloadにはTimestampのみ、RepeatにIntervalのみしか設定できません
+* 短い周期で繰り返しフローをデプロイした場合に、フローの初期化に失敗することがあります
+    * フローの初期化に失敗するとデバイスがフリーズします。その際はリセットボタンを押下してデバイスを再起動してください
