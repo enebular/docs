@@ -12,8 +12,18 @@ The infomotion-tool allows the developer to run, test and edit InfoMotions local
 
 ## Installing infomotion-tool 
 
+To run infomotion tool node.js and npm must be installed. 
+See https://nodejs.org/en/ to install for Windows or MacOs. 
+Infomotion tool runs on nodejs versions greater than or equal to 6 with npm 5.2+ or higher. 
+
+###Mac
 ```
 sudo npm install @uhuru/enebular-infomotion-tool-v2 -g
+```
+
+###Windows
+```
+npm install @uhuru/enebular-infomotion-tool-v2 -g
 ```
 
 ## Commands
@@ -21,7 +31,7 @@ sudo npm install @uhuru/enebular-infomotion-tool-v2 -g
 ```
 eit create [graph name]  = Creates an InfoType with the [graph name] 
 eit run [graph name]     = Runs [graph name] on localhost:3000 
-eit run [graph name] -l  = Runs livereload [graph name] on localhost:3000 
+eit run [graph name] -l  = Runs livereload mode on localhost:3000 
 eit package [graph name] = Creates files to upload on enebular
 eit help                 = help
 ```
