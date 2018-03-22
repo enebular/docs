@@ -35,6 +35,7 @@ lastUpdated: 2018-01-30
   * [Sample InfoTypes](InfoMotion/SampleInfoTypes.md)
   * [API Reference](InfoMotion/APIReference.md)
 * [DataSource](InfoMotion/CreateDataSource.md)
+  * [Data Source Schema](InfoMotion/DataSourceSchema.md) 
   * [API Gateway](InfoMotion/DataSourceAPIGateway.md)
 * [Dashboards](InfoMotion/CreateInfoMotion.md)
 * [Sharing an InfoMotion](InfoMotion/ShareInfoMotion.md)

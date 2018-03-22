@@ -8,30 +8,32 @@ In order to create an InfoType the infomotion-tool must be installed.
 
 For ready to use sample InfoTypes see [Sample InfoTypes](./SampleInfoTypes.md) 
 
-The infomotion-tool allows the developer to run, test and edit InfoMotions locally. Once the InfoType is completed intomotion-tool packages the scripts to be uploaded to enebular.
+The infomotion-tool allows the developer to run, test and edit InfoMotions locally. Once the InfoType is completed intomotion-tool packages the scripts to be uploaded to enebular. 
 
 ## Installing infomotion-tool 
 
-To run infomotion tool node.js and npm must be installed. 
-See https://nodejs.org/en/ to install for Windows or MacOs. 
-Infomotion tool runs on nodejs versions greater than or equal to 6 with npm 5.2+ or higher. 
-
-###Mac
 ```
-sudo npm install @uhuru/enebular-infomotion-tool-v2 -g
+npm install @uhuru/enebular-infomotion-tool-v2 -g 
 ```
 
-###Windows
-```
-npm install @uhuru/enebular-infomotion-tool-v2 -g
-```
+If a permission error occur the following solutions may solve it. 
 
-## Commands
+1) Give permission to current user to global node_modules in /usr/local/lib/ node_modules. Once persmission given retry global install. 
+MacOSX: https://support.apple.com/kb/PH25287?locale=en_US 
+Windows: https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754344(v=ws.11) 
+
+2) Install nvm to handle node and npm installations. (recommended) 
+MacOSX: https://github.com/creationix/nvm  
+Windows: https://github.com/coreybutler/nvm-windows 
+
+3) Change npm's Default Directory https://docs.npmjs.com/getting-started/fixing-npm-permissions see `Option Two`. 
+
+## Commands 
 
 ```
 eit create [graph name]  = Creates an InfoType with the [graph name] 
 eit run [graph name]     = Runs [graph name] on localhost:3000 
-eit run [graph name] -l  = Runs livereload mode on localhost:3000 
+eit run [graph name] -l  = Runs livereload [graph name] on localhost:3000 
 eit package [graph name] = Creates files to upload on enebular
 eit help                 = help
 ```
