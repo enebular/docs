@@ -13,8 +13,11 @@ The infomotion-tool allows the developer to run, test and edit InfoMotions local
 ## Installing infomotion-tool 
 
 ```
-npm install @uhuru/enebular-infomotion-tool-v2 -g 
+npm install @uhuru/enebular-infomotion-tool-v2 -g
 ```
+
+* Requirements for running InfoMotion-tool
+`nodejs >= 6 and npm 5.2+`
 
 If a permission error occur the following solutions may solve it. 
 
