@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-03-09
+lastUpdated: 2018-03-28
 ---
 
 # Summary
@@ -46,6 +46,7 @@ lastUpdated: 2018-03-09
 * [Example: AWS IoT](Deploy/DeployFlow/AWSIoT/index.md)
 * [Example: Heroku](Deploy/DeployFlow/Heroku/index.md)
 * [Example: mbed Cloud](Deploy/DeployFlow/mbed/index.md)
+* [Example: AWS Lambda](Deploy/DeployFlow/Lambda/index.md)
 
 ## Devices
 
