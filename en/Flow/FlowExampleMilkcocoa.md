@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-01-25
+lastUpdated: 2018-03-28
 ---
 
 # A Milkcocoa Flow
@@ -12,9 +12,8 @@ First, confirm the details of the DataSource that will be used. Before creating 
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_01.png)
 
-Confirm the data store to be used for the DataSource. Here, we'll use a Milkcocoa data store called mbed.
+Here, we'll use a Milkcocoa data store called `mbed` for the DataSource.
 
-![image](/_asset/images/Flow/CreateFlow/flow-create-flow_02.png)
 
 ## Starting the Data Flow
 

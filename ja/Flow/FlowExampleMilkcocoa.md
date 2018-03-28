@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-01-15
+lastUpdated: 2018-03-28
 ---
 
 # Milkcocoa のフロー
@@ -12,10 +12,7 @@ Milkcocoa にデータを保存するフローを作成します。Milkcocoa Dat
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_01.png)
 
-DataSource 対象のデータストアを確認します。今回の場合、mbed という Milkcocoa データストアを使いましょう。
-
-![image](/_asset/images/Flow/CreateFlow/flow-create-flow_02.png)
-
+DataSource 対象のデータストアは今回の場合、`mbed` という Milkcocoa データストアを使います。
 
 ## Data Flow を起動
 
