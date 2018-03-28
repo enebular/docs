@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-01-30
+lastUpdated: 2018-03-28
 ---
 
 # About Deploying
@@ -37,4 +37,4 @@ The actual methods of deploying are as follows.
 ### Cloud
 
 * [Heroku](./DeployFlow/Heroku/index.md)
-* AWS Lambda
+* [AWS Lambda](./DeployFlow/Lambda/index.md)
