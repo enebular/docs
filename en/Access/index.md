@@ -19,17 +19,17 @@ First, let's go over the user types. There are the following three types of user
 
 The **Project Owner** is the project manager. They can edit project members and manage access to all of the assets in a project.
 
-A **Project Collaborator** is a project member. They can access all of the assets in a project.
+A **Project Collaborator** is a project member. They can access all of the assets in a projectz.
 
 An **Outside Collaborator** is a member linked to one asset. They can access that one particular asset.
 
 The creator of a project automatically becomes the project owner.
 
-Project collaborators can be invited from the "Access" page which can be navigated to from "Access" in the project sidebar.
+Project collaborators can be invited from the "Access" page which can be navigated to from "Access" in the project sidebar (You can only invite those who signed up to enebular).
 
 ![](https://i.gyazo.com/de4082a2bf03d51d473dbb1e9bf5f78b.png)
 
-Outside collaborators can be invited from the "Access" page which can be navigated to from the "Access" tab in the flow details screen.
+Outside collaborators can be invited from the "Access" page which can be navigated to from the "Access" tab in the flow details screen (You can only invite those who signed up to enebular).
 
 ![](https://i.gyazo.com/cc774e8f901c3629f2c79098172dba61.png)
 

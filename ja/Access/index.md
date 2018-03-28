@@ -24,11 +24,11 @@ enebular の Project や Asset のアクセス権についてのドキュメン�
 
 Project Owner は Project の作成者が自動的に Project Owner になります。
 
-Project Collaborator は Project のサイドバーの Access から行くことができる Access ページで Invite できます。
+Project Collaborator は Project のサイドバーの Access から行くことができる Access ページで Invite できます（Invite できるのは、enebular に登録したメールアカウントのみです）。
 
 ![](https://i.gyazo.com/de4082a2bf03d51d473dbb1e9bf5f78b.png)
 
-Outside Collaborator は Flow の詳細画面の Access タブから行くことができる Access ページで Invite できます。
+Outside Collaborator は Flow の詳細画面の Access タブから行くことができる Access ページで Invite できます（Invite できるのは、enebular に登録したメールアカウントのみです）。
 
 ![](https://i.gyazo.com/cc774e8f901c3629f2c79098172dba61.png)
 
