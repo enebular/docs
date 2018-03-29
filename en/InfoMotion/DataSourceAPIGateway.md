@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-01-22
+lastUpdated: 2018-03-29
 ---
 
 # Creating an API Gateway DataSource

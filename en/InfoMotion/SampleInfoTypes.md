@@ -1,3 +1,7 @@
+---
+lastUpdated: 2018-03-29
+---
+
 # Sample InfoTypes 
 
 The following InfoTypes are free sample charts/graphs for you to test your data on. 

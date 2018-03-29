@@ -1,24 +1,43 @@
 ---
-lastUpdated: 2017-12-14
+lastUpdated: 2018-03-29
 ---
 
 # InfoMotion Tool
 
 InfoType を作成するには `infomotion-tool` が必要です。
 
+[Sample InfoTypes](./SampleInfoTypes.md) でサンプルの InfoType を使用する準備することができます。
+
 `infomotion-tool` を使ってローカル環境で編集とテストができます。完成した InfoType はパッケージにして enebular にアップロードすることができます。
 
 ## infomotion-tool のインストール
 
 ```
-sudo npm install @uhuru/enebular-infomotion-tool-v2 -g
+npm install @uhuru/enebular-infomotion-tool-v2 -g
 ```
+
+InfoMotion-tool には `nodejs >= 6 and npm 5.2+` が必要です。
+
+permission error が起こった際には、以下のいずれかで解決ができることがあります。
+
+1) 現在のユーザーに `/usr/local/lib/` 内の `node_modules` に権限を与えます。権限を与えたのち、再度グローバルインストールください。
+
+- MacOSX: https://support.apple.com/kb/PH25287?locale=en_US 
+- Windows: https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754344(v=ws.11) 
+
+2) NVM を利用する**（推奨）**
+
+- MacOSX: https://github.com/creationix/nvm  
+- Windows: https://github.com/coreybutler/nvm-windows 
+
+3) npm の[デフォルトのディレクトリ](https://docs.npmjs.com/getting-started/fixing-npm-permissions)を変更する。
 
 ## 利用可能なコマンド
 
 ```
-eit create [graph name]  = Creates an InfoType with the [graph name]
-eit run [graph name]     = Runs [graph name] on localhost:3000
+eit create [graph name]  = Creates an InfoType with the [graph name] 
+eit run [graph name]     = Runs [graph name] on localhost:3000 
+eit run [graph name] -l  = Runs livereload [graph name] on localhost:3000 
 eit package [graph name] = Creates files to upload on enebular
 eit help                 = help
 ```
@@ -191,10 +210,10 @@ eit create myfirstgraph
 以下に、利用可能なテンプレートを示します。
 
 ```
-eit create myfirstgraph -t barchart
-eit create myfirstgraph -t linechart
-eit create myfirstgraph -t piechart
-eit create myfirstgraph -t map
+eit create [graph name] -t barchart
+eit create [graph name] -t linechart
+eit create [graph name] -t piechart
+eit create [graph name] -t map
 ```
 
 ## パッケージング
@@ -202,7 +221,7 @@ eit create myfirstgraph -t map
 以下でパッケージできます。
 
 ```bash
-eit package
+eit package [graph name]
 ```
 
 ## ブラウザでのテスト
@@ -210,7 +229,7 @@ eit package
 以下のコマンドで http://localhost:3000 にアクセスすることで、テストできます。テスト前にはパッケージしてください。
 
 ```
-eit run
+eit run [graph name]
 ```
 
 以下の3つが入った `target` というフォルダが作成されます。
@@ -220,5 +239,11 @@ eit run
 - `plugin.json`
 
 ![](/_asset/images/InfoMotion/enebular-developers-build.png)
+
+`-l` オプションをつけることでライブリロードモードが利用できます。サーバーを立ち上げた状態でファイルを変更すると、すぐに反映されます。
+
+```
+eit run [graph name] -l
+```
 
 次に、[Upload InfoType](./UploadInfoType.md) で enebular へのグラフのアップロード方法を学びましょう。

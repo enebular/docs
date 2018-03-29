@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2017-12-15
+lastUpdated: 2018-03-29
 ---
 
 # Connecting DataSource
@@ -47,7 +47,7 @@ To set a DataSource click Save.
 
 ## Firebase 
 
-See https://firebase.google.com/ to get started with firebase or try a simple example at [Milkcocoa-v3  DataSource](./DatasourceFirebase.md)
+See https://firebase.google.com/ to get started with firebase or try a simple example at [Firebase DataSource](./DatasourceFirebase.md)
 
 ![](/_asset/images/InfoMotion/datasources/firebase.png)
 
