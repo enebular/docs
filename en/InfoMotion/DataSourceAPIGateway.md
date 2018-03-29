@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-01-22
+lastUpdated: 2018-03-29
 ---
 
 # Creating an API Gateway DataSource
@@ -29,7 +29,7 @@ exports.handler = (event, context, callback) => {
     let arr = []
     for (var i = 100; i >= 1; i--) {
       arr.push({
-        created: Number(event.start) + Math.floor(timeunit*i),
+        timestamp: Number(event.start) + Math.floor(timeunit*i),
         value:{
             lang:lang[Math.floor(Math.random()*3)],
             ss: Math.floor(Math.random()*50),

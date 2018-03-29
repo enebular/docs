@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2017-12-15 
+lastUpdated: 2018-03-29
 ---
 
 # InfoMotion Tool
@@ -8,15 +8,30 @@ In order to create an InfoType the infomotion-tool must be installed.
 
 For ready to use sample InfoTypes see [Sample InfoTypes](./SampleInfoTypes.md) 
 
-The infomotion-tool allows the developer to run, test and edit InfoMotions locally. Once the InfoType is completed intomotion-tool packages the scripts to be uploaded to enebular.
+The infomotion-tool allows the developer to run, test and edit InfoMotions locally. Once the InfoType is completed intomotion-tool packages the scripts to be uploaded to enebular. 
 
 ## Installing infomotion-tool 
 
 ```
-sudo npm install @uhuru/enebular-infomotion-tool-v2 -g
+npm install @uhuru/enebular-infomotion-tool-v2 -g
 ```
 
-## Commands
+* Requirements for running InfoMotion-tool
+`nodejs >= 6 and npm 5.2+`
+
+If a permission error occur the following solutions may solve it. 
+
+1) Give permission to current user to global node_modules in /usr/local/lib/ node_modules. Once persmission given retry global install. 
+MacOSX: https://support.apple.com/kb/PH25287?locale=en_US 
+Windows: https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754344(v=ws.11) 
+
+2) Install nvm to handle node and npm installations. (recommended) 
+MacOSX: https://github.com/creationix/nvm  
+Windows: https://github.com/coreybutler/nvm-windows 
+
+3) Change npm's Default Directory https://docs.npmjs.com/getting-started/fixing-npm-permissions see `Option Two`. 
+
+## Commands 
 
 ```
 eit create [graph name]  = Creates an InfoType with the [graph name] 
