@@ -4,26 +4,31 @@ lastUpdated: 2018-03-12
 
 # enebular Release Notes {#enebular}
 
-## Latest Release - 2.0.1 (March 1st, 2018)
+## Latest Release - 2.1.0 (March 30th, 2018)
 
 ## New
 
-- Implemented a mechanism which displays a link to our "Privacy Policy" and requires the user to agree to it when either first registering, logging in for the first time after this release, or using the inquiry form on enebular. It will now not be possible to use enebular if the "Privacy Policy" is not agreed to.
+- Added the feature to allow deploying flows to AWS Lambda.
+
+## Changed
+
+- "Terms of Service" is now displayed at sign-up.
+- The operating environments for "InfoMotion Tool" are now defined in the document.
+- "Name" can be changed at "Account Settings" page.
 
 ## Fixed
 
-- Fixed an issue where the entered "Description" would not be saved during InfoType registration.
-- Fixed an issue where a milkcocoa or apigateway DataSource could be registered even if some required information was omitted.
-- Fixed an issue where it was not possible to delete a created DataSource.
-- Fixed an issue where installed nodes would disappear when deploying.
-- Fixed an issue preventing nodes and lines being deleted with the delete key in the Flow editor.
-- Fixed an issue where it was not possible to share a flow with other users.
-- Fixed an issue where the License Manager would not be displayed for paid plan users.
-- Fixed an issue where the Note Editor would not open when attempting to reopen or refresh it.
+- Fixed the issue which had been preventing DataSource from being deleted.
+- In the DataSource creation dialog box, some descriptions were added to indicate optional entry items as optional.
+- Fixed the issue which had been causing additionally installed nodes to disappear from the flows deployed to Heroku environment.
+- Fixed the issue which had been causing LicenseManager to fail to appear.
+- Fixed the issue which had been causing to fail to discover flows.
+- Reviewed and edited the document throughly to improve its accuracy.
 
 
 ## Release History
 
+- [2.1.0](./enebular/2.1.0.md) (March 30th, 2018)
 - [2.0.1](./enebular/2.0.1.md) (March 1st, 2018)
 - [2.0.0](./enebular/2.0.0.md) (Jan 30th, 2018)
 
@@ -139,5 +144,5 @@ The following hardware is supported in enebular-edge-agent 0.9.0.
 
 ## Release History
 
-- [0.9.0](./enebular-edge-agent/0.9.0.md) (Jan 30th, 2018)
 - [0.9.1](./enebular-edge-agent/0.9.1.md) (Feb 28th, 2018)
+- [0.9.0](./enebular-edge-agent/0.9.0.md) (Jan 30th, 2018)

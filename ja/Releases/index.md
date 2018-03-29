@@ -1,28 +1,33 @@
 ---
-lastUpdated: 2018-03-12
+lastUpdated: 2018-03-30
 ---
 
 # enebular Release Notes {#enebular}
 
-## Latest Release - 2.0.1 (March 1st, 2018)
+## Latest Release - 2.1.0 (March 30th, 2018)
 
-### New
+## New
 
-- ユーザー新規登録時、本リリース後最初のログイン時、及びenebular上のお問合せフォームご利用時に、弊社の「プライバシーポリシー」へのリンクを表示し、ポリシーに同意を頂戴する仕組みを取り入れました。なお、「プライバシーポリシー」への同意を頂けない場合は、今後enebularのご利用はできなくなります。
+- AWS Lambdaへのフローデプロイ機能を追加しました
 
-### Fixed
+## Changed
 
-- InfoType登録時に、Descriptionを入力しても保存されない不具合を修正しました。
-- DataSourceがmilkcocoaもしくはapigatewayの場合、未入力項目がある場合でも登録されてしまう不具合を修正しました。
-- 一度作成したDataSourceを削除できない不具合を修正しました。
-- Deploy操作の際、インストールされたノードが消えてしまう不具合を修正しました。
-- Flowエディタでノードや線をキーボードの削除キーで削除できない不具合を修正しました。
-- Flowを他のユーザーと共有できない不具合を修正しました。
-- 有償プランのお客様にLicenseマネージャが表示できない不具合を修正しました。
-- Node Editorを開き直そうとしたり、画面をリフレッシュしたりした場合に開くことができない不具合を修正しました。
+- サインアップ時にTerms of Service (利用規約)を表示するようにしました
+- InfoMotion Toolの動作環境をドキュメントに記載しました
+- Account SettingsにおいてNameを変更できるようにしました
+
+## Fixed
+
+- DataSourceを削除できない不具合を修正しました
+- DataSourceの作成時の入力項目のうち、オプショナルな項目を明記しました
+- フローデプロイ先のHerokuで、追加インストールしたノードが消えてしまう不具合を修正しました
+- Webブラウザを更新しないとメニューにLicenseManagerが表示されない不具合を修正しました
+- フローの検索(Discover)が正しく動作しない不具合を修正しました
+- ドキュメントの不正確な記述を修正しました
 
 ## Release History
 
+- [2.1.0](./enebular/2.1.0.md) (March 30th, 2018)
 - [2.0.1](./enebular/2.0.1.md) (March 1st, 2018)
 - [2.0.0](./enebular/2.0.0.md) (Jan 30th, 2018)
 
@@ -137,5 +142,5 @@ enebular-edge-agent 0.9.0は、下記のハードウェアを対象としてい�
 
 ## Release History
 
-- [0.9.0](./enebular-edge-agent/0.9.0.md) (Jan 30th, 2018)
 - [0.9.1](./enebular-edge-agent/0.9.1.md) (Feb 28th, 2018)
+- [0.9.0](./enebular-edge-agent/0.9.0.md) (Jan 30th, 2018)
