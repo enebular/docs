@@ -1,3 +1,7 @@
+---
+lastUpdated: 2018-03-29
+---
+
 # Sample InfoTypes 
 
 The following InfoTypes are free sample charts/graphs for you to test your data on. 
@@ -51,11 +55,14 @@ Editable properties:
 - Label to categorize data 
 - Value to be represented from Labeled data 
 
-![](/_asset/images/InfoMotion/enebular-developers-template-pie.png)
+## Pie Chart 
+
 <ul> 
   <li> 
-  	<a href="/_asset/sample/piechart.zip" target="_blank">Sample Pie Chart Download (zip)</a></li> 
+    <a href="/_asset/sample/piechart.zip" target="_blank">Sample Pie Chart Download (zip)</a></li> 
 </ul> 
+
+![](/_asset/images/InfoMotion/enebular-developers-template-pie.png)
 
 
 Discription: 

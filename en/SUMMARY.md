@@ -1,11 +1,12 @@
 ---
-lastUpdated: 2018-03-09
+lastUpdated: 2018-03-28
 ---
 
 # Summary
 
 * [Release Notes](Releases/index.md)
   * [enebular](Releases/index.md#enebular)
+    * [2.1.0](Releases/enebular/2.1.0.md)
     * [2.0.1](Releases/enebular/2.0.1.md)
     * [2.0.0](Releases/enebular/2.0.0.md)
   * [enebular agent](Releases/index.md#enebular-agent)
@@ -37,6 +38,10 @@ lastUpdated: 2018-03-09
   * [Sample InfoTypes](InfoMotion/SampleInfoTypes.md)
   * [API Reference](InfoMotion/APIReference.md)
 * [DataSource](InfoMotion/CreateDataSource.md)
+  * [Data Source Schema](InfoMotion/DataSourceSchema.md)
+  * [Milkcocoa-v3](InfoMotion/DatasourceMilkcocoa-v3.md)
+  * [Firebase](InfoMotion/DatasourceFirebase.md)
+  * [Pubnub](InfoMotion/DatasourcePubnub.md)
   * [API Gateway](InfoMotion/DataSourceAPIGateway.md)
 * [Dashboards](InfoMotion/CreateInfoMotion.md)
 * [Sharing an InfoMotion](InfoMotion/ShareInfoMotion.md)
@@ -47,6 +52,7 @@ lastUpdated: 2018-03-09
 * [Example: AWS IoT](Deploy/DeployFlow/AWSIoT/index.md)
 * [Example: Heroku](Deploy/DeployFlow/Heroku/index.md)
 * [Example: mbed Cloud](Deploy/DeployFlow/mbed/index.md)
+* [Example: AWS Lambda](Deploy/DeployFlow/Lambda/index.md)
 
 ## Devices
 
