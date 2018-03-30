@@ -14,14 +14,14 @@ lastUpdated: 2018-03-12
 
 - "Terms of Service" is now displayed at sign-up.
 - The operating environments for "InfoMotion Tool" are now defined in the document.
-- "Name" can be changed at "Account Settings" page.
+- "Name" of a profile can be changed at "Account Settings" page.
 
 ## Fixed
 
 - Fixed the issue which had been preventing DataSource from being deleted.
 - In the DataSource creation dialog box, some descriptions were added to indicate optional entry items as optional.
-- Fixed the issue which had been causing additionally installed nodes to disappear from the flows deployed to Heroku environment.
-- Fixed the issue which had been causing LicenseManager to fail to appear.
+- Fixed the issue which had been causing additionally installed nodes to disappear from flows in case that they were deployed to Heroku environment after being installed from the flow editor.
+- Fixed the issue which had been causing LicenseManager to fail to appear on projects which paid "Enterprise Plan" feature is enabled.
 - Fixed the issue which had been causing to fail to discover flows.
 - Reviewed and edited the document throughly to improve its accuracy.
 
