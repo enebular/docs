@@ -1,32 +1,27 @@
 ---
-lastUpdated: 2018-03-30
+lastUpdated: 2018-04-03
 ---
 
 # enebular Release Notes {#enebular}
 
-## Latest Release - 2.1.0 (March 30th, 2018)
+## Latest Release - 2.1.1 (April 3rd, 2018)
 
 ## New
 
-- AWS Lambdaへのフローデプロイ機能を追加しました
+- N/A
 
 ## Changed
 
-- サインアップ時にTerms of Service (利用規約)を表示するようにしました
-- InfoMotion Toolの動作環境をドキュメントに記載しました
-- Account SettingsにおいてProfileのNameを変更できるようにしました
+- N/A
 
 ## Fixed
 
-- Data Sourceを削除できない不具合を修正しました
-- Data Sourceの作成時の入力項目のうち、オプショナルな項目を明記しました
-- フローエディタで追加ノードをインストールしたうえで、Herokuにフローをデプロイした際、デプロイ先のHerokuで追加ノードがインストールされない不具合を修正しました
-- Enterprise Planユーザーの有償機能を有効化したプロジェクトにおいて、Webブラウザを更新しないとメニューにLicense Managerが表示されない不具合を修正しました
-- フローの検索(Discover)が正しく動作しない不具合を修正しました
-- ドキュメントの不正確な記述を修正しました
+- InfoTypeを作成してもグラフが表示されない不具合を修正しました
+- InfoMotionを作成してもグラフが表示されない不具合を修正しました
 
 ## Release History
 
+- [2.1.1](./enebular/2.1.1.md) (April 3rd, 2018)
 - [2.1.0](./enebular/2.1.0.md) (March 30th, 2018)
 - [2.0.1](./enebular/2.0.1.md) (March 1st, 2018)
 - [2.0.0](./enebular/2.0.0.md) (Jan 30th, 2018)
