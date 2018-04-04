@@ -1,33 +1,27 @@
 ---
-lastUpdated: 2018-03-12
+lastUpdated: 2018-04-03
 ---
 
 # enebular Release Notes {#enebular}
 
-## Latest Release - 2.1.0 (March 30th, 2018)
+## Latest Release - 2.1.1 (April 3rd, 2018)
 
 ## New
 
-- Added the feature to allow deploying flows to AWS Lambda.
+- N/A
 
 ## Changed
 
-- "Terms of Service" is now displayed at sign-up.
-- The operating environments for "InfoMotion Tool" are now defined in the document.
-- "Name" of a profile can be changed at "Account Settings" page.
+- N/A
 
 ## Fixed
 
-- Fixed the issue which had been preventing DataSource from being deleted.
-- In the DataSource creation dialog box, some descriptions were added to indicate optional entry items as optional.
-- Fixed the issue which had been causing additionally installed nodes to disappear from flows in case that they were deployed to Heroku environment after being installed from the flow editor.
-- Fixed the issue which had been causing LicenseManager to fail to appear on projects which paid "Enterprise Plan" feature is enabled.
-- Fixed the issue which had been causing to fail to discover flows.
-- Reviewed and edited the document throughly to improve its accuracy.
-
+- Fixed a bug that graphs are not displayed even when InfoType is created
+- Fixed a bug that the graph is not displayed even when InfoMotion is created
 
 ## Release History
 
+- [2.1.1](./enebular/2.1.1.md) (April 3rd, 2018)
 - [2.1.0](./enebular/2.1.0.md) (March 30th, 2018)
 - [2.0.1](./enebular/2.0.1.md) (March 1st, 2018)
 - [2.0.0](./enebular/2.0.0.md) (Jan 30th, 2018)
