@@ -9,10 +9,11 @@ The following InfoTypes are free sample charts/graphs for you to test your data 
 ###Line Chart 
 
 <ul> 
-  <li><a href="/_asset/sample/linechart.zip" target="_blank">Sample Line Chart  Download (zip)</a></li> 
+  <li><a href="/_asset/sample/line-chart.zip" target="_blank">Sample Line Chart  Download (zip)</a></li> 
 </ul> 
 
-![](/_asset/images/InfoMotion/enebular-developers-template-linechart.png)
+![](/_asset/images/InfoMotion/
+enebular-developers-template-linechart.png)
 
 Discription: 
 	A generic line chart with x-axis data points as time and y-axis as given numerical value. 
@@ -33,7 +34,7 @@ Editable properties:
 ## Bar Chart 
 
 <ul> 
-  <li><a href="/_asset/sample/barchart.zip" target="_blank">Sample Bar Chart Download (zip)</a>
+  <li><a href="/_asset/sample/bar-chart.zip" target="_blank">Sample Bar Chart Download (zip)</a>
   </li> 
 </ul> 
 
@@ -46,6 +47,7 @@ Discription:
 Data schema: 
 ```
 {
+  "id":String
   "value":Number,
   "created": UNIX timestamp
 }
@@ -59,7 +61,7 @@ Editable properties:
 
 <ul> 
   <li> 
-    <a href="/_asset/sample/piechart.zip" target="_blank">Sample Pie Chart Download (zip)</a></li> 
+    <a href="/_asset/sample/pie-chart.zip" target="_blank">Sample Pie Chart Download (zip)</a></li> 
 </ul> 
 
 ![](/_asset/images/InfoMotion/enebular-developers-template-pie.png)
@@ -71,6 +73,7 @@ Discription:
 Data schema:
 ```
 {
+  "id":String,
   "value":Number,
   "created": UNIX timestamp
 }
