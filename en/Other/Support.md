@@ -101,3 +101,29 @@ The following hardware is supported in enebular-edge-agent 0.9.0.
 
 * When using a BME280 node, it may not operate correctly if the flow size is large
 * For Inject nodes, it is only possible to set Timestamp for the Payload and Repeat for the Interval
+
+## Enebular Infomotion Tool 
+
+The web browsers supported by enebular-infomotion-tool are as follows.
+
+| Web Browser | Version | OS |
+| --- | --- | --- |
+| Chrome | [63.0 or later](https://chromereleases.googleblog.com/search/label/Desktop%20Update) | Windows/Mac  |
+| Firefox | [57.0 or later](https://www.mozilla.com/firefox/releases/) | Windows/Mac |
+| Safari | Coming soon | Mac |
+| Microsoft Edge | Coming soon | Windows |
+
+### Npm Version
+
+nodejs >= 6 and npm 5.2+
+
+### Possible Issues
+
+If a permission error occur the following solutions may solve it.
+
+1) Give permission to current user to global node_modules in /usr/local/lib/ node_modules. Once persmission given retry global install. MacOSX: https://support.apple.com/kb/PH25287?locale=en_US Windows: https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754344(v=ws.11)
+
+2) Install nvm to handle node and npm installations. (recommended) MacOSX: https://github.com/creationix/nvm
+Windows: https://github.com/coreybutler/nvm-windows
+
+3) Change npm's Default Directory https://docs.npmjs.com/getting-started/fixing-npm-permissions see Option Two.
