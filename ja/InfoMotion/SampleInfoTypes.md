@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-03-29
+lastUpdated: 2018-04-12
 ---
 
 # Sample InfoTypes 
@@ -41,7 +41,7 @@ Sample InfoTypes は、データをテストするための無料で利用でき
   </li> 
 </ul> 
 
-![](/_asset/images/InfoMotion/enebular-developers-template-bar.png)
+![](/_asset/images/InfoMotion/enebular-developers-template-barchart.png)
 
 #### 概要
 
@@ -51,6 +51,7 @@ Sample InfoTypes は、データをテストするための無料で利用でき
 
 ```
 {
+  "id":String,
   "value":Number,
   "created": UNIX timestamp
 }
@@ -68,7 +69,7 @@ Sample InfoTypes は、データをテストするための無料で利用でき
     <a href="/_asset/sample/piechart.zip" target="_blank">Sample Pie Chart Download (zip)</a></li> 
 </ul> 
 
-![](/_asset/images/InfoMotion/enebular-developers-template-pie.png)
+![](/_asset/images/InfoMotion/enebular-developers-template-piechart.png)
 
 
 #### 概要
@@ -79,6 +80,7 @@ Sample InfoTypes は、データをテストするための無料で利用でき
 
 ```
 {
+  "id":String,
   "value":Number,
   "created": UNIX timestamp
 }
