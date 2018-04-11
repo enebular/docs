@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2017-12-01
+lastUpdated: 2018-03-28
 ---
 
 # Getting Started
@@ -54,7 +54,7 @@ Edit Flow を押すと、Node-RED の編集画面が立ち上がります。
 
 図のフローは、10秒に1回、[Milkcocoa](https://mlkcca.com) のデータストアに、ランダムな7種類のID（`dataid`）をラベルとした 0〜50 のランダムな値（`v`）を保存するものです。
 
-下記の図を参考に、フローを作成ください。**timestamp node** で10秒ごとにフローが実行されるよう設定し、**function node** で プロパティを設定し、**milkcocoa node** で保存先である Milkcocoa のアプリ情報（`app_id`）・データストア情報（`datastore`）・認証情報（`API Key`、`API Secret`）を設定します。
+下記の図を参考に、フローを作成ください。**inject node** で10秒ごとにフローが実行されるよう設定し、**function node** で プロパティを設定し、**milkcocoa node** で保存先である Milkcocoa のアプリ情報（`app_id`）・データストア情報（`datastore`）・認証情報（`API Key`、`API Secret`）を設定します。
 
 ![](/_asset/images/enebular-developers-milkcocoaflow.png)
 

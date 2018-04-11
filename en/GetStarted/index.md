@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-02-01
+lastUpdated: 2018-03-28
 ---
 
 # Getting Started
@@ -55,7 +55,7 @@ In the editor, you create a data flow by placing the nodes lined up on the left 
 
 The flow in the diagram stores a random number between 0 and 50 (`v`) with a random selection from seven ID types (`dataid`) to a [Milkcocoa](https://mlkcca.com) data store every 10 seconds.
 
-Create the flow by referring to the diagram below. Set the flow to run every 10 seconds with the **timestamp node**, set the properties in the **function node**, and in the **milkcocoa node** set the destination Milkcocoa app information (`app_id`), the data store information (`datastore`) and authentication information (`API Key`, `API Secret`).
+Create the flow by referring to the diagram below. Set the flow to run every 10 seconds with the **inject node**, set the properties in the **function node**, and in the **milkcocoa node** set the destination Milkcocoa app information (`app_id`), the data store information (`datastore`) and authentication information (`API Key`, `API Secret`).
 
 ![](/_asset/images/enebular-developers-milkcocoaflow.png)
 

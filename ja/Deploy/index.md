@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-01-28
+lastUpdated: 2018-03-28
 ---
 
 # デプロイについて
@@ -37,4 +37,4 @@ Heroku や AWS Lambda などクラウド上に実行環境が存在する場合�
 ### クラウド
 
 * [Heroku](./DeployFlow/Heroku/index.md)
-* AWS Lambda
+* [AWS Lambda](./DeployFlow/Lambda/index.md)
