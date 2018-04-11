@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2017-01-27
+lastUpdated: 2017-04-12
 ---
 
 # Deploying to Heroku
@@ -56,7 +56,11 @@ Set the USERNAME and PASSWORD to be used for login after the enebular Node-RED h
 
 ![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_11.png)
 
-After confirming the settings press the "Deploy" button.
+After confirming the settings press the "Deploy" button. If you haven't added your credit card information to heroku before, the following modal will show up. Please don't worry, you can use this enebular app for free so enter your information.
+
+![](https://i.gyazo.com/e9d7bf541eb2029b53f53735054cfe7a.png)
+
+After registering the credit card, heroku will start setting up the app.
 
 ![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_12.png)
 
