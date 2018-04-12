@@ -1,12 +1,12 @@
 ---
-lastUpdated: 2018-03-29
+lastUpdated: 2018-04-12
 ---
 
 # Sample InfoTypes 
 
 The following InfoTypes are free sample charts/graphs for you to test your data on. 
 
-###Line Chart 
+## Line Chart 
 
 <ul> 
   <li><a href="/_asset/sample/linechart.zip" target="_blank">Sample Line Chart  Download (zip)</a></li> 
@@ -37,7 +37,7 @@ Editable properties:
   </li> 
 </ul> 
 
-![](/_asset/images/InfoMotion/enebular-developers-template-bar.png)
+![](/_asset/images/InfoMotion/enebular-developers-template-barchart.png)
 
 
 Discription: 
@@ -46,6 +46,7 @@ Discription:
 Data schema: 
 ```
 {
+  "id":String,
   "value":Number,
   "created": UNIX timestamp
 }
@@ -62,7 +63,7 @@ Editable properties:
     <a href="/_asset/sample/piechart.zip" target="_blank">Sample Pie Chart Download (zip)</a></li> 
 </ul> 
 
-![](/_asset/images/InfoMotion/enebular-developers-template-pie.png)
+![](/_asset/images/InfoMotion/enebular-developers-template-piechart.png)
 
 
 Discription: 
@@ -71,6 +72,7 @@ Discription:
 Data schema:
 ```
 {
+  "id":String,
   "value":Number,
   "created": UNIX timestamp
 }
