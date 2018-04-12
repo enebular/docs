@@ -1,95 +1,154 @@
 ---
-lastUpdated: 2017-12-01
+lastUpdated: 2018-03-28
+WIP: true
 ---
 
-# AWS Lambdaへのデプロイ
+# AWS Lambda へのデプロイ
 
-Flowのデプロイ先はそのままデプロイボタンを押すと、enebularが利用しているサーバーにデプロイされます。enebularでAWS Lambdaにデプロイすることも可能です。
+フローのデプロイ先はそのままデプロイボタンを押すと、enebular が利用しているサーバーにデプロイされますが、一時的にしか動作しません。
 
-このページでは、AWS LambdaにFlowをデプロイする手順を説明します。
+このページでは、長時間稼働させるために AWS Lambda にフローをデプロイする手順を説明します。
 
-## 新規Flowの作成
+## 新規フローの作成
 
-作成したフローをAWS Lambdaにデプロイするまでの方法です。まずLambdaへDeployするFlowを作成しましょう。（Projectは作成済みとします）。
+作成したフローを AWS Lambda にデプロイするまでの方法です。まず Lambda へデプロイするフローを作成しましょう（プロジェクトは作成済みとします）。
 
-![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-lambda_01.png)
+![](https://i.gyazo.com/43daa8adfa160e0db4723a6cb62ec6aa.png)
 
-Flowを作成し “Edit Flow” を押すと、Node-REDの編集画面が立ち上がります。
+フローを作成し [Edit Flow] を押すと、Node-RED の編集画面が立ち上がります。
 
-![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-lambda_02.png)
+![](https://i.gyazo.com/53824241d584d099aa810e6b3cbab645.png)
 
-この編集画面でデータフローを編集してFlowを作成します。
+この編集画面でデータフローを編集してフローを作成します。
 
 ## データフローの編集
 
-データフローを作成します。動作確認のため、Lambda RequestをそのままLambda Responseに返すだけのフローを作成しましょう。
+データフローを作成します。動作確認のため、Lambda Request をそのまま Lambda Response に返すだけのフローを作成しましょう。
 
 ![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-lambda_03.png)
 
-左のパレットではLambda Requestはinputグループに、Lambda Responseはoutputグループにあるので、そちらを探して配置します。
+左のパレットでは Lambda Request は input グループに、Lambda Response は output グループにあるので、そちらを探して配置します。
 
-![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-lambda_04.png)
+![](https://i.gyazo.com/b474a682aefc4cef62650b0e883f354c.png)
 
-右上の赤色のDeployボタンを押してDeployします。
+右上の [Deploy] を押して保存します。
 
-![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-lambda_05.png)
+## AWS Lambda へデプロイ
 
-Deployボタンの右にある下矢印から「Export to Other Services」を選択します。
+保存が完了したらフローのメニューから [Deploy] ページに移動します。
 
-## AWS Lambdaへデプロイ
+![](https://i.gyazo.com/6d8611cac4c92473225ebfca7ded8c57.png)
 
-![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-lambda_06.png)
+[Deploy] を押すとデプロイができる画面に移動します。
 
-「Export to Other Services」を選択すると、新しくウインドウが開いて以下のようなフォームが表示されます。
+![](https://i.gyazo.com/88e68c4779864cf8c6f24f6262575e4b.png)
 
-![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-lambda_07.png)
+Lambda を選択します。
 
-Connectionのフィールドの右側にあるNewを押して新しいConnectionを作成しましょう。
+![](https://i.gyazo.com/edc9714f15afec8911f67f31cf7141bd.png)
 
-![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-lambda_08.png)
+[New] を押すとモーダルが開きます。enebular での作業はここで一旦止めて、AWS コンソールへ移動します。
+
+![](https://i.gyazo.com/3478881bcdb98b1319141df71eed2dd8.png)
+
+### enebular から AWS Lambda を利用するための IAM ユーザーを作成
+
+enebular から AWS Lambda にアクセスするための Access Key ID、Secret Access Key を作成します。
+
+AWS の IAM へアクセスします。メニューからユーザーに移動します。
+
+![](https://i.gyazo.com/79aaba133f5999e6c0dd928de6160b1e.png)
+
+[ユーザーを追加] からユーザー追加画面へ移動します。適当な名前をつけて、[アクセスの種類] の [プログラムによるアクセス] にチェックを入れます。
+
+![](https://i.gyazo.com/e27793a2531fdfbda175d9c49730045b.png)
+
+アクセス権限画面では、[既存のポリシーを直接アタッチ] を選択して、[AWSLambdaFullAccess] というポリシーを選択して次に進みます。
+
+![](https://i.gyazo.com/4703b6374d892bffe9ae076a3f80e3ba.png)
+
+確認画面で間違いがないか確認します。間違いがなければ [ユーザーの作成] を押します。
+
+![](https://i.gyazo.com/698db8ca97dac1ab15e2baf2e579c4b1.png)
+
+完了したら、アクセスキー ID とシークレットアクセスキーが記載された CSV ファイルをダウンロードします（このタイミングでしかダウンロードできないので注意して下さい）。
+
+![](https://i.gyazo.com/f5fcc974b529a26f42b360d878519f56.png)
+
+### AWS Lambda が利用する ARN ロールを作成
+
+Lambda にデプロイされたフローが利用する ARN ロールを作成します。
+
+AWS の IAM へアクセスします。メニューからロールへ移動します。
+
+![](https://i.gyazo.com/fbf3fd00c52c35efa228e6d3f7bbc4f4.png)
+
+[ロールの作成] からロール作成画面へ移動します。AWS サービスの Lambda を選択して次に進みます。
+
+![](https://i.gyazo.com/2866c4068bc8ae97d82cb389c788d72d.png)
+
+アクセス権限では [AWSLambdaFullAccess] を選択して、次へ進みます。
+
+![](https://i.gyazo.com/9378d9962411cd94e35b2c80f4fdccd2.png)
+
+最後に適当な名前をつけて、[ロールの作成]で作成します。
+
+![](https://i.gyazo.com/db850bc23be8fffdd908a01344c564da.png)
+
+ここまでできたら enebular に必要情報を入力します。
+
+![](https://i.gyazo.com/9156cff5e218fccc78c9a3734e51cb4e.png)
 
 * Connection Name
     * 分かりやすい名前を任意で
 * AWS Access Key ID
-    * AWSコンソールで確認
+    * ダウンロードした CSV ファイルからコピー
 * AWS Secret Access Key
-    * AWSコンソールで確認
+    * ダウンロードした CSV ファイルからコピー
 * Region
-    * AWSコンソールで確認（ap-northeast-1など）
+    * こだわりがなければ ap-northeast-1
 * IAM Role ARN
-    *  AWSコンソールで確認でロールARNを確認
-        * ![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-lambda_09.png)
-        * ↓ ユーザーARNでなくロールARNが正解？
-        * ![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-lambda_10.png)
+    *  作成したロールの ARN を確認
+        * ![](https://i.gyazo.com/560971bd75cbdc147f990571798969c2.png)
 
+保存をすると、以下のように Lambda 関数の情報を入力するフォームが現れます。
 
-AWSのアクセスキーは、AWSLambdaFullAccess相当のポリシーで作成してください。AWS コンソールのIAMページから該当する情報をフォームにすべて書いたら、「Save」で保存します。
+![](https://i.gyazo.com/d89fd1efd0a174c8b223c1367c9557e6.png)
 
-![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-lambda_11.png)
+* Function Name
+    * 分かりやすい名前を任意で（ハイフンは使えません）
+* Timeout
+    * 60
+* Memory Size
+    * 128
 
-保存が終わると、Connectionのselectボックスにて追加したConnectionが選択できるようになっているので選択します。
+上記の値を入力して、[Deploy] でデプロイします。
 
-![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-lambda_12.png)
+![](https://i.gyazo.com/1cc9f0b2f920449f42f0911c31ff326d.png)
 
-任意のFunction Name（ハイフンは使えません）、Timeoutに60、Memory Sizeに128を入力したら、「Deploy Flow」でデプロイします。
+ここでしばらく待ちます（1分30秒くらいはかかりますので、気長にお待ちください）。
 
-![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-lambda_13.png)
+![](https://i.gyazo.com/34b178154e86ccf151a88351f83db6c6.png)
+
+デプロイが完了したら、Deployment History でデプロイされたものが確認できます。
+
+![](https://i.gyazo.com/f4d810f405533c474b85d3660156de3e.png)
+
 
 ## AWS Lambda コンソールにて確認
 
-ちゃんとデプロイされているかAWSコンソールのLambdaページにて確認してみましょう。Lambdaページに先ほどデプロイの際に入力したFunction Nameがあるかと思いますのでクリックします。遷移したページの左上の「Test」というボタンでテストできます。
+ちゃんとデプロイされているか AWS の Lambda ページにて確認してみましょう。Lambda ページに先ほどデプロイの際に入力した Function Name があるかと思いますのでクリックします。遷移したページの左上の [テスト] でテストできます。
 
-![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-lambda_14.png)
+![](https://i.gyazo.com/abc367b41a1ef3305f1b65a1cb295801.png)
 
-Eventの設定画面が出てきますが、そのまま右下の「作成」をクリックします。
+Event の設定画面が出てきますが、そのまま右下の [作成] をクリックします。
 
-![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-lambda_15.png)
+![](https://i.gyazo.com/a6c80233ddb2e0fab1f2f0bd49fd18c9.png)
 
-クリックすると、ページの下の方で処理が始まります。成功すると以下のような結果が表示されます。
+以下のような画面が出てくるので右上の [テスト] でテストをします。
 
-（フロー確認中）
-![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-lambda_16.png)
+![](https://i.gyazo.com/2c5ed3a4ef1cfb4c92cb861f268f54db.png)
 
-## Well Done!
+以下のような画面ができれば成功です。
 
-今回はRequestをそのままResponseに返しているだけですが、実際はRequestを契機に何かしらのフローを動かします。
+![](https://i.gyazo.com/5cb4e07f00b84d231120fefc2e6e4c81.png)

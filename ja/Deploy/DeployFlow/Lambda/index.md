@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2017-01-25
+lastUpdated: 2018-03-28
 ---
 
 # AWS Lambda へのデプロイ
@@ -150,4 +150,4 @@ Event の設定画面が出てきますが、そのまま右下の [作成] を�
 
 以下のような画面ができれば成功です。
 
-[成功画面]
+![](https://i.gyazo.com/5cb4e07f00b84d231120fefc2e6e4c81.png)

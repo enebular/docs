@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-01-27
+lastUpdated: 2018-03-28
 ---
 
 # InfoType
@@ -50,6 +50,6 @@ The InfoType's files can be updated with the "Update" at the top right.
 
 ## Settings
 
-You can change the name and description of the InfoType and delete the InfoType here.
+You can check the name, change the description of the InfoType and delete the InfoType here.
 
 ![](https://i.gyazo.com/9c99f2ce91a7aeb6e542c18662191ab7.png)

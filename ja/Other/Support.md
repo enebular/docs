@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-01-30
+lastUpdated: 2018-04-12
 ---
 
 # 動作環境
@@ -88,7 +88,7 @@ enebular-edge-agent は、[ARM Ltd.](https://www.arm.com/) の [Mbed OS](https:/
 
 #### Hardware
 
-enebular-edge-agent 0.9.0 は、下記のハードウェアを対象としています。
+enebular-edge-agent 0.9.1 は、下記のハードウェアを対象としています。
 
 * [FRDM-K64F](https://www.nxp.com/jp/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F) (NXP Semiconductors N.V.) + Stag Beetle Board (Uhuru Corporation)
 
@@ -99,5 +99,38 @@ enebular-edge-agent 0.9.0 は、下記のハードウェアを対象としてい
 
 ### Known Issues
 
-* BME280 ノードの使用時、フローのサイズが大きいと正常に動作しない場合がある
-* Inject ノードにおいて、PayloadにはTimestampのみ、RepeatにIntervalのみしか設定できない
+* BME280 ノードの使用時、フローのサイズが大きいと正常に動作しない場合があります
+* Inject ノードにおいて、PayloadにはTimestampのみ、RepeatにIntervalのみしか設定できません
+* 短い周期で繰り返しフローをデプロイした場合に、フローの初期化に失敗することがあります
+    * フローの初期化に失敗するとデバイスがフリーズします。その際はリセットボタンを押下してデバイスを再起動してください
+
+## Enebular Infomotion Tool 
+
+ enebular-infomotion-tool が対象とする Web ブラウザは以下とします。
+
+| Web Browser | Version | OS |
+| --- | --- | --- |
+| Chrome | [63.0 or later](https://chromereleases.googleblog.com/search/label/Desktop%20Update) | Windows/Mac  |
+| Firefox | [57.0 or later](https://www.mozilla.com/firefox/releases/) | Windows/Mac |
+| Safari | Coming soon | Mac |
+| Microsoft Edge | Coming soon | Windows |
+
+### Npm Version
+
+nodejs >= 6 and npm 5.2+
+
+### Possible Issues
+
+permission error が起こった際には、以下のいずれかで解決ができることがあります。
+
+1) 現在のユーザーに `/usr/local/lib/` 内の `node_modules` に権限を与えます。権限を与えたのち、再度グローバルインストールください。
+
+- MacOSX: https://support.apple.com/kb/PH25287?locale=en_US 
+- Windows: https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754344(v=ws.11) 
+
+2) NVM を利用する**（推奨）**
+
+- MacOSX: https://github.com/creationix/nvm  
+- Windows: https://github.com/coreybutler/nvm-windows 
+
+3) npm の[デフォルトのディレクトリ](https://docs.npmjs.com/getting-started/fixing-npm-permissions)を変更する。

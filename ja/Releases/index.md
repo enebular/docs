@@ -1,47 +1,30 @@
 ---
-lastUpdated: 2017-01-30
+lastUpdated: 2018-04-03
 ---
 
 # enebular Release Notes {#enebular}
 
-## Latest Release - 2.0.0 (Jan 30th, 2018) 
+## Latest Release - 2.1.1 (April 3rd, 2018)
 
-enebularは2014年11月22日のβリリースから3年の時を経て、大きく進化しました。今回のリリースでは、商用利用を意図した運用管理機能の追加や、対応デバイスの拡充、ユーザービリティの向上を図っています。
+## New
 
-### New
+- N/A
 
-#### Enterprise Planの提供
-これまで無償での提供のみでしたが、サポートの充実や安定した運用を望む声に応え、Enterprise Planの提供を開始いたします。Enterprise Planでは、マイコン向けエージェントの利用やデバイスの運用管理機能、プロッフェショナルサポートをご利用いただけます。Enterprise Planの詳細については、support@enebular.com にお問い合わせください。
+## Changed
 
-#### 一新された管理コンソール
-管理コンソール（ダッシュボード）を一新し、より見やすくなりました。
-管理コンソールからFlowをデプロイできるなど、ユーザービリティを改善しました。
+- N/A
 
-#### デプロイ可能なデバイスの拡充
-これまで対応していたクラウド環境やゲートウェイに加え、Arm Mbed対応マイコンボードへのフローデプロイをサポートしました。ゲートウェイ向けエージェントについては、[enebular-agent version 2.0.0リリースノート](#enebular-agent)を参照してください。マイコン向けエージェントについては、[enebular-edge-agent version 0.9.0リリースノート](#enebular-edge-agent)を参照してください。
+## Fixed
 
-#### 新しいコネクションタイプの追加
-これまで対応していたAWS IoT、Herokuに加え、Arm Mbed Cloudのサポートが追加されました。Arm Mbed Cloud対応はEnterprise Plan利用者限定の機能となります。
+- InfoTypeを作成してもグラフが表示されない不具合を修正しました
+- InfoMotionを作成してもグラフが表示されない不具合を修正しました
 
-#### デバイス管理機能の追加
-enebular agentやenebular edge agentが動作しているデバイスの状態（ステータス）とログのリモートモニタリング機能が追加されました。デバイス管理機能はEnterprise Plan利用者限定の機能となります。
+## Release History
 
-#### 可視化機能INFOMOTION（インフォモーション）の刷新
-INFOMOTIONも一新され、より簡単にお使いいただけるようになりました。"Dashboard(ダッシュボード)"機能が追加され、複数のサイズ変更可能なグラフを一度に表示できるようになりました。Dashboardは、InfoTypeと同様に他のユーザーと共有することができます。その他、グラフデータをjson形式でダウンロード可能になる、InfoTypeの共有時にデータストアとの接続が不要になるなど、ユーザビリティの向上を行っています。
-
-### Operating Environment
-enebularの動作確認済みWebブラウザは下記の通りです。
-
-|Web browser|Version|OS|
-|--|--|--|
-|Google Chrome|63.0 or later|Windows/Mac|
-|Mozilla Firefox|57.0 or later|Windows/Mac| 
-
-enebularは今後もユーザーの声を反映し、新しい機能の追加やユーザービリティの向上を行い、より使いやすいサービスを目指してまいります。enebularについてのご意見お問い合わせは support@enebular.com にお寄せください。ユーザーの皆様のフィードバックをお待ちしております。
-
-### Release History
-
-- [2.0.0](./enebular/2.0.0.md)
+- [2.1.1](./enebular/2.1.1.md) (April 3rd, 2018)
+- [2.1.0](./enebular/2.1.0.md) (March 30th, 2018)
+- [2.0.1](./enebular/2.0.1.md) (March 1st, 2018)
+- [2.0.0](./enebular/2.0.0.md) (Jan 30th, 2018)
 
 ---
 
@@ -105,72 +88,54 @@ enebular agentの詳しい仕様については、弊社サポート(support@ene
 
 ## Release History
 
-- [2.0.0](./enebular-agent/2.0.0.md)
+- [2.0.0](./enebular-agent/2.0.0.md) (Jan 30th, 2018)
 
 ---
 
 # enebular edge agent Release Notes {#enebular-edge-agent}
 
-## Latest Release - 0.9.0 (Jan 30th, 2018)
+## Latest Release - 0.9.1 (Feb 28th, 2018)
 
-enebular-edge-agentは、[ARM Ltd.](https://www.arm.com/)の[Mbed OS](https://os.mbed.com/)を採用したマイクロコントローラ向けのenebular用IoTエージェントソフトウェアです。enebular version 2.0.0のリリースにあわせ、enebular-edge-agent version 0.9.0をリリースします。
+enebular-edge-agent 0.9.1ではセキュリティ機能やフロー動作の安定性を向上しました。
 
-enebular-edge-agentの詳しい仕様については、弊社サポート(support@enebular.com)までお問い合わせください。
+### Fixed
+N/A
 
-### New
+### Changed
+* SDカード上のWi-Fiパスワードを秘匿するようにしました
+  * SDカードに設定したWi-Fiパスワードはフラッシュメモリに保存後、初期値に書き換わります
+* フロー定義中に1秒以下の処理が設定されている場合、繰り上げて1秒として処理するように変更しました
+* Digital Out ノードにinputされるmsgプロパティが対応するデータ型を追加しました
+    * string型(`true` / `false`)
+    * bool型(`true` / `false`) **new**
+    * number型(`1` /  `0`) **new**
+* フローデプロイ時に確実にフローを実行するため、デバイスを再起動するように変更しました
 
-#### Authentication
+### Known Issues
 
-* [enebular](https://enebular.com/)は、[ARM Ltd.](https://www.arm.com/)の[Mbed OS](https://os.mbed.com/)のMbed Cloudサービスを利用してenebular-edge-agentが搭載されたIoTデバイスを認証します。enebular-edge-agentは、Mbed Cloudのクライアントとして動作します
+* BME280 ノードの使用時、フローのサイズが大きいと正常に動作しない場合があります
+* Inject ノードにおいて、PayloadにはTimestampのみ、RepeatにIntervalのみしか設定できません
+* 短い周期で繰り返しフローをデプロイした場合に、フローの初期化に失敗することがあります
+    * フローの初期化に失敗するとデバイスがフリーズします。その際はリセットボタンを押下してデバイスを再起動してください
 
-#### Flow
+### Operating Environment
 
-* [enebular](https://enebular.com/)では、[Node-RED](https://nodered.jp/)ベースのFlow Editorを使用してFlowプログラミングを行うことができます
-* enebularで作成したFlowは、enebular-edge-agentを搭載したIoTデバイスにデプロイして実行することができます (※1)
-
-※1 enebular-edge-agentで実行できるFlowには制限があります。詳しい仕様は、弊社サポート(support@enebular.com)までお問い合わせください
-
-#### Device Management
-
-* enebularのデバイス管理機能で、enebular-edge-agentが搭載されたIoTデバイスの状態を監視することができます
-* enenbular-edge-agentは、enebularに対して定期的にデバイスの状態を通知します
-* 本機能はEnterprise Planの有償機能として提供されます
-
-#### Logging
-
-* enebular-edge-agentは、ロギング機能としてエラーや動作のログをMicroSDカードに記録します
-* 本機能はEnterprise Planの有償機能として提供されます
-
-#### Operating Environment
-
-##### Operating System
+#### Operating System
 
 * [Mbed OS 5.6.6](https://github.com/ARMmbed/mbed-os/tree/mbed-os-5.6.6) (ARM Ltd.)
 
-##### Hardware
+#### Hardware
 
 enebular-edge-agent 0.9.0は、下記のハードウェアを対象としています。
 
 * [FRDM-K64F](https://www.nxp.com/jp/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F) (NXP Semiconductors N.V.) + Stag Beetle Board (Uhuru Corporation)
 
-##### Communication
+#### Communication
 
 * IEEE 802.11 b/g/n (IEEE 802.11n は2.4GHzのみの対応です)
 * WPA/WPA2
 
-### Fixed
-
-N/A
-
-### Changed
-
-N/A
-
-### Known Issues
-
-* BME280 ノードの使用時、フローのサイズが大きいと正常に動作しない場合がある
-* Inject ノードにおいて、PayloadにはTimestampのみ、RepeatにIntervalのみしか設定できない
-
 ## Release History
 
-- [0.9.0](./enebular-edge-agent/0.9.0.md)
+- [0.9.1](./enebular-edge-agent/0.9.1.md) (Feb 28th, 2018)
+- [0.9.0](./enebular-edge-agent/0.9.0.md) (Jan 30th, 2018)

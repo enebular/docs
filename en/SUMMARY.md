@@ -1,15 +1,19 @@
 ---
-lastUpdated: 2018-01-30
+lastUpdated: 2018-04-03
 ---
 
 # Summary
 
 * [Release Notes](Releases/index.md)
   * [enebular](Releases/index.md#enebular)
+    * [2.1.1](Releases/enebular/2.1.1.md)
+    * [2.1.0](Releases/enebular/2.1.0.md)
+    * [2.0.1](Releases/enebular/2.0.1.md)
     * [2.0.0](Releases/enebular/2.0.0.md)
   * [enebular agent](Releases/index.md#enebular-agent)
     * [2.0.0](Releases/enebular-agent/2.0.0.md)
   * [enebular edge agent](Releases/index.md#enebular-edge-agent)
+    * [0.9.1](Releases/enebular-edge-agent/0.9.1.md)
     * [0.9.0](Releases/enebular-edge-agent/0.9.0.md)
 * [Getting Started](GetStarted/index.md)
 
@@ -49,6 +53,7 @@ lastUpdated: 2018-01-30
 * [Example: AWS IoT](Deploy/DeployFlow/AWSIoT/index.md)
 * [Example: Heroku](Deploy/DeployFlow/Heroku/index.md)
 * [Example: mbed Cloud](Deploy/DeployFlow/mbed/index.md)
+* [Example: AWS Lambda](Deploy/DeployFlow/Lambda/index.md)
 
 ## Devices
 
