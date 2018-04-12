@@ -66,8 +66,9 @@ for local browser tests.
 
 The adapter types are
 
-- `milkcocoa`
+- `milkcocoa` (v2 ~ v3)
 - `pubnnub`
+- `firebase`
 - `apigateway`
 - `random`
 - `mock`
@@ -112,6 +113,18 @@ Replace the specified values with your app details.
   "name": "pubnub"
 }
 ```
+
+#### Firebase adaptor 
+
+Using [Firebase](https://firebase.google.com/) as a datasource.
+Replace the specified values with your app details.
+
+```json
+{
+  "adaptor": "firebase"
+}
+```
+
 
 ### API Gateway Adaptor
 
@@ -190,11 +203,11 @@ The plugin.json is created to supply the InfoMotion with sample data to preview 
   "sampleData": [
     {
       "country": "JP",
-      "v": 1
+      "value": 1
     },
     {
       "country": "CN",
-      "v": 2
+      "value": 2
     }
   ]
 }
@@ -211,7 +224,6 @@ Here are available templates.
 eit create [graph name] -t barchart
 eit create [graph name] -t linechart
 eit create [graph name] -t piechart
-eit create [graph name] -t map
 ```
 
 ## Packaging
