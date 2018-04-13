@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-03-29
+lastUpdated: 2018-04-13
 ---
 
 # InfoMotion Tool
@@ -121,7 +121,19 @@ Replace the specified values with your app details.
 
 ```json
 {
-  "adaptor": "firebase"
+  "adapter": "firebase",
+  "firebase": {
+    "apiKey": "YOUR_API_KEY",
+    "authDomain": "YOUR_AUTH_DOMAIN",
+    "databaseURL": "YOUR_DATABASE_URL",
+    "projectId": "YOUR_PROJECT_ID",
+    "storageBucket": "YOUR_STOREAGE_BUCKET",
+    "messagingSenderId": "YOUR_MESSAGE_SENDER_ID"
+  },
+    "limit": 100,
+    "ref": '/test',
+    "title": "firebase",
+    "name": "firebase"
 }
 ```
 
