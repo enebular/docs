@@ -1,26 +1,32 @@
 ---
-lastUpdated: 2018-04-03
+lastUpdated: 2018-04-16
 ---
 
 # enebular Release Notes {#enebular}
 
-## Latest Release - 2.1.1 (April 3rd, 2018)
+## 2.1.2 (April 16th, 2018)
 
-## New
+### New
 
-- N/A
+- enebular ドキュメントにenebular有償機能の記述を追加しました。(英語版のみ)
+- サービスダウン時のメッセージページを作成しました。
+- herokuデプロイを行う際にクレジットカード情報が必要な旨をenebularドキュメントに追記しました。
+- トップページのナビゲーションバーにenebularブログへのリンクを追加しました。
 
-## Changed
+### Fixed
 
-- N/A
+- Infomotionのグラフ上の数字とMilkcocoa InfoTypeのデータストアの数字が一致しない不具合を修正しました。
+- 存在しないAboutページへのリンクを削除しました。
+- 誤ったトークンでherokuデプロイをした場合に表示されるエラーメッセージの曖昧さを解消しました。
+- サインイン・ログインに相当する用語が複数混在していたのをSign in / Loginに統一しました。
 
-## Fixed
+### Known Issues
 
-- InfoTypeを作成してもグラフが表示されない不具合を修正しました
-- InfoMotionを作成してもグラフが表示されない不具合を修正しました
+- InfoMotionを埋め込んだ静的ページを、enebularにログインしていないブラウザで開こうとするとグラフが表示されない。
 
 ## Release History
 
+- [2.1.2](./enebular/2.1.2.md) (April 16th, 2018)
 - [2.1.1](./enebular/2.1.1.md) (April 3rd, 2018)
 - [2.1.0](./enebular/2.1.0.md) (March 30th, 2018)
 - [2.0.1](./enebular/2.0.1.md) (March 1st, 2018)

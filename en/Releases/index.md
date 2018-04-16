@@ -1,26 +1,32 @@
 ---
-lastUpdated: 2018-04-03
+lastUpdated: 2018-04-16
 ---
 
 # enebular Release Notes {#enebular}
 
-## Latest Release - 2.1.1 (April 3rd, 2018)
+## 2.1.2 (April 16th, 2018)
 
-## New
+### New
 
-- N/A
+- Added descriptions on enebular paid functions to the enebular document.(English only)
+- Added a message page to show when the enebular service is down.
+- Added a description in the enebular document that credit card information is necessary when the flow is deployed to heroku.
+- Added the link to enebular blog to the top page navigation bar. 
 
-## Changed
+### Fixed
 
-- N/A
+- Fixed an issue which caused mismatch between the numbers shown on Infomotion graphs and the numbers shown on the Milkcocoa InfoType data store.
+- Deleted the link to the non-existent "About" page.
+- Eliminated the ambiguity in the error message which is shown when one attempts to deploy flows to heroku using wrong token.
+- Eliminated inconsistencies in the use of the words for "Sign in" and "Log in"
 
-## Fixed
+### Known Issues
 
-- Fixed a bug that graphs are not displayed even when InfoType is created
-- Fixed a bug that the graph is not displayed even when InfoMotion is created
+- InfoMotion-embedded pages fail to show graphs when the browser which opens them is not logged into enebular.
 
 ## Release History
 
+- [2.1.2](./enebular/2.1.2.md) (April 16th, 2018)
 - [2.1.1](./enebular/2.1.1.md) (April 3rd, 2018)
 - [2.1.0](./enebular/2.1.0.md) (March 30th, 2018)
 - [2.0.1](./enebular/2.0.1.md) (March 1st, 2018)
