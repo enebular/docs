@@ -44,6 +44,7 @@ lastUpdated: 2018-05-15
 * [DataSource](InfoMotion/CreateDataSource.md)
   * [Data Source Schema](InfoMotion/DataSourceSchema.md)
   * [Milkcocoa-v3](InfoMotion/DatasourceMilkcocoa-v3.md)
+  * [Milkcocoa-v2](InfoMotion/DatasourceMilkcocoa-v2.md)
   * [Firebase](InfoMotion/DatasourceFirebase.md)
   * [Pubnub](InfoMotion/DatasourcePubnub.md)
   * [API Gateway](InfoMotion/DataSourceAPIGateway.md)
