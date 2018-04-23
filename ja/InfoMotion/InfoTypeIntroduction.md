@@ -13,19 +13,18 @@ InfoType とは InfoMotion で利用するグラフのタイプのことです�
 {
   created: Number,
   lang: String,
-  node_id: Number,
-  ss: Number,
-  uu: Number
+  value:Number
+
 }
 ```
 
 - Bar Chart
-![](/_asset/images/InfoMotion/enebular-developers-template-bar.png)
+![](/_asset/images/InfoMotion/enebular-developers-template-barchart.png)
 
 - Line Chart
-![](/_asset/images/InfoMotion/enebular-developers-template-line.png)
+![](/_asset/images/InfoMotion/enebular-developers-template-linechart.png)
 - Pie Chart
-![](/_asset/images/InfoMotion/enebular-developers-template-pie.png)
+![](/_asset/images/InfoMotion/enebular-developers-template-piechart.png)
 
 - [InfoType の作成方法はこちら](./InfoMotionTool.md)
 - [作成した InfoType を enebular へアップロードする方法はこちら](./UploadInfoType.md)
