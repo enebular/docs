@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-04-12
+lastUpdated: 2018-04-13
 ---
 
 # Sample InfoTypes 
@@ -23,6 +23,7 @@ Sample InfoTypes は、データをテストするための無料で利用でき
 
 ```
 {
+  "id":String,
   "value":Number,
   "created": UNIX timestamp
 }
