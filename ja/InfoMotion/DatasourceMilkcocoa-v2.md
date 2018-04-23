@@ -115,6 +115,11 @@ Click save to continue.
 ![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/settings.png) 
 
 
+###Access Control Allow Origin 
+
+For milkcocoa to be used locally it must be 
+served from a http server. For node.js/npm users we reccomend you use a simple npm module [http-server](https://www.npmjs.com/package/http-server) to serve your index.html locally. 
+
 
 Now your Data Source is ready to be used on an infotype see 
 [Sample infotypes](./SampleInfoTypes.md)to downoad a graph, 
