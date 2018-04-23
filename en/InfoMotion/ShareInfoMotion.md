@@ -15,6 +15,11 @@ infomotion and infomotionUI script tags are needed to use infomotion.
 <script src="http://enebular-v2.herokuapp.com/emi/enebular-infomotion/infomotionUI.js"></script>
 ```
 
+###Access Control Allow Origin 
+
+For milkcocoa to be used locally it must be 
+served from a http server. For node.js/npm users we reccomend you use a simple npm module [http-server](https://www.npmjs.com/package/http-server) to serve your index.html locally. 
+
 ### Settings for graph component
 
 Settings is composed of three parts.
