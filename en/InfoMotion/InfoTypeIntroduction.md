@@ -18,7 +18,7 @@ The following are examples of default graphs.
 ```
 
 - Bar Chart
-![](/_asset/images/InfoMotion/enebular-developers-template-bar.png)
+![](/_asset/images/InfoMotion/enebular-developers-template-barchart.png)
 
 
 - Line Chart
@@ -26,7 +26,7 @@ The following are examples of default graphs.
 
 
 - Pie Chart
-![](/_asset/images/InfoMotion/enebular-developers-template-pie.png)
+![](/_asset/images/InfoMotion/enebular-developers-template-piechart.png)
 
 
 - [See here for creating an InfoType](./InfoMotionTool.md)
