@@ -4,6 +4,22 @@ lastUpdated: 2018-4-24
 
 # Share InfoMotion
 
+The following code is subject to change.
+
+###Before you share!
+
+####Access Control Allow Origin 
+
+For milkcocoa to be used locally it must be 
+served from a http server. For node.js/npm users we reccomend you use a simple npm module [http-server](https://www.npmjs.com/package/http-server) to serve your index.html locally. 
+
+####Infotype share issues
+
+Enebular must be logged in the browser to display infotypes. 
+All infotypes are set as private. These settings are subject to change. 
+
+###InfoMotion scripts
+
 ダッシュボードを外部サイトへ埋め込む場合、API を使って自由にダッシュボードの表示をカスタマイズできます。
 
 埋め込みには以下の2つのファイルを読み込む必要があります。
@@ -12,11 +28,6 @@ lastUpdated: 2018-4-24
 <script src="http://enebular-v2.herokuapp.com/emi/enebular-infomotion/infomotion.js"></script>
 <script src="http://enebular-v2.herokuapp.com/emi/enebular-infomotion/infomotionUI.js"></script>
 ```
-
-###Access Control Allow Origin 
-
-For milkcocoa to be used locally it must be 
-served from a http server. For node.js/npm users we reccomend you use a simple npm module [http-server](https://www.npmjs.com/package/http-server) to serve your index.html locally. 
 
 ### Settings for graph component
 
