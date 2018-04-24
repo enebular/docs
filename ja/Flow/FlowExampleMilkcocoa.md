@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-03-28
+lastUpdated: 2018-04-28
 ---
 
 # Milkcocoa のフロー
@@ -50,14 +50,18 @@ injectノードの設定は配置時そのままの設定でOKです。
 
 functionノードは以下の設定を行います。
 
-![image](/_asset/images/Flow/CreateFlow/flow-create-flow_17.png)
+![image](/_asset/images/InfoMotion/datasources/milkcocoa-v2/function-node.png)
 
-このスクリプトは、Milkcocoaに対して0～1023のランダム値を送る内容です。
+このスクリプトは、Milkcocoaに対して0～10のランダム、国と作成日時を送る内容です。
 
-```html
-msg.payload = {
-    v:Math.floor(Math.random() * 1023)
+```javascript
+var data = {
+    country:['JP','USA','CN'][Math.floor(Math.random()*3)],
+    value: Math.floor(Math.random()*10),
+    created:Date.now()
 }
+
+msg.payload = data; 
 return msg;
 ```
 
@@ -94,8 +98,7 @@ Addを押して設定を登録します。
 
 先ほどのMilkcocoa 出力ノードの設定に戻りDataSource名も設定します。
 
-![image](/_asset/images/Flow/CreateFlow/flow-create-flow_24.png)
-
+![image](/_asset/images/InfoMotion/datasources/milkcocoa-v2/milkcocoa-node-settings.png)
 
 ### debugノードの設定
 
@@ -108,7 +111,6 @@ debugノードの設定は配置時そのままの設定でOKです。
 デプロイをしてウィンドウを閉じます。これでFlow Editorによる設定は終了です。
 
 ![image](/_asset/images/Flow/CreateFlow/flow-create-flow_26.png)
-
 
 Flow一覧に今回のFlowが表示されます。
 
