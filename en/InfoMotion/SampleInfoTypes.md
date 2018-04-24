@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-04-12
+lastUpdated: 2018-4-24
 ---
 
 # Sample InfoTypes 
