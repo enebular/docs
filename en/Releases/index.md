@@ -124,8 +124,6 @@ In 0.10.0 release, added `milkcocoa in` node and `milkcocoa out` node.
 
 * A `BME280` node may not operate correctly if the flow size is too large.
 * An `inject` node can set only a Timestamp for the Payload and Repetition of the Interval.
-* Excessive deployment within a span of one minute may cause failure of flow initialization.
-    * The device will stop in case of a flow initialization failure. To resolve this, reboot the device by pressing the reset button.
 
 ### Operating Environment
 

@@ -121,8 +121,6 @@ enebular-edge-agent 0.10.0では、milkcocoa in ノードおよび milkcocoa out
 
 * BME280 ノードの使用時、フローのサイズが大きいと正常に動作しない場合があります
 * Inject ノードにおいて、PayloadにはTimestampのみ、RepeatにIntervalのみしか設定できません
-* 短い周期で繰り返しフローをデプロイした場合に、フローの初期化に失敗することがあります
-    * フローの初期化に失敗するとデバイスがフリーズします。その際はリセットボタンを押下してデバイスを再起動してください
 
 ### Operating Environment
 
