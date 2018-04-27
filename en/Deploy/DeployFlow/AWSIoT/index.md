@@ -10,19 +10,19 @@ Flows created on enebular can be deployed to AWS IoT.
 
 For this example, make a flow like the following.
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_02.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_01.png)
 
 Once the flow is ready, deploy it to save it.
 
-![](https://i.gyazo.com/bfb9c0e25ad5e4a372a149336bdef8b8.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_02.png)
 
 Once it has been saved, press "Deploy" on the flow's "Deploy" tab.
 
-![](https://i.gyazo.com/16c258270a9b0f0d609fce45da7df221.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_03.png)
 
 This will take you do the "Deploy Flow" screen. Choose `AWS IoT` for "Select Connection Type" and wait.
 
-![](https://i.gyazo.com/80831b57617fda2ae76ad4f26d3f88c1.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_04.png)
 
 ## Creating the Configuration on AWS IoT
 
@@ -32,43 +32,43 @@ We'll create a configuration on AWS IoT to use this time.
 
 Select "Manage > Things" from the menu and press "Register a thing".
 
-![](https://i.gyazo.com/653f48dfa7b14c3c6e670dbf7862a8be.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_05.png)
 
 Press "Create a single thing".
 
-![](https://i.gyazo.com/261575293420845b96a58acbcd4a119a.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_06.png)
 
 Give it an appropriate name and move to the next step.
 
-![](https://i.gyazo.com/93bdb0ab9e12d49456adfdd5e4dc87ab.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_07.png)
 
 ### Creating the Certificates
 
 Press the "Create certificate" of One-click certificate creation.
 
-![](https://i.gyazo.com/4d975a2aee62da86c79625a706e17a7f.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_08.png)
 
 Download all of the files and activate it.
 
-![](https://i.gyazo.com/f75929d1eefab6e8a499e85b41434d64.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_09.png)
 
 The activation will complete.
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_11.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_10.png)
 
 ### Creating the New Policies
 
 Select "Secure > Policies" from the menu and press "Create a policy".
 
-![](https://i.gyazo.com/360b1075f4ee5dfd1019c322b5d1e37e.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_11.png)
 
 Specify an easy to understand name.
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_14.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_12.png)
 
 Next we add a statement.
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_15.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_13.png)
 
 Specify the policy statements as shown below.
 
@@ -77,33 +77,33 @@ Specify the policy statements as shown below.
 * Resource ARN
     * *
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_16.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_14.png)
 
 This policy statement configuration provides a wide degree of access to allow for the tests here. Once you're ready, please fine tune the policy.
 
 Press the create button to save the policy.
 
-![](https://i.gyazo.com/7bb0ea26adc7f408941c76caf484185f.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_15.png)
 
 ## Attaching the Policy to the Certificates
 
 As things are now the policy and certificates are not tied together, so we will attached them here. Move to the details screen of the thing you created just before, and select the certificate from the security section in the menu.
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_18.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_16.png)
 
 Select "Attach policy" from the "Actions" menu at the top right.
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_19.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_17.png)
 
 Attach the policy you created just before.
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_20.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_18.png)
 
 Once that completes, you can confirm that the certificate is tied to the policy and thing.
 
-![](https://i.gyazo.com/a21acb6987f7f823cfbd6f5cdf42babf.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_19.png)
 
-![](https://i.gyazo.com/1947b0e395d51dd4067d50fbc172f2eb.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_20.png)
 
 ## Creating an IAM User for AWS IoT
 
@@ -111,33 +111,33 @@ In order to use AWS IoT from enebular, create an Access Key ID and Secret Access
 
 In the "Users" section of the IAM menu, press "Add user".
 
-![](https://i.gyazo.com/5365a9c626c6fb82f15aa7450be25b1e.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_21.png)
 
 In the details section, set an easy to understand name and enable "Programmatic access".
 
-![](https://i.gyazo.com/2dac145aaa109bd6b59e7f02a2c81880.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_22.png)
 
 For the permissions, select "Attach existing policies directly", then select the "AWSIoTFullAccess" policy and move to the next step.
 
-![](https://i.gyazo.com/2ba4485a00fa21bcd11cdfab04070af3.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_23.png)
 
 Finally confirm there are no mistakes.
 
-![](https://i.gyazo.com/b55f423d3380f02e52ad3957f68bb7a1.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_24.png)
 
 Once completed, download the CSV file that contains the Access Key ID and Secret Access Key (note that this is the only chance to download it).
 
-![](https://i.gyazo.com/43887a5e4d39397ac005d05f571082a5.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_25.png)
 
 ## Update the Flow with the AWS IoT Settings
 
 We return to the AWS IoT settings screen from before and update the AWS IoT settings.
 
-![](https://i.gyazo.com/80831b57617fda2ae76ad4f26d3f88c1.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_26.png)
 
 Press "New" to the right of "Select Connection". Enter the required information and create the connection.
 
-![](https://i.gyazo.com/b79f9f1beaa467c1b54638afb79c1ee7.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_27.png)
 
 * Connection Name
     * Any alphameric characters
@@ -150,11 +150,11 @@ Press "New" to the right of "Select Connection". Enter the required information 
 * AWS IoT Endpoint URL
     *  This can be seen in the "Interact" section of the thing menu (refer to the image below)
 
-![](https://i.gyazo.com/e1f3d7ab36d625ec31bbb1e122cdd367.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_28.png)
 
 When you select the created connection the registered things are displayed.
 
-![](https://i.gyazo.com/21ff895a55f684d63b318ef565ba7f41.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_29.png)
 
 The thing will still be disconnected. Here, 'disconnected' means that the AWS IoT thing hasn't been deployed to yet or it is actually disconnected.
 
@@ -198,7 +198,7 @@ npm install
 
 Copy the AWS IoT Thing certificate files you downloaded just before to the `certs` directory in the example folder.
 
-![](https://i.gyazo.com/2990d00298630a3ccfdffe7827131287.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_30.png)
 
 Update the example's `config.json` file with the connection details (including the correct paths of the certificate files).
 
@@ -227,7 +227,7 @@ DEBUG=info npm run start
 
 Log messages similar to the following should be displayed.
 
-![](https://i.gyazo.com/c2cbd942f6f12c1236703593a14dc94b.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_31.png)
 
 
 If enebular-agent successfully starts and connects to AWS IoT, it will display the following log message.
@@ -242,17 +242,17 @@ Once that message is displayed, the device can be used with enebular.
 
 We're now ready to deploy the flow. Move back to the screen below.
 
-![](https://i.gyazo.com/21ff895a55f684d63b318ef565ba7f41.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_32.png)
 
 When you select the check-box on the left and press "Deploy" the deploy will complete. If the "Deploy Status" has tick mark in the deploy history, then it has succeeded.
 
-![](https://i.gyazo.com/698d8cecdc353a76b9f3b84788abfa5d.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_33.png)
 
 You'll also be able to see the device side log updating.
 
-![](https://i.gyazo.com/e2e15ad09331937ff8585c14276d6c65.png)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_34.png)
 
-![](https://i.gyazo.com/bed3a72a00a9cb68244d52014d273281.jpg)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_35.png)
 
 While `unauthenticated` will be displayed, this is just because a license hasn't been purchased. Purchasing a license is not required for the flow to run, but by purchasing a license status and log monitoring becomes available.
 
