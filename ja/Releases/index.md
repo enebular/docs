@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-04-16
+lastUpdated: 2018-04-26
 ---
 
 # enebular Release Notes {#enebular}
@@ -100,29 +100,27 @@ enebular agentの詳しい仕様については、弊社サポート(support@ene
 
 # enebular edge agent Release Notes {#enebular-edge-agent}
 
-## Latest Release - 0.9.1 (Feb 28th, 2018)
+## Latest Release - 0.10.0 (Apr 27th, 2018)
 
-enebular-edge-agent 0.9.1ではセキュリティ機能やフロー動作の安定性を向上しました。
+enebular-edge-agent 0.10.0では、milkcocoa in ノードおよび milkcocoa out ノードの追加を行いました。
+
+### New
+
+* milkcocoa in ノードを使用して Milkcocoa へのデータ入力をトリガーにenebular-edge-agentのフローを起動することが出来ます
+* milkcocoa out ノードを使用して enebular-edge-agentから Milkcocoa にデータを送信することが出来ます
 
 ### Fixed
-N/A
+* フローデプロイ時にデバイス再起動を行わないように修正しました
+* SSL通信不具合の修正しました
+* Analog in ノードで取得する値に不備があったため修正しました
 
 ### Changed
-* SDカード上のWi-Fiパスワードを秘匿するようにしました
-  * SDカードに設定したWi-Fiパスワードはフラッシュメモリに保存後、初期値に書き換わります
-* フロー定義中に1秒以下の処理が設定されている場合、繰り上げて1秒として処理するように変更しました
-* Digital Out ノードにinputされるmsgプロパティが対応するデータ型を追加しました
-    * string型(`true` / `false`)
-    * bool型(`true` / `false`) **new**
-    * number型(`1` /  `0`) **new**
-* フローデプロイ時に確実にフローを実行するため、デバイスを再起動するように変更しました
+* TSL2561 ノードで、Stag Beetle Board に搭載された照度センサーがTSL2561センサーかTSL2581センサーかを自動判定し、TSL2581センサーからも照度を取得出来るようになりました
 
 ### Known Issues
 
 * BME280 ノードの使用時、フローのサイズが大きいと正常に動作しない場合があります
 * Inject ノードにおいて、PayloadにはTimestampのみ、RepeatにIntervalのみしか設定できません
-* 短い周期で繰り返しフローをデプロイした場合に、フローの初期化に失敗することがあります
-    * フローの初期化に失敗するとデバイスがフリーズします。その際はリセットボタンを押下してデバイスを再起動してください
 
 ### Operating Environment
 
@@ -142,6 +140,6 @@ enebular-edge-agent 0.9.0は、下記のハードウェアを対象としてい�
 * WPA/WPA2
 
 ## Release History
-
+- [0.10.0](./enebular-edge-agent/0.10.0.md) (Apr 27th, 2018)
 - [0.9.1](./enebular-edge-agent/0.9.1.md) (Feb 28th, 2018)
 - [0.9.0](./enebular-edge-agent/0.9.0.md) (Jan 30th, 2018)

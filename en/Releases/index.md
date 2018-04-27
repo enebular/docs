@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-04-16
+lastUpdated: 2018-04-26
 ---
 
 # enebular Release Notes {#enebular}
@@ -101,29 +101,29 @@ The recommended operating environments are as follows.
 
 # enebular edge agent Release Notes {#enebular-edge-agent}
 
-## Latest Release - 0.9.1 (Feb 28th, 2018)
+## Latest Release - 0.10.0 (Apr 27th, 2018)
 
-In 0.9.1 release, improved stability of running flow and security.
+In 0.10.0 release, added `milkcocoa in` node and `milkcocoa out` node.
+
+### New
+
+* A `milkcocoa in` node will trigger a flow to run.
+* A `milkcocoa out` node will send data to Milkcocoa.
 
 ### Fixed
-N/A
+
+* When flow is deployed device isn't rebooted.
+* Fixed SSL connect bug.
+* Fixed `analog in` node's bug concerning the obtained value.
 
 ### Changed
-* Changed to conceal Wi-Fi password on MicroSD.
-    * Rewriting the password on MicroSD to default value after it's saved on flash memory.
-* Flows with setting values less than 1 second are set to 1 second.
-* For Digital Out nodes, added available data types of msg properties.
-    * string(`true` / `false`)
-    * bool(`true` / `false`) **new**
-    * number(`1` /  `0`) **new**
-* When flow is deployed device is rebooted to ensure execution of flow.
+
+* On `TSL2561` node, supported TSL2581(luminosity sensor) by automatic judgement.
 
 ### Known Issues
 
-* When using a BME280 node, it may not operate correctly if the flow size is large.
-* An Inject node can set only a Timestamp for the Payload and Repetition of the Interval.
-* Excessive deployment within a span of one minute may cause failure of flow initialization.
-    * The device will stop in case of a flow initialization failure. To resolve this, reboot the device by pressing the reset button.
+* A `BME280` node may not operate correctly if the flow size is too large.
+* An `inject` node can set only a Timestamp for the Payload and Repetition of the Interval.
 
 ### Operating Environment
 
@@ -144,5 +144,6 @@ The following hardware is supported in enebular-edge-agent 0.9.0.
 
 ## Release History
 
+- [0.10.0](./enebular-edge-agent/10.0.0.md) (Apr 27th, 2018)
 - [0.9.1](./enebular-edge-agent/0.9.1.md) (Feb 28th, 2018)
 - [0.9.0](./enebular-edge-agent/0.9.0.md) (Jan 30th, 2018)
