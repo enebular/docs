@@ -18,7 +18,7 @@ Discription:
 	A generic line chart with x-axis data points as time and y-axis as given numerical value. 
 
 Data schema:
-```
+```json
 {
   "id":String
   "value":Number,
@@ -45,7 +45,7 @@ Discription:
 		A generic Bar chart that presents categorical data with with heights or lengths proportional to the given values. 
 
 Data schema: 
-```
+```json
 {
   "id":String,
   "value":Number,
@@ -71,7 +71,7 @@ Discription:
 	A generic pie chart dividing slices of given values into numerical proportions. 
 	
 Data schema:
-```
+```json
 {
   "id":String,
   "value":Number,
