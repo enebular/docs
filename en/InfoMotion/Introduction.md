@@ -8,10 +8,10 @@ An `InfoMotion` visualizes data from a `DataSource`.
 
 ![](/_asset/images/InfoMotion/enebular-developers-aboutinfotype.png)
 
-In addition to the simple graphs available by default, it's also possible to either purchase or create more complex graphs. See [here](./InfoMotionTool.md) for how to create original graphs.
+In addition to the simple graphs available by default, it's also possible to either purchase or create more complex graphs. See [here](./InfoMotionTool.md) on how to create original graphs.
 
-- See [here](./CreateDataSource.md) for how to create a DataSource
-- See [here](./CreateInfoMotion.md) for how to create an InfoMotion
+- See [here](./CreateDataSource.md) on how to create a DataSource
+- See [here](./CreateInfoMotion.md) on how to create an InfoMotion
 
 The created InfoMotion can been checked on enebular.
 
