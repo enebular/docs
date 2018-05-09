@@ -22,7 +22,9 @@ npm install @uhuru/enebular-infomotion-tool-v2 -g
 If a permission error occur the following solutions may solve it. 
 
 1) Give permission to current user to global node_modules in /usr/local/lib/ node_modules. Once persmission given retry global install. 
+
 MacOSX: https://support.apple.com/kb/PH25287?locale=en_US 
+
 Windows: https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754344(v=ws.11) 
 
 2) Install nvm to handle node and npm installations. (recommended) 
@@ -66,8 +68,8 @@ for local browser tests.
 
 The adapter types are
 
-- `milkcocoa` (v2 ~ v3)
-- `pubnnub`
+- `milkcocoa` (v2) (v3 coming soon)
+- `pubnub`
 - `firebase`
 - `apigateway`
 - `random`
@@ -156,7 +158,7 @@ Replace the specified values with your app details.
 
 #### Random adaptor
 
-Random is give as a default datastore and generates sets of the following data schema.
+Random is given as a default datastore and generates sets of the following data schema.
 
 ```json
 {
