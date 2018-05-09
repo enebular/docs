@@ -120,7 +120,6 @@ Click save to continue.
 For milkcocoa to be used locally it must be 
 served from a http server. For node.js/npm users we reccomend you use a simple npm module [http-server](https://www.npmjs.com/package/http-server) to serve your index.html locally. 
 
-
 Now your Data Source is ready to be used on an infotype see 
 [Sample infotypes](./SampleInfoTypes.md)to downoad a graph, 
 [Upload an InfoType](./UploadInfoType.md) to upload a graph to enebular, 
