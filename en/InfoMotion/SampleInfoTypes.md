@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-04-12
+lastUpdated: 2018-4-24
 ---
 
 # Sample InfoTypes 
@@ -18,8 +18,9 @@ Discription:
 	A generic line chart with x-axis data points as time and y-axis as given numerical value. 
 
 Data schema:
-```
+```json
 {
+  "id":String
   "value":Number,
   "created": UNIX timestamp
 }
@@ -44,7 +45,7 @@ Discription:
 		A generic Bar chart that presents categorical data with with heights or lengths proportional to the given values. 
 
 Data schema: 
-```
+```json
 {
   "id":String,
   "value":Number,
@@ -70,7 +71,7 @@ Discription:
 	A generic pie chart dividing slices of given values into numerical proportions. 
 	
 Data schema:
-```
+```json
 {
   "id":String,
   "value":Number,
