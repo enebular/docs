@@ -75,7 +75,7 @@ AWS IoT で今回用の設定を作成します。
 
 * アクション
     * iot:*
-* リソ20ース ARN
+* リソース ARN
     * *
 
 ![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_14.png)
