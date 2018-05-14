@@ -3,152 +3,158 @@ lastUpdated: 2018-03-28
 WIP: true
 ---
 
-# AWS Lambda へのデプロイ
+# AWS Lambda deployment
 
-フローのデプロイ先はそのままデプロイボタンを押すと、enebular が利用しているサーバーにデプロイされますが、一時的にしか動作しません。
+Deploying a flow from Enebular directly is only temporarily. 
+For constant deployment AWS lambda can be used. 
 
-このページでは、長時間稼働させるために AWS Lambda にフローをデプロイする手順を説明します。
+Deplying the flow directly from enebualr will temporarily deploy on enebulars server. 
 
-## 新規フローの作成
+To deploy for extended periods AWS lambda can be used.
 
-作成したフローを AWS Lambda にデプロイするまでの方法です。まず Lambda へデプロイするフローを作成しましょう（プロジェクトは作成済みとします）。
+## Creating a new flow
+
+First we create a new flow. 
 
 ![](https://i.gyazo.com/43daa8adfa160e0db4723a6cb62ec6aa.png)
 
-フローを作成し [Edit Flow] を押すと、Node-RED の編集画面が立ち上がります。
+Create a flow and click on [Edit Flow] to launched the Node-RED edit screen. 
 
 ![](https://i.gyazo.com/53824241d584d099aa810e6b3cbab645.png)
 
-この編集画面でデータフローを編集してフローを作成します。
+Edit the data flow on this edit screen and create a flow.
 
-## データフローの編集
+## Edit data flow
 
-データフローを作成します。動作確認のため、Lambda Request をそのまま Lambda Response に返すだけのフローを作成しましょう。
+To confirm the operation, let's create a flow that returns a Lambda Request to a Lambda Response.
 
 ![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-lambda_03.png)
 
-左のパレットでは Lambda Request は input グループに、Lambda Response は output グループにあるので、そちらを探して配置します。
+In the left palette, Lambda Request is in the input group and Lambda Response is in the output group. 
 
 ![](https://i.gyazo.com/b474a682aefc4cef62650b0e883f354c.png)
 
-右上の [Deploy] を押して保存します。
+Click on [Deploy] in the upper right of the window to save.
 
-## AWS Lambda へデプロイ
+## Deploying to AWS Lambda 
 
-保存が完了したらフローのメニューから [Deploy] ページに移動します。
+When saving is completed, go to the [Deploy] page from the flow menu.
 
 ![](https://i.gyazo.com/6d8611cac4c92473225ebfca7ded8c57.png)
 
-[Deploy] を押すとデプロイができる画面に移動します。
+Click on [Deploy] to view the deploy screen.
 
 ![](https://i.gyazo.com/88e68c4779864cf8c6f24f6262575e4b.png)
 
-Lambda を選択します。
+Select Lambda.
 
 ![](https://i.gyazo.com/edc9714f15afec8911f67f31cf7141bd.png)
 
-[New] を押すとモーダルが開きます。enebular での作業はここで一旦止めて、AWS コンソールへ移動します。
+Press [New] to open the [Create Connection] modal.
+From here we move to the AWS console to setup connection settings.
 
 ![](https://i.gyazo.com/3478881bcdb98b1319141df71eed2dd8.png)
 
-### enebular から AWS Lambda を利用するための IAM ユーザーを作成
+### Create an IAM user to use AWS Lambda from enebular
 
-enebular から AWS Lambda にアクセスするための Access Key ID、Secret Access Key を作成します。
+Create an Access Key ID, Secret Access Key for accessing AWS Lambda from enebular.
 
-AWS の IAM へアクセスします。メニューからユーザーに移動します。
+To access the AWS IAM go to User from the main menu. 
 
-![](https://i.gyazo.com/79aaba133f5999e6c0dd928de6160b1e.png)
+![](https://i.gyazo.com/a36079814c6663851f0c93b82b1ea589.png)
 
-[ユーザーを追加] からユーザー追加画面へ移動します。適当な名前をつけて、[アクセスの種類] の [プログラムによるアクセス] にチェックを入れます。
+Go to the [Add User] screen.
+Create a name and check [Programmatic access] for [Access type].
 
-![](https://i.gyazo.com/e27793a2531fdfbda175d9c49730045b.png)
+![](https://i.gyazo.com/6280a25da09312e3bbbef9bae5eedd0d.png)
 
-アクセス権限画面では、[既存のポリシーを直接アタッチ] を選択して、[AWSLambdaFullAccess] というポリシーを選択して次に進みます。
+On the access authority screen, select [Attach existing policy directly], select the policy named [AWSLambdaFullAccess] then go to [Next:Review].
 
-![](https://i.gyazo.com/4703b6374d892bffe9ae076a3f80e3ba.png)
+![](https://i.gyazo.com/913d013b1a9f32b0f6a2698e5a12ec32.png)
 
-確認画面で間違いがないか確認します。間違いがなければ [ユーザーの作成] を押します。
+Check the confirmation screen for any mistakes. Click on [Create user] if there are no mistakes. 
 
-![](https://i.gyazo.com/698db8ca97dac1ab15e2baf2e579c4b1.png)
+![](https://i.gyazo.com/f54408921e545524629b666da55fccff.png)
 
-完了したら、アクセスキー ID とシークレットアクセスキーが記載された CSV ファイルをダウンロードします（このタイミングでしかダウンロードできないので注意して下さい）。
+Once complete, download the CSV file containing the access key ID and secret access key (note that it can only be downloaded at this moment).
 
-![](https://i.gyazo.com/f5fcc974b529a26f42b360d878519f56.png)
+![](https://i.gyazo.com/7d99dbaf67c0c9faf1b9de4c50adabd9.png)
 
-### AWS Lambda が利用する ARN ロールを作成
+### Create ARN role used by AWS Lambda
 
-Lambda にデプロイされたフローが利用する ARN ロールを作成します。
+Create an ARN role for flows deployed in Lambda.
 
-AWS の IAM へアクセスします。メニューからロールへ移動します。
+To access an AWS IAM  go to [role] in menu.
 
-![](https://i.gyazo.com/fbf3fd00c52c35efa228e6d3f7bbc4f4.png)
+![](https://i.gyazo.com/b5286ed7c5c0f7a80ab4375f87c0ff2b.png)
 
-[ロールの作成] からロール作成画面へ移動します。AWS サービスの Lambda を選択して次に進みます。
+Go to [Create Role] and Select Lambda for AWS service and continue to [Next:Permissions].
 
-![](https://i.gyazo.com/2866c4068bc8ae97d82cb389c788d72d.png)
+![](https://i.gyazo.com/85435143d5fea6b3e90805de5cd4c388.png)
 
-アクセス権限では [AWSLambdaFullAccess] を選択して、次へ進みます。
+Click on [AWSLambdaFullAccess] to set up access privileges. 
 
-![](https://i.gyazo.com/9378d9962411cd94e35b2c80f4fdccd2.png)
+![](https://i.gyazo.com/e1a69b8bb472eb97011523b140856b4a.png)
 
-最後に適当な名前をつけて、[ロールの作成]で作成します。
+Finally, give it a name and click [Create role].
 
-![](https://i.gyazo.com/db850bc23be8fffdd908a01344c564da.png)
+![](https://i.gyazo.com/c6264921396b43008c6a0a87002ceaf0.png)
 
-ここまでできたら enebular に必要情報を入力します。
+Now you can enter the necessary information in enebular to create a connection.
 
-![](https://i.gyazo.com/9156cff5e218fccc78c9a3734e51cb4e.png)
+![](https://i.gyazo.com/bb59cf50a2ae8726bd03f2a4d2f8437a.png)
 
 * Connection Name
-    * 分かりやすい名前を任意で
+    * A simple name
 * AWS Access Key ID
-    * ダウンロードした CSV ファイルからコピー
+    * Copied from downloaded CSV file
 * AWS Secret Access Key
-    * ダウンロードした CSV ファイルからコピー
+    * Copied from downloaded CSV file
 * Region
-    * こだわりがなければ ap-northeast-1
+    * ap-northeast-1 (depending on your location)
 * IAM Role ARN
-    *  作成したロールの ARN を確認
-        * ![](https://i.gyazo.com/560971bd75cbdc147f990571798969c2.png)
+    *  Confirmation ARN of the created role
+        * ![](https://i.gyazo.com/a435ff36c4fd877589b9036783780d70.png)
 
-保存をすると、以下のように Lambda 関数の情報を入力するフォームが現れます。
+Once saved, a form appears in which you enter the information of the Lambda function as follows.
 
 ![](https://i.gyazo.com/d89fd1efd0a174c8b223c1367c9557e6.png)
 
 * Function Name
-    * 分かりやすい名前を任意で（ハイフンは使えません）
+    * An easy-to-understand name (hyphens can not be used)
 * Timeout
     * 60
 * Memory Size
     * 128
 
-上記の値を入力して、[Deploy] でデプロイします。
+Enter the above values ​​and click [Deploy] to deploy. 
 
 ![](https://i.gyazo.com/1cc9f0b2f920449f42f0911c31ff326d.png)
 
-ここでしばらく待ちます（1分30秒くらいはかかりますので、気長にお待ちください）。
+Please wait her for a while as it may take upto 1min 30seconds. 
 
 ![](https://i.gyazo.com/34b178154e86ccf151a88351f83db6c6.png)
 
-デプロイが完了したら、Deployment History でデプロイされたものが確認できます。
+Once deployment is complete, you can see what was deployed with Deployment History.
 
 ![](https://i.gyazo.com/f4d810f405533c474b85d3660156de3e.png)
 
+## Confirmation by AWS Lambda console
 
-## AWS Lambda コンソールにて確認
+Check the Lambda page in AWS to confirm deployment. 
+There should be a function name with a new time of deployment. 
+Try testing it by clicking on [Test].
 
-ちゃんとデプロイされているか AWS の Lambda ページにて確認してみましょう。Lambda ページに先ほどデプロイの際に入力した Function Name があるかと思いますのでクリックします。遷移したページの左上の [テスト] でテストできます。
+![](https://i.gyazo.com/32d1a956bcdc491b2357b06b95324ced.png)
 
-![](https://i.gyazo.com/abc367b41a1ef3305f1b65a1cb295801.png)
+An Event setting screen will appear click on [Create]
 
-Event の設定画面が出てきますが、そのまま右下の [作成] をクリックします。
+![](https://i.gyazo.com/531f6e2427313a76b675a23ee3e0ff12.png)
 
-![](https://i.gyazo.com/a6c80233ddb2e0fab1f2f0bd49fd18c9.png)
+At the following screen click test to start the test.
 
-以下のような画面が出てくるので右上の [テスト] でテストをします。
+![](https://i.gyazo.com/e3d0756b594c0aeb4de73568e27b2d0c.png)
 
-![](https://i.gyazo.com/2c5ed3a4ef1cfb4c92cb861f268f54db.png)
+If you can see the following screen the test was correct. 
 
-以下のような画面ができれば成功です。
-
-![](https://i.gyazo.com/5cb4e07f00b84d231120fefc2e6e4c81.png)
+![](https://i.gyazo.com/27ebe0ae26f0f7fb68380508c44f0a25.png)
