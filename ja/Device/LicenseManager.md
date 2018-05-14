@@ -6,11 +6,11 @@ lastUpdated: 2018-05-14
 
 License ManagerではAWS IoTにデプロイされたデバイスの **ログ** と  **ステータス** を監視するために必要なライセンスを購入することが出来ます。mbed対応は少々お待ちください。この機能は現在エンタープライズプランでのみのサポートです。さらに情報が必要な方は**sales@uhuru.jp**に連絡してください。
 
-enebular-agentのセッティングはスタートするための前提条件です。enebular-agentは<a href="https://github.com/enebular/enebular-runtime-agent" target="_blank">GitHub</a>からダウンロードすることが出来ます。さらなる情報は[ここ](../Deploy/DeployFlow/AWSIoT/index.md)から見つけることが出来ます。
+ライセンスマネージャーを利用する前に、enebular-agentのセットアップを済ませる必要があります。enebular-agentは<a href="https://github.com/enebular/enebular-runtime-agent" target="_blank">GitHub</a>からダウンロードすることが出来ます。セットアップは[こちら](../Deploy/DeployFlow/AWSIoT/index.md)のページを参照して行ってください。
 
 ## License Phases
 
-ライセンスには4つのステータスの種類があります。
+ライセンスには下記の4つのステータスがあります。
 
 1.  Issued
 2.  Registered
@@ -25,9 +25,9 @@ enebular-agentのセッティングはスタートするための前提条件で
 
 ## Registering a License
 
-ライセンスのステータスが **issued**になったら、デバイスに対して登録（ステータスは **register**） することが出来ます。ライセンスを登録すると監視機能が有効になります。
+ライセンスのステータスが issuedになったら、デバイスにライセンスを登録することができます。登録するとステータスはregisterとなり、監視機能が有効になります。
 
-**issued** をクリックして、ライセンスを登録します。[deploying a flow](../Deploy/index.md)と同じ要領で、AWS IoTのexampleで作成したコネクションを選択します。ライセンスを割り当てたいデバイスを選択します。enebular-agentが動作しているデバイスの場合、登録する必要はありません。 登録されると、あなたのライセンスステータスは**registered**になります。
+**issued** をクリックして、ライセンスを登録します。[deploying a flow](../Deploy/index.md)の手順で作成済みの、AWS IoTのコネクションを選択します。ライセンスを割り当てたいデバイスを選択します。enebular-agentが動作しているデバイスの場合、登録する必要はありません。 登録されると、ライセンスステータスは**registered**になります。
 
 登録時にデバイスの電源がオフの場合は、監視のアクティベーションのために電源をオンにしてください。登録時にデバイスの電源がオンの場合は、デバイスは自動的に監視のアクティベーションをオンにします。
 
@@ -37,15 +37,18 @@ enebular-agentのセッティングはスタートするための前提条件で
 
 ## Deleting a License
 
-ライセンスマネージャーから、ライセンスのステータスが **registered** になっている場合、**unsubcribe** ボタンをクリックしてライセンスの削除をすることが出来ます。ライセンスを削除すると登録したデバイスとライセンスの関係が取り除かれ監視機能が失われます。ライセンスの再登録はできません。
+ライセンスのステータスが registered のものは、unsubcribe ボタンをクリックしてライセンスの削除をすることが出来ます。ライセンスを削除すると登録したデバイスとライセンスの関係が取り除かれ監視機能が失われます。ライセンスの再登録はできません。
 
 ## Monitoring
 
-デバイスの **ログ** と **ステータス**を監視することが出来ます。 メニューの**Device List** から閲覧することが出来ます。
+デバイスの **ログ** と **ステータス**を監視することが出来ます。 
+**ログ**は、メニューの **Device List** から **View Logs** ボタンを押下することでデバイス毎に見ることが出来ます。
+**ステータス** は、**Device List** からデバイス毎に見ることが出来ます。
 
-AWS IoTを使ったケースでは、デバイスはいくつかの事柄を記録します。
+### AWS IoTの場合
+AWS IoTの場合、下記のログが記録されます。
 
-1.  Node-REDからのログ。これらは**debug**ノードからのコンソールログを含みます。**debug tab and console**のオプションにチェックをつけることを忘れないでください。
-2.  enebular-agent自身からのログ
+1.  Node-REDがコンソールに出力するログ。debugノードのログを見ること出来ます。(debugノードのプロパティから、debug tab and consoleのオプションにチェックを入れてください)
+2.  enebular-agentが出力するログ
 
 **Status** ではデバイスが **connected** か **disconnected**かを見ることが出来ます。
