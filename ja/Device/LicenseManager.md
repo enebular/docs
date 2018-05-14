@@ -48,7 +48,7 @@ License ManagerではAWS IoTにデプロイされたデバイスの **ログ** �
 ### AWS IoTの場合
 AWS IoTの場合、下記のログが記録されます。
 
-1.  Node-REDがコンソールに出力するログ。debugノードのログを見ること出来ます。(debugノードのプロパティから、debug tab and consoleのオプションにチェックを入れてください)
+1.  Node-REDがコンソールに出力するログ。**debug** ノードのログを見ること出来ます。(debugノードのプロパティから、**debug tab and console** のオプションにチェックを入れてください)
 2.  enebular-agentが出力するログ
 
 **Status** ではデバイスが **connected** か **disconnected**かを見ることが出来ます。
