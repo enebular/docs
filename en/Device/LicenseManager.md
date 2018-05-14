@@ -4,7 +4,7 @@ lastUpdated: 2018-04-11
 
 # License Manager
 
-The License Manager allows you to purchase Licenses that are required to monitor the **logs** and **status** of devices deployed to AWS IoT. mbed support will follow soon. This feature is current only supported for Enterprise Plan. Please contact **sales@uhuru.jp** for more info.
+The License Manager allows you to purchase Licenses that are required to monitor the **logs** and **status** of devices deployed to AWS IoT. This feature is current only supported for Enterprise Plan. Please contact **sales@uhuru.jp** for more info.
 
 Setting up enebular-agent is a prerequisite to getting started. The agent can be downloaded from <a href="https://github.com/enebular/enebular-runtime-agent" target="_blank">GitHub</a>. More info can be found [here](../Deploy/DeployFlow/AWSIoT/index.md).
 
@@ -33,7 +33,9 @@ If your device was turned off when registering, just turn it on to activate moni
 
 ## Reserving a License
 
-To be implemented.
+This feature is only using for installation enebular edge agent.
+On the top right, click on the Reserve button. Purchasing License is a prerequisite to reserve it.
+Once reserved, your License status will become **reserved**.
 
 ## Deleting a License
 

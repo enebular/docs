@@ -4,7 +4,7 @@ lastUpdated: 2018-05-14
 
 # License Manager
 
-License ManagerではAWS IoTにデプロイされたデバイスの **ログ** と  **ステータス** を監視するために必要なライセンスを購入することが出来ます。mbed対応は少々お待ちください。この機能は現在エンタープライズプランでのみのサポートです。さらに情報が必要な方は**sales@uhuru.jp**に連絡してください。
+License ManagerではAWS IoTにデプロイされたデバイスの **ログ** と  **ステータス** を監視するために必要なライセンスを購入することが出来ます。この機能は現在エンタープライズプランでのみのサポートです。さらに情報が必要な方は**sales@uhuru.jp**に連絡してください。
 
 ライセンスマネージャーを利用する前に、enebular-agentのセットアップを済ませる必要があります。enebular-agentは<a href="https://github.com/enebular/enebular-runtime-agent" target="_blank">GitHub</a>からダウンロードすることが出来ます。セットアップは[こちら](../Deploy/DeployFlow/AWSIoT/index.md)のページを参照して行ってください。
 
@@ -33,7 +33,9 @@ License ManagerではAWS IoTにデプロイされたデバイスの **ログ** �
 
 ## Reserving a License
 
-実装をお待ちください
+この機能はenebular edge agentのインストールをする際に使用します。
+右上部でReserve ボタンをクリックします。ライセンスの予約を行うためには、ステータスが **issued** のライセンスが存在している必要があります。
+ライセンスを予約すると、ステータスは **reserved** になります。
 
 ## Deleting a License
 
