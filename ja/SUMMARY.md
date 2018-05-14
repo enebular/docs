@@ -59,6 +59,7 @@ lastUpdated: 2018-04-16
 ## Devices
 
 * [Introduction](Device/Introduction.md)
+* [License Manager](Device/LicenseManager.md)
 
 ## Access
 
