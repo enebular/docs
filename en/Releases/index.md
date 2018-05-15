@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-04-26
+lastUpdated: 2018-05-15
 ---
 
 # enebular Release Notes {#enebular}
@@ -101,24 +101,21 @@ The recommended operating environments are as follows.
 
 # enebular edge agent Release Notes {#enebular-edge-agent}
 
-## Latest Release - 0.10.0 (Apr 27th, 2018)
+## Latest Release - 1.0.0 (May 18th, 2018)
 
-In 0.10.0 release, added `milkcocoa in` node and `milkcocoa out` node.
+In 1.0.0 release, enabled to monitor log data on enebular.
 
 ### New
 
-* A `milkcocoa in` node will trigger a flow to run.
-* A `milkcocoa out` node will send data to Milkcocoa.
+* As an enebular device management feature, it is now possible to monitor device logs.
 
 ### Fixed
 
-* When flow is deployed device isn't rebooted.
-* Fixed SSL connect bug.
-* Fixed `analog in` node's bug concerning the obtained value.
+N/A
 
 ### Changed
 
-* On `TSL2561` node, supported TSL2581(luminosity sensor) by automatic judgement.
+* Updated mbed OS to 5.8.2.
 
 ### Known Issues
 
@@ -129,11 +126,11 @@ In 0.10.0 release, added `milkcocoa in` node and `milkcocoa out` node.
 
 #### Operating System
 
-* [Mbed OS 5.6.6](https://github.com/ARMmbed/mbed-os/tree/mbed-os-5.6.6) (ARM Ltd.)
+* [Mbed OS 5.8.2](https://github.com/ARMmbed/mbed-os/tree/mbed-os-5.8.2) (ARM Ltd.)
 
 #### Hardware
 
-The following hardware is supported in enebular-edge-agent 0.9.0.
+The following hardware is supported in enebular-edge-agent 1.0.0.
 
 * [FRDM-K64F](https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/k-seriesperformancem4/k2x-usb/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F) (NXP Semiconductors N.V.) + Stag Beetle Board (Uhuru Corporation)
 
@@ -144,6 +141,7 @@ The following hardware is supported in enebular-edge-agent 0.9.0.
 
 ## Release History
 
-- [0.10.0](./enebular-edge-agent/10.0.0.md) (Apr 27th, 2018)
-- [0.9.1](./enebular-edge-agent/0.9.1.md) (Feb 28th, 2018)
-- [0.9.0](./enebular-edge-agent/0.9.0.md) (Jan 30th, 2018)
+* [1.0.0](./enebular-edge-agent/1.0.0.md) (May 18th, 2018)
+* [0.10.0](./enebular-edge-agent/10.0.0.md) (Apr 27th, 2018)
+* [0.9.1](./enebular-edge-agent/0.9.1.md) (Feb 28th, 2018)
+* [0.9.0](./enebular-edge-agent/0.9.0.md) (Jan 30th, 2018)
