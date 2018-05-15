@@ -53,7 +53,7 @@ The following settings are used for the function node.
 
 ![image](/_asset/images/InfoMotion/datasources/milkcocoa-v2/function-node.png)
 
-This script creates a random value between 0 and 10 to Milkcocoa,
+This script creates a random value between 0 and 9 to Milkcocoa,
 a country 'JP','USA' or 'CN'and a created date. 
 
 ```javascript
