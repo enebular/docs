@@ -44,10 +44,18 @@ From License Manager, if a License's status is **registered**, you can click on 
 ## Monitoring
 
 **Logs** and **Status** of the device can be monitored. It can be viewed under **Device List** from the sidebar.
+**Logs** can be viewed for each device to click **View Logs** button under **Device List**.
+**Status** can be viewed for each device under **Device List**.
 
-The device **logs** several things in AWS IoT's case.
+### enebular agent's case
 
 1.  The logs from Node-Red. This includes the console log from the **debug** node. Make sure to check the option, **debug tab and console**.
 2.  Logs from enebular-agent itself
+
+### enebular edge agent's case
+
+1. Logs from enebular-edge-agent itself
+
+## Status
 
 **Status** shows if the device is **connected** or **disconnected**.
