@@ -10,12 +10,12 @@ Enebular flow editor will be used to push data to the DataSource.
 ###Registration
 
 Register at https://mlkcca.com/. 
-Once you are registerd and logged in at dashboard click on `新しいアプリを作る)`　
+Once you are registered and logged in at dashboard click on `新しいアプリを作る)`　
 
 ![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/app-list.png) 
 
 
-Name the appplication. 
+Name the application. 
 
 ![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/name-app.png) 
 
@@ -77,7 +77,7 @@ Set the `Data Store` to "test" and `operation` to Push then click done to set th
 ![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/milkcocoa-node-settings.png) 
 
 
-Double click the inject/timestamp and set `repeat` to `interval` for every 10 seconds. 
+Double click the inject/timestamp and set `repeat` to `interval` for every 5 seconds. 
 Click done to set the node. 
 
 ![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/timestamp-node.png) 
@@ -118,7 +118,7 @@ Click save to continue.
 For milkcocoa to be used locally it must be 
 served from a http server. 
 
-For node.js/npm users we reccomend you use a simple npm module [http-server](https://www.npmjs.com/package/http-server) to serve your index.html locally. 
+For node.js users we recommend you use a simple npm module [http-server](https://www.npmjs.com/package/http-server) to serve your index.html locally. 
 
 Or simply use 
 `python -m SimpleHTTPServer 8000` in the terminal at your root directory to run the index.html.
@@ -126,6 +126,6 @@ For information on pythons SimpleHTTPServer see
 https://docs.python.org/2/library/simplehttpserver.html. 
 
 Now your Data Source is ready to be used on an infotype see 
-[Sample infotypes](./SampleInfoTypes.md)to downoad a graph, 
+[Sample infotypes](./SampleInfoTypes.md) to downoad a graph, 
 [Upload an InfoType](./UploadInfoType.md) to upload a graph to enebular, 
 and [CreateInfoMotion](/.CreateInfoMotion) to create an InfoMotion dashboard. 

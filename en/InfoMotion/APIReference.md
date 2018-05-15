@@ -49,14 +49,14 @@ is needed. There are 4 types
 - `select`
 - `bool`.
 
-An InfoType has a schmea and a default settings.
+An InfoType has a Schema and a default settings.
 
 ### text
 
 A basic key/value input setting.
 
 ```json
-* Schmea
+* Schema 
 
 {
   "type": "text",

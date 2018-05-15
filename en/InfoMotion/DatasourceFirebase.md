@@ -47,7 +47,7 @@ At the authentication screen click on SIGN-IN METHOD.
 ![](/_asset/images/InfoMotion/datasources/firebase/authentication.png) 
 
 
-Select Anonymous, turn the enebale switch on and click save. 
+Select Anonymous, turn the enable switch on and click save. 
 
 ![](/_asset/images/InfoMotion/datasources/firebase/anonymous-enable.png) 
 
@@ -68,7 +68,7 @@ Click get started on Realtime Database.
 ![](/_asset/images/InfoMotion/datasources/firebase/database.png) 
 
 
-Select "Start in test mode" (This allows anyone to read or write to the database). Click enebale to continue. 
+Select "Start in test mode" (This allows anyone to read or write to the database). Click enable to continue. 
 
 ![](/_asset/images/InfoMotion/datasources/firebase/database-security.png) 
 

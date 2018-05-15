@@ -10,11 +10,11 @@ Enebular flow editor will be used to push data to the DataSource.
 ###Registration
 
 Register at https://www.pubnub.com/.
-Once you are registerd and logged in at the main dashboard click on create a new app. 
+Once you are registered and logged in at the main dashboard click on create a new app. 
 
 ![](/_asset/images/InfoMotion/datasources/pubnub/pubnub-app-list.png) 
 
-Create the appplication. 
+Create the application. 
 
 ![](/_asset/images/InfoMotion/datasources/pubnub/create-app.png) 
 
@@ -134,6 +134,6 @@ Leave count to 100 for now then click save to continue.
 
 
 Now your Data Source is ready to be used on an infotype see 
-[Sample infotypes](./SampleInfoTypes.md)to downoad a graph, 
+[Sample infotypes](./SampleInfoTypes.md) to downoad a graph, 
 [Upload an InfoType](./UploadInfoType.md) to upload a graph to enebular, 
 and [CreateInfoMotion](/.CreateInfoMotion) to create an InfoMotion dashboard. 
