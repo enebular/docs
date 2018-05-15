@@ -49,18 +49,18 @@ is needed. There are 4 types
 - `select`
 - `bool`.
 
-An InfoType has a schmea and a default settings.
+An InfoType has a Schema and a default settings.
 
 ### text
 
 A basic key/value input setting.
 
-```
-* Schmea
+```json
+* Schema 
 
 {
-  type: "text",
-  name: "tag"
+  "type": "text",
+  "name": "tag"
 }
 
 * Default
@@ -75,24 +75,24 @@ A basic key/value input setting.
 
 A list of key/value input settings.
 
-```
+```json
 * Schema
 {
-  type: "list",
-  name: "list-of-tags",
-  help: "Set name of each tag",
-  children: [{
-    type: "text",
-    name: "tag"
+  "type": "list",
+  "name": "list-of-tags",
+  "help": "Set name of each tag",
+  "children": [{
+    "type": "text",
+    "name": "tag"
   }]
 }
 
 * Default
 {
   "list-of-tags":[
-    {tag:"tag1"},
-    {tag:"tag2"},
-    {tag:"tag3"}
+    {"tag":"tag1"},
+    {"tag":"tag2"},
+    {"tag":"tag3"}
   ]
 }
 ```
@@ -103,13 +103,13 @@ A list of key/value input settings.
 
 A select option setting.
 
-```
+```json
 * Schema
 {
-  type: "select",
-  name: "mode",
-  help: "please select a mode",
-  options: ["mode1", "mode2"]
+  "type": "select",
+  "name": "mode",
+  "help": "please select a mode",
+  "options": ["mode1", "mode2"]
 }
 
 * Default
@@ -124,12 +124,12 @@ A select option setting.
 
 An on/off switch.
 
-```
+```json
 * Schema
 {
-  type : "bool",
-  name : "switch",
-  help : "turning on will display something"
+  "type" : "bool",
+  "name" : "switch",
+  "help" : "turning on will display something"
 }
 
 * Default
