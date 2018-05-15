@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2017-01-30
+lastUpdated: 2017-05-15
 ---
 
 # Deploying to AWS IoT
@@ -214,6 +214,12 @@ Update the example's `config.json` file with the connection details (including t
   "topic": "aws/things/<THING NAME>/shadow/update"
 }
 ```
+* `<THING CERT>` ･･･ `xxxxxx-certificate.pem.crt`
+* `<THING PRIVATE KEY>` … `xxxxxx-private.pem.key`
+
+You can confirm `<THING SHADOW REST API ENDPOINT>`, `<THING NAME>` in the "Interact" section of the thing menu AWS IoT.
+(refer to the image below)
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_36.png)
 
 ### Running
 
