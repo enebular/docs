@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2017-05-14
+lastUpdated: 2017-05-15
 ---
 
 # AWS IoT へのデプロイ
@@ -215,6 +215,13 @@ npm install
   "topic": "aws/things/<THING NAME>/shadow/update"
 }
 ```
+* `<THING CERT>` ･･･ `xxxxxx-certificate.pem.crt`
+* `<THING PRIVATE KEY>` … `xxxxxx-private.pem.key`
+
+`<THING SHADOW REST API ENDPOINT>`, `<THING NAME>` はモノのメニューの**操作**より確認できます。(下記画像参照)
+
+![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_36.png)
+
 
 ### 実行
 
