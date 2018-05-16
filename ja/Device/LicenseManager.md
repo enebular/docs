@@ -1,16 +1,16 @@
 ---
-lastUpdated: 2018-04-11
+lastUpdated: 2018-05-16
 ---
 
 # License Manager
 
-The License Manager allows you to purchase Licenses that are required to monitor the **logs** and **status** of devices deployed to AWS IoT. mbed support will follow soon. This feature is current only supported for Enterprise Plan. Please contact **sales@uhuru.jp** for more info.
+License ManagerではAWS IoTにデプロイされたデバイスの **ログ** と  **ステータス** を監視するために必要なライセンスを購入することが出来ます。この機能は現在エンタープライズプランでのみのサポートです。さらに情報が必要な方は **support@enebular.com** に連絡してください。
 
-Setting up enebular-agent is a prerequisite to getting started. The agent can be downloaded from <a href="https://github.com/enebular/enebular-runtime-agent" target="_blank">GitHub</a>. More info can be found [here](../Deploy/DeployFlow/AWSIoT/index.md).
+ライセンスマネージャーを利用する前に、enebular-agentのセットアップを済ませる必要があります。enebular-agentは<a href="https://github.com/enebular/enebular-runtime-agent" target="_blank">GitHub</a>からダウンロードすることが出来ます。セットアップは[こちら](../Deploy/DeployFlow/AWSIoT/index.md)のページを参照して行ってください。
 
 ## License Phases
 
-A License has 4 types of status.
+ライセンスには下記の4つのステータスがあります。
 
 1.  Issued
 2.  Registered
@@ -19,33 +19,35 @@ A License has 4 types of status.
 
 ## Issuing a License
 
-On the top right, click on the Purchase button. Currently you can only select Device Monitoring for the License Type. 1 License can only be used with 1 device, so if you want to monitor 4 devices, choose 4 Licenses.
+右上部で、Purchase ボタンをクリックします。現状、ライセンスタイプとして選択できるのはDevice Monitoringのみです。1つのライセンスは1つのデバイスに対してのみ使用することが出来ます。そのため4台のデバイスを監視したい場合は、4ライセンスを選択する必要があります。
 
-Once you have purchased a License you will receive a License key. The status of the License will be **issued**.
+ライセンスを入手したら、ライセンスキーを入手することが出来ます。ステータスは **issued** になります。
 
 ## Registering a License
 
-When the status of a License is **issued**, you can **register** it to a Device. Registering a License activates the monitoring capabilities.
+ステータスが **issued** になったら、デバイスにライセンスを登録することができます。登録するとステータスは **register** となり、監視機能が有効になります。
 
-Click on an **issued** License, to register a License. Similar to [deploying a flow](../Deploy/index.md), you choose a connection you created from for example AWS IoT. Select a device to register the License. Your device with enebular-agent running does not have to be turned on to register. Once registered, your License status will become **registered**.
+**issued** をクリックして、ライセンスを登録します。[deploying a flow](../Deploy/index.md)の手順で作成済みの、AWS IoTのコネクションを選択します。ライセンスを割り当てたいデバイスを選択します。enebular-agentが動作しているデバイスの場合、登録する必要はありません。 登録されると、ステータスは**registered**になります。
 
-If your device was turned off when registering, just turn it on to activate monitoring. If your device was turned on when registering, your device will automatically activate monitoring.
+登録時にデバイスの電源がオフの場合は、監視のアクティベーションのために電源をオンにしてください。登録時にデバイスの電源がオンの場合は、デバイスは自動的に監視のアクティベーションをオンにします。
 
 ## Reserving a License
 
-To be implemented.
+こちらは実装予定の有償機能になります。しばらくお待ちください。
 
 ## Deleting a License
 
-From License Manager, if a License's status is **registered**, you can click on the **unsubcribe** button to delete the License. When you delete a License the License's relationship with the device you registered to is removed, which means you lose monitoring capabilities. It is not possible to re-register a License.
+ステータスが registered のものは、unsubcribe ボタンをクリックしてライセンスの削除をすることが出来ます。ライセンスを削除すると登録したデバイスとライセンスの関係が取り除かれ監視機能が失われます。ライセンスの再登録はできません。
 
 ## Monitoring
 
-**Logs** and **Status** of the device can be monitored. It can be viewed under **Device List** from the sidebar.
+デバイスの **ログ** と **ステータス**を監視することが出来ます。 メニューの**Device List** から閲覧することが出来ます。
 
-The device **logs** several things in AWS IoT's case.
+AWS IoTを使ったケースでは、デバイスは下記のようなログを記録します。
 
-1.  The logs from Node-Red. This includes the console log from the **debug** node. Make sure to check the option, **debug tab and console**.
-2.  Logs from enebular-agent itself
+1.  Node-REDがコンソールに出力するログ。**debug**ノードのログを見ること出来ます。(**debug**ノードのプロパティから、**debug tab and console**のオプションにチェックを入れてください)
+2.  enebular-agentが出力するログ
 
-**Status** shows if the device is **connected** or **disconnected**.
+## Status
+
+**Status** ではデバイスが **connected** か **disconnected**かを見ることが出来ます。
