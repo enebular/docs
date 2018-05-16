@@ -1,10 +1,10 @@
 ---
-lastUpdated: 2018-04-11
+lastUpdated: 2018-05-16
 ---
 
 # License Manager
 
-The License Manager allows you to purchase Licenses that are required to monitor the **logs** and **status** of devices deployed to AWS IoT. This feature is current only supported for Enterprise Plan. Please contact **sales@uhuru.jp** for more info.
+The License Manager allows you to purchase Licenses that are required to monitor the **logs** and **status** of devices deployed to AWS IoT. This feature is current only supported for Enterprise Plan. Please contact **support@enebular.com** for more info.
 
 Setting up enebular-agent is a prerequisite to getting started. The agent can be downloaded from <a href="https://github.com/enebular/enebular-runtime-agent" target="_blank">GitHub</a>. More info can be found [here](../Deploy/DeployFlow/AWSIoT/index.md).
 
@@ -33,9 +33,7 @@ If your device was turned off when registering, just turn it on to activate moni
 
 ## Reserving a License
 
-This feature is only using for installation enebular edge agent.
-On the top right, click on the Reserve button. Purchasing License is a prerequisite to reserve it.
-Once reserved, your License status will become **reserved**.
+To be implemented.
 
 ## Deleting a License
 
@@ -44,18 +42,10 @@ From License Manager, if a License's status is **registered**, you can click on 
 ## Monitoring
 
 **Logs** and **Status** of the device can be monitored. It can be viewed under **Device List** from the sidebar.
-**Logs** can be viewed for each device to click **View Logs** button under **Device List**.
-**Status** can be viewed for each device under **Device List**.
 
-### enebular agent's case
+The device **logs** several things in AWS IoT's case.
 
 1.  The logs from Node-Red. This includes the console log from the **debug** node. Make sure to check the option, **debug tab and console**.
 2.  Logs from enebular-agent itself
-
-### enebular edge agent's case
-
-1. Logs from enebular-edge-agent itself
-
-## Status
 
 **Status** shows if the device is **connected** or **disconnected**.

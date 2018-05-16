@@ -1,10 +1,10 @@
 ---
-lastUpdated: 2018-05-14
+lastUpdated: 2018-05-16
 ---
 
 # License Manager
 
-License ManagerではAWS IoTにデプロイされたデバイスの **ログ** と  **ステータス** を監視するために必要なライセンスを購入することが出来ます。この機能は現在エンタープライズプランでのみのサポートです。さらに情報が必要な方は**sales@uhuru.jp**に連絡してください。
+License ManagerではAWS IoTにデプロイされたデバイスの **ログ** と  **ステータス** を監視するために必要なライセンスを購入することが出来ます。この機能は現在エンタープライズプランでのみのサポートです。さらに情報が必要な方は **support@enebular.com** に連絡してください。
 
 ライセンスマネージャーを利用する前に、enebular-agentのセットアップを済ませる必要があります。enebular-agentは<a href="https://github.com/enebular/enebular-runtime-agent" target="_blank">GitHub</a>からダウンロードすることが出来ます。セットアップは[こちら](../Deploy/DeployFlow/AWSIoT/index.md)のページを参照して行ってください。
 
@@ -33,9 +33,7 @@ License ManagerではAWS IoTにデプロイされたデバイスの **ログ** �
 
 ## Reserving a License
 
-この機能はenebular edge agentのインストールをする際に使用します。
-右上部でReserve ボタンをクリックします。ライセンスの予約を行うためには、ステータスが **issued** のライセンスが存在している必要があります。
-ライセンスを予約すると、ステータスは **reserved** になります。
+こちらは実装予定の有償機能になります。しばらくお待ちください。
 
 ## Deleting a License
 
@@ -43,20 +41,12 @@ License ManagerではAWS IoTにデプロイされたデバイスの **ログ** �
 
 ## Monitoring
 
-デバイスの **ログ** と **ステータス**を監視することが出来ます。 
-**ログ**は、メニューの **Device List** から **View Logs** ボタンを押下することでデバイス毎に見ることが出来ます。
-**ステータス** は、**Device List** からデバイス毎に見ることが出来ます。
+デバイスの **ログ** と **ステータス**を監視することが出来ます。 メニューの**Device List** から閲覧することが出来ます。
 
-### enebular agentの場合
-使用しているデバイスが enebular agent の場合、下記のログが記録されます。
+AWS IoTを使ったケースでは、デバイスはいくつかの事柄を記録します。
 
-1.  Node-REDがコンソールに出力するログ。**debug** ノードのログを見ること出来ます。(debugノードのプロパティから、**debug tab and console** のオプションにチェックを入れてください)
-2.  enebular agentが出力するログ
-
-### enebular edge agentの場合
-使用しているデバイスが enebular edge agent の場合、下記のログが記録されます。
-
-1.  enebular edge agentが出力するログ
+1.  Node-REDがコンソールに出力するログ。**debug**ノードのログを見ること出来ます。(**debug**ノードのプロパティから、**debug tab and console**のオプションにチェックを入れてください)
+2.  enebular-agentが出力するログ
 
 ## Status
 
