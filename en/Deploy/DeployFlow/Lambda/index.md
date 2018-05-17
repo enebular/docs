@@ -24,6 +24,8 @@ Edit the data flow on this edit screen and create a flow.
 
 To confirm the operation, create a flow that returns a Lambda Request to a Lambda Response.
 
+![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-lambda_03.png)
+
 In the left palette, Lambda Request is in the input group and Lambda Response is in the output group. 
 
 ![](https://i.gyazo.com/b474a682aefc4cef62650b0e883f354c.png)
