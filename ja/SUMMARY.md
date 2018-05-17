@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-04-16
+lastUpdated: 2018-05-15
 ---
 
 # Summary
@@ -14,6 +14,8 @@ lastUpdated: 2018-04-16
   * [enebular agent](Releases/index.md#enebular-agent)
     * [2.0.0](Releases/enebular-agent/2.0.0.md)
   * [enebular edge agent](Releases/index.md#enebular-edge-agent)
+    * [1.0.0](Releases/enebular-edge-agent/1.0.0.md)
+    * [0.10.0](Releases/enebular-edge-agent/0.10.0.md)
     * [0.9.1](Releases/enebular-edge-agent/0.9.1.md)
     * [0.9.0](Releases/enebular-edge-agent/0.9.0.md)
 * [Getting Started](GetStarted/index.md)
@@ -42,6 +44,7 @@ lastUpdated: 2018-04-16
 * [DataSource](InfoMotion/CreateDataSource.md)
   * [Data Source Schema](InfoMotion/DataSourceSchema.md)
   * [Milkcocoa-v3](InfoMotion/DatasourceMilkcocoa-v3.md)
+  * [Milkcocoa-v2](InfoMotion/DatasourceMilkcocoa-v2.md)
   * [Firebase](InfoMotion/DatasourceFirebase.md)
   * [Pubnub](InfoMotion/DatasourcePubnub.md)
   * [API Gateway](InfoMotion/DataSourceAPIGateway.md)
@@ -59,6 +62,7 @@ lastUpdated: 2018-04-16
 ## Devices
 
 * [Introduction](Device/Introduction.md)
+* [License Manager](Device/LicenseManager.md)
 
 ## Access
 

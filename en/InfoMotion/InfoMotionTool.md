@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-03-29
+lastUpdated: 2018-04-13
 ---
 
 # InfoMotion Tool
@@ -22,7 +22,9 @@ npm install @uhuru/enebular-infomotion-tool-v2 -g
 If a permission error occur the following solutions may solve it. 
 
 1) Give permission to current user to global node_modules in /usr/local/lib/ node_modules. Once persmission given retry global install. 
+
 MacOSX: https://support.apple.com/kb/PH25287?locale=en_US 
+
 Windows: https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754344(v=ws.11) 
 
 2) Install nvm to handle node and npm installations. (recommended) 
@@ -66,8 +68,9 @@ for local browser tests.
 
 The adapter types are
 
-- `milkcocoa`
-- `pubnnub`
+- `milkcocoa` (v2) (v3 coming soon)
+- `pubnub`
+- `firebase`
 - `apigateway`
 - `random`
 - `mock`
@@ -113,6 +116,30 @@ Replace the specified values with your app details.
 }
 ```
 
+#### Firebase adaptor 
+
+Using [Firebase](https://firebase.google.com/) as a datasource.
+Replace the specified values with your app details.
+
+```json
+{
+  "adapter": "firebase",
+  "firebase": {
+    "apiKey": "YOUR_API_KEY",
+    "authDomain": "YOUR_AUTH_DOMAIN",
+    "databaseURL": "YOUR_DATABASE_URL",
+    "projectId": "YOUR_PROJECT_ID",
+    "storageBucket": "YOUR_STOREAGE_BUCKET",
+    "messagingSenderId": "YOUR_MESSAGE_SENDER_ID"
+  },
+    "limit": 100,
+    "ref": '/test',
+    "title": "firebase",
+    "name": "firebase"
+}
+```
+
+
 ### API Gateway Adaptor
 
 Using [AWS API Gateway](https://aws.amazon.com/) as a datasource.
@@ -131,7 +158,7 @@ Replace the specified values with your app details.
 
 #### Random adaptor
 
-Random is give as a default datastore and generates sets of the following data schema.
+Random is given as a default datastore and generates sets of the following data schema.
 
 ```json
 {
@@ -190,11 +217,11 @@ The plugin.json is created to supply the InfoMotion with sample data to preview 
   "sampleData": [
     {
       "country": "JP",
-      "v": 1
+      "value": 1
     },
     {
       "country": "CN",
-      "v": 2
+      "value": 2
     }
   ]
 }
@@ -211,7 +238,6 @@ Here are available templates.
 eit create [graph name] -t barchart
 eit create [graph name] -t linechart
 eit create [graph name] -t piechart
-eit create [graph name] -t map
 ```
 
 ## Packaging

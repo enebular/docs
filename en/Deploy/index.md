@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-03-28
+lastUpdated: 2018-05-14
 ---
 
 # About Deploying
@@ -26,6 +26,21 @@ As mentioned in the [Introduction](../INDEX.md), when doing a deploy there are t
 For cloud services that deploy to edge devices like AWS IoT and mbed Cloud, the edge device is the **device** and the cloud service is the **device master**.
 
 If the execution environment exists in the cloud as with Heroku and AWS Lambda, then the cloud service takes on both the **device** and **device master** roles.
+
+## Flow size able to deploy
+#### Edge
+
+| Target | Maximum Size |
+| --- | --- |
+| mbed Cloud | 3kB |
+| AWS IoT | 100kB |
+
+#### Cloud
+
+| Target | Maximum Size |
+| --- | --- |
+| Heroku | 100kB |
+| AWS Lambda | 100kB |
 
 The actual methods of deploying are as follows.
 

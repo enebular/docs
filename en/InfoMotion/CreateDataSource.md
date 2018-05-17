@@ -18,7 +18,7 @@ In enebular, you can create & edit DataSource.
 Available datasources for InfoMotion:
 `Milkcocoa-v2`,`Milkcocoa-v3`, `Pubnub`, `Firebase`, `API Gateway`.
 
-## Milkcocoa
+## Milkcocoa-v2
 
 See [Sample Flow](../Flow/FlowExampleMilkcocoa.md) to get started with a simple data flow with Milkcocoa or see https://mlkcca.com/ to get started with milkcocoa. 
 
