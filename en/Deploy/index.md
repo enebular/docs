@@ -27,15 +27,17 @@ For cloud services that deploy to edge devices like AWS IoT and mbed Cloud, the 
 
 If the execution environment exists in the cloud as with Heroku and AWS Lambda, then the cloud service takes on both the **device** and **device master** roles.
 
-## Flow size able to deploy
-#### Edge
+### Flow size able to deploy
 
-| Target | Maximum Size |
-| --- | --- |
-| mbed Cloud | 3kB |
-| AWS IoT | 100kB |
+### enebular-edge-agent
 
-#### Cloud
+Maximum Size : 3kB
+
+### enebular-agent
+
+Maximum Size : 100kB
+
+### cloud service
 
 | Target | Maximum Size |
 | --- | --- |
