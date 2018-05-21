@@ -6,7 +6,7 @@ lastUpdated: 2018-05-15
 
 * [Release Notes](Releases/index.md)
   * [enebular](Releases/index.md#enebular)
-  * [2.2.0](Releases/enebular/2.2.0.md)
+    * [2.2.0](Releases/enebular/2.2.0.md)
     * [2.1.2](Releases/enebular/2.1.2.md)
     * [2.1.1](Releases/enebular/2.1.1.md)
     * [2.1.0](Releases/enebular/2.1.0.md)
