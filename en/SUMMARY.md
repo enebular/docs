@@ -6,6 +6,7 @@ lastUpdated: 2018-05-15
 
 * [Release Notes](Releases/index.md)
   * [enebular](Releases/index.md#enebular)
+  * [2.2.0](Releases/enebular/2.2.0.md)
     * [2.1.2](Releases/enebular/2.1.2.md)
     * [2.1.1](Releases/enebular/2.1.1.md)
     * [2.1.0](Releases/enebular/2.1.0.md)
@@ -42,8 +43,8 @@ lastUpdated: 2018-05-15
   * [Sample InfoTypes](InfoMotion/SampleInfoTypes.md)
   * [API Reference](InfoMotion/APIReference.md)
 * [DataSource](InfoMotion/CreateDataSource.md)
-  * [Data Source Schema](InfoMotion/DataSourceSchema.md) 
-  * [Milkcocoa-v2](InfoMotion/DatasourceMilkcocoa-v2.md) 
+  * [Data Source Schema](InfoMotion/DataSourceSchema.md)
+  * [Milkcocoa-v2](InfoMotion/DatasourceMilkcocoa-v2.md)
   * [Firebase](InfoMotion/DatasourceFirebase.md)
   * [Pubnub](InfoMotion/DatasourcePubnub.md)
   * [API Gateway](InfoMotion/DataSourceAPIGateway.md)

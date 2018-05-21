@@ -4,28 +4,29 @@ lastUpdated: 2018-05-15
 
 # enebular Release Notes {#enebular}
 
-## 2.1.2 (April 16th, 2018)
+# 2.2.0 (May 23rd, 2018)
 
-### New
+## New
 
-- Added descriptions on enebular paid functions to the enebular document.(English only)
-- Added a message page to show when the enebular service is down.
-- Added a description in the enebular document that credit card information is necessary when the flow is deployed to heroku.
-- Added the link to enebular blog to the top page navigation bar. 
+* InfoMotion now supports two more new data source types: Pubnub and Firebase.
+* The instructions to "deploy to Lambda" are now included to our English manual.
+* Added descriptions for the paid features in our Japanese manual.
+* The internal database management system is now made redundant for an improved reliability.
+* Paid enebular edge agents are now automatically activated when they are connected through Mbed cloud.
+* Flows are shown graphically on enebular when they are saved to its temporary space.
+* Added "asset search bar" to the dashboard of enebular.
+* Logs from enebular edge agent can now be displayed on enebular.
 
-### Fixed
+## Fixed
 
-- Fixed an issue which caused mismatch between the numbers shown on Infomotion graphs and the numbers shown on the Milkcocoa InfoType data store.
-- Deleted the link to the non-existent "About" page.
-- Eliminated the ambiguity in the error message which is shown when one attempts to deploy flows to heroku using wrong token.
-- Eliminated inconsistencies in the use of the words for "Sign in" and "Log in"
+* All the screenshots in our English manual were captured from Japanese version of the enebular dashboard, and we have replaced them all with the ones from the English version.
+* Flows are shown graphically on enebular when they are saved to its temporary space.
 
-### Known Issues
+## Known Issues
 
-- InfoMotion-embedded pages fail to show graphs when the browser which opens them is not logged into enebular.
+* Opening the flow editor from a web browser shows Japanese texts even if the browser is configured to show English.
 
-## Release History
-
+- [2.2.0](./enebular/2.2.0.md) (May 23rd, 2018)
 - [2.1.2](./enebular/2.1.2.md) (April 16th, 2018)
 - [2.1.1](./enebular/2.1.1.md) (April 3rd, 2018)
 - [2.1.0](./enebular/2.1.0.md) (March 30th, 2018)
