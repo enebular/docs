@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-05-16
+lastUpdated: 2018-05-22
 ---
 
 # License Manager
