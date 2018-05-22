@@ -10,13 +10,14 @@ Device Listでは[License Manager](./LicenseManager.md)でライセンスを割�
 
 ![select_connection_type](../_asset/images/Devices/device_list-select_connection-001.png)
 
-閲覧したいデバイスが含まれるコネクションをAWS IoT または MBED から選択します。
+閲覧したいデバイスが含まれるコネクションを AWS IoT または MBED から選択します。
 
 ## Select Connection
 
 ![select_connection](../_asset/images/Devices/device_list-select_connection-002.png)
 
 登録済みのコネクションを選択します。
+コネクションが登録済みでない場合、 New を押下してコネクションを作成してください。
 
 ## Device ID
 
@@ -40,8 +41,8 @@ Device Listでは[License Manager](./LicenseManager.md)でライセンスを割�
 
 ![monitoring](../_asset/images/Devices/device_list-toggle.png)
 
-トグルをオン(緑色)にすることでデバイスの **ステータス** と **ログ** の通知が有効になります。
-トグルがオフ(灰色)になっている場合 **ステータス** と **ログ** の通知が無効になります。無効になっている場合、 **ステータス** は **disconnected** になり、デバイスからの **ログ** の送信が停止します。
+トグルをオン(緑色)にすることモニタリングが有効になり、デバイスの **ステータス** と **ログ** を見ることが出来ます。
+トグルがオフ(灰色)になっている場合、モニタリングが無効になります。 **ステータス** は **disconnected** になり、デバイスからの新しい **ログ** が見れなくなります。既に送られたログは見ることが出来ます。
 
 ## Logs
 
