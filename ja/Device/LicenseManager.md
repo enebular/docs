@@ -38,16 +38,3 @@ License ManagerではAWS IoTにデプロイされたデバイスの **ログ** �
 ## Deleting a License
 
 ステータスが registered のものは、unsubcribe ボタンをクリックしてライセンスの削除をすることが出来ます。ライセンスを削除すると登録したデバイスとライセンスの関係が取り除かれ監視機能が失われます。ライセンスの再登録はできません。
-
-## Monitoring
-
-デバイスの **ログ** と **ステータス**を監視することが出来ます。 メニューの**Device List** から閲覧することが出来ます。
-
-AWS IoTを使ったケースでは、デバイスは下記のようなログを記録します。
-
-1.  Node-REDがコンソールに出力するログ。**debug**ノードのログを見ること出来ます。(**debug**ノードのプロパティから、**debug tab and console**のオプションにチェックを入れてください)
-2.  enebular-agentが出力するログ
-
-## Status
-
-**Status** ではデバイスが **connected** か **disconnected**かを見ることが出来ます。
