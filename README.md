@@ -24,3 +24,10 @@ $ gitbook serve
 - Setting Credential Definition
 - Setting Credentials
 - Upload Asset(upload a file using from flow)
+
+# Capture
+
+## Size
+
+* Resolution 2,560 x 1,600
+* Window size 1,440 x 900
