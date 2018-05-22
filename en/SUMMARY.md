@@ -24,7 +24,6 @@ lastUpdated: 2018-05-15
 
 * [About Projects](Project/index.md)
 * [Project Settings](Project/Settings.md)
-* [Billing Information](Project/Billing.md)
 
 ## Flows
 
@@ -75,6 +74,9 @@ lastUpdated: 2018-05-15
 
 * [Account Settings](Account/index.md)
 
+## Billing
+
+* [Billing Information](Billing/Information.md)
 ## Appendix
 
 * [Supported Environments](Other/Support.md)
