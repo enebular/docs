@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-05-15
+lastUpdated: 2018-05-23
 ---
 
 # enebular Release Notes {#enebular}
@@ -9,7 +9,7 @@ lastUpdated: 2018-05-15
 ### New
 
 * InfoMotion now supports two more new data source types: Pubnub and Firebase.
-* The instructions to "deploy to Lambda" are now included to our English manual.
+* "deploy to Lambda" instructions are included to the English manual.
 * Added descriptions for the paid features in our Japanese manual.
 * The internal database management system is now made redundant for an improved reliability.
 * Paid enebular edge agents are now automatically activated when they are connected through Mbed cloud.
@@ -19,12 +19,13 @@ lastUpdated: 2018-05-15
 
 ### Fixed
 
-* All the screenshots in our English manual were captured from Japanese version of the enebular dashboard, and we have replaced them all with the ones from the English version.
+* English documentation of Enebular Dashboard now contains screen shots in English (Previously displaying screen shots in Japanese).
 * Flows are shown graphically on enebular when they are saved to its temporary space.
 
 ### Known Issues
 
 * Opening the flow editor from a web browser shows Japanese texts even if the browser is configured to show English.
+* InfoMotion-embedded pages fail to show graphs when the browser which opens them is not logged into enebular.
 
 - [2.2.0](./enebular/2.2.0.md) (May 23rd, 2018)
 - [2.1.2](./enebular/2.1.2.md) (April 16th, 2018)

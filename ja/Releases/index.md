@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-05-15
+lastUpdated: 2018-05-23
 ---
 
 # enebular Release Notes {#enebular}
@@ -25,6 +25,7 @@ lastUpdated: 2018-05-15
 ### Known Issues
 
 * 言語設定を英語にしたブラウザでフローエディタを開いても、一部ノードの説明文が日本語で表示されます。
+* InfoMotionを埋め込んだ静的ページを、enebularにログインしていないブラウザで開こうとするとグラフが表示されない。
 
 ### Release History
 
