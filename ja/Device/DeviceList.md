@@ -21,7 +21,7 @@ Device Listでは[License Manager](./LicenseManager.md)でライセンスを割�
 コネクションが登録済みでない場合、 New を押下してコネクションを作成してください。
 コネクションの作成方法については、作成したいコネクションにあわせて [Example: AWS IoT](../Deploy/DeployFlow/AWSIoT/index.md) または [Example: mbed Cloud](../Deploy/DeployFlow/mbed/index.md) を参照してください。
 
-## Devis List
+## Device List
 
 ![device_list](../_asset/images/Devices/device_list-device_list.png)
 
