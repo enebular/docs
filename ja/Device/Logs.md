@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-05-22
+lastUpdated: 2018-05-23
 ---
 
 # Logs
@@ -62,6 +62,7 @@ enebular edge agent は動作ログ及びエラーログをenebularに送信し�
 ### ログ画面の見方
 
 enebular edge agent のログ画面の例です。
+
 ![device_logs](/_asset/images/Device/Logs/eea_logs.png)
 
 1. ログ
@@ -76,6 +77,7 @@ enebular edge agent の動作ログ及びエラーログです。
 さらに情報が必要な方は **support@enebular.com** に連絡してください。
 
 #### 動作ログ
+
 | ログ | 説明 |
 | :--- | :--- |
 | main start | enebular edge agent の起動 |
