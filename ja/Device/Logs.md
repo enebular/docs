@@ -28,9 +28,11 @@ enebular agent はコンソール( stdout / err )に出力したログを enebul
 ### Node-RED のログ
 
 Node-RED が出力するログは Node-RED の設定やノードの設定に依存します。
+詳しくは[Node-REDのドキュメント](https://nodered.org/)をご覧ください。
+
 もし、 Debug ノードのログ出力をしたい場合は、Debug ノードを `debug tab and console` の設定にすることで、コンソールへの出力が有効になります。
 
-詳しくは[Node-REDのドキュメント](https://nodered.org/)をご覧ください。
+![view_logs](/_asset/images/Device/Logs/debug_node_config.png)
 
 ### ログ画面の見方
 
