@@ -1,10 +1,10 @@
 ---
-lastUpdated: 2018-05-16
+lastUpdated: 2018-05-22
 ---
 
 # License Manager
 
-License ManagerではAWS IoTにデプロイされたデバイスの **ログ** と  **ステータス** を監視するために必要なライセンスを購入することが出来ます。この機能は現在エンタープライズプランでのみのサポートです。さらに情報が必要な方は **support@enebular.com** に連絡してください。
+License ManagerではAWS IoTにデプロイされたデバイスの **ステータス** と **ログ** を監視するために必要なライセンスを購入することが出来ます。この機能は現在エンタープライズプランでのみのサポートです。さらに情報が必要な方は **support@enebular.com** に連絡してください。
 
 ライセンスマネージャーを利用する前に、enebular-agentのセットアップを済ませる必要があります。enebular-agentは<a href="https://github.com/enebular/enebular-runtime-agent" target="_blank">GitHub</a>からダウンロードすることが出来ます。セットアップは[こちら](../Deploy/DeployFlow/AWSIoT/index.md)のページを参照して行ってください。
 
@@ -38,16 +38,3 @@ License ManagerではAWS IoTにデプロイされたデバイスの **ログ** �
 ## Deleting a License
 
 ステータスが registered のものは、unsubcribe ボタンをクリックしてライセンスの削除をすることが出来ます。ライセンスを削除すると登録したデバイスとライセンスの関係が取り除かれ監視機能が失われます。ライセンスの再登録はできません。
-
-## Monitoring
-
-デバイスの **ログ** と **ステータス**を監視することが出来ます。 メニューの**Device List** から閲覧することが出来ます。
-
-AWS IoTを使ったケースでは、デバイスは下記のようなログを記録します。
-
-1.  Node-REDがコンソールに出力するログ。**debug**ノードのログを見ること出来ます。(**debug**ノードのプロパティから、**debug tab and console**のオプションにチェックを入れてください)
-2.  enebular-agentが出力するログ
-
-## Status
-
-**Status** ではデバイスが **connected** か **disconnected**かを見ることが出来ます。
