@@ -1,31 +1,33 @@
 ---
-lastUpdated: 2018-04-16
+lastUpdated: 2018-05-23
 ---
 
 # enebular Release Notes {#enebular}
 
-## 2.1.2 (April 16th, 2018)
+## 2.2.0 (May 23rd, 2018)
 
 ### New
 
-- Added descriptions on enebular paid functions to the enebular document.(English only)
-- Added a message page to show when the enebular service is down.
-- Added a description in the enebular document that credit card information is necessary when the flow is deployed to heroku.
-- Added the link to enebular blog to the top page navigation bar. 
+* InfoMotion now supports two more new data source types: Pubnub and Firebase.
+* "deploy to Lambda" instructions are included to the English manual.
+* Added descriptions for the paid features in our Japanese manual.
+* The internal database management system is now made redundant for an improved reliability.
+* Paid enebular edge agents are now automatically activated when they are connected through Mbed cloud.
+* Flows are shown graphically on enebular when they are saved to its temporary space.
+* Added "asset search bar" to the dashboard of enebular.
+* Logs from enebular edge agent can now be displayed on enebular.
 
 ### Fixed
 
-- Fixed an issue which caused mismatch between the numbers shown on Infomotion graphs and the numbers shown on the Milkcocoa InfoType data store.
-- Deleted the link to the non-existent "About" page.
-- Eliminated the ambiguity in the error message which is shown when one attempts to deploy flows to heroku using wrong token.
-- Eliminated inconsistencies in the use of the words for "Sign in" and "Log in"
+* English documentation of Enebular Dashboard now contains screen shots in English (Previously displaying screen shots in Japanese).
+* Flows are shown graphically on enebular when they are saved to its temporary space.
 
 ### Known Issues
 
-- InfoMotion-embedded pages fail to show graphs when the browser which opens them is not logged into enebular.
+* Opening the flow editor from a web browser shows Japanese texts even if the browser is configured to show English.
+* InfoMotion-embedded pages fail to show graphs when the browser which opens them is not logged into enebular.
 
-## Release History
-
+- [2.2.0](./enebular/2.2.0.md) (May 23rd, 2018)
 - [2.1.2](./enebular/2.1.2.md) (April 16th, 2018)
 - [2.1.1](./enebular/2.1.1.md) (April 3rd, 2018)
 - [2.1.0](./enebular/2.1.0.md) (March 30th, 2018)
@@ -101,39 +103,36 @@ The recommended operating environments are as follows.
 
 # enebular edge agent Release Notes {#enebular-edge-agent}
 
-## Latest Release - 0.9.1 (Feb 28th, 2018)
+## Latest Release - 1.0.0 (May 18th, 2018)
 
-In 0.9.1 release, improved stability of running flow and security.
+In 1.0.0 release, enabled to monitor log data on enebular.
+
+### New
+
+* As an enebular device management feature, it is now possible to monitor device logs.
 
 ### Fixed
+
 N/A
 
 ### Changed
-* Changed to conceal Wi-Fi password on MicroSD.
-    * Rewriting the password on MicroSD to default value after it's saved on flash memory.
-* Flows with setting values less than 1 second are set to 1 second.
-* For Digital Out nodes, added available data types of msg properties.
-    * string(`true` / `false`)
-    * bool(`true` / `false`) **new**
-    * number(`1` /  `0`) **new**
-* When flow is deployed device is rebooted to ensure execution of flow.
+
+* Updated mbed OS to 5.8.2.
 
 ### Known Issues
 
-* When using a BME280 node, it may not operate correctly if the flow size is large.
-* An Inject node can set only a Timestamp for the Payload and Repetition of the Interval.
-* Excessive deployment within a span of one minute may cause failure of flow initialization.
-    * The device will stop in case of a flow initialization failure. To resolve this, reboot the device by pressing the reset button.
+* A `BME280` node may not operate correctly if the flow size is too large.
+* An `inject` node can set only a Timestamp for the Payload and Repetition of the Interval.
 
 ### Operating Environment
 
 #### Operating System
 
-* [Mbed OS 5.6.6](https://github.com/ARMmbed/mbed-os/tree/mbed-os-5.6.6) (ARM Ltd.)
+* [Mbed OS 5.8.2](https://github.com/ARMmbed/mbed-os/tree/mbed-os-5.8.2) (ARM Ltd.)
 
 #### Hardware
 
-The following hardware is supported in enebular-edge-agent 0.9.0.
+The following hardware is supported in enebular-edge-agent 1.0.0.
 
 * [FRDM-K64F](https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/k-seriesperformancem4/k2x-usb/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F) (NXP Semiconductors N.V.) + Stag Beetle Board (Uhuru Corporation)
 
@@ -144,5 +143,7 @@ The following hardware is supported in enebular-edge-agent 0.9.0.
 
 ## Release History
 
-- [0.9.1](./enebular-edge-agent/0.9.1.md) (Feb 28th, 2018)
-- [0.9.0](./enebular-edge-agent/0.9.0.md) (Jan 30th, 2018)
+* [1.0.0](./enebular-edge-agent/1.0.0.md) (May 18th, 2018)
+* [0.10.0](./enebular-edge-agent/10.0.0.md) (Apr 27th, 2018)
+* [0.9.1](./enebular-edge-agent/0.9.1.md) (Feb 28th, 2018)
+* [0.9.0](./enebular-edge-agent/0.9.0.md) (Jan 30th, 2018)

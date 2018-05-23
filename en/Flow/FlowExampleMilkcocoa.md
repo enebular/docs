@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-03-28
+lastUpdated: 2018-04-28
 ---
 
 # A Milkcocoa Flow
@@ -51,14 +51,19 @@ The inject node settings are OK as they are when the node is added.
 
 The following settings are used for the function node.
 
-![image](/_asset/images/Flow/CreateFlow/flow-create-flow_17.png)
+![image](/_asset/images/InfoMotion/datasources/milkcocoa-v2/function-node.png)
 
-This script sends a random value between 0 and 1023 to Milkcocoa.
+This script creates a random value between 0 and 9 to Milkcocoa,
+a country 'JP','USA' or 'CN'and a created date. 
 
-```html
-msg.payload = {
-    v:Math.floor(Math.random() * 1023)
+```javascript
+var data = {
+    country:['JP','USA','CN'][Math.floor(Math.random()*3)],
+    value: Math.floor(Math.random()*10),
+    created:Date.now()
 }
+
+msg.payload = data; 
 return msg;
 ```
 
@@ -95,7 +100,7 @@ Press the Add button to register the settings.
 
 Returning to the Milkcocoa output node settings, also set the DataSource name.
 
-![image](/_asset/images/Flow/CreateFlow/flow-create-flow_24.png)
+![image](/_asset/images/InfoMotion/datasources/milkcocoa-v2/milkcocoa-node-settings.png)
 
 ### debug Node Settings
 

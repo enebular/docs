@@ -1,31 +1,35 @@
 ---
-lastUpdated: 2018-04-16
+lastUpdated: 2018-05-23
 ---
 
 # enebular Release Notes {#enebular}
 
-## 2.1.2 (April 16th, 2018)
+## 2.2.0 (May 23rd, 2018)
 
 ### New
 
-- enebular ドキュメントにenebular有償機能の記述を追加しました。(英語版のみ)
-- サービスダウン時のメッセージページを作成しました。
-- herokuデプロイを行う際にクレジットカード情報が必要な旨をenebularドキュメントに追記しました。
-- トップページのナビゲーションバーにenebularブログへのリンクを追加しました。
+* InfoMotionで利用できるデータソースの種類としてPubnubとFirebaseという2つの新たなデータソースに対応しました。
+* 英語マニュアルに"Deploy to Lambda"の記述を追加しました。
+* 日本語マニュアルに有償機能の記述を追加しました。
+* データベースを多重化し、サービスの信頼性を向上させました。
+* 有償のenebular edge agentをMbedクラウド経由で接続した場合自動的に有効化されるようになりました。
+* フローエディタを一時環境に保存すると、フローのスナップショットが表示されるようになりました。
+* enebularのダッシュボードにアセット検索バーを追加しました。
+* enebular edge agentのログがenebularで閲覧できるようになりました。
 
 ### Fixed
 
-- Infomotionのグラフ上の数字とMilkcocoa InfoTypeのデータストアの数字が一致しない不具合を修正しました。
-- 存在しないAboutページへのリンクを削除しました。
-- 誤ったトークンでherokuデプロイをした場合に表示されるエラーメッセージの曖昧さを解消しました。
-- サインイン・ログインに相当する用語が複数混在していたのをSign in / Loginに統一しました。
+* 英語マニュアルのスクリーンショットが全て日本語版の画面になっていましたが、英語版の画面に入れ替えました。
+* フローエディタの右サイドバーのAdminタブからノードをインストールできない不具合を修正しました。
 
 ### Known Issues
 
-- InfoMotionを埋め込んだ静的ページを、enebularにログインしていないブラウザで開こうとするとグラフが表示されない。
+* 言語設定を英語にしたブラウザでフローエディタを開いても、一部ノードの説明文が日本語で表示されます。
+* InfoMotionを埋め込んだ静的ページを、enebularにログインしていないブラウザで開こうとするとグラフが表示されない。
 
-## Release History
+### Release History
 
+- [2.2.0](./enebular/2.2.0.md) (May 23rd, 2018)
 - [2.1.2](./enebular/2.1.2.md) (April 16th, 2018)
 - [2.1.1](./enebular/2.1.1.md) (April 3rd, 2018)
 - [2.1.0](./enebular/2.1.0.md) (March 30th, 2018)
@@ -100,39 +104,36 @@ enebular agentの詳しい仕様については、弊社サポート(support@ene
 
 # enebular edge agent Release Notes {#enebular-edge-agent}
 
-## Latest Release - 0.9.1 (Feb 28th, 2018)
+## Latest Release - 1.0.0 (May 18th, 2018)
 
-enebular-edge-agent 0.9.1ではセキュリティ機能やフロー動作の安定性を向上しました。
+enebular-edge-agent 1.0.0では、enebular で enebular-edge-agent のログを監視できるようになりました。
+
+### New
+
+* enebularのデバイス管理機能で、enebular-edge-agent のログを監視することができるようになりました
 
 ### Fixed
+
 N/A
 
 ### Changed
-* SDカード上のWi-Fiパスワードを秘匿するようにしました
-  * SDカードに設定したWi-Fiパスワードはフラッシュメモリに保存後、初期値に書き換わります
-* フロー定義中に1秒以下の処理が設定されている場合、繰り上げて1秒として処理するように変更しました
-* Digital Out ノードにinputされるmsgプロパティが対応するデータ型を追加しました
-    * string型(`true` / `false`)
-    * bool型(`true` / `false`) **new**
-    * number型(`1` /  `0`) **new**
-* フローデプロイ時に確実にフローを実行するため、デバイスを再起動するように変更しました
+
+* mbed OS 5.8.2 へのアップデートを行いました
 
 ### Known Issues
 
 * BME280 ノードの使用時、フローのサイズが大きいと正常に動作しない場合があります
 * Inject ノードにおいて、PayloadにはTimestampのみ、RepeatにIntervalのみしか設定できません
-* 短い周期で繰り返しフローをデプロイした場合に、フローの初期化に失敗することがあります
-    * フローの初期化に失敗するとデバイスがフリーズします。その際はリセットボタンを押下してデバイスを再起動してください
 
 ### Operating Environment
 
 #### Operating System
 
-* [Mbed OS 5.6.6](https://github.com/ARMmbed/mbed-os/tree/mbed-os-5.6.6) (ARM Ltd.)
+* [Mbed OS 5.8.2](https://github.com/ARMmbed/mbed-os/tree/mbed-os-5.8.2) (ARM Ltd.)
 
 #### Hardware
 
-enebular-edge-agent 0.9.0は、下記のハードウェアを対象としています。
+enebular-edge-agent 1.0.0は、下記のハードウェアを対象としています。
 
 * [FRDM-K64F](https://www.nxp.com/jp/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F) (NXP Semiconductors N.V.) + Stag Beetle Board (Uhuru Corporation)
 
@@ -143,5 +144,7 @@ enebular-edge-agent 0.9.0は、下記のハードウェアを対象としてい�
 
 ## Release History
 
-- [0.9.1](./enebular-edge-agent/0.9.1.md) (Feb 28th, 2018)
-- [0.9.0](./enebular-edge-agent/0.9.0.md) (Jan 30th, 2018)
+* [1.0.0](./enebular-edge-agent/1.0.0.md) (May 18th, 2018)
+* [0.10.0](./enebular-edge-agent/0.10.0.md) (Apr 27th, 2018)
+* [0.9.1](./enebular-edge-agent/0.9.1.md) (Feb 28th, 2018)
+* [0.9.0](./enebular-edge-agent/0.9.0.md) (Jan 30th, 2018)
