@@ -21,7 +21,7 @@ License Type は 以下の通りです。
   * RESERVED LICENSES
   * SUBSCRIPTION ・・・ Registeredライセンスのことを指します
 
-※ 詳しくは [License Manager](//Device/LicenseManager.html) のページを参照してください。
+※ 詳しくは [License Manager](/Device/LicenseManager.md) のページを参照してください。
 
 ## Previous Months
 Billing Information 下部からは先月までのライセンス情報を閲覧できます。
