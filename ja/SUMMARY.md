@@ -62,6 +62,7 @@ lastUpdated: 2018-05-23
 ## Devices
 
 * [Device List](Device/DeviceList.md)
+  * [Logs](Device/Logs.md)
 * [License Manager](Device/LicenseManager.md)
 
 ## Access
