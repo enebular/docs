@@ -6,7 +6,7 @@ lastUpdated: 2018-05-22
 
 enebularでは、フローをデプロイしたデバイスのログを確認することができます。
 ログを閲覧したいデバイスのモニタリング設定を ON にしてください。
-※モニタリング設定については、[Device List]()のページを参照してください。
+※モニタリング設定については、[Device List](/Device/DeviceList.md)のページを参照してください。
 
 enebular agent と enebular edge agent で出力されるログの仕様が異なります。
 
@@ -72,26 +72,52 @@ enebular edge agent のログ画面の例です。
 
 ### enebular edge agent ログリスト
 
+enebular edge agent の動作ログ及びエラーログです。
+さらに情報が必要な方は **support@enebular.com** に連絡してください。
+
 #### 動作ログ
 | ログ | 説明 |
 | :--- | :--- |
-|  main start | あああああ |
-| thread boot |aaaaa|
-| wifi connected|  |
-| device manager initalized|  |
-| flow def manager initialized|  |
-| uhuru red initialized|  |
-| flow URL length checked|  |
-| flow downloaded|  |
-| flow integrity checked|  |
-| flow size checked|  |
-| flow saved|  |
-| SD initialized|  |
-| flow deployed|  |
-| flow executing|  |
-| flow executed|  |
-| flash updated: device bandle|  |
-| flash updated: flow define|  |
-| flash updated: javascript code||
+| main start | enebular edge agent の起動 |
+| thread boot | スレッド生成 |
+| wifi connected | Wi-Fi 接続の確立 |
+| device manager initalized | デバイス管理機能の初期化 |
+| flow def manager initialized | フロー管理機能の初期化 |
+| uhuru red initialized | フロー実行機能の初期化 |
+| flow URL length checked | フローのダウンロードにおける URL 検証 |
+| flow downloaded | フローのダウンロード |
+| flow integrity checked | フローの整合性チェック |
+| flow size checked | フローのサイズチェック |
+| flow saved | フローの保存 |
+| SD initialized | SD カードの初期化 |
+| flow deployed | フローのデプロイ |
+| flow executing | フロー実行中 |
+| flow executed | フロー実行終了 |
+| flash updated: device bandle | デバイスバンドルのフラッシュアップデート |
+| flash updated: flow define | フロー定義のフラッシュアップデート |
+| flash updated: javascript code | フロー実行コードのフラッシュアップデート |
 
 #### エラーログ
+
+| ログ | 説明 |
+| :--- | :--- |
+| flow URL connect timeout | フローのダウンロード中のタイムアウト |
+| flow download failed | フローのダウンロード失敗 |
+| flow data error | フローの整合性エラー |
+| flow size over | フローのサイズオーバー |
+| writing flow failed | SD カードへのフロー書き込み失敗 |
+| reading flow failed | SD カードからのフロー読み込み失敗 |
+| flow URL size over | フローダウンロードURL のサイズオーバー |
+| mbed cloud factory configurator client error | mbed cloud との接続エラー |
+| flow runtime not found | フロー実行コードが見つからない |
+| flow file not found | フロー定義が見つからない |
+| js interpreter error | javascript 実行ライブラリのエラー |
+| js flow json parse error | フロー定義のパースエラー |
+| js node initialize error | ノード初期化エラー |
+| js flow stopped error | フローの停止 |
+| js flow execute error | フロー実行エラー |
+| device auth none license | ライセンスが存在しない |
+| device auth https error |ライセンス認証接続エラー |
+| device auth invalid | ライセンスが無効 |
+| token https error | トークン取得エラー |
+| activate device https error | アクティベート接続エラー |
