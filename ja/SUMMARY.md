@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-05-15
+lastUpdated: 2018-05-23
 ---
 
 # Summary
@@ -62,10 +62,9 @@ lastUpdated: 2018-05-15
 
 ## Devices
 
-* [Introduction](Device/Introduction.md)
-* [DeviceList](Device/DeviceList.md)
-  * [Logs](Device/Logs.md)
+* [Device List](Device/DeviceList.md)
 * [License Manager](Device/LicenseManager.md)
+  * [Logs](Device/Logs.md)
 
 ## Access
 
