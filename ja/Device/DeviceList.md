@@ -34,8 +34,8 @@ Device Listでは[License Manager](./LicenseManager.md)でライセンスを割�
 
 | アイコン | ステータス | 説明 |
 | :-: |:-: | :-: |
-|  ![connected](../_asset/images/Devices/device_list-status-connected.png)  | **connected** | enebularとの接続がされている状態 |
-| ![disconnected](../_asset/images/Devices/device_list-status-disconnected.png) | **disconnected** | enebularとの接続がされていない状態 |
+| ![connected](../_asset/images/Devices/device_list-status-connected.png)  | **connected** | デバイスがenebularに接続している状態 |
+| ![disconnected](../_asset/images/Devices/device_list-status-disconnected.png) | **disconnected** | デバイスがenebularに接続している状態 |
 
 ## Monitoring
 
