@@ -1,13 +1,13 @@
 ---
-lastUpdated: 2017-05-21
+lastUpdated: 2017-05-23
 ---
 
 # Billing Information
 
-License Manegerにおいて購入したライセンス情報を閲覧することができます。この機能は現在エンタープライズプランでのみのサポートです。
+License Managerにおいて購入したライセンス情報を閲覧することができます。この機能は現在エンタープライズプランでのみのサポートです。
 さらに情報が必要な方は **support@enebular.com** に連絡してください。
 
-Billing Infomotionのページからは現在保有している課金情報と、これまでの課金情報を閲覧することができます。
+Billing Informationのページからは現在保有している課金情報と、これまでの課金情報を閲覧することができます。
 
 ## Current Month
 
@@ -15,16 +15,16 @@ Billing Information 上部からは当月の課金情報を閲覧することが
 
 ![image](/_asset/images/Billing/current_month.png)
 
-Lisence Type は 以下の通りです。
+License Type は 以下の通りです。
 * Device Monitoring
   * ISSUED LICENSES
   * RESERVED LICENSES
   * SUBSCRIPTION ・・・ Registeredライセンスのことを指します
 
-※ 詳しくは [Lisense Manager](//Device/LicenseManager.html) のページを参照してください。
+※ 詳しくは [License Manager](//Device/LicenseManager.html) のページを参照してください。
 
 ## Previous Months
-Billing Information 下部からは先月まで課金情報を閲覧することができます。
-課金情報を閲覧したい月をクリックすることでその月の課金情報が表示されます。
+Billing Information 下部からは先月までのライセンス情報を閲覧できます。
+ライセンス情報を閲覧したい月をクリックすることでその月のライセンス情報が表示されます。
 
 ![image](/_asset/images/Billing/previous_months.png)
