@@ -1,113 +1,115 @@
 ---
-lastUpdated: 2018-04-13
+lastUpdated: 2018-05-24
 ---
 
-# Creating a Firebase DataSource 
+# Firebase DataSource の作成
 
-In this section a Firebase DataSource will be created. 
-Enebular flow editor will be used to push data to the DataSource. 
+このページでは Firebase Datasource の作成を説明します。
+enebular のフローエディタを用いて Firebase DataSource にデータをプッシュします。
 
-###Registration  
+## Firebase アカウントの登録 
 
-Register at https://firebase.google.com/.
-Once you are registerd and logged in click on add project. 
+https://firebase.google.com/ にアクセスし、アカウントを登録します。
+firebase にログインし、 [プロジェクトを追加] をクリックしてください。
 
 ![](/_asset/images/InfoMotion/datasources/firebase/firebase-wellcome.png) 
 
 
-Input a name for the project and your country/region then click CREATE PROJECT. 
-When the new project is ready click CONTINUE. 
+任意のプロジェクト名を入力し、国/地域 を選択後、[プロジェクトを作成] をクリックしてください。
+新しいプロジェクトが作成されます。
 
 ![](/_asset/images/InfoMotion/datasources/firebase/add-a-project.png) 
 
 
-You will be directed to the project overview. Where at the top of the screen you will see
-a "Get started here". Click on "Add firebase to your web app". 
+プロジェクト画面が表示されます。
+「ここから始めましょう。」 の下にある [ウェブアプリに Firebase を追加] をクリックしてください。
 
 ![](/_asset/images/InfoMotion/datasources/firebase/get-started.png) 
 
 
-A modal will pop up with configuration keys. These keys will be used later on with creating a flow and creating a data source. 
+設定スクリプトのポップアップウィンドウが表示されます。後程使用するので、コピーして任意の場所に貼り付けておいてください。
 
 ![](/_asset/images/InfoMotion/datasources/firebase/firebase-keys.png) 
 
 
-###Authentication
+## 認証
 
-Before we create a Flow we will need to set up authentications. 
-In this example we will keep it simple with an Anonymous authentication. 
+フローを作成する前に、アプリの認証の設定をする必要があります。
+今回は、匿名の認証を用います。
 
-On your project sidebar click on authentication. 
+プロジェクト左側のメニューから [Develop] をクリックして、さらに [Authentication] のページを開きます。
 
 ![](/_asset/images/InfoMotion/datasources/firebase/authentication-sidebar.png) 
 
 
-At the authentication screen click on SIGN-IN METHOD.
+[ログイン方法を設定] をクリックします。
 
 ![](/_asset/images/InfoMotion/datasources/firebase/authentication.png) 
 
 
-Select Anonymous, turn the enebale switch on and click save. 
+[匿名] を選択し、スイッチを on にして [保存] をクリックします。
 
 ![](/_asset/images/InfoMotion/datasources/firebase/anonymous-enable.png) 
 
 
-Anonymous should now be enabled.
+匿名が有効になっているのを確認してください。
 
 ![](/_asset/images/InfoMotion/datasources/firebase/anonymous-status-enabled.png) 
 
-###Set up DataBase 
 
-To set up a database click database on the side bar. 
+## DataBase のセットアップ 
 
-![](/_asset/images/InfoMotion/datasources/firebase/database-sidebar.png) 
-
-
-Click get started on Realtime Database. 
+次に左部のメニューから [Database] をクリックしてください。
+Realtime Databaseの [スタートガイド] をクリックします。
 
 ![](/_asset/images/InfoMotion/datasources/firebase/database.png) 
 
 
-Select "Start in test mode" (This allows anyone to read or write to the database). Click enebale to continue. 
+[テストモードで開始] を選択し、[有効にする] をクリックします。
 
 ![](/_asset/images/InfoMotion/datasources/firebase/database-security.png) 
 
 
-###Create Flow 
+## フローの作成
 
-Now with firebase ready lets create a flow to push data. 
-In an enebular project go to flows and click on the add button at the bottom right side of the screen. 
+Firebase の準備ができたのでデータをプッシュするフローを作成します。
+enebular のプロジェクトの右下の +ボタンをクリックし、新しいフローを作成します。
 
 ![](/_asset/images/InfoMotion/datasources/firebase/flow-list.png) 
 
 
-Enter a name and decription then click continue. 
+任意の名前を付けて [Continue] をクリックします。
 
 ![](/_asset/images/InfoMotion/datasources/firebase/create-flow.png) 
 
 
-Click on `Edit Flow` to open the flow editor. 
+[edit flow] をクリックしてフローエディターを開きます。
 
 ![](/_asset/images/InfoMotion/datasources/firebase/edit-flow.png) 
 
 
-(If firebase is not installed please install `node-red-contrib-firebase`.)
+下記のノードを配置し、下記の画像のようなフローを作成してください。
 
-Create the following flow. 
-inject -> function -> firebase modify -> debug 
+* inject ノード
+* function ノード
+* firebase modify ノード
+* debug ノード
+
+(もし、Firebase のノードが存在してなかったら、 `node-red-contrib-firebase` を admin タブよりインストールしてください)
+
 ![](/_asset/images/InfoMotion/datasources/firebase/flow.png) 
 
 
-Double click the inject node and set the interval to 10 seconds. 
-Click done when finished. 
+次に inject ノード(表示は timestamp )のモーダル画面を表示します。
+
+ `repeat` を [interval] とし、every [10] seconds に設定します。
+ [Done] をクリックして、モーダル画面を閉じます。
 
 ![](/_asset/images/InfoMotion/datasources/firebase/inject-node.png) 
 
 
-Double click the function node and set the function as below. 
-
-![](/_asset/images/InfoMotion/datasources/firebase/function-node.png) 
-
+function ノードをダブルクリックして `edit function node` のモーダル画面を表示してください。
+下記スクリプトをコピーして Function に貼り付けます。
 
 ```javascript
 var data = {
@@ -123,55 +125,60 @@ msg.payload = data;
 return msg;
 ```
 
-Double click the firebase node and set the inputs as follows. 
+![](/_asset/images/InfoMotion/datasources/firebase/function-node.png) 
 
-Click on the pencil to edit the firebase url and auth type then update. 
-Firebase:
-	firebase: `YOUR FIREBASE PROJECT ID`
-	auth type: `none` 
+次にfirebase ノードのモーダル画面を表示します。
+鉛筆のアイコンをクリックして、`Edit firebase config node` のモーダル画面を表示します。
+
+`Firebase` には先ほど作成した Firebase プロジェクトの ID を入力してください。
+`Auth Type` は [None] を選択します。設定が終わったら [Add] をクリックして保存します。
 
 ![](/_asset/images/InfoMotion/datasources/firebase/firebase-config-node.png) 
 
 
-Child path : `test`
-Method : `Push`
-value : `msg.payload`
-name : (any name you want)
+`Child path`には「test」 を入力し、`Method` は [push] を選択、`value` は「msg.payload」のままにし、 [Done] をクリックします。
 
 ![](/_asset/images/InfoMotion/datasources/firebase/firebase-node.png) 
 
 
-Now with all nodes set you can now click deploy. 
-Check your debug log tab to see if data is being pushed correctly. 
+全てのノードの準備ができたので、 [Deploy] を押してノードを実行します。
+
+フローの実行ログをエディター右部のデバッグタブより閲覧できます。
+下記のようなログが表示され、正しくフローが実行されていることを確認してください。
 
 ![](/_asset/images/InfoMotion/datasources/firebase/debug-log.png) 
 
 
-You can also check your firebase project database to see the data being saved.
+次に Firebase のページで先ほど作ったアプリからデータにデータが追加されているか確認します。
 
 ![](/_asset/images/InfoMotion/datasources/firebase/firebase-project-database.png) 
 
 
-###Create Data Source 
+## DataSource の作成
 
-With data being pushed to firebase we can now set up a DataSource in enebular. 
-In your enebular project go to datasource. 
+フローを作成したものと同じプロジェクトの `Data Souce` のページを表示します。
+右下の + ボタンをクリックして、 `Data Source`を追加します。
 
-![](/_asset/images/InfoMotion/datasources/firebase/firebase-project-database.png)
+`Title` に任意の名前を入力し、DataSource Type から [Firebase] を選択してください。
+Firebase 用の設定画面が開きます。
+Firebase アプリを作成した際に表示された設定スクリプトを参考にして、`Api Key`, `Auth Domain`, `Database URL`, `Project Id`, `Storage Bucket`, `Messaging Sender Id` を入力してください。
 
-
-The keys for the settings can be found in your firebase web settings. The `Ref` is the child path you set in the flow editor. 
-The ref can also be seen in your firebase database as the collection name. The `Ref` must also include a `/`, for this example we have set the `Ref` as `/test`.
+`Ref` にはフロー作成の際に用いた `Child path` を入力します。(Firebase ではコレクション名となっています。)
+`Ref` の設定値には `/(スラッシュ)` が前方に必要なので「/test」としてください。
 
 ![](/_asset/images/InfoMotion/datasources/firebase/datasource-settings.png)
 
 
-You should new see a new DataSource created.
+DataSourceが追加されていることを確認してください。
 
 ![](/_asset/images/InfoMotion/datasources/firebase/new-datasource.png)
 
 
-Now your DataSource is ready to be used on an infotype see 
-[Sample infotypes](./SampleInfoTypes.md)to downoad a graph, 
-[Upload an InfoType](./UploadInfoType.md) to upload a graph to enebular, 
-and [CreateInfoMotion](/.CreateInfoMotion) to create an InfoMotion dashboard. 
+DataSource を使用する準備ができました。
+InfoMotion ダッシュボードを作成する際に作った DataSource を選択することでデータをグラフに反映できます。
+
+詳しくは以下のページを順に参照してください。
+
+* [Sample infotypes](./SampleInfoTypes.md)
+* [Upload an InfoType](./UploadInfoType.md)
+* [CreateInfoMotion](/.CreateInfoMotion)

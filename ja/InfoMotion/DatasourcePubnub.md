@@ -4,7 +4,7 @@ lastUpdated: 2018-05-24
 
 # Pubnub DataSource の作成
 
-このページでは Pubnub Datasource の作成を説明します。
+このページでは Pubnub DataSource の作成を説明します。
 enebular のフローエディタを用いて Pubnub DataSource にデータをプッシュします。
 
 ## Pubnub アカウントの登録
@@ -80,11 +80,11 @@ msg.payload = data;
 return msg;
 ```
 
-入力出来たら、 [Done]をクリックして画面を閉じます。
+入力出来たら、 [Done] をクリックして画面を閉じます。
 
 ![](/_asset/images/InfoMotion/datasources/pubnub/function-node.png)
 
-pubnub out ノードをダブルクリックしてモーダル画面を表示しあす。
+pubnub out ノードをダブルクリックしてモーダル画面を表示します。
 鉛筆のアイコンをクリックしてください。
 
 ![](/_asset/images/InfoMotion/datasources/pubnub/pubnub-out-node.png)
@@ -125,7 +125,7 @@ pubnub in ノードにも同じ key, channel の設定をします。
 ![](/_asset/images/InfoMotion/datasources/pubnub/debug.png) 
 
 
-## Data Source の作成
+## DataSource の作成
 
 フローを作成したものと同じプロジェクトの `Data Souce` のページを表示します。
 右下の + ボタンをクリックして、 `Data Source`を追加します。

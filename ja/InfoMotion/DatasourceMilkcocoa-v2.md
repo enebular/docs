@@ -4,7 +4,7 @@ lastUpdated: 2018-5-24
 
 # Milkcocoa-v2 DataSource の作成
 
-このページでは milkcocoa-v2 Datasource の作成を説明します。
+このページでは milkcocoa-v2 DataSource の作成を説明します。
 enebular のフローエディタを用いて milkcocoa-v2 DataSource にデータをプッシュします。
 
 ## milkcocoa アカウントの登録
