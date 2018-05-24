@@ -10,7 +10,7 @@ enebular のフローエディタを用いて milkcocoa-v2 DataSource にデー�
 ## milkcocoa アカウントの登録
 
 https://mlkcca.com/ にアクセスし、アカウントを登録します。
-milkcocoaにログインし、ダッシュボードの [新しいアプリを作る] をクリックしてください
+milkcocoaにログインし、ダッシュボードの [新しいアプリを作る] をクリックしてください。
 
 ![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/app-list.png)
 
@@ -22,22 +22,21 @@ milkcocoaにログインし、ダッシュボードの [新しいアプリを作
 
 ![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/new-app-list.png)
 
-For this example we will only use the `app_id`.
-Authentication (`認証`) is set to public by default.
-
 アプリには固有の `app_id` が紐づきます。
 初期設定でアプリの認証が public となっています。
 
 ![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/app-dashboard.png)
 
-## Flow の作成
+## フローの作成
 
-milkcocoa Datastore にデータをプッシュするフローを作成を説明します。
-enebular のプロジェクトから新しいフローを作成します。
+milkcocoa Datastore にデータをプッシュするフローの作成例について説明します。
+
+enebular のプロジェクトから新しいフローを作成してください。
 
 ![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/create-flow.png)
 
-[Edit Flow] をクリックし、下記のノードを配置し、下記の画像のようなフローを作成してください。
+[Edit Flow] をクリックして、フローエディタ―を開きます。
+下記のノードを配置し、下記の画像のようなフローを作成してください。
 
 * Inject ノード
 * function ノード
@@ -60,6 +59,8 @@ msg.payload = data
 return msg
 ```
 
+入力出来たら、 [Done] をクリックして画面を閉じます。
+
 ![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/function-node.png)
 
 次に milkcocoa ノードのモーダル画面を表示します。
@@ -67,14 +68,15 @@ return msg
 ![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/edit-milkcocoa-node.png)
 
 鉛筆のアイコンをクリックして、`Add new milcocoa config node` のモーダル画面を表示します。
-`App ID` には先ほど作成したmilkcocoa アプリの `app_id` を入力します。
+`App ID` には先ほど作成した milkcocoa アプリの `app_id` を入力します。
 `API Key` と `API Secret` は空のままにし、[Add] をクリックしてください。
 
 ※ milkcocoa アプリの設定で API認証を有効にした場合は`API Key` と `API Secret` の入力が必要となります。
 
 ![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/set-app-id.png)
 
-`Data Store` には "test" を入力し、 `operation` は [push] を選択し [Done]をクリックして、モーダル画面を閉じます。
+`Data Store` には "test" を入力し、 `operation` は [push] を選択します。
+設定が終わったら [Done] をクリックして、モーダル画面を閉じます。
 
 ![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/milkcocoa-node-settings.png)
 
@@ -95,7 +97,9 @@ return msg
 ![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/debug-log.png)
 
 次に milkcocoa のページで先ほど作ったアプリからデータにデータが追加されているか確認します。
-[データストア] ページを表示し、検索バーに "test" を入力し [リスト表示（更新）] をクリックしてデータストアのリストを表示してください。
+
+[データストア] ページを表示し、検索バーに "test" を入力してください。
+[リスト表示（更新）] をクリックしてデータストアのリストを表示します。
 下記のようにデータが追加されていることを確認してください。
 
 ![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/store.png)
@@ -119,7 +123,13 @@ milkcocoa 用の設定画面が開きます。
 DataSource を使用する準備ができました。
 InfoMotion ダッシュボードを作成する際に作った DataSource を選択することでデータをグラフに反映できます。
 
+詳しくは以下のページを順に参照してください。
+
+* [Sample infotypes](./SampleInfoTypes.md)
+* [Upload an InfoType](./UploadInfoType.md)
+* [CreateInfoMotion](/.CreateInfoMotion)
+
 ### Access Control Allow Origin 解消のために
 
-milkcocoa をローカル環境で使用するには、http サーバーからサーブする必要があります。
+milkcocoa のDataSource をローカル環境で使用するには、http サーバーからサーブする必要があります。
 Node.js, npm を使用し、 ローカル環境の `index.html` に npm モジュール [http-server](https://www.npmjs.com/package/http-server) を用いることをお勧めします。
