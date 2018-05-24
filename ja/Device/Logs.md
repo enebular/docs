@@ -4,7 +4,7 @@ lastUpdated: 2018-05-23
 
 # Logs
 
-enebularでは、フローをデプロイしたデバイスのログを確認することができます。
+enebularでは、有償デバイスのログを確認することができます。
 ログを閲覧したいデバイスのモニタリング設定を ON にしてください。
 ※モニタリング設定については、[Device List](/Device/DeviceList.md)のページを参照してください。
 
@@ -17,8 +17,8 @@ enebular agent と enebular edge agent で出力されるログの仕様が異�
 
 ## enebular agent のログ
 
-enebular agent はコンソール( stdout / err )に出力したログを enebular に送信します。
-デフォルトで`info`レベルのログのみの出力となっています。環境変数により出力設定を`debug`レベルへ変更することができます。
+enebular agent はコンソール( stdout / stderr )に出力したログを enebular に送信します。
+デフォルトで`info`レベルのログのみの出力となっています。環境変数 DEBUG により出力設定を`debug`レベルへ変更することができます。
 
 また、enebuar agent は Node-RED がコンソールに出力するログ全てをキャプチャ―します。Node-REDからキャプチャーしたログ内容は全て`info`のログレベルとしてロギングします。
 
