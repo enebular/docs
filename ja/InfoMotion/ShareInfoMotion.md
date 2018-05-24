@@ -1,24 +1,22 @@
 ---
-lastUpdated: 2018-4-24
+lastUpdated: 2018-5-24
 ---
 
-# Share InfoMotion
+# InfoMotion の共有
 
-The following code is subject to change.
+## 共有機能を使用する前に
 
-###Before you share!
+### Access Control Allow Origin 解消のために
 
-####Access Control Allow Origin 
+milkcocoa をローカル環境で使用するには、http サーバーからサーブする必要があります。
+Node.js, npm を使用し、 ローカル環境の `index.html` に npm モジュール [http-server](https://www.npmjs.com/package/http-server) を用いることをお勧めします。
 
-For milkcocoa to be used locally it must be 
-served from a http server. For node.js/npm users we reccomend you use a simple npm module [http-server](https://www.npmjs.com/package/http-server) to serve your index.html locally. 
+### Infotype 共有における既知の問題
 
-####Infotype share issues
+Infotype を表示するためにブラウザで enebular にログインする必要があります。
+Infotype は 現在 private 権限のみの対応となっています。 
 
-Enebular must be logged in the browser to display infotypes. 
-All infotypes are set as private. These settings are subject to change. 
-
-###InfoMotion scripts
+## InfoMotion スクリプト
 
 ダッシュボードを外部サイトへ埋め込む場合、API を使って自由にダッシュボードの表示をカスタマイズできます。
 
@@ -29,7 +27,7 @@ All infotypes are set as private. These settings are subject to change.
 <script src="http://enebular-v2.herokuapp.com/emi/enebular-infomotion/infomotionUI.js"></script>
 ```
 
-### Settings for graph component
+## グラフコンポーネントの設定
 
 ダッシュボードの設定です。3つの設定があります。
 
@@ -49,7 +47,7 @@ var settings = {
 ```
 
 
-### GraphContext
+## GraphContext
 
 グラフとコンポーネントをバインドします。
 
@@ -59,7 +57,7 @@ var settings = {
 var graphContext = infomotion.graphContext(settings);
 ```
 
-### DatePicker
+## DatePicker
 
 日付指定コンポーネントです。
 
@@ -72,7 +70,7 @@ var datePicker = infomotionUI.datePicker(document.querySelector('#enebularDatePi
 ```
 
 
-### Timeline
+## Timeline
 
 DatePicker より細かい時間指定をするコンポーネントです。
 
@@ -83,7 +81,7 @@ var timeline = infomotionUI.timeline(
 ).make();
 ```
 
-### LiveButton
+## LiveButton
 
 リアルタイムモードに切り替えるボタンコンポーネントです。
 
@@ -92,7 +90,7 @@ var liveButton = infomotionUI.liveButton(document.querySelector('#btnLive'))
                  .make();
 ```
 
-### GraphContext  へコンポーネントを登録
+## GraphContext  へコンポーネントを登録
 
 すべてのコンポーネントが `make` されたら、GraphContext へ登録します。
 
@@ -103,7 +101,7 @@ graphContext
   .useDatePicker(datePicker)
 ```
 
-### Graph settings
+## グラフの設定
 
 グラフの設定です。3つの設定があります。
 
@@ -150,31 +148,31 @@ var settingGraph = {
 }
 ```
 
-### DOM の作成
+## DOM の作成
 
 ```javascript
 var graph1 = infomotionUI.graph(document.querySelector('#graph'), settingGraph);
 ```
 
-### Topic の設定
+## Topic の設定
 
 ```javascript
 graph1.useTopic('country-data');
 ```
 
-### graphContext へのグラフの登録
+## graphContext へのグラフの登録
 
 ```javascript
 graphContext.useGraphs(graph1);
 ```
 
-### graphContext からグラフを削除
+## graphContext からグラフを削除
 
 ```javascript
 graphContext.removeGraph(graph1)
 ```
 
-### フィルターの設定
+## フィルターの設定
 
 ```javascript
 graph0.useFilter([{
@@ -183,7 +181,7 @@ graph0.useFilter([{
 }]);
 ```
 
-### 例
+## 例
 
 ```html
 <link rel="stylesheet" href="http://localhost:3000/emi/enebular-infomotion/css/app.css">
