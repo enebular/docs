@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-05-23
+lastUpdated: 2018-05-25
 ---
 
 # enebular Release Notes {#enebular}
@@ -104,23 +104,23 @@ enebular agentの詳しい仕様については、弊社サポート(support@ene
 
 # enebular edge agent Release Notes {#enebular-edge-agent}
 
-## Latest Release - 1.0.0 (May 18th, 2018)
+## Latest Release - 1.0.1 (Jun 1st, 2018)
 
-enebular-edge-agent 1.0.0では、enebular で enebular-edge-agent のログを監視できるようになりました。
+enebular-edge-agent 1.0.1では、Mbed Cloud Client のバージョンをアップデートしました。
 
-### New
-
-* enebularのデバイス管理機能で、enebular-edge-agent のログを監視することができるようになりました
-
-### Fixed
+## New
 
 N/A
 
-### Changed
+## Fixed
 
-* mbed OS 5.8.2 へのアップデートを行いました
+長時間起動時にネットワークが切断される問題を修正しました。
 
-### Known Issues
+## Changed
+
+* Mbed Cloud Client 1.3.1.1 General Availability (GA) へアップデートを行いました。
+
+## Known Issues
 
 * BME280 ノードの使用時、フローのサイズが大きいと正常に動作しない場合があります
 * Inject ノードにおいて、PayloadにはTimestampのみ、RepeatにIntervalのみしか設定できません
@@ -133,7 +133,7 @@ N/A
 
 #### Hardware
 
-enebular-edge-agent 1.0.0は、下記のハードウェアを対象としています。
+enebular-edge-agent 1.0.1は、下記のハードウェアを対象としています。
 
 * [FRDM-K64F](https://www.nxp.com/jp/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F) (NXP Semiconductors N.V.) + Stag Beetle Board (Uhuru Corporation)
 
@@ -144,6 +144,7 @@ enebular-edge-agent 1.0.0は、下記のハードウェアを対象としてい�
 
 ## Release History
 
+* [1.0.1](./enebular-edge-agent/1.0.1.md) (Jun 1st, 2018)
 * [1.0.0](./enebular-edge-agent/1.0.0.md) (May 18th, 2018)
 * [0.10.0](./enebular-edge-agent/0.10.0.md) (Apr 27th, 2018)
 * [0.9.1](./enebular-edge-agent/0.9.1.md) (Feb 28th, 2018)
