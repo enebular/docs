@@ -71,7 +71,7 @@ This is an example of the enebular edge agent log screen.
 
 ### enebular edge agent log list
 
-below are the operation logs and error logs of the enebular edge agent. 
+Below are the operation logs and error logs of the enebular edge agent. 
 For further information please contact ** support@enebular.com**.
 
 #### operation log
@@ -81,7 +81,7 @@ For further information please contact ** support@enebular.com**.
 | main start | 
 | thread boot | 
 | wifi connected | 
-| device manager initalized |
+| device manager initialized |
 | flow def manager initialized | 
 | uhuru red initialized | 
 | flow URL length checked | 
