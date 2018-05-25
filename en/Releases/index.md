@@ -105,7 +105,7 @@ The recommended operating environments are as follows.
 
 ## Latest Release - 1.0.1 (Jun 1st, 2018)
 
-In 1.0.1 release, Updated Mbed Cloud Client version.
+In 1.0.1 release, Updated Mbed Cloud Client to 1.3.1.1 General Availability (GA).
 
 ### New
 
@@ -113,7 +113,7 @@ N/A
 
 ### Fixed
 
-* Fixed network disconnection issue when running for a long time
+* Fixed network disconnection issue when running for a long time due to exclusive control of communication processing of Wi-Fi module by updating Wi-Fi module's library
 
 ### Changed
 
@@ -123,6 +123,7 @@ N/A
 
 * A `BME280` node may not operate correctly if the flow size is too large.
 * An `inject` node can set only a Timestamp for the Payload and Repetition of the Interval.
+
 
 ### Operating Environment
 

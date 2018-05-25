@@ -106,7 +106,7 @@ enebular agentの詳しい仕様については、弊社サポート(support@ene
 
 ## Latest Release - 1.0.1 (Jun 1st, 2018)
 
-enebular-edge-agent 1.0.1 では、Mbed Cloud Client のバージョンをアップデートしました。
+enebular-edge-agent 1.0.1 では、バージョンを Mbed Cloud Client 1.3.1.1 General Availability (GA) アップデートしました。
 
 ## New
 
@@ -114,7 +114,7 @@ N/A
 
 ## Fixed
 
-* 長時間起動時にネットワークが切断される問題を修正しました
+* Wi-Fiモジュールとの通信処理の排他制御が原因で長時間起動時にネットワークが切断される問題を、Wi-Fiモジュールのライブラリを更新することで修正しました
 
 ## Changed
 
