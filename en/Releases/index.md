@@ -113,11 +113,11 @@ N/A
 
 ### Fixed
 
-Fixed network disconnection issue when running for a long time.
+* Fixed network disconnection issue when running for a long time
 
 ### Changed
 
-* Updated Mbed Cloud Client to 1.3.1.1 General Availability (GA).
+* Updated Mbed Cloud Client to 1.3.1.1 General Availability (GA)
 
 ### Known Issues
 
