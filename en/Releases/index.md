@@ -113,7 +113,7 @@ N/A
 
 ### Fixed
 
-* Fixed network disconnection issue when running for a long time due to exclusive control of communication processing of Wi-Fi module by updating Wi-Fi module's library
+* Network disconnected when running an agent for an extended period of time.This was due to the Wi-Fi module taking full control of the communication processing.Issue solved by updating Wi-Fi module's library.
 
 ### Changed
 
