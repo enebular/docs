@@ -21,8 +21,7 @@ By default, only logs of `info` level are output. You can change the output sett
 
 The enebuar agent also captures all logs that Node-RED outputs to the console. All log contents captured from Node-RED will be logged as the log level of `info`.
 
-After startup, logs are sent every 30 seconds for 3 minutes after flow deployment, and logs are sent every 5 minutes in other cases.
-Also, logs are sent when the system is shut down.
+After startup, logs are sent every 30 seconds for 3 minutes after flow deployment, then every 5 minutes thereafter. Logs are also sent when the system shuts down. 
 
 ### Node-RED log
 
