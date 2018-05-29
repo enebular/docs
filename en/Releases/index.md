@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-05-23
+lastUpdated: 2018-05-25
 ---
 
 # enebular Release Notes {#enebular}
@@ -103,26 +103,27 @@ The recommended operating environments are as follows.
 
 # enebular edge agent Release Notes {#enebular-edge-agent}
 
-## Latest Release - 1.0.0 (May 18th, 2018)
+## Latest Release - 1.0.1 (Jun 1st, 2018)
 
-In 1.0.0 release, enabled to monitor log data on enebular.
+In 1.0.1 release, Updated Mbed Cloud Client to 1.3.1.1 General Availability (GA).
 
 ### New
 
-* As an enebular device management feature, it is now possible to monitor device logs.
+N/A
 
 ### Fixed
 
-N/A
+* Network disconnected when running an agent for an extended period of time. This was due to the Wi-Fi module taking full control of the communication processing. Issue solved by updating Wi-Fi module's library.
 
 ### Changed
 
-* Updated mbed OS to 5.8.2.
+* Updated Mbed Cloud Client to 1.3.1.1 General Availability (GA)
 
 ### Known Issues
 
 * A `BME280` node may not operate correctly if the flow size is too large.
 * An `inject` node can set only a Timestamp for the Payload and Repetition of the Interval.
+
 
 ### Operating Environment
 
@@ -132,7 +133,7 @@ N/A
 
 #### Hardware
 
-The following hardware is supported in enebular-edge-agent 1.0.0.
+The following hardware is supported in enebular-edge-agent 1.0.1.
 
 * [FRDM-K64F](https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/k-seriesperformancem4/k2x-usb/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F) (NXP Semiconductors N.V.) + Stag Beetle Board (Uhuru Corporation)
 
@@ -143,6 +144,7 @@ The following hardware is supported in enebular-edge-agent 1.0.0.
 
 ## Release History
 
+* [1.0.1](./enebular-edge-agent/1.0.1.md) (Jun 1st, 2018)
 * [1.0.0](./enebular-edge-agent/1.0.0.md) (May 18th, 2018)
 * [0.10.0](./enebular-edge-agent/10.0.0.md) (Apr 27th, 2018)
 * [0.9.1](./enebular-edge-agent/0.9.1.md) (Feb 28th, 2018)
