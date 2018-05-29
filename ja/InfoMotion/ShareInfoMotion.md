@@ -6,7 +6,7 @@ lastUpdated: 2018-5-24
 
 ## 共有機能を使用する前に
 
-### Access Control Allow Origin 解消のために
+### ローカル環境での使用に際して
 
 milkcocoa のDataSource をローカル環境で使用するには、http サーバーからサーブする必要があります。
 Node.js, npm を使用し、 ローカル環境の `index.html` に npm モジュール [http-server](https://www.npmjs.com/package/http-server) を用いることをお勧めします。

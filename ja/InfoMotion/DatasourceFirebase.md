@@ -38,16 +38,17 @@ firebase にログインし、 [プロジェクトを追加] をクリックし�
 今回は、匿名の認証を用います。
 
 プロジェクト左側のメニューから [Develop] をクリックして、さらに [Authentication] のページを開きます。
+[ログイン方法を設定] をクリックします。
 
 ![](/_asset/images/InfoMotion/datasources/firebase/authentication-sidebar.png) 
 
 
-[ログイン方法を設定] をクリックします。
+[匿名] を選択します。
 
 ![](/_asset/images/InfoMotion/datasources/firebase/authentication.png) 
 
 
-[匿名] を選択し、スイッチを on にして [保存] をクリックします。
+スイッチを on にして [保存] をクリックします。
 
 ![](/_asset/images/InfoMotion/datasources/firebase/anonymous-enable.png) 
 
@@ -83,7 +84,7 @@ enebular のプロジェクトの右下の +ボタンをクリックし、新し
 ![](/_asset/images/InfoMotion/datasources/firebase/create-flow.png) 
 
 
-[edit flow] をクリックしてフローエディターを開きます。
+[Edit flow] をクリックしてフローエディターを開きます。
 
 ![](/_asset/images/InfoMotion/datasources/firebase/edit-flow.png) 
 
@@ -181,4 +182,4 @@ InfoMotion ダッシュボードを作成する際に作った DataSource を選
 
 * [Sample infotypes](./SampleInfoTypes.md)
 * [Upload an InfoType](./UploadInfoType.md)
-* [CreateInfoMotion](/.CreateInfoMotion)
+* [CreateInfoMotion](/.CreateInfoMotion.md)

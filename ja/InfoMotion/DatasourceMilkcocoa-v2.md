@@ -75,7 +75,7 @@ return msg
 
 ![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/set-app-id.png)
 
-`Data Store` には "test" を入力し、 `operation` は [push] を選択します。
+`Data Store` には "test" を入力し、 `operation` は [Push] を選択します。
 設定が終わったら [Done] をクリックして、モーダル画面を閉じます。
 
 ![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/milkcocoa-node-settings.png)
@@ -106,7 +106,7 @@ return msg
 
 ## Data Source の作成
 
-フローを作成したものと同じプロジェクトの `Data Souce` のページを表示します。
+フローを作成したものと同じプロジェクトの `Data Source` のページを表示します。
 右下の + ボタンをクリックして、 `Data Source`を追加します。
 
 ![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/data-source.png)
@@ -127,9 +127,9 @@ InfoMotion ダッシュボードを作成する際に作った DataSource を選
 
 * [Sample infotypes](./SampleInfoTypes.md)
 * [Upload an InfoType](./UploadInfoType.md)
-* [CreateInfoMotion](/.CreateInfoMotion)
+* [CreateInfoMotion](/.CreateInfoMotion.md)
 
-### Access Control Allow Origin 解消のために
+### ローカル環境での使用に際して
 
 milkcocoa のDataSource をローカル環境で使用するには、http サーバーからサーブする必要があります。
 Node.js, npm を使用し、 ローカル環境の `index.html` に npm モジュール [http-server](https://www.npmjs.com/package/http-server) を用いることをお勧めします。

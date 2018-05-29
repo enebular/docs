@@ -35,7 +35,7 @@ Demo Keyset をクリックして表示してください。
 
 InfoMotion で データを表示するには、Pubnub にデータをプッシュした際にデータを保存する必要があります。
 `STORAGE & PLAYBACK` の項目までスクロールダウンしてください。
-スイッチを on の方に切り替え、`Rentention` を 1 day 以上に設定してください。
+スイッチを on の方に切り替え、`Retention` を 1 day 以上に設定してください。
 [save changes] をクリックして設定を保存します。
 
 ![](/_asset/images/InfoMotion/datasources/pubnub/pubnub-storage-playback.png) 
@@ -127,7 +127,7 @@ pubnub in ノードにも同じ key, channel の設定をします。
 
 ## DataSource の作成
 
-フローを作成したものと同じプロジェクトの `Data Souce` のページを表示します。
+フローを作成したものと同じプロジェクトの `Data Source` のページを表示します。
 右下の + ボタンをクリックして、 `Data Source`を追加します。
 
 ![](/_asset/images/InfoMotion/datasources/pubnub/datasource.png) 
@@ -148,4 +148,4 @@ InfoMotion ダッシュボードを作成する際に作った DataSource を選
 
 * [Sample infotypes](./SampleInfoTypes.md)
 * [Upload an InfoType](./UploadInfoType.md)
-* [CreateInfoMotion](/.CreateInfoMotion)
+* [CreateInfoMotion](/.CreateInfoMotion.md)

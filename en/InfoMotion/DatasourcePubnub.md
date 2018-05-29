@@ -136,4 +136,4 @@ Leave count to 100 for now then click save to continue.
 Now your Data Source is ready to be used on an infotype see 
 [Sample infotypes](./SampleInfoTypes.md) to downoad a graph, 
 [Upload an InfoType](./UploadInfoType.md) to upload a graph to enebular, 
-and [CreateInfoMotion](/.CreateInfoMotion) to create an InfoMotion dashboard. 
+and [CreateInfoMotion](/.CreateInfoMotion.md) to create an InfoMotion dashboard. 
