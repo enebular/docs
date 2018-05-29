@@ -174,4 +174,4 @@ You should new see a new DataSource created.
 Now your DataSource is ready to be used on an infotype see 
 [Sample infotypes](./SampleInfoTypes.md)to downoad a graph, 
 [Upload an InfoType](./UploadInfoType.md) to upload a graph to enebular, 
-and [CreateInfoMotion](/.CreateInfoMotion.md) to create an InfoMotion dashboard. 
+and [CreateInfoMotion](./CreateInfoMotion.md) to create an InfoMotion dashboard. 

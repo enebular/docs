@@ -84,7 +84,7 @@ enebular のプロジェクトの右下の +ボタンをクリックし、新し
 ![](/_asset/images/InfoMotion/datasources/firebase/create-flow.png) 
 
 
-[Edit flow] をクリックしてフローエディターを開きます。
+[Edit Flow] をクリックしてフローエディターを開きます。
 
 ![](/_asset/images/InfoMotion/datasources/firebase/edit-flow.png) 
 
@@ -182,4 +182,4 @@ InfoMotion ダッシュボードを作成する際に作った DataSource を選
 
 * [Sample infotypes](./SampleInfoTypes.md)
 * [Upload an InfoType](./UploadInfoType.md)
-* [CreateInfoMotion](/.CreateInfoMotion.md)
+* [CreateInfoMotion](./CreateInfoMotion.md)

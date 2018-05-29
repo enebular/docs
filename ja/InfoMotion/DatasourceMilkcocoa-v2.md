@@ -127,7 +127,7 @@ InfoMotion ダッシュボードを作成する際に作った DataSource を選
 
 * [Sample infotypes](./SampleInfoTypes.md)
 * [Upload an InfoType](./UploadInfoType.md)
-* [CreateInfoMotion](/.CreateInfoMotion.md)
+* [CreateInfoMotion](./CreateInfoMotion.md)
 
 ### ローカル環境での使用に際して
 
