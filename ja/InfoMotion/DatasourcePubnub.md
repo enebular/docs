@@ -55,7 +55,7 @@ enebular のプロジェクトから新しいフローを作成してくださ�
 
 下記のノードを配置し、下記の画像のようなフローを作成してください。
 
-* Inject ノード
+* inject ノード
 * function ノード
 * pubnub(in) ノード
 * pubnub(out) ノード
@@ -96,7 +96,7 @@ pubnub out ノードをダブルクリックしてモーダル画面を表示し
 ![](/_asset/images/InfoMotion/datasources/pubnub/pubnub-out-node-keys.png)
 
 
-`channel` には仮に "test" とします。この channel にデータをプッシュします。
+`channel` には仮に 「test」 とします。この channel にデータをプッシュします。
 [Done] をクリックして画面を閉じます。
 
 ![](/_asset/images/InfoMotion/datasources/pubnub/pubnub-out-node-complete.png)
@@ -148,4 +148,4 @@ InfoMotion ダッシュボードを作成する際に作った DataSource を選
 
 * [Sample infotypes](./SampleInfoTypes.md)
 * [Upload an InfoType](./UploadInfoType.md)
-* [CreateInfoMotion](./CreateInfoMotion.md)
+* [Create InfoMotion](./CreateInfoMotion.md)

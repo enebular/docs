@@ -182,4 +182,4 @@ InfoMotion ダッシュボードを作成する際に作った DataSource を選
 
 * [Sample infotypes](./SampleInfoTypes.md)
 * [Upload an InfoType](./UploadInfoType.md)
-* [CreateInfoMotion](./CreateInfoMotion.md)
+* [Create InfoMotion](./CreateInfoMotion.md)

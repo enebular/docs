@@ -38,7 +38,7 @@ enebular のプロジェクトから新しいフローを作成してくださ�
 [Edit Flow] をクリックして、フローエディタ―を開きます。
 下記のノードを配置し、下記の画像のようなフローを作成してください。
 
-* Inject ノード
+* inject ノード
 * function ノード
 * milkcocoa(output) ノード
 * debug ノード
@@ -67,7 +67,7 @@ return msg
 
 ![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/edit-milkcocoa-node.png)
 
-鉛筆のアイコンをクリックして、`Add new milcocoa config node` のモーダル画面を表示します。
+鉛筆のアイコンをクリックして、`Add new milkcocoa config node` のモーダル画面を表示します。
 `App ID` には先ほど作成した milkcocoa アプリの `app_id` を入力します。
 `API Key` と `API Secret` は空のままにし、[Add] をクリックしてください。
 
@@ -75,7 +75,7 @@ return msg
 
 ![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/set-app-id.png)
 
-`Data Store` には "test" を入力し、 `operation` は [Push] を選択します。
+`Data Store` には 「test」 を入力し、 `operation` は [Push] を選択します。
 設定が終わったら [Done] をクリックして、モーダル画面を閉じます。
 
 ![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/milkcocoa-node-settings.png)
@@ -127,7 +127,7 @@ InfoMotion ダッシュボードを作成する際に作った DataSource を選
 
 * [Sample infotypes](./SampleInfoTypes.md)
 * [Upload an InfoType](./UploadInfoType.md)
-* [CreateInfoMotion](./CreateInfoMotion.md)
+* [Create nfoMotion](./CreateInfoMotion.md)
 
 ### ローカル環境での使用に際して
 
