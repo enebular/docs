@@ -39,12 +39,10 @@ This is an example of the enebular agent's log screen.
 ![cloud_logs](/_asset/images/Device/Logs/cloud_logs.png)
 
 1. Timestamp of log output
-1. Log
-1. The service that output the log
-* Internal refers to enebular agent
-1. Log Level
-1. Timestamp when enebular received the log
-* By clicking the timestamp, you can select the time of the log to be viewed
+2. Log
+3. The service that outputs logs * Internal refers to enebular agent
+4. Log Level
+5. Timestamp when enebular received the log * By clicking the timestamp, you can select the time of the log to be viewed
 
 The log output from the Debug node is displayed as follows.
 
@@ -62,11 +60,12 @@ This is an example of the enebular edge agent log screen.
 
 ![device_logs](/_asset/images/Device/Logs/eea_logs.png)
 
-1. Log
-1. Function name that output log
-1. Log Level
-1. Timestamp when enebular received the log
-* By clicking the timestamp, you can select the time of the log to be viewed
+1. Log 
+2. Function name that output log 
+3. Log Level 
+4. Timestamp when enebular received the log 
+
+By clicking the timestamp, you can select the time of the log to be viewed
 
 ### enebular edge agent log list
 
