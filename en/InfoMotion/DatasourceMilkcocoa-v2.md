@@ -128,4 +128,4 @@ https://docs.python.org/2/library/simplehttpserver.html.
 Now your Data Source is ready to be used on an infotype see 
 [Sample infotypes](./SampleInfoTypes.md) to downoad a graph, 
 [Upload an InfoType](./UploadInfoType.md) to upload a graph to enebular, 
-and [CreateInfoMotion](/.CreateInfoMotion) to create an InfoMotion dashboard. 
+and [Create InfoMotion](./CreateInfoMotion.md) to create an InfoMotion dashboard. 
