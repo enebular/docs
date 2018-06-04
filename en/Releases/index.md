@@ -1,32 +1,32 @@
 ---
-lastUpdated: 2018-05-25
+lastUpdated: 2018-06-04
 ---
 
 # enebular Release Notes {#enebular}
 
-## 2.2.0 (May 23rd, 2018)
+# 2.2.1 (June 4th, 2018)
 
-### New
+## New
 
-* InfoMotion now supports two more new data source types: Pubnub and Firebase.
-* "deploy to Lambda" instructions are included to the English manual.
-* Added descriptions for the paid features in our Japanese manual.
-* The internal database management system is now made redundant for an improved reliability.
-* Paid enebular edge agents are now automatically activated when they are connected through Mbed cloud.
-* Flows are shown graphically on enebular when they are saved to its temporary space.
-* Added "asset search bar" to the dashboard of enebular.
-* Logs from enebular edge agent can now be displayed on enebular.
+None
 
-### Fixed
+## Fixed
 
-* English documentation of Enebular Dashboard now contains screen shots in English (Previously displaying screen shots in Japanese).
-* Flows are shown graphically on enebular when they are saved to its temporary space.
+- Fixed the issue that allowed a user to modify one's privileges on a project which one had already given away its ownership.
+- Fixed an issue that allowed the users to edit graphs in Live mode on InfoMotion.
+- Fixed an issue that caused InfoMotion to leak memory when removing graphs in Live mode.
+- Fixed an issue that caused InfoMotion to close the property settings screen during user's attempt to change settings.
+- The (+) button to add graphs on InfoMotion has been slightly enlarged for the better usability.
 
-### Known Issues
+## Known Issues
 
 * Opening the flow editor from a web browser shows Japanese texts even if the browser is configured to show English.
 * InfoMotion-embedded pages fail to show graphs when the browser which opens them is not logged into enebular.
+* The current flow editor allows multiple users to open the same flow simultaneously; however, if each clicks on "Deploy" button, only the last saved flow will remain on enebular.
 
+### Release History
+
+- [2.2.1](./enebular/2.2.1.md) (June 4th, 2018)
 - [2.2.0](./enebular/2.2.0.md) (May 23rd, 2018)
 - [2.1.2](./enebular/2.1.2.md) (April 16th, 2018)
 - [2.1.1](./enebular/2.1.1.md) (April 3rd, 2018)
