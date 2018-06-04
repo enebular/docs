@@ -38,7 +38,7 @@ None
 
 # enebular agent Release Notes {#enebular-agent}
 
-## Latest Release - 2.1.0 (Jun 4th, 2018)
+## Latest Release - 2.1.0 (June 4th, 2018)
 
 ## New
 
@@ -97,14 +97,14 @@ The recommended operating environments are as follows.
 
 ## Release History
 
-- [2.1.0](./enebular-agent/2.1.0.md) (Jun 4th, 2018)
+- [2.1.0](./enebular-agent/2.1.0.md) (June 4th, 2018)
 - [2.0.0](./enebular-agent/2.0.0.md) (Jan 30th, 2018)
 
 ---
 
 # enebular edge agent Release Notes {#enebular-edge-agent}
 
-## Latest Release - 1.0.1 (Jun 4th, 2018)
+## Latest Release - 1.0.1 (June 4th, 2018)
 
 In 1.0.1 release, Updated Mbed Cloud Client to 1.3.1.1 General Availability (GA).
 
@@ -141,7 +141,7 @@ The following hardware is supported in enebular-edge-agent 1.0.1.
 
 ## Release History
 
-* [1.0.1](./enebular-edge-agent/1.0.1.md) (Jun 4th, 2018)
+* [1.0.1](./enebular-edge-agent/1.0.1.md) (June 4th, 2018)
 * [1.0.0](./enebular-edge-agent/1.0.0.md) (May 18th, 2018)
 * [0.10.0](./enebular-edge-agent/10.0.0.md) (Apr 27th, 2018)
 * [0.9.1](./enebular-edge-agent/0.9.1.md) (Feb 28th, 2018)
