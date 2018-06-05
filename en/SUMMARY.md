@@ -14,6 +14,7 @@ lastUpdated: 2018-06-06
     * [2.0.1](Releases/enebular/2.0.1.md)
     * [2.0.0](Releases/enebular/2.0.0.md)
   * [enebular agent](Releases/index.md#enebular-agent)
+    * [2.1.0](Releases/enebular-agent/2.1.0.md)
     * [2.0.0](Releases/enebular-agent/2.0.0.md)
   * [enebular edge agent](Releases/index.md#enebular-edge-agent)
     * [1.0.1](Releases/enebular-edge-agent/1.0.1.md)

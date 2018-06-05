@@ -14,6 +14,7 @@ lastUpdated: 2018-06-06
     * [2.0.1](Releases/enebular/2.0.1.md)
     * [2.0.0](Releases/enebular/2.0.0.md)
   * [enebular agent](Releases/index.md#enebular-agent)
+    * [2.1.0](Releases/enebular-agent/2.1.0.md)
     * [2.0.0](Releases/enebular-agent/2.0.0.md)
   * [enebular edge agent](Releases/index.md#enebular-edge-agent)
     * [1.0.1](Releases/enebular-edge-agent/1.0.1.md)
@@ -27,6 +28,7 @@ lastUpdated: 2018-06-06
 
 * [About Projects](Project/index.md)
 * [Project Settings](Project/Settings.md)
+* [Billing Information](Project/Billing.md)
 
 ## Flows
 
@@ -63,8 +65,7 @@ lastUpdated: 2018-06-06
 
 ## Devices
 
-* [Device List](Device/DeviceList.md)
-  * [Logs](Device/Logs.md)
+* [Introduction](Device/Introduction.md)
 * [License Manager](Device/LicenseManager.md)
 
 ## Access
@@ -78,10 +79,6 @@ lastUpdated: 2018-06-06
 ## Account
 
 * [Account Settings](Account/index.md)
-
-## Billing
-
-* [Billing Information](Billing/Information.md)
 
 ## Appendix
 
