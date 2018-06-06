@@ -102,7 +102,7 @@ milkcocoa node の **Data Store** は `tutorial`、**Operation** は `Push` で�
 DataSource の登録が終わったら、InfoType をアップロードします。今回はサンプルの棒グラフを使います。
 
 <ul>
-  <li><a href="/_asset/sample/sample-bar-chart.zip" target="_blank">サンプル InfoType のダウンロード(zip形式)</a></li>
+  <li><a href="/_asset/sample/barchart-getting-started" target="_blank">サンプル InfoType のダウンロード(zip形式)</a></li>
 </ul>
 
 ダウンロードが終わったら、サイドバーの InfoType タブをクリックします。
@@ -119,7 +119,7 @@ DataSource の登録が終わったら、InfoType をアップロードします
 
 アップロードが終わったら、以下のようなプレビュー画面が表示されます。
 
-![](https://i.gyazo.com/a8b352503ecbfaa14e75c48f032f5636.png)
+![](https://i.gyazo.com/e552cdf3eb420fa291e9f162dbba422e.png)
 
 アップロードが成功したことを確認したので、パンくずからプロジェクト画面に戻り、サイドバーの InfoMotion タブをクリックします。
 
@@ -157,11 +157,11 @@ Create Graph を押すと、test-graph がリストに追加されます。
 
 test-graph の左にあるプラスアイコンを押すと、ダッシュボードに追加されます。（グラフが表示されない場合は、右上の日付範囲を変えてみてください）
 
-![](/_asset/images/enebular-developers-infomotion-dashboard.png)
+![](https://i.gyazo.com/12cb863ff356db5f71a255fb463a420e.png)
 
 パネルの右下をひっぱって横に伸ばして、 Save を押すとレイアウトが保存されます。
 
-![](/_asset/images/enebular-developers-infomotion-dashboard-full.png)
+![](https://i.gyazo.com/1c01844e6aab972439e0c53dcb0fb000.png)
 
 
 ## Well Done!
