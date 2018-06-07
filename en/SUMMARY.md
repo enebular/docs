@@ -82,6 +82,7 @@ lastUpdated: 2018-06-07
 ## Billing
 
 * [Billing Information](Billing/Information.md)
+
 ## Appendix
 
 * [Supported Environments](Other/Support.md)
