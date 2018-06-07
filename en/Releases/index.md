@@ -1,32 +1,35 @@
 ---
-lastUpdated: 2018-05-23
+lastUpdated: 2018-06-07
 ---
 
 # enebular Release Notes {#enebular}
 
-## 2.2.0 (May 23rd, 2018)
+## 2.2.1 (June 7th, 2018)
 
 ### New
 
-* InfoMotion now supports two more new data source types: Pubnub and Firebase.
-* "deploy to Lambda" instructions are included to the English manual.
-* Added descriptions for the paid features in our Japanese manual.
-* The internal database management system is now made redundant for an improved reliability.
-* Paid enebular edge agents are now automatically activated when they are connected through Mbed cloud.
-* Flows are shown graphically on enebular when they are saved to its temporary space.
-* Added "asset search bar" to the dashboard of enebular.
-* Logs from enebular edge agent can now be displayed on enebular.
+None
 
 ### Fixed
 
-* English documentation of Enebular Dashboard now contains screen shots in English (Previously displaying screen shots in Japanese).
-* Flows are shown graphically on enebular when they are saved to its temporary space.
+- Fixed an issue of a user's role not correctly changing to collaborator after transferring ownership of a project.
+- Fixed an issue that caused InfoMotion datasources pub/sub to continue running after graphs have been removed in live mode.
+- Fixed an issue that caused InfoMotion to close the property settings screen during user's attempt to change settings.
+
+### Changed
+
+- Disabled the ability to edit graphs in Live mode on InfoMotion.
+- The (+) button to add graphs on InfoMotion has been slightly enlarged for the better usability.
 
 ### Known Issues
 
 * Opening the flow editor from a web browser shows Japanese texts even if the browser is configured to show English.
 * InfoMotion-embedded pages fail to show graphs when the browser which opens them is not logged into enebular.
+* The current flow editor allows multiple users to open the same flow simultaneously; however, if each clicks on "Deploy" button, only the last saved flow will remain on enebular.
 
+### Release History
+
+- [2.2.1](./enebular/2.2.1.md) (June 7th, 2018)
 - [2.2.0](./enebular/2.2.0.md) (May 23rd, 2018)
 - [2.1.2](./enebular/2.1.2.md) (April 16th, 2018)
 - [2.1.1](./enebular/2.1.1.md) (April 3rd, 2018)
@@ -38,29 +41,29 @@ lastUpdated: 2018-05-23
 
 # enebular agent Release Notes {#enebular-agent}
 
-## Latest Release - 2.0.0 (Jan 30th, 2018)
+## Latest Release - 2.1.0 (June 7th, 2018)
 
-enebular-agent is IoT agent software for enebular and designed for Linux OS gateways. enebular-agent version 2.0.0 is being released along side the release of enebular version 2.0.0.
+## New
 
-For detailed specifications on the enebular agent, please contact support (support@enebular.com).
+* Released support for connecting to enebular using Mbed Cloud
+    * Up until now AWS IoT was used to connect to enebular, but it is now possible to choose between using AWS IoT and Mbed Cloud
+    * If using Mbed Cloud, please get in touch with us at support@enebular.com for detailed information
+* Added support for 'activation' functionality where enebular-agent automatically links with a license set as 'Reserved' on enebular
+* Added the ability to specify Node-RED's data directory (userDir) with the NODE_RED_DATA_DIR environment variable
+* Added the ability to specify the execution command used to start Node-RED with the NODE_RED_COMMAND environment variable
 
-### New
+## Fixed
 
-#### Device Management / Logging
-* As an enebular device management feature, it is now possible to monitor device status and logs of IoT devices running enebular-agent
-* enenbular-agent regularly reports device status and logs to enebular
-* These features are offered as Enterprise Plan paid features
+* Handled the issue of being able to connect directly to the enebular-agent Node-RED flow editor and edit a deployed flow by disabling flow editing
 
-#### Connection Types
-In addition to AWS IoT that has been supported up until now, it is now also possible to deploy assets using Arm Mbed Cloud.
+## Changed
 
-### Fixed
- N/A
+* In the logging function, the max log file size that can be sent each time is now restricted to 10KB
+* In the logging function, the log is now sent every 30 seconds for the first 3 minutes after startup (with the regular interval being 300 seconds)
+* Updated the readme files to reflect the new features and changes
 
-### Changed
- N/A
+## Known Issues
 
-### Known Issues
  N/A
 
 ### Recommended Hardware
@@ -97,32 +100,30 @@ The recommended operating environments are as follows.
 
 ## Release History
 
+- [2.1.0](./enebular-agent/2.1.0.md) (June 7th, 2018)
 - [2.0.0](./enebular-agent/2.0.0.md) (Jan 30th, 2018)
 
 ---
 
 # enebular edge agent Release Notes {#enebular-edge-agent}
 
-## Latest Release - 1.0.0 (May 18th, 2018)
+## Latest Release - 1.0.1 (June 7th, 2018)
 
-In 1.0.0 release, enabled to monitor log data on enebular.
+In 1.0.1 release, Updated Mbed Cloud Client to 1.3.1.1 General Availability (GA).
 
-### New
-
-* As an enebular device management feature, it is now possible to monitor device logs.
-
-### Fixed
-
+## New
 N/A
 
-### Changed
+## Fixed
+* Network disconnected when running an agent for an extended period of time. This was due to the Wi-Fi module taking full control of the communication processing. Issue solved by updating Wi-Fi module's library.
 
-* Updated mbed OS to 5.8.2.
+## Changed
+* Updated Mbed Cloud Client to 1.3.1.1 General Availability (GA)
 
-### Known Issues
+## Known Issues
 
-* A `BME280` node may not operate correctly if the flow size is too large.
-* An `inject` node can set only a Timestamp for the Payload and Repetition of the Interval.
+* * A BME280 node may not operate correctly if the flow size is too large.
+* An inject node can set only a Timestamp for the Payload and Repetition of the Interval.
 
 ### Operating Environment
 
@@ -132,7 +133,7 @@ N/A
 
 #### Hardware
 
-The following hardware is supported in enebular-edge-agent 1.0.0.
+The following hardware is supported in enebular-edge-agent 1.0.1.
 
 * [FRDM-K64F](https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/k-seriesperformancem4/k2x-usb/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F) (NXP Semiconductors N.V.) + Stag Beetle Board (Uhuru Corporation)
 
@@ -143,6 +144,7 @@ The following hardware is supported in enebular-edge-agent 1.0.0.
 
 ## Release History
 
+* [1.0.1](./enebular-edge-agent/1.0.1.md) (June 7th, 2018)
 * [1.0.0](./enebular-edge-agent/1.0.0.md) (May 18th, 2018)
 * [0.10.0](./enebular-edge-agent/10.0.0.md) (Apr 27th, 2018)
 * [0.9.1](./enebular-edge-agent/0.9.1.md) (Feb 28th, 2018)
