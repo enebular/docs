@@ -1,10 +1,10 @@
 ---
-lastUpdated: 2018-06-04
+lastUpdated: 2018-06-07
 ---
 
 # enebular Release Notes {#enebular}
 
-## 2.2.1 (June 4th, 2018)
+## 2.2.1 (June 7th, 2018)
 
 ### New
 
@@ -12,21 +12,24 @@ lastUpdated: 2018-06-04
 
 ### Fixed
 
-- 他のユーザーに自分のプロジェクトのowner権限を委譲しても、そのプロジェクトの権限を変更してOwnerに昇格できる不具合を修正しました
-- InfoMotionでライブモードで表示中のグラフを編集できる不具合を修正しました
-- InfoMotionでライブモード中のグラフを削除するとリソースリークが発生する不具合を修正しました
-- InfoMotionで作成したグラフを修正しようとすると設定画面が途中の工程で閉じてしまう不具合を修正しました
-- InfoMotionのグラフ追加ボタン(+)が小さく使いづらかったため、修正してボタンを大きくしました
+- プロジェクトの所有権を他のユーザーに委譲した後、ロールが正しくコラボレーターに設定されない不具合を修正しました
+- ライブモード中のグラフを削除するとInfoMotionのデータソースへのpub/subが実行され続ける不具合を修正しました
+- InfoMotionの設定を変更しようとすると、設定画面が途中で閉じてしまう不具合を修正しました
+
+### Changed
+
+- InfoMotionでライブモードで表示中のグラフを編集する機能を無効化しました
+- InfoMotionのグラフ追加ボタン(+)を使いやすいように大きくしました
 
 ### Known Issues
 
-* 言語設定を英語にしたブラウザでフローエディタを開いても、一部ノードの説明文が日本語で表示されます
+* 言語設定を英語にしたブラウザでフローエディタを開いても、一部の説明文が日本語で表示されます
 * InfoMotionを埋め込んだ静的ページを、enebularにログインしていないブラウザで開こうとするとグラフが表示されません
 * 現状のフローエディタでは、1つのフローを複数のユーザーが開くことが出来ますが、それぞれ「Deploy」ボタンを押した場合、enebular上に残るのは最後に保存した物のみになります
 
 ### Release History
 
-- [2.2.1](./enebular/2.2.1.md) (June 4th, 2018)
+- [2.2.1](./enebular/2.2.1.md) (June 7th, 2018)
 - [2.2.0](./enebular/2.2.0.md) (May 23rd, 2018)
 - [2.1.2](./enebular/2.1.2.md) (April 16th, 2018)
 - [2.1.1](./enebular/2.1.1.md) (April 3rd, 2018)
@@ -38,7 +41,7 @@ lastUpdated: 2018-06-04
 
 # enebular agent Release Notes {#enebular-agent}
 
-## Latest Release - 2.1.0 (June 4th, 2018)
+## Latest Release - 2.1.0 (June 7th, 2018)
 
 ## New
 
@@ -96,14 +99,14 @@ lastUpdated: 2018-06-04
 
 ## Release History
 
-- [2.1.0](./enebular-agent/2.1.0.md) (June 4th, 2018)
+- [2.1.0](./enebular-agent/2.1.0.md) (June 7th, 2018)
 - [2.0.0](./enebular-agent/2.0.0.md) (Jan 30th, 2018)
 
 ---
 
 # enebular edge agent Release Notes {#enebular-edge-agent}
 
-## Latest Release - 1.0.1 (June 4th, 2018)
+## Latest Release - 1.0.1 (June 7th, 2018)
 
 enebular-edge-agent 1.0.1 では、バージョンを Mbed Cloud Client 1.3.1.1 General Availability (GA) アップデートしました。
 
@@ -139,7 +142,7 @@ enebular-edge-agent 1.0.1は、下記のハードウェアを対象としてい�
 
 ## Release History
 
-* [1.0.1](./enebular-edge-agent/1.0.1.md) (June 4th, 2018)
+* [1.0.1](./enebular-edge-agent/1.0.1.md) (June 7th, 2018)
 * [1.0.0](./enebular-edge-agent/1.0.0.md) (May 18th, 2018)
 * [0.10.0](./enebular-edge-agent/0.10.0.md) (Apr 27th, 2018)
 * [0.9.1](./enebular-edge-agent/0.9.1.md) (Feb 28th, 2018)
