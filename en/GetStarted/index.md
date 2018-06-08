@@ -1,16 +1,15 @@
 ---
-lastUpdated: 2018-03-28
+lastUpdated: 2018-06-07
 ---
 
-# Getting Started
+# Getting Started 
 
-This tutorial covers the following.
+This tutorial covers the following. 
 
-- Creating a project
-- Creating a flow using Milkcocoa*
-- Creating a graph (InfoMotion) that uses the flow's data
-
-*[Milkcocoa](https://mlkcca.com) is a cloud platform that enables simple realtime data exchange between IoT devices, smartphones and PCs.
+- Creating a project 
+- Discovering and Forking a flow 
+- Discovering and Forking a graph (InfoType) 
+- Visualising Flow data in an InfoMotion 
 
 ## Creating a Project
 
@@ -24,107 +23,179 @@ Enter an appropriate title and create the project.
 
 ![](https://i.gyazo.com/69a5b817e8681349f45373eb7aead486.png)
 
-## Creating a Flow
+## Import a Flow 
 
-With the project added let's now create a flow. Select the project to go to the project management screen.
+Enebular allows users to publish and fork Assets. At the right top part of the window click on `Discover`. 
 
-![](https://i.gyazo.com/e521afd4d489291aa774fe9429cf3321.png)
+![](https://i.gyazo.com/f09039ce123a069bc9f64bb5d448a963.png)
 
-Press the "+" at the bottom right to open the asset creation dialog box.
+Select Flow and search `getting-started`. 
 
-Select `flow` for the asset type and give the flow a title. For the flow's default access permissions, this time just set it to `superdev`. The category at the bottom can be set to anything appropriate.
+![](https://i.gyazo.com/42a1ba777fed735c911e19a20aa79fe9.png)
 
-![](https://i.gyazo.com/257abde3b17b7d2bab924b2d0ad32ac8.png)
+Click fork to open the fork modal.
 
-Press "Continue" to complete the creation.
+![](https://i.gyazo.com/478da140685e515ad49efb1eca79906a.png)
 
-Once created you'll be taken to the flow details page.
+Select the project to import to and the Default asset role. (For now select superdev)
 
-![](https://i.gyazo.com/7cb9b53259022696e7cc47e4fa81d89b.png)
+![](https://i.gyazo.com/aaa149b249e745c3ce31a00288199459.png)
 
-Press "Edit Flow" to open the Node-RED editor.
+Go back to your project dashboard to see the new asset you just forked. 
 
-![](/_asset/images/enebular-developers-nodered-before.png)
+![](https://i.gyazo.com/05daf3cb4bf1ae80d9496b2050df46ca.png)
 
+The imported Flow should look like this. 
 
-## Editing and Deploying the Data Flow
+![](https://i.gyazo.com/33793823646d34d7cb48a086cf308da3.png)
 
-In the editor, you create a data flow by placing the nodes lined up on the left (the boxes with API names) onto the sheet and then connecting those nodes. Once the flow is ready, you deploy it by pressing **Deploy** at the top right.
+The flow is set up in a way that all the user needs to 
+edit in the flow is datasource credentials. before we deploy the flow lets register a datasource. 
 
-![](https://i.gyazo.com/2dd11f23a605ec41b73d413176d206c2.png)
+## Creating a Datasource
 
-The flow in the diagram stores a random number between 0 and 50 (`v`) with a random selection from seven ID types (`dataid`) to a [Milkcocoa](https://mlkcca.com) data store every 10 seconds.
+Below are the current real time databases used in InfoMotion.
+See documentation for simple registration and and set up configurations. 
 
-Create the flow by referring to the diagram below. Set the flow to run every 10 seconds with the **inject node**, set the properties in the **function node**, and in the **milkcocoa node** set the destination Milkcocoa app information (`app_id`), the data store information (`datastore`) and authentication information (`API Key`, `API Secret`).
+*The following configurations are for testing usage only and not recommended for production. 
 
-![](/_asset/images/enebular-developers-milkcocoaflow.png)
+[Milkcocoa-v2  DataSource](./DatasourceMilkcocoa-v2.md)
 
-The code for the function node is as follows.
+- Registration
 
-```
-var newMes = {};
+[Firebase DataSource](./DatasourceFirebase.md)
 
-newMes.payload = {};
-newMes.payload.v = Math.floor(Math.random()*50 + 1);
-newMes.payload.dataid = 'data-'+Math.floor(Math.random()*7 + 1);
+- Registration
+- Authentication
+- Set up DataBase
 
-return newMes;
-```
+[Pubnub  DataSource](./DatasourcePubnub.md)
 
-The milkcocoa node's **Data Store** is `tutorial` and its **Operation** is `Push`.
+- Registration
 
-Before creating this flow, refer to the Milkcocoa tutorial page [Preparing to use Milkcocoa](https://mlkcca.com/tutorial/page2.html), create an app and make note of the `app_id`, and then also the `API Key` and `API Secret` from the  authentication tab in the Milkcocoa management screen.
+Once registered we are ready to edit the flow. 
 
-***Note 1**: The free version of enebular automatically sleeps if there is no access for 30 minutues. At present only the free version is available.
+## Editing and Deploying the Flow 
+
+With a registered real time datasource we can now insert the correct credentials and deploy the flow. 
+
+Each datasource has different credential requirements. 
+The `getting-started` flow has 3 datasouces set up for you to choose. Feel free to remove the nodes you do not need. 
+
+Set up one of the following datasources.
+
+###Milkcocoa
+
+**Credentials needed for milkcocoa.**
+
+- app_id
+![](https://i.gyazo.com/89f6f5f40985fc594831af0456367232.png)
+
+**Inputs in node editor**
+
+Double click the milkcocoa node and set a new milkcocoa id in 
+`Add new milkcocoa`. 
+
+![](https://i.gyazo.com/f5af057aa276e5d682f76dcac9b6d975.png)
+
+Input app id, click add then done to set node. 
+
+![](https://i.gyazo.com/01fc6b4b0768b97ddef7df865fc4ef89.png)
+
+###Firebase 
+
+**Credentials needed for Firebase.**
+
+At the overview page click on `Add firebase to your web app`. 
+![](https://i.gyazo.com/dd183169ebc84379c477c8fb72764d86.png)
+
+databaseURL will be used in the Flow.
+
+![](https://i.gyazo.com/de45518f53087053af1009f39adde653.png)
+
+**Inputs in Flow**
+
+Double click the firebase node and click on the pencil icon to edit a new firebase. 
+
+![](https://i.gyazo.com/006b6bb363326917a6bf4106b22fc568.png)
+
+Insert your databaseURL, click update and done to set node. 
+Leave authtype to none just for this example. 
+
+![](https://i.gyazo.com/a9a322d51267a8a7965c0ed952b9d9fe.png)
+
+###Pubnub
+
+**Credentials in Pubnub**
+
+In your project select the keyset you wish you use. 
+
+![](https://i.gyazo.com/e5321091e2e1c324beac80d6791cd5be.png)
+
+Scroll down to `storage and playback`, switch it on, set retention to 3 days and click on save changes.
+
+![](https://i.gyazo.com/5f48ae0bd7004165bf9022e37786abf2.png)
+
+The Subscribe key and Publish keys will be used in the flow.
+![](https://gyazo.com/646f91acd38afb2567714cec871e221a)
+
+**Inputs in Flow**
+
+Double click the pubnub out node and edit the keys by clicking on the pencil icon. 
+
+![](https://i.gyazo.com/d486f8c51cd6ec49859043d897b9182b.png)
+
+Insert the Publish and Subscribe key, click add and done to set the node.
+
+![](https://i.gyazo.com/023ead4c57285096cf54d5d92ca56125.png)
+
+Repeat this with the pubnub in node. 
+
+![](https://gyazo.com/579dd025db613934a417b13c30f788bb)
+
+Once the correct credentials are inserted click the `Deploy` button. To check if data is being pushed click the `debug` tag. 
+The debug log should be updated every 10 seconds (intervals set by the inject node).
+
+Image of debug log 
+
+![](https://i.gyazo.com/f1e0fdf675a74450ef8ebfc3c18c04df.png) 
+
+With data being pushed to a database we can create an datasource (endpoint) for infomotion to use.
+
+***Note 1**: The free version of enebular automatically sleeps if there is no access for 30 minutes. At present only the free version is available.
 
 ***Note 2**: If the flow editor is left open and unused for an extended period of time, an attempt to deploy may result with it failing with "Unauthorized". If this happens please reload.
 
+## Registering a DataSource for InfoMotion
 
-## Registering a DataSource
+We will next add datasources to our project for InfoMotion to visualise. At your project dashboard select `Data Source` on the left tab then click on the plus button to open the datasource modal. 
 
-Once the data flow has been deployed, let's now visualize the data.
+![](https://gyazo.com/d68eced9c32162389418a0eb3d27f379) 
 
-Before starting on the visualization, you'll need to know the following terminology.
+Give the datasource a name and correct credentials.
+Click on save to save. Now the datasource is ready for InfoMotion to use. 
 
-* InfoMotion: This is the actual graph dashboard you see. It is created from a combination of a InfoType and a DataSource. The term itself is of course a combination of Info and Motion, based on it having more movement than an "Infographic".
-* InfoType: The graph type (pie graph or bar graph etc).
-* DataSource: The data to be displayed in the graph. At present there are two types of DataSource types - `apiGateway` and `milkcocoa`. This time we'll use `milkcocoa`.
+![](https://i.gyazo.com/679f69e11be2eec5a9ea1c77f979b631.png)
 
-First we register a DataSource from the DataSource section in the sidebar. Press the "+" at the bottom right to open the DataSource creation dialog box.
+## Import an InfoType
 
-![](https://i.gyazo.com/f63357415d983465b637c81dbf4014d3.png)
+Enebular allows users to publish and fork Assets. At the right top part of the window click on `Discover`. 
 
-Select "milkcocoa" for the "Select DataSource Type" and enter the required information.
+Select InfoType and search `barchart`. 
 
-Enter the `App Id`, `DataStore`, `API Key` and `Secret Key` (API Secret) you specified for the milkcocoa node in the Node-RED editor. Then press "Save" to save it.
+![](https://i.gyazo.com/8e444675d12f0471c9f7cb907f8f8672.png) 
 
-![](https://i.gyazo.com/7b0b7eebebe0828e564fdcb2863a47b9.png)
+Click fork to open the fork modal. 
 
-## Uploading an InfoType
+![](https://i.gyazo.com/30e54dc512adbfad891845aa9f647d45.png)
 
-After registering the DataSource, upload the InfoType. We'll use a sample bar graph here.
+Select the project to import to. 
 
-<ul>
-  <li><a href="/_asset/sample/barchart-getting-started.zip" target="_blank">Sample InfoType Download (zip)</a></li>
-</ul>
+![](https://i.gyazo.com/930bc90dcd5304a3960e3fb121c0d18a.png)
 
-Once the download is complete, click the InfoType tab in the sidebar.
+Go back to your project dashboard to see the new asset you just forked. 
 
-![](https://i.gyazo.com/1d6ba758c53ff94c66a9545fd83aa859.png)
-
-Press the "+" at the bottom right to open the dialog box. Drag the contents of the downloaded zip file into the drag and drop area.
-
-![](https://i.gyazo.com/5b461780e0d2afe6758d87ecb7ae7801.png)
-
-Select whatever `category` you like and then press the "Upload" button.
-
-![](/_asset/images/enebular-developers-upload-infotype.png)
-
-Once the upload completes a preview like the following will be displayed.
-
-![](https://i.gyazo.com/d43cfbc272a24116847dd76f5b2f30a6.png)
-
-With that we've confirmed that the upload succeeded, so use the breadcrumbs to go back to the project screen and select the InfoMotion tab from the sidebar.
+![](https://i.gyazo.com/acd97ef8cdf4969689897438b73f7447.png)
 
 ##  Creating an InfoMotion
 
@@ -140,33 +211,28 @@ Once you've created it you'll be taken to the InfoMotion dashboard screen.
 
 ![](/_asset/images/enebular-developers-infomotion-dashboard-before.png)
 
-Open the sidebar with "Add Graph". A list of the graphs shown on the dashboard is shown in the sidebar.
+Open the sidebar with "Add Graph". A list of the graphs shown on the dashboard is shown in the sidebar. In this procjet no graphs have been added yet. 
 
-![](/_asset/images/enebular-developers-infomotion-add-graph.png)
+![](https://i.gyazo.com/7e2931dde8a443b6483764480e78cc64.png)
 
-We register a graph by pressing "Create Graph".
+Click on `New Graph` to open the the creation modal. 
+By default the Type will be set to `barchart` and DATASOURCE to `test-datasource`. 
+The Label corresponds to x axis set as `country` and Value to the y axis `value`. These are set by default.
+Edit the name as you like then `create graph`. 
 
-![](https://i.gyazo.com/20840d9afa6a2b70d1b5894f95ba107b.png)
+![](https://i.gyazo.com/2f833299dcd5aee2caf822710ef3e830.png)
 
-Enter something appropriate for the NAME, the TYPE should be set to the `barchart` type of the InfoType you uploaded, and the DATASOURCE should be set to the `test-datasource` DataSource you created.
+"test-graph" will now be added to the list. 
 
-Since the label is the x axis and the value is the y axis, set `dataid` for the label and `v` for the value (LabelNames are omitted in this example).
+![](https://i.gyazo.com/b4af5de8b0ca9dfdf0f16cbe5fc9c3da.png) 
 
-![](/_asset/images/enebular-developers-infomotion-create-graph-filled.png)
+If you click the plus icon to the left of test-graph it will be added to the dashboard. If data is not displayed you may have no data being stored. Select a daterange to a date when data was stored. 
 
-
-Press "Create Graph" and "test-graph" will be added to the list.
-
-![](/_asset/images/enebular-developers-infomotion-graphs.png)
-
-
-If you click the plus icon to the left of test-graph it will be added to the dashboard (if it isn't displayed, please try changing the date range at the top right).
-
-![](https://i.gyazo.com/12cb863ff356db5f71a255fb463a420e.png)
+![](https://i.gyazo.com/912da26730a1951e717d0e23a6554124.png)
 
 To resize the graph drag its bottom right corner then press "Save" to save the save layout.
 
-![](https://i.gyazo.com/1c01844e6aab972439e0c53dcb0fb000.png)
+![](https://i.gyazo.com/10ff5017c847cfcc93ba566d35725fcb.png) 
 
 ## Well Done!
 
