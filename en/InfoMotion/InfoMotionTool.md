@@ -222,7 +222,18 @@ The plugin.json is created to supply the InfoMotion with sample data to preview 
     {
       "country": "CN",
       "value": 2
+    },
+    {
+      "country": "USA",
+      "value": 3
     }
+  ],
+  "settingSchema":[
+        {
+          "type" : "key", "name" : "label", "help" : "Please specify the key of the data to be the label."
+        },{
+          "type" : "key", "name" : "value", "help" : "Please specify the key of the data representing the value."
+        }
   ]
 }
 ```
