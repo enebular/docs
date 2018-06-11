@@ -199,7 +199,14 @@ eit create myfirstgraph
       "country": "CN",
       "v": 2
     }
-  ]
+  ],
+  "settingSchema":[
+        {
+          "type" : "key", "name" : "label", "help" : "ラベルとなるデータのkeyを指定してください。"
+        },{
+          "type" : "key", "name" : "value", "help" : "値を表すデータのkeyを指定してください。"
+        }
+    ]
 }
 ```
 
