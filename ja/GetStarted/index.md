@@ -102,7 +102,7 @@ milkcocoa node の **Data Store** は `tutorial`、**Operation** は `Push` で�
 DataSource の登録が終わったら、InfoType をアップロードします。今回はサンプルの棒グラフを使います。
 
 <ul>
-  <li><a href="/_asset/sample/barchart-getting-started" target="_blank">サンプル InfoType のダウンロード(zip形式)</a></li>
+  <li><a href="/_asset/sample/barchart-getting-started.zip" target="_blank">サンプル InfoType のダウンロード(zip形式)</a></li>
 </ul>
 
 ダウンロードが終わったら、サイドバーの InfoType タブをクリックします。
