@@ -240,9 +240,19 @@ eit create [graph name] -t linechart
 eit create [graph name] -t piechart
 ```
 
-## Packaging
+## Module installation 
 
-Once the InfoType is ready to be uploaded to enebular run the command.
+An InfoType may use multiple libraries. 
+To make sure they are installed enter the graph folder and install the dependancies using `npm` https://www.npmjs.com/. You can also see the Read.me file for more information. 
+
+```bash
+cd [graph name]
+npm install 
+```
+
+## Packaging 
+
+These files must be packaged to view the graph locally and to be uploaded to Enebular. Run the following to create the packages. 
 
 ```bash
 eit package [graph name]
@@ -255,6 +265,8 @@ This will create a target folder containing three files.
 - `plugin.json`
 
 ## Running locally in the browser
+
+Once you have installed the correct npm modules and have packaged the files run the following to run InfoMotion locally. 
 
 The `run [graph name]` command and open http://localhost:3000 after `eit package`.
 
