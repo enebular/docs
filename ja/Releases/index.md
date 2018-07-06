@@ -1,34 +1,38 @@
 ---
-lastUpdated: 2018-06-07
+lastUpdated: 2018-07-06
 ---
 
 # enebular Release Notes {#enebular}
 
-## 2.2.1 (June 7th, 2018)
+## 2.3.0 (July 6th, 2018)
 
 ### New
 
-なし
+- Projectの管理機能に、Published Assets画面を追加しました
+- Published Assets画面からPublish済みのアセットを削除できるようになりました
 
 ### Fixed
 
-- プロジェクトの所有権を他のユーザーに委譲した後、ロールが正しくコラボレーターに設定されない不具合を修正しました
-- ライブモード中のグラフを削除するとInfoMotionのデータソースへのpub/subが実行され続ける不具合を修正しました
-- InfoMotionの設定を変更しようとすると、設定画面が途中で閉じてしまう不具合を修正しました
+- LicenseManagerの画面でReserveをする際、ConnectionTypeにAWS IoTを選択してもconnection一覧が表示されない不具合を修正しました
+- LicenseManagerの画面で、ConnectionTypeを選択しなくてもReserveボタンが押せてしまう不具合を修正しました
 
 ### Changed
 
-- InfoMotionでライブモードで表示中のグラフを編集する機能を無効化しました
-- InfoMotionのグラフ追加ボタン(+)を使いやすいように大きくしました
+- PublishしたAssetsを削除した際、Publish元のAssetsも削除されていましたが、PublishされたAssetsのみ削除されるようにしました
+- Assetsをpublishしているユーザーを削除した際、PublishされているAssetsが削除されるようにしました
+- 既にPublish済みのAssetsを更新した場合、従来は新しいAssetsとしてPublishされていましたが、既存のPublishされたAssetsが更新されるようにしました
+- Account Settings画面からUser IDが確認できるようになりました
+- Node-REDのnode-red-node-twitterのアップデートに伴い、フローエディタのtwitterノードをバージョン1.0.1に更新しました
 
 ### Known Issues
 
-* 言語設定を英語にしたブラウザでフローエディタを開いても、一部の説明文が日本語で表示されます
+* 言語設定を英語にしたブラウザでNode-REDの編集画面を開いても、一部の説明文が日本語で表示されます
 * InfoMotionを埋め込んだ静的ページを、enebularにログインしていないブラウザで開こうとするとグラフが表示されません
-* 現状のフローエディタでは、1つのフローを複数のユーザーが開くことが出来ますが、それぞれ「Deploy」ボタンを押した場合、enebular上に残るのは最後に保存した物のみになります
+* 現状のNode-REDの編集画面では、1つのフローを複数のユーザーが開くことが出来ますが、それぞれ「Deploy」ボタンを押した場合、enebular上に残るのは最後に保存した物のみになります
 
 ### Release History
 
+- [2.3.0](./enebular/2.3.0.md) (July 6th, 2018)
 - [2.2.1](./enebular/2.2.1.md) (June 7th, 2018)
 - [2.2.0](./enebular/2.2.0.md) (May 23rd, 2018)
 - [2.1.2](./enebular/2.1.2.md) (April 16th, 2018)

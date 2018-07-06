@@ -1,25 +1,28 @@
 ---
-lastUpdated: 2018-06-07
+lastUpdated: 2018-07-06
 ---
 
 # enebular Release Notes {#enebular}
 
-## 2.2.1 (June 7th, 2018)
+## 2.3.0 (July 6th, 2018)
 
 ### New
 
-None
+- Added a new "Published Assets" page to the Project management function
+- Now published assets can be deleted from "Published Assets" page
 
 ### Fixed
 
-- Fixed an issue of a user's role not correctly changing to collaborator after transferring ownership of a project.
-- Fixed an issue that caused InfoMotion datasources pub/sub to continue running after graphs have been removed in live mode.
-- Fixed an issue that caused InfoMotion to close the property settings screen during user's attempt to change settings.
+- Fixed an issue that prevented the connection list from appearing when ConnectionType is set to "AWS IoT" when reserving a license at LicenseManager screen.
+- Fixed an issue that allowed Reserve button in the LicenseManager screen to be clicked even if the Connection Type is not set.
 
 ### Changed
 
-- Disabled the ability to edit graphs in Live mode on InfoMotion.
-- The (+) button to add graphs on InfoMotion has been slightly enlarged for the better usability.
+- Deleting a published asset used to also delete the original asset which it was published from, but now the only published asset will be deleted if this action is taken.
+- Published assets will now be deleted if the user who published it is deleted.
+- Publishing an already-published asset used to publish a new asset, but now doing so will overwrite the existing published asset.
+- User ID is now obtainable from Account Settings screen.
+- the twitter node on the flow editor has been updated because node-red-node-twitter on Node-RED was updated.
 
 ### Known Issues
 
@@ -29,6 +32,7 @@ None
 
 ### Release History
 
+- [2.3.0](./enebular/2.3.0.md) (July 6th, 2018)
 - [2.2.1](./enebular/2.2.1.md) (June 7th, 2018)
 - [2.2.0](./enebular/2.2.0.md) (May 23rd, 2018)
 - [2.1.2](./enebular/2.1.2.md) (April 16th, 2018)
