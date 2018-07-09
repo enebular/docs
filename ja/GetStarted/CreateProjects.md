@@ -83,4 +83,5 @@ Deploy ボタンを押下しフローを保存した後、画面右上の debug 
 ![hello_world](./../../img/GettingStarted-hello_world.png)
 
 ## Well Done!
+
 enebularの Projectの作成方法、Asset(フロー)の作成方法、そしてシンプルなフローの編集が出来るようになりました。
