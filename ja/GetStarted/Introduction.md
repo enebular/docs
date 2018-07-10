@@ -26,23 +26,22 @@ enebular を始めるには、まず Project を作成します。ログイン�
 
 ## Assetの作成
 
-Project を作成したら、enebular の Asset の1つである Flow を作成しましょう。作成した Project を選択して Project の管理画面に移動します。
+Project を作成したら、enebular の Asset の1つである Flow を作成しましょう。作成した Project を選択して Project の管理画面に移動します。  
+右下の + を押すと Asset を作成するモーダルが開きます。
 
 ![](https://i.gyazo.com/e521afd4d489291aa774fe9429cf3321.png)
 
-右下の + を押すと Asset を作成するモーダルが開きます。
 
-Asset Type は `flow` を選択して、Flow のタイトルをつけます。Flow へのデフォルトのアクセス権（default role to asset）は今回は `superdev` に設定してください。一番下の category は任意のものを選択してください。
+Asset Type は `flow` を選択して、Flow のタイトルをつけます。Flow へのデフォルトのアクセス権（default role to asset）は今回は `superdev` に設定してください。一番下の category は任意のものを選択してください。  
+Continue を押すと作成が完了し、Flow の詳細ページに移動します。
 
 ![](https://i.gyazo.com/257abde3b17b7d2bab924b2d0ad32ac8.png)
 
-Continue を押すと作成が完了します。
-
-作成が完了すると、Flow の詳細ページに移動します。
+Edit Flow を押します。
 
 ![](https://i.gyazo.com/7cb9b53259022696e7cc47e4fa81d89b.png)
 
-Edit Flow を押すと、Node-RED の編集画面が立ち上がります。
+フローを編集する画面が立ち上がります。
 
 ![](/_asset/images/enebular-developers-nodered-before.png)
 
