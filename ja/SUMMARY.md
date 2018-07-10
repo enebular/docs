@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-05-25
+lastUpdated: 2018-07-10
 ---
 
 # Summary
@@ -21,6 +21,9 @@ lastUpdated: 2018-05-25
     - [0.9.1](Releases/enebular-edge-agent/0.9.1.md)
     - [0.9.0](Releases/enebular-edge-agent/0.9.0.md)
 - [Getting Started](GetStarted/index.md)
+    - [Create Projects and Assets](GetStarted/CreateProjects.md)
+    - [Flow Deployment](GetStarted/FlowDeployment.md)
+    - [Data Visualization](GetStarted/DataVisualization.md)
 
 ## Projects
 
