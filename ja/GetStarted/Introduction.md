@@ -2,7 +2,7 @@
 lastUpdated: 2018-07-10
 ---
 
-# Create Projects and Assets
+# Introduction
 
 このチュートリアルでは以下のことを行います。
 
