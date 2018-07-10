@@ -105,7 +105,7 @@ Enter the `App Id`, `DataStore`, `API Key` and `Secret Key` (API Secret) you spe
 After registering the DataSource, upload the InfoType. We'll use a sample bar graph here.
 
 <ul>
-  <li><a href="/_asset/sample/sample-bar-chart.zip" target="_blank">Sample InfoType Download (zip)</a></li>
+  <li><a href="/_asset/sample/barchart-getting-started.zip" target="_blank">Sample InfoType Download (zip)</a></li>
 </ul>
 
 Once the download is complete, click the InfoType tab in the sidebar.
@@ -122,7 +122,7 @@ Select whatever `category` you like and then press the "Upload" button.
 
 Once the upload completes a preview like the following will be displayed.
 
-![](https://i.gyazo.com/a8b352503ecbfaa14e75c48f032f5636.png)
+![](https://i.gyazo.com/d43cfbc272a24116847dd76f5b2f30a6.png)
 
 With that we've confirmed that the upload succeeded, so use the breadcrumbs to go back to the project screen and select the InfoMotion tab from the sidebar.
 
@@ -162,11 +162,11 @@ Press "Create Graph" and "test-graph" will be added to the list.
 
 If you click the plus icon to the left of test-graph it will be added to the dashboard (if it isn't displayed, please try changing the date range at the top right).
 
-![](/_asset/images/enebular-developers-infomotion-dashboard.png)
+![](https://i.gyazo.com/12cb863ff356db5f71a255fb463a420e.png)
 
 To resize the graph drag its bottom right corner then press "Save" to save the save layout.
 
-![](/_asset/images/enebular-developers-infomotion-dashboard-full.png)
+![](https://i.gyazo.com/1c01844e6aab972439e0c53dcb0fb000.png)
 
 ## Well Done!
 
