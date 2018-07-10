@@ -16,7 +16,7 @@ enebular の特徴として、作成したフローを様々な環境にデプ�
 
 ![](https://i.gyazo.com/194b5c56abc221193690461193e159a0.png)
 
-まず、Assets から新しいフローを作成します。
+Assets からフローを作成します（既にフローを作成済みの場合、それを利用することも可能です）。
 
 ![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_02.png)
 
