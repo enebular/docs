@@ -16,7 +16,6 @@ First, let's go over the user types. There are the following three types of user
 
 ![](/_asset/images/enebular-developers-aboutaccess.png)
 
-
 The **Project Owner** is the project manager. They can edit project members and manage access to all of the assets in a project.
 
 A **Project Collaborator** is a project member. They can access all of the assets in a project.
@@ -42,8 +41,6 @@ Next, permissions called "Asset privileges" can be configured for each of the as
 - developer: view / edit
 - operator: view / deploy
 - user: view
-
-![](/_asset/images/enebular-developers-assetprivilege.png)
 
 Asset privileges can be set on the "Access" page which can be navigated to from the "Access" tab in the flow details screen.
 
