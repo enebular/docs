@@ -146,8 +146,6 @@ enebular のユーザーはアセットを公開すること、また公開さ�
 
 ![](https://i.gyazo.com/7841284aa8720e3b47956d26ebbd5848.png)
 
-Give the InfoMotion a title. For the InfoMotion's default access permissions, just set it to `superdev` this time. Select whatever you like for the "category" at the bottom.
-
 適当な名前を付けて、アクセス権限はデフォルトの `superdev` を選択します。
 下の欄のカテゴリーは任意のものを選択してください。
 
