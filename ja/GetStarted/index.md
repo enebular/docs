@@ -4,7 +4,7 @@ lastUpdated: 2018-07-10
 
 # Getting Started
 
-enebularの主要な機能を振れることが出来るチュートリアルです。
+enebularの主要な機能に触れることができるチュートリアルです。  
 enebularを初めて利用する場合、下記のチュートリアルを通してenebularについて理解をすすめることをおすすめします。
 
 - [Create Projects and Assets](./CreateProjects.md)
