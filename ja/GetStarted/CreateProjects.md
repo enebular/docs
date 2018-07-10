@@ -16,9 +16,11 @@ enebular を始めるには、まず Project を作成します。ログイン�
 
 ![](https://i.gyazo.com/1e90909b5ecefe56ff1934aa41e5a7b9.png)
 
-適当な title を入力して、作成します。
+適当な title を入力して、Submit を押下します。
 
 ![](/_asset/images/enebular-developers-createprojectmodal.png)
+
+入力した名称で Project が作成されたことが一覧で確認できます。
 
 ![](https://i.gyazo.com/69a5b817e8681349f45373eb7aead486.png)
 
