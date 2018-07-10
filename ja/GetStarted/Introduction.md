@@ -70,10 +70,8 @@ Deploy ボタンを押下しフローを保存した後、画面右上の debug 
 
 しかし今回はタイムスタンプではなく `Hello World !` と出力するフローを作成したいので、今作ったフローをさらに編集します。
 
-`injectノード`はデフォルトの設定では、ボタンを押したときにタイムスタンプを `msg.payload` オブジェクトに出力します。
-そして、`debugノード`はデフォルトの設定では、`mag.payload` オブジェクトに設定された値を debug タブに出力します。
-
-これでは常にタイムスタンプが出力されてしまうため、injectノードが `msg.payload` オブジェクトにタイムスタンプを出力した後、`msg.payload`オブジェクトの値を`Hello World !`という文字列で置き換える必要があります。文字列の置き換えには `changeノード`が利用できます。
+`injectノード`はデフォルトの設定では、ボタンを押したときにタイムスタンプを `msg.payload` オブジェクトに設定するので、
+`msg.payload`オブジェクトの値を`Hello World !`という文字列で置き換える必要があります。文字列の置き換えには `changeノード`が利用できます。
 
 1. `injectノード`と`debugノード`の間に新しく`changeノード`を配置します。`changeノード`はパレットの中で function に分類されています。
 ![set_change_node](./../../img/GettingStarted-set_change_node.gif)
