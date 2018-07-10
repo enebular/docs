@@ -32,7 +32,7 @@ Project を作成したら、enebular の Asset の1つである Flow を作成�
 
 右下の + を押すと Asset を作成するモーダルが開きます。
 
-Asset Type は `flow` を選択して、Flow のタイトルをつけます。Flow へのデフォルトのアクセス権（default role to asset）は今回はとりあえず `superdev` に設定してください。一番下の category は何でも良いです。
+Asset Type は `flow` を選択して、Flow のタイトルをつけます。Flow へのデフォルトのアクセス権（default role to asset）は今回は `superdev` に設定してください。一番下の category は任意のものを選択してください。
 
 ![](https://i.gyazo.com/257abde3b17b7d2bab924b2d0ad32ac8.png)
 
