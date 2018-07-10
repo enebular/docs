@@ -62,11 +62,11 @@ App name をわかりやすい名前で設定します。
 
 ![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_11.png)
 
-設定を確認したら Deploy ボタンを押します（Heroku にクレジットカードを登録していない方は、以下のようなクレジットカード番号入力画面が出ますが、本アプリは無料で利用できますので入力して継続ください）。
+設定を確認したら Deploy ボタンを押します（Heroku にクレジットカード情報を登録していない方は、以下のような入力画面が出ますが、本アプリは無料で利用できますので入力して継続ください）。
 
 ![](https://i.gyazo.com/e9d7bf541eb2029b53f53735054cfe7a.png)
 
-クレジットカードを入力すると、アプリの作成が始まります。
+情報を入力すると、アプリの作成が始まります。
 
 ![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_12.png)
 
