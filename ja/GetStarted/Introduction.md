@@ -54,15 +54,15 @@ Asset の作成が完了したので、フローを編集してみましょう�
 
 フローエディタでは、左側のパレットに並んでいるノードをワークスペースにドラッグアンドドロップして、ノード同士を繋いでフローを作成していきます。
 
-1. 下図の要領で`injectノード`をワークスペースの中にドラッグアンドドロップで配置してください。`injectノード`はパレットの中で input に分類されています。
+下図の要領で`injectノード`をワークスペースの中にドラッグアンドドロップで配置してください。`injectノード`はパレットの中で input に分類されています。
 `injectノード`は、フローを開始するトリガーとなるノードです。
 ![set_inject_node](./../../img/GettingStarted-inject_node.gif)
 
-1. 同様の手順で`debugノード`を配置します。`debugノード`はパレットの中で output に分類されています。
+同様の手順で`debugノード`を配置します。`debugノード`はパレットの中で output に分類されています。
 `debugノード`は 右メニューの debug タブ にメッセージを出力するノードです。
 ![set_debug_node](./../../img/GettingStarted-debug_node.gif)
 
-1. 下図のように`injectノード`と`debugノード`をつなぎます。
+下図のように`injectノード`と`debugノード`をつなぎます。
 Deploy ボタンを押下しフローを保存した後、画面右上の debug タブを選択します。最後に`injectノード`のボタンをクリックすることでフローが起動し debug タブにタイムスタンプが表示されます。
 ![connect_nodes](./../../img/GettingStarted-connect_nodes.gif)
 
@@ -73,13 +73,13 @@ Deploy ボタンを押下しフローを保存した後、画面右上の debug 
 `injectノード`はデフォルトの設定では、ボタンを押したときにタイムスタンプを `msg.payload` オブジェクトに設定するので、
 `msg.payload`オブジェクトの値を`Hello World !`という文字列で置き換える必要があります。文字列の置き換えには `changeノード`が利用できます。
 
-1. `injectノード`と`debugノード`の間に新しく`changeノード`を配置します。`changeノード`はパレットの中で function に分類されています。
+`injectノード`と`debugノード`の間に新しく`changeノード`を配置します。`changeノード`はパレットの中で function に分類されています。
 ![set_change_node](./../../img/GettingStarted-set_change_node.gif)
 
-1. 配置した`changeノード`をダブルクリックしノードのを設定を行います。赤線で囲んだ部分に`Hello World !`と入力しDoneボタンを押下します。
+配置した`changeノード`をダブルクリックしノードのを設定を行います。赤線で囲んだ部分に`Hello World !`と入力しDoneボタンを押下します。
 ![change_node_setting](./../../img/GettingStarted-change_node_setting.png)
 
-1. Deployボタンを押下しフローを保存した後、injectノードのボタンを押下します。debugタブに`Hello World !`と出力されます。
+Deployボタンを押下しフローを保存した後、injectノードのボタンを押下します。debugタブに`Hello World !`と出力されます。
 ![hello_world](./../../img/GettingStarted-hello_world.png)
 
 ## Well Done!
