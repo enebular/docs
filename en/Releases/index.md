@@ -1,28 +1,22 @@
 ---
-lastUpdated: 2018-07-06
+lastUpdated: 2018-07-11
 ---
 
 # enebular Release Notes {#enebular}
 
-## 2.3.0 (July 6th, 2018)
+## 2.3.1 (July 11th, 2018)
 
 ### New
 
-- Added a new "Published Assets" page to the Project management function
-- Now published assets can be deleted from "Published Assets" page
+None
 
 ### Fixed
 
-- Fixed an issue that prevented the connection list from appearing when ConnectionType is set to "AWS IoT" when reserving a license at LicenseManager screen.
-- Fixed an issue that allowed Reserve button in the LicenseManager screen to be clicked even if the Connection Type is not set.
+- Fixed an issue which has been causing the twitter node on the flow editor to fail.
 
 ### Changed
 
-- Deleting a published asset used to also delete the original asset which it was published from, but now the only published asset will be deleted if this action is taken.
-- Published assets will now be deleted if the user who published it is deleted.
-- Publishing an already-published asset used to publish a new asset, but now doing so will overwrite the existing published asset.
-- User ID is now obtainable from Account Settings screen.
-- the twitter node on the flow editor has been updated because node-red-node-twitter on Node-RED was updated.
+None
 
 ### Known Issues
 
@@ -32,6 +26,7 @@ lastUpdated: 2018-07-06
 
 ### Release History
 
+- [2.3.1](./enebular/2.3.1.md) (July 11th, 2018)
 - [2.3.0](./enebular/2.3.0.md) (July 6th, 2018)
 - [2.2.1](./enebular/2.2.1.md) (June 7th, 2018)
 - [2.2.0](./enebular/2.2.0.md) (May 23rd, 2018)
