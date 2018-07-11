@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2017-05-15
+lastUpdated: 2018-07-11
 ---
 
 # AWS IoT へのデプロイ
@@ -165,7 +165,9 @@ enebular 側の操作は一旦置いておいて、次はパソコン上でデ�
 
 デバイスのセットアップを行います。なお、デバイスマスターからくる命令を受けて処理を行うコードベースのデバイスのラッパーのことを**エージェント**と呼びます。
 
-<a href="https://github.com/enebular/enebular-runtime-agent" target="_blank">GitHub</a> からダウンロードしてきます。
+<a href="https://github.com/enebular/enebular-runtime-agent" target="_blank">GitHub</a> からダウンロードします。
+
+※以降の手順を進める際には、npmパッケージの [n](https://github.com/tj/n) などを使用してNode.js のバージョンを8.9.0にしてください。
 
 エージェントのコアモジュールをビルドします。
 
