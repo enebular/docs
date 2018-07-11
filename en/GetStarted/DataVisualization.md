@@ -46,54 +46,24 @@ edit in the flow is datasource credentials. before we deploy the flow lets regis
 Below are the current real time databases used in InfoMotion.
 See documentation for simple registration and and set up configurations. 
 
+
+- [Milkcocoa-v2  DataSource](./DatasourceMilkcocoa-v2.md)
+- [Firebase DataSource](./DatasourceFirebase.md)
+- [Pubnub  DataSource](./DatasourcePubnub.md)
+
+This tutorial uses Firebase.
+Before proceed to the next step, you have to register and create dataStore. Please refer to [Firebase](./DatasourceFirebase.md).
+
+
 *The following configurations are for testing usage only and not recommended for production. 
-
-[Milkcocoa-v2  DataSource](./DatasourceMilkcocoa-v2.md)
-
-- Registration
-
-[Firebase DataSource](./DatasourceFirebase.md)
-
-- Registration
-- Authentication
-- Set up DataBase
-
-[Pubnub  DataSource](./DatasourcePubnub.md)
-
-- Registration
-
-Once registered we are ready to edit the flow. 
 
 ## Editing and Deploying the Flow 
 
-With a registered real time datasource we can now insert the correct credentials and deploy the flow. 
+Set credentials to Node and deploy flow.
+This tutorial only set uo Firebase Node.
 
-Each datasource has different credential requirements. 
-The `getting-started` flow has 3 datasouces set up for you to choose. Feel free to remove the nodes you do not need. 
 
-Set up one of the following datasources.
-
-###Milkcocoa
-
-**Credentials needed for milkcocoa.**
-
-- app_id
-![](https://i.gyazo.com/89f6f5f40985fc594831af0456367232.png)
-
-**Inputs in node editor**
-
-Double click the milkcocoa node and set a new milkcocoa id in 
-`Add new milkcocoa`. 
-
-![](https://i.gyazo.com/f5af057aa276e5d682f76dcac9b6d975.png)
-
-Input app id, click add then done to set node. 
-
-![](https://i.gyazo.com/01fc6b4b0768b97ddef7df865fc4ef89.png)
-
-###Firebase 
-
-**Credentials needed for Firebase.**
+### Credentials needed for Firebase.
 
 At the overview page click on `Add firebase to your web app`. 
 ![](https://i.gyazo.com/dd183169ebc84379c477c8fb72764d86.png)
@@ -102,7 +72,7 @@ databaseURL will be used in the Flow.
 
 ![](https://i.gyazo.com/de45518f53087053af1009f39adde653.png)
 
-**Inputs in Flow**
+### Inputs in Flow
 
 Double click the firebase node and click on the pencil icon to edit a new firebase. 
 
@@ -113,34 +83,6 @@ Leave authtype to none just for this example.
 
 ![](https://i.gyazo.com/a9a322d51267a8a7965c0ed952b9d9fe.png)
 
-###Pubnub
-
-**Credentials in Pubnub**
-
-In your project select the keyset you wish you use. 
-
-![](https://i.gyazo.com/e5321091e2e1c324beac80d6791cd5be.png)
-
-Scroll down to `storage and playback`, switch it on, set retention to 3 days and click on save changes.
-
-![](https://i.gyazo.com/5f48ae0bd7004165bf9022e37786abf2.png)
-
-The Subscribe key and Publish keys will be used in the flow.
-![](https://gyazo.com/646f91acd38afb2567714cec871e221a)
-
-**Inputs in Flow**
-
-Double click the pubnub out node and edit the keys by clicking on the pencil icon. 
-
-![](https://i.gyazo.com/d486f8c51cd6ec49859043d897b9182b.png)
-
-Insert the Publish and Subscribe key, click add and done to set the node.
-
-![](https://i.gyazo.com/023ead4c57285096cf54d5d92ca56125.png)
-
-Repeat this with the pubnub in node. 
-
-![](https://gyazo.com/579dd025db613934a417b13c30f788bb)
 
 Once the correct credentials are inserted click the `Deploy` button. To check if data is being pushed click the `debug` tag. 
 The debug log should be updated every 10 seconds (intervals set by the inject node).
