@@ -2,7 +2,7 @@
 lastUpdated: 2018-07-10
 ---
 
-# Getting Started 
+# Data Visualization
 
 By using InfoMotion, you can visualize data.
 
