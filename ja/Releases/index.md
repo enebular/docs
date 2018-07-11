@@ -1,28 +1,22 @@
 ---
-lastUpdated: 2018-07-06
+lastUpdated: 2018-07-11
 ---
 
 # enebular Release Notes {#enebular}
 
-## 2.3.0 (July 6th, 2018)
+## 2.3.1 (July 11th, 2018)
 
 ### New
 
-- Projectの管理機能に、Published Assets画面を追加しました
-- Published Assets画面からPublish済みのアセットを削除できるようになりました
+なし
 
 ### Fixed
 
-- LicenseManagerの画面でReserveをする際、ConnectionTypeにAWS IoTを選択してもconnection一覧が表示されない不具合を修正しました
-- LicenseManagerの画面で、ConnectionTypeを選択しなくてもReserveボタンが押せてしまう不具合を修正しました
+- フローエディタのtwitterノードが利用できない不具合を修正しました。
 
 ### Changed
 
-- PublishしたAssetsを削除した際、Publish元のAssetsも削除されていましたが、PublishされたAssetsのみ削除されるようにしました
-- Assetsをpublishしているユーザーを削除した際、PublishされているAssetsが削除されるようにしました
-- 既にPublish済みのAssetsを更新した場合、従来は新しいAssetsとしてPublishされていましたが、既存のPublishされたAssetsが更新されるようにしました
-- Account Settings画面からUser IDが確認できるようになりました
-- Node-REDのnode-red-node-twitterのアップデートに伴い、フローエディタのtwitterノードをバージョン1.0.1に更新しました
+なし
 
 ### Known Issues
 
@@ -32,6 +26,7 @@ lastUpdated: 2018-07-06
 
 ### Release History
 
+- [2.3.1](./enebular/2.3.1.md) (July 11th, 2018)
 - [2.3.0](./enebular/2.3.0.md) (July 6th, 2018)
 - [2.2.1](./enebular/2.2.1.md) (June 7th, 2018)
 - [2.2.0](./enebular/2.2.0.md) (May 23rd, 2018)
