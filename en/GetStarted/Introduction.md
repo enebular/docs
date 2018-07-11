@@ -48,40 +48,34 @@ Press "Edit Flow".
 
 ## Editing a flow
 
-Next, Edit flow.
-This section is creating simple flow that is to export `Hello World !` to console tab.
+This section explains how to create a simple flow that logs `Hello World !` to the debug tab.
 
-In flow editor, drag-and drop-nodes in left pallet and connect the nodes to create a flow.
+In flow editor, drag and drop nodes from the left pallet to the canvas and connect the nodes to create a flow.
 
-At first, deploy Inject Node onto workspace. Inject Node is classified "input" on pallet.
-Inject Node is trigger of starting flow.
+Firstly, let's deploy Inject Node onto workspace. The Inject Node is classified as an "input" node in the node pallet.
+Inject Node triggers the flow to start.
 ![set_inject_node](./../../img/GetStarted/Introduction-inject_node.gif)
 
-Next, deploy Debug Node. Debug Node is classiffied "output" on pallet.
-Debug Node is the node that is to display message to debag tab on right menu.
+Next, deploy Debug Node. Debug Node is classified as an "output" on the node pallet.
+Debug Node is the node that displays debug messages on the right hand side tab. 
 ![set_debug_node](./../../img/GetStarted/Introduction-debug_node.gif)
 
-Connect Inject Node and Debug Node.
-Save flow to push `Deploy` button of right top. And select debug tab on right menu.
-Finally, start flow to click botton of Inject Node's left side and display timestamp on debug tab.
+Connect Inject Node and Debug Node. 
+Save the flow by clicking on the `Deploy` button at the top right. 
+You can start the flow by clicking the left end of the Inject Node. The debug tab should be logging timestamps. 
 ![connect_nodes](./../../img/GetStarted/Introduction-connect_nodes.gif)
 
-This is the first time for you that create flow.
+Now you have a flow working. Let's next log `Hello World !` instead of timestamps. By default Debug Node exports `msg.payload` as the logging value. We will have to change this value to `Hello World !`. To do this a Change Node can help. 
 
-Next, display not timestamp but `Hello World !`. Should edit this flow.
-
-Debug Node of default setting exports `msg.payload`'s value. 
-So have to change this value to `Hello World !`. Change Node helps this.
-
-Deploy Change Node between Inject Node and Debug Node. Change Node is classified "function" on pallet.
+Change Node is classified as a "function" node on the pallet.
 ![set_change_node](./../../img/GetStarted/Introduction-set_change_node.gif)
 
-Double click this Change Node and set up the node. Input `Hello World!` and push `Done`.
+Double click the Change Node and set up the node input to `Hello World!` and click `Done`.
 ![change_node_setting](./../../img/GetStarted/Introduction-change_node_setting.png)
 
-Save flow to push `Deploy` button of right top and start this flow. In debug tab, to be displayed `Hello World !`
+Save flow by clicking on the `Deploy` button and start the flow. The debug tab should now be displaying `Hello World !`
 ![hello_world](./../../img/GetStarted/Introduction-hello_world.png)
 
 ## Well Done!
 
-You can enable creating a Project and an Asset and editing simple flow on enebular.
+You can now create a project, an asset and edit a simple flow on Enebular. 
