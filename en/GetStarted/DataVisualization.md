@@ -4,7 +4,7 @@ lastUpdated: 2018-07-10
 
 # Data Visualization
 
-By using InfoMotion, you can visualize data.
+Using InfoMotion to visualize data.
 
 This tutorial covers the following. 
 
