@@ -1,24 +1,24 @@
 ---
-lastUpdated: 2018-07-10
+lastUpdated: 2018-07-20
 ---
 
 # Data Visualization
 
 Using InfoMotion to visualize data.
 
-This tutorial covers the following. 
+This tutorial covers the following.
 
-- Discovering and Forking a flow 
-- Discovering and Forking a graph (InfoType) 
-- Visualising Flow data in an InfoMotion 
+- Discovering and Forking a flow
+- Discovering and Forking a graph (InfoType)
+- Visualising Flow data in an InfoMotion
 
-## Import a Flow 
+## Import a Flow
 
-Enebular allows users to publish and fork Assets. At the right top part of the window click on `Discover`. 
+Enebular allows users to publish and fork Assets. At the right top part of the window click on `Discover`.
 
 ![discoverMenu](./../../img/GetStarted/DataVisualization-discoverMenu.png)
 
-Select Flow and search `getting-started`. 
+Select Flow and search `getting-started`.
 
 ![discover](./../../img/GetStarted/DataVisualization-discover.png)
 
@@ -30,42 +30,39 @@ Select the project to import to and the Default asset role. (For now select supe
 
 ![fork](./../../img/GetStarted/DataVisualization-fork.png)
 
-Go back to your project dashboard to see the new asset you just forked. 
+Go back to your project dashboard to see the new asset you just forked.
 
 ![addedForkFlow](./../../img/GetStarted/DataVisualization-addedForkFlow.png)
 
-The imported Flow should look like this. 
+The imported Flow should look like this.
 
 ![forkFlow](./../../img/GetStarted/DataVisualization-forkFlow.png)
 
-The flow is set up in a way that all the user needs to 
-edit in the flow is datasource credentials. before we deploy the flow lets register a datasource. 
+The flow is set up in a way that all the user needs to
+edit in the flow is datasource credentials. before we deploy the flow lets register a datasource.
 
 ## Creating a Datasource
 
 Below are the current real time databases used in InfoMotion.
-See documentation for simple registration and and set up configurations. 
+See documentation for simple registration and and set up configurations.
 
-
-- [Milkcocoa-v2  DataSource](./DatasourceMilkcocoa-v2.md)
-- [Firebase DataSource](./DatasourceFirebase.md)
-- [Pubnub  DataSource](./DatasourcePubnub.md)
+- [Milkcocoa-v2 DataSource](./../InfoMotion/DatasourceMilkcocoa-v2.md)
+- [Firebase DataSource](./../InfoMotion//DatasourceFirebase.md)
+- [Pubnub DataSource](./../InfoMotion/DatasourcePubnub.md)
 
 This tutorial uses Firebase.
 Before proceed to the next step, you have to register and create dataStore. Please refer to [Firebase](./DatasourceFirebase.md).
 
+\*The following configurations are for testing usage only and not recommended for production.
 
-*The following configurations are for testing usage only and not recommended for production. 
-
-## Editing and Deploying the Flow 
+## Editing and Deploying the Flow
 
 Set credentials to Node and deploy flow.
 This tutorial only set uo Firebase Node.
 
-
 ### Credentials needed for Firebase.
 
-At the overview page click on `Add firebase to your web app`. 
+At the overview page click on `Add firebase to your web app`.
 ![firebase](./../../img/GetStarted/DataVisualization-fireBase-en.png)
 
 databaseURL will be used in the Flow.
@@ -74,61 +71,60 @@ databaseURL will be used in the Flow.
 
 ### Inputs in Flow
 
-Double click the firebase node and click on the pencil icon to edit a new firebase. 
+Double click the firebase node and click on the pencil icon to edit a new firebase.
 
 ![fireBaseNode](./../../img/GetStarted/DataVisualization-fireBaseNode.png)
 
-Insert your databaseURL, click update and done to set node. 
-Leave authtype to none just for this example. 
+Insert your databaseURL, click update and done to set node.
+Leave authtype to none just for this example.
 
 ![fireBaseConfig](./../../img/GetStarted/DataVisualization-fireBaseConfig.png)
 
-
-Once the correct credentials are inserted click the `Deploy` button. To check if data is being pushed click the `debug` tag. 
+Once the correct credentials are inserted click the `Deploy` button. To check if data is being pushed click the `debug` tag.
 The debug log should be updated every 10 seconds (intervals set by the inject node).
 
-Image of debug log 
+Image of debug log
 
 ![debugTab](./../../img/GetStarted/DataVisualization-debugTab.png)
 
 With data being pushed to a database we can create an datasource (endpoint) for infomotion to use.
 
-***Note 1**: The free version of enebular automatically sleeps if there is no access for 30 minutes. At present only the free version is available.
+**\*Note 1**: The free version of enebular automatically sleeps if there is no access for 30 minutes. At present only the free version is available.
 
-***Note 2**: If the flow editor is left open and unused for an extended period of time, an attempt to deploy may result with it failing with "Unauthorized". If this happens please reload.
+**\*Note 2**: If the flow editor is left open and unused for an extended period of time, an attempt to deploy may result with it failing with "Unauthorized". If this happens please reload.
 
 ## Registering a DataSource for InfoMotion
 
-We will next add datasources to our project for InfoMotion to visualise. At your project dashboard select `Data Source` on the left tab then click on the plus button to open the datasource modal. 
+We will next add datasources to our project for InfoMotion to visualise. At your project dashboard select `Data Source` on the left tab then click on the plus button to open the datasource modal.
 
 ![addDataSource](./../../img/GetStarted/DataVisualization-addDataSource.png)
 
 Give the datasource a name and correct credentials.
-Click on save to save. Now the datasource is ready for InfoMotion to use. 
+Click on save to save. Now the datasource is ready for InfoMotion to use.
 
 ![dataSourceSettings](./../../img/GetStarted/DataVisualization-dataSourceSettings.png)
 
 ## Import an InfoType
 
-Enebular allows users to publish and fork Assets. At the right top part of the window click on `Discover`. 
+Enebular allows users to publish and fork Assets. At the right top part of the window click on `Discover`.
 
-Select InfoType and search `barchart`. 
+Select InfoType and search `barchart`.
 
 ![discoverInfoType](./../../img/GetStarted/DataVisualization-discoverInfoType.png)
 
-Click fork to open the fork modal. 
+Click fork to open the fork modal.
 
 ![sampleBarChart](./../../img/GetStarted/DataVisualization-sampleBarChart.png)
 
-Select the project to import to. 
+Select the project to import to.
 
 ![forkInfoType](./../../img/GetStarted/DataVisualization-forkInfoType.png)
 
-Go back to your project dashboard to see the new asset you just forked. 
+Go back to your project dashboard to see the new asset you just forked.
 
 ![confirmForkedInfoType](./../../img/GetStarted/DataVisualization-confirmForkedInfoType.png)
 
-##  Creating an InfoMotion
+## Creating an InfoMotion
 
 Here we'll create an InfoMotion using a DataSource and an InfoType. Press the "+" at the bottom right to open the dialog box.
 
@@ -142,22 +138,22 @@ Once you've created it you'll be taken to the InfoMotion dashboard screen.
 
 ![infoMotionDashBoard](./../../img/GetStarted/DataVisualization-InfoMotionDashBoard.png)
 
-Open the sidebar with "Add Graph". A list of the graphs shown on the dashboard is shown in the sidebar. In this procjet no graphs have been added yet. 
+Open the sidebar with "Add Graph". A list of the graphs shown on the dashboard is shown in the sidebar. In this procjet no graphs have been added yet.
 
 ![newGraph](./../../img/GetStarted/DataVisualization-newGraph.png)
 
-Click on `New Graph` to open the the creation modal. 
-By default the Type will be set to `barchart` and DATASOURCE to `test-datasource`. 
+Click on `New Graph` to open the the creation modal.
+By default the Type will be set to `barchart` and DATASOURCE to `test-datasource`.
 The Label corresponds to x axis set as `country` and Value to the y axis `value`. These are set by default.
-Edit the name as you like then `create graph`. 
+Edit the name as you like then `create graph`.
 
 ![graphConfig](./../../img/GetStarted/DataVisualization-graphConfig.png)
 
-"test-graph" will now be added to the list. 
+"test-graph" will now be added to the list.
 
 ![graphList](./../../img/GetStarted/DataVisualization-graphList.png)
 
-If you click the plus icon to the left of test-graph it will be added to the dashboard. If data is not displayed you may have no data being stored. Select a daterange to a date when data was stored. 
+If you click the plus icon to the left of test-graph it will be added to the dashboard. If data is not displayed you may have no data being stored. Select a daterange to a date when data was stored.
 
 ![infomotion](./../../img/GetStarted/DataVisualization-infomotion.png)
 
@@ -169,4 +165,4 @@ To resize the graph drag its bottom right corner then press "Save" to save the s
 
 With that, we've been able to go from creating a data flow right through to displaying a graph that uses the data.
 
-While in this tutorial we displayed a simple pre-made bar graph, you can also create, upload and use your own InfoMotion Type. For details, please refer to the [InfoMotion Type Creation Tutorial](/developers/infomotion-type-tutorial).
+While in this tutorial we displayed a simple pre-made bar graph, you can also create, upload and use your own InfoMotion Type. For details, please refer to the [InfoMotion Type Creation Tutorial](./../InfoMotion/InfoMotionTool.md).
