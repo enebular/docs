@@ -4,15 +4,16 @@ lastUpdated: 2018-07-11
 
 # enebular Release Notes {#enebular}
 
-## 2.3.1 (July 11th, 2018)
+## 2.4.0 (July 19th, 2018)
 
 ### New
 
-None
+- Now asset/project lists on Dashboard can be sorted both in ascending and descending orders.
+- We have a brand-new enebular.com top page.
 
 ### Fixed
 
-- Fixed an issue which has been causing the twitter node on the flow editor to fail.
+- Fixed an issue which was causing invalid InfoType links in Published Assets list.
 
 ### Changed
 
@@ -26,6 +27,7 @@ None
 
 ### Release History
 
+- [2.4.0](./enebular/2.4.0.md) (July 19th, 2018)
 - [2.3.1](./enebular/2.3.1.md) (July 11th, 2018)
 - [2.3.0](./enebular/2.3.0.md) (July 6th, 2018)
 - [2.2.1](./enebular/2.2.1.md) (June 7th, 2018)
