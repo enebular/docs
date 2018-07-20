@@ -29,63 +29,64 @@ lastUpdated: 2018-07-19
 
 ## Projects
 
-* [About Projects](Project/index.md)
-* [Project Settings](Project/Settings.md)
+- [About Projects](Project/index.md)
+- [Project Settings](Project/Settings.md)
 
 ## Flows
 
-* [Introduction](Flow/Introduction.md)
-* [Creating Flows](Flow/CreateFlow.md)
-* [Example: Milkcocoa](Flow/FlowExampleMilkcocoa.md)
-* [Publishing Flows](Flow/PublishFlow.md)
+- [Introduction](Flow/Introduction.md)
+- [Creating Flows](Flow/CreateFlow.md)
+- [Example: Milkcocoa](Flow/FlowExampleMilkcocoa.md)
+- [Publishing Flows](Flow/PublishFlow.md)
 
 ## InfoMotion
 
-* [Introduction](InfoMotion/Introduction.md)
-* [InfoType](InfoMotion/InfoTypeIntroduction.md)
-  * [Creating an InfoType](InfoMotion/InfoMotionTool.md)
-  * [Uploading an InfoType](InfoMotion/UploadInfoType.md)
-  * [Sample InfoTypes](InfoMotion/SampleInfoTypes.md)
-  * [API Reference](InfoMotion/APIReference.md)
-* [DataSource](InfoMotion/CreateDataSource.md)
-  * [Data Source Schema](InfoMotion/DataSourceSchema.md)
-  * [Milkcocoa-v2](InfoMotion/DatasourceMilkcocoa-v2.md)
-  * [Firebase](InfoMotion/DatasourceFirebase.md)
-  * [Pubnub](InfoMotion/DatasourcePubnub.md)
-  * [API Gateway](InfoMotion/DataSourceAPIGateway.md)
-* [Dashboards](InfoMotion/CreateInfoMotion.md)
-* [Sharing an InfoMotion](InfoMotion/ShareInfoMotion.md)
+- [Introduction](InfoMotion/Introduction.md)
+- [InfoType](InfoMotion/InfoTypeIntroduction.md)
+  - [Creating an InfoType](InfoMotion/InfoMotionTool.md)
+  - [Uploading an InfoType](InfoMotion/UploadInfoType.md)
+  - [Sample InfoTypes](InfoMotion/SampleInfoTypes.md)
+  - [API Reference](InfoMotion/APIReference.md)
+- [DataSource](InfoMotion/CreateDataSource.md)
+  - [Data Source Schema](InfoMotion/DataSourceSchema.md)
+  - [Milkcocoa-v2](InfoMotion/DatasourceMilkcocoa-v2.md)
+  - [Firebase](InfoMotion/DatasourceFirebase.md)
+  - [Pubnub](InfoMotion/DatasourcePubnub.md)
+  - [API Gateway](InfoMotion/DataSourceAPIGateway.md)
+- [Dashboards](InfoMotion/CreateInfoMotion.md)
+- [Sharing an InfoMotion](InfoMotion/ShareInfoMotion.md)
 
 ## Deploys
 
-* [Introduction](Deploy/index.md)
-* [Example: AWS IoT](Deploy/DeployFlow/AWSIoT/index.md)
-* [Example: Heroku](Deploy/DeployFlow/Heroku/index.md)
-* [Example: mbed Cloud](Deploy/DeployFlow/mbed/index.md)
-* [Example: AWS Lambda](Deploy/DeployFlow/Lambda/index.md)
+- [Introduction](Deploy/index.md)
+- [Example: AWS IoT](Deploy/DeployFlow/AWSIoT/index.md)
+- [Example: Heroku](Deploy/DeployFlow/Heroku/index.md)
+- [Example: mbed Cloud](Deploy/DeployFlow/mbed/index.md)
+- [Example: AWS Lambda](Deploy/DeployFlow/Lambda/index.md)
 
 ## Devices
 
-* [Device List](Device/DeviceList.md)
-  * [Logs](Device/Logs.md)
-* [License Manager](Device/LicenseManager.md)
+- [Device List](Device/DeviceList.md)
+  - [Logs](Device/Logs.md)
+- [License Manager](Device/LicenseManager.md)
 
 ## Access
 
-* [Access Control](Access/index.md)
+- [Access Control](Access/index.md)
 
 ## Discover
 
-* [Discovering Assets](Discover/index.md)
+- [Discovering Assets](Discover/index.md)
+  - [Unpublish Assets](Discover/UnpublishAssets.md)
 
 ## Account
 
-* [Account Settings](Account/index.md)
+- [Account Settings](Account/index.md)
 
 ## Billing
 
-* [Billing Information](Billing/Information.md)
+- [Billing Information](Billing/Information.md)
 
 ## Appendix
 
-* [Supported Environments](Other/Support.md)
+- [Supported Environments](Other/Support.md)

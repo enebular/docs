@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2017-05-15
+lastUpdated: 2018-07-11
 ---
 
 # Deploying to AWS IoT
@@ -165,6 +165,8 @@ Let's now leave the enebular side and prepare a device setup on a PC.
 Here we set up a device. Note that the wrapper device code base that receives commands from the device manager and carries out the appropriate operations is referred to the **agent** here.
 
 The agent can be downloaded from <a href="https://github.com/enebular/enebular-runtime-agent" target="_blank">GitHub</a>.
+
+** Before proceed next step, your Node.js version set to 8.9.0 with npm module [n](https://github.com/tj/n).
 
 Build the core enebular-agent module.
 
