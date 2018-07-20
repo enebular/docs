@@ -3,6 +3,7 @@ _book
 node_modules
 npm-debug.log
 
+yarn-error.log
 # IntelliJ IDEA
 *.iml
 .idea
