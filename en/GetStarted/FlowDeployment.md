@@ -1,13 +1,13 @@
 ---
-lastUpdated: 2018-07-11
+lastUpdated: 2018-07-20
 ---
 
 # Flow Deployment
 
-Deploying flows to various environments and operating systems is a feature of Enebular. 
-In this tutorial we will be deploying a flow to Heroku. 
+Deploying flows to various environments and operating systems is a feature of Enebular.
+In this tutorial we will be deploying a flow to Heroku.
 
-To complete this tutorial you will need to understand how to create an [Asset(Flow)](./CreateProjetcs.md).
+To complete this tutorial you will need to understand how to create an [Asset(Flow)](./Introduction.md).
 
 ## Ready to deploy flow to Heroku
 
@@ -23,7 +23,7 @@ Click on the "Deploy" botton to save the flow.
 
 ## Deploy Settings
 
-Configure your flow deployment by clicking on Deploy. 
+Configure your flow deployment by clicking on Deploy.
 
 ![otherEnvDeploy](./../../img/GetStarted/FlowDeployment-otherEnvDeploy.png)
 
@@ -34,7 +34,6 @@ Select "Heroku" for "Select Connection Type".
 After selecting "Heroku", we can create a Heroku app from the "Deploy to Heroku" button on the right.
 
 ![herokuButton](./../../img/GetStarted/FlowDeployment-herokuButton.png)
-
 
 ## Creating an app with the Heroku Button
 
@@ -60,8 +59,8 @@ Set the USERNAME and PASSWORD to be used for login after the enebular Node-RED h
 
 After confirming the settings press the "Deploy" button. ¥
 
-After confirming the settings click the "Deploy" button. If you haven't added your credit card information to heroku before, the following modal will show up. 
-Using the Enebular app is free so one needs to not worry about Enebular charging. 
+After confirming the settings click the "Deploy" button. If you haven't added your credit card information to heroku before, the following modal will show up.
+Using the Enebular app is free so one needs to not worry about Enebular charging.
 
 ![creditCard](./../../img/GetStarted/FlowDeployment-creditCard.png)
 
@@ -87,7 +86,7 @@ Click "New".
 
 ![deployNewBottun](./../../img/GetStarted/FlowDeployment-deployNewBottun.png)
 
-Input a "Connection Name". Get the "Heroku API Token" from the Heroku settings screen. 
+Input a "Connection Name". Get the "Heroku API Token" from the Heroku settings screen.
 
 ![connectionModal](./../../img/GetStarted/FlowDeployment-connectionModal.png)
 
@@ -109,11 +108,11 @@ Copy the API Key into "Heroku API Token" and click "Save".
 
 ## Deploying
 
-With the connection saved and Heroku selected as a  "Connection Type", a list of the apps on the Heroku account should be displayed. From here, select the Heroku application you just created and press "Deploy".
+With the connection saved and Heroku selected as a "Connection Type", a list of the apps on the Heroku account should be displayed. From here, select the Heroku application you just created and press "Deploy".
 
 ![appList](./../../img/GetStarted/FlowDeployment-appList.png)
 
-Wait a moment for the "Deploy Added" to be displayed to confirm the app has been deployed. 
+Wait a moment for the "Deploy Added" to be displayed to confirm the app has been deployed.
 
 ![deployFlow](./../../img/GetStarted/FlowDeployment-deployFlow.png)
 
@@ -127,4 +126,4 @@ Check the Heroku app to see if the flow has been deployed.
 
 ## Well Done!
 
-You can now deploy flows to other services with enebular. 
+You can now deploy flows to other services with enebular.
