@@ -1,0 +1,18 @@
+## Firebase DataSource の作成
+
+フローを作成したものと同じプロジェクトの `Data Souce` のページを表示します。
+右下の + ボタンをクリックして、 `Data Source`を追加します。
+
+`Title` に任意の名前を入力し、DataSource Type から [Firebase] を選択してください。
+Firebase 用の設定画面が開きます。
+Firebase アプリを作成した際に表示された設定スクリプトを参考にして、`Api Key`, `Auth Domain`, `Database URL`, `Project Id`, `Storage Bucket`, `Messaging Sender Id` を入力してください。
+
+`Ref` にはフロー作成の際に用いた `Child path` を入力します。(Firebase ではコレクション名となっています。)
+`Ref` の設定値には `/(スラッシュ)` が前方に必要なので「/test」としてください。
+
+![](/_asset/images/InfoMotion/datasources/firebase/datasource-settings.png)
+
+
+DataSourceが追加されていることを確認してください。
+
+![](/_asset/images/InfoMotion/datasources/firebase/new-datasource.png)
