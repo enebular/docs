@@ -92,7 +92,7 @@ If you can see data being logged in `debug` then the nodes are executing correct
 
 ![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/debug-log.png) 
 
-You can also double check by going to mlkcca.com  and checking your projects datastore.
+You can also double check by going to mlkcca.com  and checking your projects datastore. 
 Search the store name and click `リスト表示（更新）` to refresh the store list. 
 
 ![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/store.png) 
