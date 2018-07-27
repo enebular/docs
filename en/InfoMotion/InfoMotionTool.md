@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-04-13
+lastUpdated: 2018-07-27
 ---
 
 # InfoMotion Tool
@@ -57,7 +57,7 @@ eit create myfirstgraph
 - `plugin.json`
 - `README.md`
 
-![](https://i.gyazo.com/ced32c7e2b9e11ec9b6f25d8a98149e4.png)
+![InfoMotionTool-creatingGraph.png](./../../img/InfoMotion/InfoMotionTool-creatingGraph.png)
 
 ### datasource.json
 
@@ -240,7 +240,21 @@ eit create [graph name] -t linechart
 eit create [graph name] -t piechart
 ```
 
+# InfoType dependencies
+
+Each graph has it's own dependencies. To install them you will have to use npm install. Once installed you can continue on to packaging and running the graph.
+
+```bash
+cd [graph name]
+npm install
+Check the InfoTypes read.me for more details.
+```
+
 ## Packaging
+
+Packaging is needed when
+- An InfoType is created (`eit create`)
+- Before uploading an InfoType to enebular
 
 Once the InfoType is ready to be uploaded to enebular run the command.
 
@@ -269,6 +283,6 @@ Editing then saving a file will automatically restart the server.
 eit run [graph name] -l
 ```
 
-![](/_asset/images/InfoMotion/enebular-developers-build.png)
+![InfoMotionTool-build.png](./../../img/InfoMotion/InfoMotionTool-build.png)
 
 Continue to [Upload InfoType](./UploadInfoType.md) to upload the InfoType to enebular.
