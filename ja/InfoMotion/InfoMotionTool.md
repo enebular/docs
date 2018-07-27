@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-03-29
+lastUpdated: 2018-07-27
 ---
 
 # InfoMotion Tool
@@ -58,7 +58,7 @@ eit create myfirstgraph
 - `plugin.json`
 - `README.md`
 
-![](https://i.gyazo.com/ced32c7e2b9e11ec9b6f25d8a98149e4.png)
+![InfoMotionTool-creatingGraph.png](./../../img/InfoMotion/InfoMotionTool-creatingGraph.png)
 
 ### datasource.json
 
@@ -216,13 +216,33 @@ eit create [graph name] -t piechart
 eit create [graph name] -t map
 ```
 
+# InfoType の依存性
+
+グラフはそれぞれの依存性を持ちます。グラフのインストールをする際は `npm install` を使います。`npm install` が完了すると、グラフをパッケージングして実行することができます。
+
+```bash
+cd [graph name]
+npm install
+Check the InfoTypes read.me for more details.
+```
+
 ## パッケージング
+
+以下の場合にパッケージングが必要になります。
+- 新しく `eit create`  で InfoType を作成したとき
+- enebular に InfoType をアップロードするとき
 
 以下でパッケージできます。
 
 ```bash
 eit package [graph name]
 ```
+
+以下の3つが入った `target` というフォルダが作成されます。
+
+- `plugin.js`
+- `plugin.css`
+- `plugin.json`
 
 ## ブラウザでのテスト
 
@@ -232,18 +252,13 @@ eit package [graph name]
 eit run [graph name]
 ```
 
-以下の3つが入った `target` というフォルダが作成されます。
-
-- `plugin.js`
-- `plugin.css`
-- `plugin.json`
-
-![](/_asset/images/InfoMotion/enebular-developers-build.png)
 
 `-l` オプションをつけることでライブリロードモードが利用できます。サーバーを立ち上げた状態でファイルを変更すると、すぐに反映されます。
 
 ```
 eit run [graph name] -l
 ```
+
+![InfoMotionTool-build.png](./../../img/InfoMotion/InfoMotionTool-build.png)
 
 次に、[Upload InfoType](./UploadInfoType.md) で enebular へのグラフのアップロード方法を学びましょう。

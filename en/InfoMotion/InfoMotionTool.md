@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-04-13
+lastUpdated: 2018-07-27
 ---
 
 # InfoMotion Tool
@@ -57,7 +57,7 @@ eit create myfirstgraph
 - `plugin.json`
 - `README.md`
 
-![](https://i.gyazo.com/ced32c7e2b9e11ec9b6f25d8a98149e4.png)
+![InfoMotionTool-creatingGraph.png](./../../img/InfoMotion/InfoMotionTool-creatingGraph.png)
 
 ### datasource.json
 
@@ -283,6 +283,6 @@ Editing then saving a file will automatically restart the server.
 eit run [graph name] -l
 ```
 
-![](/_asset/images/InfoMotion/enebular-developers-build.png)
+![InfoMotionTool-build.png](./../../img/InfoMotion/InfoMotionTool-build.png)
 
 Continue to [Upload InfoType](./UploadInfoType.md) to upload the InfoType to enebular.
