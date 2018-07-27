@@ -254,7 +254,7 @@ Check the InfoTypes read.me for more details.
 
 Packaging is needed when
 - An InfoType is created (`eit create`)
-- Before uploading an InfoType to Enebular
+- Before uploading an InfoType to enebular
 
 Once the InfoType is ready to be uploaded to enebular run the command.
 
