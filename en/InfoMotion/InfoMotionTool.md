@@ -240,9 +240,9 @@ eit create [graph name] -t linechart
 eit create [graph name] -t piechart
 ```
 
-# InfoType dependancies
+# InfoType dependencies
 
-Each graph has it's own dependancies. To install them you will have to use npm install. Once installed you can continue on to pacaking and running the graph.
+Each graph has it's own dependencies. To install them you will have to use npm install. Once installed you can continue on to packaging and running the graph.
 
 ```bash
 cd [graph name]
