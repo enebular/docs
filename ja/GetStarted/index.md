@@ -8,7 +8,7 @@ enebularの主要な機能に触れることができるチュートリアルで
 enebularを初めて利用する場合、下記のチュートリアルを通してenebularについて理解をすすめることをおすすめします。
 
 - [Introduction](./Introduction.md)
-  - enebularでのプロジェクトの作り方とアセット(フロー)の作成についてのチュートリアルです
+  - enebularへのサインアップ、Projectの作成、Asset(フロー)の作成についてのチュートリアルです
 - [Flow Deployment](./FlowDeployment.md)
   - アセットの1つであるフローを他の環境にデプロイする方法のチュートリアルです
 - [Data Visualization](./DataVisualization.md)
