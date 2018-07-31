@@ -6,29 +6,29 @@ lastUpdated: 2018-07-31
 
 This tutorial covers the following.
 
-- Sign-up
+- Signing up
 - Creating a project
 - Creating an asset
 - Editing a flow
 
-## Sign-up
+## Signing up
 
-** Notice : You aren't able to sign in with old enebular v1 accounts, please re-sign up as an enebular v2 accounts. **
+** Notice : You aren't able to sign in with old enebular v1 account, please re-sign to an enebular v2 account. **
 
-Access to https://enebular.com/en and click `SIGN UP`.
+Go to https://enebular.com/en and click `SIGN UP`.
 
 ![signUp](./../../img/GetStarted/Introduction-signUp-en.png)
 
-Fill out form and agree with privacy policy and terms of service. After this, click `sign up` button.
+Fill out the form and agree with the privacy policy and terms of service then click on `sign up`.
 
 ![inputUserInfo](./../../img/GetStarted/Introduction-inputUserInfo.png)
 
-We will send verification to your mail account which you registered. It takes few minutes to receive it.
+A verification mail will be sent to your registered email address. This may take a few minutes.
 
 ![inputUserInfo](./../../img/GetStarted/Introduction-verifying.png)
 
-Once you verify, you can sign in to enebular.com.
-Let's click `Go To Dashboard` and hit a create a project!
+Once verified , you can sign in to enebular.com.
+Click on `Go To Dashboard` then create a project.
 
 ![inputUserInfo](./../../img/GetStarted/Introduction-verified.png)
 
@@ -36,9 +36,9 @@ Let's click `Go To Dashboard` and hit a create a project!
 
 Please check the following.
 
-1. Do you check right mail accout?
-1. Don't you set filtering to enebular.com?
-1. Please contact to ** support@enebular.com **.
+1. Did you give the correct email account?
+1. Did you set a filter for enebular.com?
+1. If you have not received an verification mail please contact ** support@enebular.com **.
 
 ## Creating a Project
 
