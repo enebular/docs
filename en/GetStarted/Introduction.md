@@ -1,18 +1,48 @@
 ---
-lastUpdated: 2018-07-10
+lastUpdated: 2018-07-31
 ---
 
 # Introduction
 
 This tutorial covers the following.
 
+- Sign-up
 - Creating a project
 - Creating an asset
 - Editing a flow
 
+## Sign-up
+
+** Notice : You aren't able to sign in with old enebular v1 accounts, please re-sign up as an enebular v2 accounts. **
+
+Access to https://enebular.com/en and click `SIGN UP`.
+
+![signUp](./../../img/GetStarted/Introduction-signUp-en.png)
+
+Fill out form and agree with privacy policy and terms of service. After this, click `sign up` button.
+
+![inputUserInfo](./../../img/GetStarted/Introduction-inputUserInfo.png)
+
+We will send verification to your mail account which you registered. It takes few minutes to receive it.
+
+![inputUserInfo](./../../img/GetStarted/Introduction-verifying.png)
+
+Once you verify, you can sign in to enebular.com.
+Let's click `Go To Dashboard` and hit a create a project!
+
+![inputUserInfo](./../../img/GetStarted/Introduction-verified.png)
+
+### Didn't you get verification mail?
+
+Please check the following.
+
+1. Do you check right mail accout?
+1. Don't you set filtering to enebular.com?
+1. Please contact to ** support@enebular.com **.
+
 ## Creating a Project
 
-To start using enebular we first create a project. In the screen after logging in, create a project with "Create Project".
+To start using enebular we first create a project. In the screen after signing in, create a project with "Create Project".
 
 ![createProject](./../../img/GetStarted/Introduction-createProject.png)
 

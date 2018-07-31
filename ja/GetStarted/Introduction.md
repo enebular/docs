@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-07-30
+lastUpdated: 2018-07-31
 ---
 
 # Introduction
@@ -13,7 +13,7 @@ lastUpdated: 2018-07-30
 
 ## enebularへのサインアップ
 
-** 注意 : enebular v1のアカウントではenebular v2にはログインできません。enebular v1 ユーザーの方でenebular v2を使用したい場合、新しくアカウントを作成してください。**
+** 注意 : enebular v1のアカウントではenebular v2にはサインインできません。enebular v1 ユーザーの方でenebular v2を使用したい場合、新しくアカウントを作成してください。**
 
 https://enebular.com にアクセスし、`新規登録`ボタンを押下します。
 
@@ -27,7 +27,7 @@ https://enebular.com にアクセスし、`新規登録`ボタンを押下しま
 
 ![inputUserInfo](./../../img/GetStarted/Introduction-verifying.png)
 
-登録確認用のメールにて、確認が完了すると enebular.com にログイン可能になります。
+登録確認用のメールにて、確認が完了すると enebular.com にサインイン可能になります。
 `Go To Dashboard` をクリックしてください。
 
 ![inputUserInfo](./../../img/GetStarted/Introduction-verified.png)
@@ -42,7 +42,7 @@ https://enebular.com にアクセスし、`新規登録`ボタンを押下しま
 
 ## Projectの作成
 
-enebular を始めるには、まず Project を作成します。ログイン後の画面にある Create Project からプロジェクトを作成します。
+enebular を始めるには、まず Project を作成します。サインイン後の画面にある Create Project からプロジェクトを作成します。
 
 ![createProject](./../../img/GetStarted/Introduction-createProject.png)
 

@@ -1,13 +1,13 @@
 ---
-lastUpdated: 2018-07-10
+lastUpdated: 2018-07-31
 ---
 
 # Getting Started 
 
-This page contains the the basics of getting started with Enebular. 
+This page contains the the basics of getting started with enebular. 
 
 - [Introduction](./Introduction.md)
-  - How to create projects and assets.
+  - How to create enebular account, projects and assets.
 - [Flow Deployment](./FlowDeployment.md)
   - How to deploy a flow.
 - [Data Visualization](./DataVisualization.md)
