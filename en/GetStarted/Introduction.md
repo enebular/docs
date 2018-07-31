@@ -13,7 +13,7 @@ This tutorial covers the following.
 
 ## Signing up
 
-** Notice : You aren't able to sign in with old enebular v1 account, please re-sign to an enebular v2 account. **
+** Notice : enebular v1 accounts are no longer supported, please sign-up to an enebular v2 account. **
 
 Go to https://enebular.com/en and click `SIGN UP`.
 
