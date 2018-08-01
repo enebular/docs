@@ -8,15 +8,15 @@ A **Project** is, as the name suggests, the unit for organizing a set of work as
 
 As mentioned in the [Introduction](../INDEX.md), you can manage assets and devices in a project (in the image, devices are not included within the project as their actual deploy location is in a third party service environment).
 
-![enebular overview](../../img/Projects/AboutProjects-projectOverview.png)
+![enebular overview](../../img/Projects/index-projectOverview.png)
 
 The list of projects can be seen on the screen after signing in. Projects can be created with **Create Project**.
 
-![sreate project](../../img/Projects/AboutProjects-createProject.png)
+![sreate project](../../img/Projects/index-createProject.png)
 
 Selecting a project will take you to the project management screen.
 
-![select project](../../img/Projects/AboutProjects-selectProject.png)
+![select project](../../img/Projects/index-selectProject.png)
 
 The project management screen includes the following pages.
 
@@ -36,7 +36,7 @@ The result will be listed on the project management screen.
 It's able to search by the Assets name or Projects name. 
 In case of using the Project name, it'll be listed the Assets are contained in the Projects.
 
-![search project](../../img/Projects/AboutProjects-searchAssets.png)
+![search project](../../img/Projects/index-searchAssets.png)
 
 ## Devices
 

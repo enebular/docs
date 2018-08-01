@@ -6,15 +6,15 @@ lastUpdated: 2018-08-01
 
 **Project** とは文字通りプロジェクトの単位です。[Introduction](../INDEX.md) でも触れたように、アセットやデバイスの管理ができます（画像内でデバイスがプロジェクトに含まれていないのは、デプロイされている実際の場所が外部のサービスの環境であるためです）。
 
-![enebular overview](../../img/Projects/AboutProjects-projectOverview.png)
+![enebular overview](../../img/Projects/index-projectOverview.png)
 
 サインイン後の画面でプロジェクト一覧を確認できます。`Create Project` からプロジェクトを作成できます。
 
-![sreate project](../../img/Projects/AboutProjects-createProject.png)
+![sreate project](../../img/Projects/index-createProject.png)
 
 プロジェクトを選択すると、プロジェクトの管理画面に移動します。
 
-![select project](../../img/Projects/AboutProjects-selectProject.png)
+![select project](../../img/Projects/index-selectProject.png)
 
 プロジェクトの管理画面には以下のようなページがあります。
 
@@ -34,7 +34,7 @@ lastUpdated: 2018-08-01
 検索ボックスからは Asset名 または Project名 で検索することが可能です。
 Project名 で検索した場合、Project に紐づく Asset が一覧表示されます。
 
-![select project](../../img/Projects/AboutProjects-searchAssets.png)
+![select project](../../img/Projects/index-searchAssets.png)
 
 ## Devices
 
