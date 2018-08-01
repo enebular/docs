@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-01-30
+lastUpdated: 2018-08-01
 ---
 
 # Projects
@@ -8,15 +8,15 @@ A **Project** is, as the name suggests, the unit for organizing a set of work as
 
 As mentioned in the [Introduction](../INDEX.md), you can manage assets and devices in a project (in the image, devices are not included within the project as their actual deploy location is in a third party service environment).
 
-![enebular overview](/_asset/images/Introduction/enebular-developers-project-overview.png)
+![enebular overview](../../img/Projects/AboutProjects-projectOverview.png)
 
-The list of projects can be seen on the screen after logging in. Projects can be created with **Create Project**.
+The list of projects can be seen on the screen after signing in. Projects can be created with **Create Project**.
 
-![](https://i.gyazo.com/51acafe4528d30c62373d866d86cc76b.png)
+![sreate project](../../img/Projects/AboutProjects-createProject.png)
 
 Selecting a project will take you to the project management screen.
 
-![](https://i.gyazo.com/ec81d095001a8187fe8a0321bdd89590.png)
+![select project](../../img/Projects/AboutProjects-selectProject.png)
 
 The project management screen includes the following pages.
 
