@@ -26,6 +26,16 @@ lastUpdated: 2018-08-01
 - [InfoMotion](../InfoMotion/Introduction.md): データの可視化を行うグラフダッシュボード
 - [InfoType](../InfoMotion/InfoTypeIntroduction.md): InfoMotion で利用するグラフのタイプ
 
+### Assets 検索機能
+
+アカウントに紐づく Asset を、ページ上部の検索ボックスから検索することが出来ます。
+検索結果はプロジェクトの管理画面に一覧表示されます。
+
+検索ボックスからは Asset名 または Project名 で検索することが可能です。
+Project名 で検索した場合、Project に紐づく Asset が一覧表示されます。
+
+![select project](../../img/Projects/AboutProjects-searchAssets.png)
+
 ## Devices
 
 プロジェクト内で管理するデバイスです。ここでいうデバイスとは Asset がデプロイされているデバイスを指します。
