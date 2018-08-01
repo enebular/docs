@@ -28,6 +28,16 @@ The content managed within the project.
 - [InfoMotion](../InfoMotion/Introduction.md): Data visualization graphs dashboard
 - [InfoType](../InfoMotion/InfoTypeIntroduction.md): Graph types used with InfoMotion
 
+### Assets Searching
+
+You can serch the Assets associated with your account by using the searching box the top of the page.
+The result will be listed on the project management screen.
+
+It's able to search by the Assets name or Projects name. 
+In case of using the Project name, it'll be listed the Assets are contained in the Projects.
+
+![search project](../../img/Projects/AboutProjects-searchAssets.png)
+
 ## Devices
 
 The devices managed within the project. The devices here are those to which assets have been deployed.

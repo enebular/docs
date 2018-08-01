@@ -26,7 +26,7 @@ lastUpdated: 2018-08-01
 - [InfoMotion](../InfoMotion/Introduction.md): データの可視化を行うグラフダッシュボード
 - [InfoType](../InfoMotion/InfoTypeIntroduction.md): InfoMotion で利用するグラフのタイプ
 
-### Assets 検索機能
+### Assets 検索
 
 アカウントに紐づく Asset を、ページ上部の検索ボックスから検索することが出来ます。
 検索結果はプロジェクトの管理画面に一覧表示されます。
