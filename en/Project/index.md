@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-01-30
+lastUpdated: 2018-08-01
 ---
 
 # Projects
@@ -8,15 +8,15 @@ A **Project** is, as the name suggests, the unit for organizing a set of work as
 
 As mentioned in the [Introduction](../INDEX.md), you can manage assets and devices in a project (in the image, devices are not included within the project as their actual deploy location is in a third party service environment).
 
-![enebular overview](/_asset/images/Introduction/enebular-developers-project-overview.png)
+![enebular overview](../../img/Projects/index-projectOverview.png)
 
-The list of projects can be seen on the screen after logging in. Projects can be created with **Create Project**.
+The list of projects can be seen on the screen after signing in. Projects can be created with **Create Project**.
 
-![](https://i.gyazo.com/51acafe4528d30c62373d866d86cc76b.png)
+![sreate project](../../img/Projects/index-createProject.png)
 
 Selecting a project will take you to the project management screen.
 
-![](https://i.gyazo.com/ec81d095001a8187fe8a0321bdd89590.png)
+![select project](../../img/Projects/index-selectProject.png)
 
 The project management screen includes the following pages.
 
@@ -27,6 +27,16 @@ The content managed within the project.
 - [Flow](../Flow/Introduction.md): Data flows created with Node-RED
 - [InfoMotion](../InfoMotion/Introduction.md): Data visualization graphs dashboard
 - [InfoType](../InfoMotion/InfoTypeIntroduction.md): Graph types used with InfoMotion
+
+### Assets Searching
+
+You can search the Assets associated with your account by using the search box at the the top of the page.
+The results will be listed on the project management screen.
+
+You are able to search by Asset name or Project name. 
+Searching by Project name will list all Project's Assets.
+
+![search project](../../img/Projects/index-searchAssets.png)
 
 ## Devices
 

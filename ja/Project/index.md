@@ -1,20 +1,20 @@
 ---
-lastUpdated: 2018-01-28
+lastUpdated: 2018-08-01
 ---
 
 # Project
 
 **Project** とは文字通りプロジェクトの単位です。[Introduction](../INDEX.md) でも触れたように、アセットやデバイスの管理ができます（画像内でデバイスがプロジェクトに含まれていないのは、デプロイされている実際の場所が外部のサービスの環境であるためです）。
 
-![enebular overview](/_asset/images/Introduction/enebular-developers-project-overview.png)
+![enebular overview](../../img/Projects/index-projectOverview.png)
 
-ログイン後の画面でプロジェクト一覧を確認できます。**Create Project** からプロジェクトを作成できます。
+サインイン後の画面でプロジェクト一覧を確認できます。`Create Project` からプロジェクトを作成できます。
 
-![](https://i.gyazo.com/51acafe4528d30c62373d866d86cc76b.png)
+![sreate project](../../img/Projects/index-createProject.png)
 
 プロジェクトを選択すると、プロジェクトの管理画面に移動します。
 
-![](https://i.gyazo.com/ec81d095001a8187fe8a0321bdd89590.png)
+![select project](../../img/Projects/index-selectProject.png)
 
 プロジェクトの管理画面には以下のようなページがあります。
 
@@ -25,6 +25,16 @@ lastUpdated: 2018-01-28
 - [Flow](../Flow/Introduction.md): Node-RED で作成したデータフロー
 - [InfoMotion](../InfoMotion/Introduction.md): データの可視化を行うグラフダッシュボード
 - [InfoType](../InfoMotion/InfoTypeIntroduction.md): InfoMotion で利用するグラフのタイプ
+
+### Assets 検索
+
+アカウントに紐づく Asset を、ページ上部の検索ボックスから検索することが出来ます。
+検索結果はプロジェクトの管理画面に一覧表示されます。
+
+検索ボックスからは Asset名 または Project名 で検索することが可能です。
+Project名 で検索した場合、Project に紐づく Asset が一覧表示されます。
+
+![select project](../../img/Projects/index-searchAssets.png)
 
 ## Devices
 
