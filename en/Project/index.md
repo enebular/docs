@@ -30,11 +30,11 @@ The content managed within the project.
 
 ### Assets Searching
 
-You can serch the Assets associated with your account by using the searching box the top of the page.
-The result will be listed on the project management screen.
+You can search the Assets associated with your account by using the search box at the the top of the page.
+The results will be listed on the project management screen.
 
-It's able to search by the Assets name or Projects name. 
-In case of using the Project name, it'll be listed the Assets are contained in the Projects.
+You are able to search by Asset name or Project name. 
+Searching by Project name will list all Project's Assets.
 
 ![search project](../../img/Projects/index-searchAssets.png)
 
