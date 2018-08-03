@@ -1,24 +1,22 @@
 ---
-lastUpdated: 2018-07-11
+lastUpdated: 2018-08-03
 ---
 
 # enebular Release Notes {#enebular}
 
-## 2.4.0 (July 19th, 2018)
+## 2.4.1 (August 3rd, 2018)
 
 ### New
 
-- ダッシュボードに表示されるアセットやプロジェクトのリストを昇順または降順にソート出来るようになりました
-- enebular.com トップページをリニューアルしました。
+なし
 
 ### Fixed
 
-- Published Asset リストにあるInfoTypeへのリンクが無効になる不具合を修正しました
+- 新規登録からアカウントを作成しても、メールが送信されない不具合を修正しました
 
 ### Changed
 
 なし
-
 
 ### Known Issues
 
@@ -28,6 +26,7 @@ lastUpdated: 2018-07-11
 
 ### Release History
 
+- [2.4.1](./enebular/2.4.1.md) (August 3rd, 2018)
 - [2.4.0](./enebular/2.4.0.md) (July 19th, 2018)
 - [2.3.1](./enebular/2.3.1.md) (July 11th, 2018)
 - [2.3.0](./enebular/2.3.0.md) (July 6th, 2018)
