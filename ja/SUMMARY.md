@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-07-20
+lastUpdated: 2018-08-07
 ---
 
 # Summary
@@ -52,11 +52,22 @@ lastUpdated: 2018-07-20
   - [API Reference](InfoMotion/APIReference.md)
 - [DataSource](InfoMotion/CreateDataSource.md)
   - [Data Source Schema](InfoMotion/DataSourceSchema.md)
-  - [Milkcocoa-v3](InfoMotion/DatasourceMilkcocoa-v3.md)
-  - [Milkcocoa-v2](InfoMotion/DatasourceMilkcocoa-v2.md)
-  - [Firebase](InfoMotion/DatasourceFirebase.md)
-  - [Pubnub](InfoMotion/DatasourcePubnub.md)
-  - [API Gateway](InfoMotion/DataSourceAPIGateway.md)
+  - [Milkcocoa-v2]()
+    - [Set-up](InfoMotion/Datasource/Milkcocoa/Setup.md)
+    - [Create a DataSource](InfoMotion/Datasource/Milkcocoa/CreateDatasource.md)
+    - [Create Flow](InfoMotion/Datasource/Milkcocoa/CreateFlow.md)
+    - [Running Local](InfoMotion/Datasource/Milkcocoa/RunningLocal.md)
+  - [Firebase]()
+    - [Set-up](InfoMotion/Datasource/Firebase/Setup.md)
+    - [Create a DataSource](InfoMotion/Datasource/Firebase/CreateDatasource.md)
+    - [Create Flow](InfoMotion/Datasource/Firebase/CreateFlow.md)
+  - [Pubnub]()
+    - [Set-up](InfoMotion/Datasource/Pubnub/Setup.md)
+    - [Create a DataSource](InfoMotion/Datasource/Pubnub/CreateDatasource.md)
+    - [Create Flow](InfoMotion/Datasource/Pubnub/CreateFlow.md)
+  - [API Gateway]()
+    - [Create a DataSource](InfoMotion/Datasource/Apigateway/CreateDatasource.md)
+    - [Set up & Create Lambda Function](InfoMotion/Datasource/Apigateway/CreateLambdaFunction.md)
 - [Dashboards](InfoMotion/CreateInfoMotion.md)
 - [Sharing an InfoMotion](InfoMotion/ShareInfoMotion.md)
 

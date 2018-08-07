@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-04-12
+lastUpdated: 2018-08-07
 ---
 
 # API Gateway DataSource の作成方法

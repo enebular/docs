@@ -1,45 +1,6 @@
 ---
-lastUpdated: 2018-05-24
+lastUpdated: 2018-08-07
 ---
-
-# Pubnub DataSource の作成
-
-このページでは Pubnub DataSource の作成を説明します。
-enebular のフローエディタを用いて Pubnub DataSource にデータをプッシュします。
-
-## Pubnub アカウントの登録
-
-https://www.pubnub.com/ にアクセスし、アカウントを登録します。
-Pubnub にログインし、ダッシュボード右上の [CREATE NEW APP +] をクリックしてください。 
-
-![](/_asset/images/InfoMotion/datasources/pubnub/pubnub-app-list.png) 
-
-任意の名前を付けて、アプリを作成します。
-
-![](/_asset/images/InfoMotion/datasources/pubnub/create-app.png) 
-
-リストに新しいアプリが追加されます。
-
-![](/_asset/images/InfoMotion/datasources/pubnub/pubnub-new-app-list.png) 
-
-作成したアプリをクリックします。
-
-![](/_asset/images/InfoMotion/datasources/pubnub/pubnub-dashboard.png) 
-
-Pubnub は初期設定から Demo Keyset を提供しています。
-これらの Key はデータストアにデータをプッシュするのに必要となります。
-Demo Keyset をクリックして表示してください。
-
-![](/_asset/images/InfoMotion/datasources/pubnub/pubnub-keys.png) 
-
-
-InfoMotion で データを表示するには、Pubnub にデータをプッシュした際にデータを保存する必要があります。
-`STORAGE & PLAYBACK` の項目までスクロールダウンしてください。
-スイッチを on の方に切り替え、`Retention` を 1 day 以上に設定してください。
-[save changes] をクリックして設定を保存します。
-
-![](/_asset/images/InfoMotion/datasources/pubnub/pubnub-storage-playback.png) 
-
 
 ## フローの作成
 
@@ -123,29 +84,3 @@ pubnub in ノードにも同じ key, channel の設定をします。
 下記のようなログが表示され、正しくフローが実行されていることを確認してください。
 
 ![](/_asset/images/InfoMotion/datasources/pubnub/debug.png) 
-
-
-## DataSource の作成
-
-フローを作成したものと同じプロジェクトの `Data Source` のページを表示します。
-右下の + ボタンをクリックして、 `Data Source`を追加します。
-
-![](/_asset/images/InfoMotion/datasources/pubnub/datasource.png) 
-
-`Title` に任意の名前を入力し、DataSource Type から [pubnub] を選択してください。
-pubnub 用の設定画面が開きます。
-
-`Publish key`, `Subscribe key` には先ほど作成した pubnub アプリのものを入力してください。
-`channel` には仮に設定した "test" を入力します。
-`Count` は [100] のままに設定して、[Save] をクリックして設定を保存します。
-
-![](/_asset/images/InfoMotion/datasources/pubnub/settings.png) 
-
-
-DataSource を使用する準備ができました。
-InfoMotion ダッシュボードを作成する際に作った DataSource を選択することでデータをグラフに反映できます。
-詳しくは以下のページを順に参照してください。
-
-* [Sample infotypes](./SampleInfoTypes.md)
-* [Upload an InfoType](./UploadInfoType.md)
-* [Create InfoMotion](./CreateInfoMotion.md)

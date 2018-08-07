@@ -1,3 +1,7 @@
+---
+lastUpdated: 2018-08-07
+---
+
 ## Using Lambda to return data
 
 Getting started with Lambda.

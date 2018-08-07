@@ -1,3 +1,7 @@
+---
+lastUpdated: 2018-08-07
+---
+
 ###Create a Flow 
 
 The Milkcocoa datastore will be used to push data.
@@ -65,3 +69,8 @@ You can also double check by going to mlkcca.com  and checking your projects dat
 Search the store name and click `リスト表示（更新）` to refresh the store list. 
 
 ![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/store.png) 
+
+Now your Data Source is ready to be used on an infotype see 
+[Sample infotypes](./SampleInfoTypes.md) to downoad a graph, 
+[Upload an InfoType](./UploadInfoType.md) to upload a graph to enebular, 
+and [Create InfoMotion](./CreateInfoMotion.md) to create an InfoMotion dashboard.
