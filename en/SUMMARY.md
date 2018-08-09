@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-08-07
+lastUpdated: 2018-08-09
 ---
 
 # Summary
@@ -53,21 +53,21 @@ lastUpdated: 2018-08-07
 - [DataSource](InfoMotion/CreateDataSource.md)
   - [Data Source Schema](InfoMotion/DataSourceSchema.md)
   - [Milkcocoa-v2]()
-    - [Set-up](InfoMotion/Datasource/Milkcocoa/Setup.md)
-    - [Create a DataSource](InfoMotion/Datasource/Milkcocoa/CreateDatasource.md)
-    - [Create Flow](InfoMotion/Datasource/Milkcocoa/CreateFlow.md)
-    - [Running Local](InfoMotion/Datasource/Milkcocoa/RunningLocal.md)
+    - [Set-up](InfoMotion/DataSource/Milkcocoa/Setup.md)
+    - [Create a DataSource](InfoMotion/DataSource/Milkcocoa/CreateDataSource.md)
+    - [Create Flow](InfoMotion/DataSource/Milkcocoa/CreateFlow.md)
+    - [Running Local](InfoMotion/DataSource/Milkcocoa/RunningLocal.md)
   - [Firebase]()
-    - [Set-up](InfoMotion/Datasource/Firebase/Setup.md)
-    - [Create a DataSource](InfoMotion/Datasource/Firebase/CreateDatasource.md)
-    - [Create Flow](InfoMotion/Datasource/Firebase/CreateFlow.md)
+    - [Set-up](InfoMotion/DataSource/Firebase/Setup.md)
+    - [Create a DataSource](InfoMotion/DataSource/Firebase/CreateDataSource.md)
+    - [Create Flow](InfoMotion/DataSource/Firebase/CreateFlow.md)
   - [Pubnub]()
-    - [Set-up](InfoMotion/Datasource/Pubnub/Setup.md)
-    - [Create a DataSource](InfoMotion/Datasource/Pubnub/CreateDatasource.md)
-    - [Create Flow](InfoMotion/Datasource/Pubnub/CreateFlow.md)
+    - [Set-up](InfoMotion/DataSource/Pubnub/Setup.md)
+    - [Create a DataSource](InfoMotion/DataSource/Pubnub/CreateDataSource.md)
+    - [Create Flow](InfoMotion/DataSource/Pubnub/CreateFlow.md)
   - [API Gateway]()
-    - [Create a DataSource](InfoMotion/Datasource/Apigateway/CreateDatasource.md)
-    - [Set up & Create Lambda Function](InfoMotion/Datasource/Apigateway/CreateLambdaFunction.md)
+    - [Set up & Create Lambda Function](InfoMotion/DataSource/Apigateway/CreateLambdaFunction.md)
+    - [Create a DataSource](InfoMotion/DataSource/Apigateway/CreateDataSource.md)
 - [Dashboards](InfoMotion/CreateInfoMotion.md)
 - [Sharing an InfoMotion](InfoMotion/ShareInfoMotion.md)
 

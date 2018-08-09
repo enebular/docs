@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-08-07
+lastUpdated: 2018-08-09
 ---
 
 ###Create a Flow 
@@ -7,7 +7,7 @@ lastUpdated: 2018-08-07
 The Milkcocoa datastore will be used to push data.
 At your enebular project create a new Flow. 
 
-![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/create-flow.png)
+![CreateFlow-createFlow](./../../../../img/InfoMotion/DataSource/Milkcocoa-v2/CreateFlow-createFlow.png)
 
 Click the `Edit Flow` button 
 
@@ -15,7 +15,7 @@ In the flow editor arrange the nodes as follows.
 
 Inject -> function -> milkcocoa(output) -> debug 
 
-![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/flow.png)
+![CreateFlow-flow](./../../../../img/InfoMotion/DataSource/Milkcocoa-v2/CreateFlow-flow.png)
 
 Double click the function node to open the `edit function node` modal. 
 Use the following script as the Function
@@ -31,46 +31,39 @@ msg.payload = data;
 return msg;
 ```
 
-![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/function-node.png)
+![CreateFlow-functionNode](./../../../../img/InfoMotion/DataSource/Milkcocoa-v2/CreateFlow-functionNode.png)
 
 
 Next double click the Milkcocoa node to open the `edit milkcocoa out node`. 
 
-![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/edit-milkcocoa-node.png) 
+![CreateFlow-milkcocoaSettingNode](./../../../../img/InfoMotion/DataSource/Milkcocoa-v2/CreateFlow-milkcocoaSettingNode.png)
 
 Click on the pencil icon and enter the `app_id` of your milkcocoa project. 
 You can leave `API Key` and `API Secret` empty for this simple example and 
 click `add` to set it. 
 
-![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/set-app-id.png) 
+![CreateFlow-setAppId](./../../../../img/InfoMotion/DataSource/Milkcocoa-v2/CreateFlow-setAppId.png)
 
 
 Set the `Data Store` to "test" and `operation` to Push then click done to set the node. 
 
-![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/milkcocoa-node-settings.png) 
+![CreateFlow-milkcocoaNode](./../../../../img/InfoMotion/DataSource/Milkcocoa-v2/CreateFlow-milkcocoaNode.png)
 
 
 Double click the inject/timestamp and set `repeat` to `interval` for every 5 seconds. 
 Click done to set the node. 
 
-![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/timestamp-node.png) 
+![CreateFlow-injectNode](./../../../../img/InfoMotion/DataSource/Milkcocoa-v2/CreateFlow-injectNode.png)
 
 
 Now with all nodes ready click `Deploy` to execute the nodes. 
 
-![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/deploybutton.png) 
-
 
 If you can see data being logged in `debug` then the nodes are executing correctly. 
 
-![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/debug-log.png) 
+![CreateFlow-debugLog](./../../../../img/InfoMotion/DataSource/Milkcocoa-v2/CreateFlow-debugLog.png)
 
 You can also double check by going to mlkcca.com  and checking your projects datastore.
 Search the store name and click `リスト表示（更新）` to refresh the store list. 
 
-![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/store.png) 
-
-Now your Data Source is ready to be used on an infotype see 
-[Sample infotypes](./SampleInfoTypes.md) to downoad a graph, 
-[Upload an InfoType](./UploadInfoType.md) to upload a graph to enebular, 
-and [Create InfoMotion](./CreateInfoMotion.md) to create an InfoMotion dashboard.
+![CreateFlow-store](./../../../../img/InfoMotion/DataSource/Milkcocoa-v2/CreateFlow-store.png)

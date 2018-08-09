@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-08-07
+lastUpdated: 2018-08-09
 ---
 
 ###Create Flow 
@@ -7,35 +7,35 @@ lastUpdated: 2018-08-07
 Now with firebase ready lets create a flow to push data. 
 In an enebular project go to flows and click on the add button at the bottom right side of the screen. 
 
-![](/_asset/images/InfoMotion/datasources/firebase/flow-list.png) 
+![CreateFlow-flowList](./../../../../img/InfoMotion/DataSource/firebase/CreateFlow-flowList.png)
 
 
 Enter a name and decription then click continue. 
 
-![](/_asset/images/InfoMotion/datasources/firebase/create-flow.png) 
+![CreateFlow-createFlow](./../../../../img/InfoMotion/DataSource/firebase/CreateFlow-createFlow.png)
 
 
 Click on `Edit Flow` to open the flow editor. 
 
-![](/_asset/images/InfoMotion/datasources/firebase/edit-flow.png) 
+![CreateFlow-editFlow](./../../../../img/InfoMotion/DataSource/firebase/CreateFlow-editFlow.png)
 
 
 (If firebase is not installed please install `node-red-contrib-firebase`.)
 
 Create the following flow. 
 inject -> function -> firebase modify -> debug 
-![](/_asset/images/InfoMotion/datasources/firebase/flow.png) 
+![CreateFlow-flow](./../../../../img/InfoMotion/DataSource/firebase/CreateFlow-flow.png)
 
 
 Double click the inject node and set the interval to 10 seconds. 
 Click done when finished. 
 
-![](/_asset/images/InfoMotion/datasources/firebase/inject-node.png) 
+![CreateFlow-injectNode](./../../../../img/InfoMotion/DataSource/firebase/CreateFlow-injectNode.png)
 
 
 Double click the function node and set the function as below. 
 
-![](/_asset/images/InfoMotion/datasources/firebase/function-node.png) 
+![CreateFlow-functionNode](./../../../../img/InfoMotion/DataSource/firebase/CreateFlow-functionNode.png)
 
 
 ```javascript
@@ -59,7 +59,7 @@ Firebase:
 	firebase: `YOUR FIREBASE PROJECT ID`
 	auth type: `none` 
 
-![](/_asset/images/InfoMotion/datasources/firebase/firebase-config-node.png) 
+![CreateFlow-firebaseConfigNode](./../../../../img/InfoMotion/DataSource/firebase/CreateFlow-firebaseConfigNode.png)
 
 
 Child path : `test`
@@ -67,15 +67,15 @@ Method : `Push`
 value : `msg.payload`
 name : (any name you want)
 
-![](/_asset/images/InfoMotion/datasources/firebase/firebase-node.png) 
+![CreateFlow-firebaseNode](./../../../../img/InfoMotion/DataSource/firebase/CreateFlow-firebaseNode.png)
 
 
 Now with all nodes set you can now click deploy. 
 Check your debug log tab to see if data is being pushed correctly. 
 
-![](/_asset/images/InfoMotion/datasources/firebase/debug-log.png) 
+![CreateFlow-debugLog](./../../../../img/InfoMotion/DataSource/firebase/CreateFlow-debugLog.png)
 
 
 You can also check your firebase project database to see the data being saved.
 
-![](/_asset/images/InfoMotion/datasources/firebase/firebase-project-database.png) 
+![CreateFlow-firebaseProjectDatabase-en](./../../../../img/InfoMotion/DataSource/firebase/CreateFlow-firebaseProjectDatabase-en.png)

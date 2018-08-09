@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-08-07
+lastUpdated: 2018-08-09
 ---
 
 ###Create a Data Source 
@@ -7,15 +7,26 @@ lastUpdated: 2018-08-07
 In the same enebular project click `Data Source` and the plus button to add a 
 `Data Source`. 
 
-![](/_asset/images/InfoMotion/datasources/pubnub/datasource.png) 
+![CreateDataSource-datasource](./../../../../img/InfoMotion/DataSource/Pubnub/CreateDataSource-datasource.png)
 
 
-Set the `title` as you like. The `Publish` and `Subscribe` keys are required fields. 
-The `channel` should be set to "test". `Publish` and `Subscribe` from your pubnub app. 
+Set the `title` as you like. 
+The keys for the settings can be found in your Pubnub App. More infomation is fllowing [Input Items].
 Leave count to 100 for now then click save to continue. 
 
-![](/_asset/images/InfoMotion/datasources/pubnub/settings.png) 
+![CreateDataSource-settings](./../../../../img/InfoMotion/DataSource/Pubnub/CreateDataSource-settings.png)
 
+## Input Items
+
+`Publish key`, `Subscribe key`  are checked pubnub app's keys.
+
+![Setup-keys](./../../../../img/InfoMotion/DataSource/Pubnub/Setup-keys.png)
+
+`channel` is you seeting in the flow editor.
+
+![CreateFlow-pubnubOutNodeComplete](./../../../../img/InfoMotion/DataSource/Pubnub/CreateFlow-pubnubOutNodeComplete.png)
+
+## Create InfoMotion
 
 Now your Data Source is ready to be used on an infotype see 
 [Sample infotypes](./SampleInfoTypes.md) to downoad a graph, 

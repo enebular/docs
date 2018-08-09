@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-08-07
+lastUpdated: 2018-08-09
 ---
 
 ###Create a Flow 
@@ -7,18 +7,18 @@ lastUpdated: 2018-08-07
 The Pubnub datastore will be used to push data to. 
 At your enebular project create a new Flow. 
 
-![](/_asset/images/InfoMotion/datasources/pubnub/create-flow.png)
+![CreateFlow-createFlow](./../../../../img/InfoMotion/DataSource/Pubnub/CreateFlow-createFlow.png)
 
 Click the `Edit Flow` button 
 
-![](/_asset/images/InfoMotion/datasources/pubnub/edit-flow.png)
+![CreateFlow-flow](./../../../../img/InfoMotion/DataSource/Pubnub/CreateFlow-flow.png)
 
 
 In the flow editor arrange the nodes as follows. 
 inject -> function -> pubnub(in) 
 pubnub(out) -> debug 
 
-![](/_asset/images/InfoMotion/datasources/pubnub/flow.png)
+![CreateFlow-flow](./../../../../img/InfoMotion/DataSource/Pubnub/CreateFlow-flow.png)
 
 Double click the function node to open the `edit function node` modal. 
 
@@ -38,41 +38,41 @@ msg.payload = data;
 return msg;
 ```
 
-![](/_asset/images/InfoMotion/datasources/pubnub/function-node.png)
+![CreateFlow-functionNode](./../../../../img/InfoMotion/DataSource/Pubnub/CreateFlow-functionNode.png)
 
 For the pubnub out node you will need to inseart your 
 pubnub keys from your pubnub project app. Click on the pencil icon to edit keys. 
 
-![](/_asset/images/InfoMotion/datasources/pubnub/pubnub-out-node.png)
+![CreateFlow-pubnubOutNode](./../../../../img/InfoMotion/DataSource/Pubnub/CreateFlow-pubnubOutNode.png)
 
 Copy the publish and subscribe key from your pubnub app. 
 Then click on update. 
 
-![](/_asset/images/InfoMotion/datasources/pubnub/pubnub-out-node-keys.png)
+![CreateFlow-pubnubOutNodeKeys](./../../../../img/InfoMotion/DataSource/Pubnub/CreateFlow-pubnubOutNodeKeys.png)
 
 
 For this example use "test" as the channel to push data to. Click done to continue. 
 
-![](/_asset/images/InfoMotion/datasources/pubnub/pubnub-out-node-complete.png)
+![CreateFlow-pubnubOutNodeComplete](./../../../../img/InfoMotion/DataSource/Pubnub/CreateFlow-pubnubOutNodeComplete.png)
 
 
 Set the pubnub in node with the same keys as the out node. 
 
-![](/_asset/images/InfoMotion/datasources/pubnub/pubnub-in-node-complete.png)
+![CreateFlow-pubnubInNodeComplete](./../../../../img/InfoMotion/DataSource/Pubnub/CreateFlow-pubnubInNodeComplete.png)
 
 
 Click on the pencil icon to enter pubnub keys to update keys. 
 
-![](/_asset/images/InfoMotion/datasources/pubnub/pubnub-in-node-keys.png)
+![CreateFlow-pubnubInNodeKeys](./../../../../img/InfoMotion/DataSource/Pubnub/CreateFlow-pubnubInNodeKeys.png)
 
 Double click the inject/timestamp and set `repeat` to `interval` for every 5 seconds. 
 Click done to set the node. 
 
-![](/_asset/images/InfoMotion/datasources/pubnub/timestamp-node.png) 
+![CreateFlow-injectNode](./../../../../img/InfoMotion/DataSource/Pubnub/CreateFlow-injectNode.png)
 
 
 Now with all nodes ready click Deploy to execute the nodes.
 
 If you can see data being logged in debug then the nodes are executing correctly.
 
-![](/_asset/images/InfoMotion/datasources/pubnub/debug.png) 
+![CreateFlow-debug](./../../../../img/InfoMotion/DataSource/Pubnub/CreateFlow-debug.png)

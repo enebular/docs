@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-08-07
+lastUpdated: 2018-08-09
 ---
 
 ###Set-up
@@ -7,18 +7,18 @@ lastUpdated: 2018-08-07
 Register at https://mlkcca.com/. 
 Once you are registered and logged in at dashboard click on `新しいアプリを作る)`　
 
-![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/app-list.png) 
+![Setup-appList](./../../../../img/InfoMotion/DataSource/Milkcocoa-v2/Setup-appList.png)
 
 
 Name the application. 
 
-![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/name-app.png) 
+![Setup-nameApp](./../../../../img/InfoMotion/DataSource/Milkcocoa-v2/Setup-nameApp.png)
 
 The new applicaiotn will be added to the list. 
 
-![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/new-app-list.png) 
+![Setup-newAppList](./../../../../img/InfoMotion/DataSource/Milkcocoa-v2/Setup-newAppList.png)
 
 For this example we will only use the `app_id`. 
 Authentication (`認証`) is set to public by default. 
 
-![](/_asset/images/InfoMotion/datasources/milkcocoa-v2/app-dashboard.png) 
+![Setup-appDashboard](./../../../../img/InfoMotion/DataSource/Milkcocoa-v2/Setup-appDashboard.png)

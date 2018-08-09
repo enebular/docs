@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-08-07
+lastUpdated: 2018-08-09
 ---
 
 ###Access Control Allow Origin 
@@ -13,8 +13,3 @@ Or simply use
 `python -m SimpleHTTPServer 8000` in the terminal at your root directory to run the index.html.
 For information on pythons SimpleHTTPServer see 
 https://docs.python.org/2/library/simplehttpserver.html. 
-
-Now your Data Source is ready to be used on an infotype see 
-[Sample infotypes](./SampleInfoTypes.md) to downoad a graph, 
-[Upload an InfoType](./UploadInfoType.md) to upload a graph to enebular, 
-and [Create InfoMotion](./CreateInfoMotion.md) to create an InfoMotion dashboard.

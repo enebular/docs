@@ -1,21 +1,21 @@
 ---
-lastUpdated: 2018-08-07
+lastUpdated: 2018-08-09
 ---
 
 ## Using Lambda to return data
 
 Getting started with Lambda.
 
-![](/_asset/images/infomotion/api-gateway/lambda.png)
+![CreateLambdaFunction-CreateLambdaFunction-lambda-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-lambda-en.png)
 
 Create author from scratch using Node.js version 6.
 
-![](/_asset/images/infomotion/api-gateway/author-from-scratch.png)
+![CreateLambdaFunction-authorFromScratch-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-authorFromScratch-en.png)
 
 Daterange picker passes `start` and `end` parameters.
 The following code returns data based on the parameters.
 
-![](/_asset/images/infomotion/api-gateway/test-lambda.png)
+![CreateLambdaFunction-testLambda-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-testLambda-en.png)
 
 ```javascript
 exports.handler = (event, context, callback) => {
@@ -43,48 +43,48 @@ exports.handler = (event, context, callback) => {
 
 Creating an API Gateway that connects to the Lambda function.
 
-![](/_asset/images/infomotion/api-gateway/amazon-api-gateway.png)
+![CreateLambdaFunction-amazonApiGgateway-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-amazonApiGgateway-en.png)
 
 Creating a new API.
 
-![](/_asset/images/infomotion/api-gateway/new-api.png)
+![CreateLambdaFunction-newApi-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-newApi-en.png)
 
 Creating a new resource.
 
-![](/_asset/images/infomotion/api-gateway/new-resource.png)
+![CreateLambdaFunction-newResource-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-newResource-en.png)
 
 Enter the path name and check "Enable API Gateway CORS".
 
-![](/_asset/images/infomotion/api-gateway/new-resource-child.png)
+![CreateLambdaFunction-newResourceChild-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-newResourceChild-en.png)
 
 With resource completed create a GET method.
 
-![](/_asset/images/infomotion/api-gateway/create-get-method.png)
+![CreateLambdaFunction-createGetMethod-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-createGetMethod-en.png)
 
 Setting a method.
 Select the Lamnda function created (It will not appear unless you select the region where you created Lamdba).
 
-![](/_asset/images/infomotion/api-gateway/setup-a-method.png)
+![CreateLambdaFunction-setupMethod-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-setupMethod-en.png)
 
 Once a method is created edit the method response.
 
-![](/_asset/images/infomotion/api-gateway/method-response.png)
+![CreateLambdaFunction-methodResponse-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-methodResponse-en.png)
 
 Create the 200 hedder as "Access-Control-Allow-Origin".
 
-![](/_asset/images/infomotion/api-gateway/200-hedder.png)
+![CreateLambdaFunction-200Header-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-200Header-en.png)
 
 Create an intergration response.
 
-![](/_asset/images/infomotion/api-gateway/intergration-response.png)
+![CreateLambdaFunction-intergrationResponse-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-intergrationResponse-en.png)
 
 Set「Access-Control-Allow-Origin」」 as`'*'`.
 
-![](/_asset/images/infomotion/api-gateway/access-control.png)
+![CreateLambdaFunction-accessControl-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-accessControl-en.png)
 
 Lastly, change "Intergration Request".
 
-![](/_asset/images/infomotion/api-gateway/intergration-request.png)
+![CreateLambdaFunction-intergrationRequest-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-intergrationRequest-en.png)
 
 Create the following mapping of "body mapping template" with "application / json" as shown below
 
@@ -95,15 +95,14 @@ Create the following mapping of "body mapping template" with "application / json
 }
 ```
 
-![](/_asset/images/infomotion/api-gateway/body-mapping.png)
-
+![CreateLambdaFunction-bodyMapping-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-bodyMapping-en.png)
 Next create a "deploy api".
 
-![](/_asset/images/infomotion/api-gateway/deploy-api.png)
+![CreateLambdaFunction-deployApi-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-deployApi-en.png)
 
 Input a deploy name.
 
-![](/_asset/images/infomotion/api-gateway/deploy-name.png)
+![CreateLambdaFunction-deployName-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-deployName-en.png)
 
 The resource named `/ test` becomes the endpoint to be registered with DataSource.
 
@@ -112,16 +111,4 @@ The resource named `/ test` becomes the endpoint to be registered with DataSourc
 https://*********.execute-api.ap-northeast-1.amazonaws.com/teststage/test
 ```
 
-![](/_asset/images/infomotion/api-gateway/example-endpoint.png)
-
-Next create an api key.
-
-![](/_asset/images/infomotion/api-gateway/api-key.png)
-
-Create a name for the key.
-
-![](/_asset/images/infomotion/api-gateway/create-api-key-name.png)
-
-Now it becomes a registered apikey to be used for a DataSource.
-
-![](/_asset/images/infomotion/api-gateway/api-key-success.png)
+![CreateLambdaFunction-exampleEndpoint-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-exampleEndpoint-en.png)
