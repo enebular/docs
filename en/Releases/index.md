@@ -1,18 +1,26 @@
 ---
-lastUpdated: 2018-08-03
+lastUpdated: 2018-08-10
 ---
 
 # enebular Release Notes {#enebular}
 
-## 2.4.1 (August 3rd, 2018)
+## 2.4.2 (August 10th, 2018)
 
 ### New
 
-None
+- Modal for sharing InfoMotion now has a 'copy to clipboard' button.
 
 ### Fixed
 
-- Fixed a bug that failed to send users an email when creating a new account.
+- Clicking on filter for an individual graph causes an error and sets the screen white.
+- Clicking on 'Save' at InfoMotion forces a page refresh.
+- Share modal disappearing when being clicked on.
+- The 'Purchase' button at the License Manager did not work. 
+- Fixed a bug that the already deployed AWS IoT device will always be in Connected state even if it is not in operation.
+- Link of about enebular was incorrect. 
+- Clicking on the twitter share button did not set correct pictures or description.
+- Language button at the top of the page was displayed vertically.
+- The corporate platform logo at the top page was misaligned.
 
 ### Changed
 
@@ -20,12 +28,14 @@ None
 
 ### Known Issues
 
-* Opening the flow editor from a web browser shows Japanese texts even if the browser is configured to show English.
-* InfoMotion-embedded pages fail to show graphs when the browser which opens them is not logged into enebular.
-* The current flow editor allows multiple users to open the same flow simultaneously; however, if each clicks on "Deploy" button, only the last saved flow will remain on enebular.
+- Opening the flow editor from a web browser shows Japanese texts even if the browser is configured to show English.
+- InfoMotion-embedded pages fail to show graphs when the browser which opens them is not logged into enebular.
+- The graph does not appear on the shared page with InfoMotion embedded.
+- On the shared page with InfoMotion embedded, the filter function can not be used.
 
 ### Release History
 
+- [2.4.2](./enebular/2.4.2.md) (August 10th, 2018)
 - [2.4.1](./enebular/2.4.1.md) (August 3rd, 2018)
 - [2.4.0](./enebular/2.4.0.md) (July 19th, 2018)
 - [2.3.1](./enebular/2.3.1.md) (July 11th, 2018)
