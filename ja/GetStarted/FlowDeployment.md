@@ -1,16 +1,17 @@
 ---
-lastUpdated: 2018-07-10
+lastUpdated: 2018-07-20
 ---
 
 # Flow Deployment
+
 enebular の特徴として、作成したフローを様々な環境にデプロイし動作させるというものがあります。
 このチュートリアルでは、フローを別のサービス（Heroku）にデプロイし動作をさせてみましょう。
 
 このチュートリアルでは以下のことを行います。
 
-- Herokuへのフローデプロイ
+- Heroku へのフローデプロイ
 
-なお、本ページは [Create Projects and Assets](./CreateProjetcs.md) のチュートリアルで Asset(フロー) の作成方法については理解していることを前提としています。
+なお、本ページは [Introduction](./Introduction.md) のチュートリアルで Asset(フロー) の作成方法については理解していることを前提としています。
 
 ## Heroku に送るフローを作成
 
@@ -54,7 +55,7 @@ App name をわかりやすい名前で設定します。
 
 ![appName](./../../img/GetStarted/FlowDeployment-appName.png)
 
-作成後 のenebular Node-RED のログインするための USERNAME/PASSWORD を設定します。
+作成後 の enebular Node-RED のログインするための USERNAME/PASSWORD を設定します。
 
 ![userName](./../../img/GetStarted/FlowDeployment-userName.png)
 
@@ -108,7 +109,6 @@ Heroku API Token に API Key をコピーして、[Save] を押します。
 
 ![saveConnection](./../../img/GetStarted/FlowDeployment-saveConnection.png)
 
-
 ## デプロイ
 
 保存されると Select Connection Type から Heroku を選択すると、Heroku アカウントが持つアプリ一覧が出てきます。
@@ -131,4 +131,4 @@ Heroku アプリで確認すると無事フローがデプロイされていま�
 
 ## Well Done!
 
-enebularのデプロイ機能を使用して、作成したAsset(フロー)を別のサービスにデプロイすることが出来るようになりました。
+enebular のデプロイ機能を使用して、作成した Asset(フロー)を別のサービスにデプロイすることが出来るようになりました。
