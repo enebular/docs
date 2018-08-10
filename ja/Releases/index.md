@@ -1,18 +1,26 @@
 ---
-lastUpdated: 2018-08-03
+lastUpdated: 2018-08-10
 ---
 
 # enebular Release Notes {#enebular}
 
-## 2.4.1 (August 3rd, 2018)
+## 2.4.2 (August 10th, 2018)
 
 ### New
 
-なし
+- InfoMotion dashboardのShare Graphモーダルに、簡単にシェアできるよう「Copy to clipboard」ボタンを追加しました
 
 ### Fixed
 
-- 新規登録からアカウントを作成しても、メールが送信されない不具合を修正しました
+- InfoMotion dashboardページのfilter機能で、filterを設定しても反映されない不具合を修正しました
+- InfoMotion dashboardページのSaveボタンを押すと、画面が更新されてしまう不具合を修正しました
+- InfoMotion dashboardページのShare Graphモーダル内をクリックするとモーダルが閉じてしまう不具合を修正しました
+- License Managerページの「Purchase」ボタンが押下できない不具合を修正しました
+- 既にデプロイ済みのAWS IoTデバイスが、動作中でなくても常にConnectedの状態になってしまう不具合を修正しました
+- topページのabout enebularのリンク先が誤っている不具合を修正しました
+- topページのtwitter,facebookのシェアボタンを押すと、画像や説明文が設定されない不具合を修正しました
+- topページの言語切替ボタンが縦並びになって表示されてしまう不具合を修正しました
+- topページの連携プラットフォームのロゴの表示がずれていた不具合を修正しました
 
 ### Changed
 
@@ -20,12 +28,14 @@ lastUpdated: 2018-08-03
 
 ### Known Issues
 
-* 言語設定を英語にしたブラウザでフローエディタを開いても、一部の説明文が日本語で表示されます
-* InfoMotionを埋め込んだ静的ページを、enebularにログインしていないブラウザで開こうとするとグラフが表示されません
-* 現状のフローエディタでは、1つのフローを複数のユーザーが開くことが出来ますが、それぞれ「Deploy」ボタンを押した場合、enebular上に残るのは最後に保存した物のみになります
+- 言語設定を英語にしたブラウザでフローエディタを開いても、一部の説明文が日本語で表示されます
+- InfoMotionを埋め込んだ静的ページを、enebularにログインしていないブラウザで開こうとするとグラフが表示されません
+- InfoMotionを埋め込んだ共有ページにグラフが表示されません
+- InfoMotionを埋め込んだ共有ページでは、filter機能が使用できません
 
 ### Release History
 
+- [2.4.2](./enebular/2.4.2.md) (August 10th, 2018)
 - [2.4.1](./enebular/2.4.1.md) (August 3rd, 2018)
 - [2.4.0](./enebular/2.4.0.md) (July 19th, 2018)
 - [2.3.1](./enebular/2.3.1.md) (July 11th, 2018)
