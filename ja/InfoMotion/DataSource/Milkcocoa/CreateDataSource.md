@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-08-09
+lastUpdated: 2018-08-10
 ---
 
 ## Data Source の作成
@@ -27,7 +27,7 @@ milkcocoa の `AppId` は App画面のトップより確認できます。
 
 ![Setup-appDashboard](./../../../../img/InfoMotion/DataSource/Milkcocoa-v2/Setup-appDashboard.png)
 
-DataStoreは、フローで入力したものを入力します。
+DataStoreは、フローで入力し作成したもの、あるいはこれから作成するもの入力します。
 [CreateFlow](./CreateFlow.md) で作成したフローでは、[test] と設定しています。
 
 

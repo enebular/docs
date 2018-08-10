@@ -1,10 +1,10 @@
 ---
-lastUpdated: 2018-08-09
+lastUpdated: 2018-08-10
 ---
 
 ## DataSource の作成
 
-フローを作成したものと同じプロジェクトの `Data Source` のページを表示します。
+InfoMotionで表示したい  `Data Source` のページを表示します。
 右下の + ボタンをクリックして、 `Data Source`を追加します。
 
 ![CreateDataSource-datasource](./../../../../img/InfoMotion/DataSource/Pubnub/CreateDataSource-datasource.png)
@@ -24,7 +24,7 @@ pubnub 用の設定画面が開きます。
 
 ![Setup-keys](./../../../../img/InfoMotion/DataSource/Pubnub/Setup-keys.png)
 
-`channel` にはフローでに設定したものを入力します。
+`channel` にはフローで設定したもの、あるいはこれから作成する channel を入力します。
 
 ![CreateFlow-pubnubOutNodeComplete](./../../../../img/InfoMotion/DataSource/Pubnub/CreateFlow-pubnubOutNodeComplete.png)
 

@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-08-09
+lastUpdated: 2018-08-10
 ---
 
 # DataSource の作成
@@ -41,6 +41,7 @@ Firebase の左部メニューの [Project Overview] をクリックし、プロ
 ![Setup-firebaseKeys-ja](./../../../../img/InfoMotion/DataSource/firebase/Setup-firebaseKeys-ja.png)
 
 残りの項目の `Ref` はフローで用いる `Child path` を入力します。(Firebase ではコレクション名となっています。)
+または、他の方法で作成したものを入力します。
 [CreateFlow](./CreateFlow.md) で作成したフローでは、[test] と設定しています。
 
 ![CreateFlow-firebaseNode](./../../../../img/InfoMotion/DataSource/firebase/CreateFlow-firebaseNode.png)
