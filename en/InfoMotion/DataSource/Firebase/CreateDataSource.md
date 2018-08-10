@@ -10,7 +10,7 @@ In the same enebular project click `Data Source` and the plus button to add a
 
 ![CreateDataSource-datasource](./../../../../img/InfoMotion/DataSource/firebase/CreateDataSource-datasource.png)
 
-The keys for the settings can be found in your firebase web settings. More infomation is fllowing [Input Items].
+The keys for the settings can be found in your firebase web settings. 
 
 ![CreateDataSource-settings](./../../../../img/InfoMotion/DataSource/firebase/CreateDataSource-settings.png)
 

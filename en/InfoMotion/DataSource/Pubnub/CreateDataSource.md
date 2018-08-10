@@ -11,7 +11,7 @@ In the same enebular project click `Data Source` and the plus button to add a
 
 
 Set the `title` as you like. 
-The keys for the settings can be found in your Pubnub App. More infomation is fllowing [Input Items].
+The keys for the settings can be found in your Pubnub App.
 Leave count to 100 for now then click save to continue. 
 
 ![CreateDataSource-settings](./../../../../img/InfoMotion/DataSource/Pubnub/CreateDataSource-settings.png)

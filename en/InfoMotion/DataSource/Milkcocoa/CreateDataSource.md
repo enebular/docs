@@ -9,7 +9,7 @@ In the same enebular project click `Data Source` and the plus button to add a
 
 ![CreateDataSource-dataSource](./../../../../img/InfoMotion/DataSource/Milkcocoa-v2/CreateDataSource-dataSource.png)
 
-Set the `title` as you like. The `app_id` and `DataStore` are required fields. More infomation is fllowing [Input Items].
+Set the `title` as you like. The `app_id` and `DataStore` are required fields.
 
 Click save to continue. 
 
