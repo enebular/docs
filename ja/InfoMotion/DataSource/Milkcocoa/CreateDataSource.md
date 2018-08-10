@@ -42,6 +42,6 @@ InfoMotion ダッシュボードを作成する際に作った DataSource を選
 
 詳しくは以下のページを順に参照してください。
 
-* [Sample infotypes](./SampleInfoTypes.md)
-* [Upload an InfoType](./UploadInfoType.md)
-* [Create nfoMotion](./CreateInfoMotion.md)
+* [Sample infotypes](./../../SampleInfoTypes.md)
+* [Upload an InfoType](./../../UploadInfoType.md)
+* [Create nfoMotion](./../../CreateInfoMotion.md)

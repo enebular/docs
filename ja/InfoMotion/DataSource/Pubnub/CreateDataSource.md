@@ -35,6 +35,6 @@ DataSource を使用する準備ができました。
 InfoMotion ダッシュボードを作成する際に作った DataSource を選択することでデータをグラフに反映できます。
 詳しくは以下のページを順に参照してください。
 
-* [Sample infotypes](./SampleInfoTypes.md)
-* [Upload an InfoType](./UploadInfoType.md)
-* [Create InfoMotion](./CreateInfoMotion.md)
+* [Sample infotypes](./../../SampleInfoTypes.md)
+* [Upload an InfoType](./../../UploadInfoType.md)
+* [Create InfoMotion](./../../CreateInfoMotion.md)
