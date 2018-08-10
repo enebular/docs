@@ -68,8 +68,8 @@ lastUpdated: 2018-08-10
     - [Create a DataSource](InfoMotion/DataSource/Pubnub/CreateDataSource.md)
     - [Create Flow](InfoMotion/DataSource/Pubnub/CreateFlow.md)
   - [API Gateway]()
-    - [Set up & Create Lambda Function](InfoMotion/DataSource/Apigateway/CreateLambdaFunction.md)
-    - [Create a DataSource](InfoMotion/DataSource/Apigateway/CreateDataSource.md)
+    - [Set up & Create Lambda Function](InfoMotion/DataSource/ApiGateway/CreateLambdaFunction.md)
+    - [Create a DataSource](InfoMotion/DataSource/ApiGateway/CreateDataSource.md)
 - [Dashboards](InfoMotion/CreateInfoMotion.md)
 - [Sharing an InfoMotion](InfoMotion/ShareInfoMotion.md)
 
