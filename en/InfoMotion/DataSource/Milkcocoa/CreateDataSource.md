@@ -30,7 +30,7 @@ The `DataStore` is you set in the flow editor.
 
 ## Create InfoMotion
 
-Now your Data Source is ready to be used on an infotype see 
-[Sample infotypes](./SampleInfoTypes.md) to downoad a graph, 
-[Upload an InfoType](./UploadInfoType.md) to upload a graph to enebular, 
-and [Create InfoMotion](./CreateInfoMotion.md) to create an InfoMotion dashboard.
+Now your DataSource is ready to be used on an infotype see 
+[Sample infotypes](./../../SampleInfoTypes.md)to downoad a graph, 
+[Upload an InfoType](./../../UploadInfoType.md) to upload a graph to enebular, 
+and [Create InfoMotion](./../../CreateInfoMotion.md) to create an InfoMotion dashboard
