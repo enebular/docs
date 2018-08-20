@@ -1,30 +1,23 @@
 ---
-lastUpdated: 2018-08-10
+lastUpdated: 2018-08-20
 ---
 
 # enebular Release Notes {#enebular}
 
-## 2.4.2 (August 10th, 2018)
+## 2.4.3 (August 20th, 2018)
 
 ### New
 
-- InfoMotion dashboardのShare Graphモーダルに、簡単にシェアできるよう「Copy to clipboard」ボタンを追加しました
+N/A
 
 ### Fixed
 
-- InfoMotion dashboardページのfilter機能で、filterを設定しても反映されない不具合を修正しました
-- InfoMotion dashboardページのSaveボタンを押すと、画面が更新されてしまう不具合を修正しました
-- InfoMotion dashboardページのShare Graphモーダル内をクリックするとモーダルが閉じてしまう不具合を修正しました
-- License Managerページの「Purchase」ボタンが押下できない不具合を修正しました
-- 既にデプロイ済みのAWS IoTデバイスが、動作中でなくても常にConnectedの状態になってしまう不具合を修正しました
-- topページのabout enebularのリンク先が誤っている不具合を修正しました
-- topページのtwitter,facebookのシェアボタンを押すと、画像や説明文が設定されない不具合を修正しました
-- topページの言語切替ボタンが縦並びになって表示されてしまう不具合を修正しました
-- topページの連携プラットフォームのロゴの表示がずれていた不具合を修正しました
+- AWS Lambdaへのデプロイ試行が失敗する不具合を修正しました。
 
 ### Changed
 
-なし
+N/A
+
 
 ### Known Issues
 
@@ -35,6 +28,7 @@ lastUpdated: 2018-08-10
 
 ### Release History
 
+- [2.4.3](./enebular/2.4.3.md) (August 20th, 2018)
 - [2.4.2](./enebular/2.4.2.md) (August 10th, 2018)
 - [2.4.1](./enebular/2.4.1.md) (August 3rd, 2018)
 - [2.4.0](./enebular/2.4.0.md) (July 19th, 2018)
