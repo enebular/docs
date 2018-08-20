@@ -1,18 +1,48 @@
 ---
-lastUpdated: 2018-07-10
+lastUpdated: 2018-07-31
 ---
 
 # Introduction
 
 このチュートリアルでは以下のことを行います。
 
+- enebularへのサインアップ
 - Project の作成
 - Asset(フロー)の作成
 - フローの編集
 
+## enebularへのサインアップ
+
+** 注意 : enebular v1のアカウントではenebular v2にはサインインできません。enebular v1 ユーザーの方でenebular v2を使用したい場合、新しくアカウントを作成してください。**
+
+https://enebular.com にアクセスし、`新規登録`ボタンを押下します。
+
+![signUp](./../../img/GetStarted/Introduction-signUp-ja.png)
+
+入力フォームに必要な情報を入力してください。privacy policy と terms of service を確認したのち、`sign up`ボタンを押下してください。
+
+![inputUserInfo](./../../img/GetStarted/Introduction-inputUserInfo.png)
+
+下記の画面が表示され、登録したメールアドレスに登録確認用のメールが送信されます。メールが送信されるまで数分かかる場合があります。
+
+![inputUserInfo](./../../img/GetStarted/Introduction-verifying.png)
+
+登録確認用のメールにて、確認が完了すると enebular.com にサインイン可能になります。
+`Go To Dashboard` をクリックしてください。
+
+![inputUserInfo](./../../img/GetStarted/Introduction-verified.png)
+
+### 確認用メールが届かない場合
+
+下記の手順で確認をお願いいたします。
+
+1. 正しいメールアカウントをチェックしていることを確認してください
+1. enebular.com からのメールがフィルタリングされていないことを確認してください
+1. ** support@enebular.com **まで連絡をお願いします
+
 ## Projectの作成
 
-enebular を始めるには、まず Project を作成します。ログイン後の画面にある Create Project からプロジェクトを作成します。
+enebular を始めるには、まず Project を作成します。サインイン後の画面にある Create Project からプロジェクトを作成します。
 
 ![createProject](./../../img/GetStarted/Introduction-createProject.png)
 
