@@ -8,7 +8,7 @@ lastUpdated: 2018-08-20
 
 ### New
 
-N/A
+なし
 
 ### Fixed
 
@@ -16,8 +16,7 @@ N/A
 
 ### Changed
 
-N/A
-
+なし
 
 ### Known Issues
 
