@@ -42,7 +42,7 @@ Searching by Project name will list all Project's Assets.
 
 The devices managed within the project. The devices here are those to which assets have been deployed.
 
-- [Device List](../Device/Introduction.md): The list of devices
+- [Device List](../Device/DeviceList.md): The list of devices
 - Licence Manager: License management for using paid functionality
 
 ## Config
@@ -52,4 +52,4 @@ Project related configuration.
 - [Data Source](../InfoMotion/CreateDataSource.md): Registration of data sources for use with graphs
 - [Access](../Access/index.md): Project access control management
 - [Settings](../Project/Settings.md): Project settings
-- [Billing](../Project/Billing.md):  Billing information management
+- [Billing](../Billing/Information.md):  Billing information management

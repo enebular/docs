@@ -18,15 +18,15 @@ The following are examples of default graphs.
 ```
 
 - Bar Chart
-![](/_asset/images/InfoMotion/enebular-developers-template-barchart.png)
+![](../_asset/images/InfoMotion/enebular-developers-template-barchart.png)
 
 
 - Line Chart
-![](/_asset/images/InfoMotion/enebular-developers-template-linechart.png)
+![](../_asset/images/InfoMotion/enebular-developers-template-linechart.png)
 
 
 - Pie Chart
-![](/_asset/images/InfoMotion/enebular-developers-template-piechart.png)
+![](../_asset/images/InfoMotion/enebular-developers-template-piechart.png)
 
 
 - [See here for creating an InfoType](./InfoMotionTool.md)
@@ -42,11 +42,11 @@ Selecting an InfoType will take you to the InfoType details screen.
 
 You can preview the graph here. From the left is the graph, schema settings and then the sample data. If you change the schema and sample data then click "Preview" the graph will update.
 
-![](/_asset/images/InfoMotion/overview.png) 
+![](../_asset/images/InfoMotion/overview.png) 
 
 The InfoType's files can be updated with "Update" at the top right. 
 
-![](/_asset/images/InfoMotion/infotype-update.png) 
+![](../_asset/images/InfoMotion/infotype-update.png) 
 
 ## Settings
 

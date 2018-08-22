@@ -6,11 +6,11 @@ lastUpdated: 2018-05-23
 
 enebularでは、有償デバイスのログを確認することができます。
 ログを閲覧したいデバイスのモニタリング設定を ON にしてください。
-※モニタリング設定については、[Device List](/Device/DeviceList.md)のページを参照してください。
+※モニタリング設定については、[Device List](./DeviceList.md)のページを参照してください。
 
 enebular agent と enebular edge agent で出力されるログの仕様が異なります。
 
-![view_logs](/_asset/images/Device/Logs/view_logs.png)
+![view_logs](../_asset/images/Device/Logs/view_logs.png)
 
 ログを閲覧するには Device List よりログを見たい対象デバイスの右部にある [View Logs] を押してください。
 
@@ -32,13 +32,13 @@ Node-RED が出力するログは Node-RED の設定やノードの設定に依�
 
 もし、 Debug ノードのログ出力をしたい場合は、Debug ノードを `debug tab and console` の設定にすることで、コンソールへの出力が有効になります。
 
-![view_logs](/_asset/images/Device/Logs/debug_node_config.png)
+![view_logs](../_asset/images/Device/Logs/debug_node_config.png)
 
 ### ログ画面の見方
 
 enebular agentのログ画面の例です。
 
-![cloud_logs](/_asset/images/Device/Logs/cloud_logs.png)
+![cloud_logs](../_asset/images/Device/Logs/cloud_logs.png)
 
 1. ログを出力したタイムスタンプ
 1. ログ
@@ -51,7 +51,7 @@ enebular agentのログ画面の例です。
 
 また、Debug ノードから出力されるログは以下のように表示されます。
 
-![cloud_logs](/_asset/images/Device/Logs/debug_node.png)
+![cloud_logs](../_asset/images/Device/Logs/debug_node.png)
 
 
 ## enebular edge agent のログ
@@ -65,7 +65,7 @@ enebular edge agent は動作ログ及びエラーログをenebularに送信し�
 
 enebular edge agent のログ画面の例です。
 
-![device_logs](/_asset/images/Device/Logs/eea_logs.png)
+![device_logs](../_asset/images/Device/Logs/eea_logs.png)
 
 1. ログ
 1. ログを出力した機能名

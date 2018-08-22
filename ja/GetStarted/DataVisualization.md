@@ -22,7 +22,7 @@ enebular のユーザーはアセットを公開すること、また公開さ�
 右のカテゴリーから `Flow` を選択して、「getting-started」と検索バーに入力してください。
 ![discover](./../../img/GetStarted/DataVisualization-discover.png)
 
-検索結果に出てきたものをクリックし、下記のようなフロープレビューは表示されていることを確認してください。
+検索結果に出てきたものをクリックし、下記のようなフロープレビューが表示されていることを確認してください。
 右の `fork` ボタンよりフローをフォークできます。
 ![discover2](./../../img/GetStarted/DataVisualization-discover2.png)
 
@@ -43,12 +43,12 @@ enebular のユーザーはアセットを公開すること、また公開さ�
 
 InfoMotion は現在下記に挙げるリアルタイムデータベースに対応しています。詳しくは各ページを参照してください。
 
-- [Milkcocoa-v2 DataSource](./../InfoMotion/DatasourceMilkcocoa-v2.md)
-- [Firebase DataSource](./../InfoMotion//DatasourceFirebase.md)
-- [Pubnub DataSource](./../InfoMotion/DatasourcePubnub.md)
+- [Milkcocoa-v2 DataSource](./../InfoMotion/DataSource/Milkcocoa/CreateDataSource.md)
+- [Firebase DataSource](./../InfoMotion/DataSource/Firebase/CreateDataSource.md)
+- [Pubnub DataSource](./../InfoMotion/DataSource/Pubnub/CreateDataSource.md)
 
 この GetStarted では Firebase を用いて説明を進めます。
-次の項に進む前に、[Firebase](./DatasourceFirebase.md)のページを参考にして、利用登録を済ませ、データストアを作成してください。
+次の項に進む前に、[Firebase](./../InfoMotion/DataSource/Firebase/Setup.md)のページを参考にして、利用登録を済ませ、データストアを作成してください。
 
 ※ GetStarted の設定はテストに向けたものなので、実際に使用する際には推奨しません。
 

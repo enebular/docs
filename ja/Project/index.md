@@ -40,7 +40,7 @@ Project名 で検索した場合、Project に紐づく Asset が一覧表示さ
 
 プロジェクト内で管理するデバイスです。ここでいうデバイスとは Asset がデプロイされているデバイスを指します。
 
-- [Device List](../Device/Introduction.md): デバイスの一覧
+- [Device List](../Device/DeviceList.md): デバイスの一覧
 - Licence Manager: 有償機能を利用するためのライセンス管理
 
 ## Config
@@ -50,4 +50,4 @@ Project名 で検索した場合、Project に紐づく Asset が一覧表示さ
 - [Data Source](../InfoMotion/CreateDataSource.md): グラフに利用するデータソースの登録
 - [Access](../Access/index.md): プロジェクトのアクセスコントロール管理
 - [Settings](../Project/Settings.md): プロジェクトの設定
-- [Billing](../Project/Billing.md): 請求情報の管理
+- [Billing](../Billing/Information.md): 請求情報の管理

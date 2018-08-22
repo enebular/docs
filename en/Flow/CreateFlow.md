@@ -16,7 +16,7 @@ Open the dialog box with the "+" button on the bottom right.
 
 Select "flow" for the asset type in the dialog box.
 
-![image](/_asset/images/Flow/CreateFlow/flow-create-flow_07.png)
+![image](../_asset/images/Flow/CreateFlow/flow-create-flow_07.png)
 
 After selecting "flow", you'll be able to set the icon, title and access permissions.
 
@@ -31,11 +31,11 @@ After selecting "flow", you'll be able to set the icon, title and access permiss
 * Category
     * An appropriate category for the flow
 
-![image](/_asset/images/Flow/CreateFlow/flow-create-flow_10.png)
+![image](../_asset/images/Flow/CreateFlow/flow-create-flow_10.png)
 
 Once you've completed the settings, click the "Continue" button.
 
-![image](/_asset/images/Flow/CreateFlow/flow-create-flow_11.png)
+![image](../_asset/images/Flow/CreateFlow/flow-create-flow_11.png)
 
 The flow has now been created.
 
