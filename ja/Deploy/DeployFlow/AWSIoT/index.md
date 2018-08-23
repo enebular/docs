@@ -10,19 +10,19 @@ enebular では作成した Flow を AWS IoT にも書き出すことができ�
 
 今回は以下のような Flow を作成します。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_01.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_01.png)
 
 フローが出来たら、デプロイして保存します。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_02.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_02.png)
 
 保存したら、フローの Deploy タブから [Deploy] を押します。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_03.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_03.png)
 
 Deploy Flow 画面に移動するので、 [Select Connection Type] を `AWS IoT` にして待機します。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_04.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_04.png)
 
 ## AWS IoT で設定を作成
 
@@ -32,44 +32,44 @@ AWS IoT で今回用の設定を作成します。
 
 メニューから 管理＞モノ を選択し、[モノの登録]を押します。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_05.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_05.png)
 
 [単一のモノを作成する]を押します。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_06.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_06.png)
 
 適当な名前をつけて次に進みます。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_07.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_07.png)
 
 
 ### 証明書の作成
 
 1-Click 証明書作成の[証明書の作成]を押します。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_08.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_08.png)
 
 鍵ファイルを全てダウンロードして有効化します。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_09.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_09.png)
 
 有効化が完了します。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_10.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_10.png)
 
 ### 新規ポリシーの作成
 
 メニューの 安全性＞ポリシー から[ポリシーの作成]を押します。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_11.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_11.png)
 
 名前はわかりやすい名前を指定します。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_12.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_12.png)
 
 つづいて、ステートメントを追加します。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_13.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_13.png)
 
 ポリシー構文は以下のように指定します。
 
@@ -78,33 +78,33 @@ AWS IoT で今回用の設定を作成します。
 * リソース ARN
     * *
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_14.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_14.png)
 
 このポリシー構文は一旦試すための許可範囲が広い設定です。慣れてきたら、ポリシーも細かく調整してみてください。
 
 作成ボタンを押してポリシーを保存します。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_15.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_15.png)
 
 ## 証明書へポリシーのアタッチ
 
 このままだとポリシーと証明書が結びついてないのでアタッチします。さきほど作成したモノの画面に移動して、メニューのセキュリティから作成した証明書を選択します。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_16.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_16.png)
 
 右上の[アクション]から[ポリシーのアタッチ]を選択します。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_17.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_17.png)
 
 さきほど作成したポリシーをアタッチします。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_18.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_18.png)
 
 完了したら、証明書がポリシーとモノに結びついていることを確認します。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_19.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_19.png)
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_20.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_20.png)
 
 ## AWS IoT 用の IAM ユーザーを作成
 
@@ -112,33 +112,33 @@ enebular から AWS IoT を利用するための Access Key ID と Secret Access
 
 IAM のメニューのユーザーから[ユーザーを追加]を押します。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_21.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_21.png)
 
 詳細では、わかりやすい名前をつけて [プログラムによるアクセス] にチェックをつけます。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_22.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_22.png)
 
 アクセス権限では、[既存のポリシーを直接アタッチ]を選択して、[AWSIoTFullAccess]というポリシーを選択して次に進みます。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_23.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_23.png)
 
 最後に間違いがないか確認します。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_24.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_24.png)
 
 完了したら、アクセスキー ID とシークレットアクセスキーが記載された CSV ファイルをダウンロードします（このタイミングでしかダウンロードできないので注意して下さい）。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_25.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_25.png)
 
 ## フローに AWS IoT の設定を反映
 
 先ほどの AWS IoT 設定画面に戻りフローに AWS IoT の設定を反映します。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_26.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_26.png)
 
 Select Connection の右の [New] を押します。必要な情報を入力して Connection を作成します。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_27.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_27.png)
 
 * Connection Name
     * 任意の英数字
@@ -151,11 +151,11 @@ Select Connection の右の [New] を押します。必要な情報を入力し�
 * AWS IoT Endpoint URL
     * モノのメニューの**操作**より確認できます（下の画像参照）
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_28.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_28.png)
 
 作成した Connection を選択すると登録されているモノが表示されます。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_29.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_29.png)
 
 まだ Disconnected になっています。これはデバイスが AWS IoT にデプロイされていないまたは接続が切れていることを意味します。
 
@@ -201,7 +201,7 @@ npm install
 
 少し前の手順でダウンロードした AWS IoT Thing 用の証明書ファイルを `example` モジュールの `certs` ディレクトリににコピーします。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_30.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_30.png)
 
 コピーした証明書ファイルの正しいパスを含めて、この接続情報で `example` モジュールの `config.json`ファイルを更新します。
 
@@ -222,7 +222,7 @@ npm install
 
 `<THING SHADOW REST API ENDPOINT>`, `<THING NAME>` はモノのメニューの**操作**より確認できます。(下記画像参照)
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_36.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_36.png)
 
 
 ### 実行
@@ -237,7 +237,7 @@ DEBUG=info npm run start
 
 以下のようなログが表示されるかと思います。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_31.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_31.png)
 
 エージェントが正常に起動して AWS IoT に接続できていた場合、次のログメッセージが表示されているかと思います。
 
@@ -251,17 +251,17 @@ internal: aws-iot: Connected to AWS IoT
 
 デプロイの準備ができました。再度以下の画面に戻ってください。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_32.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_32.png)
 
 左のチェックマークにチェックして、[Deploy] を押すとデプロイが完了します。デプロイの履歴で Deploy Status にチェックマークがついていれば成功しています。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_33.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_33.png)
 
 また、デバイス側のログで更新されているのが確認できるかと思います。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_34.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_34.png)
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_35.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_35.png)
 
 `unauthenticated` と出ますが、ライセンスが未購入であるということです。購入をしなくてもフローは動作しますが、ライセンスを購入することでステータスやログの監視ができるようになります。
 

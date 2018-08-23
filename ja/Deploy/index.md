@@ -21,7 +21,7 @@ Node-RED のフローエディタで作成したデータフローである Flow
 - **デバイス**：アセットの実行環境となるデバイス本体
 - **デバイスマスター**：enebular からのデプロイのリクエストを受けてデバイスにデプロイを行ったり、デバイスの監視や enebular へのログ送信を行うデバイスのマスター
 
-![deploy diagram](/_asset/images/Introduction/enebular-developers-deploy.png)
+![deploy diagram](../_asset/images/Introduction/enebular-developers-deploy.png)
 
 AWS IoT や mbed Cloud などエッジデバイスにデプロイをするクラウドサービスの場合、エッジデバイスが**デバイス**となり、クラウドサービス自体は**デバイスマスター**となります。
 

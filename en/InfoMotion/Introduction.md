@@ -6,7 +6,7 @@ lastUpdated: 2017-12-25
 
 An `InfoMotion` visualizes data from a `DataSource`.
 
-![](/_asset/images/InfoMotion/enebular-developers-aboutinfotype.png)
+![](../_asset/images/InfoMotion/enebular-developers-aboutinfotype.png)
 
 In addition to the simple graphs available by default, it's also possible to either purchase or create more complex graphs. See [here](./InfoMotionTool.md) on how to create original graphs.
 
