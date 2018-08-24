@@ -130,7 +130,7 @@ Here we'll create an InfoMotion using a DataSource and an InfoType. Press the "+
 
 ![createInfoMotion](./../../img/GetStarted/DataVisualization-createInfoMotion.png)
 
-Give the InfoMotion a title. For the InfoMotion's default access permissions, just set it to `superdev` this time. Select whatever you like for the "category" at the bottom.
+Give the InfoMotion a title. For the InfoMotion's default access permissions, just set it to `developer` this time. Select whatever you like for the "category" at the bottom.
 
 ![InfoMotionModal](./../../img/GetStarted/DataVisualization-InfoMotionModal.png)
 

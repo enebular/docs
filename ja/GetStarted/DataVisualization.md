@@ -135,7 +135,7 @@ enebular のユーザーはアセットを公開すること、また公開さ�
 
 ![createInfoMotion](./../../img/GetStarted/DataVisualization-createInfoMotion.png)
 
-適当な名前を付けて、アクセス権限はデフォルトの `superdev` を選択します。
+適当な名前を付けて、アクセス権限はデフォルトの `developer` を選択します。
 下の欄のカテゴリーは任意のものを選択してください。
 
 ![InfoMotionModal](./../../img/GetStarted/DataVisualization-InfoMotionModal.png)
