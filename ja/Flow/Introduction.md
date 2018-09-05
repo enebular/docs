@@ -24,11 +24,19 @@ Flow を選択すると、Flow の詳細画面に移動します。
 
 ## Overview
 
-Overview では Flow 情報の編集、Flow の公開ができます。Flow 情報は、Flow を公開した際に他のユーザーが見てどういう Flow か理解しやすくする手助けになりますので、出来るだけすべての情報について記載することをおすすめします。
+Overview では フローの編集、デプロイ、公開を行うことができます。
 
-![](https://i.gyazo.com/7cb9b53259022696e7cc47e4fa81d89b.png)
+![Overview](../../img/Flow/Introduction-overview.png)
 
-Flow の公開については [Publish Flow](./PublishFlow.md) をご覧ください。
+画面の説明は下記のとおりです。
+
+| 項目名 | 説明 |
+| --- | --- |
+| preview | タブを選択すると、フローが作成済みの場合フローのイメージが表示されます。|
+| source | タブを選択すると、フローの実体を表すJSONが表示されます。|
+| Edit Flow | フローを編集することが出来ます。 |
+| Deploy Flow | フローを外部サービスにデプロイすることが出来ます。詳細は Deploy の項を参照してください。 |
+| Publish Flow | フローを公開することが出来ます。詳細は [Publish Flow](./PublishFlow.md) を参照してください。|
 
 ## Deploy
 
@@ -36,7 +44,7 @@ Deploy では Flow を特定のサービスへデプロイできます。
 
 ![](https://i.gyazo.com/176869beb11cdec73fe02c8c09c4288f.png)
 
-それぞれのサービスへの詳しいデプロイ方法は [Deploy](../Deploy/index.md) をご覧ください。
+それぞれのサービスへの詳しいデプロイ方法は [Deploy](../Deploy/index.md) を参照してください。
 
 ## Devices
 
