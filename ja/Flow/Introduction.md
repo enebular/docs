@@ -1,26 +1,24 @@
 ---
-lastUpdated: 2018-01-28
+lastUpdated: 2018-09-05
 ---
 
 # Flow
 
-Flow は、ハードウェアデバイス・API およびオンラインサービスを接続するためのツール <a href="https://nodered.jp/" target="_blank">Node-RED</a> ベースのフローエディタを利用して作成する、データフローのことです。
+フローは、ハードウェアデバイス・API およびオンラインサービスを接続するためのツール <a href="https://nodered.jp/" target="_blank">Node-RED</a> ベースのフローエディタを利用して作成するアセットの種類の一つです。
 
-![](https://i.gyazo.com/893f5d6ee3a233e4db918fcfde4323f0.png)
+![edittingFlow](../../img/Flow/Introduction-edittingFlow.png)
 
-なお、下の画像のように、Node-RED 上で Flow をデプロイすることができますが、こちらは Flow を保存することが目的で、**数分間でスリープする**点に注意して下さい。
+なお、下の画像のように、Node-RED 上でフローをデプロイすることができますが、こちらはフローを保存することが目的で、**数分間でスリープする**点に注意して下さい。
 
-![](https://i.gyazo.com/bfb9c0e25ad5e4a372a149336bdef8b8.png)
+![deployingFlow](../../img/Flow/Introduction-deployingFlow.png)
 
-データフローを長い時間稼働させたい場合は、[他のサービスへデプロイ](../Deploy/index.md)する必要があります。
+フローを長い時間稼働させたい場合は、[他のサービスへデプロイ](../Deploy/index.md)する必要があります。
 
-[作成した Flow](./CreateFlow.md) は enebular 上で確認できます。
+[作成したフロー](./CreateFlow.md) は enebular 上で確認できます。
 
-![](https://i.gyazo.com/df15e18b0f61680b23773a7d8ca4ae6c.png)
+![deployingFlow](../../img/Flow/Introduction-flowAssets.png)
 
-Flow を選択すると、Flow の詳細画面に移動します。
-
-![](https://i.gyazo.com/7cb9b53259022696e7cc47e4fa81d89b.png)
+Flow を選択すると、フローの詳細画面に移動します。
 
 ## Overview
 
@@ -40,29 +38,30 @@ Overview では フローの編集、デプロイ、公開を行うことがで�
 
 ## Deploy
 
-Deploy では Flow を特定のサービスへデプロイできます。
+Deploy ではフローを特定のサービスへデプロイできます。
 
-![](https://i.gyazo.com/176869beb11cdec73fe02c8c09c4288f.png)
+![Deploy](../../img/Flow/Introduction-deploy.png)
 
 それぞれのサービスへの詳しいデプロイ方法は [Deploy](../Deploy/index.md) を参照してください。
 
 ## Devices
 
-Devices では外部サービスへデプロイしたデバイスの状態を一覧で見ることができます。なお、こちらは実装予定の有償機能になります。
+Devices では外部サービスへデプロイしたデバイスの状態を一覧で見ることができます。
 
-![](https://i.gyazo.com/9f26dd5fa222389b4b90cb2eea5a1df7.png)
+![Devices](../../img/Flow/Introduction-devices.png)
 
+詳細は [Device List](../Device/DeviceList.md)を参照して下さい。
 
 ## Access
 
-Access では Flow のアクセス権を編集できます。
+Access ではフローのアクセス権を編集できます。
 
-![](https://i.gyazo.com/6b4babe394ae110c62ba181718849c0b.png)
+![Access](../../img/Flow/Introduction-access.png)
 
-詳しくは [Access Control](../Access/index.md) をご覧ください。
+詳細は [Access Control](../Access/index.md) をご覧ください。
 
 ## Settings
 
-Settings では Flow の名前や説明の編集、Flow の削除ができます。
+Settings ではフローの名前や説明の編集、フローの削除ができます。
 
-![](https://i.gyazo.com/9e8637beeeb0d53009f4eb71d046291a.png)
+![Settings](../../img/Flow/Introduction-settings.png)
