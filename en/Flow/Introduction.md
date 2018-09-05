@@ -4,7 +4,7 @@ lastUpdated: 2018-09-05
 
 # Flows
 
-Flows are kind of the assets of enebular where you use the flow editor based on the <a href="https://nodered.jp/" target="_blank">Node-RED</a> tool (which is designed to connect hardware, APIs and online services) to process data.
+A Flow is an asset of enebular where you use the flow editor based on the <a href="https://nodered.jp/" target="_blank">Node-RED</a> tool (which is designed to connect hardware, APIs and online services) to process data.
 
 ![edittingFlow](../../img/Flow/Introduction-edittingFlow.png)
 
