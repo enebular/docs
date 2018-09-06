@@ -50,7 +50,7 @@ lastUpdated: 2018-09-07
 
 # enebular agent Release Notes {#enebular-agent}
 
-## Latest Release - 2.1.1 (September 7th, 2018)
+## Latest Release - 2.2.0 (September 7th, 2018)
 
 ## New
 
@@ -101,7 +101,7 @@ N/A
 
 ## Release History
 
-- [2.1.1](./enebular-agent/2.1.1.md) (September 7th, 2018)
+- [2.2.0](./enebular-agent/2.2.0.md) (September 7th, 2018)
 - [2.1.0](./enebular-agent/2.1.0.md) (June 7th, 2018)
 - [2.0.0](./enebular-agent/2.0.0.md) (Jan 30th, 2018)
 
