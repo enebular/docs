@@ -58,7 +58,7 @@ lastUpdated: 2018-09-07
 
 ## Fixed
 
-N/A
+* AWS IoTで接続されたenebular-agentの接続状況に関わらず、enebular上で常に"Connected"になってしまう不具合に対応しました
 
 ## Changed
 

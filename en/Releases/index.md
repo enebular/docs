@@ -58,7 +58,7 @@ lastUpdated: 2018-09-07
 
 ## Fixed
 
-N/A
+* Fixed an issue that caused enebular to report the connection status of AWS-IoT-connected enebular agent as "Connected" regardless of the *actual* connection status of the agent.
 
 ## Changed
 
