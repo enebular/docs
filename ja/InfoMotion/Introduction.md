@@ -6,7 +6,7 @@ lastUpdated: 2017-12-13
 
 `InfoMotion` は `DataSource` のデータを表示します。
 
-![](/_asset/images/enebular-developers-aboutinfotype.png)
+![](../_asset/images/enebular-developers-aboutinfotype.png)
 
 デフォルトで用意されている単純なグラフに加えて、さらに複雑なグラフを購入、自作できます（[自作方法はこちら](./InfoMotionTool.md)）。
 

@@ -69,7 +69,7 @@ A basic key/value input setting.
 }
 ```
 
-![](/_asset/images/InfoMotion/enebular-developers-type-text.png)
+![](../_asset/images/InfoMotion/enebular-developers-type-text.png)
 
 ### list
 
@@ -97,7 +97,7 @@ A list of key/value input settings.
 }
 ```
 
-![](/_asset/images/InfoMotion/enebular-developers-type-list.png)
+![](../_asset/images/InfoMotion/enebular-developers-type-list.png)
 
 ### select
 
@@ -118,7 +118,7 @@ A select option setting.
 }
 ```
 
-![](/_asset/images/InfoMotion/enebular-developers-type-select.png)
+![](../_asset/images/InfoMotion/enebular-developers-type-select.png)
 
 ### bool
 
@@ -138,4 +138,4 @@ An on/off switch.
 }
 ```
 
-![](/_asset/images/InfoMotion/enebular-developers-type-switch.png)
+![](../_asset/images/InfoMotion/enebular-developers-type-switch.png)

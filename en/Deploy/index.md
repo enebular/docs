@@ -21,7 +21,7 @@ As mentioned in the [Introduction](../INDEX.md), when doing a deploy there are t
 - **Device**: The device that will be the execution environment of the asset.
 - **Device Master**: The managing role that accepts deploy requests from enebular and then deploys to the device, monitors the device and sends logs on to enebular.
 
-![deploy diagram](/_asset/images/Introduction/enebular-developers-deploy.png)
+![deploy diagram](../_asset/images/Introduction/enebular-developers-deploy.png)
 
 For cloud services that deploy to edge devices like AWS IoT and mbed Cloud, the edge device is the **device** and the cloud service is the **device master**.
 

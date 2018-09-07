@@ -106,7 +106,7 @@ Deploy ボタンを押下しフローを保存した後、画面右上の debug 
 `injectノード`と`debugノード`の間に新しく`changeノード`を配置します。`changeノード`はパレットの中で function に分類されています。
 ![set_change_node](./../../img/GetStarted/Introduction-set_change_node.gif)
 
-配置した`changeノード`をダブルクリックしノードのを設定を行います。赤線で囲んだ部分に`Hello World !`と入力しDoneボタンを押下します。
+配置した`changeノード`をダブルクリックしノードの設定を行います。赤線で囲んだ部分に`Hello World !`と入力しDoneボタンを押下します。
 ![change_node_setting](./../../img/GetStarted/Introduction-change_node_setting.png)
 
 Deployボタンを押下しフローを保存した後、injectノードのボタンを押下します。debugタブに`Hello World !`と出力されます。

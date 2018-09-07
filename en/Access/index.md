@@ -14,7 +14,7 @@ First, let's go over the user types. There are the following three types of user
 - Project Collaborator
 - Outside Collaborator
 
-![](/_asset/images/enebular-developers-aboutaccess.png)
+![](../_asset/images/enebular-developers-aboutaccess.png)
 
 The **Project Owner** is the project manager. They can edit project members and manage access to all of the assets in a project.
 
