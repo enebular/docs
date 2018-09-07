@@ -28,13 +28,13 @@ You can edit, deploy and publish the flows from the overview.
 
 Descriptions are as shown below:
 
-| No. | Item | description |
-| --- | --- | --- |
-| 1 | preview | The screen shots of the flows you created are displayed. |
-| 2 | source | The JSON string of the flows you created are displayed. |
-| 3 | Edit Flow | You can edit the flows. |
-| 4 | Deploy Flow | You can deploy the flows to other services. See Deploy section for more information. |
-| 5 | Publish Flow | You can publish the flows. See [Publish Flow](./PublishFlow.md) for more information. |
+| Item | description |
+| --- | --- |
+| preview | The screen shots of the flows you created are displayed. |
+| source | The JSON string of the flows you created are displayed. |
+| Edit Flow | You can edit the flows. |
+| Deploy Flow | You can deploy the flows to other services. See Deploy section for more information. |
+| Publish Flow | You can publish the flows. See [Publish Flow](./PublishFlow.md) for more information. |
 
 ## Deploy
 
