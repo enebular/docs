@@ -1,22 +1,25 @@
 ---
-lastUpdated: 2018-08-20
+lastUpdated: 2018-09-07
 ---
 
 # enebular Release Notes {#enebular}
 
-## 2.4.3 (August 20th, 2018)
+## 2.4.4 (September 7th, 2018)
 
 ### New
 
-なし
+* InfoType名をユーザーが変更できるよう改善しました
+* 「ユースケース・事例」のページ、および「enebularについて」のページの英語版を公開しました
 
 ### Fixed
 
-- AWS Lambdaへのデプロイ試行が失敗する不具合を修正しました。
+* 未完成の「Enterprise Planへの問合せ」機能がリリースされてしまっていたため、削除しました
+* 有償ライセンスの予約が一部出来ない不具合に対応しました
+* ダッシュボードおよびグラフの保存が出来なくなっていた不具合に対応しました
 
 ### Changed
 
-なし
+N/A
 
 ### Known Issues
 
@@ -27,6 +30,7 @@ lastUpdated: 2018-08-20
 
 ### Release History
 
+- [2.4.4](./enebular/2.4.4.md) (September 7th, 2018)
 - [2.4.3](./enebular/2.4.3.md) (August 20th, 2018)
 - [2.4.2](./enebular/2.4.2.md) (August 10th, 2018)
 - [2.4.1](./enebular/2.4.1.md) (August 3rd, 2018)
@@ -45,26 +49,19 @@ lastUpdated: 2018-08-20
 
 # enebular agent Release Notes {#enebular-agent}
 
-## Latest Release - 2.1.0 (June 7th, 2018)
+## Latest Release - 2.2.0 (September 7th, 2018)
 
 ## New
 
-* Mbed Cloudを利用してenebularに接続する機能を公開しました
-    * 従来は、AWS IoTを利用してeneublarに接続していましたが、AWS IoTを利用するか、Mbed Cloudを利用するかを選択していただけるようになりました
-    * Mbed Cloudを利用する場合の詳しい情報は、support@enebular.comにお問い合わせください
-* enebularにおいてReservedにしたライセンスに、enebular-agentを自動的に紐付けをするアクティベーション機能に対応しました
-* Node-REDのデータ用ディレクトリ（userDir）を環境変数NODE_RED_DATA_DIRで指定できるようにしました
-* Node-REDを起動するための実行コマンドを環境変数NODE_RED_COMMANDで指定できるようにしました
+* 新たにインストールスクリプトを追加しました
 
 ## Fixed
 
-* enebular-agent内のNode-REDのフローエディタに接続して、デプロイ済みのフローを編集できる問題を修正し、フローの編集ができないようにしました
+* AWS IoTで接続されたenebular-agentの接続状況に関わらず、enebular上で常に"Connected"になってしまう不具合に対応しました
 
 ## Changed
 
-* ロギング機能において、1回の通信で送信するログファイルの最大サイズを10kバイトに制限しました
-* ロギング機能において、起動後の３分間は30秒周期でログを送信するようにしました（通常は300秒周期で送信します）
-* 新機能および変更にあわせてREADMEファイルを更新しました
+N/A
 
 ## Known Issues
 
@@ -103,6 +100,7 @@ lastUpdated: 2018-08-20
 
 ## Release History
 
+- [2.2.0](./enebular-agent/2.2.0.md) (September 7th, 2018)
 - [2.1.0](./enebular-agent/2.1.0.md) (June 7th, 2018)
 - [2.0.0](./enebular-agent/2.0.0.md) (Jan 30th, 2018)
 

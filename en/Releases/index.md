@@ -1,32 +1,36 @@
 ---
-lastUpdated: 2018-08-20
+lastUpdated: 2018-09-07
 ---
 
 # enebular Release Notes {#enebular}
 
-## 2.4.3 (August 20th, 2018)
+## 2.4.4(September 7th, 2018)
 
 ### New
 
-None
+* An improvelemnt has been done and now an user can rename InfoTypes
+* We have published the English version of "Use Cases" and "About enebular" pages
 
 ### Fixed
 
-- Fixed the issue that was causing deployment attempts to AWS Lambda to fail.
+* An incomplete feature "Ask about Enterprise Plan" has accidentally been released, and it has now been deleted
+* Fixed an issue which partially prevented to reserve paid licenses
+* Fixed an issue which prevented Dashboards and Graphics from being saved
 
 ### Changed
 
-None
+N/A
 
 ### Known Issues
 
-- Opening the flow editor from a web browser shows Japanese texts even if the browser is configured to show English.
-- InfoMotion-embedded pages fail to show graphs when the browser which opens them is not logged into enebular.
-- The graph does not appear on the shared page with InfoMotion embedded.
-- On the shared page with InfoMotion embedded, the filter function can not be used.
+- Opening the flow editor from a web browser shows Japanese texts even if the browser is configured to show English
+- InfoMotion-embedded pages fail to show graphs when the browser which opens them is not logged into enebular
+- The graph does not appear on the shared page with InfoMotion embedded
+- On the shared page with InfoMotion embedded, the filter function can not be used
 
 ### Release History
 
+- [2.4.4](./enebular/2.4.4.md) (September 7th, 2018)
 - [2.4.3](./enebular/2.4.3.md) (August 20th, 2018)
 - [2.4.2](./enebular/2.4.2.md) (August 10th, 2018)
 - [2.4.1](./enebular/2.4.1.md) (August 3rd, 2018)
@@ -45,26 +49,19 @@ None
 
 # enebular agent Release Notes {#enebular-agent}
 
-## Latest Release - 2.1.0 (June 7th, 2018)
+## Latest Release - 2.2.0 (September 7th, 2018)
 
 ## New
 
-* Released support for connecting to enebular using Mbed Cloud
-    * Up until now AWS IoT was used to connect to enebular, but it is now possible to choose between using AWS IoT and Mbed Cloud
-    * If using Mbed Cloud, please get in touch with us at support@enebular.com for detailed information
-* Added support for 'activation' functionality where enebular-agent automatically links with a license set as 'Reserved' on enebular
-* Added the ability to specify Node-RED's data directory (userDir) with the NODE_RED_DATA_DIR environment variable
-* Added the ability to specify the execution command used to start Node-RED with the NODE_RED_COMMAND environment variable
+* Added a brand-new install script.
 
 ## Fixed
 
-* Handled the issue of being able to connect directly to the enebular-agent Node-RED flow editor and edit a deployed flow by disabling flow editing
+* Fixed an issue that caused enebular to report the connection status of AWS-IoT-connected enebular agent as "Connected" regardless of the *actual* connection status of the agent.
 
 ## Changed
 
-* In the logging function, the max log file size that can be sent each time is now restricted to 10KB
-* In the logging function, the log is now sent every 30 seconds for the first 3 minutes after startup (with the regular interval being 300 seconds)
-* Updated the readme files to reflect the new features and changes
+* Fixed an issue that caused enebular to report the connection status of AWS-IoT-connected enebular agent as "Connected" regardless of the *actual* connection status of the agent.
 
 ## Known Issues
 
@@ -104,6 +101,7 @@ The recommended operating environments are as follows.
 
 ## Release History
 
+- [2.2.0](./enebular-agent/2.2.0.md) (September 7th, 2018)
 - [2.1.0](./enebular-agent/2.1.0.md) (June 7th, 2018)
 - [2.0.0](./enebular-agent/2.0.0.md) (Jan 30th, 2018)
 
