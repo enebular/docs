@@ -12,7 +12,7 @@ The following InfoTypes are free sample charts/graphs for you to test your data 
   <li><a href="/_asset/sample/linechart.zip" target="_blank">Sample Line Chart  Download (zip)</a></li> 
 </ul> 
 
-![](/_asset/images/InfoMotion/enebular-developers-template-linechart.png)
+![](../_asset/images/InfoMotion/enebular-developers-template-linechart.png)
 
 Discription: 
 	A generic line chart with x-axis data points as time and y-axis as given numerical value. 
@@ -38,7 +38,7 @@ Editable properties:
   </li> 
 </ul> 
 
-![](/_asset/images/InfoMotion/enebular-developers-template-barchart.png)
+![](../_asset/images/InfoMotion/enebular-developers-template-barchart.png)
 
 
 Discription: 
@@ -64,7 +64,7 @@ Editable properties:
     <a href="/_asset/sample/piechart.zip" target="_blank">Sample Pie Chart Download (zip)</a></li> 
 </ul> 
 
-![](/_asset/images/InfoMotion/enebular-developers-template-piechart.png)
+![](../_asset/images/InfoMotion/enebular-developers-template-piechart.png)
 
 
 Discription: 

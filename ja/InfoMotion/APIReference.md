@@ -67,7 +67,7 @@ InfoType のスキーマ
 }
 ```
 
-![](/_asset/images/InfoMotion/enebular-developers-type-text.png)
+![](../_asset/images/InfoMotion/enebular-developers-type-text.png)
 
 ### list
 
@@ -95,7 +95,7 @@ InfoType のスキーマ
 }
 ```
 
-![](/_asset/images/InfoMotion/enebular-developers-type-list.png)
+![](../_asset/images/InfoMotion/enebular-developers-type-list.png)
 
 ### select
 
@@ -116,7 +116,7 @@ InfoType のスキーマ
 }
 ```
 
-![](/_asset/images/InfoMotion/enebular-developers-type-select.png)
+![](../_asset/images/InfoMotion/enebular-developers-type-select.png)
 
 ### bool
 
@@ -136,4 +136,4 @@ true / false を選択させるときに利用します。
 }
 ```
 
-![](/_asset/images/InfoMotion/enebular-developers-type-switch.png)
+![](../_asset/images/InfoMotion/enebular-developers-type-switch.png)

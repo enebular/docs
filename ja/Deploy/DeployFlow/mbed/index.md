@@ -6,7 +6,7 @@ lastUpdated: 2018-01-30
 
 フローのデプロイ先はそのままデプロイボタンを押すと、enebular が利用しているサーバーにデプロイされます。Mbed Cloud Deploy は enebular で Mbed Cloud を経由し、登録されているデバイスへフローをデプロイする機能です。
 
-対応デバイスについては  [Supported Environments](/Other/Support.md) をご覧ください。
+対応デバイスについては  [Supported Environments](../../../Other/Support.md) をご覧ください。
 
 このページでは、Mbed Cloudを経由してデバイスにフローをデプロイする手順を説明します。
 
@@ -14,11 +14,11 @@ lastUpdated: 2018-01-30
 
 まずデバイスへデプロイするフローを作成します。（Project は作成済みとします）
 
-![image](/_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_01.png)
+![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_01.png)
 
 フローを作成し [Edit Flow] を押すと、Node-RED の編集画面が立ち上がります。
 
-![image](/_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_02.png)
+![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_02.png)
 
 この編集画面でデータフローを編集してFlowを作成します。
 
@@ -30,11 +30,11 @@ Raspberry Pi の Node-RED を起動し、スタンバイの状態にします。
 
 Raspberry Pi へデプロイするフローを編集します。以下のようなフローを作成します。
 
-![image](/_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_03.png)
+![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_03.png)
 
 右上の赤色の [Deploy] を押して保存します。
 
-![image](/_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_04.png)
+![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_04.png)
 
 
 ### enebular edge agent へのデプロイの場合
@@ -50,40 +50,40 @@ enebular edge agent へのデプロイは下記フローを使います。まず
 
 右上のメニューボタンより [Import] → [Clipboard] を選択します。
 
-![image](/_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_14.png)
+![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_14.png)
 
 先ほどのフローをペーストし、[Import] を押します。
 
-![image](/_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_15.png)
+![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_15.png)
 
 以下のようなフローが反映されます。
 
-![image](/_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_16.png)
+![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_16.png)
 
 右上の赤色の [Deploy]を 押して保存します。
 
-![image](/_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_04.png)
+![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_04.png)
 
 
 ## デプロイ
 
 [Deploy] の右にある下矢印から [Export to Other Services] を選択します。
 
-![image](/_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_05.png)
+![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_05.png)
 
 新しくウインドウが開いて以下のようなフォームが表示されます。
 
 [Select Connection Type] から [MBED] を選択してください。
 
-![image](/_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_06.png)
+![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_06.png)
 
 Select Connectionのフィールドの右側にある [New] を押します。
 
-![image](/_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_07.png)
+![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_07.png)
 
 Create Connection を画面が開きます。
 
-![image](/_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_08.png)
+![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_08.png)
 
 * Connection Name
     * 分かりやすい名前を任意で
@@ -94,19 +94,19 @@ Create Connection を画面が開きます。
 
 Mbed Cloud Portal の Access management の APIキーページの [新しいAPIキーの作成] を選択します。
 
-![image](/_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_09.png)
+![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_09.png)
 
 制約に従って API Key 名を入力、またグループを選択してください。ここでの設定項目は後で変更が可能です。
 
-![image](/_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_10.png)
+![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_10.png)
 
 [APIキーの作成] を選択し、ログイン時のパスワード入力します。そして、 [Enter] を選択してください。
 
-![image](/_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_11.png)
+![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_11.png)
 
 API Key が表示されます。一度しか確認できないので注意してください。
 
-![image](/_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_12.png)
+![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_12.png)
 
 
 Create Connection の画面に MBED API Key の入力ができたら、[Save]で保存します。
@@ -117,7 +117,7 @@ Create Connection の画面に MBED API Key の入力ができたら、[Save]で
 
 あらかじめ、電源を入れていたデバイスの Status が connected になっているので選択し、[Deploy] からデプロイをします。
 
-![image](/_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_13.png)
+![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_13.png)
 
 ## 確認
 
@@ -125,7 +125,7 @@ Create Connection の画面に MBED API Key の入力ができたら、[Save]で
 
 ログでフローが更新されているのが確認してください。
 
-![image](/_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_17.png)
+![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_17.png)
 
 
 ### enebular edge agent へのデプロイの場合

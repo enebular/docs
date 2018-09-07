@@ -16,7 +16,7 @@ lastUpdated: 2018-01-15
 
 モーダルが立ち上がるのでまず Asset Type に flow を指定します。
 
-![image](/_asset/images/Flow/CreateFlow/flow-create-flow_07.png)
+![image](../_asset/images/Flow/CreateFlow/flow-create-flow_07.png)
 
 flow を指定すると、アイコンやタイトルの指定、および、アクセス権限の設定ができます。
 
@@ -31,11 +31,11 @@ flow を指定すると、アイコンやタイトルの指定、および、ア
 * カテゴリー
     * 今回の用途に合ったカテゴリを指定
 
-![image](/_asset/images/Flow/CreateFlow/flow-create-flow_10.png)
+![image](../_asset/images/Flow/CreateFlow/flow-create-flow_10.png)
 
 設定ができたらContinueボタンをクリックします。
 
-![image](/_asset/images/Flow/CreateFlow/flow-create-flow_11.png)
+![image](../_asset/images/Flow/CreateFlow/flow-create-flow_11.png)
 
 フローが作成されました。
 
