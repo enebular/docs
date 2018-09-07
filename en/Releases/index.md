@@ -4,18 +4,19 @@ lastUpdated: 2018-09-07
 
 # enebular Release Notes {#enebular}
 
-## 2.4.4(September 7th, 2018)
+## 2.4.4 (September 7th, 2018)
 
 ### New
 
-* An improvelemnt has been done and now an user can rename InfoTypes
+* An improvement has been done and now an user can rename InfoTypes
 * We have published the English version of "Use Cases" and "About enebular" pages
 
 ### Fixed
 
 * An incomplete feature "Ask about Enterprise Plan" has accidentally been released, and it has now been deleted
-* Fixed an issue which partially prevented to reserve paid licenses
+* Fixed an issue where licenses cannot be reserved
 * Fixed an issue which prevented Dashboards and Graphics from being saved
+* Fixed an issue which caused InfoMotion-embedded pages to fail to show graphs when the browser which opens them is not logged into enebular
 
 ### Changed
 
@@ -24,7 +25,6 @@ N/A
 ### Known Issues
 
 - Opening the flow editor from a web browser shows Japanese texts even if the browser is configured to show English
-- InfoMotion-embedded pages fail to show graphs when the browser which opens them is not logged into enebular
 - The graph does not appear on the shared page with InfoMotion embedded
 - On the shared page with InfoMotion embedded, the filter function can not be used
 
@@ -49,21 +49,34 @@ N/A
 
 # enebular agent Release Notes {#enebular-agent}
 
-## Latest Release - 2.2.0 (September 7th, 2018)
+## 2.2.0
 
-## New
+### New
 
-* Added a brand-new install script.
+- Added a one-step install script for quick and easy setup of enebular-agent
+- Added a tool to support simple AWS IoT Thing creation and setup
+- Added ability to do simple startup registration to have enebular-agent start at boot-time on Debian (systemd) based systems
+- Added ability to list all supported configuration options
+- Added support for command line options in order to allow use of the new configuration options and subcommands
 
-## Fixed
+### Fixed
 
-* Fixed an issue that caused enebular to report the connection status of AWS-IoT-connected enebular agent as "Connected" regardless of the *actual* connection status of the agent.
+- Fixed an issue that caused enebular to report the connection status of AWS-IoT-connected enebular agent as "Connected" regardless of the *actual* connection status of the agent.
+- Minor fix to enebular logging upload size handling
+- mbed-cloud-connector
+    - Add missing files that prevented it from being built
+    - Removed invalid characters from readme
 
-## Changed
+### Changed
 
-* Fixed an issue that caused enebular to report the connection status of AWS-IoT-connected enebular agent as "Connected" regardless of the *actual* connection status of the agent.
+- Updated the Node-RED version to 0.18.x
+- Updates to allow better connection status tracking on AWS IoT
+- Improved daemon usage support (syslog logging and process termination support)
+- Improved process management (startup and shutdown) of the Node-RED instance
+- Added quick setup explanation and further manual setup details to the readme files
+- Added integration tests
 
-## Known Issues
+### Known Issues
 
  N/A
 
