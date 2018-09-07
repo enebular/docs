@@ -14,7 +14,7 @@ enebular で扱うものには大まかに以下の3つがあります。
 - **デバイス**: アセットをデプロイするデバイスのことです。デバイスにはエッジ（マイコンなど）とクラウド（サーバレス環境やVMなど）の両方が含まれます。
 - **その他設定**: 運用や開発に必要な設定（可視化を行うデータのデータソースやアクセス権限）などを指します。
 
-![enebular overview](/_asset/images/Introduction/enebular-developers-project-overview.png)
+![enebular overview](./_asset/images/Introduction/enebular-developers-project-overview.png)
 
 enebular の主な利用方法は、**enebular.com でアセットを開発して、開発が終わったものをそれぞれデバイスへデプロイして運用する**、というふうになるかと思います。
 
@@ -50,7 +50,7 @@ enebular の主な利用方法は、**enebular.com でアセットを開発し�
 
 具体的なサービスを例に挙げてみましょう。
 
-![deploy diagram](/_asset/images/Introduction/enebular-developers-deploy.png)
+![deploy diagram](./_asset/images/Introduction/enebular-developers-deploy.png)
 
 AWS IoT や mbed Cloud などエッジデバイスにデプロイをするクラウドサービスの場合、エッジデバイスが**デバイス**となり、クラウドサービス自体は**デバイスマスター**となります。
 

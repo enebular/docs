@@ -14,7 +14,7 @@ enebular の Project や Asset のアクセス権についてのドキュメン�
 - Project Collaborator
 - Outside Collaborator
 
-![](/_asset/images/enebular-developers-aboutaccess.png)
+![](../_asset/images/enebular-developers-aboutaccess.png)
 
 **Project Owner** は、Project の管理者です。Project のメンバーの編集、その Project に属するすべての Asset のアクセス管理ができます。
 

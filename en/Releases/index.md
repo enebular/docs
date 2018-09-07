@@ -150,6 +150,6 @@ The following hardware is supported in enebular-edge-agent 1.0.1.
 
 * [1.0.1](./enebular-edge-agent/1.0.1.md) (June 7th, 2018)
 * [1.0.0](./enebular-edge-agent/1.0.0.md) (May 18th, 2018)
-* [0.10.0](./enebular-edge-agent/10.0.0.md) (Apr 27th, 2018)
+* [0.10.0](./enebular-edge-agent/0.10.0.md) (Apr 27th, 2018)
 * [0.9.1](./enebular-edge-agent/0.9.1.md) (Feb 28th, 2018)
 * [0.9.0](./enebular-edge-agent/0.9.0.md) (Jan 30th, 2018)

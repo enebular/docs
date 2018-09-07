@@ -46,12 +46,12 @@ edit in the flow is datasource credentials. before we deploy the flow lets regis
 Below are the current real time databases used in InfoMotion.
 See documentation for simple registration and and set up configurations.
 
-- [Milkcocoa-v2 DataSource](./../InfoMotion/DatasourceMilkcocoa-v2.md)
-- [Firebase DataSource](./../InfoMotion//DatasourceFirebase.md)
-- [Pubnub DataSource](./../InfoMotion/DatasourcePubnub.md)
+- [Milkcocoa-v2 DataSource](./../InfoMotion/DataSource/Milkcocoa/CreateDataSource.md)
+- [Firebase DataSource](./../InfoMotion/DataSource/Firebase/CreateDataSource.md)
+- [Pubnub DataSource](./../InfoMotion/DataSource/Pubnub/CreateDataSource.md)
 
 This tutorial uses Firebase.
-Before proceed to the next step, you have to register and create dataStore. Please refer to [Firebase](./DatasourceFirebase.md).
+Before proceed to the next step, you have to register and create dataStore. Please refer to [Firebase](./../InfoMotion/DataSource/Firebase/Setup.md).
 
 \*The following configurations are for testing usage only and not recommended for production.
 
@@ -130,7 +130,7 @@ Here we'll create an InfoMotion using a DataSource and an InfoType. Press the "+
 
 ![createInfoMotion](./../../img/GetStarted/DataVisualization-createInfoMotion.png)
 
-Give the InfoMotion a title. For the InfoMotion's default access permissions, just set it to `superdev` this time. Select whatever you like for the "category" at the bottom.
+Give the InfoMotion a title. For the InfoMotion's default access permissions, just set it to `developer` this time. Select whatever you like for the "category" at the bottom.
 
 ![InfoMotionModal](./../../img/GetStarted/DataVisualization-InfoMotionModal.png)
 
