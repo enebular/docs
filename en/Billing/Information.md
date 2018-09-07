@@ -14,7 +14,7 @@ From the Billing Information page you can view current and past billing informat
 
 The top section displays the current month's billing. 
 
-![image](/_asset/images/Billing/current_month.png)
+![image](../_asset/images/Billing/current_month.png)
 
 License Type are as follows.
 * Device Monitoring
@@ -22,10 +22,10 @@ License Type are as follows.
   * RESERVED LICENSES
   * SUBSCRIPTION ・・・ refers to the registered license
 
-* Refer to [License Manager](/Device/LicenseManager.md) for more details.
+* Refer to [License Manager](../Device/LicenseManager.md) for more details.
 
 ## Previous Months
 
 The bottom section of Billing Information displays previous month's billing. Selecting a month will display that months billing.
 
-![image](/_asset/images/Billing/previous_months.png)
+![image](../_asset/images/Billing/previous_months.png)

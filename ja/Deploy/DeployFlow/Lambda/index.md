@@ -24,7 +24,7 @@ lastUpdated: 2018-03-28
 
 データフローを作成します。動作確認のため、Lambda Request をそのまま Lambda Response に返すだけのフローを作成しましょう。
 
-![image](/_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-lambda_03.png)
+![image](../../../_asset/images/Deploy/DeployFlow/Lambda/deploy-deployflow-lambda_03.png)
 
 左のパレットでは Lambda Request は input グループに、Lambda Response は output グループにあるので、そちらを探して配置します。
 

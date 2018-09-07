@@ -199,7 +199,7 @@ Styling for the InfoMotion.
 
 This file contains the main logic for the InfoMotion.
 D3.js (version 3.0.0) is globally installed by default.
-See [API Reference](/en/InfoMotion/APIReference.html) for more details.
+See [API Reference](./APIReference.md) for more details.
 
 #### plugin.json
 
