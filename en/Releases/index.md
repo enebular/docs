@@ -9,18 +9,17 @@ lastUpdated: 2018-09-07
 ### New
 
 * An improvelemnt has been done and now an user can rename InfoTypes
-* The Japanese text "ユースケース・事例" was visible in the English version of About page, and has now been removed
+* We have published the English version of "Use Cases" and "About enebular" pages
 
 ### Fixed
 
 * An incomplete feature "Ask about Enterprise Plan" has accidentally been released, and it has now been deleted
 * Fixed an issue which partially prevented to reserve paid licenses
 * Fixed an issue which prevented Dashboards and Graphics from being saved
-* A typographical error have been found in About Enebular page and is now fixed
 
 ### Changed
 
-* Some descriptions in Contact Us have been modified
+N/A
 
 ### Known Issues
 
