@@ -24,19 +24,11 @@ Selecting a flow will take you to the flow details screen.
 
 ## Overview
 
-You can edit, deploy and publish the flows from the overview. 
+You can edit the flow information and publish flows from the overview. The flow information is useful as an aid for users to understand what kind of flow it is once it has been published, so we recommend providing as much information as possible.
 
-![Overview](../../img/Flow/Introduction-overview.png)
+![](https://i.gyazo.com/7cb9b53259022696e7cc47e4fa81d89b.png)
 
-Descriptions are as shown below:
-
-| Item | description |
-| --- | --- |
-| preview | The screen shots of the flows you created are displayed. |
-| source | The JSON string of the flows you created are displayed. |
-| Edit Flow | You can edit the flows. |
-| Deploy Flow | You can deploy the flows to other services. See Deploy section for more information. |
-| Publish Flow | You can publish the flows. See [Publish Flow](./PublishFlow.md) for more information. |
+Please see [Publish Flow](./PublishFlow.md) for details on publishing flows.
 
 ## Deploy
 
