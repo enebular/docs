@@ -12,7 +12,7 @@ Sample InfoTypes は、データをテストするための無料で利用でき
   <li><a href="/_asset/sample/linechart.zip" target="_blank">Sample Line Chart Download (zip)</a></li> 
 </ul> 
 
-![](/_asset/images/InfoMotion/enebular-developers-template-linechart.png)
+![](../_asset/images/InfoMotion/enebular-developers-template-linechart.png)
 
 #### 概要
 
@@ -42,7 +42,7 @@ Sample InfoTypes は、データをテストするための無料で利用でき
   </li> 
 </ul> 
 
-![](/_asset/images/InfoMotion/enebular-developers-template-barchart.png)
+![](../_asset/images/InfoMotion/enebular-developers-template-barchart.png)
 
 #### 概要
 
@@ -70,7 +70,7 @@ Sample InfoTypes は、データをテストするための無料で利用でき
     <a href="/_asset/sample/piechart.zip" target="_blank">Sample Pie Chart Download (zip)</a></li> 
 </ul> 
 
-![](/_asset/images/InfoMotion/enebular-developers-template-piechart.png)
+![](../_asset/images/InfoMotion/enebular-developers-template-piechart.png)
 
 
 #### 概要
