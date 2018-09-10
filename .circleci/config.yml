@@ -6,7 +6,7 @@ jobs:
   build:
     docker:
       # specify the version
-      - image: circleci/node:10-browsers
+      - image: circleci/golang:1.8
       
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -22,9 +22,8 @@ jobs:
       - checkout
 
       # specify any bash command here prefixed with `run: `
-<<<<<<< HEAD
       - run: go get -v -t -d ./...
       - run: go test -v ./...
-=======
       - run: node -v
->>>>>>> parent of 94eec76... circleciテスト
+      - run: go get -v -t -d ./...
+      - run: go test -v ./...
