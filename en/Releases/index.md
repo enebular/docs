@@ -4,7 +4,7 @@ lastUpdated: 2018-09-07
 
 # enebular Release Notes {#enebular}
 
-## 2.4.4 (September 7th, 2018)
+## Latest Release - 2.4.4 (September 7th, 2018)
 
 ### New
 
@@ -49,7 +49,8 @@ N/A
 
 # enebular agent Release Notes {#enebular-agent}
 
-## 2.2.0
+# Latest Release - 2.2.0
+
 
 ### New
 

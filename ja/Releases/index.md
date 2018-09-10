@@ -4,7 +4,7 @@ lastUpdated: 2018-09-07
 
 # enebular Release Notes {#enebular}
 
-## 2.4.4 (September 7th, 2018)
+## Latest Release - 2.4.4 (September 7th, 2018)
 
 ### New
 
@@ -49,11 +49,9 @@ N/A
 
 # enebular agent Release Notes {#enebular-agent}
 
-## Latest Release - 2.2.0 (September 7th, 2018)
+## Latest Release - 2.2.0
 
-# 2.2.0
-
-## New
+### New
 
 - 素早く簡単にenebular-agentをセットアップするためのワンステップのインストールスクリプトを用意しました
 - AWS IoTのThingを簡単に作成とセットアップできるためのツールを用意しました
@@ -61,7 +59,7 @@ N/A
 - 設定オプションの一覧を表示する機能を追加しました
 - 新規の設定オプションとサブコマンドを利用できるようにコマンドラインによるオプションの指定に対応しました
 
-## Fixed
+### Fixed
 
 - AWS IoTで接続されたenebular-agentの接続状況に関わらず、enebular上で常に"Connected"になってしまう不具合に対応しました
 - enebularロギングのアップロードサイズ処理でマイナーな修正をしました
@@ -69,7 +67,7 @@ N/A
     - ファイルが不足していてビルドができない不具合を修正しました
     - readmeファイルで文字化けを修正しました
 
-## Changed
+### Changed
 
 - Node-REDバージョンを0.18.xにアップデートしました
 - AWS IoTとの接続状態を正しく監視できるようにしました
@@ -78,7 +76,7 @@ N/A
 - readmeファイルにクイックセットアップの説明と手動設定の詳細を追加しました
 - 統合のテストを追加しました
 
-## Known Issues
+### Known Issues
 
  N/A
 
