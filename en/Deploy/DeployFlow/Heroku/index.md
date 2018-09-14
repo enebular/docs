@@ -12,7 +12,7 @@ This page covers Heroku deploys. A Heroku deploy is the ability to deploy a flow
 
 First, create a new flow from "Assets".
 
-![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_02.png)
+![image](../../../_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_02.png)
 
 Create the flow you want to send to Heroku, and then deploy it to save it.
 
@@ -38,23 +38,23 @@ After selecting "Heroku", we create a Heroku app from the "Deploy to Heroku" tha
 
 Use the Heroku button to create the app. This step can be skipped for those who have already created one.
 
-![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_07.png)
+![image](../../../_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_07.png)
 
 After pressing the Heroku button, log in with the Heroku login screen that appears if you weren't already logged in.
 
-![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_08.png)
+![image](../../../_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_08.png)
 
 The Heroku app settings will be displayed.
 
-![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_09.png)
+![image](../../../_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_09.png)
 
 Set an easy to understand name for the App name.
 
-![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_10.png)
+![image](../../../_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_10.png)
 
 Set the USERNAME and PASSWORD to be used for login after the enebular Node-RED has been created.
 
-![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_11.png)
+![image](../../../_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_11.png)
 
 After confirming the settings press the "Deploy" button. If you haven't added your credit card information to heroku before, the following modal will show up. Please don't worry, you can use this enebular app for free so enter your information.
 
@@ -62,15 +62,15 @@ After confirming the settings press the "Deploy" button. If you haven't added yo
 
 After registering the credit card, heroku will start setting up the app.
 
-![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_12.png)
+![image](../../../_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_12.png)
 
 The app is being created...
 
-![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_13.png)
+![image](../../../_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_13.png)
 
 Once it has been created press the "View" button to check it.
 
-![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_14.png)
+![image](../../../_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_14.png)
 
 You'll be asked to provide the USERNAME and PASSWORD to log into the enebular Node-RED, so enter those that you set above.
 
@@ -86,15 +86,15 @@ Press "New".
 
 Assign an easy to understand name to the "Connection Name". The "Heroku API Token" can be seen on the Heroku settings screen.
 
-![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_17.png)
+![image](../../../_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_17.png)
 
 Press "Account Settings".
 
-![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_18.png)
+![image](../../../_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_18.png)
 
 Go to "Account" on the "Manage Account" page.
 
-![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_19.png)
+![image](../../../_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_19.png)
 
 Go to the API Key section and display the API Key with "Reveal".
 
@@ -118,4 +118,4 @@ After wating for some time "Deploy Added" will be displayed once the deploy has 
 
 If you check the Heroku app you will be able to see that the flow has been deployed.
 
-![](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_02.png)
+![](../../../_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_02.png)

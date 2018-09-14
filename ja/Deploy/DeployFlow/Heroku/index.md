@@ -12,7 +12,7 @@ lastUpdated: 2017-04-12
 
 まず、Assets から新しいフローを作成します。
 
-![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_02.png)
+![image](../../../_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_02.png)
 
 Heroku に送りたいフローを作成して、デプロイして保存します。
 
@@ -38,23 +38,23 @@ Heroku を選択すると右のカラムに出てくる [Deploy to Heroku] か�
 
 Heroku ボタンでアプリを作成します。すでに作成されている方は読み飛ばして下さい。
 
-![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_07.png)
+![image](../../../_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_07.png)
 
 Heroku ボタンを押すとログインしていない場合、Heroku のログイン画面が出てくるのでログインします。
 
-![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_08.png)
+![image](../../../_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_08.png)
 
 Heroku のアプリ設定が表示されます。
 
-![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_09.png)
+![image](../../../_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_09.png)
 
 App name をわかりやすい名前で設定します。
 
-![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_10.png)
+![image](../../../_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_10.png)
 
 作成後 のenebular Node-RED のログインするための USERNAME/PASSWORD を設定します。
 
-![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_11.png)
+![image](../../../_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_11.png)
 
 設定を確認したら Deploy ボタンを押します（Heroku にクレジットカードを登録していない方は、以下のようなクレジットカード番号入力画面が出ますが、本アプリは無料で利用できますので入力して継続ください）。
 
@@ -62,15 +62,15 @@ App name をわかりやすい名前で設定します。
 
 クレジットカードを入力すると、アプリの作成が始まります。
 
-![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_12.png)
+![image](../../../_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_12.png)
 
 アプリが作成されていきます・・・
 
-![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_13.png)
+![image](../../../_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_13.png)
 
 作成完了されたら View ボタンを押して確認します。
 
-![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_14.png)
+![image](../../../_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_14.png)
 
 enebular Node-RED のログインするための USERNAME/PASSWORD が聞かれるので、さきほど設定したものを入力してログインします。
 
@@ -86,15 +86,15 @@ Heroku アプリが作成できたらデプロイ設定をします。さきほ�
 
 Connection Name はわかりやすい名前をつけます。Heroku API Token は Heroku の設定画面で確認します。
 
-![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_17.png)
+![image](../../../_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_17.png)
 
 [Account Settings] を押します。
 
-![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_18.png)
+![image](../../../_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_18.png)
 
 Manage Account ページで Account ページに行きます。
 
-![image](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_19.png)
+![image](../../../_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_19.png)
 
 API Key 欄に移動し [Reveal] で API Key を表示します。
 
@@ -118,4 +118,4 @@ Heroku API Token に API Key をコピーして、[Save] を押します。
 
 Heroku アプリで確認すると無事フローがデプロイされています。
 
-![](/_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_02.png)
+![](../../../_asset/images/Deploy/DeployFlow/Heroku/deploy-deployflow-heroku_02.png)

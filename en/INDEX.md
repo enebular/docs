@@ -14,7 +14,7 @@ In general terms there are three things handled in enebular.
 - **Devices**: These are devices to which assets can be deployed. This incorporates instances on both the edge side (microcontrollers and so on) and the cloud side (like serverless environments and VMs).
 - **Other Configuration**: This refers to any configuration needed for development and operation like the data sources of the data to be visualized and access permissions.
 
-![enebular overview](/_asset/images/Introduction/enebular-developers-project-overview.png)
+![enebular overview](./_asset/images/Introduction/enebular-developers-project-overview.png)
 
 The primary way of using enebular is likely to be along the lines of **developing the assets on enebular.com and then once each asset is complete deploying and operating it on devices.**
 
@@ -50,7 +50,7 @@ While these services are utilized to deploy assets to devices, when doing a depl
 
 Let's look at an example of an actual service.
 
-![deploy diagram](/_asset/images/Introduction/enebular-developers-deploy.png)
+![deploy diagram](./_asset/images/Introduction/enebular-developers-deploy.png)
 
 For cloud services that deploy to edge devices like AWS IoT and mbed Cloud, the edge device is the **device** and the cloud service is the **device master**.
 

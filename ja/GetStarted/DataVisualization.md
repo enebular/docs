@@ -43,12 +43,12 @@ enebular のユーザーはアセットを公開すること、また公開さ�
 
 InfoMotion は現在下記に挙げるリアルタイムデータベースに対応しています。詳しくは各ページを参照してください。
 
-- [Milkcocoa-v2 DataSource](./../InfoMotion/DatasourceMilkcocoa-v2.md)
-- [Firebase DataSource](./../InfoMotion//DatasourceFirebase.md)
-- [Pubnub DataSource](./../InfoMotion/DatasourcePubnub.md)
+- [Milkcocoa-v2 DataSource](./../InfoMotion/DataSource/Milkcocoa/CreateDataSource.md)
+- [Firebase DataSource](./../InfoMotion/DataSource/Firebase/CreateDataSource.md)
+- [Pubnub DataSource](./../InfoMotion/DataSource/Pubnub/CreateDataSource.md)
 
 この GetStarted では Firebase を用いて説明を進めます。
-次の項に進む前に、[Firebase](./DatasourceFirebase.md)のページを参考にして、利用登録を済ませ、データストアを作成してください。
+次の項に進む前に、[Firebase](./../InfoMotion/DataSource/Firebase/Setup.md)のページを参考にして、利用登録を済ませ、データストアを作成してください。
 
 ※ GetStarted の設定はテストに向けたものなので、実際に使用する際には推奨しません。
 

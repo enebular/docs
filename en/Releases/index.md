@@ -1,26 +1,18 @@
 ---
-lastUpdated: 2018-08-10
+lastUpdated: 2018-08-20
 ---
 
 # enebular Release Notes {#enebular}
 
-## 2.4.2 (August 10th, 2018)
+## 2.4.3 (August 20th, 2018)
 
 ### New
 
-- Modal for sharing InfoMotion now has a 'copy to clipboard' button.
+None
 
 ### Fixed
 
-- Clicking on filter for an individual graph causes an error and sets the screen white.
-- Clicking on 'Save' at InfoMotion forces a page refresh.
-- Share modal disappearing when being clicked on.
-- The 'Purchase' button at the License Manager did not work. 
-- Fixed a bug that the already deployed AWS IoT device will always be in Connected state even if it is not in operation.
-- Link of about enebular was incorrect. 
-- Clicking on the twitter share button did not set correct pictures or description.
-- Language button at the top of the page was displayed vertically.
-- The corporate platform logo at the top page was misaligned.
+- Fixed the issue that was causing deployment attempts to AWS Lambda to fail.
 
 ### Changed
 
@@ -35,6 +27,7 @@ None
 
 ### Release History
 
+- [2.4.3](./enebular/2.4.3.md) (August 20th, 2018)
 - [2.4.2](./enebular/2.4.2.md) (August 10th, 2018)
 - [2.4.1](./enebular/2.4.1.md) (August 3rd, 2018)
 - [2.4.0](./enebular/2.4.0.md) (July 19th, 2018)
@@ -157,6 +150,6 @@ The following hardware is supported in enebular-edge-agent 1.0.1.
 
 * [1.0.1](./enebular-edge-agent/1.0.1.md) (June 7th, 2018)
 * [1.0.0](./enebular-edge-agent/1.0.0.md) (May 18th, 2018)
-* [0.10.0](./enebular-edge-agent/10.0.0.md) (Apr 27th, 2018)
+* [0.10.0](./enebular-edge-agent/0.10.0.md) (Apr 27th, 2018)
 * [0.9.1](./enebular-edge-agent/0.9.1.md) (Feb 28th, 2018)
 * [0.9.0](./enebular-edge-agent/0.9.0.md) (Jan 30th, 2018)

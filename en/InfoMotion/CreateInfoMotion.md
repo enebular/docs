@@ -13,7 +13,7 @@ A Dashboard requires
 - `default previllege`：See [Access](../Access/index.md) for more details.
 - `category`
 
-![](/_asset/images/InfoMotion/enebular-developers-create-dashboard.png)
+![](../_asset/images/InfoMotion/enebular-developers-create-dashboard.png)
 
 Click 「add graph」to display the side bar where InfoMotions
 are created.
@@ -23,39 +23,39 @@ are created.
 - `datasource`
 - Graph settings
 
-![](/_asset/images/InfoMotion/enebular-developers-create-infomotion.png)
+![](../_asset/images/InfoMotion/enebular-developers-create-infomotion.png)
 
 Once settings is filed out add graph by clicking the plus to display the infomotion on the dashboard.
 
-![](/_asset/images/InfoMotion/enebular-developers-display-infomotion.png)
+![](../_asset/images/InfoMotion/enebular-developers-display-infomotion.png)
 
 Multiple graphs can be stored on the side bar.
 
-![](/_asset/images/InfoMotion/enenbular-developers-display-infomotion-multi.png)
+![](../_asset/images/InfoMotion/enenbular-developers-display-infomotion-multi.png)
 
 Graphs can be resize by dragging the right bottom corner. 
 
 In this example we are using two graphs `data logger` and `line chart`
 
-![](/_asset/images/InfoMotion/enenbular-developers-display-infomotion-multi-display.png)
+![](../_asset/images/InfoMotion/enenbular-developers-display-infomotion-multi-display.png)
 
 Data passed though InfoMotions can be controlled with daterange, timeline, play and live button. 
 
 - Daterange - calendar with start and end date. 
 
-![daterange](/_asset/images/InfoMotion/enenbular-developers-infomotion-daterange.png) 
+![daterange](../_asset/images/InfoMotion/enenbular-developers-infomotion-daterange.png) 
 
 - Timeline - toggle to select subset dates/times. 
 
-![](/_asset/images/InfoMotion/enenbular-developers-infomotion-timeline.png)
+![](../_asset/images/InfoMotion/enenbular-developers-infomotion-timeline.png)
 
 - Play - plays subsets of timeline 
 
-![](/_asset/images/InfoMotion/enenbular-developers-infomotion-play.png)
+![](../_asset/images/InfoMotion/enenbular-developers-infomotion-play.png)
 
 - Live - subscribes to a datasources 
 
-![](/_asset/images/InfoMotion/enenbular-developers-infomotion-live.png)
+![](../_asset/images/InfoMotion/enenbular-developers-infomotion-live.png)
 
 InfoMotion Dashboards can be customizable for specific needs.
 Please see [infomotion share](./InfoMotionTool.md) for more details. 
@@ -66,7 +66,7 @@ Please see [infomotion share](./InfoMotionTool.md) for more details.
 - `filters` - create filters for InfoMotions.
 - `share` - share dashboard source code.
 
-![](/_asset/images/InfoMotion/enebular-developer-dashboard-options.png)
+![](../_asset/images/InfoMotion/enebular-developer-dashboard-options.png)
 
 ## InfoMotion options
 
@@ -78,28 +78,28 @@ Please see [infomotion share](./InfoMotionTool.md) for more details.
 - `edit` - open sidebar to edit InfoMotion
 - `remove` - remove Infomotion from dashboard
 
-![](/_asset/images/InfoMotion/enebular-developers-infomotion-options.png)
+![](../_asset/images/InfoMotion/enebular-developers-infomotion-options.png)
 
 ##Example of Filter. 
 
 Infomotion without a filter. 
 
-![](/_asset/images/InfoMotion/enebular-developers-infomotion-prefilter.png)
+![](../_asset/images/InfoMotion/enebular-developers-infomotion-prefilter.png)
 
 Setting dashboard filters. 
 A filter requires one key and values. 
 The entered key is `country` and values of `Japan`, `China` and `USA`. 
 
-![](/_asset/images/InfoMotion/enebular-developers-infomotion-setfilter.png)
+![](../_asset/images/InfoMotion/enebular-developers-infomotion-setfilter.png)
 
 Once the filter is set it can be used by the InfoMotion.
 To set the InfoMotion filter click on `Add new Filter`
 and select the values you would like to filter. 
 In this case we filter `country` tags with with the value of `China` or `USA`. 
 
-![](/_asset/images/InfoMotion/enebular-developers-infomotion-usefilter.png)
+![](../_asset/images/InfoMotion/enebular-developers-infomotion-usefilter.png)
 
 The graph will update with the filterd data displaying only 
 datapices with the keys `coutry` and values of `USA` and `China`. 
 
-![](/_asset/images/InfoMotion/enebular-developers-infomotion-postfilter.png)
+![](../_asset/images/InfoMotion/enebular-developers-infomotion-postfilter.png)
