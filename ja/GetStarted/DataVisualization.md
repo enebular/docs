@@ -22,7 +22,7 @@ enebular のユーザーはアセットを公開すること、また公開さ�
 右のカテゴリーから `Flow` を選択して、「getting-started」と検索バーに入力してください。
 ![discover](./../../img/GetStarted/DataVisualization-discover.png)
 
-検索結果に出てきたものをクリックし、下記のようなフロープレビューは表示されていることを確認してください。
+検索結果に出てきたものをクリックし、下記のようなフロープレビューが表示されていることを確認してください。
 右の `fork` ボタンよりフローをフォークできます。
 ![discover2](./../../img/GetStarted/DataVisualization-discover2.png)
 

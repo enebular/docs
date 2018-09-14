@@ -4,7 +4,7 @@ lastUpdated: 2017-12-14
 
 # InfoType を enebular へのアップロード
 
-`infomotion-tool` を使ってパッケージしたものを enebular にアップロードにできます。
+`infomotion-tool` を使ってパッケージしたものを enebular にアップロードできます。
 
 enebular の管理画面にて `InfoType` を選択し、右下の + を押します。
 
