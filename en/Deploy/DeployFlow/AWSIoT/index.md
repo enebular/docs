@@ -1,5 +1,5 @@
----
-lastUpdated: 2018-07-11
+﻿---
+lastUpdated: 2018-09-19
 ---
 
 # Deploying to AWS IoT

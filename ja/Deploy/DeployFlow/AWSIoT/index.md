@@ -1,5 +1,5 @@
----
-lastUpdated: 2018-07-11
+﻿---
+lastUpdated: 2018-09-19
 ---
 
 # AWS IoT へのデプロイ
@@ -86,7 +86,7 @@ AWS IoT で今回用の設定を作成します。
 
 ![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_15.png)
 
-### 証明書へポリシーのアタッチ
+### 証明書へのポリシーのアタッチ
 
 このままだとポリシーと証明書が結びついてないのでアタッチします。さきほど作成したモノの画面に移動して、メニューのセキュリティから作成した証明書を選択します。
 
@@ -106,7 +106,7 @@ AWS IoT で今回用の設定を作成します。
 
 ![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_20.png)
 
-### AWS IoT 用の IAM ユーザーを作成
+### AWS IoT 用 IAM ユーザーの作成
 
 enebular から AWS IoT を利用するための Access Key ID と Secret Access Key を作成します。
 
@@ -130,7 +130,7 @@ IAM のメニューのユーザーから[ユーザーを追加]を押します�
 
 ![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_25.png)
 
-### 接続状態検知用のルールを作成
+### 接続状態検知用ルールの作成
 
 モノとAWS IoTの接続状態を正しく検知出来るためのルールを追加します。メニューから ACT を選択し、[ルールの作成]を押します。
 
