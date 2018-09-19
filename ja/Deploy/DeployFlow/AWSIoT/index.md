@@ -153,7 +153,7 @@ IAM のメニューのユーザーから[ユーザーを追加]を押します�
 SELECT * FROM 'enebular/things/+/shadow/update'
 ```
 
-[メッセージのリソース]で属性とトピックフィルター以外の設定は指定しなくてもいいです。
+[メッセージのリソース]で属性とトピックフィルター以外の設定は不要ですが、必要に応じて設定してください。
 
 ![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_03.png)
 
@@ -161,7 +161,7 @@ SELECT * FROM 'enebular/things/+/shadow/update'
 
 ![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_04.png)
 
-アクションには[AWS IoT のトピックにメッセージを再パブリッシュする]を選択します。選択してから[アクションの設定]を押します。
+アクションには[AWS IoT のトピックにメッセージを再パブリッシュする]を選択します。その後、[アクションの設定]を押します。
 
 ![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_05.png)
 
