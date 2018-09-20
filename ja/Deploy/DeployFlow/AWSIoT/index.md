@@ -134,11 +134,11 @@ IAM のメニューのユーザーから[ユーザーを追加]を押します�
 
 モノとAWS IoTの接続状態を正しく検知出来るためのルールを追加します。メニューから ACT を選択し、[ルールの作成]を押します。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_01.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_01.png)
 
 わかりやすい名前を指定します。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_02.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_02.png)
 
 [メッセージのリソース]でルールの属性とトピックフィルターを以下のように指定します。
 
@@ -155,40 +155,40 @@ SELECT * FROM 'enebular/things/+/shadow/update'
 
 [メッセージのリソース]で属性とトピックフィルター以外の設定は不要ですが、必要に応じて設定してください。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_03.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_03.png)
 
 [アクションの追加]を押してルールにアクションを追加します。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_04.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_04.png)
 
 アクションには[AWS IoT のトピックにメッセージを再パブリッシュする]を選択します。その後、[アクションの設定]を押します。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_05.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_05.png)
 
 アクションのトピックは以下のように指定します。
 
 * トピック
     * `$$aws/things/${topic(3)}/shadow/update`
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_06.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_06.png)
 
 [新しいロールの作成]を押してアクションのためのロールを作成します。
 
 わかりやすいロール名を指定して[新しいロールの作成]を押します。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_07.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_07.png)
 
 作成したロールを選択して、[アクションの追加]を押します。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_08.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_08.png)
 
 これでルールの設定が完成しているので、「ルールの作成」を押します。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_09.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_09.png)
 
 作成したルールが表示されます。
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_10.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_10.png)
 
 ## フローに AWS IoT の設定を反映
 

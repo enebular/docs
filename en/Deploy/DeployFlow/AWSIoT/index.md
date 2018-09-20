@@ -133,11 +133,11 @@ Once completed, download the CSV file that contains the Access Key ID and Secret
 
 We'll add a rule to allow the connection state between the thing and AWS IoT to be correctly detected. Select "Act" from the menu and press "Create a rule".
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_01.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_01.png)
 
 Specify an easy to understand name.
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_02.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_02.png)
 
 Under "Message source", specify the attribute and topic filter as shown below.
 
@@ -154,40 +154,40 @@ SELECT * FROM 'enebular/things/+/shadow/update'
 
 Aside from the attribute and topic filter, you don't need to specify any other settings under "Message source".
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_03.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_03.png)
 
 Add an action to the rule by pressing "Add action".
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_04.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_04.png)
 
 For the action, select "Republish messages to an AWS IoT topic". Once selected press "Configure action".
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_05.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_05.png)
 
 Specify the action topic as shown below.
 
 * Topic
     * `$$aws/things/${topic(3)}/shadow/update`
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_06.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_06.png)
 
 Create a role for the action by pressing "Create a new role".
 
 Specify an easy to understand name and press "Create a new role".
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_07.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_07.png)
 
 Select the created role and press "Add action".
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_08.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_08.png)
 
 The rule configuration is now complete, so press "Create rule".
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_09.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_09.png)
 
 The created rule will be displayed.
 
-![image](/_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_10.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_10.png)
 
 ## Update the Flow with the AWS IoT Settings
 
