@@ -12,7 +12,7 @@ The following are examples of default graphs.
 // It assumed that there is a number of data points like the following
 {
   created: Number,
-  country: String,
+  category: String,
   value: Number,
 }
 ```

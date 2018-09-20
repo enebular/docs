@@ -118,7 +118,7 @@ enebular のユーザーはアセットを公開すること、また公開さ�
 検索結果に出てきたものをクリックし、下記のようなプレビューは表示されていることを確認してください。
 右の `Fork` ボタンよりフローをフォークできます。
 
-![sampleBarChart](./../../img/GetStarted/DataVisualization-sampleBarChart.png)
+![sampleBarChart](./../../img/GetStarted/DataVisualization-discover2.png)
 
 インポートするプロジェクトを選択して下さい。
 
@@ -151,7 +151,7 @@ enebular のユーザーはアセットを公開すること、また公開さ�
 
 `New Graph` をクリックして、作成モーダルを開きます。
 デフォルトで先ほど追加した、項目がそれぞれ入力されています。
-Lavel は `country` と入力してください。グラフの X 軸 に対応します。
+Lavel は `category` と入力してください。グラフの X 軸 に対応します。
 Value は `value` と入力してください。グラフの Y 軸 に対応します。
 任意の名前を付けて `Create Graph` のボタンを押してください。
 

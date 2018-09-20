@@ -114,7 +114,7 @@ Select InfoType and search `barchart`.
 
 Click fork to open the fork modal.
 
-![sampleBarChart](./../../img/GetStarted/DataVisualization-sampleBarChart.png)
+![sampleBarChart](./../../img/GetStarted/DataVisualization-discover2.png)
 
 Select the project to import to.
 
@@ -144,7 +144,7 @@ Open the sidebar with "Add Graph". A list of the graphs shown on the dashboard i
 
 Click on `New Graph` to open the the creation modal.
 By default the Type will be set to `barchart` and DATASOURCE to `test-datasource`.
-The Label corresponds to x axis set as `country` and Value to the y axis `value`. These are set by default.
+The Label corresponds to x axis set as `category` and Value to the y axis `value`. These are set by default.
 Edit the name as you like then `create graph`.
 
 ![graphConfig](./../../img/GetStarted/DataVisualization-graphConfig.png)

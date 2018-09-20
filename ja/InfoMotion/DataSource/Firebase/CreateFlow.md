@@ -50,7 +50,7 @@ function ノードをダブルクリックして `edit function node` のモー�
 var data = {
         timestamp: Date.now(),
         value:{
-            country:['JP','CN','USA'][Math.floor(Math.random()*3)],
+            category:['A','B','C','D'][Math.floor(Math.random()*4)],
             value: Math.floor(Math.random()*10),
             created:Date.now()
         }
