@@ -1,5 +1,5 @@
----
-lastUpdated: 2018-07-11
+﻿---
+lastUpdated: 2018-09-19
 ---
 
 # Deploying to AWS IoT
@@ -85,7 +85,7 @@ Press the create button to save the policy.
 
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_15.png)
 
-## Attaching the Policy to the Certificates
+### Attaching the Policy to the Certificates
 
 As things are now the policy and certificates are not tied together, so we will attached them here. Move to the details screen of the thing you created just before, and select the certificate from the security section in the menu.
 
@@ -105,7 +105,7 @@ Once that completes, you can confirm that the certificate is tied to the policy 
 
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_20.png)
 
-## Creating an IAM User for AWS IoT
+### Creating an IAM User for AWS IoT
 
 In order to use AWS IoT from enebular, create an Access Key ID and Secret Access Key.
 
@@ -128,6 +128,66 @@ Finally confirm there are no mistakes.
 Once completed, download the CSV file that contains the Access Key ID and Secret Access Key (note that this is the only chance to download it).
 
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_25.png)
+
+### Creating a Rule for Connection State Detection
+
+We'll add a rule to allow the connection state between the thing and AWS IoT to be correctly detected. Select "Act" from the menu and press "Create a rule".
+
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_01.png)
+
+Specify an easy to understand name.
+
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_02.png)
+
+Under "Message source", specify the attribute and topic filter as shown below.
+
+* Attribute
+    * `*`
+* Topic filter
+    * `enebular/things/+/shadow/update`
+
+After specifying the attribute and topic filter, the rule query statement will be displayed as shown below.
+
+```
+SELECT * FROM 'enebular/things/+/shadow/update'
+```
+
+Aside from the attribute and topic filter, you don't need to specify any other settings under "Message source".
+
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_03.png)
+
+Add an action to the rule by pressing "Add action".
+
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_04.png)
+
+For the action, select "Republish messages to an AWS IoT topic". Once selected press "Configure action".
+
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_05.png)
+
+Specify the action topic as shown below.
+
+* Topic
+    * `$$aws/things/${topic(3)}/shadow/update`
+
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_06.png)
+
+Create a role for the action by pressing "Create a new role".
+
+Specify an easy to understand name and press "Create a new role".
+
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_07.png)
+
+Select the created role and press "Add action".
+
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_08.png)
+
+The rule configuration is now complete, so press "Create rule".
+
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_09.png)
+
+The created rule will be displayed.
+
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_10.png)
 
 ## Update the Flow with the AWS IoT Settings
 

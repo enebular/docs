@@ -33,7 +33,7 @@ function ノードをダブルクリックして `edit function node` のモー�
 ```javascript
 var data = {
 	value:{
-    country:['JP','USA','CN'][Math.floor(Math.random()*3)],
+    category:['A','B','C','D'][Math.floor(Math.random()*4)],
     value: Math.floor(Math.random()*10),
     created:Date.now()
 	},
