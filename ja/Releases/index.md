@@ -1,22 +1,22 @@
 ---
-lastUpdated: 2018-09-07
+lastUpdated: 2018-09-21
 ---
 
 # enebular Release Notes {#enebular}
 
-## 2.4.4 (September 7th, 2018)
+## 2.5.0 (September 21st, 2018)
 
 ### New
 
-* InfoType名をユーザーが画面上から指定できるよう改善しました
-* 「ユースケース・事例」のページ、および「enebularについて」のページの英語版を公開しました
+- Discoverからアセットをフォークすると画面がフォークされた方のアセットに自動的に遷移するようになりました。
+- InfoTypeキーと値の候補が自動的にドロップダウンリストで表示されるようになりました。
+- InfoType登録時にInfoType名を設定出来るようになりました。
 
 ### Fixed
 
-* 未完成の「Enterprise Planへの問合せ」機能がリリースされてしまっていたため、削除しました
-* ライセンスの予約が出来ない不具合に対応しました
-* ダッシュボードおよびグラフの保存が出来なくなっていた不具合に対応しました
-* InfoMotionを埋め込んだ静的ページを、enebularにログインしていないブラウザで開こうとするとグラフが表示されない不具合に対応しました
+- Node-REDの編集画面で、1つのフローを同時に複数のユーザーが開く事が出来る不具合に対応しました。
+- public/about.css というファイルがenebular.comサイトに誤って混入してしまっていたため削除しました。
+- ユースケースページに2カ所ほど誤植があったため修正しました。
 
 ### Changed
 
@@ -30,6 +30,7 @@ N/A
 
 ### Release History
 
+- [2.5.0](./enebular/2.5.0.md) (September 21st, 2018)
 - [2.4.4](./enebular/2.4.4.md) (September 7th, 2018)
 - [2.4.3](./enebular/2.4.3.md) (August 20th, 2018)
 - [2.4.2](./enebular/2.4.2.md) (August 10th, 2018)

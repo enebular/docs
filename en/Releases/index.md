@@ -1,22 +1,22 @@
 ---
-lastUpdated: 2018-09-07
+lastUpdated: 2018-09-21
 ---
 
 # enebular Release Notes {#enebular}
 
-## 2.4.4 (September 7th, 2018)
+## 2.5.0 (September 21st, 2018)
 
 ### New
 
-* An improvement has been done and now an user can rename InfoTypes
-* We have published the English version of "Use Cases" and "About enebular" pages
+- Forking an asset from Discover page now automatically opens the forked asset.
+- Candidates for InfoType keys and values are now shown on a drop-down list as you type.
+- An InfoType name can be specified when registering it.
 
 ### Fixed
 
-* An incomplete feature "Ask about Enterprise Plan" has accidentally been released, and it has now been deleted
-* Fixed an issue where licenses cannot be reserved
-* Fixed an issue which prevented Dashboards and Graphics from being saved
-* Fixed an issue which caused InfoMotion-embedded pages to fail to show graphs when the browser which opens them is not logged into enebular
+- A preventive measure is taken to avoid multiple users from opening one flow on a Node-Red editor.
+- The public/about.css file was accidentally included to enebular.com site and it has now been removed.
+- We have found two typographical errors in our use case page, and they have been corrected.
 
 ### Changed
 
@@ -30,6 +30,7 @@ N/A
 
 ### Release History
 
+- [2.5.0](./enebular/2.5.0.md) (September 21st, 2018)
 - [2.4.4](./enebular/2.4.4.md) (September 7th, 2018)
 - [2.4.3](./enebular/2.4.3.md) (August 20th, 2018)
 - [2.4.2](./enebular/2.4.2.md) (August 10th, 2018)
