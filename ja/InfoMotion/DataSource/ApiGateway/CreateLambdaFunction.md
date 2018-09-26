@@ -21,16 +21,14 @@ Daterange picker の開始日時と終了日時は `start` と `end` という�
 ```javascript
 exports.handler = (event, context, callback) => {
   const timeunit = (Number(event.end) - Number(event.start))/100
-  const country = ['UK', 'CN', 'JP', 'NZ']
+  const category = ['A', 'B', 'C', 'D']
   const result = (function () {
     let arr = []
     for (var i = 100; i >= 1; i--) {
       arr.push({
         timestamp: Number(event.start) + Math.floor(timeunit*i),
         value:{
-            country:country[Math.floor(Math.random()*4)],
-            ss: Math.floor(Math.random()*50),
-            uu: Math.floor(Math.random()*40),
+            category:category[Math.floor(Math.random()*4)],
             value: Math.floor(Math.random()*10),
             created:Number(event.start) + Math.floor(timeunit*i)
         }

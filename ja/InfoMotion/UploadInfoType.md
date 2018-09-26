@@ -14,6 +14,6 @@ enebular の管理画面にて `InfoType` を選択し、右下の + を押し�
 
 アップロードが完了したら、`plugin.json` で指定したスキーマとサンプルデータをもとにプレビューが表示されます。
 
-![](../_asset/images/InfoMotion/enebuar-developer-uploaded-infotype.png)
+![](../_asset/images/InfoMotion/overview.png)
 
 グラフの型ができたので、次は [DataSource](./CreateDataSource.md) で enebular への DataSource の追加の仕方を学びましょう。

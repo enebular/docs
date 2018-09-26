@@ -12,9 +12,8 @@ InfoType とは InfoMotion で利用するグラフのタイプのことです�
 // 以下のようなデータが複数個あるとします
 {
   created: Number,
-  lang: String,
+  category: String,
   value:Number
-
 }
 ```
 
@@ -39,12 +38,11 @@ InfoType を選択すると InfoType の詳細画面へ移動します。
 
 Overview ではグラフのプレビューができます。左からグラフ、スキーマ設定、データになります。スキーマとデータを変更して Preview を押すとグラフプレビューを更新できます。
 
-![](https://i.gyazo.com/8da16592e6374c03b7b03798b31742e7.png)
+![](../_asset/images/InfoMotion/overview.png)
 
 右上の Update から InfoType のファイルが更新ができます。
 
-![](https://i.gyazo.com/1c831878fc0adc47a97394e075ced78d.png)
-
+![](../_asset/images/InfoMotion/infotype-update.png)
 
 ## Settings
 
