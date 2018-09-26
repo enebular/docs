@@ -1,22 +1,21 @@
 ---
-lastUpdated: 2018-09-21
+lastUpdated: 2018-09-25
 ---
 
 # enebular Release Notes {#enebular}
 
-## 2.5.0 (September 21st, 2018)
+## 2.5.0 (September 25th, 2018)
 
 ### New
 
-- Forking an asset from Discover page now automatically opens the forked asset.
-- Candidates for InfoType keys and values are now shown on a drop-down list as you type.
-- An InfoType name can be specified when registering it.
+- Forking an asset from Discover page now automatically opens the forked asset
+- Candidates for InfoType keys and values are now shown on a drop-down list as you type when configuring it for PubNub or Firebase data sources
+- InfoType name can be specified when uploading it
 
 ### Fixed
 
-- A preventive measure is taken to avoid multiple users from opening one flow on a Node-Red editor.
-- The public/about.css file was accidentally included to enebular.com site and it has now been removed.
-- We have found two typographical errors in our use case page, and they have been corrected.
+- A preventive measure is taken to avoid multiple users from opening one flow on a flow editor.
+- We have found whitespaces in two locations are missing from use case pages in the English documentation.
 
 ### Changed
 
@@ -25,12 +24,12 @@ N/A
 ### Known Issues
 
 - Opening the flow editor from a web browser shows Japanese texts even if the browser is configured to show English
-- The graph does not appear on the shared page with InfoMotion embedded
-- On the shared page with InfoMotion embedded, the filter function can not be used
+- The shared page with InfoMotion embedded, the filter function can not be used
+
 
 ### Release History
 
-- [2.5.0](./enebular/2.5.0.md) (September 21st, 2018)
+- [2.5.0](./enebular/2.5.0.md) (September 25th, 2018)
 - [2.4.4](./enebular/2.4.4.md) (September 7th, 2018)
 - [2.4.3](./enebular/2.4.3.md) (August 20th, 2018)
 - [2.4.2](./enebular/2.4.2.md) (August 10th, 2018)
