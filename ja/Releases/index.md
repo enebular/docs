@@ -1,22 +1,21 @@
 ---
-lastUpdated: 2018-09-07
+lastUpdated: 2018-09-25
 ---
 
 # enebular Release Notes {#enebular}
 
-## 2.4.4 (September 7th, 2018)
+## 2.5.0 (September 25th, 2018)
 
 ### New
 
-* InfoType名をユーザーが画面上から指定できるよう改善しました
-* 「ユースケース・事例」のページ、および「enebularについて」のページの英語版を公開しました
+- Discover画面からアセットをフォークすると新たに複製されたアセットの画面に自動的に遷移するようになりました
+- DataSourceがPubNubもしくはFirebaseの場合にInfoMotionのダッシュボードでInfoTypeキーと値の候補がドロップダウンリストで表示されるようになりました
+- InfoType登録時にInfoType名を設定出来るようになりました
 
 ### Fixed
 
-* 未完成の「Enterprise Planへの問合せ」機能がリリースされてしまっていたため、削除しました
-* ライセンスの予約が出来ない不具合に対応しました
-* ダッシュボードおよびグラフの保存が出来なくなっていた不具合に対応しました
-* InfoMotionを埋め込んだ静的ページを、enebularにログインしていないブラウザで開こうとするとグラフが表示されない不具合に対応しました
+- フローエディタ画面で、1つのフローを同時に複数のフローエディタで編集できないように修正しました
+- 英語版のユースケースページで単語間の空白が2カ所欠落していたため修正しました
 
 ### Changed
 
@@ -25,11 +24,11 @@ N/A
 ### Known Issues
 
 - 言語設定を英語にしたブラウザでフローエディタを開いても、一部の説明文が日本語で表示されます
-- InfoMotionを埋め込んだ共有ページにグラフが表示されません
 - InfoMotionを埋め込んだ共有ページでは、filter機能が使用できません
 
 ### Release History
 
+- [2.5.0](./enebular/2.5.0.md) (September 25th, 2018)
 - [2.4.4](./enebular/2.4.4.md) (September 7th, 2018)
 - [2.4.3](./enebular/2.4.3.md) (August 20th, 2018)
 - [2.4.2](./enebular/2.4.2.md) (August 10th, 2018)
