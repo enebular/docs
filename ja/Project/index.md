@@ -48,6 +48,6 @@ Project名 で検索した場合、Project に紐づく Asset が一覧表示さ
 プロジェクトに関する設定です。
 
 - [Data Source](../InfoMotion/CreateDataSource.md): グラフに利用するデータソースの登録
-- [Access](../Access/index.md): プロジェクトのアクセスコントロール管理
+- [Access](../Config/Access.md): プロジェクトのアクセスコントロール管理
 - [Settings](../Project/Settings.md): プロジェクトの設定
-- [Billing](../Billing/Information.md): 請求情報の管理
+- [Billing](../Config/BillingInformation.md): 請求情報の管理

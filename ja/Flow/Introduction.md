@@ -51,7 +51,7 @@ Access では Flow のアクセス権を編集できます。
 
 ![](https://i.gyazo.com/6b4babe394ae110c62ba181718849c0b.png)
 
-詳しくは [Access Control](../Access/index.md) をご覧ください。
+詳しくは [Access Control](../Config/Access.md) をご覧ください。
 
 ## Settings
 
