@@ -1,32 +1,39 @@
 ---
-lastUpdated: 2018-08-20
+lastUpdated: 2018-10-11
 ---
 
 # enebular Release Notes {#enebular}
 
-## 2.4.3 (August 20th, 2018)
+## Latest Release - 2.5.1 (October 11th, 2018)
 
 ### New
 
-なし
+N/A
 
 ### Fixed
 
-- AWS Lambdaへのデプロイ試行が失敗する不具合を修正しました。
+- enebular内のデータベースで管理しているコネクション情報およびフローのクレデンシャル情報を暗号化しました
+- InfoMotionページでfilter機能が使用できない不具合を修正しました
+- License Managerでは、正しく設定されていないコネクションを使用してライセンスをリザーブ(Reserve)するとエラーが表示されます。このエラーが、License Managerの画面を表示し直しても残ってしまう不具合を修正しました
+- ユーザーがプロジェクトのオーナー(Owner)を他のユーザーに設定すると、ダッシュボードに戻らずにエラーを返してしまう不具合を修正しました
+- ダッシュボードのプロジェクトリストに、コラボレータ(Collaborator)から外されたプロジェクトが表示されてしまう不具合を修正し、プロジェクトリストから削除するようにしました
+- アセットのアクセス権を変更した際、ブラウザをリフレッシュしないとダッシュボードに変更が反映されない不具合を修正しました
+- 言語設定を英語にしたブラウザで”Sign Up”ページから"Privacy Policy"ページを開いた際に、日本語版Privacy Policyページが表示される不具合を修正し、英語版Privacy Policyページを表示するようにしました
 
 ### Changed
 
-なし
+N/A
 
 ### Known Issues
 
 - 言語設定を英語にしたブラウザでフローエディタを開いても、一部の説明文が日本語で表示されます
-- InfoMotionを埋め込んだ静的ページを、enebularにログインしていないブラウザで開こうとするとグラフが表示されません
-- InfoMotionを埋め込んだ共有ページにグラフが表示されません
 - InfoMotionを埋め込んだ共有ページでは、filter機能が使用できません
 
 ### Release History
 
+- [2.5.1](./enebular/2.5.1.md) (October 11th, 2018)
+- [2.5.0](./enebular/2.5.0.md) (September 25th, 2018)
+- [2.4.4](./enebular/2.4.4.md) (September 7th, 2018)
 - [2.4.3](./enebular/2.4.3.md) (August 20th, 2018)
 - [2.4.2](./enebular/2.4.2.md) (August 10th, 2018)
 - [2.4.1](./enebular/2.4.1.md) (August 3rd, 2018)
@@ -45,28 +52,34 @@ lastUpdated: 2018-08-20
 
 # enebular agent Release Notes {#enebular-agent}
 
-## Latest Release - 2.1.0 (June 7th, 2018)
+## Latest Release - 2.2.0 (September 7th, 2018)
 
-## New
+### New
 
-* Mbed Cloudを利用してenebularに接続する機能を公開しました
-    * 従来は、AWS IoTを利用してeneublarに接続していましたが、AWS IoTを利用するか、Mbed Cloudを利用するかを選択していただけるようになりました
-    * Mbed Cloudを利用する場合の詳しい情報は、support@enebular.comにお問い合わせください
-* enebularにおいてReservedにしたライセンスに、enebular-agentを自動的に紐付けをするアクティベーション機能に対応しました
-* Node-REDのデータ用ディレクトリ（userDir）を環境変数NODE_RED_DATA_DIRで指定できるようにしました
-* Node-REDを起動するための実行コマンドを環境変数NODE_RED_COMMANDで指定できるようにしました
+- 素早く簡単にenebular-agentをセットアップするためのワンステップのインストールスクリプトを用意しました
+- AWS IoTのThingを簡単に作成とセットアップできるためのツールを用意しました
+- Debian（systemd）ベースのシステムで起動時にenebular-agentを起動するためのスタートアップ登録を簡単に行える機能を追加しました
+- 設定オプションの一覧を表示する機能を追加しました
+- 新規の設定オプションとサブコマンドを利用できるようにコマンドラインによるオプションの指定に対応しました
 
-## Fixed
+### Fixed
 
-* enebular-agent内のNode-REDのフローエディタに接続して、デプロイ済みのフローを編集できる問題を修正し、フローの編集ができないようにしました
+- AWS IoTで接続されたenebular-agentの接続状況に関わらず、enebular上で常に"Connected"になってしまう不具合に対応しました
+- enebularロギングのアップロードサイズ処理でマイナーな修正をしました
+- mbed-cloud-connector
+    - ファイルが不足していてビルドができない不具合を修正しました
+    - readmeファイルで文字化けを修正しました
 
-## Changed
+### Changed
 
-* ロギング機能において、1回の通信で送信するログファイルの最大サイズを10kバイトに制限しました
-* ロギング機能において、起動後の３分間は30秒周期でログを送信するようにしました（通常は300秒周期で送信します）
-* 新機能および変更にあわせてREADMEファイルを更新しました
+- Node-REDバージョンを0.18.xにアップデートしました
+- AWS IoTとの接続状態を正しく監視できるようにしました
+- デーモン使用のサポートを改善しました（syslogロギングとプロセス終了のサポート）
+- Node-REDインスタンスのプロセス管理（起動と停止処理）を改善しました
+- readmeファイルにクイックセットアップの説明と手動設定の詳細を追加しました
+- 統合のテストを追加しました
 
-## Known Issues
+### Known Issues
 
  N/A
 
@@ -103,6 +116,7 @@ lastUpdated: 2018-08-20
 
 ## Release History
 
+- [2.2.0](./enebular-agent/2.2.0.md) (Sept 9th, 2018)
 - [2.1.0](./enebular-agent/2.1.0.md) (June 7th, 2018)
 - [2.0.0](./enebular-agent/2.0.0.md) (Jan 30th, 2018)
 

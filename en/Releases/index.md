@@ -1,32 +1,39 @@
 ---
-lastUpdated: 2018-08-20
+lastUpdated: 2018-10-11
 ---
 
 # enebular Release Notes {#enebular}
 
-## 2.4.3 (August 20th, 2018)
+## Latest Release - 2.5.1 (October 11th, 2018)
 
-### New
+## New
 
-None
+N/A
 
-### Fixed
+## Fixed
 
-- Fixed the issue that was causing deployment attempts to AWS Lambda to fail.
+- Credential information and Connection information of the Flows stored in the database inside enebular have been encrypted.
+- Fixed the issue which prevented filters in InfoMotion page from functioning.
+- License Manager shows an error message when the user attempts to reserve a license using misconfigured connection. The issue that caused this error message to remain even after closing and reopening the form　has been fixed.
+- Fixed the issue which caused enebular to show error messages after the user transfers the project's ownership to a different user instead of going back to the dashboard.
+- Fixed the issue which caused the project to remain in the user's project list in the dashboard even after its owner excluded him/her from the project.
+- Fixed the issue which required the user to refresh the dashboard in order to see the changes made to the assets' access privileges.
+- A modification was made to show the English version of the Privacy Policy when the user opens the sign-in page with a browser configured English as its primary language.
 
-### Changed
+## Changed
 
-None
+N/A
 
-### Known Issues
+## Known Issues
 
-- Opening the flow editor from a web browser shows Japanese texts even if the browser is configured to show English.
-- InfoMotion-embedded pages fail to show graphs when the browser which opens them is not logged into enebular.
-- The graph does not appear on the shared page with InfoMotion embedded.
-- On the shared page with InfoMotion embedded, the filter function can not be used.
+- Opening the flow editor from a web browser shows Japanese texts even if the browser is configured to show English
+- The shared page with InfoMotion embedded, the filter function can not be used
 
 ### Release History
 
+- [2.5.1](./enebular/2.5.1.md) (October 11th, 2018)
+- [2.5.0](./enebular/2.5.0.md) (September 25th, 2018)
+- [2.4.4](./enebular/2.4.4.md) (September 7th, 2018)
 - [2.4.3](./enebular/2.4.3.md) (August 20th, 2018)
 - [2.4.2](./enebular/2.4.2.md) (August 10th, 2018)
 - [2.4.1](./enebular/2.4.1.md) (August 3rd, 2018)
@@ -45,28 +52,34 @@ None
 
 # enebular agent Release Notes {#enebular-agent}
 
-## Latest Release - 2.1.0 (June 7th, 2018)
+## Latest Release - 2.2.0 (September 7th, 2018)
 
-## New
+### New
 
-* Released support for connecting to enebular using Mbed Cloud
-    * Up until now AWS IoT was used to connect to enebular, but it is now possible to choose between using AWS IoT and Mbed Cloud
-    * If using Mbed Cloud, please get in touch with us at support@enebular.com for detailed information
-* Added support for 'activation' functionality where enebular-agent automatically links with a license set as 'Reserved' on enebular
-* Added the ability to specify Node-RED's data directory (userDir) with the NODE_RED_DATA_DIR environment variable
-* Added the ability to specify the execution command used to start Node-RED with the NODE_RED_COMMAND environment variable
+- Added a one-step install script for quick and easy setup of enebular-agent
+- Added a tool to support simple AWS IoT Thing creation and setup
+- Added ability to do simple startup registration to have enebular-agent start at boot-time on Debian (systemd) based systems
+- Added ability to list all supported configuration options
+- Added support for command line options in order to allow use of the new configuration options and subcommands
 
-## Fixed
+### Fixed
 
-* Handled the issue of being able to connect directly to the enebular-agent Node-RED flow editor and edit a deployed flow by disabling flow editing
+- Fixed an issue that caused enebular to report the connection status of AWS-IoT-connected enebular agent as "Connected" regardless of the *actual* connection status of the agent.
+- Minor fix to enebular logging upload size handling
+- mbed-cloud-connector
+    - Add missing files that prevented it from being built
+    - Removed invalid characters from readme
 
-## Changed
+### Changed
 
-* In the logging function, the max log file size that can be sent each time is now restricted to 10KB
-* In the logging function, the log is now sent every 30 seconds for the first 3 minutes after startup (with the regular interval being 300 seconds)
-* Updated the readme files to reflect the new features and changes
+- Updated the Node-RED version to 0.18.x
+- Updates to allow better connection status tracking on AWS IoT
+- Improved daemon usage support (syslog logging and process termination support)
+- Improved process management (startup and shutdown) of the Node-RED instance
+- Added quick setup explanation and further manual setup details to the readme files
+- Added integration tests
 
-## Known Issues
+### Known Issues
 
  N/A
 
@@ -104,6 +117,7 @@ The recommended operating environments are as follows.
 
 ## Release History
 
+- [2.2.0](./enebular-agent/2.2.0.md) (Sept 7th, 2018)
 - [2.1.0](./enebular-agent/2.1.0.md) (June 7th, 2018)
 - [2.0.0](./enebular-agent/2.0.0.md) (Jan 30th, 2018)
 
