@@ -57,4 +57,4 @@ Click on the Remove button.
 
 ![removeConnections02](./../../img/Config/Config-removeConnections02.png)
 
-Shown pop-up if it's fine to delete connection, click on the Delet button.
+Shown pop-up if it's fine to delete connection, click on the Delete button.
