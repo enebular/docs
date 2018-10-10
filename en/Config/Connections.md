@@ -33,7 +33,7 @@ Click on the plus ("+") button.
 
 At the pop up, select the "Connection Type" which you want to associate with.
 
-Settings are different each Connection Type you selected. See [Deploy](../Deploy/index.md) for further information.
+Settings are different each Connection Type. See [Deploy](../Deploy/index.md) for further information.
 
 ## Edit
 
