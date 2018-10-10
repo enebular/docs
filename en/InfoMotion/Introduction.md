@@ -29,7 +29,7 @@ You can edit InfoMotion access permissions here.
 
 ![](https://i.gyazo.com/e16a84b1278a85d74e024350c6daae4b.png)
 
-Please see [Access Control](../Config/Access.md) for more details.
+Please see [Access Control](../Access/index.md) for more details.
 
 ## Settings
 

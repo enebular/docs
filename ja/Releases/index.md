@@ -1,24 +1,21 @@
 ---
-lastUpdated: 2018-10-11
+lastUpdated: 2018-09-25
 ---
 
 # enebular Release Notes {#enebular}
 
-## Latest Release - 2.5.1 (October 11th, 2018)
+## 2.5.0 (September 25th, 2018)
 
 ### New
 
-N/A
+- Discover画面からアセットをフォークすると新たに複製されたアセットの画面に自動的に遷移するようになりました
+- DataSourceがPubNubもしくはFirebaseの場合にInfoMotionのダッシュボードでInfoTypeキーと値の候補がドロップダウンリストで表示されるようになりました
+- InfoType登録時にInfoType名を設定出来るようになりました
 
 ### Fixed
 
-- enebular内のデータベースで管理しているコネクション情報およびフローのクレデンシャル情報を暗号化しました
-- InfoMotionページでfilter機能が使用できない不具合を修正しました
-- License Managerでは、正しく設定されていないコネクションを使用してライセンスをリザーブ(Reserve)するとエラーが表示されます。このエラーが、License Managerの画面を表示し直しても残ってしまう不具合を修正しました
-- ユーザーがプロジェクトのオーナー(Owner)を他のユーザーに設定すると、ダッシュボードに戻らずにエラーを返してしまう不具合を修正しました
-- ダッシュボードのプロジェクトリストに、コラボレータ(Collaborator)から外されたプロジェクトが表示されてしまう不具合を修正し、プロジェクトリストから削除するようにしました
-- アセットのアクセス権を変更した際、ブラウザをリフレッシュしないとダッシュボードに変更が反映されない不具合を修正しました
-- 言語設定を英語にしたブラウザで”Sign Up”ページから"Privacy Policy"ページを開いた際に、日本語版Privacy Policyページが表示される不具合を修正し、英語版Privacy Policyページを表示するようにしました
+- フローエディタ画面で、1つのフローを同時に複数のフローエディタで編集できないように修正しました
+- 英語版のユースケースページで単語間の空白が2カ所欠落していたため修正しました
 
 ### Changed
 
@@ -31,7 +28,6 @@ N/A
 
 ### Release History
 
-- [2.5.1](./enebular/2.5.1.md) (October 11th, 2018)
 - [2.5.0](./enebular/2.5.0.md) (September 25th, 2018)
 - [2.4.4](./enebular/2.4.4.md) (September 7th, 2018)
 - [2.4.3](./enebular/2.4.3.md) (August 20th, 2018)
@@ -54,7 +50,9 @@ N/A
 
 ## Latest Release - 2.2.0 (September 7th, 2018)
 
-### New
+# 2.2.0
+
+## New
 
 - 素早く簡単にenebular-agentをセットアップするためのワンステップのインストールスクリプトを用意しました
 - AWS IoTのThingを簡単に作成とセットアップできるためのツールを用意しました
@@ -62,7 +60,7 @@ N/A
 - 設定オプションの一覧を表示する機能を追加しました
 - 新規の設定オプションとサブコマンドを利用できるようにコマンドラインによるオプションの指定に対応しました
 
-### Fixed
+## Fixed
 
 - AWS IoTで接続されたenebular-agentの接続状況に関わらず、enebular上で常に"Connected"になってしまう不具合に対応しました
 - enebularロギングのアップロードサイズ処理でマイナーな修正をしました
@@ -70,7 +68,7 @@ N/A
     - ファイルが不足していてビルドができない不具合を修正しました
     - readmeファイルで文字化けを修正しました
 
-### Changed
+## Changed
 
 - Node-REDバージョンを0.18.xにアップデートしました
 - AWS IoTとの接続状態を正しく監視できるようにしました
@@ -79,7 +77,7 @@ N/A
 - readmeファイルにクイックセットアップの説明と手動設定の詳細を追加しました
 - 統合のテストを追加しました
 
-### Known Issues
+## Known Issues
 
  N/A
 
@@ -116,7 +114,7 @@ N/A
 
 ## Release History
 
-- [2.2.0](./enebular-agent/2.2.0.md) (Sept 9th, 2018)
+- [2.2.0](./enebular-agent/2.2.0.md) (September 7th, 2018)
 - [2.1.0](./enebular-agent/2.1.0.md) (June 7th, 2018)
 - [2.0.0](./enebular-agent/2.0.0.md) (Jan 30th, 2018)
 
