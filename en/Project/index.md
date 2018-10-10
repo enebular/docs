@@ -50,6 +50,6 @@ The devices managed within the project. The devices here are those to which asse
 Project related configuration.
 
 - [Data Source](../InfoMotion/CreateDataSource.md): Registration of data sources for use with graphs
-- [Access](../Access/index.md): Project access control management
+- [Access](../Config/Access.md): Project access control management
 - [Settings](../Project/Settings.md): Project settings
-- [Billing](../Billing/Information.md):  Billing information management
+- [Billing](../Config/BillingInformation.md):  Billing information management

@@ -1,11 +1,12 @@
 ---
-lastUpdated: 2018-09-21
+lastUpdated: 2018-10-11
 ---
 
 # Summary
 
 - [Release Notes](Releases/index.md)
   - [enebular](Releases/index.md#enebular)
+    - [2.5.1](Releases/enebular/2.5.1.md)
     - [2.5.0](Releases/enebular/2.5.0.md)
     - [2.4.4](Releases/enebular/2.4.4.md)
     - [2.4.3](Releases/enebular/2.4.3.md)
@@ -91,9 +92,11 @@ lastUpdated: 2018-09-21
   - [Logs](Device/Logs.md)
 - [License Manager](Device/LicenseManager.md)
 
-## Access
+## Config
 
-- [Access Control](Access/index.md)
+- [Connections](Config/Connections.md)
+- [Access](Config/Access.md)
+- [Billing Information](Config/BillingInformation.md)
 
 ## Discover
 
@@ -103,10 +106,6 @@ lastUpdated: 2018-09-21
 ## Account
 
 - [Account Settings](Account/index.md)
-
-## Billing
-
-- [Billing Information](Billing/Information.md)
 
 ## Appendix
 
