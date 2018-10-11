@@ -1,10 +1,10 @@
 ---
-lastUpdated: 2018-09-25
+lastUpdated: 2018-10-12
 ---
 
 # enebular Release Notes {#enebular}
 
-## 2.5.0 (September 25th, 2018)
+## Latest Release - 2.5.1 (October 12th, 2018)
 
 ### New
 
@@ -29,6 +29,7 @@ N/A
 
 ### Release History
 
+- [2.5.1](./enebular/2.5.1.md) (October 12th, 2018)
 - [2.5.0](./enebular/2.5.0.md) (September 25th, 2018)
 - [2.4.4](./enebular/2.4.4.md) (September 7th, 2018)
 - [2.4.3](./enebular/2.4.3.md) (August 20th, 2018)
