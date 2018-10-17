@@ -1,10 +1,10 @@
 ---
-lastUpdated: 2018-10-15
+lastUpdated: 2018-10-17
 ---
 
 # Data Source スキーマ
 
-InfoMotion を利用する場合、データソースが提供するデータは以下のスキーマに従う必要があります。
+InfoMotion を利用する場合、データソースが提供するデータは、どのデータソースであっても以下のスキーマに従う必要があります。  
 
 ```javascript
 {
@@ -15,8 +15,8 @@ InfoMotion を利用する場合、データソースが提供するデータは
 } 
 ```
 
-- `timestamp`:  Unix タイムスタンプ値(ミリ秒)を入れます。InfoMotion では、daterange picker や timeline により、ビジュアライズするデータの範囲を指定することができます。データの範囲が指定された場合、InfoMotionは、`timestamp` の値を参照します。 
-- `value`: InfoType のビジュアライズに必要なデータを入れます。
+InfoMotionが、daterange picker や timeline によるビジュアライズするデータ範囲の指定を可能とするために `timestamp` (Unix タイムスタンプ値)が必要です。  
+`value`はビジュアライズするために InfoType に渡されます。
 
 以下に例を示します。
 
@@ -31,4 +31,6 @@ InfoMotion を利用する場合、データソースが提供するデータは
 } 
 ```
 
-Line Chart の InfoType のように、ビジュアライズの際に時刻を利用する場合は、上記、`created` のように、 `value` の下にも時刻を表すデータを入れる必要があります。
+`value` に入れるデータは、InfoTypeの種類に応じて変わることがあります。  
+例えば、Line Chart の InfoType は、X軸方向に折れ線を描画するために、上記に示すデータの生成時刻( `created` ) が必要です。  
+InfoTypeに応じて必要となるデータについては、InfoTypeのサンプルデータをご参照ください。
