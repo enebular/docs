@@ -10,7 +10,7 @@ enebular の管理画面の Create InfoMotion から作成できます。
 
 - `name`：名前
 - `description`：説明
-- `default previllege`：デフォルトのアクセス権（詳しくは [Access](../Access/index.md)を ご覧ください）
+- `default previllege`：デフォルトのアクセス権（詳しくは [Access](../Config/Access.md)を ご覧ください）
 - `category`：カテゴリー
 
 ![](../_asset/images/InfoMotion/enebular-developers-create-dashboard.png)

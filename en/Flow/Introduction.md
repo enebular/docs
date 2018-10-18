@@ -58,7 +58,7 @@ You can edit flow access permissions here.
 
 ![Access](../../img/Flow/Introduction-access.png)
 
-Please see [Access Control](../Access/index.md) for more details.
+Please see [Access Control](../Config/Access.md) for more details.
 
 ## Settings
 
