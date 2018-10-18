@@ -92,9 +92,11 @@ lastUpdated: 2018-10-12
   - [Logs](Device/Logs.md)
 - [License Manager](Device/LicenseManager.md)
 
-## Access
+## Config
 
-- [Access Control](Access/index.md)
+- [Connections](Config/Connections.md)
+- [Access](Config/Access.md)
+- [Billing Information](Config/BillingInformation.md)
 
 ## Discover
 
@@ -104,10 +106,6 @@ lastUpdated: 2018-10-12
 ## Account
 
 - [Account Settings](Account/index.md)
-
-## Billing
-
-- [Billing Information](Billing/Information.md)
 
 ## Appendix
 
