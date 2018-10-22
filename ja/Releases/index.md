@@ -1,10 +1,10 @@
 ---
-lastUpdated: 2018-10-12
+lastUpdated: 2018-10-22
 ---
 
 # enebular Release Notes {#enebular}
 
-## Latest Release - 2.5.1 (October 12th, 2018)
+## 2.5.2 (October 22th, 2018)
 
 ### New
 
@@ -12,17 +12,13 @@ N/A
 
 ### Fixed
 
-- enebular内のデータベースで管理しているコネクション情報およびフローのクレデンシャル情報を暗号化しました
-- InfoMotionページでfilter機能が使用できない不具合を修正しました
-- License Managerでは、正しく設定されていないコネクションを使用してライセンスをリザーブ(Reserve)するとエラーが表示されます。このエラーが、License Managerの画面を表示し直しても残ってしまう不具合を修正しました
-- ユーザーがプロジェクトのオーナー(Owner)を他のユーザーに設定すると、ダッシュボードに戻らずにエラーを返してしまう不具合を修正しました
-- ダッシュボードのプロジェクトリストに、コラボレータ(Collaborator)から外されたプロジェクトが表示されてしまう不具合を修正し、プロジェクトリストから削除するようにしました
-- アセットのアクセス権を変更した際、ブラウザをリフレッシュしないとダッシュボードに変更が反映されない不具合を修正しました
-- 言語設定を英語にしたブラウザで”Sign Up”ページから"Privacy Policy"ページを開いた際に、日本語版Privacy Policyページが表示される不具合を修正し、英語版Privacy Policyページを表示するようにしました
+- InfoMotionで、開始日と終了日を同じ日付にするとエラーが表示される不具合に対応しました
+- InfoMotion ダッシュボードに表示されるスライダーの時刻が、AM/PMのない12時間表記でしたが、24時間表記で確認できるようにしました
+- InfoMotionのグラフエディタがスクロールできない不具合に対応しました
 
 ### Changed
 
-N/A
+- Licenseが登録されたデバイスに紐付いているConnectionを削除出来る仕様でしたが、Licenseに紐付いているとConnectionを削除出来ない仕様に変更しました
 
 ### Known Issues
 
@@ -31,6 +27,7 @@ N/A
 
 ### Release History
 
+- [2.5.2](./enebular/2.5.1.md) (October 22th, 2018)
 - [2.5.1](./enebular/2.5.1.md) (October 12th, 2018)
 - [2.5.0](./enebular/2.5.0.md) (September 25th, 2018)
 - [2.4.4](./enebular/2.4.4.md) (September 7th, 2018)

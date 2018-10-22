@@ -1,36 +1,33 @@
 ---
-lastUpdated: 2018-10-12
+lastUpdated: 2018-10-22
 ---
 
 # enebular Release Notes {#enebular}
 
-## Latest Release - 2.5.1 (October 12th, 2018)
+## 2.5.2 (October 22th, 2018)
 
-## New
-
-N/A
-
-## Fixed
-
-- Credential information and Connection information of the Flows stored in the database inside enebular have been encrypted.
-- Fixed the issue which prevented filters in InfoMotion page from functioning.
-- License Manager shows an error message when the user attempts to reserve a license using misconfigured connection. The issue that caused this error message to remain even after closing and reopening the form　has been fixed.
-- Fixed the issue which caused enebular to show error messages after the user transfers the project's ownership to a different user instead of going back to the dashboard.
-- Fixed the issue which caused the project to remain in the user's project list in the dashboard even after its owner excluded him/her from the project.
-- Fixed the issue which required the user to refresh the dashboard in order to see the changes made to the assets' access privileges.
-- A modification was made to show the English version of the Privacy Policy when the user opens the sign-in page with a browser configured English as its primary language.
-
-## Changed
+### New
 
 N/A
 
-## Known Issues
+### Fixed
+
+- Fixed an issue on InfoMotion that caused error message when start date and end date are set to the same date.
+- InfoMotion Graph's slider showed start date and end date in 12 hour format without AM/PM notation. It has been fixed and hours are now shown in 24 hour format.
+- Fixed the bug which caused InfoMotion Graph Editor from scrolling.
+
+### Changed
+
+- enebular used to allow deletion of the connections which are associated to devices; however, we have reviced it to prevent deletion of such connections.
+
+### Known Issues
 
 - Opening the flow editor from a web browser shows Japanese texts even if the browser is configured to show English
 - The shared page with InfoMotion embedded, the filter function can not be used
 
 ### Release History
 
+- [2.5.2](./enebular/2.5.2.md) (October 22th, 2018)
 - [2.5.1](./enebular/2.5.1.md) (October 12th, 2018)
 - [2.5.0](./enebular/2.5.0.md) (September 25th, 2018)
 - [2.4.4](./enebular/2.4.4.md) (September 7th, 2018)
