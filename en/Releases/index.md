@@ -1,10 +1,10 @@
 ---
-lastUpdated: 2018-10-12
+lastUpdated: 2018-10-22
 ---
 
 # enebular Release Notes {#enebular}
 
-## Latest Release - 2.5.1 (October 12th, 2018)
+## 2.5.2 (October 22th, 2018)
 
 ### New
 
@@ -14,12 +14,13 @@ lastUpdated: 2018-10-12
 
 ### Fixed
 
-- A preventive measure is taken to avoid multiple users from opening one flow on a flow editor.
-- We have found whitespaces in two locations are missing from use case pages in the English documentation.
+- Fixed an issue on InfoMotion that caused error message when start date and end date are set to the same date.
+- InfoMotion Graph's slider showed start date and end date in 12 hour format without AM/PM notation. It has been fixed and hours are now shown in 24 hour format.
+- Fixed the bug which caused InfoMotion Graph Editor from scrolling.
 
 ### Changed
 
-N/A
+- enebular used to allow deletion of the connections which are associated to devices; however, we have reviced it to prevent deletion of such connections.
 
 ### Known Issues
 
@@ -29,6 +30,7 @@ N/A
 
 ### Release History
 
+- [2.5.2](./enebular/2.5.2.md) (October 22th, 2018)
 - [2.5.1](./enebular/2.5.1.md) (October 12th, 2018)
 - [2.5.0](./enebular/2.5.0.md) (September 25th, 2018)
 - [2.4.4](./enebular/2.4.4.md) (September 7th, 2018)
@@ -54,7 +56,7 @@ N/A
 
 ### New
 
-- Added a one-step install script for quick and easy setup of enebular-agent
+- Added a one-step [install script](https://github.com/enebular/enebular-runtime-agent/blob/master/tools/install/README.md) for quick and easy setup of enebular-agent
 - Added a tool to support simple AWS IoT Thing creation and setup
 - Added ability to do simple startup registration to have enebular-agent start at boot-time on Debian (systemd) based systems
 - Added ability to list all supported configuration options

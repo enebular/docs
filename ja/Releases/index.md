@@ -1,10 +1,10 @@
 ---
-lastUpdated: 2018-10-12
+lastUpdated: 2018-10-22
 ---
 
 # enebular Release Notes {#enebular}
 
-## Latest Release - 2.5.1 (October 12th, 2018)
+## 2.5.2 (October 22th, 2018)
 
 ### New
 
@@ -14,12 +14,13 @@ lastUpdated: 2018-10-12
 
 ### Fixed
 
-- フローエディタ画面で、1つのフローを同時に複数のフローエディタで編集できないように修正しました
-- 英語版のユースケースページで単語間の空白が2カ所欠落していたため修正しました
+- InfoMotionで、開始日と終了日を同じ日付にするとエラーが表示される不具合に対応しました
+- InfoMotion ダッシュボードに表示されるスライダーの時刻が、AM/PMのない12時間表記でしたが、24時間表記で確認できるようにしました
+- InfoMotionのグラフエディタがスクロールできない不具合に対応しました
 
 ### Changed
 
-N/A
+- Licenseが登録されたデバイスに紐付いているConnectionを削除出来る仕様でしたが、Licenseに紐付いているとConnectionを削除出来ない仕様に変更しました
 
 ### Known Issues
 
@@ -28,6 +29,7 @@ N/A
 
 ### Release History
 
+- [2.5.2](./enebular/2.5.1.md) (October 22th, 2018)
 - [2.5.1](./enebular/2.5.1.md) (October 12th, 2018)
 - [2.5.0](./enebular/2.5.0.md) (September 25th, 2018)
 - [2.4.4](./enebular/2.4.4.md) (September 7th, 2018)
@@ -55,7 +57,7 @@ N/A
 
 ## New
 
-- 素早く簡単にenebular-agentをセットアップするためのワンステップのインストールスクリプトを用意しました
+- 素早く簡単にenebular-agentをセットアップするためのワンステップの[インストールスクリプト](https://github.com/enebular/enebular-runtime-agent/blob/master/tools/install/README.ja.md)を用意しました
 - AWS IoTのThingを簡単に作成とセットアップできるためのツールを用意しました
 - Debian（systemd）ベースのシステムで起動時にenebular-agentを起動するためのスタートアップ登録を簡単に行える機能を追加しました
 - 設定オプションの一覧を表示する機能を追加しました
