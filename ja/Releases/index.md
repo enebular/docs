@@ -8,7 +8,9 @@ lastUpdated: 2018-10-22
 
 ### New
 
-N/A
+- Discover画面からアセットをフォークすると新たに複製されたアセットの画面に自動的に遷移するようになりました
+- DataSourceがPubNubもしくはFirebaseの場合にInfoMotionのダッシュボードでInfoTypeキーと値の候補がドロップダウンリストで表示されるようになりました
+- InfoType登録時にInfoType名を設定出来るようになりました
 
 ### Fixed
 
@@ -51,7 +53,9 @@ N/A
 
 ## Latest Release - 2.2.0 (September 7th, 2018)
 
-### New
+# 2.2.0
+
+## New
 
 - 素早く簡単にenebular-agentをセットアップするためのワンステップの[インストールスクリプト](https://github.com/enebular/enebular-runtime-agent/blob/master/tools/install/README.ja.md)を用意しました
 - AWS IoTのThingを簡単に作成とセットアップできるためのツールを用意しました
@@ -59,7 +63,7 @@ N/A
 - 設定オプションの一覧を表示する機能を追加しました
 - 新規の設定オプションとサブコマンドを利用できるようにコマンドラインによるオプションの指定に対応しました
 
-### Fixed
+## Fixed
 
 - AWS IoTで接続されたenebular-agentの接続状況に関わらず、enebular上で常に"Connected"になってしまう不具合に対応しました
 - enebularロギングのアップロードサイズ処理でマイナーな修正をしました
@@ -67,7 +71,7 @@ N/A
     - ファイルが不足していてビルドができない不具合を修正しました
     - readmeファイルで文字化けを修正しました
 
-### Changed
+## Changed
 
 - Node-REDバージョンを0.18.xにアップデートしました
 - AWS IoTとの接続状態を正しく監視できるようにしました
@@ -76,7 +80,7 @@ N/A
 - readmeファイルにクイックセットアップの説明と手動設定の詳細を追加しました
 - 統合のテストを追加しました
 
-### Known Issues
+## Known Issues
 
  N/A
 
@@ -113,7 +117,7 @@ N/A
 
 ## Release History
 
-- [2.2.0](./enebular-agent/2.2.0.md) (Sept 9th, 2018)
+- [2.2.0](./enebular-agent/2.2.0.md) (September 7th, 2018)
 - [2.1.0](./enebular-agent/2.1.0.md) (June 7th, 2018)
 - [2.0.0](./enebular-agent/2.0.0.md) (Jan 30th, 2018)
 

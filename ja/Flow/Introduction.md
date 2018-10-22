@@ -1,67 +1,60 @@
 ---
-lastUpdated: 2018-09-05
+lastUpdated: 2018-01-28
 ---
 
 # Flow
 
-フローは、ハードウェアデバイス・API およびオンラインサービスを接続するためのツール <a href="https://nodered.jp/" target="_blank">Node-RED</a> ベースのフローエディタを利用して作成するアセットの種類の一つです。
+Flow は、ハードウェアデバイス・API およびオンラインサービスを接続するためのツール <a href="https://nodered.jp/" target="_blank">Node-RED</a> ベースのフローエディタを利用して作成する、データフローのことです。
 
-![edittingFlow](../../img/Flow/Introduction-edittingFlow.png)
+![](https://i.gyazo.com/893f5d6ee3a233e4db918fcfde4323f0.png)
 
-なお、下の画像のように、Node-RED 上でフローをデプロイすることができますが、こちらはフローを保存することが目的で、**数分間でスリープする**点に注意して下さい。
+なお、下の画像のように、Node-RED 上で Flow をデプロイすることができますが、こちらは Flow を保存することが目的で、**数分間でスリープする**点に注意して下さい。
 
-![deployingFlow](../../img/Flow/Introduction-deployingFlow.png)
+![](https://i.gyazo.com/bfb9c0e25ad5e4a372a149336bdef8b8.png)
 
-フローを長い時間稼働させたい場合は、[他のサービスへデプロイ](../Deploy/index.md)する必要があります。
+データフローを長い時間稼働させたい場合は、[他のサービスへデプロイ](../Deploy/index.md)する必要があります。
 
-[作成したフロー](./CreateFlow.md) は enebular 上で確認できます。
+[作成した Flow](./CreateFlow.md) は enebular 上で確認できます。
 
-![deployingFlow](../../img/Flow/Introduction-flowAssets.png)
+![](https://i.gyazo.com/df15e18b0f61680b23773a7d8ca4ae6c.png)
 
-Flow を選択すると、フローの詳細画面に移動します。
+Flow を選択すると、Flow の詳細画面に移動します。
+
+![](https://i.gyazo.com/7cb9b53259022696e7cc47e4fa81d89b.png)
 
 ## Overview
 
-Overview では フローの編集、デプロイ、公開を行うことができます。
+Overview では Flow 情報の編集、Flow の公開ができます。Flow 情報は、Flow を公開した際に他のユーザーが見てどういう Flow か理解しやすくする手助けになりますので、出来るだけすべての情報について記載することをおすすめします。
 
-![Overview](../../img/Flow/Introduction-overview.png)
+![](https://i.gyazo.com/7cb9b53259022696e7cc47e4fa81d89b.png)
 
-画面の説明は下記のとおりです。
-
-| No. | 項目名 | 説明 |
-| --- | --- | --- |
-| 1 | preview | タブを選択すると、フローが作成済みの場合フローのイメージが表示されます。|
-| 2 | source | タブを選択すると、フローの実体を表すJSONが表示されます。|
-| 3 | Edit Flow | フローを編集することが出来ます。 |
-| 4 | Deploy Flow | フローを外部サービスにデプロイすることが出来ます。詳細は Deploy の項を参照してください。 |
-| 5 | Publish Flow | フローを公開することが出来ます。詳細は [Publish Flow](./PublishFlow.md) を参照してください。|
+Flow の公開については [Publish Flow](./PublishFlow.md) をご覧ください。
 
 ## Deploy
 
-Deploy ではフローを特定のサービスへデプロイできます。
+Deploy では Flow を特定のサービスへデプロイできます。
 
-![Deploy](../../img/Flow/Introduction-deploy.png)
+![](https://i.gyazo.com/176869beb11cdec73fe02c8c09c4288f.png)
 
-それぞれのサービスへの詳しいデプロイ方法は [Deploy](../Deploy/index.md) を参照してください。
+それぞれのサービスへの詳しいデプロイ方法は [Deploy](../Deploy/index.md) をご覧ください。
 
 ## Devices
 
-Devices では外部サービスへデプロイしたデバイスの状態を一覧で見ることができます。
+Devices では外部サービスへデプロイしたデバイスの状態を一覧で見ることができます。なお、こちらは実装予定の有償機能になります。
 
-![Devices](../../img/Flow/Introduction-devices.png)
+![](https://i.gyazo.com/9f26dd5fa222389b4b90cb2eea5a1df7.png)
 
-詳細は [Device List](../Device/DeviceList.md)を参照して下さい。
 
 ## Access
 
-Access ではフローのアクセス権を編集できます。
+Access では Flow のアクセス権を編集できます。
 
-![Access](../../img/Flow/Introduction-access.png)
+![](https://i.gyazo.com/6b4babe394ae110c62ba181718849c0b.png)
 
 詳しくは [Access Control](../Config/Access.md) をご覧ください。
 
 ## Settings
 
-Settings ではフローの名前や説明の編集、フローの削除ができます。
+Settings では Flow の名前や説明の編集、Flow の削除ができます。
 
-![Settings](../../img/Flow/Introduction-settings.png)
+![](https://i.gyazo.com/9e8637beeeb0d53009f4eb71d046291a.png)

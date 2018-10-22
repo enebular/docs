@@ -8,7 +8,9 @@ lastUpdated: 2018-10-22
 
 ### New
 
-N/A
+- Forking an asset from Discover page now automatically opens the forked asset
+- Candidates for InfoType keys and values are now shown on a drop-down list as you type when configuring it for PubNub or Firebase data sources
+- InfoType name can be specified when uploading it
 
 ### Fixed
 
@@ -24,6 +26,7 @@ N/A
 
 - Opening the flow editor from a web browser shows Japanese texts even if the browser is configured to show English
 - The shared page with InfoMotion embedded, the filter function can not be used
+
 
 ### Release History
 
@@ -49,7 +52,7 @@ N/A
 
 # enebular agent Release Notes {#enebular-agent}
 
-## Latest Release - 2.2.0 (September 7th, 2018)
+## 2.2.0
 
 ### New
 
@@ -114,7 +117,7 @@ The recommended operating environments are as follows.
 
 ## Release History
 
-- [2.2.0](./enebular-agent/2.2.0.md) (Sept 7th, 2018)
+- [2.2.0](./enebular-agent/2.2.0.md) (September 7th, 2018)
 - [2.1.0](./enebular-agent/2.1.0.md) (June 7th, 2018)
 - [2.0.0](./enebular-agent/2.0.0.md) (Jan 30th, 2018)
 
