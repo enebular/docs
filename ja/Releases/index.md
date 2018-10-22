@@ -56,7 +56,7 @@ N/A
 
 ### New
 
-- 素早く簡単にenebular-agentをセットアップするためのワンステップのインストールスクリプトを用意しました
+- 素早く簡単にenebular-agentをセットアップするためのワンステップの[インストールスクリプト](https://github.com/enebular/enebular-runtime-agent/blob/master/tools/install/README.ja.md)を用意しました
 - AWS IoTのThingを簡単に作成とセットアップできるためのツールを用意しました
 - Debian（systemd）ベースのシステムで起動時にenebular-agentを起動するためのスタートアップ登録を簡単に行える機能を追加しました
 - 設定オプションの一覧を表示する機能を追加しました
