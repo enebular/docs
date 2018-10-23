@@ -49,7 +49,7 @@ Other Assetsのデプロイができるのは、プロジェクトのOwner/Admin
 
 ### Devices
 
-???
+デバイスにデプロイしたファイルを削除することが出来ます。
 
 ### Access
 
