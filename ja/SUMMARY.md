@@ -42,12 +42,12 @@ lastUpdated: 2018-10-11
 - [About Projects](Project/index.md)
 - [Project Settings](Project/Settings.md)
 
-## Flows
+## FlowDeploys
 
-- [Introduction](Flow/Introduction.md)
-- [Creating Flows](Flow/CreateFlow.md)
-- [Example: Milkcocoa](Flow/FlowExampleMilkcocoa.md)
-- [Publishing Flows](Flow/PublishFlow.md)
+- [Introduction](FlowDeploys/Introduction.md)
+- [Creating Flows](FlowDeploys/CreateFlow.md)
+- [Example: Milkcocoa](FlowDeploys/FlowExampleMilkcocoa.md)
+- [Publishing Flows](FlowDeploys/PublishFlow.md)
 
 ## InfoMotion
 
@@ -78,9 +78,9 @@ lastUpdated: 2018-10-11
 - [Dashboards](InfoMotion/CreateInfoMotion.md)
 - [Sharing an InfoMotion](InfoMotion/ShareInfoMotion.md)
 
-## FliesDeploy
+## FlieDeploys
 
-- [Introduction](FilesDeploy/index.md)
+- [Introduction](FileDeploys/index.md)
 
 ## Deploys
 

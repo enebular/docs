@@ -2,9 +2,9 @@
 lastUpdated: 2018-10-23
 ---
 
-# Files Deploy
+# File Deploys
 
-**Files Deploy** では enebular agent にファイルをデプロイすることが出来ます。  
+**File Deploys** では enebular agent にファイルをデプロイすることが出来ます。  
 enebular agentでシェルスクリプトを実行したい場合や、設定ファイルを追加したい場合などに利用することが出来ます。
 
 ファイルはアセットの種類の一つで、以下を指します。
@@ -13,8 +13,8 @@ enebular agentでシェルスクリプトを実行したい場合や、設定フ
 - enebular agent で使用する設定ファイル
 - enebular agentで使用するその他のファイル（画像ファイル、動画ファイルなど）
 
-Other Assetsのデプロイができるのは、プロジェクトのOwner/Adminのみです。Collaboratorはデプロイできません。
-信頼できるユーザーにのみOther Assetsデプロイを許可することで、信頼できないAssetsのデプロイ操作を防止します。
+ファイルのデプロイができるのは、プロジェクトのOwner/Adminのみです。Collaboratorはデプロイできません。
+信頼できるユーザーにのみOファイルデプロイを許可することで、信頼できないファイルのデプロイを防止します。
 
 ## 画面説明
 ### List
