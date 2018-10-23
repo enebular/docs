@@ -4,7 +4,8 @@ lastUpdated: 2018-10-23
 
 # Files
 
-**Files** では enebular agent にファイルをデプロイすることが出来ます。
+**Files** では enebular agent にファイルをデプロイすることが出来ます。  
+enebular agentでシェルスクリプトを実行したい場合や、設定ファイルを追加したい場合などに利用することが出来ます。
 
 ファイルとはアセットの種類の一つで、以下を指します。
 
@@ -49,14 +50,16 @@ Execution の最大実行時間を設定します。
 
 #### Execution Arguments
 
-???
+実行時の引数を設定します。
 
 #### Environmental Variables
 
+環境変数の設定を行います。
+
 - KEY
-    - ???
+    - 環境変数名を入力します
 - VALUE
-    - ???
+    - 値を入力します
 
 ### Deploy Hooks
 
