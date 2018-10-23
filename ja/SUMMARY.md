@@ -78,10 +78,9 @@ lastUpdated: 2018-10-11
 - [Dashboards](InfoMotion/CreateInfoMotion.md)
 - [Sharing an InfoMotion](InfoMotion/ShareInfoMotion.md)
 
-## Other Assets Deploy
+## Flies
 
-- [Introduction](OtherAssetsDeploy/index.md)
-- [Tutorial](OtherAssetsDeploy/tutorial.md)
+- [Introduction](Files/index.md)
 
 ## Deploys
 
