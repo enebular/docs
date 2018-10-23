@@ -78,6 +78,11 @@ lastUpdated: 2018-10-11
 - [Dashboards](InfoMotion/CreateInfoMotion.md)
 - [Sharing an InfoMotion](InfoMotion/ShareInfoMotion.md)
 
+## Other Assets Deploy
+
+- [Introduction](OtherAssetsDeploy/index.md)
+- [Tutorial](OtherAssetsDeploy/tutorial.md)
+
 ## Deploys
 
 - [Introduction](Deploy/index.md)
