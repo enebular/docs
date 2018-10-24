@@ -109,23 +109,23 @@ Setting environmental variables
 
 ### Deploy Hooks
 
-It's a functionality that you can execute files already deployed when you deploy new files.
+It's a functionality that allows you to execute files already deployed when you deploy new files.
 
 #### Staging
 
 ##### Pre-Deploy
 
-You can execute a file in enebular agent before the deployment as Pre-Deploy.
-If you don't specify it, Pre-Deploy doesn't run.
+Pre-Deploy executes a file in enebular agent before a deployment.
+If you don't specify Pre-Deploy it doesn't run.
 
-e.g.) Before deployment, you want to run shell script which deleting some files you don't need anymore in enebular agent.
+e.g.)You want to run a shell script before deployment that deletes some files you don't need anymore in enebular agent.
 
 ##### Post-Deploy
 
-You can execute a file in enebular agent after the deployment as Post-Deploy.
-If you don't specify it, Post-Deploy doesn't run.
+Post-Deploy executes a file in enebular agent after deployment.
+If you don't specify Post-Deploy it doesn't run.
 
-e.g.) After deployment, you want to run shell script which deleting some files you don't need anymore in enebular agent.
+e.g.) You want to run a shell script after deployment which deletes some files you don't need anymore in enebular agent.
 
 #### Command
 
