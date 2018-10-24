@@ -4,8 +4,8 @@ lastUpdated: 2018-10-24
 
 # File Deploys
 
-The **File Deploys** deploys files to enebular agent.  
-The use cases, for example, running shell script in enebular agent, adding setting files and so on.
+**File Deploys** deploys files to enebular agent.  
+A use case example can be running shell scripts in enebular agent or adding setting files.
 
 Files are kind of asset and included as follows.
 
