@@ -1,37 +1,37 @@
 ---
-lastUpdated: 2018-10-11
+lastUpdated: 2018-10-22
 ---
 
 # enebular Release Notes {#enebular}
 
-## Latest Release - 2.5.1 (October 11th, 2018)
+## 2.5.2 (October 22th, 2018)
 
-## New
+### New
 
-N/A
+- Forking an asset from Discover page now automatically opens the forked asset
+- Candidates for InfoType keys and values are now shown on a drop-down list as you type when configuring it for PubNub or Firebase data sources
+- InfoType name can be specified when uploading it
 
-## Fixed
+### Fixed
 
-- Credential information and Connection information of the Flows stored in the database inside enebular have been encrypted.
-- Fixed the issue which prevented filters in InfoMotion page from functioning.
-- License Manager shows an error message when the user attempts to reserve a license using misconfigured connection. The issue that caused this error message to remain even after closing and reopening the form　has been fixed.
-- Fixed the issue which caused enebular to show error messages after the user transfers the project's ownership to a different user instead of going back to the dashboard.
-- Fixed the issue which caused the project to remain in the user's project list in the dashboard even after its owner excluded him/her from the project.
-- Fixed the issue which required the user to refresh the dashboard in order to see the changes made to the assets' access privileges.
-- A modification was made to show the English version of the Privacy Policy when the user opens the sign-in page with a browser configured English as its primary language.
+- Fixed an issue on InfoMotion that caused error message when start date and end date are set to the same date.
+- InfoMotion Graph's slider showed start date and end date in 12 hour format without AM/PM notation. It has been fixed and hours are now shown in 24 hour format.
+- Fixed the bug which caused InfoMotion Graph Editor from scrolling.
 
-## Changed
+### Changed
 
-N/A
+- enebular used to allow deletion of the connections which are associated to devices; however, we have reviced it to prevent deletion of such connections.
 
-## Known Issues
+### Known Issues
 
 - Opening the flow editor from a web browser shows Japanese texts even if the browser is configured to show English
 - The shared page with InfoMotion embedded, the filter function can not be used
 
+
 ### Release History
 
-- [2.5.1](./enebular/2.5.1.md) (October 11th, 2018)
+- [2.5.2](./enebular/2.5.2.md) (October 22th, 2018)
+- [2.5.1](./enebular/2.5.1.md) (October 12th, 2018)
 - [2.5.0](./enebular/2.5.0.md) (September 25th, 2018)
 - [2.4.4](./enebular/2.4.4.md) (September 7th, 2018)
 - [2.4.3](./enebular/2.4.3.md) (August 20th, 2018)
@@ -52,11 +52,11 @@ N/A
 
 # enebular agent Release Notes {#enebular-agent}
 
-## Latest Release - 2.2.0 (September 7th, 2018)
+## 2.2.0
 
 ### New
 
-- Added a one-step install script for quick and easy setup of enebular-agent
+- Added a one-step [install script](https://github.com/enebular/enebular-runtime-agent/blob/master/tools/install/README.md) for quick and easy setup of enebular-agent
 - Added a tool to support simple AWS IoT Thing creation and setup
 - Added ability to do simple startup registration to have enebular-agent start at boot-time on Debian (systemd) based systems
 - Added ability to list all supported configuration options
@@ -117,7 +117,7 @@ The recommended operating environments are as follows.
 
 ## Release History
 
-- [2.2.0](./enebular-agent/2.2.0.md) (Sept 7th, 2018)
+- [2.2.0](./enebular-agent/2.2.0.md) (September 7th, 2018)
 - [2.1.0](./enebular-agent/2.1.0.md) (June 7th, 2018)
 - [2.0.0](./enebular-agent/2.0.0.md) (Jan 30th, 2018)
 
