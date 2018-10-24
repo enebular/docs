@@ -42,7 +42,7 @@ lastUpdated: 2018-10-11
 - [About Projects](Project/index.md)
 - [Project Settings](Project/Settings.md)
 
-## FlowDeploys
+## Flow Deploys
 
 - [Introduction](FlowDeploys/Introduction.md)
 - [Creating Flows](FlowDeploys/CreateFlow.md)
@@ -78,7 +78,7 @@ lastUpdated: 2018-10-11
 - [Dashboards](InfoMotion/CreateInfoMotion.md)
 - [Sharing an InfoMotion](InfoMotion/ShareInfoMotion.md)
 
-## FlieDeploys
+## File Deploys
 
 - [Introduction](FileDeploys/index.md)
 

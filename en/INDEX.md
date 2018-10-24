@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2017-01-29
+lastUpdated: 2017-10-24
 ---
 
 # Introduction
@@ -22,7 +22,7 @@ The primary way of using enebular is likely to be along the lines of **developin
 
 The currently available assets are as follows (there are also other assets, like machine learning models, planned to be supported).
 
-- [Flows](Flow/Introduction.md): These are data flows created with Node-RED
+- [Flows](FlowDeploys/Introduction.md): These are data flows created with Node-RED
 - [InfoMotion](InfoMotion/Introduction.md): These are dashboards for doing graph visualization and controlling devices.
 - [InfoType](InfoMotion/InfoTypeIntroduction.md): Graphs and controller types used with InfoMotion.
 
