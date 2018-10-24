@@ -7,20 +7,20 @@ lastUpdated: 2018-10-24
 **File Deploys** deploys files to enebular agent.  
 A use case example can be running shell scripts in enebular agent or adding setting files.
 
-Files are kind of asset and included as follows.
+A file is an asset with one of the following possible functionalities.
 
-- execution files for enebular agent
+- executing files for enebular agent
 - setting files for enebular agent
 - other files for enebular agent (image files, movie files)
 
-Owner/Admin of the project are able to deploy files. Collaborator can't do that.
-To prevent from untrustable deployment, it's only allowed trustable user to deploy it.
+Owner/Admin of the project are able to deploy files. Collaborators are unable to.
+Deployments can only be made by trusted users.
 
 ## Screen description
 ### List
 
 The list displays uploaded files.
-Selecting a file, you can view the detail of the file.
+Select a file to view it's details.
 
 | # | Item | Description |
 | --- | --- | --- |
@@ -44,12 +44,11 @@ You can see general information about the uploaded files.
 
 ### Deploy
 
-You can deploy files.
-Also, see the history of the deployments.
+You can deploy files and view deployment history.
 
 ### Devices
 
-You can delete files which deployed in devices.
+You can delete files which are deployed in devices.
 
 ### Access
 
@@ -81,17 +80,17 @@ You can set the path to deploy.
 
 ### Execution
 
-Setting for you want to deploy execution files
+Setting for if you want to deploy execution files.
 
 #### Execute On Deploy
 
-If it's turned on, files are run as the execution files.
+If it's turned on, files run as the execution files.
 The user is same as enebular-runtime-agent. 
 
 #### Max Execution Time
 
 You can set maximum execution time of **Execution**.
-It's able to set from 0 to 300(5 min)sec.
+Set times are from 0 to 300(5 min)sec.
 
 If the execution exceeds the maximum execution time, execution is forcibly stopped.
 
@@ -135,7 +134,7 @@ Command you want to execute.
 #### Max Execution Time
 
 You can set maximum execution time of **Pre-Deploy/Post-Deploy**.
-It's able to set from 0 to 300(5 min)sec.
+Set times are from 0 to 300(5 min)sec.
 
 If the Pre-Deploy/Post-Deploy exceeds the maximum execution time, Pre-Deploy/Post-Deploy is forcibly stopped.
 
