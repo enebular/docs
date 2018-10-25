@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-04-12
+lastUpdated: 2018-10-25
 ---
 
 # 動作環境
@@ -134,3 +134,19 @@ permission error が起こった際には、以下のいずれかで解決がで
 - Windows: https://github.com/coreybutler/nvm-windows 
 
 3) npm の[デフォルトのディレクトリ](https://docs.npmjs.com/getting-started/fixing-npm-permissions)を変更する。
+
+## enebular desktop editor
+
+enebular desktop editor の推奨動作環境は以下の通りです。
+
+### Windows OS の場合
+
+| OS | CPU | メモリ |
+| --- | --- | --- |
+| Windows 10 | Core i5 2.90GHz以上推奨 | 8.0GB以上推奨 |
+
+### Mac OS の場合
+
+| OS | CPU | メモリ |
+| --- | --- | --- |
+| Mac OS xxx | xxxx | xxx |

@@ -114,4 +114,5 @@ lastUpdated: 2018-10-22
 
 ## Appendix
 
+- [enebularDesktopEditor](Other/DesktopEditor.md)
 - [Supported Environments](Other/Support.md)
