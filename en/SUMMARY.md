@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-10-24
+lastUpdated: 2018-10-26
 ---
 
 # Summary
@@ -114,4 +114,5 @@ lastUpdated: 2018-10-24
 
 ## Appendix
 
+- [DesktopEditor](Other/DesktopEditor.md)
 - [Supported Environments](Other/Support.md)

@@ -139,14 +139,14 @@ permission error が起こった際には、以下のいずれかで解決がで
 
 enebular desktop editor の推奨動作環境は以下の通りです。
 
-### Windows OS の場合
+### Windows の場合
 
 | OS | CPU | メモリ |
 | --- | --- | --- |
-| Windows 10 | Core i5 2.90GHz以上推奨 | 8.0GB以上推奨 |
+| Windows 10 | Core i7 2.70GHz以上推奨 | 8.0GB以上推奨 |
 
-### Mac OS の場合
+### Mac の場合
 
 | OS | CPU | メモリ |
 | --- | --- | --- |
-| Mac OS xxx | xxxx | xxx |
+| OS X Yosemite | Core M 1.1GHz以上推奨 | 8.0GB以上推奨 |

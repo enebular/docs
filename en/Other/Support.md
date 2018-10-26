@@ -129,3 +129,19 @@ If a permission error occur the following solutions may solve it.
 Windows: https://github.com/coreybutler/nvm-windows
 
 3) Change npm's Default Directory https://docs.npmjs.com/getting-started/fixing-npm-permissions see Option Two.
+
+## enebular desktop editor
+
+Recommended system requirements are as follows:
+
+### For Windows
+
+| OS | CPU | Memory |
+| --- | --- | --- |
+| Windows 10 | Core i7 2.70GHz | 8.0GB |
+
+### For Mac
+
+| OS | CPU | Memory |
+| --- | --- | --- |
+| OS X Yosemite | Core M 1.1GHz | 8.0GB |

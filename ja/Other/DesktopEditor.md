@@ -1,12 +1,13 @@
 ---
-lastUpdated: 2018-10-25
+lastUpdated: 2018-10-26
 ---
 
-# enebular desktop editor
+# desktop editor
 
 ## 概要
 
-enebular desktop editor はブラウザ上ではなくローカル環境で enebular の機能を利用できるソフトウェアです。
+desktop editor はブラウザ上ではなくローカル環境で enebular の機能を利用できるソフトウェアです。  
+desktop editor は限定的な公開となっています。利用したい方は **support@enebular.com** までお問い合わせください。
 
 ## Requirements
 

@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-10-22
+lastUpdated: 2018-10-26
 ---
 
 # Summary
@@ -114,5 +114,5 @@ lastUpdated: 2018-10-22
 
 ## Appendix
 
-- [enebularDesktopEditor](Other/DesktopEditor.md)
+- [DesktopEditor](Other/DesktopEditor.md)
 - [Supported Environments](Other/Support.md)
