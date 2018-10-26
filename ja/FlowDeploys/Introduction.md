@@ -6,17 +6,17 @@ lastUpdated: 2018-09-05
 
 フローは、ハードウェアデバイス・API およびオンラインサービスを接続するためのツール <a href="https://nodered.jp/" target="_blank">Node-RED</a> ベースのフローエディタを利用して作成するアセットの種類の一つです。
 
-![edittingFlow](../../img/FlowDeploys/Introduction-edittingFlow.png)
+![edittingFlow](../../img/Flow/Introduction-edittingFlow.png)
 
 なお、下の画像のように、Node-RED 上でフローをデプロイすることができますが、こちらはフローを保存することが目的で、**数分間でスリープする**点に注意して下さい。
 
-![deployingFlow](../../img/FlowDeploys/Introduction-deployingFlow.png)
+![deployingFlow](../../img/Flow/Introduction-deployingFlow.png)
 
 フローを長い時間稼働させたい場合は、[他のサービスへデプロイ](../Deploy/index.md)する必要があります。
 
 [作成したフロー](./CreateFlow.md) は enebular 上で確認できます。
 
-![deployingFlow](../../img/FlowDeploys/Introduction-flowAssets.png)
+![deployingFlow](../../img/Flow/Introduction-flowAssets.png)
 
 Flow を選択すると、フローの詳細画面に移動します。
 
@@ -24,7 +24,7 @@ Flow を選択すると、フローの詳細画面に移動します。
 
 Overview では フローの編集、デプロイ、公開を行うことができます。
 
-![Overview](../../img/FlowDeploys/Introduction-overview.png)
+![Overview](../../img/Flow/Introduction-overview.png)
 
 画面の説明は下記のとおりです。
 
@@ -40,7 +40,7 @@ Overview では フローの編集、デプロイ、公開を行うことがで�
 
 Deploy ではフローを特定のサービスへデプロイできます。
 
-![Deploy](../../img/FlowDeploys/Introduction-deploy.png)
+![Deploy](../../img/Flow/Introduction-deploy.png)
 
 それぞれのサービスへの詳しいデプロイ方法は [Deploy](../Deploy/index.md) を参照してください。
 
@@ -48,7 +48,7 @@ Deploy ではフローを特定のサービスへデプロイできます。
 
 Devices では外部サービスへデプロイしたデバイスの状態を一覧で見ることができます。
 
-![Devices](../../img/FlowDeploys/Introduction-devices.png)
+![Devices](../../img/Flow/Introduction-devices.png)
 
 詳細は [Device List](../Device/DeviceList.md)を参照して下さい。
 
@@ -56,7 +56,7 @@ Devices では外部サービスへデプロイしたデバイスの状態を一
 
 Access ではフローのアクセス権を編集できます。
 
-![Access](../../img/FlowDeploys/Introduction-access.png)
+![Access](../../img/Flow/Introduction-access.png)
 
 詳しくは [Access Control](../Config/Access.md) をご覧ください。
 
@@ -64,4 +64,4 @@ Access ではフローのアクセス権を編集できます。
 
 Settings ではフローの名前や説明の編集、フローの削除ができます。
 
-![Settings](../../img/FlowDeploys/Introduction-settings.png)
+![Settings](../../img/Flow/Introduction-settings.png)
