@@ -4,13 +4,13 @@ lastUpdated: 2018-10-29
 
 # Data Source Schema 
 
-All datasource data must contain a `ts` key with a Unix Timestamp value. 
+All datasource data must contain a `ts` key with a Unix Timestamp value as shown below. 
 InfoMotion uses the `ts` for daterange picker, timeline and querying historical data. 
-This object is also used with in the InfoType (graph/chart). 
+This data is also used with in the InfoType (graph/chart). 
 
 ```javascript 
 { 
-  ts: Unix Timestamp seconds since Jan 01 1970. (UTC), // timestamp for daterange, timeline and querying. 
+  ts: Unix Timestamp milliseconds since Jan 01 1970. (UTC), // timestamp for daterange, timeline and querying. 
   // All data in this object is passed to the infotype 
 } 
 ``` 
@@ -23,12 +23,12 @@ in preview of the InfoType.
 
 ![sampleBarChart](./../../img/infoMotion/DataSource/infotype-highlight.png) 
 
-For an Enebular sample barchart the folowing data is required. 
+For an enebular sample barchart the folowing data is required. 
 
 ```javascript
 {
-  ts: Unix Timestamp seconds since Jan 01 1970. (UTC),
-  category:String,
-  value:Number
+  ts: Unix Timestamp milliseconds since Jan 01 1970. (UTC),
+  category: String,
+  value: Number
 } 
 ``` 

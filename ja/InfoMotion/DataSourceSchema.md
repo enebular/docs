@@ -4,32 +4,30 @@ lastUpdated: 2018-10-29
 
 # Data Source スキーマ
 
-すべてのデータソースは以下のスキーマに従う必要があります。
+すべてのデータソースのデータは、下記のスキーマに示すように Unix タイムスタンプ値を含む `ts` キーを持つ必要があります。 
+`ts` の値は、daterange picker や timeline によりビジュアライズするデータ範囲を特定する際に InfoMotion で利用されます。 
+また、このデータは InfoType に渡され、graph や chart を描画するときにも利用することがあります。
 
 ```javascript
 {
-  ts: Unix Timestamp seconds since Jan 01 1970. (UTC), // timestamp for daterange, timeline and querying. 
+  ts: Unix Timestamp milliseconds since Jan 01 1970. (UTC), // timestamp for daterange, timeline and querying. 
   // All data in this object is passed to the infotype 
 } 
 ```
 
-- `ts`:  Unix タイムスタンプ値を入れます。InfoMotion が `ts` を daterange picker と timeline、query に使用します。 
-- `value`: InfoType のビジュアライズに必要なデータを入れます。
+#InfoType サンプルデータ 
 
-#InfoType sample data 
-
-Each InfoType may require specific keys and values. 
-The type of data required for each InfoType can be seen on the right hand side 
-in preview of the InfoType. 
+InfoType 毎に、データに特定のキーと値が含まれることが必要となります。 
+InfoType に応じて必要となるキーと値を知るには、InfoTypeのプレビューの右側に表示されるサンプルデータが役に立ちます。 
 
 ![sampleBarChart](./../../img/infoMotion/DataSource/infotype-highlight.png) 
 
-For an Enebular sample barchart the folowing data is required. 
+上記に示すように、enebularのsample barchart では、以下のキーと値を必要とします。 
 
 ```javascript
 {
-  ts: Unix Timestamp seconds since Jan 01 1970. (UTC),
-  category:String,
-  value:Number
+  ts: Unix Timestamp milliseconds since Jan 01 1970. (UTC),
+  category: String,
+  value: Number
 } 
 ``` 
