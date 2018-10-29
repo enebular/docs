@@ -74,9 +74,9 @@ The description of files (optional)
 
 You can set the path to deploy.
 
-- path under `(root)/assets/`
+- path under `<root>/enebular-runtime-agent/ports/awsiot/assets/`
 - folder name and file name
-- e.g. Setting hoge/hige.txt, saving as (root)/assets/hoge/hige.txt.
+- e.g. Setting hoge/hige.txt, saving as <root>/enebular-runtime-agent/ports/awsiot/assets/hige.txt.
 
 ### Execution
 
