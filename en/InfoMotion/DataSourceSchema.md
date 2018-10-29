@@ -18,7 +18,7 @@ This object is also used with in the InfoType (graph/chart).
 #InfoType sample data 
 
 Each InfoType may require specific keys and values. 
-The type of data required for each type can be seen on the right hand side 
+The type of data required for each InfoType can be seen on the right hand side 
 in preview of the InfoType. 
 
 ![sampleBarChart](./../../img/infoMotion/DataSource/infotype-highlight.png) 
