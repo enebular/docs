@@ -77,7 +77,7 @@ enebular agentでシェルスクリプトを実行したい場合や、設定フ
 
 - <root>/enebular-runtime-agent/ports/awsiot/assets/ 以下の自由なパス
 - パスの指定は、<root>/enebular-runtime-agent/ports/awsiot/assets/以下のフォルダ名とファイル名です
-- e.g. hoge/hige.txtを指定すると、<root>/enebular-runtime-agent/ports/awsiot/assets/hoge/hige.txtとして保存されます
+- e.g. hoge/hige.txtを指定すると、`<root>/enebular-runtime-agent/ports/awsiot/assets/hoge/hige.txt` として保存されます
 
 ### Execution
 
