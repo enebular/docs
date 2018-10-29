@@ -24,7 +24,7 @@ enebular のユーザーはアセットを公開すること、また公開さ�
 
 検索結果に出てきたものをクリックし、下記のようなフロープレビューが表示されていることを確認してください。
 右の `fork` ボタンよりフローをフォークできます。
-![discover2](./../../img/GetStarted/DataVisualization-discover2.png)
+![discover2](./../../img/GetStarted/flow-discover.png)
 
 フォーク先の適当なプロジェクトに初期値のロール設定(superdev)で fork してください。
 ![fork](./../../img/GetStarted/DataVisualization-fork.png)

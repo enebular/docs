@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-03-29
+lastUpdated: 2018-10-29
 ---
 
 # Data Source スキーマ
@@ -8,12 +8,28 @@ lastUpdated: 2018-03-29
 
 ```javascript
 {
-  timestamp: Unix Timestamp seconds since Jan 01 1970. (UTC), // timestamp for daterange, timeline and querying. 
-  value:{ 
-    // data here is passed to the infotype 
-  } 
+  ts: Unix Timestamp seconds since Jan 01 1970. (UTC), // timestamp for daterange, timeline and querying. 
+  // All data in this object is passed to the infotype 
 } 
 ```
 
-- `timestamp`:  Unix タイムスタンプ値を入れます。InfoMotion が `timestamp` を daterange picker と timeline、query に使用します。 
+- `ts`:  Unix タイムスタンプ値を入れます。InfoMotion が `ts` を daterange picker と timeline、query に使用します。 
 - `value`: InfoType のビジュアライズに必要なデータを入れます。
+
+#InfoType sample data 
+
+Each InfoType may require specific keys and values. 
+The type of data required for each type can be seen on the right hand side 
+in preview of the InfoType. 
+
+![sampleBarChart](./../../img/infoMotion/DataSource/infotype-highlight.png) 
+
+For an Enebular sample barchart the folowing data is required.
+
+```javascript
+{
+  ts: Unix Timestamp seconds since Jan 01 1970. (UTC), 
+  category:String,
+  value:Number
+} 
+``` 
