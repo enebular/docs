@@ -18,4 +18,4 @@ Available datasources for InfoMotion:
 - [Milkcocoa](./DataSource/Milkcocoa/CreateDataSource.md)
 - [Pubnub](./DataSource/Pubnub/CreateDataSource.md)
 - [Firebase](./DataSource/Firebase/CreateDataSource.md)
-- [API Gateway](./DataSource/APIGateway/CreateDataSource.md)
+- [API Gateway](./DataSource/ApiGateway/CreateDataSource.md)
