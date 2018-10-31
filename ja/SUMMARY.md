@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-10-26
+lastUpdated: 2018-10-31
 ---
 
 # Summary
@@ -112,7 +112,11 @@ lastUpdated: 2018-10-26
 
 - [Account Settings](Account/index.md)
 
+## enebular editor
+
+- [Introduction](EnebularEditor/introduction.md)
+- [Enebular Agent Editor Linkage](EnebularEditor/Linkage.md)
+
 ## Appendix
 
-- [DesktopEditor](Other/DesktopEditor.md)
 - [Supported Environments](Other/Support.md)

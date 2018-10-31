@@ -1,13 +1,30 @@
 ---
-lastUpdated: 2018-10-26
+lastUpdated: 2018-10-31
 ---
 
 # desktop editor
 
 ## 概要
 
-desktop editor はブラウザ上ではなくローカル環境で enebular の機能を利用できるソフトウェアです。  
+enebular editor は ブラウザ上ではなくローカル環境でフローの編集とデプロイ（ `AWS IoT`, `Arm Pelion`, `AWS Lambda`, `Heroku`）のできるソフトウェアです。 
 desktop editor は限定的な公開となっています。利用したい方は **support@enebular.com** までお問い合わせください。
+
+
+## Modes
+
+enebular editor には `Desktop` と `Remote` の二つのモードがあります。
+
+### Desktop
+
+デスクトップモードは、ノード のサポートが PC やブラウザのAPIに限られている場合に使用します。
+enebular editor はクラウドではなくアプリケーションからフローエディタを読み込みます。
+
+### Remote
+
+enebular-runtime-agent v2.3.0以降の linux デバイス（Raspberry Pi など）のフローを編集する場合に使用します。
+Raspberry Pi のセンサー用ノードなど、デバイスでしか動かないノードを用いたフローを編集することができます。
+AWS IoT または Arm Pelion との接続が必要です。（Arm Pelion の場合 `enebular-runtime-agent-cloud-connector` を使用してください。）
+enebular editorは `enebular-runtime-agent`  のフローエディタをリモートで開きます。
 
 ## Requirements
 
