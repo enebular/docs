@@ -8,7 +8,7 @@ lastUpdated: 2018-08-09
 Register at https://firebase.google.com/.
 Once you are registerd and logged in click on add project. 
 
-![Setup-FirebaseWellcome-en](./../../../../img/InfoMotion/DataSource/Firebase/Setup-FirebaseWellcome-en.png)
+![Setup-FirebaseWellcome-en](./../../../../img/InfoMotion/DataSource/Firebase/Setup-firebaseWellcome-en.png)
 
 
 Input a name for the project and your country/region then click CREATE PROJECT. 

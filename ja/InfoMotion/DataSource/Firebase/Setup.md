@@ -7,7 +7,7 @@ lastUpdated: 2018-08-09
 https://firebase.google.com/ にアクセスし、アカウントを登録します。
 firebase にログインし、 [プロジェクトを追加] をクリックしてください。
 
-![Setup-FirebaseWellcome-ja](./../../../../img/InfoMotion/DataSource/Firebase/Setup-FirebaseWellcome-ja.png)
+![Setup-FirebaseWellcome-ja](./../../../../img/InfoMotion/DataSource/Firebase/Setup-firebaseWellcome-ja.png)
 
 
 任意のプロジェクト名を入力し、国/地域 を選択後、[プロジェクトを作成] をクリックしてください。
