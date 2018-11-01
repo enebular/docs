@@ -2,7 +2,7 @@
 lastUpdated: 2018-10-31
 ---
 
-# desktop editor
+# enebular editor
 
 ## 概要
 
@@ -43,7 +43,7 @@ enebular editorは `enebular-runtime-agent`  のフローエディタをリモ�
 1. 下記のようにプログラムがインストールされます。  
     ![windowsProgram](./../../img/Other/DesktopEditor-windowsProgram.png)
 
-1. セットアップが完了すると enebular desktop editor が自動的に起動します。
+1. セットアップが完了すると enebular editor が自動的に起動します。
 
 ### Mac の場合
 

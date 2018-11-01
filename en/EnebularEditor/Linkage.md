@@ -2,7 +2,7 @@
 lastUpdated: 2018-10-31
 ---
 
-# Enebular Agent Editor Linkage
+# enebular agent Linkage
 
 First you need `enebular-runtime-agent` 2.3.0 and above running on a device (Raspberry Pi).
 

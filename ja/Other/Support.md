@@ -135,9 +135,9 @@ permission error が起こった際には、以下のいずれかで解決がで
 
 3) npm の[デフォルトのディレクトリ](https://docs.npmjs.com/getting-started/fixing-npm-permissions)を変更する。
 
-## enebular desktop editor
+## enebular editor
 
-enebular desktop editor の推奨動作環境は以下の通りです。
+enebular editor の推奨動作環境は以下の通りです。
 
 ### Windows の場合
 

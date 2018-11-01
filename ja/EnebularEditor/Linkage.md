@@ -2,7 +2,7 @@
 lastUpdated: 2018-10-31
 ---
 
-# Enebular Agent のフローエディタとのリンク
+# enebular agent のフローエディタとのリンク
 
 まず、バージョン2.3.0以降の `enebular-runtime-agent` を Raspberry Pi などのデバイスで起動します。
 

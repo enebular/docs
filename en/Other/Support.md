@@ -130,7 +130,7 @@ Windows: https://github.com/coreybutler/nvm-windows
 
 3) Change npm's Default Directory https://docs.npmjs.com/getting-started/fixing-npm-permissions see Option Two.
 
-## enebular desktop editor
+## enebular editor
 
 Recommended system requirements are as follows:
 

@@ -2,7 +2,7 @@
 lastUpdated: 2018-10-31
 ---
 
-# desktop editor
+# enebular editor
 
 ## Overview
 
@@ -43,7 +43,7 @@ enebular editor loads the flow editor from `enebular-runtime-agent` remotely
 1. Program have been installed like bellow:  
     ![windowsProgram](./../../img/Other/DesktopEditor-windowsProgram.png)
 
-1. The desktop editor will run automatically.
+1. The enebular editor will run automatically.
 
 ### For Mac
 
