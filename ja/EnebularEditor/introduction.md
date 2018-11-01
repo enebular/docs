@@ -30,13 +30,13 @@ enebular editorは `enebular-runtime-agent`  のフローエディタをリモ�
 
 - 予め enebular.com で enebular のアカウントを作成する必要があります
 - PCはネットワークに接続されている必要があります
-- 動作環境については [こちら](./Support.md) を参照してください
+- 動作環境については [こちら](./../Other/Support.md) を参照してください
 
 ## インストール手順
 
 ### Windows の場合
 
-1. [こちら](https://uhuru.box.com/s/j4b634xhj0460fkmimq2rma137nvebr9)からインストーラを含んだzipファイルをダウンロードします。
+1. [こちら](https://download.enebular.com/enebular-editor/)からインストーラを含んだzipファイルをダウンロードします。
 
 1. zipファイルを展開し、`Enebular Editor Setup 0.0.2.exe` を実行します。
 
@@ -47,7 +47,7 @@ enebular editorは `enebular-runtime-agent`  のフローエディタをリモ�
 
 ### Mac の場合
 
-1. [こちら](https://uhuru.box.com/s/ol939ir446f4eingquqjwde2zdpv2sr1)からインストーラをダウンロードします。
+1. [こちら](https://download.enebular.com/enebular-editor/)からインストーラをダウンロードします。
 
 1. `Enebular Editor-0.0.2.dmg` を実行しアプリをインストールします。
 

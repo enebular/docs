@@ -30,13 +30,13 @@ enebular editor loads the flow editor from `enebular-runtime-agent` remotely
 
 - An available enebular account
 - Your PC must be connected to network
-- See [Supported environment](./Support.md)
+- See [Supported environment](./../Other/Support.md)
 
 ## How to install
 
 ### For Windows
 
-1. Download [zip file](https://uhuru.box.com/s/j4b634xhj0460fkmimq2rma137nvebr9) which includes installer.
+1. Download [zip file](https://download.enebular.com/enebular-editor/) which includes installer.
 
 1. Unzip it and run `Enebular Editor Setup 0.0.2.exe` file.
 
@@ -47,7 +47,7 @@ enebular editor loads the flow editor from `enebular-runtime-agent` remotely
 
 ### For Mac
 
-1. Download [installer](https://uhuru.box.com/s/ol939ir446f4eingquqjwde2zdpv2sr1).
+1. Download [installer](https://download.enebular.com/enebular-editor/).
 
 1. Run `Enebular Editor-0.0.2.dmg`.
 
