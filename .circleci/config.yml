@@ -17,7 +17,7 @@ jobs: # a collection of steps
           command: 'sudo npm install -g markdown-link-check@3.7.2'
       - run:
           name: find
-          command: 'sudo find . -name \*.md -exec markdown-link-check {} -q -c config.json \; 2>error_log'
+          command: 'sudo find . -name \*.md -exec markdown-link-check {} -q -c link-checker-config.json \; 2>error_log'
       - run:
           name: cat
           command: cat error_log
