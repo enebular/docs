@@ -19,8 +19,8 @@ jobs: # a collection of steps
           name: find
           command: 'sudo find . -name \*.md -exec markdown-link-check {} -q -c config.json \; 2>error_log'
       - run:
-          name: ls
-          command: ls
+          name: cat
+          command: cat error_log
       - run:
           name: log check
           command: 'if [ -s ./error_log ]; then echo "Broken links have been found in the documents."; exit 1; fi'
