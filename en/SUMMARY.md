@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-10-24
+lastUpdated: 2018-11-02
 ---
 
 # Summary
@@ -86,10 +86,10 @@ lastUpdated: 2018-10-24
 ## Deploys
 
 - [Introduction](Deploy/index.md)
-- [Example: AWS IoT](Deploy/DeployFlow/AWSIoT/index.md)
-- [Example: Heroku](Deploy/DeployFlow/Heroku/index.md)
-- [Example: mbed Cloud](Deploy/DeployFlow/mbed/index.md)
-- [Example: AWS Lambda](Deploy/DeployFlow/Lambda/index.md)
+- [AWS IoT](Deploy/DeployFlow/AWSIoT/index.md)
+- [Heroku](Deploy/DeployFlow/Heroku/index.md)
+- [Pelion Device Management](Deploy/DeployFlow/mbed/index.md)
+- [AWS Lambda](Deploy/DeployFlow/Lambda/index.md)
 
 ## Devices
 

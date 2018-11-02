@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2017-10-24
+lastUpdated: 2018-11-02
 ---
 
 # Introduction
@@ -38,7 +38,7 @@ Details on each of these is shown below.
 
 Developed assets can be deployed to devices via third-party services. Currently the following services can be used.
 
-- [mbed Cloud](https://cloud.mbed.com/)
+- [Pelion Device Management](https://cloud.mbed.com/)
 - [AWS IoT](https://aws.amazon.com/iot/)
 - [AWS Lambda](https://aws.amazon.com/lambda/)
 - [Heroku](https://www.heroku.com/home)
@@ -52,8 +52,8 @@ Let's look at an example of an actual service.
 
 ![deploy diagram](./_asset/images/Introduction/enebular-developers-deploy.png)
 
-For cloud services that deploy to edge devices like AWS IoT and mbed Cloud, the edge device is the **device** and the cloud service is the **device master**.
+For cloud services that deploy to edge devices like AWS IoT and Pelion Device Management, the edge device is the **device** and the cloud service is the **device master**.
 
 If the execution environment exists in the cloud as with Heroku and AWS Lambda, then the cloud service takes on both the **device** and **device master** roles.
 
-The services to be used can be selected by the intended function of the assets being deployed. For example, AWS IoT and mbed Cloud can be used for deploying assets that require information from physical devices like sensors, and Heroku and AWS Lambda can be used and for deploying assets designed for other management processes.
+The services to be used can be selected by the intended function of the assets being deployed. For example, AWS IoT and Pelion Device Management can be used for deploying assets that require information from physical devices like sensors, and Heroku and AWS Lambda can be used and for deploying assets designed for other management processes.
