@@ -26,7 +26,7 @@ cd ports/awsiot/example
 ENEBULAR_EDITOR_URL=http://192.xxx.xx.xx:9017 npm start
 
 ```
-## Arm Pelion の場合
+##Pelion Device Management の場合
 ```
 cd ports/local
 
@@ -41,6 +41,6 @@ ENEBULAR_EDITOR_URL=http://192.xxx.xx.xx:9017 npm start
 `Remote` モードで ` enebular editor` からフローを開きます。
 
 
-AWS または Arm Pelion の connection を選択し、デバイスのフローを開いてください。
+AWS または Pelion Device Management の connection を選択し、デバイスのフローを開いてください。
 
 IPアドレスの入力が求められるので、デバイスの IPアドレス(`192.xxx.xx.xx`)を入力してください。

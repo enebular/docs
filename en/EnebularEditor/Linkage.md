@@ -27,7 +27,7 @@ ENEBULAR_EDITOR_URL=http://192.xxx.xx.xx:9017 npm start
 
 ```
 
-## Arm Pelion の場合
+## Pelion Device Management の場合
 
 ```
 cd ports/local
@@ -42,7 +42,7 @@ ENEBULAR_EDITOR_URL=http://192.xxx.xx.xx:9017 npm start
 
 From `enebular-editor` open a flow by the `Remote` mode.
 
-Select your AWS Connection to load the flow onto the device first.
+Select your AWS or Pelion Device Management Connection to load the flow onto the device first.
 
 When prompted to enter IP Address, input the device's IP Address i.e. `192.xxx.xx.xx`.
 

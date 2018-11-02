@@ -6,7 +6,7 @@ lastUpdated: 2018-10-31
 
 ## 概要
 
-enebular editor は ブラウザ上ではなくローカル環境でフローの編集とデプロイ（ `AWS IoT`, `Arm Pelion`, `AWS Lambda`, `Heroku`）のできるソフトウェアです。 
+enebular editor は ブラウザ上ではなくローカル環境でフローの編集とデプロイ（ `AWS IoT`, `Pelion Device Management`, `AWS Lambda`, `Heroku`）のできるソフトウェアです。 
 desktop editor は限定的な公開となっています。利用したい方は **support@enebular.com** までお問い合わせください。
 
 
@@ -23,7 +23,7 @@ enebular editor はクラウドではなくアプリケーションからフロ�
 
 enebular-runtime-agent v2.3.0以降の linux デバイス（Raspberry Pi など）のフローを編集する場合に使用します。
 Raspberry Pi のセンサー用ノードなど、デバイスでしか動かないノードを用いたフローを編集することができます。
-AWS IoT または Arm Pelion との接続が必要です。（Arm Pelion の場合 `enebular-runtime-agent-cloud-connector` を使用してください。）
+AWS IoT または Pelion Device Management との接続が必要です。（Pelion Device Management の場合 `enebular-runtime-agent-cloud-connector` を使用してください。）
 enebular editorは `enebular-runtime-agent`  のフローエディタをリモートで開きます。
 
 ## Requirements

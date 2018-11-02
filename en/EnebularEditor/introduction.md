@@ -6,7 +6,7 @@ lastUpdated: 2018-10-31
 
 ## Overview
 
-The enebular editor is a tool for your PC(Win/Mac) to edit and deploy flows to: `AWS IoT`, `Arm Pelion`, `AWS Lambda`, `Heroku`
+The enebular editor is a tool for your PC(Win/Mac) to edit and deploy flows to: `AWS IoT`, `Pelion Device Management`, `AWS Lambda`, `Heroku`
 Since it is restricted release, please contact **support@enebular.com** to use.
 
 ## Modes
@@ -22,8 +22,8 @@ enebular editor loads the flow editor from the app itself
 
 For editing flows on linux devices (i.e. Raspberry Pi) with enebular-runtime-agent v2.3.0 and above installed.
 Certain nodes such as Raspberry Pi sensor nodes only work on devices. Since Desktop mode does not support such nodes, Remote mode is required to correctly load such nodes.
-A valid AwS IoT / Arm Pelion connection is required
-For Arm Pelion, `enebular-runtime-agent-cloud-connector` is required
+A valid AwS IoT / Pelion Device Management connection is required
+For Pelion Device Management, `enebular-runtime-agent-cloud-connector` is required
 enebular editor loads the flow editor from `enebular-runtime-agent` remotely
 
 ## Requirements
