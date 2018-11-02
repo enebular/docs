@@ -30,3 +30,4 @@ workflows:
             branches:
               only:
                 - desktop-editor
+                - develop
