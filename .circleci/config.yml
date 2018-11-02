@@ -1,6 +1,6 @@
 version: 2 # use CircleCI 2.0
 jobs: # a collection of steps
-  build: # runs not using Workflows must have a `build` job as entry point
+  linkcheck: # runs not using Workflows must have a `build` job as entry point
     working_directory: ~/mern-starter # directory where steps will run
     docker: # run the steps with Docker
       - image: circleci/node:8.9.4 # ...with this image as the primary container; this is where all `steps` will run
@@ -21,3 +21,29 @@ jobs: # a collection of steps
       - run:
           name: log check
           command: 'if [ -s ./error_log ]; then echo "Broken links have been found in the documents."; exit 1; fi'
+    
+    deploy_netrify:
+        working_directory: ~/mern-starter # directory where steps will run
+    docker: # run the steps with Docker
+      - image: circleci/node:8.9.4 # ...with this image as the primary container; this is where all `steps` will run
+      - image: mongo:3.4.4 # and this image as the secondary service container
+    steps: # a collection of executable commands 
+      - checkout # special step to check out source code to working directory
+      - run:
+          name: buildhook
+          command: curl -X POST -d '' https://api.netlify.com/build_hooks/5bdbef9de39e7c1996e33b1a
+
+workflows:
+  version: 2
+  enebular-editor-testing-circleci:
+    jobs:
+      - linkcheck:
+          filters:
+          branches:
+            only: desktop-editor
+      - deploy_netrify:
+          requires:
+            - linkcheck
+          filters:
+          branches:
+            only: desktop-editor
