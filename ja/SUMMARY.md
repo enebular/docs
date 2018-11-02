@@ -112,11 +112,6 @@ lastUpdated: 2018-10-31
 
 - [Account Settings](Account/index.md)
 
-## enebular editor
-
-- [Introduction](EnebularEditor/introduction.md)
-- [Enebular Agent Editor Linkage](EnebularEditor/Linkage.md)
-
 ## Appendix
 
 - [Supported Environments](Other/Support.md)
