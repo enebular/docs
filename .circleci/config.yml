@@ -39,11 +39,13 @@ workflows:
     jobs:
       - linkcheck:
           filters:
-          branches:
-            only: desktop-editor
+            branches:
+              only:
+                - desktop-editor
       - deploy_netrify:
           requires:
             - linkcheck
           filters:
-          branches:
-            only: desktop-editor
+            branches:
+              only: 
+                - desktop-editor
