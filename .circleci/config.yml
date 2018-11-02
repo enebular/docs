@@ -22,8 +22,8 @@ jobs: # a collection of steps
           name: log check
           command: 'if [ -s ./error_log ]; then echo "Broken links have been found in the documents."; exit 1; fi'
     
-    deploy_netrify:
-        working_directory: ~/mern-starter # directory where steps will run
+  deploy_netrify:
+    working_directory: ~/mern-starter # directory where steps will run
     docker: # run the steps with Docker
       - image: circleci/node:8.9.4 # ...with this image as the primary container; this is where all `steps` will run
       - image: mongo:3.4.4 # and this image as the secondary service container
