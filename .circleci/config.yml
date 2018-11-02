@@ -1,6 +1,6 @@
 version: 2 # use CircleCI 2.0
 jobs: # a collection of steps
-  build: # runs not using Workflows must have a `build` job as entry point
+  linkcheck: # runs not using Workflows must have a `build` job as entry point
     working_directory: ~/mern-starter # directory where steps will run
     docker: # run the steps with Docker
       - image: circleci/node:8.9.4 # ...with this image as the primary container; this is where all `steps` will run
@@ -21,3 +21,12 @@ jobs: # a collection of steps
       - run:
           name: log check
           command: 'if [ -s ./error_log ]; then echo "Broken links have been found in the documents."; exit 1; fi'
+workflows:
+  version: 2
+  enebular-editor-testing-circleci:
+    jobs:
+      - linkcheck:
+          filters:
+            branches:
+              only:
+                - desktop-editor
