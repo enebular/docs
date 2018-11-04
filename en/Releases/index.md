@@ -1,35 +1,38 @@
 ---
-lastUpdated: 2018-09-07
+lastUpdated: 2018-10-22
 ---
 
 # enebular Release Notes {#enebular}
 
-## 2.4.4 (September 7th, 2018)
+## 2.5.2 (October 22th, 2018)
 
 ### New
 
-* An improvement has been done and now an user can rename InfoTypes
-* We have published the English version of "Use Cases" and "About enebular" pages
+- Forking an asset from Discover page now automatically opens the forked asset
+- Candidates for InfoType keys and values are now shown on a drop-down list as you type when configuring it for PubNub or Firebase data sources
+- InfoType name can be specified when uploading it
 
 ### Fixed
 
-* An incomplete feature "Ask about Enterprise Plan" has accidentally been released, and it has now been deleted
-* Fixed an issue where licenses cannot be reserved
-* Fixed an issue which prevented Dashboards and Graphics from being saved
-* Fixed an issue which caused InfoMotion-embedded pages to fail to show graphs when the browser which opens them is not logged into enebular
+- Fixed an issue on InfoMotion that caused error message when start date and end date are set to the same date.
+- InfoMotion Graph's slider showed start date and end date in 12 hour format without AM/PM notation. It has been fixed and hours are now shown in 24 hour format.
+- Fixed the bug which caused InfoMotion Graph Editor from scrolling.
 
 ### Changed
 
-N/A
+- enebular used to allow deletion of the connections which are associated to devices; however, we have reviced it to prevent deletion of such connections.
 
 ### Known Issues
 
 - Opening the flow editor from a web browser shows Japanese texts even if the browser is configured to show English
-- The graph does not appear on the shared page with InfoMotion embedded
-- On the shared page with InfoMotion embedded, the filter function can not be used
+- The shared page with InfoMotion embedded, the filter function can not be used
+
 
 ### Release History
 
+- [2.5.2](./enebular/2.5.2.md) (October 22th, 2018)
+- [2.5.1](./enebular/2.5.1.md) (October 12th, 2018)
+- [2.5.0](./enebular/2.5.0.md) (September 25th, 2018)
 - [2.4.4](./enebular/2.4.4.md) (September 7th, 2018)
 - [2.4.3](./enebular/2.4.3.md) (August 20th, 2018)
 - [2.4.2](./enebular/2.4.2.md) (August 10th, 2018)
@@ -53,7 +56,7 @@ N/A
 
 ### New
 
-- Added a one-step install script for quick and easy setup of enebular-agent
+- Added a one-step [install script](https://github.com/enebular/enebular-runtime-agent/blob/master/tools/install/README.md) for quick and easy setup of enebular-agent
 - Added a tool to support simple AWS IoT Thing creation and setup
 - Added ability to do simple startup registration to have enebular-agent start at boot-time on Debian (systemd) based systems
 - Added ability to list all supported configuration options

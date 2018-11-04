@@ -1,11 +1,14 @@
 ---
-lastUpdated: 2018-09-07
+lastUpdated: 2018-11-02
 ---
 
 # Summary
 
 - [Release Notes](Releases/index.md)
   - [enebular](Releases/index.md#enebular)
+    - [2.5.2](Releases/enebular/2.5.2.md)
+    - [2.5.1](Releases/enebular/2.5.1.md)
+    - [2.5.0](Releases/enebular/2.5.0.md)
     - [2.4.4](Releases/enebular/2.4.4.md)
     - [2.4.3](Releases/enebular/2.4.3.md)
     - [2.4.2](Releases/enebular/2.4.2.md)
@@ -40,12 +43,12 @@ lastUpdated: 2018-09-07
 - [About Projects](Project/index.md)
 - [Project Settings](Project/Settings.md)
 
-## Flows
+## Flow Deploys
 
-- [Introduction](Flow/Introduction.md)
-- [Creating Flows](Flow/CreateFlow.md)
-- [Example: Milkcocoa](Flow/FlowExampleMilkcocoa.md)
-- [Publishing Flows](Flow/PublishFlow.md)
+- [Introduction](FlowDeploys/Introduction.md)
+- [Creating Flows](FlowDeploys/CreateFlow.md)
+- [Example: Milkcocoa](FlowDeploys/FlowExampleMilkcocoa.md)
+- [Publishing Flows](FlowDeploys/PublishFlow.md)
 
 ## InfoMotion
 
@@ -71,18 +74,22 @@ lastUpdated: 2018-09-07
     - [Create a DataSource](InfoMotion/DataSource/Pubnub/CreateDataSource.md)
     - [Create Flow](InfoMotion/DataSource/Pubnub/CreateFlow.md)
   - [API Gateway]()
-    - [Set up & Create Lambda Function](InfoMotion/DataSource/ApiGateway/CreateLambdaFunction.md)
-    - [Create a DataSource](InfoMotion/DataSource/ApiGateway/CreateDataSource.md)
+    - [Set up & Create Lambda Function](InfoMotion/DataSource/APIGateway/CreateLambdaFunction.md)
+    - [Create a DataSource](InfoMotion/DataSource/APIGateway/CreateDataSource.md)
 - [Dashboards](InfoMotion/CreateInfoMotion.md)
 - [Sharing an InfoMotion](InfoMotion/ShareInfoMotion.md)
+
+## File Deploys
+
+- [Introduction](FileDeploys/index.md)
 
 ## Deploys
 
 - [Introduction](Deploy/index.md)
-- [Example: AWS IoT](Deploy/DeployFlow/AWSIoT/index.md)
-- [Example: Heroku](Deploy/DeployFlow/Heroku/index.md)
-- [Example: mbed Cloud](Deploy/DeployFlow/mbed/index.md)
-- [Example: AWS Lambda](Deploy/DeployFlow/Lambda/index.md)
+- [AWS IoT](Deploy/DeployFlow/AWSIoT/index.md)
+- [Heroku](Deploy/DeployFlow/Heroku/index.md)
+- [Pelion Device Management](Deploy/DeployFlow/mbed/index.md)
+- [AWS Lambda](Deploy/DeployFlow/Lambda/index.md)
 
 ## Devices
 
@@ -90,9 +97,11 @@ lastUpdated: 2018-09-07
   - [Logs](Device/Logs.md)
 - [License Manager](Device/LicenseManager.md)
 
-## Access
+## Config
 
-- [Access Control](Access/index.md)
+- [Connections](Config/Connections.md)
+- [Access](Config/Access.md)
+- [Billing Information](Config/BillingInformation.md)
 
 ## Discover
 
@@ -102,10 +111,6 @@ lastUpdated: 2018-09-07
 ## Account
 
 - [Account Settings](Account/index.md)
-
-## Billing
-
-- [Billing Information](Billing/Information.md)
 
 ## Appendix
 

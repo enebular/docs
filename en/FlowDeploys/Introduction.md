@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-01-30
+lastUpdated: 2018-10-24
 ---
 
 # Flows
@@ -50,7 +50,7 @@ You can edit flow access permissions here.
 
 ![](https://i.gyazo.com/6b4babe394ae110c62ba181718849c0b.png)
 
-Please see [Access Control](../Access/index.md) for more details.
+Please see [Access Control](../Config/Access.md) for more details.
 
 ## Settings
 
