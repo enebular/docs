@@ -1,0 +1,51 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/docs
+    docker:
+      - image: circleci/node:8.9.4
+    steps:
+      - checkout
+      - run:
+          name: update npm
+          command: |
+            npm install -g npm@latest
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: npm modules install
+          command: |
+            npm install
+      - run:
+          name: gitbook install
+          command: |
+            npm run postinstall
+      - run:
+          name: gitbook build
+          command: |
+            npm run build
+      - deploy:
+          name: deployment task
+          command: |
+            node_modules/.bin/netlify deploy --draft -t "$NETLIFY_ACCESS_TOKEN"
+
+  test:
+    working_directory: ~/docs
+    docker:
+      - image: circleci/node:8.9.4
+    steps:
+      - checkout
+      - run:
+          name: Testing Application
+          command: |
+            npm run test
+
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: 
+                - circle-ci2.0-test
