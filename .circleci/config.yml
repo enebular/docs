@@ -46,7 +46,7 @@ jobs: # a collection of steps
           command: |
             sudo npm run build
       - deploy:
-          name: deployment task
+          name: netlify deployment task
           command: |
             node_modules/.bin/netlify deploy --message "netlify deploy start" --auth "$NETLIFY_ACCESS_TOKEN" --site "$NETLIFY_SITE_ID"
 
@@ -59,7 +59,7 @@ jobs: # a collection of steps
       - run:
           name: Testing Application
           command: |
-            npm run test
+            sudo npm run test
 
 workflows:
   version: 2
@@ -70,6 +70,11 @@ workflows:
             branches:
               only: 
                 - circle-ci2.0-test
+                - release-note
+                - develop
+                - staging
+                - master
+
   enebular-editor-testing-circleci:
     jobs:
       - linkcheck:
