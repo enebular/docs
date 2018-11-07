@@ -76,5 +76,4 @@ workflows:
   build_and_deploy:
     jobs:
       - linkcheck
-      - test
       - build
