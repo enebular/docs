@@ -57,6 +57,12 @@ jobs: # a collection of steps
     steps:
       - checkout
       - run:
+          name: update npm
+          command: |
+            sudo npm install -g npm@latest
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
           name: Testing Application
           command: |
             sudo npm run test
@@ -66,4 +72,5 @@ workflows:
   build_and_deploy:
     jobs:
       - linkcheck:
+      - test:
       - build:
