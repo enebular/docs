@@ -63,6 +63,10 @@ jobs: # a collection of steps
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
+          name: sudo npm modules install
+          command: |
+            sudo npm install
+      - run:
           name: Testing Application
           command: |
             sudo npm run test
