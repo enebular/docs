@@ -1,26 +1,27 @@
 ---
-lastUpdated: 2018-10-22
+lastUpdated: 2018-11-09
 ---
 
 # enebular Release Notes {#enebular}
 
-## 2.5.2 (October 22th, 2018)
+## 2.5.3 (November 9th, 2018)
 
 ### New
 
-- Discover画面からアセットをフォークすると新たに複製されたアセットの画面に自動的に遷移するようになりました
-- DataSourceがPubNubもしくはFirebaseの場合にInfoMotionのダッシュボードでInfoTypeキーと値の候補がドロップダウンリストで表示されるようになりました
-- InfoType登録時にInfoType名を設定出来るようになりました
+- InfoMotionのサイドバーで「random adapter」を Data Source として選択できるようになりました
 
 ### Fixed
 
-- InfoMotionで、開始日と終了日を同じ日付にするとエラーが表示される不具合に対応しました
-- InfoMotion ダッシュボードに表示されるスライダーの時刻が、AM/PMのない12時間表記でしたが、24時間表記で確認できるようにしました
-- InfoMotionのグラフエディタがスクロールできない不具合に対応しました
+- InfoMotion ダッシュボードのカレンダーをダブルクリック等で操作するとカレンダー部分が空白となり使用できなくなる不具合を修正しました
+- FlowをHerokuにデプロイする際、デプロイエラーが出ていた問題を修正しました
 
 ### Changed
 
-- Licenseが登録されたデバイスに紐付いているConnectionを削除出来る仕様でしたが、Licenseに紐付いているとConnectionを削除出来ない仕様に変更しました
+- InfoMotionダッシュボードの フィルター機能を自動化し、それによって不要となった「Filter」ボタンを削除しました。ユーザーはグラフにある「Filter」ボタンを操作するだけでグラフの表示範囲を制御できます
+- InfoMotionのサイドバーで Data Source を選択するとサンプルのデータソースが1レコード表示されるように変更しました
+- InfoMotionのUIをより直感的になるよう修正しました
+ - 同じグラフを一つのInfoMotionのダッシュボードに2回追加できないように修正しました
+ - InfoMotionサイドバーの「Create Graph」「Update Graph」を「Save」に変更しました
 
 ### Known Issues
 
@@ -29,7 +30,8 @@ lastUpdated: 2018-10-22
 
 ### Release History
 
-- [2.5.2](./enebular/2.5.1.md) (October 22th, 2018)
+- [2.5.3](./enebular/2.5.3.md) (November 9th, 2018)
+- [2.5.2](./enebular/2.5.2.md) (October 22th, 2018)
 - [2.5.1](./enebular/2.5.1.md) (October 12th, 2018)
 - [2.5.0](./enebular/2.5.0.md) (September 25th, 2018)
 - [2.4.4](./enebular/2.4.4.md) (September 7th, 2018)
