@@ -1,35 +1,36 @@
 ---
-lastUpdated: 2018-10-22
+lastUpdated: 2018-11-09
 ---
 
 # enebular Release Notes {#enebular}
 
-## 2.5.2 (October 22th, 2018)
+## 2.5.3 (November 9th, 2018)
 
 ### New
 
-- Forking an asset from Discover page now automatically opens the forked asset
-- Candidates for InfoType keys and values are now shown on a drop-down list as you type when configuring it for PubNub or Firebase data sources
-- InfoType name can be specified when uploading it
+- A Data Source "random adapter" is added as an selection in InfoMotion sidebar.
 
 ### Fixed
 
-- Fixed an issue on InfoMotion that caused error message when start date and end date are set to the same date.
-- InfoMotion Graph's slider showed start date and end date in 12 hour format without AM/PM notation. It has been fixed and hours are now shown in 24 hour format.
-- Fixed the bug which caused InfoMotion Graph Editor from scrolling.
+- Fixed the issue that caused the date picker on InfoMotion dashboard to become blank by double clicking it causing it unable to use as the result.
+- Fixed the issue that caused the deploy-to-heroku attempt to fail because [the default version of Node.js on Heroku was updated to 10](https://devcenter.heroku.com/changelog-items/1508) by specifying the Node.js version to 8.12 when enebular deploys a flow to Heroku.
 
 ### Changed
 
-- enebular used to allow deletion of the connections which are associated to devices; however, we have reviced it to prevent deletion of such connections.
+- The filter function of the InfoMotion dashboard has been automated, and we have eliminated the "Filter" button from the InfoMotion dashboard. The users now can control the scope of each graph solely by manipulating on the filter on the graph itself.
+- A modification was made so that 1 sample data source would appear in InfoMotion Sidebar if a Data Source was selected.
+- Corrections were made to some UI expressions to be more intuitive.
+ - InfoMotion dashboard has been modified to avoid attempting to add the same graph two.
+ - On InfoMotion Sidebar, "Create Graph" and "Update Graph" buttons are renamed to "Save".
 
 ### Known Issues
 
-- Opening the flow editor from a web browser shows Japanese texts even if the browser is configured to show English
-- The shared page with InfoMotion embedded, the filter function can not be used
-
+- Opening the flow editor from a web browser shows Japanese texts even if the browser is configured to show English.
+- The shared page with InfoMotion embedded, the filter function can not be used.
 
 ### Release History
 
+- [2.5.3](./enebular/2.5.3.md) (November 9th, 2018)
 - [2.5.2](./enebular/2.5.2.md) (October 22th, 2018)
 - [2.5.1](./enebular/2.5.1.md) (October 12th, 2018)
 - [2.5.0](./enebular/2.5.0.md) (September 25th, 2018)
