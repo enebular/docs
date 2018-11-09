@@ -13,7 +13,7 @@ lastUpdated: 2018-11-09
 ### Fixed
 
 - InfoMotion ダッシュボードのカレンダーをダブルクリック等で操作するとカレンダー部分が空白となり使用できなくなる不具合を修正しました
-- FlowをHerokuにデプロイする際、デプロイエラーが出ていた問題を修正しました
+- [HerokuにおいてNode.jsのデフォルトバージョンが10となったため](https://devcenter.heroku.com/changelog-items/1508)、FlowのHerokuへのデプロイがエラーとなる問題を修正しました。enebularからHerokuへのフローデプロイ時には、Node.jsのバージョンは8.12を使用するように指定しています
 
 ### Changed
 
