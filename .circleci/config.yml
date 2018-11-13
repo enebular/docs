@@ -21,13 +21,59 @@ jobs: # a collection of steps
       - run:
           name: log check
           command: 'if [ -s ./error_log ]; then echo "Broken links have been found in the documents."; exit 1; fi'
+  build:
+    working_directory: ~/docs
+    docker:
+      - image: circleci/node:8.9.4
+    steps:
+      - checkout
+      - run:
+          name: update npm
+          command: |
+            sudo npm install -g npm@latest
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: sudo npm modules install
+          command: |
+            sudo npm install
+      - run:
+          name: gitbook install
+          command: |
+            sudo npm run postinstall
+      - run:
+          name: gitbook build
+          command: |
+            sudo npm run build
+      - deploy:
+          name: netlify deployment task
+          command: |
+            node_modules/.bin/netlify deploy --message "netlify deploy start" --auth "$NETLIFY_ACCESS_TOKEN" --site "$NETLIFY_SITE_ID"
+
+  test:
+    working_directory: ~/docs
+    docker:
+      - image: circleci/node:8.9.4
+    steps:
+      - checkout
+      - run:
+          name: update npm
+          command: |
+            sudo npm install -g npm@latest
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: sudo npm modules install
+          command: |
+            sudo npm install
+      - run:
+          name: Testing Application
+          command: |
+            sudo npm run test
+
 workflows:
   version: 2
-  enebular-editor-testing-circleci:
+  build_and_deploy:
     jobs:
-      - linkcheck:
-          filters:
-            branches:
-              only:
-                - desktop-editor
-                - develop
+      - linkcheck
+      - build
