@@ -1,8 +1,0 @@
-{
-    "ignorePatterns": [
-        {
-            "pattern": "^http://localhost:3000"
-        }
-    ],
-    "baseUrl": "https://docs.enebular.com/ja/"
-}
