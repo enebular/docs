@@ -57,8 +57,8 @@ Raspberry PI3 では以下の OS をサポート対象とします。
 
 |                    | [Node.js](https://nodejs.org/ja/download/releases/) | [npm](https://github.com/npm/npm/releases) | [Node-RED](https://github.com/node-red/node-red/releases) |
 | ------------------ | --------------------------------------------------- | ------------------------------------------ | --------------------------------------------------------- |
-| streach base (9.0) | 8.9.0                                               | 5.5.1                                      | 0.17.5                                                    |
-| jessie base (8.0)  | 8.9.0                                               | 5.5.1                                      | 0.17.5                                                    |
+| streach base (9.0) | 9.2.1                                               | 5.5.1                                      | 0.18.6                                                    |
+| jessie base (8.0)  | 9.2.1                                               | 5.5.1                                      | 0.18.6                                                    |
 
 ### Linux(virtualbox)
 
@@ -71,8 +71,8 @@ Linux では以下の OS をサポート対象とします。
 
 |                 | [Node.js](https://nodejs.org/ja/download/releases/) | [npm](https://github.com/npm/npm/releases) | [Node-RED](https://github.com/node-red/node-red/releases) |
 | --------------- | --------------------------------------------------- | ------------------------------------------ | --------------------------------------------------------- |
-| Linux 9 Stretch | 9.2.1                                               | 5.6.0                                      | 0.17.5                                                    |
-| Linux 8 Jessie  | 9.2.0                                               | 5.5.1                                      | 0.17.5                                                    |
+| Linux 9 Stretch | 9.2.1                                               | 5.5.1                                      | 0.18.6                                                    |
+| Linux 8 Jessie  | 9.2.1                                               | 5.5.1                                      | 0.18.6                                                    |
 
 ## enebular-edge-agent {#enebular-edge-agent}
 
