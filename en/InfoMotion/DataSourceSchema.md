@@ -9,7 +9,7 @@ The `timestamp` key must have a Unix Timestamp value.
 InfoMotion uses the `timestamp` for daterange picker, timeline and querying. 
 The `value` object supplies the InfoType with data to visualize. 
 
-##Sample Data 
+## Sample Data 
 
 ```javascript
 {
@@ -20,7 +20,7 @@ The `value` object supplies the InfoType with data to visualize.
 } 
 ``` 
 
-##JSON Data Schema
+## JSON Data Schema
 
 ```json
  {

@@ -9,7 +9,7 @@ lastUpdated: 2018-11-16
 InfoMotion は `timestamp` を daterange picker と timeline、query に使用します。 
 `value` にはInfoType のビジュアライズに必要なデータを入れます。 
 
-##Sample Data 
+## Sample Data 
 
 ```javascript
 {
@@ -20,7 +20,7 @@ InfoMotion は `timestamp` を daterange picker と timeline、query に使用�
 } 
 ``` 
 
-##JSON Data Schema
+## JSON Data Schema
 
 ```json
  {
