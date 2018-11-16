@@ -34,7 +34,6 @@ The `value` object supplies the InfoType with data to visualize.
        "$id": "#/properties/timestamp",
        "type": "integer",
        "title": "The Timestamp Schema",
-       "default": 0,
        "examples": [
          1542352981750
        ]
