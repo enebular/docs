@@ -2,20 +2,19 @@
 lastUpdated: 2018-11-19
 ---
 
-##Random Data Generator 
+# Random Data Generator 
 
-Random datasource allows users to test infotypes with random data generated on the client side. This way users can display infotypes in the dashboard without creating a datasource. 
+Random Datasourceでは、クライアント側で生成されたランダムデータを使って InfoType のテストをすることが出来ます。  
+データを作成をせずにダッシュボード上で InfoType の確認ができるため便利です。
 
-###Set-up
+## Set-up
 
-Random adapter requires no set up. 
-When creating a graph in the infomotion dashboard, 
-random adapter is added by default as a datasource option 
-under the name random. 
+Random adapter はセットアップなしで利用できます。  
+InfoMotionのダッシュボードでグラフの作成時に、Data Sourceのプルダウンに `random` という項目があるので選択します。
 
 ![Select random data source](./../../../../img/InfoMotion/DataSource/Random/SelectRandomDataSource.png)
 
-###Random Sample Data 
+## Random Sample Data 
 
 ```javascript
 {
@@ -28,7 +27,7 @@ under the name random.
 }
 ```
 
-###Random Data Schema
+## Random Data Schema
 
 ```json
 {
