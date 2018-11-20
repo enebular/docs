@@ -60,7 +60,7 @@ For Linux, the following operating systems are supported.
 
 ### Recommended Software
 
-enebular-agent require following software and theirs version.
+enebular-agent requires the following software.
 
 | Software | version |
 | --- | --- |
