@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-11-15
+lastUpdated: 2018-10-25
 ---
 
 # 動作環境
@@ -41,32 +41,38 @@ enebular-agent は、Linux 上で動作します。
 - RAM
 - Flash Memory
 
-### オペレーティングシステム (Operating System)
+## オペレーティングシステム (Operating System)
 
 enebular-agent は、[Debian GNU/Linux](https://www.debian.org/) 上で動作します。
 推奨ハードウェアである Raspberry PI では、Debian ベースの [Raspbian OS](https://www.raspbian.org/) が動作するため、これを利用します。
 
-#### 対応OS
+### Raspberry PI3
 
 Raspberry PI3 では以下の OS をサポート対象とします。
 
 - [Raspbian Stretch base](http://archive.raspbian.org/raspbian/dists/stretch/) (9.0)
 - [Raspbian Jessie base](http://archive.raspbian.org/raspbian/dists/jessie/) (8.0)
 
-Linux(virtualbox) では以下の OS をサポート対象とします。
+また、それぞれのミドルウェアのバージョンは以下になります。
+
+|                    | [Node.js](https://nodejs.org/ja/download/releases/) | [npm](https://github.com/npm/npm/releases) | [Node-RED](https://github.com/node-red/node-red/releases) |
+| ------------------ | --------------------------------------------------- | ------------------------------------------ | --------------------------------------------------------- |
+| streach base (9.0) | 8.9.0                                               | 5.5.1                                      | 0.17.5                                                    |
+| jessie base (8.0)  | 8.9.0                                               | 5.5.1                                      | 0.17.5                                                    |
+
+### Linux(virtualbox)
+
+Linux では以下の OS をサポート対象とします。
 
 - [Debian GNU/Linux 9 Stretch](https://www.debian.org/releases/stretch/)
 - [Debian GNU/Linux 8 Jessie](https://www.debian.org/releases/jessie/)
 
-### 推奨ソフトウェア (Recommended Software)
+また、それぞれのミドルウェアのバージョンは以下になります。
 
-enebular-agentの動作に必要なソフトウェアのバージョンは以下になります。
-
-| ソフトウェア名 | バージョン |
-| --- | --- |
-| [Node.js](https://nodejs.org/ja/download/releases/) | 9.2.1 |
-| [npm](https://github.com/npm/npm/releases)  | 5.5.1 |
-| [Node-RED](https://github.com/node-red/node-red/releases) | 0.18.6 |
+|                 | [Node.js](https://nodejs.org/ja/download/releases/) | [npm](https://github.com/npm/npm/releases) | [Node-RED](https://github.com/node-red/node-red/releases) |
+| --------------- | --------------------------------------------------- | ------------------------------------------ | --------------------------------------------------------- |
+| Linux 9 Stretch | 9.2.1                                               | 5.6.0                                      | 0.17.5                                                    |
+| Linux 8 Jessie  | 9.2.0                                               | 5.5.1                                      | 0.17.5                                                    |
 
 ## enebular-edge-agent {#enebular-edge-agent}
 

@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-11-15
+lastUpdated: 2018-04-12
 ---
 
 # Operating Environments
@@ -46,27 +46,33 @@ The following are examples of recommended hardware for inexpensive gateway envir
 The enebular-agent runs on [Debian GNU/Linux](https://www.debian.org/).
 For the recommended Raspberry PI hardware, use the Debian based [Raspbian OS](https://www.raspbian.org/).
 
-#### Supported OS
+#### Raspberry PI3
 
 The following operating systems are supported for use with the Raspberry PI3.
 
 - [Raspbian Stretch base](http://archive.raspbian.org/raspbian/dists/stretch/) (9.0)
 - [Raspbian Jessie base](http://archive.raspbian.org/raspbian/dists/jessie/) (8.0)
 
+The middleware versions for each are as follows.
+
+|                    | [Node.js](https://nodejs.org/en/download/releases/) | [npm](https://github.com/npm/npm/releases) | [Node-RED](https://github.com/node-red/node-red/releases) |
+| ------------------ | --------------------------------------------------- | ------------------------------------------ | --------------------------------------------------------- |
+| streach base (9.0) | 8.9.0                                               | 5.5.1                                      | 0.17.5                                                    |
+| jessie base (8.0)  | 8.9.0                                               | 5.5.1                                      | 0.17.5                                                    |
+
+#### Linux (VirtualBox)
+
 For Linux, the following operating systems are supported.
 
 - [Debian GNU/Linux 9 Stretch](https://www.debian.org/releases/stretch/)
 - [Debian GNU/Linux 8 Jessie](https://www.debian.org/releases/jessie/)
 
-### Recommended Software
+The middleware versions for each are as follows.
 
-enebular-agent requires the following software.
-
-| Software | version |
-| --- | --- |
-| [Node.js](https://nodejs.org/ja/download/releases/) | 9.2.1 |
-| [npm](https://github.com/npm/npm/releases)  | 5.5.1 |
-| [Node-RED](https://github.com/node-red/node-red/releases) | 0.18.6 |
+|                 | [Node.js](https://nodejs.org/en/download/releases/) | [npm](https://github.com/npm/npm/releases) | [Node-RED](https://github.com/node-red/node-red/releases) |
+| --------------- | --------------------------------------------------- | ------------------------------------------ | --------------------------------------------------------- |
+| Linux 9 Stretch | 9.2.1                                               | 5.5.1                                      | 0.18.6                                                    |
+| Linux 8 Jessie  | 9.2.1                                               | 5.5.1                                      | 0.18.6                                                    |
 
 ## enebular-edge-agent {#enebular-edge-agent}
 
