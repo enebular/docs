@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-04-12
+lastUpdated: 2018-11-21
 ---
 
 # Operating Environments
@@ -57,8 +57,8 @@ The middleware versions for each are as follows.
 
 |                    | [Node.js](https://nodejs.org/en/download/releases/) | [npm](https://github.com/npm/npm/releases) | [Node-RED](https://github.com/node-red/node-red/releases) |
 | ------------------ | --------------------------------------------------- | ------------------------------------------ | --------------------------------------------------------- |
-| streach base (9.0) | 8.9.0                                               | 5.5.1                                      | 0.17.5                                                    |
-| jessie base (8.0)  | 8.9.0                                               | 5.5.1                                      | 0.17.5                                                    |
+| streach base (9.0) | 9.2.1                                               | 5.5.1                                      | 0.18.6                                                    |
+| jessie base (8.0)  | 9.2.1                                               | 5.5.1                                      | 0.18.6                                                    |
 
 #### Linux (VirtualBox)
 

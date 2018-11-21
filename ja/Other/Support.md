@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-10-25
+lastUpdated: 2018-11-21
 ---
 
 # 動作環境
@@ -57,8 +57,8 @@ Raspberry PI3 では以下の OS をサポート対象とします。
 
 |                    | [Node.js](https://nodejs.org/ja/download/releases/) | [npm](https://github.com/npm/npm/releases) | [Node-RED](https://github.com/node-red/node-red/releases) |
 | ------------------ | --------------------------------------------------- | ------------------------------------------ | --------------------------------------------------------- |
-| streach base (9.0) | 8.9.0                                               | 5.5.1                                      | 0.17.5                                                    |
-| jessie base (8.0)  | 8.9.0                                               | 5.5.1                                      | 0.17.5                                                    |
+| streach base (9.0) | 9.2.1                                               | 5.5.1                                      | 0.18.6                                                    |
+| jessie base (8.0)  | 9.2.1                                               | 5.5.1                                      | 0.18.6                                                    |
 
 #### Linux(virtualbox)
 
