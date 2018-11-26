@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-11-02
+lastUpdated: 2017-01-29
 ---
 
 # Introduction
@@ -22,7 +22,7 @@ The primary way of using enebular is likely to be along the lines of **developin
 
 The currently available assets are as follows (there are also other assets, like machine learning models, planned to be supported).
 
-- [Flows](FlowDeploys/Introduction.md): These are data flows created with Node-RED
+- [Flows](Flow/Introduction.md): These are data flows created with Node-RED
 - [InfoMotion](InfoMotion/Introduction.md): These are dashboards for doing graph visualization and controlling devices.
 - [InfoType](InfoMotion/InfoTypeIntroduction.md): Graphs and controller types used with InfoMotion.
 
@@ -38,7 +38,7 @@ Details on each of these is shown below.
 
 Developed assets can be deployed to devices via third-party services. Currently the following services can be used.
 
-- [Pelion Device Management](https://cloud.mbed.com/)
+- [mbed Cloud](https://cloud.mbed.com/)
 - [AWS IoT](https://aws.amazon.com/iot/)
 - [AWS Lambda](https://aws.amazon.com/lambda/)
 - [Heroku](https://www.heroku.com/home)
@@ -52,8 +52,8 @@ Let's look at an example of an actual service.
 
 ![deploy diagram](./_asset/images/Introduction/enebular-developers-deploy.png)
 
-For cloud services that deploy to edge devices like AWS IoT and Pelion Device Management, the edge device is the **device** and the cloud service is the **device master**.
+For cloud services that deploy to edge devices like AWS IoT and mbed Cloud, the edge device is the **device** and the cloud service is the **device master**.
 
 If the execution environment exists in the cloud as with Heroku and AWS Lambda, then the cloud service takes on both the **device** and **device master** roles.
 
-The services to be used can be selected by the intended function of the assets being deployed. For example, AWS IoT and Pelion Device Management can be used for deploying assets that require information from physical devices like sensors, and Heroku and AWS Lambda can be used and for deploying assets designed for other management processes.
+The services to be used can be selected by the intended function of the assets being deployed. For example, AWS IoT and mbed Cloud can be used for deploying assets that require information from physical devices like sensors, and Heroku and AWS Lambda can be used and for deploying assets designed for other management processes.

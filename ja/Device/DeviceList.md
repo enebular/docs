@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-11-02
+lastUpdated: 2018-05-22
 ---
 
 # Device List
@@ -19,7 +19,7 @@ Device Listでは[License Manager](./LicenseManager.md)でライセンスを割�
 登録済みのコネクションを選択します。
 
 コネクションが登録済みでない場合、 New を押下してコネクションを作成してください。
-コネクションの作成方法については、作成したいコネクションにあわせて [Example: AWS IoT](../Deploy/DeployFlow/AWSIoT/index.md) または [Example: Pelion Device Management](../Deploy/DeployFlow/mbed/index.md) を参照してください。
+コネクションの作成方法については、作成したいコネクションにあわせて [Example: AWS IoT](../Deploy/DeployFlow/AWSIoT/index.md) または [Example: mbed Cloud](../Deploy/DeployFlow/mbed/index.md) を参照してください。
 
 ## Device List
 

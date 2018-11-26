@@ -22,7 +22,7 @@ pubnub 用の設定画面が開きます。
 
 `Publish key`, `Subscribe key`  は pubnub アプリの keys から確認できます。
 
-![Setup-keys](./../../../../img/InfoMotion/DataSource/Pubnub/Setup-Keys.png)
+![Setup-keys](./../../../../img/InfoMotion/DataSource/Pubnub/Setup-keys.png)
 
 `channel` にはフローで設定したもの、あるいはこれから作成する channel を入力します。
 
