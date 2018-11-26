@@ -1,11 +1,12 @@
 ---
-lastUpdated: 2018-11-09
+lastUpdated: 2018-11-26
 ---
 
 # Summary
 
 - [Release Notes](Releases/index.md)
   - [enebular](Releases/index.md#enebular)
+    - [2.6.0](Releases/enebular/2.6.0.md)
     - [2.5.3](Releases/enebular/2.5.3.md)
     - [2.5.2](Releases/enebular/2.5.2.md)
     - [2.5.1](Releases/enebular/2.5.1.md)
@@ -25,6 +26,7 @@ lastUpdated: 2018-11-09
     - [2.0.1](Releases/enebular/2.0.1.md)
     - [2.0.0](Releases/enebular/2.0.0.md)
   - [enebular agent](Releases/index.md#enebular-agent)
+    - [2.3.0](Releases/enebular-agent/2.3.0.md)
     - [2.2.0](Releases/enebular-agent/2.2.0.md)
     - [2.1.0](Releases/enebular-agent/2.1.0.md)
     - [2.0.0](Releases/enebular-agent/2.0.0.md)
