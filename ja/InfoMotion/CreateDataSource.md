@@ -21,4 +21,4 @@ DataSource には以下が利用可能です。詳細は各ページを参照し
 - [Milkcocoa](./DataSource/Milkcocoa/CreateDataSource.md)
 - [Pubnub](./DataSource/Pubnub/CreateDataSource.md)
 - [Firebase](./DataSource/Firebase/CreateDataSource.md)
-- [API Gateway](./DataSource/ApiGateway/CreateDataSource.md)
+- [API Gateway](./DataSource/APIGateway/CreateDataSource.md)
