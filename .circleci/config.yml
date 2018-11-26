@@ -45,10 +45,10 @@ jobs: # a collection of steps
           name: gitbook build
           command: |
             sudo npm run build
-      - deploy:
-          name: netlify deployment task
-          command: |
-            node_modules/.bin/netlify deploy --message "netlify deploy start" --auth "$NETLIFY_ACCESS_TOKEN" --site "$NETLIFY_SITE_ID"
+      # - deploy:
+      #     name: netlify deployment task
+      #     command: |
+      #       node_modules/.bin/netlify deploy --message "netlify deploy start" --auth "$NETLIFY_ACCESS_TOKEN" --site "$NETLIFY_SITE_ID"
 
   test:
     working_directory: ~/docs
