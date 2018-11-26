@@ -20,7 +20,7 @@ Leave count to 100 for now then click save to continue.
 
 `Publish key`, `Subscribe key`  are checked pubnub app's keys.
 
-![Setup-keys](./../../../../img/InfoMotion/DataSource/Pubnub/Setup-Keys.png)
+![Setup-keys](./../../../../img/InfoMotion/DataSource/Pubnub/Setup-keys.png)
 
 `channel` is you seeting in the flow editor.
 

@@ -24,7 +24,7 @@ You should see a new DataSource created.
 ## Endpoint
 
 Endpoint's format is `https://[id].execute-api.ap-northeast-1.amazonaws.com/[stage]/[method]` 
-To take an example of  [Setup & Create Lambda Function](./CreateLambdaFunction.md). Endpoint is `https://*********.execute-api.ap-northeast-1.amazonaws.com/teststage/test` .
+To take an example of  [Setup & Create Lambda Function](./createLambdaFunction.md). Endpoint is `https://*********.execute-api.ap-northeast-1.amazonaws.com/teststage/test` .
 
 See `Stage` for checking `id` and `stage`.
 
