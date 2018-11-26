@@ -2,6 +2,9 @@
     "ignorePatterns": [
         {
             "pattern": "^http://localhost:3000"
+        },
+        {
+            "pattern": "^https://download.enebular.com/enebular-editor/"
         }
     ]
 }

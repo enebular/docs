@@ -22,7 +22,7 @@ lastUpdated: 2018-08-01
 
 プロジェクト内で管理するコンテンツです。
 
-- [Flow](../Flow/Introduction.md): Node-RED で作成したデータフロー
+- [FlowDeploys](../FlowDeploys/Introduction.md): Node-RED で作成したデータフロー
 - [InfoMotion](../InfoMotion/Introduction.md): データの可視化を行うグラフダッシュボード
 - [InfoType](../InfoMotion/InfoTypeIntroduction.md): InfoMotion で利用するグラフのタイプ
 
