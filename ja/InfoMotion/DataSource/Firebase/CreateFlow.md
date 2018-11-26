@@ -7,17 +7,17 @@ lastUpdated: 2018-08-09
 Firebase の準備ができたのでデータをプッシュするフローを作成します。
 enebular のプロジェクトの右下の +ボタンをクリックし、新しいフローを作成します。
 
-![CreateFlow-flowList](./../../../../img/InfoMotion/DataSource/firebase/CreateFlow-flowList.png)
+![CreateFlow-flowList](./../../../../img/InfoMotion/DataSource/Firebase/CreateFlow-flowList.png)
 
 
 任意の名前を付けて [Continue] をクリックします。
 
-![CreateFlow-createFlow](./../../../../img/InfoMotion/DataSource/firebase/CreateFlow-createFlow.png)
+![CreateFlow-createFlow](./../../../../img/InfoMotion/DataSource/Firebase/CreateFlow-createFlow.png)
 
 
 [Edit Flow] をクリックしてフローエディターを開きます。
 
-![CreateFlow-editFlow](./../../../../img/InfoMotion/DataSource/firebase/CreateFlow-editFlow.png)
+![CreateFlow-editFlow](./../../../../img/InfoMotion/DataSource/Firebase/CreateFlow-editFlow.png)
 
 
 下記のノードを配置し、下記の画像のようなフローを作成してください。
@@ -29,7 +29,7 @@ enebular のプロジェクトの右下の +ボタンをクリックし、新し
 
 (もし、Firebase のノードが存在してなかったら、 `node-red-contrib-firebase` を admin タブよりインストールしてください)
 
-![CreateFlow-flow](./../../../../img/InfoMotion/DataSource/firebase/CreateFlow-flow.png)
+![CreateFlow-flow](./../../../../img/InfoMotion/DataSource/Firebase/CreateFlow-flow.png)
 
 
 次に inject ノード(表示は timestamp )のモーダル画面を表示します。
@@ -37,13 +37,13 @@ enebular のプロジェクトの右下の +ボタンをクリックし、新し
  `repeat` を [interval] とし、every [10] seconds に設定します。
  [Done] をクリックして、モーダル画面を閉じます。
 
-![CreateFlow-injectNode](./../../../../img/InfoMotion/DataSource/firebase/CreateFlow-injectNode.png)
+![CreateFlow-injectNode](./../../../../img/InfoMotion/DataSource/Firebase/CreateFlow-injectNode.png)
 
 
 function ノードをダブルクリックして `edit function node` のモーダル画面を表示してください。
 下記スクリプトをコピーして Function に貼り付けます。
 
-![CreateFlow-functionNode](./../../../../img/InfoMotion/DataSource/firebase/CreateFlow-functionNode.png)
+![CreateFlow-functionNode](./../../../../img/InfoMotion/DataSource/Firebase/CreateFlow-functionNode.png)
 
 
 ```javascript
@@ -67,12 +67,12 @@ return msg;
 `Firebase` には先ほど作成した Firebase プロジェクトの ID を入力してください。
 `Auth Type` は [None] を選択します。設定が終わったら [Add] をクリックして保存します。
 
-![CreateFlow-firebaseConfigNode](./../../../../img/InfoMotion/DataSource/firebase/CreateFlow-firebaseConfigNode.png)
+![CreateFlow-firebaseConfigNode](./../../../../img/InfoMotion/DataSource/Firebase/CreateFlow-firebaseConfigNode.png)
 
 
 `Child path`には「test」 を入力し、`Method` は [push] を選択、`value` は「msg.payload」のままにし、 [Done] をクリックします。
 
-![CreateFlow-firebaseNode](./../../../../img/InfoMotion/DataSource/firebase/CreateFlow-firebaseNode.png)
+![CreateFlow-firebaseNode](./../../../../img/InfoMotion/DataSource/Firebase/CreateFlow-firebaseNode.png)
 
 
 全てのノードの準備ができたので、 [Deploy] を押してノードを実行します。
@@ -80,9 +80,9 @@ return msg;
 フローの実行ログをエディター右部のデバッグタブより閲覧できます。
 下記のようなログが表示され、正しくフローが実行されていることを確認してください。
 
-![CreateFlow-debugLog](./../../../../img/InfoMotion/DataSource/firebase/CreateFlow-debugLog.png)
+![CreateFlow-debugLog](./../../../../img/InfoMotion/DataSource/Firebase/CreateFlow-debugLog.png)
 
 
 次に Firebase のページで先ほど作ったアプリからデータにデータが追加されているか確認します。
 
-![CreateFlow-firebaseProjectDatabase-ja](./../../../../img/InfoMotion/DataSource/firebase/CreateFlow-firebaseProjectDatabase-ja.png)
+![CreateFlow-firebaseProjectDatabase-ja](./../../../../img/InfoMotion/DataSource/Firebase/CreateFlow-firebaseProjectDatabase-ja.png)
