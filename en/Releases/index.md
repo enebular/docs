@@ -169,7 +169,9 @@ The following hardware is supported in enebular-edge-agent 1.0.1.
 
 ---
 
-# 0.9.0 (November 30th, 2018)
+# enebular editor Release Notes {#enebular-editor}
+
+## Latest Release - 0.9.0 (November 30th, 2018)
 
 ## New
 

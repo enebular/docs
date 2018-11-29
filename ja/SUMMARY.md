@@ -36,7 +36,7 @@ lastUpdated: 2018-11-29
     - [0.9.1](Releases/enebular-edge-agent/0.9.1.md)
     - [0.9.0](Releases/enebular-edge-agent/0.9.0.md)
   - [enebular editor](Releases/index.md#enebular-editor)
-    - [0.9.0](Releases/index.md#enebular-editor/0.9.0.md)
+    - [0.9.0](Releases/enebular-editor/0.9.0.md)
 - [Getting Started](GetStarted/index.md)
   - [Introduction](GetStarted/Introduction.md)
   - [Flow Deployment](GetStarted/FlowDeployment.md)
