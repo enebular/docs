@@ -76,6 +76,8 @@ lastUpdated: 2018-11-02
   - [API Gateway]()
     - [Set up & Create Lambda Function](InfoMotion/DataSource/APIGateway/CreateLambdaFunction.md)
     - [Create a DataSource](InfoMotion/DataSource/APIGateway/CreateDataSource.md)
+  - [Random]()
+    - [How to use Random DataSource](InfoMotion/DataSource/Random/SetUp.md)
 - [Dashboards](InfoMotion/CreateInfoMotion.md)
 - [Sharing an InfoMotion](InfoMotion/ShareInfoMotion.md)
 
