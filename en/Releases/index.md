@@ -186,3 +186,7 @@ N/A
 ## Known Issues
 
 - AWS Lambda Request node cannot be used if the flow is edited from the enebular editor connected to an enebular-agent.
+
+## Release History
+
+* [0.9.0](./enebular-editor/0.9.0.md) (November 30th, 2018)
