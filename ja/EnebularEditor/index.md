@@ -7,7 +7,6 @@ lastUpdated: 2018-11-29
 ## Overview
 
 enebular editor は ブラウザ上ではなくローカル環境でフローの編集とデプロイ（ `AWS IoT`, `Pelion Device Management`, `AWS Lambda`, `Heroku`）のできるソフトウェアです。
-desktop editor は限定的な公開となっています。利用したい方は **support@enebular.com** までお問い合わせください。
 
 ## Modes
 

@@ -7,7 +7,6 @@ lastUpdated: 2018-11-29
 ## Overview
 
 The enebular editor is a tool for your PC(Win/Mac) to edit and deploy flows to: `AWS IoT`, `Pelion Device Management`, `AWS Lambda`, `Heroku`
-Since it is restricted release, please contact **support@enebular.com** to use.
 
 ## Modes
 
