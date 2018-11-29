@@ -1,35 +1,40 @@
 ---
-lastUpdated: 2018-11-09
+lastUpdated: 2018-11-29
 ---
 
 # enebular Release Notes {#enebular}
 
-## 2.5.3 (November 9th, 2018)
+## Latest Release - 2.6.0 (November 30th, 2018)
 
-### New
+## New
 
-- InfoMotionのサイドバーで「random adapter」を Data Source として選択できるようになりました
+- enebular から enebular agent にファイルをデプロイすることの出来る"Files Deploy"機能を追加しました
+- トップページにService Level Objectiveを公開しました
 
-### Fixed
+## Fixed
 
-- InfoMotion ダッシュボードのカレンダーをダブルクリック等で操作するとカレンダー部分が空白となり使用できなくなる不具合を修正しました
-- [HerokuにおいてNode.jsのデフォルトバージョンが10となったため](https://devcenter.heroku.com/changelog-items/1508)、FlowのHerokuへのデプロイがエラーとなる問題を修正しました。enebularからHerokuへのフローデプロイ時には、Node.jsのバージョンは8.12を使用するように指定しています
+- InfoMotionのサイドバーに表示されていた不要な余白と区切り線を削除しました
+- LicenseのリザーブをAWS IoTに接続されているエージェントに対して行った際、Connection TypeとConnection Nameが正しく表示されない不具合に対応しました
+- FlowのDescriptionに文字を多く入力した場合、レイアウトが崩れる問題を修正しました
 
-### Changed
+## Changed
 
-- InfoMotionダッシュボードの フィルター機能を自動化し、それによって不要となった「Filter」ボタンを削除しました。ユーザーはグラフにある「Filter」ボタンを操作するだけでグラフの表示範囲を制御できます
-- InfoMotionのサイドバーで Data Source を選択するとサンプルのデータソースが1レコード表示されるように変更しました
-- InfoMotionのUIをより直感的になるよう修正しました
- - 同じグラフを一つのInfoMotionのダッシュボードに2回追加できないように修正しました
- - InfoMotionサイドバーの「Create Graph」「Update Graph」を「Save」に変更しました
+- AWS IoTの設定において「Secret Access Key」を入力する際、入力される文字が表示されないよう変更しました
+- MBED APIの設定において「MBED API Key」を入力する際、入力される文字が表示されないよう変更しました
+- Lambdaの設定において「Secret Access Key」を入力する際、入力される文字が表示されないよう変更しました
+- Herokuの設定において「Heroku API Token」を入力する際、入力される文字が表示されないよう変更しました
+- "Project Settings"画面から Project IDが表示される様になりました
+- Connection設定で各credential情報が正しく入力されなかった場合のエラーメッセージを変更しました
+- フローエディタのNode-redのバージョンを0.18.Xにアップデートしました
 
-### Known Issues
+## Known Issues
 
 - 言語設定を英語にしたブラウザでフローエディタを開いても、一部の説明文が日本語で表示されます
 - InfoMotionを埋め込んだ共有ページでは、filter機能が使用できません
 
-### Release History
+## Release History
 
+- [2.6.0](./enebular/2.6.0.md) (November 30th, 2018)
 - [2.5.3](./enebular/2.5.3.md) (November 9th, 2018)
 - [2.5.2](./enebular/2.5.2.md) (October 22th, 2018)
 - [2.5.1](./enebular/2.5.1.md) (October 12th, 2018)
@@ -53,34 +58,24 @@ lastUpdated: 2018-11-09
 
 # enebular agent Release Notes {#enebular-agent}
 
-## Latest Release - 2.2.0 (September 7th, 2018)
-
-# 2.2.0
+## Latest Release - 2.3.0 (November 30th, 2018)
 
 ## New
 
-- 素早く簡単にenebular-agentをセットアップするためのワンステップの[インストールスクリプト](https://github.com/enebular/enebular-runtime-agent/blob/master/tools/install/README.ja.md)を用意しました
-- AWS IoTのThingを簡単に作成とセットアップできるためのツールを用意しました
-- Debian（systemd）ベースのシステムで起動時にenebular-agentを起動するためのスタートアップ登録を簡単に行える機能を追加しました
-- 設定オプションの一覧を表示する機能を追加しました
-- 新規の設定オプションとサブコマンドを利用できるようにコマンドラインによるオプションの指定に対応しました
+- enebular から enebular agent にファイルをデプロイすることの出来る"Files Deploy"機能が新たに追加されました
 
 ## Fixed
 
-- AWS IoTで接続されたenebular-agentの接続状況に関わらず、enebular上で常に"Connected"になってしまう不具合に対応しました
-- enebularロギングのアップロードサイズ処理でマイナーな修正をしました
-- mbed-cloud-connector
-    - ファイルが不足していてビルドができない不具合を修正しました
-    - readmeファイルで文字化けを修正しました
+- 不正なAWS IoT用設定ファイルがビルド済みパッケージ（*-prebuilt.tar.gz）に含まれていた不具合に対応しました
 
 ## Changed
 
-- Node-REDバージョンを0.18.xにアップデートしました
-- AWS IoTとの接続状態を正しく監視できるようにしました
-- デーモン使用のサポートを改善しました（syslogロギングとプロセス終了のサポート）
-- Node-REDインスタンスのプロセス管理（起動と停止処理）を改善しました
-- readmeファイルにクイックセットアップの説明と手動設定の詳細を追加しました
-- 統合のテストを追加しました
+- Raspberry Piのデバイスで、Node-REDのnrgpioノードがデフォルトで正しく動作するように、enebular-agentのユーザがgpioグループに追加されるようにインストールスクリプトを変更しました
+- enebular-agentが何らかの理由で異常終了した場合、60秒後に自動的に再起動されるようにsystemd用のサービス起動登録機能を変更しました
+- enebular editorをenebular-agentに接続して、enebular-agent内のフローを直接編集できるようにしました
+- READMEs
+    - "Mbed Cloud"と記載されているところを全て"Pelion Device Management"に変更しました
+    - インストールスクリプトのダウンロード用URLを短縮したものに変更しました
 
 ## Known Issues
 
@@ -119,6 +114,7 @@ lastUpdated: 2018-11-09
 
 ## Release History
 
+- [2.3.0](./enebular-agent/2.3.0.md) (November 30th, 2018)
 - [2.2.0](./enebular-agent/2.2.0.md) (September 7th, 2018)
 - [2.1.0](./enebular-agent/2.1.0.md) (June 7th, 2018)
 - [2.0.0](./enebular-agent/2.0.0.md) (Jan 30th, 2018)
@@ -168,3 +164,29 @@ enebular-edge-agent 1.0.1は、下記のハードウェアを対象としてい�
 * [0.10.0](./enebular-edge-agent/0.10.0.md) (Apr 27th, 2018)
 * [0.9.1](./enebular-edge-agent/0.9.1.md) (Feb 28th, 2018)
 * [0.9.0](./enebular-edge-agent/0.9.0.md) (Jan 30th, 2018)
+
+---
+
+# enebular editor Release Notes {#enebular-editor}
+
+## Latest Release - 0.9.0 (November 30th, 2018)
+
+## New
+
+- enebularのフローをPC上で編集しデプロイするためのツール ”enebular editor"のβ版をリリースしました （[Win版](https://s3-ap-northeast-1.amazonaws.com/enebular-editor/win/enebular+editor+Setup+0.9.0.exe)/[Mac版](https://s3-ap-northeast-1.amazonaws.com/enebular-editor/mac/enebular+editor-0.9.0.dmg))
+
+## Fixed
+
+N/A
+
+## Changed
+
+N/A
+
+## Known Issues
+
+- enebular editorをenebular-agentに接続してflowを編集する場合、AWS Lambda Requestノードが使えません
+
+## Release History
+
+* [0.9.0](./enebular-editor/0.9.0.md) (November 30th, 2018)
