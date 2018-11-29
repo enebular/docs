@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-04-12
+lastUpdated: 2018-11-21
 ---
 
 # Operating Environments
@@ -31,7 +31,7 @@ The following are examples of recommended hardware for inexpensive gateway envir
 | Product               | Version                                                                           |
 | --------------------- | --------------------------------------------------------------------------------- |
 | Raspberry PI3 Model B | [Version 3 Model B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) |
-| OpenBlocks            | Support planned                                                                   |
+| OpenBlocks            | Coming soon                                                                       |
 
 ### Requirements
 
@@ -41,12 +41,12 @@ The following are examples of recommended hardware for inexpensive gateway envir
 - RAM
 - Flash Memory
 
-## Operating System
+### Operating System
 
 The enebular-agent runs on [Debian GNU/Linux](https://www.debian.org/).
 For the recommended Raspberry PI hardware, use the Debian based [Raspbian OS](https://www.raspbian.org/).
 
-### Raspberry PI3
+#### Raspberry PI3
 
 The following operating systems are supported for use with the Raspberry PI3.
 
@@ -57,10 +57,10 @@ The middleware versions for each are as follows.
 
 |                    | [Node.js](https://nodejs.org/en/download/releases/) | [npm](https://github.com/npm/npm/releases) | [Node-RED](https://github.com/node-red/node-red/releases) |
 | ------------------ | --------------------------------------------------- | ------------------------------------------ | --------------------------------------------------------- |
-| streach base (9.0) | 8.9.0                                               | 5.5.1                                      | 0.17.5                                                    |
-| jessie base (8.0)  | 8.9.0                                               | 5.5.1                                      | 0.17.5                                                    |
+| streach base (9.0) | 9.2.1                                               | 5.5.1                                      | 0.18.6                                                    |
+| jessie base (8.0)  | 9.2.1                                               | 5.5.1                                      | 0.18.6                                                    |
 
-### Linux (VirtualBox)
+#### Linux (VirtualBox)
 
 For Linux, the following operating systems are supported.
 
@@ -71,8 +71,8 @@ The middleware versions for each are as follows.
 
 |                 | [Node.js](https://nodejs.org/en/download/releases/) | [npm](https://github.com/npm/npm/releases) | [Node-RED](https://github.com/node-red/node-red/releases) |
 | --------------- | --------------------------------------------------- | ------------------------------------------ | --------------------------------------------------------- |
-| Linux 9 Stretch | 9.2.1                                               | 5.6.0                                      | 0.17.5                                                    |
-| Linux 8 Jessie  | 9.2.0                                               | 5.5.1                                      | 0.17.5                                                    |
+| Linux 9 Stretch | 9.2.1                                               | 5.5.1                                      | 0.18.6                                                    |
+| Linux 8 Jessie  | 9.2.1                                               | 5.5.1                                      | 0.18.6                                                    |
 
 ## enebular-edge-agent {#enebular-edge-agent}
 

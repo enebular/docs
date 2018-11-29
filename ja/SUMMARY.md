@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-11-26
+lastUpdated: 2018-11-29
 ---
 
 # Summary
@@ -7,7 +7,6 @@ lastUpdated: 2018-11-26
 - [Release Notes](Releases/index.md)
   - [enebular](Releases/index.md#enebular)
     - [2.6.0](Releases/enebular/2.6.0.md)
-    - [2.5.3](Releases/enebular/2.5.3.md)
     - [2.5.2](Releases/enebular/2.5.2.md)
     - [2.5.1](Releases/enebular/2.5.1.md)
     - [2.5.0](Releases/enebular/2.5.0.md)
@@ -36,6 +35,8 @@ lastUpdated: 2018-11-26
     - [0.10.0](Releases/enebular-edge-agent/0.10.0.md)
     - [0.9.1](Releases/enebular-edge-agent/0.9.1.md)
     - [0.9.0](Releases/enebular-edge-agent/0.9.0.md)
+  - [enebular editor](Releases/index.md#enebular-editor)
+    - [0.9.0](Releases/enebular-editor/0.9.0.md)
 - [Getting Started](GetStarted/index.md)
   - [Introduction](GetStarted/Introduction.md)
   - [Flow Deployment](GetStarted/FlowDeployment.md)
@@ -79,6 +80,8 @@ lastUpdated: 2018-11-26
   - [API Gateway]()
     - [Set up & Create Lambda Function](InfoMotion/DataSource/APIGateway/CreateLambdaFunction.md)
     - [Create a DataSource](InfoMotion/DataSource/APIGateway/CreateDataSource.md)
+  - [Random]()
+    - [How to use Random DataSource](InfoMotion/DataSource/Random/SetUp.md)
 - [Dashboards](InfoMotion/CreateInfoMotion.md)
 - [Sharing an InfoMotion](InfoMotion/ShareInfoMotion.md)
 
@@ -114,6 +117,11 @@ lastUpdated: 2018-11-26
 ## Account
 
 - [Account Settings](Account/index.md)
+
+## enebular editor
+
+- [Introduction](EnebularEditor/index.md)
+- [Remote Mode](EnebularEditor/RemoteMode.md)
 
 ## Appendix
 
