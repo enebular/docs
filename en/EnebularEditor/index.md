@@ -20,10 +20,10 @@ enebular editor loads the flow from the app itself
 
 ### Remote
 
-For editing flows on linux devices (i.e. Raspberry Pi) with **enebular-runtime-agent 2.3.0** and above installed.
+For editing flows on linux devices (i.e. Raspberry Pi) with [enebular-runtime-agent 2.3.0](https://github.com/enebular/enebular-runtime-agent/releases) and above installed.
 Certain nodes such as Raspberry Pi sensor nodes only work on devices. Since Desktop mode does not support such nodes, Remote mode is required to correctly load such nodes.
 A valid AwS IoT / Pelion Device Management connection is required
-For Pelion Device Management, **enebular-runtime-agent-cloud-connector 2.3.0** is required
+For Pelion Device Management, [enebular-runtime-agent-cloud-connector 2.3.0](https://github.com/enebular/enebular-runtime-agent-mbed-cloud-connector/releases) is required
 **enebular editor** loads the flow editor from **enebular-runtime-agent** remotely
 
 ## Requirements
@@ -39,9 +39,6 @@ For Pelion Device Management, **enebular-runtime-agent-cloud-connector 2.3.0** i
 1. Download [installer](https://s3-ap-northeast-1.amazonaws.com/enebular-editor/win/enebular+editor+Setup+0.9.0.exe).
 
 1. Run the installer
-
-1. Program have been installed like bellow:  
-   ![windowsProgram](./../../img/Other/DesktopEditor-windowsProgram.png)
 
 ### For Mac
 
