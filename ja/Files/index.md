@@ -1,10 +1,10 @@
 ---
-lastUpdated: 2018-10-24
+lastUpdated: 2018-11-30
 ---
 
-# File Deploys
+# Files
 
-**File Deploys** では enebular agent にファイルをデプロイすることが出来ます。  
+**Files** では enebular agent にファイルをデプロイすることが出来ます。  
 enebular agentでシェルスクリプトを実行したい場合や、設定ファイルを追加したい場合などに利用することが出来ます。
 
 ファイルはアセットの種類の一つで、以下を指します。

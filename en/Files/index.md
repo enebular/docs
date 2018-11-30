@@ -1,10 +1,10 @@
 ---
-lastUpdated: 2018-10-24
+lastUpdated: 2018-11-30
 ---
 
-# File Deploys
+# Files
 
-**File Deploys** deploys files to enebular agent.  
+**Files** deploys files to enebular agent.  
 A use case example can be running shell scripts in enebular agent or adding setting files.
 
 A file is an asset with one of the following possible functionalities.

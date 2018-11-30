@@ -1,8 +1,8 @@
 ---
-lastUpdated: 2018-01-28
+lastUpdated: 2018-11-30
 ---
 
-# Flow
+# Flows
 
 Flow は、ハードウェアデバイス・API およびオンラインサービスを接続するためのツール <a href="https://nodered.jp/" target="_blank">Node-RED</a> ベースのフローエディタを利用して作成する、データフローのことです。
 
