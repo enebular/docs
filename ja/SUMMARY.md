@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-10-31
+lastUpdated: 2018-11-29
 ---
 
 # Summary
@@ -76,6 +76,8 @@ lastUpdated: 2018-10-31
   - [API Gateway]()
     - [Set up & Create Lambda Function](InfoMotion/DataSource/APIGateway/CreateLambdaFunction.md)
     - [Create a DataSource](InfoMotion/DataSource/APIGateway/CreateDataSource.md)
+  - [Random]()
+    - [How to use Random DataSource](InfoMotion/DataSource/Random/SetUp.md)
 - [Dashboards](InfoMotion/CreateInfoMotion.md)
 - [Sharing an InfoMotion](InfoMotion/ShareInfoMotion.md)
 
@@ -120,6 +122,11 @@ lastUpdated: 2018-10-31
 ## Account
 
 - [Account Settings](Account/index.md)
+
+## enebular editor
+
+- [Introduction](EnebularEditor/index.md)
+- [Remote Mode](EnebularEditor/RemoteMode.md)
 
 ## Appendix
 
