@@ -19,7 +19,7 @@ firebase にログインし、 [プロジェクトを追加] をクリックし�
 プロジェクト画面が表示されます。
 「ここから始めましょう。」 の下にある [ウェブアプリに Firebase を追加] をクリックしてください。
 
-![Setup-getStarted-ja](./../../../../img/InfoMotion/DataSource/firebase/Setup-getStarted-ja.png)
+![Setup-getStarted-ja](./../../../../img/InfoMotion/DataSource/Firebase/Setup-getStarted-ja.png)
 
 
 設定スクリプトのポップアップウィンドウが表示されます。後程使用するので、コピーして任意の場所に貼り付けておいてください。
