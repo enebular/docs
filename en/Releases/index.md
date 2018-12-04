@@ -1,31 +1,23 @@
 ---
-lastUpdated: 2018-11-29
+lastUpdated: 2018-12-04
 ---
 
 # enebular Release Notes {#enebular}
 
-## Latest Release - 2.6.0 (November 30th, 2018)
+## Latest Release - 2.6.1 (December 4th, 2018)
 
 ## New
 
-- File Deploys, the new enebular function to allow enebular to deploy files, has been added.
-- The Service Level Objectives have been published on the top page.
+- None
 
 ## Fixed
 
-- Eliminated unnecessary whitespaces and delimiter lines from InfoMotion side bars.
-- Fixed the issue which failed to display Connection Type and Connection name when License was reserved to an agent connected to AWS IoT.
-- Fixed the issue which caused visual layout to break when the flow description contains too many characters.
+- Fixed the issue that prevented from "Sign Up" screen to the "email sent" screen after pressing "Sign Up" button.
+- Fixed the issue that caused only the connections in ap-northeast-1 region to be listed when AWS IoT or AWS Lambda was selected.
 
 ## Changed
 
-- "Secret Access Key" entry in AWS　IoT setting has been changed to mask the entered characters.
-- "MBED API Key" entry in MBED API setting has been changed to mask the entered characters.
-- "Secret Access Key" entry in Lambda setting has been changed to mask the entered characters.
-- "Heroku API Token" entry in Heroku setting has been changed to mask the entered characters.
-- Project ID now can be visible on "Project Settings" screen.
-- Changed the error message in case of a wrong credential information was entered in Connection settings.
-- Node-RED version on the flow editor has been updated to 0.18.x.
+- None
 
 ## Known Issues
 
@@ -34,6 +26,7 @@ lastUpdated: 2018-11-29
 
 ## Release History
 
+- [2.6.1](./enebular/2.6.1.md) (December 4th, 2018)
 - [2.6.0](./enebular/2.6.0.md) (November 30th, 2018)
 - [2.5.3](./enebular/2.5.3.md) (November 9th, 2018)
 - [2.5.2](./enebular/2.5.2.md) (October 22th, 2018)
