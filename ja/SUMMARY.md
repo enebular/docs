@@ -106,7 +106,7 @@ lastUpdated: 2018-11-29
 - [Configuration](EnebularEdgeAgent/Configration.md)
 - [SampleFlows](EnebularEdgeAgent/SampleFlows.md)
 - [Board](Board/Introduction.md)
-  - [Raven](Board/Raven.md)
+  - [RAVEN](Board/RAVEN.md)
 
 ## Config
 

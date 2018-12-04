@@ -36,7 +36,7 @@ enebular-agent は、Linux 上で動作します。
 ### 必要物
 
 - Network Interface (ethernet or WiFi)
-  - WiFi については、IEEE802.11a/b/g 等を想定していますが、Linux から IP 接続ができるネットワークが使用できれば良いものとします
+    - WiFi については、IEEE802.11a/b/g 等を想定していますが、Linux から IP 接続ができるネットワークが使用できれば良いものとします
 - SD-Card
 - RAM
 - Flash Memory

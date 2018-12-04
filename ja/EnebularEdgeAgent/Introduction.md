@@ -18,3 +18,7 @@ enebular-edge-agentを搭載したIoTエッジデバイスは、enebularで作�
 - デプロイの確認
 
 デバイスのセットアップは各ボードのページを参照してください。
+- [Raven](./../Board/Raven.md)
+
+Licenseについては[LicenseManager](./../Device/LicenseManager.md)を参照してください。
+License済みのデバイスはenebularからLogを閲覧することができます。詳細は[Logs](./../Device/Logs.md)を参照してください。
