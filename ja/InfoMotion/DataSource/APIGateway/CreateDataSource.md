@@ -25,7 +25,7 @@ Project のダッシュボードの左メニューの `Data Sources` をクリ�
 ## Endpoint
 
 Endpoint は `https://[固有id].execute-api.ap-northeast-1.amazonaws.com/[ステージ名]/[メソッド名]` の形式です。
-[Setup & Create Lambda Function](./createLambdaFunction.md) で作成したAPI Gatewayを例に挙げると`https://*********.execute-api.ap-northeast-1.amazonaws.com/teststage/test`  が Endpoint として入力する URL です。
+[Setup & Create Lambda Function](./CreateLambdaFunction.md) で作成したAPI Gatewayを例に挙げると`https://*********.execute-api.ap-northeast-1.amazonaws.com/teststage/test`  が Endpoint として入力する URL です。
 
 
 固有id 及び ステージ名は、Amazon API Gateway の [ステージ] のページより確認できます。
