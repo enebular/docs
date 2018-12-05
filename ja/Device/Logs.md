@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-05-23
+lastUpdated: 2018-12-05
 ---
 
 # Logs
@@ -54,7 +54,7 @@ enebular agentのログ画面の例です。
 ![cloud_logs](../_asset/images/Device/Logs/debug_node.png)
 
 
-## enebular edge agent のログ
+## enebular edge agent のログ{#enebular-edge-agent}
 
 enebular edge agent は動作ログ及びエラーログをenebularに送信します。
 

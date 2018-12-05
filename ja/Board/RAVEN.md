@@ -1,20 +1,26 @@
 ---
-lastUpdated: 2018-12-04
+lastUpdated: 2018-12-05
 ---
 
 # RAVEN
 
 RAVENはenebular-edge-agentのリファレンスボードです。
 
-## Contents
+### Table of Contents
+1. [Contensts](#contents)
+1. [Features](#features)
+1. [Parts](parts)
+1. [Setting Mode](#settingMode)
+1. [Disclaimer](#disclaimer)
 
+## Contents{#contents}
 以下のものが内容物です。
 
 * RAVEN本体
 * USBケーブル
 * 説明書
 
-## Features
+## Features{#features}
 
 * MCU：STM32F767VIT6(STMicroelectronics)
 * Cortex-M7  216MHzRAM 512kBFLASH 2048kB
@@ -23,7 +29,7 @@ RAVENはenebular-edge-agentのリファレンスボードです。
 * 最大消費電力: 約2.5W
 <!--* プラットフォーム認証済(Mbed™Enabled) -->
 
-## Parts
+## Parts{#parts}
 
 ![parts](./../../img/Board/RAVEN-parts.png)
 
@@ -33,7 +39,7 @@ RAVENはenebular-edge-agentのリファレンスボードです。
 * RESET SW … リセットスイッチ
 * Port1～4 … GROVEコネクタ
 
-## Setting Mode
+## Setting Mode{#settingMode}
 
 **enebular Reference Board Configuration Tool**を使用して、無線LAN設定を行うには`Setting Mode`でRAVENを起動する必要があります。
 
@@ -43,7 +49,7 @@ RAVENはenebular-edge-agentのリファレンスボードです。
 
 ※無線LAN設定方法については、[Configuration](./../EnebularEdgeAgent/Configuration.md)を参照してください。
 
-## Disclaimer
+## Disclaimer{#disclaimer}
 
 本製品は、お客様にご利用いただき、評価をしていただく目的で開発されております。従いまして、本製品をご利用いただいた場合の、お客様のアプリケーションについての動作、不具合の不発生その他の事項に対しては、明示又は黙示を問わず、一切の保証を致しません。
 本書は、製品の保証に関するものではありません。この製品の保証については、お買い上げの販売店にお問い合わせ下さい。

@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-11-29
+lastUpdated: 2018-12-05
 ---
 
 # Summary
@@ -101,9 +101,9 @@ lastUpdated: 2018-11-29
 
 ## Enebular Edge Agent
 - [Introduction](EnebularEdgeAgent/Introduction.md)
-- [GetStarted](EnebularEdgeAgent/GetStarted.md)
+- [GettingStarted](EnebularEdgeAgent/GettingStarted.md)
 - [Nodes](EnebularEdgeAgent/Nodes.md)
-- [Configuration](EnebularEdgeAgent/Configration.md)
+- [Configuration](EnebularEdgeAgent/Configuration.md)
 - [SampleFlows](EnebularEdgeAgent/SampleFlows.md)
 - [Board](Board/Introduction.md)
   - [RAVEN](Board/RAVEN.md)
