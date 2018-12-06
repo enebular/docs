@@ -13,7 +13,7 @@ enebular-edge-agent は **enebular Reference Board Configuration Tool**(以下:e
 
 ## インストール {#install}
 
-1. [こちら](xxxxxxxxx)からインストーラをダウンロードします。
+1. [こちらxxxxxxxxx)からインストーラをダウンロードします。
 1. 「setup.exe」を実行し画面の表示に従い、インストールを行います。
 
 ## 使用方法 {#usage}
@@ -29,7 +29,7 @@ enebular-edge-agent は **enebular Reference Board Configuration Tool**(以下:e
     - 書き込み・・・テキストエリア④に各設定値を入力し、「書き込み」③を押すと、設定できます。
 
 ※ 一度シリアルポートを選択すると設定が保存されるため、次回起動時設定する必要はありません。（シリアルポート名が変わる場合除く）
-
+２
 
 ## トラブルシューティング {##troubleShooting}
 

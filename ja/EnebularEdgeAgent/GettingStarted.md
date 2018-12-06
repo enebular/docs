@@ -30,7 +30,7 @@ enebular edge agentでは、enebularのeditorを使い、フローを作成し�
 
 ## ネットワークの設定{#network}
 
-1. **enebular Reference Board Configuration Tool**（以下: **eRB Config. Tool**）を[こちら](！！！！！！！！あとでリンクはる！！！！！！！！！！！！！)からダウンロードし、インストールします。
+1. **enebular Reference Board Configuration Tool**（以下: **eRB Config. Tool**）を[こちら(！！！！！！！！あとでリンクはる！！！！！！！！！！！！！)からダウンロードし、インストールします。
 1. デバイスを `設定モード` で起動します。
     -  RAVEN … RESET SW を押し、再起動した後に USER SW を長押しすると、`設定モード` になります。USER LED が赤く点灯していることを確認してください。
 1. **eRB Config. Tool** でネットワークの設定を行います。詳しくは[Configuration](./Configuration.md)のページを参照してください。

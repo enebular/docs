@@ -25,7 +25,7 @@ enebular-edge-agentのフロー実行機能を用いることで、IoTエッジ�
 1. 実行ログの確認
 
 デバイスのセットアップは各ボードのページを参照してください。
-- [Raven](./../Board/Raven.md)
+- [Raven](./../Board/RAVEN.md)
 
 
 ※1: enebular-edge-agentでは、実行できるノードに制限があります。[Nodes](./Nodes.md)から確認してください。

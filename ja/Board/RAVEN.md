@@ -9,7 +9,7 @@ RAVENはenebular-edge-agentのリファレンスボードです。
 ### Table of Contents
 1. [内容物](#contents)
 1. [特徴](#features)
-1. [各部説明](parts)
+1. [各部説明](#parts)
 1. [設定モード](#settingMode)
 1. [免責事項](#disclaimer)
 
@@ -43,9 +43,9 @@ RAVENはenebular-edge-agentのリファレンスボードです。
 
 ## 設定モード{#settingMode}
 
-**enebular Reference Board Configuration Tool**を使用して、無線LAN設定を行うには`Setting Mode`でRAVENを起動する必要があります。
+**enebular Reference Board Configuration Tool**を使用して、無線LAN設定を行うには`設定モード`でRAVENを起動する必要があります。
 
-1. `USER SW`を押したままの状態で電源を入れます。
+1. `USER SW`を押したままの状態でUSBケーブルを接続します。
 1. `USER LED`が赤く点灯するまで`USER SW`を押し続けます。
 1. RAVENが`設定モード`で起動します。
 
