@@ -4,17 +4,18 @@ lastUpdated: 2018-12-06
 
 # Sample Flows
 enebular-edge-agentを使用したSample Flowです。市販のGroveモジュールを使用したフローも含まれます。
-フローのインポート方法はGettingStarted内の[フローのインポート](./GettingStarted.md#import)を参考にしてください。
 
+herokuへのフローデプロイなど、enebularのGettingStaredを一通り終えた方に向けたドキュメントとなっています。
 
 ### Table of Contents
-- [スイッチを使用して、LEDが明滅するフロー](#switchLchika)
-- [クラウドの状態によって、LEDが明滅するフロー](#cloudLchika)
+- [スイッチを使用してLEDが明滅するフロー](#switchLchika)
+- [ブラウザから遠隔でLEDを操作するフロー](#cloudLchika)
     - herokuの環境を使用します。
-- [センサーデータをFirebaseに入れるフロー](#sensorData)
+- [センサーデータをクラウドストレージに入れるフロー](#sensorData)
     - herokuの環境を使用します。
+    - Firebaseを使用します。
 
-## スイッチを使用して、LEDが明滅するフロー{#switchLchika}
+## スイッチを使用してLEDが明滅するフロー{#switchLchika}
 
 USER SWを押すことによってUSER LEDが点灯し、もう一度押すと消灯します。
 
@@ -40,7 +41,7 @@ USER SWを押すことによってUSER LEDが点灯し、もう一度押すと�
 ！！！！！！！！！！　一例書く？？　！！！！！！！！！！！！
 
 
-## クラウドの状態によって、LEDが明滅するフロー{#cloudLchika}
+## ブラウザから遠隔でLEDを操作するフロー{#cloudLchika}
 
 ![SampleFlows-cloudLchika-image](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-image.jpg)
 <!--あとで差し替え-->
@@ -121,7 +122,7 @@ slackの「API Token」、http requestノードの「URL」を自分のものに
 実装例です。
 
 
-## センサーデータをFirebaseにいれるフロー{#sensorData}
+## センサーデータをクラウドストレージに入れるフロー{#sensorData}
 
 ![SampleFlows-postData-image](./../../img/EnebularEdgeAgent/SampleFlows-postData-image.jpg)
 <!--あとで差し替え-->
@@ -136,8 +137,6 @@ herokuからFirebaseにデータを入れます。
 
 ![SampleFlows-postData-heroku](./../../img/EnebularEdgeAgent/SampleFlows-postData-heroku.png)
 
-firebaseノードの設定を自分のものに書き換えてください。
-
 ```json
 [{"id":"ab0558c5.282628","type":"http response","z":"3cc43a63.b4e246","name":"","x":250,"y":100,"wires":[]},{"id":"2a7bcb1.c56e634","type":"http in","z":"3cc43a63.b4e246","name":"","url":"/post","method":"post","upload":false,"swaggerDoc":"","x":80,"y":40,"wires":[["ab0558c5.282628","21fd8a4.1252576","bd28eaee.6430c8"]]},{"id":"21fd8a4.1252576","type":"change","z":"3cc43a63.b4e246","name":"","rules":[{"t":"move","p":"payload","pt":"msg","to":"payload.value.analog","tot":"msg"},{"t":"set","p":"payload.timestamp","pt":"msg","to":"","tot":"date"},{"t":"set","p":"payload.value.created","pt":"msg","to":"","tot":"date"},{"t":"set","p":"payload.value.label","pt":"msg","to":"analog","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":280,"y":40,"wires":[["4d11ca47.3d6dd4"]]},{"id":"bd28eaee.6430c8","type":"debug","z":"3cc43a63.b4e246","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","x":270,"y":160,"wires":[]},{"id":"4d11ca47.3d6dd4","type":"firebase modify","z":"3cc43a63.b4e246","name":"","firebaseconfig":"","childpath":"data","method":"push","value":"msg.payload","priority":"msg.priority","x":610,"y":40,"wires":[[]]}]
 ```
@@ -145,9 +144,9 @@ firebaseノードの設定を自分のものに書き換えてください。
 [こちら]()からimportできます。
 -->
 
-import後firebaseノードの設定を自分のものに書き換えてください。
+importした後、Firebaseノードの設定を自分のものに書き換えてください。
 
-1. firebaseノード を開き、鉛筆マークを押します。
+1. Firebaseノード を開き、鉛筆マークを押します。
 ![SampleFlows-postData-firebase1](./../../img/EnebularEdgeAgent/SampleFlows-postData-firebase1.png)
 
 1. config dialogが開くので、自分のFirebaseのappidを入力してください。Auth Typeは「None」にしてください。

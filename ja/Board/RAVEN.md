@@ -7,49 +7,51 @@ lastUpdated: 2018-12-05
 RAVENはenebular-edge-agentのリファレンスボードです。
 
 ### Table of Contents
-1. [Contensts](#contents)
-1. [Features](#features)
-1. [Parts](parts)
-1. [Setting Mode](#settingMode)
-1. [Disclaimer](#disclaimer)
+1. [内容物](#contents)
+1. [特徴](#features)
+1. [各部説明](parts)
+1. [設定モード](#settingMode)
+1. [免責事項](#disclaimer)
 
-## Contents{#contents}
+## 内容物{#contents}
 以下のものが内容物です。
+
+！！！！！！！写真いれる！！！！！！！
 
 * RAVEN本体
 * USBケーブル
-* 説明書
+* クイックスタートガイド
 
-## Features{#features}
+## 特徴{#features}
 
 * MCU：STM32F767VIT6(STMicroelectronics)
 * Cortex-M7  216MHzRAM 512kBFLASH 2048kB
 * コネクティビティ：WiFi, Bluetooth
-* センサI/F：Groveコネクタ×４/ ボード搭載 USER LED / ボード搭載 USER SWITCH
+* センサI/F：Groveコネクタ×４/ ボード搭載 USER LED / ボード搭載 USER SW
 * 最大消費電力: 約2.5W
 <!--* プラットフォーム認証済(Mbed™Enabled) -->
 
-## Parts{#parts}
+## 各部説明{#parts}
 
 ![parts](./../../img/Board/RAVEN-parts.png)
 
-* USB-UART … USB接続端子
+* USB-UART … USB microB 接続端子
 * USER SW … フローで設定できるスイッチ
 * USER LED … フローで設定できるLED
 * RESET SW … リセットスイッチ
-* Port1～4 … GROVEコネクタ
+* Port1～4 … Groveコネクタ
 
-## Setting Mode{#settingMode}
+## 設定モード{#settingMode}
 
 **enebular Reference Board Configuration Tool**を使用して、無線LAN設定を行うには`Setting Mode`でRAVENを起動する必要があります。
 
-1. `RESET SW`を押し、RAVENを再起動します。
-1. 5秒以内に`USER SW`を押したままの状態にします。
-1. RAVENが`Setting Mode`で起動します。`USER LED`が赤く点灯し続けていることを確認してください。
+1. `USER SW`を押したままの状態で電源を入れます。
+1. `USER LED`が赤く点灯するまで`USER SW`を押し続けます。
+1. RAVENが`設定モード`で起動します。
 
 ※無線LAN設定方法については、[Configuration](./../EnebularEdgeAgent/Configuration.md)を参照してください。
 
-## Disclaimer{#disclaimer}
+## 免責事項{#disclaimer}
 
 本製品は、お客様にご利用いただき、評価をしていただく目的で開発されております。従いまして、本製品をご利用いただいた場合の、お客様のアプリケーションについての動作、不具合の不発生その他の事項に対しては、明示又は黙示を問わず、一切の保証を致しません。
 本書は、製品の保証に関するものではありません。この製品の保証については、お買い上げの販売店にお問い合わせ下さい。

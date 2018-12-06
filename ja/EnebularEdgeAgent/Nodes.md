@@ -7,25 +7,59 @@ lastUpdated: 2018-12-06
 enebular-edge-agentはenebularで作成したフローを実行できます。
 利用できるノードには制限があります。
 
-## Nodes List
+### Table of Contents
 
-Nodeには**enebular Nodes**と**enebular-edge-agent Nodes**があります。
+- [ノードリスト](#nodeList)
+- [フローの実行](#executeFlow)
 
-### enebular Nodes
+## ノードリスト{#nodeList}
 
-**enebular Nodes**は、enebularと共通で使えるノードです。ノードによって制限があるので、このページを参考に設定してください。
+以下がenebular edge agentで動作するノードです。
+enebular edge agentのためのノードとして、`EEA`というカテゴリーのノードがあります。
 
-| ノード | 概要 | 備考 |
-| --- | --- | --- |
-| change | msgプロパティの変換や削除などを行う | - |
-| debug | デバッグメッセージを出力する | コンソールに出力できません |
-| http request | http requestをする | 制限が複数あります ※1 |
-| inject | 一定周期でフローを起動する | 制限が複数あります ※2 |
-| range | `msg.payload`の値を設定によって変換する | - |
-| switch | 条件分岐を設定する | - |
+* 入力
+    * inject
+* 出力
+    * debug
+* 機能
+    * http request
+    * switch
+    * change
+    * range
+* EEA
+    * TSL2561
+    * BME280
+    * digitalout
+    * analogin
+    * interruptin
 
-※1 **http request node**には以下の制限があります。
+### EEA カテゴリーのノード
 
+EEA カテゴリーのノードは enebular-edge-agent用に作成されたノードで、エディタ上ではダミーの値を出力します。
+enebular-edge-agentにデプロイすることで、エッジデバイス固有の動作をします。詳しくは各ノードのヘルプ参照してください。
+
+### ノードの説明
+
+| 分類 | ノード | 概要 | 備考 |
+| --- | --- | --- | --- |
+| 入力 | inject | 一定周期でフローを起動する | 制限が複数あります ※1 |
+| 出力 | debug | デバッグメッセージを出力する | コンソールに出力できません |
+| 機能 | http request | http requestをする | 制限が複数あります ※1 |
+| 機能 | change | msgプロパティの変換や削除などを行う | - |
+| 機能 | switch | 条件分岐を設定する | - |
+| 機能 | range | `msg.payload`の値を設定によって変換する | - |
+| EEA | TSL2561 | TSL2561またはTSL2581から照度の値を取得する | - |
+| EEA | BME280 | BME280から温度、湿度、気圧の値を取得する |  |
+| EEA | digitalout | デジタル出力をする | - |
+| EEA | analogin | A/Dコンバータからの入力値を取得する | - |
+| EEA | interruptin | デジタル入力の立ち上がり、または立ち下がりを検出して割り込み入力を行う | 同時使用上限は5個です |
+
+※1 **inject node**には以下の制限があります。
+- cron実行非対応
+- `Node-RED起動の n 秒後、以下を行う`に非対応
+- timestampのみを出力とする
+
+※2 **http request node**には以下の制限があります。
 - 同時に使用できるhttp request nodeの最大値は5個
 - `GET` ,`POST` のメソッドのみに対応
 - 256byteがレスポンスの上限で、超えると `size over` が `msg.payload` に代入される
@@ -35,26 +69,7 @@ Nodeには**enebular Nodes**と**enebular-edge-agent Nodes**があります。
 - `msg.cookies`, `msg.headers`, `msg.rejectUnauthorized` の設定を無視する
 - mustache-styleに非対応
 
-※2 **inject node**には以下の制限があります。
-- cron実行非対応
-- `Node-RED起動の n 秒後、以下を行う`に非対応
-- timestampのみを出力とする
-
-### enebular-edge-agent Nodes
-
-**enebular-edge-agent Nodes**は、enebular-edge-agent用に作成されたNodeで、エディタ上ではダミーの値を出力します。
-enebular-edge-agentにデプロイすることで、エッジデバイス固有の動作をします。詳しくは各ノードのヘルプ参照してください。
-
-
-| ノード | 概要 | 備考 |
-| --- | --- | --- |
-| analogIn | A/Dコンバータからの入力値を取得する | - |
-| BME280 | BME280から温度、湿度、気圧の値を取得する |  |
-| digitalOut | デジタル出力をする | - |
-| interruptIn | デジタル入力の立ち上がり、または立ち下がりを検出して割り込み入力を行う | 同時使用上限は5個です |
-| TSL2561 | TSL2561またはTSL2581から照度の値を取得する | - |
-
-## フローの実行
+## フローの実行{#executeFlow}
 
 **実行できるフローのサイズは3kBが上限です。** またGlobalコンテキストに非対応です。
 
