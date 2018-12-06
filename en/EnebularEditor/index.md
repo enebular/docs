@@ -16,7 +16,9 @@ The enebular editor has 2 modes: `Desktop`, `Remote`.
 ### Desktop
 
 For editing flows where node support is limited to nodes that can interact with PC/Browser APIs.
-enebular editor loads the flow from the app itself
+enebular editor loads the flow from the app itself.
+
+Desktop Mode runs on port `9017`.
 
 ### Remote
 
