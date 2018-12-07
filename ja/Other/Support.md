@@ -36,7 +36,7 @@ enebular-agent は、Linux 上で動作します。
 ### 必要物
 
 - Network Interface (ethernet or WiFi)
-  - WiFi については、IEEE802.11a/b/g 等を想定していますが、Linux から IP 接続ができるネットワークが使用できれば良いものとします
+    - WiFi については、IEEE802.11a/b/g 等を想定していますが、Linux から IP 接続ができるネットワークが使用できれば良いものとします
 - SD-Card
 - RAM
 - Flash Memory
@@ -91,6 +91,7 @@ enebular-edge-agent は、[ARM Ltd.](https://www.arm.com/) の [Mbed OS](https:/
 enebular-edge-agent 0.9.1 は、下記のハードウェアを対象としています。
 
 - [FRDM-K64F](https://www.nxp.com/jp/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F) (NXP Semiconductors N.V.) + Stag Beetle Board (Uhuru Corporation)
+- Raven <!-- あとでここ書き足すので忘れないようにする -->
 
 #### Communication
 
@@ -134,3 +135,11 @@ permission error が起こった際には、以下のいずれかで解決がで
 - Windows: https://github.com/coreybutler/nvm-windows
 
 3. npm の[デフォルトのディレクトリ](https://docs.npmjs.com/getting-started/fixing-npm-permissions)を変更する。
+
+## enebular Reference Board Configuration Tool{#eRB-Config.Tool}
+
+enebular Reference Board Configuration Toolの動作環境は以下です。
+
+| OS | CPU | メモリ | その他 |
+| --- | --- | --- | --- |
+| Windows 10 | Core i5 2.90GHz以上推奨 | 8.0GB以上推奨 | .NET Framework v4.6.1 |

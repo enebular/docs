@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-11-29
+lastUpdated: 2018-12-06
 ---
 
 # Summary
@@ -99,14 +99,6 @@ lastUpdated: 2018-11-29
   - [Logs](Device/Logs.md)
 - [License Manager](Device/LicenseManager.md)
 
-## Enebular Edge Agent
-- [Introduction](EnebularEdgeAgent/Introduction.md)
-- [GetStarted](EnebularEdgeAgent/GetStarted.md)
-- [Nodes](EnebularEdgeAgent/Nodes.md)
-- [Configuration](EnebularEdgeAgent/Configration.md)
-- [SampleFlows](EnebularEdgeAgent/SampleFlows.md)
-- [Board](Board/Introduction.md)
-  - [Raven](Board/Raven.md)
 
 ## Config
 
@@ -127,6 +119,15 @@ lastUpdated: 2018-11-29
 
 - [Introduction](EnebularEditor/index.md)
 - [Remote Mode](EnebularEditor/RemoteMode.md)
+
+## enebular edge agent
+- [Introduction](EnebularEdgeAgent/Introduction.md)
+- [GettingStarted](EnebularEdgeAgent/GettingStarted.md)
+- [Nodes](EnebularEdgeAgent/Nodes.md)
+- [Configuration](EnebularEdgeAgent/Configuration.md)
+- [SampleFlows](EnebularEdgeAgent/SampleFlows.md)
+- [Board](Board/Introduction.md)
+  - [RAVEN](Board/RAVEN.md)
 
 ## Appendix
 
