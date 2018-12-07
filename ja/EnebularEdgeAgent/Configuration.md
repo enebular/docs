@@ -13,7 +13,7 @@ enebular-edge-agent は **enebular Reference Board Configuration Tool**(以下:e
 
 ## インストール {#install}
 
-1. [こちらxxxxxxxxx)からインストーラをダウンロードします。
+1. [こちら](xxxxxxxxx)からインストーラをダウンロードします。
 1. 「setup.exe」を実行し画面の表示に従い、インストールを行います。
 
 ## 使用方法 {#usage}
