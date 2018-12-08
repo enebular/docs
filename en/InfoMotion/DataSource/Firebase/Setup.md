@@ -3,7 +3,7 @@ lastUpdated: 2018-08-09
 ---
 
 
-###Set-up  
+###Set-up   {#et-up  }
 
 Register at https://firebase.google.com/.
 Once you are registerd and logged in click on add project. 
@@ -28,7 +28,7 @@ A modal will pop up with configuration keys. These keys will be used later on wi
 ![Setup-firebaseKeys-en](./../../../../img/InfoMotion/DataSource/Firebase/Setup-firebaseKeys-en.png)
 
 
-###Authentication
+###Authentication {#uthentication}
 
 Before we create a Flow we will need to set up authentications. 
 In this example we will keep it simple with an Anonymous authentication. 
@@ -52,7 +52,7 @@ Anonymous should now be enabled.
 
 ![Setup-anonymousStatusEnabled-en](./../../../../img/InfoMotion/DataSource/Firebase/Setup-anonymousStatusEnabled-en.png)
 
-###Set up DataBase 
+###Set up DataBase  {#et up DataBase }
 
 To set up a database click database on the side bar. 
 

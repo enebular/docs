@@ -2,11 +2,11 @@
 lastUpdated: 2018-4-24
 ---
 
-# Sample InfoTypes 
+# Sample InfoTypes  {#Sample InfoTypes }
 
 The following InfoTypes are free sample charts/graphs for you to test your data on. 
 
-## Line Chart 
+## Line Chart  {#Line Chart }
 
 <ul> 
   <li><a href="/_asset/sample/linechart.zip" target="_blank">Sample Line Chart  Download (zip)</a></li> 
@@ -31,7 +31,7 @@ Editable properties:
 - Value to name legened 
 - The amount of data to be viewed 
 
-## Bar Chart 
+## Bar Chart  {#Bar Chart }
 
 <ul> 
   <li><a href="/_asset/sample/barchart.zip" target="_blank">Sample Bar Chart Download (zip)</a>
@@ -57,7 +57,7 @@ Editable properties:
 - Label to categorize data 
 - Value to be represented from Labeled data 
 
-## Pie Chart 
+## Pie Chart  {#Pie Chart }
 
 <ul> 
   <li> 

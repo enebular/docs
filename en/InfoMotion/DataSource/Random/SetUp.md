@@ -2,19 +2,19 @@
 lastUpdated: 2018-11-19
 ---
 
-# Random Data Generator 
+# Random Data Generator  {#Random Data Generator }
 
 Random datasource allows users to test infotypes with random data generated on the client side.  
 This way users can display infotypes in the dashboard without creating a datasource. 
 
-## Set-up
+## Set-up {#Set-up}
 
 Random adapter requires no set up.  
 When creating a graph in the infomotion dashboard, random adapter is added by default as a datasource option under the name random. 
 
 ![Select random data source](./../../../../img/InfoMotion/DataSource/Random/SelectRandomDataSource.png)
 
-## Random Sample Data 
+## Random Sample Data  {#Random Sample Data }
 
 ```javascript
 {
@@ -27,7 +27,7 @@ When creating a graph in the infomotion dashboard, random adapter is added by de
 }
 ```
 
-## Random Data Schema
+## Random Data Schema {#Random Data Schema}
 
 ```json
 {

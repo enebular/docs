@@ -2,7 +2,7 @@
 lastUpdated: 2018-08-09
 ---
 
-###Access Control Allow Origin 
+###Access Control Allow Origin  {#ccess Control Allow Origin }
 
 For milkcocoa to be used locally it must be 
 served from a http server. 

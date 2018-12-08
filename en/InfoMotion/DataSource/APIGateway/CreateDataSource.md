@@ -2,7 +2,7 @@
 lastUpdated: 2018-08-09
 ---
 
-###Create a Data Source (Not Applicable with livemode) 
+###Create a Data Source (Not Applicable with livemode)  {#reate a Data Source (Not Applicable with livemode) }
 
 In the same enebular project click `Data Sources` and the plus button to add a `Data Source`
 
@@ -21,7 +21,7 @@ You should see a new DataSource created.
 ![CreateDataSource-addNewOne](./../../../../img/InfoMotion/DataSource/APIGateway/CreateDataSource-addNewOne.png)
 
 
-## Endpoint
+## Endpoint {#Endpoint}
 
 Endpoint's format is `https://[id].execute-api.ap-northeast-1.amazonaws.com/[stage]/[method]` 
 To take an example of  [Setup & Create Lambda Function](./CreateLambdaFunction.md). Endpoint is `https://*********.execute-api.ap-northeast-1.amazonaws.com/teststage/test` .
@@ -36,7 +36,7 @@ See `Resource`  for checking `method` .
 ![CreateDataSource-endpointMethod-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateDataSource-endpointMethod-en.png)
 
 
-## APIKey
+## APIKey {#APIKey}
 
 Create Amazon API Gateway's API Key.
 If you know more, see [official document](https://aws.amazon.com/documentation/apigateway/?nc1=h_ls) for details.
@@ -55,7 +55,7 @@ Now it becomes a registered apikey to be used for a DataSource.
 
 ![CreateDataSource-confirmAPIKey-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateDataSource-confirmAPIKey-en.png)
 
-## Create InfoMotion
+## Create InfoMotion {#Create InfoMotion}
 
 Now your DataSource is ready to be used on an infotype see 
 [Sample infotypes](./../../SampleInfoTypes.md)to downoad a graph, 

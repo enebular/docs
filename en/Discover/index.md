@@ -2,7 +2,7 @@
 lastUpdated: 2018-01-30
 ---
 
-# Searching Other User's Assets
+# Searching Other User's Assets {#Searching Other User's Assets}
 
 You can allow other users to use your assets by publishing them on enebular.com.
 

@@ -2,7 +2,7 @@
 lastUpdated: 2017-12-15
 ---
 
-# Infomotion Dashboard
+# Infomotion Dashboard {#Infomotion Dashboard}
 
 With dataSource created and an InfoType uploaded select「Create InfoMotion」to create a dashboard.
 
@@ -60,7 +60,7 @@ Data passed though InfoMotions can be controlled with daterange, timeline, play 
 InfoMotion Dashboards can be customizable for specific needs.
 Please see [infomotion share](./InfoMotionTool.md) for more details. 
 
-## Dashboard options
+## Dashboard options {#Dashboard options}
 
 - `save` - saves dashboard positions.
 - `filters` - create filters for InfoMotions.
@@ -68,7 +68,7 @@ Please see [infomotion share](./InfoMotionTool.md) for more details.
 
 ![](../_asset/images/InfoMotion/enebular-developer-dashboard-options.png)
 
-## InfoMotion options
+## InfoMotion options {#InfoMotion options}
 
 *Order left to right.*
 
@@ -80,7 +80,7 @@ Please see [infomotion share](./InfoMotionTool.md) for more details.
 
 ![](../_asset/images/InfoMotion/enebular-developers-infomotion-options.png)
 
-##Example of Filter. 
+##Example of Filter.  {#xample of Filter. }
 
 Infomotion without a filter. 
 

@@ -2,7 +2,7 @@
 lastUpdated: 2018-01-25
 ---
 
-# Project Settings
+# Project Settings {#Project Settings}
 
 In settings you can change the project name and delete the project.
 

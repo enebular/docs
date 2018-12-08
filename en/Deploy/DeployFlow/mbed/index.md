@@ -2,7 +2,7 @@
 lastUpdated: 2018-05-14
 ---
 
-# Deploying to Mbed Cloud
+# Deploying to Mbed Cloud {#Deploying to Mbed Cloud}
 
 In terms of the flow's deploy destination, if you press the deploy button it will just be deployed to the server that enebular is using. The Mbed Cloud deploy feature allows flows to be deployed to registered devices via Mbed Cloud.
 
@@ -10,7 +10,7 @@ For supported devices, please see [Supported Environments](../../../Other/Suppor
 
 This page covers the steps required to deploy flows to devices via Mbed Cloud.
 
-## Creating a New Flow
+## Creating a New Flow {#Creating a New Flow}
 
 First we'll create a flow to deploy to the device (we assume that the project has already been created).
 
@@ -22,9 +22,9 @@ After creating the flow and pressing "Edit Flow" the Node-RED editor will start 
 
 We'll create the flow by editing it in the editor.
 
-## Editing the Data Flow
+## Editing the Data Flow {#Editing the Data Flow}
 
-### When Deploying to Raspberry Pi
+### When Deploying to Raspberry Pi {#When Deploying to Raspberry Pi}
 
 Start the Raspberry Pi's Node-RED and leave it on standby.
 
@@ -36,7 +36,7 @@ Press the red "Deploy" button at the top right to save it.
 
 ![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_04.png)
 
-### When Deploying to enebular edge agent
+### When Deploying to enebular edge agent {#When Deploying to enebular edge agent}
 
 Turn on the device to be used for the deploy in advance.
 
@@ -62,7 +62,7 @@ Press the red "Deploy" button at the top right to save it.
 
 ![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_04.png)
 
-## Deploying
+## Deploying {#Deploying}
 
 Select "Export to Other Services" from the down arrow to the right of "Deploy".
 
@@ -115,14 +115,14 @@ The "Status" of the device that was powered on in advance will be "connected", s
 
 ![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_13.png)
 
-## Confirmation
+## Confirmation {#Confirmation}
 
-### When Deploying to Raspberry Pi
+### When Deploying to Raspberry Pi {#When Deploying to Raspberry Pi}
 
 Check that the flow has been updated in the log messages.
 
 ![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_17.png)
 
-### When Deploying to enebular edge agent
+### When Deploying to enebular edge agent {#When Deploying to enebular edge agent}
 
 Check that the green LED on the K64F is blinking.
