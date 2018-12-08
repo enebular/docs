@@ -4,27 +4,27 @@ lastUpdated: 2018-12-04
 
 # enebular Release Notes {#enebular}
 
-## Latest Release - 2.6.1 (December 4th, 2018)
+## Latest Release - 2.6.1 (December 4th, 2018) {#Latest Release - 2.6.1 (December 4th, 2018)}
 
-## New
+## New {#New}
 
 - None
 
-## Fixed
+## Fixed {#Fixed}
 
 - Sign Up画面で必要な情報を入力後、Sign Upボタンを押してもメール送信通知画面に遷移しない問題を修正しました
 - Connectionの設定で、AWS IoT、AWS Lambdaを選択した場合、どのリージョンを指定しても ap-northeast-1 リージョンにあるリストが表示される問題を修正しました
 
-## Changed
+## Changed {#Changed}
 
 - None
 
-## Known Issues
+## Known Issues {#Known Issues}
 
 - 言語設定を英語にしたブラウザでフローエディタを開いても、一部の説明文が日本語で表示されます
 - InfoMotionを埋め込んだ共有ページでは、filter機能が使用できません
 
-## Release History
+## Release History {#Release History}
 
 - [2.6.1](./enebular/2.6.1.md) (December 4th, 2018)
 - [2.6.0](./enebular/2.6.0.md) (November 30th, 2018)
@@ -51,17 +51,17 @@ lastUpdated: 2018-12-04
 
 # enebular agent Release Notes {#enebular-agent}
 
-## Latest Release - 2.3.0 (November 30th, 2018)
+## Latest Release - 2.3.0 (November 30th, 2018) {#Latest Release - 2.3.0 (November 30th, 2018)}
 
-## New
+## New {#New}
 
 - enebular から enebular agent にファイルをデプロイすることの出来る"Files Deploy"機能が新たに追加されました
 
-## Fixed
+## Fixed {#Fixed}
 
 - 不正なAWS IoT用設定ファイルがビルド済みパッケージ（*-prebuilt.tar.gz）に含まれていた不具合に対応しました
 
-## Changed
+## Changed {#Changed}
 
 - Raspberry Piのデバイスで、Node-REDのnrgpioノードがデフォルトで正しく動作するように、enebular-agentのユーザがgpioグループに追加されるようにインストールスクリプトを変更しました
 - enebular-agentが何らかの理由で異常終了した場合、60秒後に自動的に再起動されるようにsystemd用のサービス起動登録機能を変更しました
@@ -70,15 +70,15 @@ lastUpdated: 2018-12-04
     - "Mbed Cloud"と記載されているところを全て"Pelion Device Management"に変更しました
     - インストールスクリプトのダウンロード用URLを短縮したものに変更しました
 
-## Known Issues
+## Known Issues {#Known Issues}
 
  N/A
 
-### Recommended Hardware
+### Recommended Hardware {#Recommended Hardware}
 推奨動作ハードウェアは下記の通りです。
 * Raspberry PI3 Model B
 
-### Operating Environment
+### Operating Environment {#Operating Environment}
 推奨動作環境は下記の通りです。
 
 #### Raspberry PI3 Model B
@@ -105,7 +105,7 @@ lastUpdated: 2018-12-04
 * npm 5.6.0
 * node-red 0.17.5
 
-## Release History
+## Release History {#Release History}
 
 - [2.3.0](./enebular-agent/2.3.0.md) (November 30th, 2018)
 - [2.2.0](./enebular-agent/2.2.0.md) (September 7th, 2018)
@@ -116,24 +116,24 @@ lastUpdated: 2018-12-04
 
 # enebular edge agent Release Notes {#enebular-edge-agent}
 
-## Latest Release - 1.0.1 (June 7th, 2018)
+## Latest Release - 1.0.1 (June 7th, 2018) {#Latest Release - 1.0.1 (June 7th, 2018)}
 
 enebular-edge-agent 1.0.1 では、バージョンを Mbed Cloud Client 1.3.1.1 General Availability (GA) アップデートしました。
 
-## New
+## New {#New}
 - N/A
 
-## Fixed
+## Fixed {#Fixed}
 - Wi-Fiモジュールとの通信処理の排他制御が原因で長時間起動時にネットワークが切断される問題を、Wi-Fiモジュールのライブラリを更新することで修正しました
 
-## Changed
+## Changed {#Changed}
 - Mbed Cloud Client 1.3.1.1 General Availability (GA) へアップデートを行いました
 
-## Known Issues
+## Known Issues {#Known Issues}
 - BME280 ノードの使用時、フローのサイズが大きいと正常に動作しない場合があります
 - Inject ノードにおいて、PayloadにはTimestampのみ、RepeatにIntervalのみしか設定できません
 
-### Operating Environment
+### Operating Environment {#Operating Environment}
 
 #### Operating System
 
@@ -150,7 +150,7 @@ enebular-edge-agent 1.0.1は、下記のハードウェアを対象としてい�
 * IEEE 802.11 b/g/n (IEEE 802.11n は2.4GHzのみの対応です)
 * WPA/WPA2
 
-## Release History
+## Release History {#Release History}
 
 * [1.0.1](./enebular-edge-agent/1.0.1.md) (June 7th, 2018)
 * [1.0.0](./enebular-edge-agent/1.0.0.md) (May 18th, 2018)
@@ -162,24 +162,24 @@ enebular-edge-agent 1.0.1は、下記のハードウェアを対象としてい�
 
 # enebular editor Release Notes {#enebular-editor}
 
-## Latest Release - 0.9.0 (November 30th, 2018)
+## Latest Release - 0.9.0 (November 30th, 2018) {#Latest Release - 0.9.0 (November 30th, 2018)}
 
-## New
+## New {#New}
 
 - enebularのフローをPC上で編集しデプロイするためのツール ”enebular editor"のβ版をリリースしました （[Win版](https://s3-ap-northeast-1.amazonaws.com/enebular-editor/win/enebular+editor+Setup+0.9.0.exe)/[Mac版](https://s3-ap-northeast-1.amazonaws.com/enebular-editor/mac/enebular+editor-0.9.0.dmg))
 
-## Fixed
+## Fixed {#Fixed}
 
 N/A
 
-## Changed
+## Changed {#Changed}
 
 N/A
 
-## Known Issues
+## Known Issues {#Known Issues}
 
 - enebular editorをenebular-agentに接続してflowを編集する場合、AWS Lambda Requestノードが使えません
 
-## Release History
+## Release History {#Release History}
 
 * [0.9.0](./enebular-editor/0.9.0.md) (November 30th, 2018)

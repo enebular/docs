@@ -2,11 +2,11 @@
 lastUpdated: 2018-05-14
 ---
 
-# デプロイについて
+# デプロイについて {#デプロイについて}
 
 [Introduction](../INDEX.md) で述べたように、enebular では作成したアセットをデバイスにデプロイできます。
 
-## Deploy flow
+## Deploy flow {#Deploy flow}
 
 Node-RED のフローエディタで作成したデータフローである Flow は外部サービスと連携してデバイスへデプロイできます。
 
@@ -27,17 +27,17 @@ AWS IoT や mbed Cloud などエッジデバイスにデプロイをするクラ
 
 Heroku や AWS Lambda などクラウド上に実行環境が存在する場合は、クラウドサービスが**デバイス**と**デバイスマスター**の両方の役割を担います。
 
-## デプロイ可能なフローのサイズ
+## デプロイ可能なフローのサイズ {#デプロイ可能なフローのサイズ}
 
-### enebular-edge-agent
+### enebular-edge-agent {#enebular-edge-agent}
 
 最大サイズ：3kB
 
-### enebular-agent
+### enebular-agent {#enebular-agent}
 
 最大サイズ：100kB
 
-### cloud service
+### cloud service {#cloud service}
 
 | ターゲット | 最大サイズ |
 | --- | --- |
@@ -46,12 +46,12 @@ Heroku や AWS Lambda などクラウド上に実行環境が存在する場合�
 
 具体的なデプロイ方法は以下になります。
 
-### エッジ
+### エッジ {#エッジ}
 
 * [mbed Cloud](./DeployFlow/mbed/index.md)
 * [AWS IoT](./DeployFlow/AWSIoT/index.md)
 
-### クラウド
+### クラウド {#クラウド}
 
 * [Heroku](./DeployFlow/Heroku/index.md)
 * [AWS Lambda](./DeployFlow/Lambda/index.md)

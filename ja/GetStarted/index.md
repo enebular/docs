@@ -2,7 +2,7 @@
 lastUpdated: 2018-07-10
 ---
 
-# Getting Started
+# Getting Started {#Getting Started}
 
 enebularの主要な機能に触れることができるチュートリアルです。  
 enebularを初めて利用する場合、下記のチュートリアルを通してenebularについて理解をすすめることをおすすめします。

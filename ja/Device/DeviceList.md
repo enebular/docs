@@ -2,17 +2,17 @@
 lastUpdated: 2018-05-22
 ---
 
-# Device List
+# Device List {#Device List}
 
 Device Listでは[License Manager](./LicenseManager.md)でライセンスを割り当てたデバイスの **ステータス** と **ログ** を確認することが出来ます。この機能は現在エンタープライズプランでのみのサポートです。さらに情報が必要な方は **support@enebular.com** に連絡してください。
 
-## Select Connection Type
+## Select Connection Type {#Select Connection Type}
 
 ![select_connection_type](../_asset/images/Devices/device_list-select_connection-001.png)
 
 閲覧したいデバイスが含まれるコネクションを AWS IoT または MBED から選択します。
 
-## Select Connection
+## Select Connection {#Select Connection}
 
 ![select_connection](../_asset/images/Devices/device_list-select_connection-002.png)
 
@@ -21,7 +21,7 @@ Device Listでは[License Manager](./LicenseManager.md)でライセンスを割�
 コネクションが登録済みでない場合、 New を押下してコネクションを作成してください。
 コネクションの作成方法については、作成したいコネクションにあわせて [Example: AWS IoT](../Deploy/DeployFlow/AWSIoT/index.md) または [Example: mbed Cloud](../Deploy/DeployFlow/mbed/index.md) を参照してください。
 
-## Device List
+## Device List {#Device List}
 
 ![device_list](../_asset/images/Devices/device_list-device_list.png)
 

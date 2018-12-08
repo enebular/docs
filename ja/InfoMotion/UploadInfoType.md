@@ -2,7 +2,7 @@
 lastUpdated: 2017-12-14
 ---
 
-# InfoType を enebular へのアップロード
+# InfoType を enebular へのアップロード {#InfoType を enebular へのアップロード}
 
 `infomotion-tool` を使ってパッケージしたものを enebular にアップロードできます。
 
