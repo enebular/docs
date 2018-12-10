@@ -23,8 +23,13 @@ enebular のユーザーはアセットを公開すること、また公開さ�
 ![discover](./../../img/GetStarted/DataVisualization-discover.png)
 
 検索結果に出てきたものをクリックし、下記のようなフロープレビューが表示されていることを確認してください。
+<<<<<<< HEAD
 右の `Import` ボタンよりフローをインポートできます。
 ![discover2](./../../img/GetStarted/DataVisualization-discover2.png)
+=======
+右の `fork` ボタンよりフローをフォークできます。
+![discover2](./../../img/GetStarted/flow-discover.png)
+>>>>>>> 24ffd38a9e81a0eb4bb115f0a449a33fdd023668
 
 インポート先の適当なプロジェクトに初期値のロール設定(superdev)で import してください。
 ![import](./../../img/GetStarted/DataVisualization-import.png)

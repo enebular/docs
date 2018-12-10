@@ -24,7 +24,7 @@ Select Flow and search `getting-started`.
 
 Click Import to open the import modal.
 
-![discover2](./../../img/GetStarted/DataVisualization-discover2.png)
+![discover2](./../../img/GetStarted/flow-discover.png)
 
 Select the project to import to and the Default asset role. (For now select superdev)
 
