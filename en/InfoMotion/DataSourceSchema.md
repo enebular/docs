@@ -40,18 +40,13 @@ For an enebular sample barchart the folowing data is required.
 ```json
 {
   "type": "object",
-  "required": ["timestamp", "value"],
+  "required": ["ts"],
   "properties": {
-    "timestamp": {
-      "$id": "#/properties/timestamp",
+    "ts": {
+      "$id": "#/properties/ts",
       "type": "integer",
-      "title": "The Timestamp Schema",
+      "title": "The ts Schema",
       "examples": [1542352981750]
-    },
-    "value": {
-      "$id": "#/properties/value",
-      "type": "object",
-      "title": "The Value Schema"
     }
   }
 }

@@ -80,6 +80,6 @@ return msg;
 ![CreateFlow-debugLog](./../../../../img/InfoMotion/DataSource/Firebase/CreateFlow-debugLog.png)
 
 
-次に Firebase のページで先ほど作ったアプリからデータにデータが追加されているか確認します。
+次に Firebase のページで先ほど作ったアプリからデータが追加されていることを確認します。
 
 ![CreateFlow-firebaseProjectDatabase-ja](./../../../../img/InfoMotion/DataSource/Firebase/CreateFlow-firebaseProjectDatabase-ja.png)
