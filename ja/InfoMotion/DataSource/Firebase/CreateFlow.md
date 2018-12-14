@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-08-09
+lastUpdated: 2018-10-29
 ---
 
 # フローの作成
@@ -48,12 +48,9 @@ function ノードをダブルクリックして `edit function node` のモー�
 
 ```javascript
 var data = {
-        timestamp: Date.now(),
-        value:{
-            category:['A','B','C','D'][Math.floor(Math.random()*4)],
-            value: Math.floor(Math.random()*10),
-            created:Date.now()
-        }
+        ts: Date.now(),
+        category:['A','B','C','D'][Math.floor(Math.random()*4)],
+        value: Math.floor(Math.random()*10)
       }
       
 msg.payload = data;
@@ -83,6 +80,6 @@ return msg;
 ![CreateFlow-debugLog](./../../../../img/InfoMotion/DataSource/Firebase/CreateFlow-debugLog.png)
 
 
-次に Firebase のページで先ほど作ったアプリからデータにデータが追加されているか確認します。
+次に Firebase のページで先ほど作ったアプリからデータが追加されていることを確認します。
 
 ![CreateFlow-firebaseProjectDatabase-ja](./../../../../img/InfoMotion/DataSource/Firebase/CreateFlow-firebaseProjectDatabase-ja.png)

@@ -24,7 +24,7 @@ Select Flow and search `getting-started`.
 
 Click fork to open the fork modal.
 
-![discover2](./../../img/GetStarted/DataVisualization-discover2.png)
+![discover2](./../../img/GetStarted/flow-discover.png)
 
 Select the project to import to and the Default asset role. (For now select superdev)
 
@@ -106,13 +106,13 @@ Click on save to save. Now the datasource is ready for InfoMotion to use.
 
 ## Import an InfoType
 
-Enebular allows users to publish and fork Assets. At the right top part of the window click on `Discover`.
+Enebular allows users to publish and import Assets. At the right top part of the window click on `Discover`.
 
 Select InfoType and search `barchart`.
 
 ![discoverInfoType](./../../img/GetStarted/DataVisualization-discoverInfoType.png)
 
-Click fork to open the fork modal.
+Click import to open the import modal.
 
 ![sampleBarChart](./../../img/GetStarted/DataVisualization-discover2.png)
 
