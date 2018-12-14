@@ -8,7 +8,7 @@ lastUpdated: 2018-12-14
 `ts` の値は、daterange picker や timeline によりビジュアライズするデータ範囲を特定する際に InfoMotion で利用されます。
 また、このデータは InfoType に渡され、graph や chart を描画するときにも利用することがあります。
 
-````javascript
+```javascript
 {
   ts: Unix Timestamp milliseconds since Jan 01 1970. (UTC), // timestamp for daterange, timeline and querying.
   // All data in this object is passed to the infotype
@@ -53,4 +53,7 @@ InfoType に応じて必要となるキーと値を知るには、InfoType の�
   }
 }
 ```
-````
+
+```
+
+```
