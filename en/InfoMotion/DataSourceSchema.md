@@ -21,7 +21,7 @@ Each InfoType may require specific keys and values.
 The type of data required for each InfoType can be seen on the right hand side
 in preview of the InfoType.
 
-![sampleBarChart](../../img/infoMotion/DataSource/infotype-highlights.png)
+![sampleBarChart](./../../img/infoMotion/DataSource/infotype-highlights.png)
 
 For an enebular sample barchart the folowing data is required.
 

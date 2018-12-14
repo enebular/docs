@@ -20,7 +20,7 @@ lastUpdated: 2018-12-14
 InfoType 毎に、データに特定のキーと値が含まれることが必要となります。
 InfoType に応じて必要となるキーと値を知るには、InfoType のプレビューの右側に表示されるサンプルデータが役に立ちます。
 
-![sampleBarChart](./../../img/infoMotion/DataSource/infotype-highlight.png)
+![sampleBarChart](./../../img/infoMotion/DataSource/infotype-highlights.png)
 
 上記に示すように、enebular の sample barchart では、以下のキーと値を必要とします。
 
