@@ -22,7 +22,7 @@ enebular の主な利用方法は、**enebular.com でアセットを開発し�
 
 現在利用できるアセットは以下になります（その他にも、機械学習モデルなど対応予定のアセットがあります）。
 
-- [Flow](FlowDeploys/Introduction.md): Node-RED で作成するデータフローのことです
+- [Flow](Flows/Introduction.md): Node-RED で作成するデータフローのことです
 - [InfoMotion](InfoMotion/Introduction.md): グラフの可視化やデバイスへのコントロールを行うダッシュボードのことです
 - [InfoType](InfoMotion/InfoTypeIntroduction.md): InfoMotion で利用するグラフやコントローラーの型です。
 

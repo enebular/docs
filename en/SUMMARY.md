@@ -1,11 +1,13 @@
 ---
-lastUpdated: 2018-10-24
+lastUpdated: 2018-12-04
 ---
 
 # Summary
 
 - [Release Notes](Releases/index.md)
   - [enebular](Releases/index.md#enebular)
+    - [2.6.1](Releases/enebular/2.6.1.md)
+    - [2.6.0](Releases/enebular/2.6.0.md)
     - [2.5.2](Releases/enebular/2.5.2.md)
     - [2.5.1](Releases/enebular/2.5.1.md)
     - [2.5.0](Releases/enebular/2.5.0.md)
@@ -24,6 +26,7 @@ lastUpdated: 2018-10-24
     - [2.0.1](Releases/enebular/2.0.1.md)
     - [2.0.0](Releases/enebular/2.0.0.md)
   - [enebular agent](Releases/index.md#enebular-agent)
+    - [2.3.0](Releases/enebular-agent/2.3.0.md)
     - [2.2.0](Releases/enebular-agent/2.2.0.md)
     - [2.1.0](Releases/enebular-agent/2.1.0.md)
     - [2.0.0](Releases/enebular-agent/2.0.0.md)
@@ -33,6 +36,8 @@ lastUpdated: 2018-10-24
     - [0.10.0](Releases/enebular-edge-agent/0.10.0.md)
     - [0.9.1](Releases/enebular-edge-agent/0.9.1.md)
     - [0.9.0](Releases/enebular-edge-agent/0.9.0.md)
+  - [enebular editor](Releases/index.md#enebular-editor)
+    - [0.9.0](Releases/enebular-editor/0.9.0.md)
 - [Getting Started](GetStarted/index.md)
   - [Introduction](GetStarted/Introduction.md)
   - [Flow Deployment](GetStarted/FlowDeployment.md)
@@ -43,12 +48,12 @@ lastUpdated: 2018-10-24
 - [About Projects](Project/index.md)
 - [Project Settings](Project/Settings.md)
 
-## Flow Deploys
+## Flows
 
-- [Introduction](FlowDeploys/Introduction.md)
-- [Creating Flows](FlowDeploys/CreateFlow.md)
-- [Example: Milkcocoa](FlowDeploys/FlowExampleMilkcocoa.md)
-- [Publishing Flows](FlowDeploys/PublishFlow.md)
+- [Introduction](Flows/Introduction.md)
+- [Creating Flows](Flows/CreateFlow.md)
+- [Example: Milkcocoa](Flows/FlowExampleMilkcocoa.md)
+- [Publishing Flows](Flows/PublishFlow.md)
 
 ## InfoMotion
 
@@ -74,22 +79,24 @@ lastUpdated: 2018-10-24
     - [Create a DataSource](InfoMotion/DataSource/Pubnub/CreateDataSource.md)
     - [Create Flow](InfoMotion/DataSource/Pubnub/CreateFlow.md)
   - [API Gateway]()
-    - [Set up & Create Lambda Function](InfoMotion/DataSource/ApiGateway/CreateLambdaFunction.md)
-    - [Create a DataSource](InfoMotion/DataSource/ApiGateway/CreateDataSource.md)
+    - [Set up & Create Lambda Function](InfoMotion/DataSource/APIGateway/CreateLambdaFunction.md)
+    - [Create a DataSource](InfoMotion/DataSource/APIGateway/CreateDataSource.md)
+  - [Random]()
+    - [How to use Random DataSource](InfoMotion/DataSource/Random/SetUp.md)
 - [Dashboards](InfoMotion/CreateInfoMotion.md)
 - [Sharing an InfoMotion](InfoMotion/ShareInfoMotion.md)
 
-## File Deploys
+## Files
 
-- [Introduction](FileDeploys/index.md)
+- [Introduction](Files/index.md)
 
 ## Deploys
 
 - [Introduction](Deploy/index.md)
-- [Example: AWS IoT](Deploy/DeployFlow/AWSIoT/index.md)
-- [Example: Heroku](Deploy/DeployFlow/Heroku/index.md)
-- [Example: mbed Cloud](Deploy/DeployFlow/mbed/index.md)
-- [Example: AWS Lambda](Deploy/DeployFlow/Lambda/index.md)
+- [AWS IoT](Deploy/DeployFlow/AWSIoT/index.md)
+- [Heroku](Deploy/DeployFlow/Heroku/index.md)
+- [Pelion Device Management](Deploy/DeployFlow/mbed/index.md)
+- [AWS Lambda](Deploy/DeployFlow/Lambda/index.md)
 
 ## Devices
 
@@ -111,6 +118,11 @@ lastUpdated: 2018-10-24
 ## Account
 
 - [Account Settings](Account/index.md)
+
+## enebular editor
+
+- [Introduction](EnebularEditor/index.md)
+- [Remote Mode](EnebularEditor/RemoteMode.md)
 
 ## Appendix
 

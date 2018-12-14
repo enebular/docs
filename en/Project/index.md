@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-10-24
+lastUpdated: 2018-08-01
 ---
 
 # Projects
@@ -24,7 +24,7 @@ The project management screen includes the following pages.
 
 The content managed within the project.
 
-- [Flow](../FlowDeploys/Introduction.md): Data flows created with Node-RED
+- [Flow](../Flows/Introduction.md): Data flows created with Node-RED
 - [InfoMotion](../InfoMotion/Introduction.md): Data visualization graphs dashboard
 - [InfoType](../InfoMotion/InfoTypeIntroduction.md): Graph types used with InfoMotion
 
