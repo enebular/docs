@@ -119,6 +119,10 @@ lastUpdated: 2018-11-29
 - [Introduction](EnebularEditor/index.md)
 - [Remote Mode](EnebularEditor/RemoteMode.md)
 
+## enebular edge agent
+
+- [Introduction](EnebularEdgeAgent/Introduction.md)
+
 ## Appendix
 
 - [Supported Environments](Other/Support.md)
