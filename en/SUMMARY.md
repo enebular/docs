@@ -122,6 +122,7 @@ lastUpdated: 2018-11-29
 ## enebular edge agent
 
 - [Introduction](EnebularEdgeAgent/Introduction.md)
+- [Getting Started](EnebularEdgeAgent/GettingStarted.md)
 
 ## Appendix
 

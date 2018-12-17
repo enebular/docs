@@ -17,8 +17,6 @@ By using the device management function of enebular-edge-agent, you can manage d
 By using the firmware update function, you can update the firmware
 even in remote areas. This ensures that your enebular-edge-agent is always up-to-date.
 
-[Getting Started](./GettingStarted.md)から enebular-edge-agent を始めてください。このチュートリアルには、以下の手順が含まれます。
-
 Go to [Getting Started](./GettingStarted.md) to get started with enebular-edge-agent. This tutorial includes the following steps.
 
 1. Connection of reference board
