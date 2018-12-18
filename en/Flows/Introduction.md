@@ -36,6 +36,8 @@ You can deploy flows to specific services here.
 
 ![](https://i.gyazo.com/176869beb11cdec73fe02c8c09c4288f.png)
 
+You can also repeat your last deploy using Redeploy button.
+
 Please see [Deploying](../Deploy/index.md) for detailed information on deploying.
 
 ## Devices
