@@ -39,8 +39,8 @@ Outside collaborators can be invited from the "Access" page which can be navigat
 
 Next, permissions called "Asset privileges" can be configured for each of the assets of the three user types.
 
-- owner: view / edit / deploy / delete / add members
-- admin: view / edit / deploy / delete / add members
+- owner: view / edit / deploy / delete / add or delete Outside collaborators / change privilege of project collaborator
+- admin: view / edit / deploy / delete / add or delete Outside collaborators / change privilege of project collaborator
 - superdev: view / edit / deploy
 - developer: view / edit
 - operator: view / deploy

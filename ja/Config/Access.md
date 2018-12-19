@@ -39,8 +39,8 @@ Outside Collaborator は Flow の詳細画面の Access タブから行くこと
 
 そして、3 種類のユーザーにはそれぞれの Asset に対して Asset privilege という権限を設定できます。
 
-- owner: 閲覧・編集・デプロイ・削除・メンバーの追加
-- admin: 閲覧・編集・デプロイ・削除・メンバーの追加
+- owner: 閲覧・編集・デプロイ・削除・Outside Collaborator の追加・削除・Project Collaborator の権限を変更
+- admin: 閲覧・編集・デプロイ・削除・Outside Collaborator の追加・削除・Project Collaborator の権限を変更
 - superdev: 閲覧・編集・デプロイ
 - developer: 閲覧・編集
 - operator: 閲覧・デプロイ
