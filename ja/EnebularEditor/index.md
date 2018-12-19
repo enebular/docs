@@ -30,7 +30,7 @@ enebular editor は `enebular-runtime-agent` のフローエディタをリモ�
 
 - enebular アカウント
 - ネットワークに接続している PC
-- [Node 10.14.2 LTS](https://nodejs.org/en/)
+- [Node 10.14.2 LTS](https://nodejs.org/ja/)
 
 ## How to install
 
