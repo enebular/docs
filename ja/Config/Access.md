@@ -11,12 +11,15 @@ enebular の Project や Asset のアクセス権についてのドキュメン�
 まずはユーザーの種類について把握しましょう。以下の 3 種類のユーザーがいます。
 
 - Project Owner
+- Project Admin
 - Project Collaborator
 - Outside Collaborator
 
 ![](../_asset/images/enebular-developers-aboutaccess.png)
 
 **Project Owner** は、Project の管理者です。Project のメンバーの編集、その Project に属するすべての Asset のアクセス管理ができます。
+
+**Project Admin** は、Project に他のメンバーを招待することができます。Project Admin になると、自動的に Project に属するすべての Asset の admin になります。
 
 **Project Collaborator** は、Project のメンバーです。その Project に属するすべての Asset にアクセスができます。
 
@@ -36,7 +39,8 @@ Outside Collaborator は Flow の詳細画面の Access タブから行くこと
 
 そして、3 種類のユーザーにはそれぞれの Asset に対して Asset privilege という権限を設定できます。
 
-- owner: 閲覧・編集・デプロイ・メンバーの追加
+- owner: 閲覧・編集・デプロイ・削除・メンバーの追加
+- admin: 閲覧・編集・デプロイ・削除・メンバーの追加
 - superdev: 閲覧・編集・デプロイ
 - developer: 閲覧・編集
 - operator: 閲覧・デプロイ
