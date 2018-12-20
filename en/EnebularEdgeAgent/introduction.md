@@ -29,6 +29,6 @@ Refer to the page below for each boards device setup.
 
 - [Raven](./../Board/RAVEN.md)
 
-* 1: In the enebular-edge-agent there are restrictions on the nodes that can be executed. Please check from [Nodes] (./ Nodes.md).
+* 1: In the enebular-edge-agent there are restrictions on the nodes that can be executed. Please check from [Nodes](./Nodes.md).
 
-* 2: In order to use the device management function, a license must be registered. For details, see [LicenseManager] (./../ Device / LicenseManager.md). For logs, see [Logs] (./../ Device / Logs.md).
+* 2: In order to use the device management function, a license must be registered. For details, see [LicenseManager](./../Device/LicenseManager.md). For logs, see [Logs](./../Device/Logs.md).

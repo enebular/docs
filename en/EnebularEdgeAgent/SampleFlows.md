@@ -1,25 +1,25 @@
 ---
-lastUpdated: 2018-12-06
+lastUpdated: 2018-12-20
 ---
 
 # Sample Flows
 
-enebular-edge-agent を使用した Sample Flow です。市販の Grove モジュールを使用したフローも含まれます。
-
-heroku へのフローデプロイなど、enebular の GettingStared を一通り終えた方に向けたドキュメントとなっています。
+This section contains Sample Flows for enebular-edge-agent and Grove modules.
+Intended for users who have completed enebular's GettingStared particularly
+flow deployment to heroku.
 
 ### Table of Contents
 
-- [スイッチを使用して LED が明滅するフロー](#switchLchika)
-- [ブラウザから遠隔で LED を操作するフロー](#cloudLchika)
-  - heroku の環境を使用します。
-- [センサーデータをクラウドストレージに入れるフロー](#sensorData)
-  - heroku の環境を使用します。
-  - Firebase を使用します。
+- [Flow in which LED flashes using switch](#switchLchika)
+- [Flow to operate LEDs remotely from browser](#cloudLchika)
+  - Use heroku's environment.
+- [Flow to put sensor data in cloud storage](#sensorData)
+  - Use heroku's environment.
+  - Use Firebase.
 
-## スイッチを使用して LED が明滅するフロー{#switchLchika}
+## Switch cotrolling LED Flow {#switchLchika}
 
-USER SW を押すことによって USER LED が点灯し、もう一度押すと消灯します。
+The USER LED lights switches on or off when you press the USER SW.
 
 ![SampleFlows-switchLchika-flow](./../../img/EnebularEdgeAgent/SampleFlows-switchLchika-flow.png)
 
@@ -122,28 +122,29 @@ USER SW を押すことによって USER LED が点灯し、もう一度押す�
 
 ### Plus One
 
-市販の Grove モジュールを使って、input や output を容易に変更できます。
+You can easily change input and output using a (commercially available) Grove module.
 
-- Grove のスイッチ系のモジュールを input として使用をする場合は、interruptIn ノードの Port を該当する値に変更してください。
-- Grove の LED モジュールなどを output として使用する場合は、digitalOut ノードの Port を該当する値に変更してください。
+- When using Grove switch type module as input, change the Port of the interruptIn node to the corresponding value.
+
+- When using Grove's LED module etc. as output, change the port of the digitalOut node to the corresponding value.
 
 ![SampleFlows-switchLchika-setting](./../../img/EnebularEdgeAgent/SampleFlows-switchLchika-setting.png)
-※画像は interruptIn ノードのものです。
+※Image of interruptIn node
 
 ！！！！！！！！！！　一例書く？？　！！！！！！！！！！！！
 
-## ブラウザから遠隔で LED を操作するフロー{#cloudLchika}
+## Flow to operate LEDs remotely from browser {#cloudLchika}
 
 ![SampleFlows-cloudLchika-image](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-image.jpg)
 
 <!--あとで差し替え-->
 
-heroku 上にデバイスを管理する app を構築し、その状態によって LED が明滅するフローです。
-app の状態は、任意のブラウザから変更できます。
+Building an app on heroku that manages the device.
+The flow changes the state of the LED through the browser.
 
 ### heroku
 
-heroku 上に、デバイスが接続する app を用意します。
+Using an app that connects to the device.
 
 ![SampleFlows-cloudLchika-heroku](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-heroku.png)
 
@@ -283,21 +284,22 @@ heroku 上に、デバイスが接続する app を用意します。
 [こちら]()からimportできます。
 -->
 
-`https://[your-heroku-app].herokuapp.com/set_value?v=[value]`にブラウザからアクセスすることで、デバイスを制御する value を渡すことができます。
+`https://[your-heroku-app].herokuapp.com/set_value?v=[value]`
+You can pass the value controlling the device by accessing it from the browser.
 
-[your-heroku-app]にはデプロイした heroku app の ID が入ります。heroku の画面や enebular のデプロイ画面で確認できます。
+[your-heroku-app] contains the ID of the deployed heroku app. You can check it on heroku screen or enebular deployment screen.
 
 ![SampleFlows-cloudLchika-appId](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-appId.png)
-heroku から確認
+Confirmed from heroku
 
 ![SampleFlows-cloudLchika-appId2](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-appId2.png)
-deploy のリストから確認
+Check from deploy list
 
-アクセスすると「**set value! -> [value]**」が表示されます。
+When accessing「**set value! -> [value]**」is displayed.
 
 ### device
 
-5 秒周期で app にアクセスして状態を取得します。
+Access the app in 5 second intervals to get the status.
 
 ![SampleFlows-cloudLchika-device](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-device.png)
 
@@ -380,20 +382,23 @@ deploy のリストから確認
 [こちら]()からimportできます。
 -->
 
-JSON データを import したあと、http request ノードを開き、作成した heroku app の ID に書き換えてください。
+After importing the JSON data, open the http request node and rewrite it to the ID of the created heroku app.
 
 ![SampleFlows-cloudLchika-deviceHttp](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-deviceHttp.png)
 
-デバイスにデプロイ後、`https://[your-heroku-app].herokuapp.com/set_value?v=true`にブラウザからアクセスすると、少し遅れて USER LED が点灯します。
-また、`https://[your-heroku-app].herokuapp.com/set_value?v=false`にブラウザからアクセスすると、少し遅れて USER LED が消灯します。
+After deploying to the device, accessiing
+`https://[your-heroku-app].herokuapp.com/set_value?V=true`
+from the browser will light up the LED.
+Accessing `https: // [your-heroku-app] .herokuapp.com / set_value? V = false`
+from the browser switches the LED off.
 
 ### Plus One
 
-SlackBot を利用して、`https://[your-heroku-app].herokuapp.com/set_value?v=[value]`へアクセスするフローを追加すれば、ブラウザからではなく Slack から制御することもできます。
+SlackBot allows direct access from slack.
 
 ![SampleFlows-cloudLchika-slackFlow](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-slackFlow.png)
 
-slack の「API Token」、http request ノードの「URL」を自分のものに書き換えてください。
+Add your slack api token and URL to the slack node to set the request.
 
 ```json
 [
@@ -521,9 +526,9 @@ slack の「API Token」、http request ノードの「URL」を自分のもの�
 
 ![SampleFlows-cloudLchika-slackImage](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-slackImage.png)
 
-実装例です。
+It is an example.
 
-## センサーデータをクラウドストレージに入れるフロー{#sensorData}
+## Sending data to the cloud {#sensorData}
 
 ![SampleFlows-postData-image](./../../img/EnebularEdgeAgent/SampleFlows-postData-image.jpg)
 
@@ -532,10 +537,14 @@ slack の「API Token」、http request ノードの「URL」を自分のもの�
 heroku 上に Firebase へデータをいれる app を構築します。デバイスが app にデータを送信することにより Firebase にセンサのデータが入ります。
 この Sample Flow では Grove モジュールのアナログセンサを使用します。
 
+This application receives data from the sensor then
+stores the data in firebase.
+This Sample Flow uses the analog sensor of the Grove module.
+
 ## heroku
 
-heroku 上に、デバイスが接続する app を用意します。
-heroku から Firebase にデータを入れます。
+Prepare the app to be connected to the device on heroku.
+Put data into Firebase via heroku.
 
 ![SampleFlows-postData-heroku](./../../img/EnebularEdgeAgent/SampleFlows-postData-heroku.png)
 
@@ -642,22 +651,22 @@ heroku から Firebase にデータを入れます。
 [こちら]()からimportできます。
 -->
 
-import した後、Firebase ノードの設定を自分のものに書き換えてください。
+After importing, please change the settings of the Firebase node.
 
-1. Firebase ノード を開き、鉛筆マークを押します。
+1. Open the Firebase node and click the pencil mark to edit.
    ![SampleFlows-postData-firebase1](./../../img/EnebularEdgeAgent/SampleFlows-postData-firebase1.png)
 
-1. config dialog が開くので、自分の Firebase の appid を入力してください。Auth Type は「None」にしてください。
+1. Enter your Firebase's appid and Set Auth Type to "None".
    ![SampleFlows-postData-firebase2](./../../img/EnebularEdgeAgent/SampleFlows-postData-firebase2.png)
 
 ## device
 
-5 秒周期で port4 に接続された Grove モジュールのデータを app に送信します。
-Grove モジュールはアナログセンサを使用してください。
+Send port 4 data of the Grove module at 5 second intervals.
+Use an analog sensor with the Grove module.
 
 ![SampleFlows-postData-device](./../../img/EnebularEdgeAgent/SampleFlows-postData-device.png)
 
-http request ノードの「URL」を自分のものに書き換えてください。
+Change the "URL" of http request to your "URL".
 
 ```json
 [
@@ -725,8 +734,8 @@ http request ノードの「URL」を自分のものに書き換えてくださ�
 
 ## Plus One
 
-使用した Firebase を Datastore として登録すれば、Infomotion で簡単に可視化することができます。
+Register a Firebase data store to visualize your data with InfoMotion.
 
 ![SampleFlows-postData-infomotion](./../../img/EnebularEdgeAgent/SampleFlows-postData-infomotion.png)
 
-詳しい手順は、GetStarted > [DataVisualization](./../GetStarted/DataVisualization.md) に記載されているので、参考にしてください。
+For detailed instructions on Data Visualisation see GetStarted > [DataVisualization](./../GetStarted/DataVisualization.md)

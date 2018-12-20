@@ -16,7 +16,7 @@ RAVEN is the enebular-edge-agent reference board.
 
 ## Contents{#contents}
 
-以下のものが内容物です。
+Contents are as follows.
 
 ![](！！！！！！！写真いれる！！！！！！！)
 

@@ -41,20 +41,19 @@ For details, refer to the help of each node.
 
 ### Node Description
 
-| Classification                    | Node         | Overview                                                                                      | Remarks                                 |
-| --------------------------------- | ------------ | --------------------------------------------------------------------------------------------- | --------------------------------------- |
-| input                             | inject       | Start flow at regular intervals                                                               | There are multiple restrictions ※ 1     |
-| output                            | debug        | Output debug messages                                                                         | Can not output to the console           |
-| function                          | http request | make a http request                                                                           |
-| There are multiple restrictions※1 |
-| function                          | change       | Convert and delete msg properties                                                             | -                                       |
-| function                          | switch       | Set conditional branch                                                                        | -                                       |
-| function                          | range        | Convert value of `msg.payload` by setting                                                     | -                                       |
-| EEA                               | TSL2561      | Acquire illuminance value from TSL 2561 or TSL 2581                                           | -                                       |
-| EEA                               | BME280       | The values ​​of temperature, humidity, and atmospheric pressure are acquired from the BME 280 |                                         |
-| EEA                               | digitalout   | Perform digital output                                                                        | -                                       |
-| EEA                               | analogin     | Acquire the input value from the A / D converter                                              | -                                       |
-| EEA                               | interruptin  | Detect rising edge or falling edge of digital input and perform interrupt input               | The maximum simultaneous use limit is 5 |
+| Classification | Node         | Overview                                                                                      | Remarks                                 |
+| -------------- | ------------ | --------------------------------------------------------------------------------------------- | --------------------------------------- |
+| input          | inject       | Start flow at regular intervals                                                               | There are multiple restrictions ※ 1     |
+| output         | debug        | Output debug messages                                                                         | Can not output to the console           |
+| function       | http request | make a http request                                                                           | There are multiple restrictions※1       |
+| function       | change       | Convert and delete msg properties                                                             | -                                       |
+| function       | switch       | Set conditional branch                                                                        | -                                       |
+| function       | range        | Convert value of `msg.payload` by setting                                                     | -                                       |
+| EEA            | TSL2561      | Acquire illuminance value from TSL 2561 or TSL 2581                                           | -                                       |
+| EEA            | BME280       | The values ​​of temperature, humidity, and atmospheric pressure are acquired from the BME 280 |                                         |
+| EEA            | digitalout   | Perform digital output                                                                        | -                                       |
+| EEA            | analogin     | Acquire the input value from the A / D converter                                              | -                                       |
+| EEA            | interruptin  | Detect rising edge or falling edge of digital input and perform interrupt input               | The maximum simultaneous use limit is 5 |
 
 ※ 1 The following restrictions apply to **inject node**.
 
