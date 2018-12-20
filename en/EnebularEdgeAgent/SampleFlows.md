@@ -131,11 +131,9 @@ You can easily change input and output using a (commercially available) Grove mo
 ![SampleFlows-switchLchika-setting](./../../img/EnebularEdgeAgent/SampleFlows-switchLchika-setting.png)
 ※Image of interruptIn node
 
-！！！！！！！！！！　一例書く？？　！！！！！！！！！！！！
-
 ## Flow to operate LEDs remotely from browser {#cloudLchika}
 
-![SampleFlows-cloudLchika-image](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-image.jpg)
+![SampleFlows-cloudLchika-image](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-image.png)
 
 <!--あとで差し替え-->
 
@@ -243,7 +241,7 @@ Using an app that connects to the device.
 		"id": "bbda544.15caea8",
 		"type": "comment",
 		"z": "1fd4c161.fd62af",
-		"name": "デバイスに渡すvalue",
+		"name": "Value to pass to the device",
 		"info": "",
 		"x": 140,
 		"y": 200,
@@ -253,7 +251,7 @@ Using an app that connects to the device.
 		"id": "5121db03.1ed064",
 		"type": "comment",
 		"z": "1fd4c161.fd62af",
-		"name": "valueをsetされる",
+		"name": "Set value",
 		"info": "",
 		"x": 120,
 		"y": 40,
@@ -389,7 +387,7 @@ After importing the JSON data, open the http request node and rewrite it to the 
 After deploying to the device, accessiing
 `https://[your-heroku-app].herokuapp.com/set_value?V=true`
 from the browser will light up the LED.
-Accessing `https: // [your-heroku-app] .herokuapp.com / set_value? V = false`
+Accessing `https://[your-heroku-app].herokuapp.com/set_value?V=false`
 from the browser switches the LED off.
 
 ### Plus One
@@ -417,7 +415,7 @@ Add your slack api token and URL to the slack node to set the request.
 		"id": "b5b64af1.81fd48",
 		"type": "switch",
 		"z": "a38fc59f.c0d678",
-		"name": "slackのメッセージの判別",
+		"name": "Determining the message of slack",
 		"property": "payload",
 		"propertyType": "msg",
 		"rules": [
@@ -449,13 +447,13 @@ Add your slack api token and URL to the slack node to set the request.
 		"id": "804d5fac.a6ee9",
 		"type": "change",
 		"z": "a38fc59f.c0d678",
-		"name": "trueのときのレスポンス",
+		"name": "Response when true",
 		"rules": [
 			{
 				"t": "set",
 				"p": "payload",
 				"pt": "msg",
-				"to": "つけたよ！",
+				"to": "I got it!",
 				"tot": "str"
 			}
 		],
@@ -498,13 +496,13 @@ Add your slack api token and URL to the slack node to set the request.
 		"id": "7040eb7d.ec80f4",
 		"type": "change",
 		"z": "a38fc59f.c0d678",
-		"name": "falseのときのレスポンス",
+		"name": "Response when false",
 		"rules": [
 			{
 				"t": "set",
 				"p": "payload",
 				"pt": "msg",
-				"to": "けしたよ",
+				"to": "I lost it.",
 				"tot": "str"
 			}
 		],
@@ -530,7 +528,7 @@ It is an example.
 
 ## Sending data to the cloud {#sensorData}
 
-![SampleFlows-postData-image](./../../img/EnebularEdgeAgent/SampleFlows-postData-image.jpg)
+![SampleFlows-postData-image](./../../img/EnebularEdgeAgent/SampleFlows-postData-image.png)
 
 <!--あとで差し替え-->
 

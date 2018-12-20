@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-12-17
+lastUpdated: 2018-12-20
 ---
 
 # Getting Started
@@ -12,7 +12,7 @@ This tutorial will run a flow that switches an LED light off and on.
 The devices log will be displayed on enebular.
 (Required time 20 minutes)
 
-**\*Network setting is currently available only from windows OS. **
+**\*Network setting is currently available only from windows OS.**
 
 ### Table of Contents
 
@@ -20,12 +20,11 @@ The devices log will be displayed on enebular.
 1. [Network Settings](#network)
 1. [Import Flow](#import)
 1. [Deploy Flow](#deployFlow)
-1. Check execution log (#logs)
+1. [Check execution log](#logs)
 
-リファレンスボードを開封して、実際に使ってみるという流れを想定しています。
-We are assuming opened flow the reference board and actually using it.
+It is assumed that the flow is opened and the reference board is in use.
 
-Please prepare accounts and projects in enebular in advance. (This flow is described in detail in GettingStarted> [Introduction] (./../ GetStarted / Introduction.md))
+Please prepare accounts and projects in enebular in advance. (This flow is described in detail in GettingStarted> [Introduction](./../GetStarted/Introduction.md))
 
 ## Connecting the reference board {#conneciton}
 
@@ -35,13 +34,13 @@ Please prepare accounts and projects in enebular in advance. (This flow is descr
 
 ## Setting up the network {#network}
 
-1. **enebular Reference Board Configuration Tool**（以下: **eRB Config. Tool**）を[こちら](！！！！！！！！あとでリンクはる！！！！！！！！！！！！！)からダウンロードし、インストールします。
+1. **enebular Reference Board Configuration Tool**（**eRB Config. Tool**）click [Here](！！！！！！！！あとでリンクはる！！！！！！！！！！！！！) to download and install.
 1. Start the device in `configuration mode`.
    - Press RAVEN ... RESET SW and press and hold the USER SW after rebooting, it will be in 'settings mode'. Make sure the USER LED is lit in red.
-1. ** Configure the network with eRB Config. Tool **. For details, see the [Configuration] (./ Configuration.md) page.
+1. **Configure the network with eRB Config. Tool**. For details, see the [Configuration](./Configuration.md) page.
 1. When settings is completed, restart the device.
 
-### フローのインポート{#import}
+### Import Flow{#import}
 
 Within your current enebualr project
 Copy the JSON data below and import it to your flow.
@@ -187,7 +186,7 @@ Before continuing, turn on the device on.
 
 後で確認して書く
 
-## Confirmation of execution log {# logs}
+## Confirmation of execution log {#logs}
 
 You can check enebular eedge agent's execution log from enebular.com
 The log is transmitted first in 30 seconds after device startup, and then every 5 minutes thereafter.
@@ -257,4 +256,4 @@ This section assumes that the project has already been created in enebular.
    ![GettingStarted-create-switchOut](./../../img/EnebularEdgeAgent/GettingStarted-create-switchOut.png)
 
 We have created a flow to complete the enebular edge agent. Continue the tutorial from [Deploy Flow](#deployFlow).
-The editor contains a dummy flow therefore can not check the blinking of the LED. 
+The editor contains a dummy flow therefore can not check the blinking of the LED.
