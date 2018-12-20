@@ -1,20 +1,25 @@
 ---
-lastUpdated: 2018-07-20
+lastUpdated: 2018-12-20
 ---
 
 # Data Visualization
 
 enebular の InfoMotion の機能を使うことによって、データの可視化し、visualize することが可能です。
-このチュートリアルでは、以下のことを行います。
+このチュートリアルでは、「アセットをインポートし、InfoMotionでデータを可視化する」ということを行います。（所要時間50分）
 
-- フローの検索とフォーク
-- グラフ(InfoType)の検索とフォーク
-- InfoMotion によるデータの可視化
+## Table of Contents
 
-## flow のインポート
+1. [flow のインポート](#importFlow)
+1. [Datasource の作成](#CreateDatasourse)
+1. [Flow の編集とデプロイ](#EditFlow)
+1. [DataSource の登録](#RegisterDataSource)
+1．[InfoType のインポート](#ImportInfoType)
+1. [InfoMotion の作成](#CreateInfoMotion)
 
-enebular のユーザーはアセットを公開すること、また公開されているアセットをフォークすることができます。
-公開されているフローをフォークする手順を説明します。
+## flow のインポート{#importFlow}
+
+enebular のユーザーはアセットを公開すること、また公開されているアセットをインポートすることができます。
+公開されているフローをインポートする手順を説明します。
 右上にある`Discover`をクリックしてください。
 
 ![discoverMenu](./../../img/GetStarted/DataVisualization-discoverMenu.png)
@@ -23,23 +28,23 @@ enebular のユーザーはアセットを公開すること、また公開さ�
 ![discover](./../../img/GetStarted/DataVisualization-discover.png)
 
 検索結果に出てきたものをクリックし、下記のようなフロープレビューが表示されていることを確認してください。
-右の `fork` ボタンよりフローをフォークできます。
+右の `fork` ボタンよりフローをインポートできます。
 ![discover2](./../../img/GetStarted/DataVisualization-discover2.png)
 
-フォーク先の適当なプロジェクトに初期値のロール設定(superdev)で fork してください。
+インポート先の適当なプロジェクトに初期値のロール設定(superdev)で fork してください。
 ![fork](./../../img/GetStarted/DataVisualization-fork.png)
 
-フォークしたプロジェクトのダッシュボードに新しくアセットが追加されています。
+インポートしたプロジェクトのダッシュボードに新しくアセットが追加されています。
 
 ![addedForkFlow](./../../img/GetStarted/DataVisualization-addedForkFlow.png)
 
-インポートしたフローを開いて、同じフローがフォークされていることを確認してください。
+インポートしたフローを開いて、同じフローがインポートされていることを確認してください。
 
 ![forkFlow](./../../img/GetStarted/DataVisualization-forkFlow.png)
 
 このフローはそれぞれのデータソースの認証情報がブランクになっているので、デプロイする前にフローを編集する必要があります。
 
-## Datasource の作成
+## Datasource の作成{#CreateDatasourse}
 
 InfoMotion は現在下記に挙げるリアルタイムデータベースに対応しています。詳しくは各ページを参照してください。
 
@@ -52,7 +57,7 @@ InfoMotion は現在下記に挙げるリアルタイムデータベースに対
 
 ※ GetStarted の設定はテストに向けたものなので、実際に使用する際には推奨しません。
 
-## Flow の編集とデプロイ
+## Flow の編集とデプロイ{#EditFlow}
 
 データストアの認証情報をフローに入力し、デプロイをします。
 
@@ -91,7 +96,7 @@ InfoMotion を使うにはこのようなデータがプッシュされている
 
 **\*注 2**: 30 分を超えてフローエディタを立ち上げていると、デプロイ時「Unauthorized」と表示され、デプロイができません。この現象が起こった場合、ページを更新してください。
 
-## DataSource の登録
+## DataSource の登録{#RegisterDataSource}
 
 次に、作業しているプロジェクトにデータソースを登録します。
 プロジェクトのダッシュボードの左のメニューから `Data Source` を選択して、+ ボタンをクリックしてください。
@@ -105,10 +110,10 @@ Title に任意の名前を入力し、DataSource Type から [Firebase] を選�
 
 ![dataSourceSettings](./../../img/GetStarted/DataVisualization-dataSourceSettings.png)
 
-## InfoType のインポート
+## InfoType のインポート{#ImportInfoType}
 
-enebular のユーザーはアセットを公開すること、また公開されているアセットをフォークすることができます。
-公開されている InfoType をフォークする手順を説明します。
+enebular のユーザーはアセットを公開すること、また公開されているアセットをインポートすることができます。
+公開されている InfoType をインポートする手順を説明します。
 右上にある`Discover`をクリックしてください。
 
 右のカテゴリーから `InfoType` を選択して、「barchart」と検索バーに入力してください。
@@ -116,7 +121,7 @@ enebular のユーザーはアセットを公開すること、また公開さ�
 ![discoverInfoType](./../../img/GetStarted/DataVisualization-discoverInfoType.png)
 
 検索結果に出てきたものをクリックし、下記のようなプレビューは表示されていることを確認してください。
-右の `Fork` ボタンよりフローをフォークできます。
+右の `Fork` ボタンよりフローをインポートできます。
 
 ![sampleBarChart](./../../img/GetStarted/DataVisualization-discover2.png)
 
@@ -124,11 +129,11 @@ enebular のユーザーはアセットを公開すること、また公開さ�
 
 ![forkInfoType](./../../img/GetStarted/DataVisualization-forkInfoType.png)
 
-プロジェクトのダッシュボードにから、今フォークした InfoType が追加されていることを確認してください。
+プロジェクトのダッシュボードにから、今フインポートした InfoType が追加されていることを確認してください。
 
 ![confirmForkedInfoType](./../../img/GetStarted/DataVisualization-confirmForkedInfoType.png)
 
-## InfoMotion の作成
+## InfoMotion の作成{#CreateInfoMotion}
 
 これまでに追加した DataSource と InfoType を使用して InfoMotion を作成します。
 左メニューから InfoMotion を選択し、ページ右下の「+」ボタンをクリックして、ダイアログを開きます。

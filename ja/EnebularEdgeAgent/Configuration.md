@@ -18,7 +18,7 @@ enebular-edge-agent は **enebular Reference Board Configuration Tool**(以下:e
 ## 使用方法 {#usage}
 
 1. デバイスとPCをUSBケーブルでつなぎ、デバイスを`Setting Mode`で起動します。（`Setting Mode`について詳しくは、各デバイスのページを参照してください。）
-    - RAVENの場合･･･起動時にUSER SWを押したままの状態にする。（RESET SWを押した直後にUSER SWを押したままにするとUSER LEDが赤く点灯し、`Setting Mode`で起動します。）
+    - RAVENの場合･･･起動時にUSER SWを押したままの状態にする。（USER SWを押したまま、RESET SWを押します。5秒ほどでUSER LEDが赤く点灯し、`Setting Mode`に入ります。）
 1. 「ポート」からデバイスが接続されているシリアルポートを選択します。
 1. 「設定モード」から実行する作業を選択します。
     - 読み込みの場合・・・「読み込み」ボタンを押すことで、テキストエリアに設定済みのSSID名が表示されます。パスワードの確認はできません。

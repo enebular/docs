@@ -1,15 +1,23 @@
 ---
-lastUpdated: 2018-07-20
+lastUpdated: 2018-12-20
 ---
 
 # Flow Deployment
 
 Deploying flows to various environments and operating systems is a feature of Enebular.
-In this tutorial we will be deploying a flow to Heroku.
+This tutorial will do 'deploy a flow to Heroku'.(Time required 40 minutes)
 
 To complete this tutorial you will need to understand how to create an [Asset(Flow)](./Introduction.md).
 
-## Ready to deploy flow to Heroku
+
+## Table of Contents
+1. [Ready to deploy flow to Heroku](#CreateFlow)
+1. [Connection Settings](#ConnectionConfig)
+1. [Creating an app with the Heroku Button](#CreateApp)
+1. [App Settings](#AppConfig)
+1. [Deploying](#DeployFlow)
+
+## Ready to deploy flow to Heroku{#CreateFlow}
 
 ![flow](./../../img/GetStarted/FlowDeployment-flow.png)
 
@@ -21,7 +29,7 @@ Click on the "Deploy" botton to save the flow.
 
 ![deployButton](./../../img/GetStarted/FlowDeployment-deployButton.png)
 
-## Deploy Settings
+## Connection Settings{#ConnectionConfig}
 
 Configure your flow deployment by clicking on Deploy.
 
@@ -35,7 +43,7 @@ After selecting "Heroku", we can create a Heroku app from the "Deploy to Heroku"
 
 ![herokuButton](./../../img/GetStarted/FlowDeployment-herokuButton.png)
 
-## Creating an app with the Heroku Button
+## Creating an app with the Heroku Button{#CreateApp}
 
 Use the Heroku button to create the app. This step can be skipped for those who have already created one.
 
@@ -78,7 +86,7 @@ Once it has been created click the "View" button to check it.
 
 You'll be asked to provide the USERNAME and PASSWORD to log into the enebular Node-RED, so enter those that you set above.
 
-## Deploy Settings
+## App Settings{#AppConfig}
 
 Once the Heroku app has been created we configure the deploy settings. Return to the previous screen and continue on with the configuration.
 
@@ -106,7 +114,7 @@ Copy the API Key into "Heroku API Token" and click "Save".
 
 ![saveConnection](./../../img/GetStarted/FlowDeployment-saveConnection.png)
 
-## Deploying
+## Deploying{#DeployFlow}
 
 With the connection saved and Heroku selected as a "Connection Type", a list of the apps on the Heroku account should be displayed. From here, select the Heroku application you just created and press "Deploy".
 

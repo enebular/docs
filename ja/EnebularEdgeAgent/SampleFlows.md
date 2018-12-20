@@ -1,18 +1,18 @@
 ---
-lastUpdated: 2018-12-06
+lastUpdated: 2018-12-20
 ---
 
 # Sample Flows
 enebular-edge-agentを使用したSample Flowです。市販のセンサやアクチュエータを使用したフローも含まれます。
 
-herokuへのフローデプロイなど、enebularのGettingStaredを一通り終えた方に向けたドキュメントとなっています。
+herokuへのフローデプロイなどもあるので、enebularのGettingStaredを一通り終えた方に向けとなっています。
 
 ### Table of Contents
 - [スイッチを使用してLEDが明滅するフロー](#switchLchika)
 - [ブラウザから遠隔でLEDを操作するフロー](#cloudLchika)
-    - herokuの環境を使用します。
+    - herokuを使用します。
 - [センサーデータをクラウドストレージに入れるフロー](#sensorData)
-    - herokuの環境を使用します。
+    - herokuを使用します。
     - Firebaseを使用します。
 
 ## スイッチを使用してLEDが明滅するフロー{#switchLchika}
@@ -22,7 +22,7 @@ USER SWを押すことによってUSER LEDが点灯し、もう一度押すと�
 ![SampleFlows-switchLchika-flow](./../../img/EnebularEdgeAgent/SampleFlows-switchLchika-flow.png)
 
 ```json
-[{"id":"a6b5ddfd.fd473","type":"digitalout","z":"50c4866d.310dd8","board":"SBBv2","pin":"ULED","value":"false","si":false,"name":"","x":460,"y":60,"wires":[["7311d2ef.40d6bc"]]},{"id":"b128a7e8.fc3458","type":"digitalout","z":"50c4866d.310dd8","board":"SBBv2","pin":"ULED","value":"true","si":false,"name":"","x":460,"y":140,"wires":[["8139d6ac.21c748"]]},{"id":"7311d2ef.40d6bc","type":"change","z":"50c4866d.310dd8","name":"","rules":[{"t":"set","p":"led","pt":"flow","to":"false","tot":"bool"}],"action":"","property":"","from":"","to":"","reg":false,"x":630,"y":60,"wires":[[]]},{"id":"8139d6ac.21c748","type":"change","z":"50c4866d.310dd8","name":"","rules":[{"t":"set","p":"led","pt":"flow","to":"true","tot":"bool"}],"action":"","property":"","from":"","to":"","reg":false,"x":630,"y":140,"wires":[[]]},{"id":"26aec5d4.7acd2a","type":"interruptin","z":"50c4866d.310dd8","board":"SBBv2","pin":"USWITCH","mode":3,"trigger":"rise","name":"","x":140,"y":100,"wires":[["f79134f4.66aa98"]]},{"id":"f79134f4.66aa98","type":"switch","z":"50c4866d.310dd8","name":"","property":"led","propertyType":"flow","rules":[{"t":"true"},{"t":"else"}],"checkall":"true","repair":false,"outputs":2,"x":290,"y":100,"wires":[["a6b5ddfd.fd473"],["b128a7e8.fc3458"]]}]
+[{"id":"35aa62d8.b7976e","type":"digitalout","z":"90d9de00.d40e1","board":"RAVEN","pin":"ULED","value":"false","si":false,"name":"","x":440,"y":60,"wires":[["fd60c779.49cf98"]]},{"id":"74691d65.fe28d4","type":"digitalout","z":"90d9de00.d40e1","board":"RAVEN","pin":"ULED","value":"true","si":false,"name":"","x":440,"y":140,"wires":[["3dd5ff6a.7aed9"]]},{"id":"fd60c779.49cf98","type":"change","z":"90d9de00.d40e1","name":"","rules":[{"t":"set","p":"led","pt":"flow","to":"false","tot":"bool"}],"action":"","property":"","from":"","to":"","reg":false,"x":610,"y":60,"wires":[[]]},{"id":"3dd5ff6a.7aed9","type":"change","z":"90d9de00.d40e1","name":"","rules":[{"t":"set","p":"led","pt":"flow","to":"true","tot":"bool"}],"action":"","property":"","from":"","to":"","reg":false,"x":610,"y":140,"wires":[[]]},{"id":"4cd3cf19.805ae","type":"interruptin","z":"90d9de00.d40e1","board":"RAVEN","pin":"USWITCH","mode":3,"trigger":"rise","name":"","x":120,"y":100,"wires":[["917d7fc1.6570c"]]},{"id":"917d7fc1.6570c","type":"switch","z":"90d9de00.d40e1","name":"","property":"led","propertyType":"flow","rules":[{"t":"true"},{"t":"else"}],"checkall":"true","repair":false,"outputs":2,"x":270,"y":100,"wires":[["35aa62d8.b7976e"],["74691d65.fe28d4"]]}]
 ```
 <!-- 
 [こちら]()からimportできます。
@@ -30,24 +30,27 @@ USER SWを押すことによってUSER LEDが点灯し、もう一度押すと�
 
 ### Plus One
 
-市販のGroveモジュールを使って、inputやoutputを容易に変更できます。
+市販のセンサやアクチュエータを使って、inputやoutputを容易に変更できます。
+詳しくはボード毎のページを参照してください。
 
-* Groveのスイッチ系のモジュールをinputとして使用をする場合は、interruptInノードのPortを該当する値に変更してください。
-* GroveのLEDモジュールなどをoutputとして使用する場合は、digitalOutノードのPortを該当する値に変更してください。
+* スイッチ系のモジュールをinputとして使用をする場合は、interruptInノードのPortを該当する値に変更してください。
+* LEDモジュールなどをoutputとして使用する場合は、digitalOutノードのPortを該当する値に変更してください。
 
 ![SampleFlows-switchLchika-setting](./../../img/EnebularEdgeAgent/SampleFlows-switchLchika-setting.png)
 ※画像はinterruptInノードのものです。
 
-！！！！！！！！！！　一例書く？？　！！！！！！！！！！！！
+<!--あとで例示イラストを追加する-->
 
 
 ## ブラウザから遠隔でLEDを操作するフロー{#cloudLchika}
 
-![SampleFlows-cloudLchika-image](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-image.jpg)
+![SampleFlows-cloudLchika-image](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-image.png)
 <!--あとで差し替え-->
 
-heroku上にデバイスを管理するappを構築し、その状態によってLEDが明滅するフローです。
-appの状態は、任意のブラウザから変更できます。
+herokuにLEDをONにするかOFFにするかのパラメータを持たせ、デバイスがそれを確認するフローです。
+heroku用、デバイス用の二つのフローを使用します。
+
+herokuのパラメータは、任意のブラウザから変更できます。
 
 ### heroku
 
@@ -68,27 +71,14 @@ heroku上に、デバイスが接続するappを用意します。
 [こちら]()からimportできます。
 -->
 
-`https://[your-heroku-app].herokuapp.com/set_value?v=[value]`にブラウザからアクセスすることで、デバイスを制御するvalueを渡すことができます。
-
-[your-heroku-app]にはデプロイしたheroku appのIDが入ります。herokuの画面やenebularのデプロイ画面で確認できます。
-
-![SampleFlows-cloudLchika-appId](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-appId.png)
-herokuから確認
-
-![SampleFlows-cloudLchika-appId2](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-appId2.png)
-deployのリストから確認
-
-
-アクセスすると「**set value! -> [value]**」が表示されます。
-
 ### device
 
-5秒周期でappにアクセスして状態を取得します。
+5秒周期でappにアクセスしてパラメータを取得します。
 
 ![SampleFlows-cloudLchika-device](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-device.png)
 
 ```json
-[{"id":"15336f68.1058a1","type":"digitalout","z":"ac70de44.7f659","board":"SBBv2","pin":"ULED","value":"true","si":true,"name":"","x":520,"y":60,"wires":[[]]},{"id":"c570eb4.6d5de18","type":"digitalout","z":"ac70de44.7f659","board":"SBBv2","pin":"ULED","value":"false","si":true,"name":"","x":520,"y":140,"wires":[[]]},{"id":"a574145b.221c18","type":"switch","z":"ac70de44.7f659","name":"","property":"payload","propertyType":"msg","rules":[{"t":"eq","v":"true","vt":"str"},{"t":"else"}],"checkall":"true","repair":false,"outputs":2,"x":350,"y":100,"wires":[["15336f68.1058a1"],["c570eb4.6d5de18"]]},{"id":"f9c4432c.5ab6b","type":"inject","z":"ac70de44.7f659","name":"","topic":"","payload":"","payloadType":"date","repeat":"5","crontab":"","once":false,"onceDelay":0.1,"x":130,"y":60,"wires":[["f7104fc7.71c32"]]},{"id":"f7104fc7.71c32","type":"http request","z":"ac70de44.7f659","name":"","method":"GET","ret":"txt","url":"http://[your-heroku-app].herokuapp.com/get_value","tls":"","x":190,"y":100,"wires":[["a574145b.221c18"]]}]
+[{"id":"15336f68.1058a1","type":"digitalout","z":"ac70de44.7f659","board":"RAVEN","pin":"ULED","value":"true","si":true,"name":"","x":520,"y":60,"wires":[[]]},{"id":"c570eb4.6d5de18","type":"digitalout","z":"ac70de44.7f659","board":"RAVEN","pin":"ULED","value":"false","si":true,"name":"","x":520,"y":140,"wires":[[]]},{"id":"a574145b.221c18","type":"switch","z":"ac70de44.7f659","name":"","property":"payload","propertyType":"msg","rules":[{"t":"eq","v":"true","vt":"str"},{"t":"else"}],"checkall":"true","repair":false,"outputs":2,"x":350,"y":100,"wires":[["15336f68.1058a1"],["c570eb4.6d5de18"]]},{"id":"f9c4432c.5ab6b","type":"inject","z":"ac70de44.7f659","name":"","topic":"","payload":"","payloadType":"date","repeat":"5","crontab":"","once":false,"onceDelay":0.1,"x":130,"y":60,"wires":[["f7104fc7.71c32"]]},{"id":"f7104fc7.71c32","type":"http request","z":"ac70de44.7f659","name":"","method":"GET","ret":"txt","url":"http://[your-heroku-app].herokuapp.com/get_value","tls":"","x":190,"y":100,"wires":[["a574145b.221c18"]]}]
 ```
 
 <!-- 
@@ -99,12 +89,21 @@ JSONデータをimportしたあと、http requestノードを開き、作成し�
 
 ![SampleFlows-cloudLchika-deviceHttp](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-deviceHttp.png)
 
+heroku appのIDは、herokuの画面やenebularのデプロイ画面で確認できます。
+
+![SampleFlows-cloudLchika-appId](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-appId.png)
+herokuから確認
+
+![SampleFlows-cloudLchika-appId2](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-appId2.png)
+deployのリストから確認
+
+
 デバイスにデプロイ後、`https://[your-heroku-app].herokuapp.com/set_value?v=true`にブラウザからアクセスすると、少し遅れてUSER LEDが点灯します。
 また、`https://[your-heroku-app].herokuapp.com/set_value?v=false`にブラウザからアクセスすると、少し遅れてUSER LEDが消灯します。
 
 ### Plus One
 
-SlackBotを利用して、`https://[your-heroku-app].herokuapp.com/set_value?v=[value]`へアクセスするフローを追加すれば、ブラウザからではなくSlackから制御することもできます。
+SlackBotを利用して、することでブラウザからではなくSlackから制御することもできます。
 
 ![SampleFlows-cloudLchika-slackFlow](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-slackFlow.png)
 
@@ -124,16 +123,17 @@ slackの「API Token」、http requestノードの「URL」を自分のものに
 
 ## センサーデータをクラウドストレージに入れるフロー{#sensorData}
 
-![SampleFlows-postData-image](./../../img/EnebularEdgeAgent/SampleFlows-postData-image.jpg)
+![SampleFlows-postData-image](./../../img/EnebularEdgeAgent/SampleFlows-postData-image.png)
 <!--あとで差し替え-->
 
-heroku上にFirebaseへデータをいれるappを構築します。デバイスがappにデータを送信することによりFirebaseにセンサのデータが入ります。
-この Sample Flow ではGroveモジュールのアナログセンサを使用します。
+このサンプルフローは、スライドバーや水分センサといったアナログ値をとれるモジュールを使用します。
+
+デバイスで取ったセンサの値にクラウドでメタデータを付与し、Firebaseにためるフローです。
 
 ## heroku
 
 heroku上に、デバイスが接続するappを用意します。
-herokuからFirebaseにデータを入れます。
+このappからFirebaseにデータを入れます。
 
 ![SampleFlows-postData-heroku](./../../img/EnebularEdgeAgent/SampleFlows-postData-heroku.png)
 
@@ -154,15 +154,15 @@ importした後、Firebaseノードの設定を自分のものに書き換えて
 
 ## device
 
-5秒周期でport4に接続されたGroveモジュールのデータをappに送信します。
-Groveモジュールはアナログセンサを使用してください。
+5秒周期でport4に接続されたアナログセンサのデータをappに送信します。
+
 
 ![SampleFlows-postData-device](./../../img/EnebularEdgeAgent/SampleFlows-postData-device.png)
 
-http requestノードの「URL」を自分のものに書き換えてください。
+import後、http requestノードの「URL」を自分のappのアドレスに書き換えてください。
 
 ```json
-[{"id":"bca1c61e.81cb58","type":"inject","z":"dc1e97e4.05da58","name":"","topic":"","payload":"","payloadType":"date","repeat":"","crontab":"","once":false,"onceDelay":0.1,"x":140,"y":80,"wires":[["db4976de.897468"]]},{"id":"db4976de.897468","type":"analogin","z":"dc1e97e4.05da58","board":"SBBv2","pin":"GRV11","vt":"int","name":"","x":320,"y":80,"wires":[["9c913001.cc0fb"]]},{"id":"91a66b76.005158","type":"debug","z":"dc1e97e4.05da58","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","x":670,"y":80,"wires":[]},{"id":"9c913001.cc0fb","type":"http request","z":"dc1e97e4.05da58","name":"","method":"POST","ret":"txt","url":"http://[your-heroku-app].herokuapp.com/post","tls":"","x":490,"y":80,"wires":[["91a66b76.005158"]]}]
+[{"id":"bca1c61e.81cb58","type":"inject","z":"dc1e97e4.05da58","name":"","topic":"","payload":"","payloadType":"date","repeat":"","crontab":"","once":false,"onceDelay":0.1,"x":140,"y":80,"wires":[["db4976de.897468"]]},{"id":"db4976de.897468","type":"analogin","z":"dc1e97e4.05da58","board":"RAVEN","pin":"GRV41","vt":"int","name":"","x":320,"y":80,"wires":[["9c913001.cc0fb"]]},{"id":"91a66b76.005158","type":"debug","z":"dc1e97e4.05da58","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","x":670,"y":80,"wires":[]},{"id":"9c913001.cc0fb","type":"http request","z":"dc1e97e4.05da58","name":"","method":"POST","ret":"txt","url":"http://[your-heroku-app].herokuapp.com/post","tls":"","x":490,"y":80,"wires":[["91a66b76.005158"]]}]
 ```
 <!-- 
 [こちら]()からimportできます。
@@ -174,4 +174,4 @@ http requestノードの「URL」を自分のものに書き換えてくださ�
 
 ![SampleFlows-postData-infomotion](./../../img/EnebularEdgeAgent/SampleFlows-postData-infomotion.png)
 
-詳しい手順は、GetStarted > [DataVisualization](./../GetStarted/DataVisualization.md) に記載されているので、参考にしてください。
+詳しい手順は、GetStarted > [DataVisualization](./../GetStarted/DataVisualization.md) に記載されています。
