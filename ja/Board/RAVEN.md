@@ -9,7 +9,6 @@ RAVENはenebular-edge-agentのリファレンスボードです。
 ### Table of Contents
 1. [内容物](#contents)
 1. [特徴](#features)
-1. [各部説明](#parts)
 1. [設定モード](#settingMode)
 1. [免責事項](#disclaimer)
 
@@ -22,15 +21,6 @@ RAVENはenebular-edge-agentのリファレンスボードです。
 * USBケーブル
 * クイックスタートガイド
 
-## 特徴{#features}
-
-* MCU：STM32F767VIT6(STMicroelectronics)
-* Cortex-M7  216MHzRAM 512kBFLASH 2048kB
-* コネクティビティ：WiFi, Bluetooth
-* センサI/F：Groveコネクタ×４/ ボード搭載 USER LED / ボード搭載 USER SW
-* 最大消費電力: 約2.5W
-<!--* プラットフォーム認証済(Mbed™Enabled) -->
-
 ## 各部説明{#parts}
 
 ![parts](./../../img/Board/RAVEN-parts.png)
@@ -39,7 +29,7 @@ RAVENはenebular-edge-agentのリファレンスボードです。
 * USER SW … フローで設定できるスイッチ
 * USER LED … フローで設定できるLED
 * RESET SW … リセットスイッチ
-* Port1～4 … Groveコネクタ
+* Port1～4 … Multi Function コネクタ
 
 ## 設定モード{#settingMode}
 

@@ -3,7 +3,7 @@ lastUpdated: 2018-12-06
 ---
 
 # Sample Flows
-enebular-edge-agentを使用したSample Flowです。市販のGroveモジュールを使用したフローも含まれます。
+enebular-edge-agentを使用したSample Flowです。市販のセンサやアクチュエータを使用したフローも含まれます。
 
 herokuへのフローデプロイなど、enebularのGettingStaredを一通り終えた方に向けたドキュメントとなっています。
 
