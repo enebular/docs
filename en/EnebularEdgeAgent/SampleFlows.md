@@ -534,9 +534,6 @@ It is an example.
 
 <!--あとで差し替え-->
 
-heroku 上に Firebase へデータをいれる app を構築します。デバイスが app にデータを送信することにより Firebase にセンサのデータが入ります。
-この Sample Flow では Grove モジュールのアナログセンサを使用します。
-
 This application receives data from the sensor then
 stores the data in firebase.
 This Sample Flow uses the analog sensor of the Grove module.
