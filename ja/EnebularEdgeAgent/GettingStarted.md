@@ -4,105 +4,109 @@ lastUpdated: 2018-12-06
 
 # Getting Started
 
-enebular edge agentでは、enebularのeditorを使い、フローを作成しデプロイできる特徴があります。
-クラウドからデバイスまで同様の開発環境を使用でき、それぞれの開発に特化した専門的な言語スキルがなくても、開発できるというメリットがあります。
+enebular-edge-agentでは、enebularのeditorを使い、フローを作成しデプロイできます。
 
-このチュートリアルでは、「LED点滅のフローをenebular edge agentにデプロイし、enebularからログを確認する」という流れで実施します。（所要時間20分）
+このチュートリアルでは、「LED点滅のフローをenebular edge agentにデプロイし、enebularからログを確認する」ということを実施します。（所要時間30分）
 
-**※現在ネットワークの設定はwindowsOSからのみしか行うことができません。**
+あらかじめ、enebularでアカウントとプロジェクトを作成してください。（GettingStarted > [Introduction](./../GetStarted/Introduction.md) にこの流れについて詳しく記載されています)
+
+**※現在ネットワークの設定はWindowsOSからのみしか行うことができません。**
+
 ### Table of Contents
 
-1. [リファレンスボードの接続](#connection)
 1. [ネットワークの設定](#network)
 1. [フローのインポート](#import)
 1. [フローのデプロイ](#deployFlow)
 1. [実行ログの確認](#logs)
 
-リファレンスボードを開封して、実際に使ってみるという流れを想定しています。
-あらかじめ、enebularにて、アカウントとプロジェクトを作成してください。（GettingStarted > [Introduction](./../GetStarted/Introduction.md) にこの流れについて詳しく記載されています)
 
-
-## リファレンスボードの接続{#conneciton}
-
-1. リファレンスボードを開封してください。
-1. 同梱されているUSBケーブルを用いて、PCのUSBポートに接続してください。
-1. デバイスとして`UH-ENExx`が接続されていることを確認してください。（xxには型式にごとの番号が入ります）
 
 ## ネットワークの設定{#network}
 
+1. デバイスとPCをUSBケーブルで接続してください。
 1. **enebular Reference Board Configuration Tool**（以下: **eRB Config. Tool**）を[こちら](！！！！！！！！あとでリンクはる！！！！！！！！！！！！！)からダウンロードし、インストールします。
-1. デバイスを `設定モード` で起動します。
-    -  RAVEN … RESET SW を押し、再起動した後に USER SW を長押しすると、`設定モード` になります。USER LED が赤く点灯していることを確認してください。
-1. **eRB Config. Tool** でネットワークの設定を行います。詳しくは[Configuration](./Configuration.md)のページを参照してください。
+1. デバイスを `Setting Mode` で起動します。
+    - RAVENの場合･･･起動時にUSER SWを押したままの状態にする。（RESET SWを押した直後にUSER SWを押したままにするとUSER LEDが赤く点灯し、`Setting Mode`で起動します。）
+1. **eRB Config. Tool** でSSIDとPasswordを設定します。（詳しくは[Configuration](./Configuration.md)のページを参照してください。）
 1. 設定が完了したら、デバイスを再起動してください。
 
 ### フローのインポート{#import}
 
-すでにenebularにプロジェクトが作成されていることとします。
-
 フローのJSONデータを使って、フローのインポートができます。
 
-※フローのインポートをせず、0からフローの作成したい場合はAppendixの[フローの作成](#createFlow)を参照してください。
+※フローのインポートをせず、0からフローの作成をしたい場合はページ下部のAppendixの[フローの作成](#createFlow)を参照してください。
 
-1.下記よりJSONデータをコピーして、クリップボードに保存してください。
+下記よりJSONデータをコピーして、クリップボードに保存してください。
 
 ```json
-[{"id":"6174606a.28645","type":"inject","z":"a3fa9d02.41f82","name":"","topic":"","payload":"","payloadType":"date","repeat":"3","crontab":"","once":false,"onceDelay":0.1,"x":150,"y":120,"wires":[["f76c9ed4.26ab7"]]},{"id":"f76c9ed4.26ab7","type":"switch","z":"a3fa9d02.41f82","name":"","property":"led","propertyType":"flow","rules":[{"t":"true"},{"t":"else"}],"checkall":"true","repair":false,"outputs":2,"x":290,"y":120,"wires":[["44312ea5.f0f86"],["e5269eac.c7345"]]},{"id":"44312ea5.f0f86","type":"digitalout","z":"a3fa9d02.41f82","board":"SBBv2","pin":"ULED","value":"false","si":false,"name":"","x":460,"y":80,"wires":[["c4fd3845.6412d8"]]},{"id":"e5269eac.c7345","type":"digitalout","z":"a3fa9d02.41f82","board":"SBBv2","pin":"ULED","value":"true","si":false,"name":"","x":460,"y":160,"wires":[["c34fe143.724c5"]]},{"id":"c4fd3845.6412d8","type":"change","z":"a3fa9d02.41f82","name":"","rules":[{"t":"set","p":"led","pt":"flow","to":"false","tot":"bool"}],"action":"","property":"","from":"","to":"","reg":false,"x":630,"y":80,"wires":[[]]},{"id":"c34fe143.724c5","type":"change","z":"a3fa9d02.41f82","name":"","rules":[{"t":"set","p":"led","pt":"flow","to":"true","tot":"bool"}],"action":"","property":"","from":"","to":"","reg":false,"x":630,"y":160,"wires":[[]]}]
+[{"id":"5c08cdab.fe76c4","type":"inject","z":"90d9de00.d40e1","name":"","topic":"","payload":"","payloadType":"date","repeat":"3","crontab":"","once":false,"onceDelay":0.1,"x":110,"y":100,"wires":[["4c620395.fa935c"]]},{"id":"4c620395.fa935c","type":"switch","z":"90d9de00.d40e1","name":"","property":"led","propertyType":"flow","rules":[{"t":"true"},{"t":"else"}],"checkall":"true","repair":false,"outputs":2,"x":250,"y":100,"wires":[["9610c50d.5df558"],["36f9ebd9.df86c4"]]},{"id":"9610c50d.5df558","type":"digitalout","z":"90d9de00.d40e1","board":"RAVEN","pin":"ULED","value":"false","si":false,"name":"","x":420,"y":60,"wires":[["730feba8.5a1a24"]]},{"id":"36f9ebd9.df86c4","type":"digitalout","z":"90d9de00.d40e1","board":"RAVEN","pin":"ULED","value":"true","si":false,"name":"","x":420,"y":140,"wires":[["39806cf9.b31c54"]]},{"id":"730feba8.5a1a24","type":"change","z":"90d9de00.d40e1","name":"","rules":[{"t":"set","p":"led","pt":"flow","to":"false","tot":"bool"}],"action":"","property":"","from":"","to":"","reg":false,"x":590,"y":60,"wires":[[]]},{"id":"39806cf9.b31c54","type":"change","z":"90d9de00.d40e1","name":"","rules":[{"t":"set","p":"led","pt":"flow","to":"true","tot":"bool"}],"action":"","property":"","from":"","to":"","reg":false,"x":590,"y":140,"wires":[[]]}]
 ```
 
-1. 新規アセットを`type:flow`で作成します。
+作成済みのプロジェクトの画面から、新規アセットを`type:flow`で作成します。
 ![GettingStarted-create-asset](./../../img/EnebularEdgeAgent/GettingStarted-create-asset.png)
 
-1. [Edit Flow] を押してフローエディタを開きます。
+[Edit Flow] を押してフローエディタを開きます。
 ![GettingStarted-create-editFlow](./../../img/EnebularEdgeAgent/GettingStarted-create-editFlow.png)
 
-1. 右上の「Ξ」からメニューを開き、「読み込み」>「クリップボード」を選択します。
+右上の「Ξ」からメニューを開き、「読み込み」>「クリップボード」を選択します。
 ![GettingStarted-import-menu](./../../img/EnebularEdgeAgent/GettingStarted-import-menu.png)
 
-1. フローを張り付けるテキストボックスが表示されます。先ほどのJSONデータをペーストしてください。「読み込み」ボタンを押します。
+フローを張り付けるテキストボックスが表示されます。先ほどのJSONデータをペーストしてください。「読み込み」ボタンを押します。
 ![GettingStarted-import-paste](./../../img/EnebularEdgeAgent/GettingStarted-import-paste.png)
 
-1. フローが読み込まれるので、任意の位置でクリックして、フローを配置してください。右上のデプロイを押します。
+フローが読み込まれるので、任意の位置でクリックして、フローを配置してください。右上のデプロイを押します。
 ![GettingStarted-import-done](./../../img/EnebularEdgeAgent/GettingStarted-import-done.png)
 
 editorでは、LEDの点滅を確認できないので、フローはダミーの動きをしています。
+
+※ページ下部のAppendixに[フローの解説](#explainFlow)を書いています。興味のある方はご一読ください。
 
 ## フローのデプロイ{#deployFlow}
 
 このステップを実行する前に、デバイスの電源をあらかじめ、onにしてください。
 
-1. デプロイするフローの画面を開き、「DeployFlow」を押します。（previewが表示されていない場合は、ページをリロードしてください。）
+デプロイするフローの画面を開き、「DeployFlow」を押します。（previewが表示されていない場合は、ページをリロードしてください。）
 ![GettingStarted-deploy-button](./../../img/EnebularEdgeAgent/GettingStarted-deploy-button.png)
 
-1. すでに作成されている`Type:Pelion`のConnectionが存在するので、選択します。
+すでに作成されている`Type:Pelion`のConnectionが存在するので、選択します。
 ![GettingStarted-deploy-connection](./../../img/EnebularEdgeAgent/GettingStarted-deploy-connection.png)
 
-1. Statusが「Connected」になっているデバイスが手元にあるデバイスです。チェックボックスにマークを付けてください。
-※connectedのデバイスがある場合は、[デバイスIDの確認方法](#deviceID)から、デバイスIDを確認してください。
+Statusが「Connected」になっているデバイスが手元にあるデバイスです。チェックボックスにマークを付けてください。
+
+※connectedのデバイスが複数ある場合は、[デバイスIDの確認方法](#deviceID)から、デバイスIDを確認してください。
 ![GettingStarted-deploy-selectTarget](./../../img/EnebularEdgeAgent/GettingStarted-deploy-selectTarget.png)
 
-1. 下までスクロールし、「Deploy」を押します。
+下までスクロールし、「Deploy」を押します。
 ![GettingStarted-deploy-execute](./../../img/EnebularEdgeAgent/GettingStarted-deploy-execute.png)
 
-1. デプロイが完了し、USER LEDの点滅が始まります。
+デプロイが完了し、デバイスのUSER LEDの点滅が始まります。
 ![GettingStarted-deploy-done](./../../img/EnebularEdgeAgent/GettingStarted-deploy-done.png)
+
+
 
 ### デバイスIDの確認方法{#deviceID}
 
-後で確認して書く
+デバイスIDはarm Pelionポータルから確認することができます。
+
+1. デバイスに貼ってあるシールのシリアル番号を見ます。9桁目以降を確認してください
+1. arm Pelionにログインします
+1. デバイスディレクトリを表示します
+1. エンドポイントネームがデバイスIDです。対応するデバイスIDを逆引きしてください
 
 ## 実行ログの確認{#logs}
 
-enebular edge agentは実行ログをenebular.comから確認することができます。
+※ ログ、ステータスを確認するには、ライセンスが登録されている必要があります。詳しくは、[LicenseManager](./../Device/LicenseManager.md)を参照してください。
+
+enebular-edge-agentは実行ログをenebular.comから確認することができます。
 ログは、デバイスの起動後30秒で最初に送信し、以降5分毎に送信します。
 
-1. Projectの画面から「Device List」を選択します。
+Projectの画面から「Device List」を選択します。
 ![GettingStarted-logs-project](./../../img/EnebularEdgeAgent/GettingStarted-logs-project.png)
 
-1. Device Listが表示されます。ログを見たいデバイスの「View Logs」を押します。
+Device Listが表示されます。ログを見たいデバイスの「View Logs」を押します。
 ![GettingStarted-logs-deciceList](./../../img/EnebularEdgeAgent/GettingStarted-logs-deviceList.png)
 
-1. 実行ログが表示されます。
+実行ログが表示されます。
 ![GettingStarted-logs-done](./../../img/EnebularEdgeAgent/GettingStarted-logs-done.png)
 
 詳しくは、[Logs](./../Device/Logs.md#enebular-edge-agent)を参照してください。
@@ -110,12 +114,25 @@ enebular edge agentは実行ログをenebular.comから確認することがで�
 
 ## Well Done!
 
-LED点滅のフローをenebular edge agentにデプロイし、enebularからログを確認するということができるようになりました。
+LED点滅のフローをenebular-edge-agentにデプロイし、enebularからログを確認することができました。
 
-enebular edge agentと市販のGroveセンサーを組み合わせることで簡単なIoTデバイスをだれでも作ることができます。
+enebular edge agentと市販のセンサーを組み合わせることで簡単なIoTデバイスをだれでも作ることができます。
 使用できるノードに制限があるので、[Nodes](./Nodes.md)のページを参考にして、フローを作成してみてください。
 
 ## Appendix
+
+### デプロイしたフローの解説{#explainFlow}
+
+![GettingStarted-import-done](./../../img/EnebularEdgeAgent/GettingStarted-import-done.png)
+
+このフローは5秒周期で起動します。
+
+digitaloutノードでは、設定されている先のUSER LEDが現在点いているか、そうでいないのか判断できません。
+ここでchangeノードで設定のできる、Flow Contextを使用しています。
+Flow Contextはノード間でやりとりされる msg とは異なり、フローの処理が終了しても値が残り続けます。
+
+よって、digitaloutノードで、LEDを点灯及び消灯させたのち、後続のchangeノードで現在処理したLEDの状態を保存ということをフロー一度の起動で行っています。
+次に起動したときに、前回のLEDの状態がFlow Contextに代入されているので、前回と逆の処理をするようフローが実行されます。
 
 ### フローの作成{#createFlow}
 
@@ -161,5 +178,5 @@ enebular edge agentと市販のGroveセンサーを組み合わせることで�
 1. switchノード②の右側に口が一つ追加されているので、digitaloutノード⑤のつなぎ先をそちらに変更し、右上のデプロイを押します。
 ![GettingStarted-create-switchOut](./../../img/EnebularEdgeAgent/GettingStarted-create-switchOut.png)
 
-enebular edge agentに完成するフローが作成できました。[フローのデプロイ](#deployFlow)からチュートリアルを続けてください。
+enebular-edge-agentにデプロイするフローが作成できました。[フローのデプロイ](#deployFlow)からチュートリアルを続けてください。
 editorでは、LEDの点滅を確認できないので、フローはダミーの動きをしています。

@@ -1,55 +1,69 @@
 ---
-lastUpdated: 2018-12-05
+lastUpdated: 2018-12-20
 ---
 
 # RAVEN
 
-RAVENはenebular-edge-agentのリファレンスボードです。
+enebular Reference Board "RAVEN"は、IoTオーケストレーションサービスenebularのエッジデバイス向け評価ボードです。 
+
+小型ボディに無線機能及び4つのI/Oコネクタを搭載し、簡単にenebularに接続することが可能です。
+
+enebular-edge-agentのソフトウェアでフローの実行などの諸機能を使用できます。詳しくは[Introduction](./../EnebularEdgeAgent/Introduction.md)をご参照ください。
 
 ### Table of Contents
 1. [内容物](#contents)
-1. [特徴](#features)
 1. [各部説明](#parts)
-1. [設定モード](#settingMode)
+1. [使用前の準備](#preparation)
+1. [初期設定](#initialsetting)
 1. [免責事項](#disclaimer)
 
 ## 内容物{#contents}
 以下のものが内容物です。
 
-![](！！！！！！！写真いれる！！！！！！！)
+![RAVEN-package](./../../img/Board/RAVEN-package.jpg)
 
 * RAVEN本体
 * USBケーブル
 * クイックスタートガイド
-
-## 特徴{#features}
-
-* MCU：STM32F767VIT6(STMicroelectronics)
-* Cortex-M7  216MHzRAM 512kBFLASH 2048kB
-* コネクティビティ：WiFi, Bluetooth
-* センサI/F：Groveコネクタ×４/ ボード搭載 USER LED / ボード搭載 USER SW
-* 最大消費電力: 約2.5W
-<!--* プラットフォーム認証済(Mbed™Enabled) -->
+* 本体貼り付け用ステッカー
 
 ## 各部説明{#parts}
+![RAVEN-parts](./../../img/Board/RAVEN-parts.png)
 
-![parts](./../../img/Board/RAVEN-parts.png)
+* USB … 電源供給及びPC本体と接続する為の端子(USB microB)です。
+* USER SW … フロー経由で状態を読み取れるスイッチです。無線LAN設定時にも使用します。
+* USER LED … フロー経由で点灯状態を設定出来るLEDです。
+* RESET SW … リセットスイッチです。本体に異常が起きた際に使用します。
+* PORT1-4 … フロー経由で機能を設定出来るI/Oコネクタです。
 
-* USB-UART … USB microB 接続端子
-* USER SW … フローで設定できるスイッチ
-* USER LED … フローで設定できるLED
-* RESET SW … リセットスイッチ
-* Port1～4 … Groveコネクタ
+ハードウェアについて詳細な情報が知りたい方は[TechnicalDetail](いまはない)をご参照ください。
 
-## 設定モード{#settingMode}
+## 使用前の準備{#preparation}
 
-**enebular Reference Board Configuration Tool**を使用して、無線LAN設定を行うには`設定モード`でRAVENを起動する必要があります。
+RAVENをお使い頂くには、以下の準備が必要です。
+* 1ポート以上のUSB-A端子を持つPC、またはACアダプタ
+    * 5V/0.5A以上を供給出来る機器を使用して下さい。
+* インターネット(enebularサーバー)にアクセス出来る無線機器
+    * RAVENは、ネットワークへの接続に2.4GHz帯(5GHz帯は非サポート)を使用します。
+    * IEEE 802.11 b/g/nに対応したアクセスポイントをご準備下さい。
+* Portに接続したいセンサ/アクチュエーター
+    * RAVENは、市販のセンサ及びアクチュエーターを使用する事が出来ます。  
+    * 3.3V動作、ADC,UART,I2C,PWM,GPIO インターフェース、消費電流200mA ( 4ポート合計 ) 迄に対応します。  
+    * 使用可能なセンサは[こちら](http://wiki.seeedstudio.com/Grove_System/)を参照して下さい。  
+    * 利用可能なインターフェースの組み合わせには制限が有ります。  
 
-1. `USER SW`を押したままの状態でUSBケーブルを接続します。
-1. `USER LED`が赤く点灯するまで`USER SW`を押し続けます。
-1. RAVENが`設定モード`で起動します。
+## 初期設定{#initialsetting}
 
-※無線LAN設定方法については、[Configuration](./../EnebularEdgeAgent/Configuration.md)を参照してください。
+ネットワーク設定の手順を説明します。
+
+* RAVENを`SettingMode`で起動します。
+    1. RAVENに`USBケーブル`を接続します。
+    1. `USER SW`を押したままの状態で`RESET SW`を押して直ぐに離します。
+    1. `USER LED`が赤く点灯するまで`USER SW`を押し続けます。( 5秒前後 )
+    1. `USER SW`を離して下さい。離した後も`USER LED`が赤く点灯したままになる事を確認して下さい。
+    1. RAVENが`SettingMode`で起動しています。
+* [Configration](./../EnebularEdgeAgent/Configuration.md)を参照してSSID、及びパスワードの設定を行います。
+* 設定完了後`RESET SW`を押して直ぐに離します。RAVENが`Default Mode`で起動します。
 
 ## 免責事項{#disclaimer}
 

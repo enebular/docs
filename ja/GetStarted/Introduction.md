@@ -1,17 +1,19 @@
 ---
-lastUpdated: 2018-07-31
+lastUpdated: 2018-12-20
 ---
 
 # Introduction
 
-このチュートリアルでは以下のことを行います。
+このチュートリアルでは「enebularにサインアップし、フローを編集する」ということを実施します。（所要時間20分）
 
-- enebularへのサインアップ
-- Project の作成
-- Asset(フロー)の作成
-- フローの編集
+## Table of Contents
 
-## enebularへのサインアップ
+1. [enebularへのサインアップ](#SignUp)
+1. [Project の作成](#CreateProject)
+1. [Asset(フロー)の作成](#CreateFlow)
+1. [フローの編集](#EditFlow)
+
+## enebularへのサインアップ{#SignUp}
 
 ** 注意 : enebular v1のアカウントではenebular v2にはサインインできません。enebular v1 ユーザーの方でenebular v2を使用したい場合、新しくアカウントを作成してください。**
 
@@ -40,7 +42,7 @@ https://enebular.com にアクセスし、`新規登録`ボタンを押下しま
 1. enebular.com からのメールがフィルタリングされていないことを確認してください
 1. ** support@enebular.com **まで連絡をお願いします
 
-## Projectの作成
+## Projectの作成{#CreateProject}
 
 enebular を始めるには、まず Project を作成します。サインイン後の画面にある Create Project からプロジェクトを作成します。
 
@@ -54,7 +56,7 @@ enebular を始めるには、まず Project を作成します。サインイ�
 
 ![createdProject](./../../img/GetStarted/Introduction-createdProject.png)
 
-## Assetの作成
+## Asset(フロー)の作成{#CreateFlow}
 
 Project を作成したら、enebular の Asset の1つである Flow を作成しましょう。作成した Project を選択して Project の管理画面に移動します。  
 右下の + を押すと Asset を作成するモーダルが開きます。
@@ -75,7 +77,7 @@ Edit Flow を押します。
 
 ![flowEditor](./../../img/GetStarted/Introduction-flowEditor.png)
 
-## フローの編集
+## フローの編集{#EditFlow}
 
 Asset の作成が完了したので、フローを編集してみましょう。
 
