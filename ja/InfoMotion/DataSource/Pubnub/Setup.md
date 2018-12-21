@@ -29,7 +29,7 @@ Pubnub は初期設定から Demo Keyset を提供しています。
 これらの Key はデータストアにデータをプッシュするのに必要となります。
 Demo Keyset をクリックして表示してください。
 
-![Setup-keys](./../../../../img/InfoMotion/DataSource/Pubnub/Setup-keys.png)
+![Setup-keys](./../../../../img/InfoMotion/DataSource/Pubnub/Setup-Keys.png)
 
 
 

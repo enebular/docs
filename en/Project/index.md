@@ -24,7 +24,7 @@ The project management screen includes the following pages.
 
 The content managed within the project.
 
-- [Flow](../Flow/Introduction.md): Data flows created with Node-RED
+- [Flow](../Flows/Introduction.md): Data flows created with Node-RED
 - [InfoMotion](../InfoMotion/Introduction.md): Data visualization graphs dashboard
 - [InfoType](../InfoMotion/InfoTypeIntroduction.md): Graph types used with InfoMotion
 
@@ -50,6 +50,6 @@ The devices managed within the project. The devices here are those to which asse
 Project related configuration.
 
 - [Data Source](../InfoMotion/CreateDataSource.md): Registration of data sources for use with graphs
-- [Access](../Access/index.md): Project access control management
+- [Access](../Config/Access.md): Project access control management
 - [Settings](../Project/Settings.md): Project settings
-- [Billing](../Billing/Information.md):  Billing information management
+- [Billing](../Config/BillingInformation.md):  Billing information management

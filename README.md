@@ -31,3 +31,15 @@ $ gitbook serve
 
 * Resolution 2,560 x 1,600
 * Window size 1,440 x 900
+
+# CI
+- circle ci v2.0
+
+## Setting file
+.circleci/config.yml
+
+# Deploy
+- Netlify
+
+## Setting file
+.netlify/state.json

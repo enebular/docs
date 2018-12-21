@@ -1,34 +1,35 @@
 ---
-lastUpdated: 2018-10-12
+lastUpdated: 2018-12-04
 ---
 
 # enebular Release Notes {#enebular}
 
-## Latest Release - 2.5.1 (October 12th, 2018)
+## Latest Release - 2.6.1 (December 4th, 2018)
 
-### New
+## New
 
-- Forking an asset from Discover page now automatically opens the forked asset
-- Candidates for InfoType keys and values are now shown on a drop-down list as you type when configuring it for PubNub or Firebase data sources
-- InfoType name can be specified when uploading it
+- None
 
-### Fixed
+## Fixed
 
-- A preventive measure is taken to avoid multiple users from opening one flow on a flow editor.
-- We have found whitespaces in two locations are missing from use case pages in the English documentation.
+- Fixed the issue that prevented from "Sign Up" screen to the "email sent" screen after pressing "Sign Up" button.
+- Fixed the issue that caused only the connections in ap-northeast-1 region to be listed when AWS IoT or AWS Lambda was selected.
 
-### Changed
+## Changed
 
-N/A
+- None
 
-### Known Issues
+## Known Issues
 
-- Opening the flow editor from a web browser shows Japanese texts even if the browser is configured to show English
-- The shared page with InfoMotion embedded, the filter function can not be used
+- Opening the flow editor from a web browser shows Japanese texts even if the browser is configured to show English.
+- The shared page with InfoMotion embedded, the filter function can not be used.
 
+## Release History
 
-### Release History
-
+- [2.6.1](./enebular/2.6.1.md) (December 4th, 2018)
+- [2.6.0](./enebular/2.6.0.md) (November 30th, 2018)
+- [2.5.3](./enebular/2.5.3.md) (November 9th, 2018)
+- [2.5.2](./enebular/2.5.2.md) (October 22th, 2018)
 - [2.5.1](./enebular/2.5.1.md) (October 12th, 2018)
 - [2.5.0](./enebular/2.5.0.md) (September 25th, 2018)
 - [2.4.4](./enebular/2.4.4.md) (September 7th, 2018)
@@ -50,34 +51,26 @@ N/A
 
 # enebular agent Release Notes {#enebular-agent}
 
-## 2.2.0
+## Latest Release - 2.3.0 (November 30th, 2018)
 
-### New
+## New
 
-- Added a one-step install script for quick and easy setup of enebular-agent
-- Added a tool to support simple AWS IoT Thing creation and setup
-- Added ability to do simple startup registration to have enebular-agent start at boot-time on Debian (systemd) based systems
-- Added ability to list all supported configuration options
-- Added support for command line options in order to allow use of the new configuration options and subcommands
+- File Deploys, the new enebular function to allow enebular to deploy files, has been added.
 
-### Fixed
+## Fixed
 
-- Fixed an issue that caused enebular to report the connection status of AWS-IoT-connected enebular agent as "Connected" regardless of the *actual* connection status of the agent.
-- Minor fix to enebular logging upload size handling
-- mbed-cloud-connector
-    - Add missing files that prevented it from being built
-    - Removed invalid characters from readme
+- Fixed an issue where an invalid AWS IoT configuration file was included in the prebuilt package (*-prebuilt.tar.gz)
 
-### Changed
+## Changed
 
-- Updated the Node-RED version to 0.18.x
-- Updates to allow better connection status tracking on AWS IoT
-- Improved daemon usage support (syslog logging and process termination support)
-- Improved process management (startup and shutdown) of the Node-RED instance
-- Added quick setup explanation and further manual setup details to the readme files
-- Added integration tests
+- Updated the install script to add the enebular-agent user to the gpio group on Raspberry Pi devices so that the Node-RED nrgpio node types work by default.
+- Updated systemd service startup registration so that enebular-agent is automatically restarted after 60 seconds if it terminates abnormally for some reason.
+- enebular editor has been modified to be able to edit flows inside enebular-agent by connecting directly to it.
+- READMEs
+    - Changed mentions of ÅgMbed CloudÅh to ÅgPelion Device ManagementÅh
+    - Use shorter install script download URL
 
-### Known Issues
+## Known Issues
 
  N/A
 
@@ -115,6 +108,7 @@ The recommended operating environments are as follows.
 
 ## Release History
 
+- [2.3.0](./enebular-agent/2.3.0.md) (November 30th, 2018)
 - [2.2.0](./enebular-agent/2.2.0.md) (September 7th, 2018)
 - [2.1.0](./enebular-agent/2.1.0.md) (June 7th, 2018)
 - [2.0.0](./enebular-agent/2.0.0.md) (Jan 30th, 2018)
@@ -165,3 +159,29 @@ The following hardware is supported in enebular-edge-agent 1.0.1.
 * [0.10.0](./enebular-edge-agent/0.10.0.md) (Apr 27th, 2018)
 * [0.9.1](./enebular-edge-agent/0.9.1.md) (Feb 28th, 2018)
 * [0.9.0](./enebular-edge-agent/0.9.0.md) (Jan 30th, 2018)
+
+---
+
+# enebular editor Release Notes {#enebular-editor}
+
+## Latest Release - 0.9.0 (November 30th, 2018)
+
+## New
+
+- We have released the beta version of "enebular editor" which allows you to edit enebular flows on your PC and deploy them directly from it. Åi[Win](https://s3-ap-northeast-1.amazonaws.com/enebular-editor/win/enebular+editor+Setup+0.9.0.exe)/[Mac](https://s3-ap-northeast-1.amazonaws.com/enebular-editor/mac/enebular+editor-0.9.0.dmg))
+
+## Fixed
+
+N/A
+
+## Changed
+
+N/A
+
+## Known Issues
+
+- AWS Lambda Request node cannot be used if the flow is edited from the enebular editor connected to an enebular-agent.
+
+## Release History
+
+* [0.9.0](./enebular-editor/0.9.0.md) (November 30th, 2018)

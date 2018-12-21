@@ -29,7 +29,7 @@ Access では InfoMotion のアクセス権を編集できます。
 
 ![](https://i.gyazo.com/e16a84b1278a85d74e024350c6daae4b.png)
 
-詳しくは [Access Control](../Access/index.md) をご覧ください。
+詳しくは [Access Control](../Config/Access.md) をご覧ください。
 
 ## Settings
 

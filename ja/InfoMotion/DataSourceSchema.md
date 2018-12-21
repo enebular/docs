@@ -1,36 +1,50 @@
 ---
-lastUpdated: 2018-10-17
+lastUpdated: 2018-12-14
 ---
 
-# Data Source スキーマ
+# Data Source Schema
 
-InfoMotion を利用する場合、データソースが提供するデータは、どのデータソースであっても以下のスキーマに従う必要があります。  
-
-```javascript
-{
-  timestamp: Unix Timestamp milliseconds since Jan 01 1970. (UTC), // timestamp for daterange, timeline and querying. 
-  value:{ 
-    // data here is passed to the infotype 
-  } 
-} 
-```
-
-InfoMotionが、daterange picker や timeline によるビジュアライズするデータ範囲の指定を可能とするために `timestamp` (Unix タイムスタンプ値)が必要です。  
-`value`はビジュアライズするために InfoType に渡されます。
-
-以下に例を示します。
+すべてのデータソースのデータは、下記のスキーマに示すように Unix タイムスタンプ値を含む `ts` キーを持つ必要があります。
+`ts` の値は、daterange picker や timeline によりビジュアライズするデータ範囲を特定する際に InfoMotion で利用されます。
+また、このデータは InfoType に渡され、graph や chart を描画するときにも利用することがあります。
 
 ```javascript
 {
-  timestamp: 1538552210829,
-  value:{ 
-    created: 1538552210829,
-    label: "A",
-    value: 2
-  } 
-} 
+  ts: Unix Timestamp milliseconds since Jan 01 1970. (UTC), // timestamp for daterange, timeline and querying.
+  // All data in this object is passed to the infotype
+}
 ```
 
-`value` に入れるデータは、InfoTypeの種類に応じて変わることがあります。  
-例えば、Line Chart の InfoType は、X軸方向に折れ線を描画するために、上記に示すデータの生成時刻( `created` ) が必要です。  
-InfoTypeに応じて必要となるデータについては、InfoTypeのサンプルデータをご参照ください。
+#InfoType サンプルデータ
+
+InfoType 毎に、データに特定のキーと値が含まれることが必要となります。
+InfoType に応じて必要となるキーと値を知るには、InfoType のプレビューの右側に表示されるサンプルデータが役に立ちます。
+
+![sampleBarChart](./../../img/InfoMotion/DataSource/infotype-highlights.png)
+
+上記に示すように、enebular の sample barchart では、以下のキーと値を必要とします。
+
+```javascript
+{
+  ts: Unix Timestamp milliseconds since Jan 01 1970. (UTC),
+  category: String,
+  value: Number
+}
+```
+
+## JSON Data Schema
+
+```json
+{
+  "type": "object",
+  "required": ["ts"],
+  "properties": {
+    "ts": {
+      "$id": "#/properties/ts",
+      "type": "integer",
+      "title": "The ts Schema",
+      "examples": [1542352981750]
+    }
+  }
+}
+```

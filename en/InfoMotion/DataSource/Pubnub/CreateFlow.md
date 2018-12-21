@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-08-09
+lastUpdated: 2018-10-29
 ---
 
 ###Create a Flow 
@@ -26,12 +26,9 @@ Use the following script as the Function.
 
 ```javascript
 var data = {
-	value:{
+	ts:Date.now(),
 	category:['A','B','C','D'][Math.floor(Math.random()*4)],
-    value: Math.floor(Math.random()*10),
-    created:Date.now()
-	},
-	timestamp:Date.now()
+    value: Math.floor(Math.random()*10)
 }
 
 msg.payload = data; 

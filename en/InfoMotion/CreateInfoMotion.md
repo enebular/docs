@@ -10,7 +10,7 @@ A Dashboard requires
 
 - `name`
 - `description`
-- `default previllege`：See [Access](../Access/index.md) for more details.
+- `default previllege`：See [Access](../Config/Access.md) for more details.
 - `category`
 
 ![](../_asset/images/InfoMotion/enebular-developers-create-dashboard.png)

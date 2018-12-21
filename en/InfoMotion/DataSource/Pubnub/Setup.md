@@ -28,8 +28,7 @@ Pubnub offers by default Demo Keyset.
 We will need these keys to push data to a datastore. 
 Click on the Demo Keyset to view the keys. 
 
-![Setup-keys](./../../../../img/InfoMotion/DataSource/Pubnub/Setup-keys.png)
-
+![Setup-keys](./../../../../img/InfoMotion/DataSource/Pubnub/Setup-Keys.png)
 
 Data pushed to Pubnub will have to be saved. 
 In the Demo Keyset scroll down to storage and playback.  
