@@ -200,7 +200,7 @@ The log is transmitted first in 30 seconds after device startup, and then every 
 1. The execution log is displayed.
       ![GettingStarted-logs-done](./../../img/EnebularEdgeAgent/GettingStarted-logs-done.png)
 
-For more information, see [Logs] (./../ Device / Logs.md # enebular-edge-agent).
+For more information, see [Logs](./../Device/Logs.md#enebular-edge-agent).
 
 ## Well Done!
 
@@ -224,7 +224,7 @@ This section assumes that the project has already been created in enebular.
     ![GettingStarted-create-editFlow](./../../img/EnebularEdgeAgent/GettingStarted-create-editFlow.png)
 
 1.  Refer to the image below for node placement.
-    ![GettingStarted-create-putNodes](./../../img/EnebularEdgeAgent/GettingStarted-create-putNodes.png)
+    ![GettingStarted-create-putNodes](./../../img/EnebularEdgeAgent/GettingStarted-create-putNodes-en.png)
     The following nodes are used. The digitalout node is in the EEA category.
 
         	- inject
@@ -232,28 +232,28 @@ This section assumes that the project has already been created in enebular.
         	- digitalout 2
         	- change 2
 
-1) Make inject node ① "repeat" the `specified time interval` and set the 'time interval' to `3 seconds` and press "Finish". ![GettingStarted-create-inject](./../../img/EnebularEdgeAgent/GettingStarted-create-inject.png)
+1) Make inject node ① "repeat" the `specified time interval` and set the 'time interval' to `3 seconds` and press "Finish". ![GettingStarted-create-inject](./../../img/EnebularEdgeAgent/GettingStarted-create-inject-en.png)
 
 1) Switch node ② sets "property" to `flow.led` and condition 1 to`is true`.
-   ![GettingStarted-create-switch](./../../img/EnebularEdgeAgent/GettingStarted-create-switch.png)
+   ![GettingStarted-create-switch](./../../img/EnebularEdgeAgent/GettingStarted-create-switch-en.png)
 
 1) Press the lower left corner! [+ Add](./../../img/EnebularEdgeAgent/GettingStarted-create-add.png) to add the condition. Please set condition 2 to `other` and press "Finish".
-   ![GettingStarted-create-switchAddRule](./../../img/EnebularEdgeAgent/GettingStarted-create-switchAddRule.png)
+   ![GettingStarted-create-switchAddRule](./../../img/EnebularEdgeAgent/GettingStarted-create-switchAddRule-en.png)
 
 1) Set digitalout node ③ to `RAVEN`, set 'Pin' to`USER LED` and 'Value' to `false` and press "Finish".
-   ![GettingStarted-create-digitalout1](./../../img/EnebularEdgeAgent/GettingStarted-create-digitalout1.png)
+   ![GettingStarted-create-digitalout1](./../../img/EnebularEdgeAgent/GettingStarted-create-digitalout1-en.png)
 
 1. Change node ④ should be set to substitute 'false' for `flow.led`. Press "Finish".
-   ![GettingStarted-create-change1](./../../img/EnebularEdgeAgent/GettingStarted-create-change1.png)
+   ![GettingStarted-create-change1](./../../img/EnebularEdgeAgent/GettingStarted-create-change1-en.png)
 
 1. Set digitalout node ⑤ to 'RAVEN`for' Board ', set`Pin' to`USER LED` and 'Value' to `true` then press "Finish".
-   ![GettingStarted-create-digitalout2](./../../img/EnebularEdgeAgent/GettingStarted-create-digitalout2.png)
+   ![GettingStarted-create-digitalout2](./../../img/EnebularEdgeAgent/GettingStarted-create-digitalout2-en.png)
 
 1. Change node ⑥ should be set to substitute "false"> `false` for`flow.led` then press "Finish".
-   ![GettingStarted-create-change2](./../../img/EnebularEdgeAgent/GettingStarted-create-change2.png)
+   ![GettingStarted-create-change2](./../../img/EnebularEdgeAgent/GettingStarted-create-change2-en.png)
 
 1. Since one mouth has been added to the right side of the switch node ②, change the link of the digitalout node ⑤ there and press Deploy on the upper right.
-   ![GettingStarted-create-switchOut](./../../img/EnebularEdgeAgent/GettingStarted-create-switchOut.png)
+   ![GettingStarted-create-switchOut](./../../img/EnebularEdgeAgent/GettingStarted-create-switchOut-en.png)
 
 We have created a flow to complete the enebular edge agent. Continue the tutorial from [Deploy Flow](#deployFlow).
 The editor contains a dummy flow therefore can not check the blinking of the LED.
