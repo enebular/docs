@@ -5,38 +5,28 @@ lastUpdated: 2018-12-20
 # Getting Started
 
 enebular gives users the option to deploy flows to enebular edge agents.
-The same development environment can be used from cloud to device without
-specialized language skills.
 
 This tutorial will run a flow that switches an LED light off and on.
 The devices log will be displayed on enebular.
-(Required time 20 minutes)
+(Required time 30 minutes)
+
+Please prepare accounts and projects in enebular in advance. (This flow is described in detail in GettingStarted> [Introduction](./../GetStarted/Introduction.md))
 
 **\*Network setting is currently available only from windows OS.**
 
 ### Table of Contents
 
-1. [Reference board connection](#connection)
 1. [Network Settings](#network)
 1. [Import Flow](#import)
 1. [Deploy Flow](#deployFlow)
 1. [Check execution log](#logs)
 
-It is assumed that the flow is opened and the reference board is in use.
-
-Please prepare accounts and projects in enebular in advance. (This flow is described in detail in GettingStarted> [Introduction](./../GetStarted/Introduction.md))
-
-## Connecting the reference board {#conneciton}
-
-1. Open the reference board.
-1. Connect to the PC's USB port using the enclosed USB cable.
-1. Make sure that `UH - ENExx` is connected as a device. (Xx is a number for each model)
-
 ## Setting up the network {#network}
 
+1. 1. Connect to the PC's USB port using the enclosed USB cable.
 1. **enebular Reference Board Configuration Tool**（**eRB Config. Tool**）click [Here](！！！！！！！！あとでリンクはる！！！！！！！！！！！！！) to download and install.
 1. Start the device in `configuration mode`.
-   - Press RAVEN ... RESET SW and press and hold the USER SW after rebooting, it will be in 'settings mode'. Make sure the USER LED is lit in red.
+   - Case RAVEN ... Press RESET SW and hold the USER SW after rebooting, it will be in 'settings mode'. Make sure the USER LED is lit in red.
 1. **Configure the network with eRB Config. Tool**. For details, see the [Configuration](./Configuration.md) page.
 1. When settings is completed, restart the device.
 
@@ -45,104 +35,12 @@ Please prepare accounts and projects in enebular in advance. (This flow is descr
 Within your current enebualr project
 Copy the JSON data below and import it to your flow.
 
-- If you want to create a flow from 0 without importing the flow, please refer to [Create flow](#createFlow) in the Appendix.
+- If you want to create a flow from 0 without importing the flow, please refer to [Create flow](#createFlow) in the Appendix of under this page.
 
 1. Please copy the JSON data from the following and save it on the clipboard.
 
 ```json
-[
-	{
-		"id": "6174606a.28645",
-		"type": "inject",
-		"z": "a3fa9d02.41f82",
-		"name": "",
-		"topic": "",
-		"payload": "",
-		"payloadType": "date",
-		"repeat": "3",
-		"crontab": "",
-		"once": false,
-		"onceDelay": 0.1,
-		"x": 150,
-		"y": 120,
-		"wires": [["f76c9ed4.26ab7"]]
-	},
-	{
-		"id": "f76c9ed4.26ab7",
-		"type": "switch",
-		"z": "a3fa9d02.41f82",
-		"name": "",
-		"property": "led",
-		"propertyType": "flow",
-		"rules": [{ "t": "true" }, { "t": "else" }],
-		"checkall": "true",
-		"repair": false,
-		"outputs": 2,
-		"x": 290,
-		"y": 120,
-		"wires": [["44312ea5.f0f86"], ["e5269eac.c7345"]]
-	},
-	{
-		"id": "44312ea5.f0f86",
-		"type": "digitalout",
-		"z": "a3fa9d02.41f82",
-		"board": "SBBv2",
-		"pin": "ULED",
-		"value": "false",
-		"si": false,
-		"name": "",
-		"x": 460,
-		"y": 80,
-		"wires": [["c4fd3845.6412d8"]]
-	},
-	{
-		"id": "e5269eac.c7345",
-		"type": "digitalout",
-		"z": "a3fa9d02.41f82",
-		"board": "SBBv2",
-		"pin": "ULED",
-		"value": "true",
-		"si": false,
-		"name": "",
-		"x": 460,
-		"y": 160,
-		"wires": [["c34fe143.724c5"]]
-	},
-	{
-		"id": "c4fd3845.6412d8",
-		"type": "change",
-		"z": "a3fa9d02.41f82",
-		"name": "",
-		"rules": [
-			{ "t": "set", "p": "led", "pt": "flow", "to": "false", "tot": "bool" }
-		],
-		"action": "",
-		"property": "",
-		"from": "",
-		"to": "",
-		"reg": false,
-		"x": 630,
-		"y": 80,
-		"wires": [[]]
-	},
-	{
-		"id": "c34fe143.724c5",
-		"type": "change",
-		"z": "a3fa9d02.41f82",
-		"name": "",
-		"rules": [
-			{ "t": "set", "p": "led", "pt": "flow", "to": "true", "tot": "bool" }
-		],
-		"action": "",
-		"property": "",
-		"from": "",
-		"to": "",
-		"reg": false,
-		"x": 630,
-		"y": 160,
-		"wires": [[]]
-	}
-]
+[{"id":"5c08cdab.fe76c4","type":"inject","z":"90d9de00.d40e1","name":"","topic":"","payload":"","payloadType":"date","repeat":"3","crontab":"","once":false,"onceDelay":0.1,"x":110,"y":100,"wires":[["4c620395.fa935c"]]},{"id":"4c620395.fa935c","type":"switch","z":"90d9de00.d40e1","name":"","property":"led","propertyType":"flow","rules":[{"t":"true"},{"t":"else"}],"checkall":"true","repair":false,"outputs":2,"x":250,"y":100,"wires":[["9610c50d.5df558"],["36f9ebd9.df86c4"]]},{"id":"9610c50d.5df558","type":"digitalout","z":"90d9de00.d40e1","board":"RAVEN","pin":"ULED","value":"false","si":false,"name":"","x":420,"y":60,"wires":[["730feba8.5a1a24"]]},{"id":"36f9ebd9.df86c4","type":"digitalout","z":"90d9de00.d40e1","board":"RAVEN","pin":"ULED","value":"true","si":false,"name":"","x":420,"y":140,"wires":[["39806cf9.b31c54"]]},{"id":"730feba8.5a1a24","type":"change","z":"90d9de00.d40e1","name":"","rules":[{"t":"set","p":"led","pt":"flow","to":"false","tot":"bool"}],"action":"","property":"","from":"","to":"","reg":false,"x":590,"y":60,"wires":[[]]},{"id":"39806cf9.b31c54","type":"change","z":"90d9de00.d40e1","name":"","rules":[{"t":"set","p":"led","pt":"flow","to":"true","tot":"bool"}],"action":"","property":"","from":"","to":"","reg":false,"x":590,"y":140,"wires":[[]]}]
 ```
 
 1. Create a new asset with `type: flow`.
@@ -161,6 +59,8 @@ Copy the JSON data below and import it to your flow.
       ! [GettingStarted-import-done](./../../img/EnebularEdgeAgent/GettingStarted-import-done.png)
 
 The flow in the editor is only a dummy and can't test the actual LED light.
+
+- If you want to know flow's detail, please refer to [Flow Detail](#expalainFlow) in the Appendix of under this page.
 
 ## Deploy flow {#deployFlow}
 
@@ -184,7 +84,12 @@ Before continuing, turn on the device on.
 
 ### How to check the device ID {#deviceID}
 
-後で確認して書く
+The device ID can be checked from the arm Pelion portal.
+
+1. Check serial number of seal on device. Please look at nine digits and later.
+1. Log in to arm Pelion.
+1. Move to Device Directory's page.
+1. Device ID is End Point Name.Search for the corresponding device ID.
 
 ## Confirmation of execution log {#logs}
 
@@ -210,6 +115,19 @@ By combining the enebular edge agent with a commercially available Grove sensor,
 Since there are restrictions on the nodes that can be used, please refer to the page of [Nodes] (./ Nodes.md) and create a flow.
 
 ## Appendix
+
+### FlowDetail{#explainFlow}
+
+![GettingStarted-import-done](./../../img/EnebularEdgeAgent/GettingStarted-import-done.png)
+
+This flow executes in 5 second cycle.
+
+In `Digitalout Node`, it cannot see state of LED.
+So, this node uses `Flow Context` in `cCange Node`.
+`Flow Context` is different from `msg`. This value remains after flow executing.
+
+`Digitalout Node` lights up LED and `Change Node` saves state of LED. 
+When flow execute next time, it changes flow operation by state of LED
 
 ### Create a Flow {#createFlow}
 

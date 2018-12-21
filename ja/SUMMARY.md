@@ -133,3 +133,5 @@ lastUpdated: 2018-12-20
 ## Appendix
 
 - [Supported Environments](Other/Support.md)
+- [Hardware Spec]()
+  - [RAVEN](Other/HWSpec-RAVEN.md)
