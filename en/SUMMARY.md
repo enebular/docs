@@ -119,6 +119,17 @@ lastUpdated: 2018-11-29
 - [Introduction](EnebularEditor/index.md)
 - [Remote Mode](EnebularEditor/RemoteMode.md)
 
+## enebular edge agent
+
+- [Introduction](EnebularEdgeAgent/Introduction.md)
+- [Getting Started](EnebularEdgeAgent/GettingStarted.md)
+- [Features](EnebularEdgeAgent/Features.md)
+- [Configuration](EnebularEdgeAgent/Configuration.md)
+- [Nodes](EnebularEdgeAgent/Nodes.md)
+- [SampleFlows](EnebularEdgeAgent/SampleFlows.md)
+- [Board](Board/Introduction.md)
+  - [RAVEN](Board/RAVEN.md)
+
 ## Appendix
 
 - [Supported Environments](Other/Support.md)
