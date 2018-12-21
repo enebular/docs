@@ -128,7 +128,7 @@ You can easily change input and output using a (commercially available) Grove mo
 
 - When using Grove's LED module etc. as output, change the port of the digitalOut node to the corresponding value.
 
-![SampleFlows-switchLchika-setting](./../../img/EnebularEdgeAgent/SampleFlows-switchLchika-setting.png)
+![SampleFlows-switchLchika-setting](./../../img/EnebularEdgeAgent/SampleFlows-switchLchika-setting-en.png)
 ※Image of interruptIn node
 
 ## Flow to operate LEDs remotely from browser {#cloudLchika}
@@ -144,7 +144,7 @@ The flow changes the state of the LED through the browser.
 
 Using an app that connects to the device.
 
-![SampleFlows-cloudLchika-heroku](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-heroku.png)
+![SampleFlows-cloudLchika-heroku](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-heroku-en.png)
 
 ```json
 [
@@ -382,7 +382,7 @@ Access the app in 5 second intervals to get the status.
 
 After importing the JSON data, open the http request node and rewrite it to the ID of the created heroku app.
 
-![SampleFlows-cloudLchika-deviceHttp](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-deviceHttp.png)
+![SampleFlows-cloudLchika-deviceHttp](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-deviceHttp-en.png)
 
 After deploying to the device, accessiing
 `https://[your-heroku-app].herokuapp.com/set_value?V=true`
@@ -394,7 +394,7 @@ from the browser switches the LED off.
 
 SlackBot allows direct access from slack.
 
-![SampleFlows-cloudLchika-slackFlow](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-slackFlow.png)
+![SampleFlows-cloudLchika-slackFlow](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-slackFlow-en.png)
 
 Add your slack api token and URL to the slack node to set the request.
 
@@ -415,7 +415,7 @@ Add your slack api token and URL to the slack node to set the request.
 		"id": "b5b64af1.81fd48",
 		"type": "switch",
 		"z": "a38fc59f.c0d678",
-		"name": "Determining the message of slack",
+		"name": "Determining slack message",
 		"property": "payload",
 		"propertyType": "msg",
 		"rules": [
@@ -522,9 +522,9 @@ Add your slack api token and URL to the slack node to set the request.
 [こちら]()からimportできます。
 -->
 
-![SampleFlows-cloudLchika-slackImage](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-slackImage.png)
+Slack example.
 
-It is an example.
+![SampleFlows-cloudLchika-slackImage](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-slackImage-en.png)
 
 ## Sending data to the cloud {#sensorData}
 
@@ -649,10 +649,10 @@ Put data into Firebase via heroku.
 After importing, please change the settings of the Firebase node.
 
 1. Open the Firebase node and click the pencil mark to edit.
-   ![SampleFlows-postData-firebase1](./../../img/EnebularEdgeAgent/SampleFlows-postData-firebase1.png)
+   ![SampleFlows-postData-firebase1](./../../img/EnebularEdgeAgent/SampleFlows-postData-firebase1-en.png)
 
 1. Enter your Firebase's appid and Set Auth Type to "None".
-   ![SampleFlows-postData-firebase2](./../../img/EnebularEdgeAgent/SampleFlows-postData-firebase2.png)
+   ![SampleFlows-postData-firebase2](./../../img/EnebularEdgeAgent/SampleFlows-postData-firebase2-en.png)
 
 ## device
 
