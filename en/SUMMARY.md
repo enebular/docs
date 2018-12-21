@@ -121,7 +121,7 @@ lastUpdated: 2018-11-29
 
 ## enebular edge agent
 
-- [Introduction](EnebularEdgeAgent/Introduction.md)
+- [Introduction](EnebularEdgeAgent/introduction.md)
 - [Getting Started](EnebularEdgeAgent/GettingStarted.md)
 - [Features](EnebularEdgeAgent/Features.md)
 - [Configuration](EnebularEdgeAgent/Configuration.md)
