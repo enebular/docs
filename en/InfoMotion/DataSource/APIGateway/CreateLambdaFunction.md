@@ -25,12 +25,9 @@ exports.handler = (event, context, callback) => {
     let arr = []
     for (var i = 100; i >= 1; i--) {
       arr.push({
-        timestamp: Number(event.start) + Math.floor(timeunit*i),
-        value:{
+        ts: Number(event.start) + Math.floor(timeunit*i),
             category:category[Math.floor(Math.random()*4)],
-            value: Math.floor(Math.random()*10),
-            created:Number(event.start) + Math.floor(timeunit*i)
-        }
+            value: Math.floor(Math.random()*10)
       })
     }
     return arr

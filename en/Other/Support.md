@@ -50,8 +50,8 @@ For the recommended Raspberry PI hardware, use the Debian based [Raspbian OS](ht
 
 The following operating systems are supported for use with the Raspberry PI3.
 
-- [Raspbian Stretch base](http://archive.raspbian.org/raspbian/dists/stretch/) (9.0)
-- [Raspbian Jessie base](http://archive.raspbian.org/raspbian/dists/jessie/) (8.0)
+- [Raspbian Stretch base](https://archive.raspbian.org/raspbian/dists/stretch/) (9.0)
+- [Raspbian Jessie base](https://archive.raspbian.org/raspbian/dists/jessie/) (8.0)
 
 The middleware versions for each are as follows.
 

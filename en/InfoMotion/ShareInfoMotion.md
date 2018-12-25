@@ -4,23 +4,6 @@ lastUpdated: 2018-4-24
 
 # Share InfoMotion
 
-The following code is subject to change.
-
-####Access Control Allow Origin 
-
-For milkcocoa to be used locally it must be 
-served from a http server. For node.js users we recommend you use a simple npm module [http-server](https://www.npmjs.com/package/http-server) to serve your index.html locally. 
-
-Or simply use 
-`python -m SimpleHTTPServer 8000` in the terminal at your root directory to run the index.html. 
-For more information on pythons SimpleHTTPServer see 
-https://docs.python.org/2/library/simplehttpserver.html. 
-
-####Infotype share issues
-
-Enebular must be logged in the browser to display infotypes. 
-All infotypes are set as private. These settings are subject to change. 
-
 ###InfoMotion scripts
 
 The InfoMotion source code gives developers a little more freedom in customizing or altering the behaviour of their Dashboards.
