@@ -11,12 +11,15 @@ The following covers enebular's project and asset access permissions.
 First, let's go over the user types. There are the following three types of users.
 
 - Project Owner
+- Project Admin
 - Project Collaborator
 - Outside Collaborator
 
 ![](../_asset/images/enebular-developers-aboutaccess.png)
 
 The **Project Owner** is the project manager. They can edit project members and manage access to all of the assets in a project.
+
+The **Project Admin** can invite other collaborators into the project. A Project Admin is automatically admin for all of the assets in a project.
 
 A **Project Collaborator** is a project member. They can access all of the assets in a project.
 
@@ -36,7 +39,8 @@ Outside collaborators can be invited from the "Access" page which can be navigat
 
 Next, permissions called "Asset privileges" can be configured for each of the assets of the three user types.
 
-- owner: view / edit / deploy / add members
+- owner: view / edit / deploy / delete / add or delete Outside collaborators / change privilege of project collaborator
+- admin: view / edit / deploy / delete / add or delete Outside collaborators / change privilege of project collaborator
 - superdev: view / edit / deploy
 - developer: view / edit
 - operator: view / deploy
