@@ -1,31 +1,35 @@
 ---
-lastUpdated: 2018-12-04
+lastUpdated: 2018-12-14
 ---
 
 # enebular Release Notes {#enebular}
 
-## Latest Release - 2.6.1 (December 4th, 2018)
+## Latest Release - 2.7.0 (December 14th, 2018)
 
 ## New
 
-- None
+- Device List can now be sorted by connection types or statuses.
+- "Redeploy" button is added to repeat the last deploy.
 
 ## Fixed
 
-- Fixed the issue that prevented from "Sign Up" screen to the "email sent" screen after pressing "Sign Up" button.
-- Fixed the issue that caused only the connections in ap-northeast-1 region to be listed when AWS IoT or AWS Lambda was selected.
+- The issue that caused a device to remain on Device List even if its license has been unregistered, such a device is to be deleted from the list.
 
 ## Changed
 
-- None
+- Importing an asset from Discover page now redirects to the new imported asset page under the target project.
+- We have changed the title of AWS IoT configuration dialog box from "AWS IoT Settings" to more appropriate "AWS IoT Connection".
+- Attempting to publish flows which contain credential information now shows warnings to avoid information leaks.
 
 ## Known Issues
 
 - Opening the flow editor from a web browser shows Japanese texts even if the browser is configured to show English.
 - The shared page with InfoMotion embedded, the filter function can not be used.
+- From the "Contact" page, clicking on enebular logo causes to show the top page based on the web browser's language instead of the language Contact page is showing.
 
 ## Release History
 
+- [2.7.0](./enebular/2.7.0.md) (December 14th, 2018)
 - [2.6.1](./enebular/2.6.1.md) (December 4th, 2018)
 - [2.6.0](./enebular/2.6.0.md) (November 30th, 2018)
 - [2.5.3](./enebular/2.5.3.md) (November 9th, 2018)
@@ -67,7 +71,7 @@ lastUpdated: 2018-12-04
 - Updated systemd service startup registration so that enebular-agent is automatically restarted after 60 seconds if it terminates abnormally for some reason.
 - enebular editor has been modified to be able to edit flows inside enebular-agent by connecting directly to it.
 - READMEs
-    - Changed mentions of ÅgMbed CloudÅh to ÅgPelion Device ManagementÅh
+    - Changed mentions of ‚ÄúMbed Cloud‚Äù to ‚ÄúPelion Device Management‚Äù
     - Use shorter install script download URL
 
 ## Known Issues
@@ -168,7 +172,7 @@ The following hardware is supported in enebular-edge-agent 1.0.1.
 
 ## New
 
-- We have released the beta version of "enebular editor" which allows you to edit enebular flows on your PC and deploy them directly from it. Åi[Win](https://s3-ap-northeast-1.amazonaws.com/enebular-editor/win/enebular+editor+Setup+0.9.0.exe)/[Mac](https://s3-ap-northeast-1.amazonaws.com/enebular-editor/mac/enebular+editor-0.9.0.dmg))
+- We have released the beta version of "enebular editor" which allows you to edit enebular flows on your PC and deploy them directly from it. Ôºà[Win](https://s3-ap-northeast-1.amazonaws.com/enebular-editor/win/enebular+editor+Setup+0.9.0.exe)/[Mac](https://s3-ap-northeast-1.amazonaws.com/enebular-editor/mac/enebular+editor-0.9.0.dmg))
 
 ## Fixed
 
