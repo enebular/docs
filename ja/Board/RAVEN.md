@@ -21,7 +21,7 @@ enebular-edge-agentのソフトウェアでフローの実行などの諸機能�
 ## 内容物{#contents}
 以下のものが内容物です。
 
-![RAVEN-package](./../../img/Board/RAVEN-package.jpg)
+![RAVEN-package](./../../img/Board/RAVEN-Package.jpg)
 
 * RAVEN本体
 * USBケーブル

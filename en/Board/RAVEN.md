@@ -8,7 +8,7 @@ RAVEN is the enebular-edge-agent reference board.
 
 Mounted network function and four I/O connecters on small body. And easy to connect to `enebular`.
 
-You can use various functions such as execution of flow by `enebular-edge-agent`. Learn more ->  [Introduction](./../EnebularEdgeAgent/Introduction.md).
+You can use various functions such as execution of flow by `enebular-edge-agent`. Learn more ->  [Introduction](./../EnebularEdgeAgent/introduction.md).
 
 ### Table of Contents
 
@@ -22,7 +22,7 @@ You can use various functions such as execution of flow by `enebular-edge-agent`
 
 Contents are as follows.
 
-![RAVEN-package](./../../img/Board/RAVEN-package.jpg)
+![RAVEN-package](./../../img/Board/RAVEN-Package.jpg)
 
 - RAVEN body
 - USB cable

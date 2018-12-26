@@ -4,7 +4,7 @@ lastUpdated: 2018-12-06
 
 # Introduction
 
-[enebular-edge-agent](./../EnebularEdgeAgent/Introduction.md)が動作するリファレンスボードの一覧ページです。
+[enebular-edge-agent](./../EnebularEdgeAgent/introduction.md)が動作するリファレンスボードの一覧ページです。
 
 enebular-edge-agent向けのリファレンスボードとして以下を用意しています。
 
