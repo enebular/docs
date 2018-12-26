@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-12-05
+lastUpdated: 2018-12-26
 ---
 
 # Logs
@@ -88,18 +88,12 @@ enebular edge agent の動作ログ及びエラーログです。
 | device manager initalized | デバイス管理機能の初期化 |
 | flow def manager initialized | フロー管理機能の初期化 |
 | uhuru red initialized | フロー実行機能の初期化 |
-| flow URL length checked | フローのダウンロードにおける URL 検証 |
-| flow downloaded | フローのダウンロード |
-| flow integrity checked | フローの整合性チェック |
-| flow size checked | フローのサイズチェック |
-| flow saved | フローの保存 |
 | SD initialized | SD カードの初期化 |
 | flow deployed | フローのデプロイ |
 | flow executing | フロー実行中 |
 | flow executed | フロー実行終了 |
 | flash updated: device bandle | デバイスバンドルのフラッシュアップデート |
 | flash updated: flow define | フロー定義のフラッシュアップデート |
-| flash updated: javascript code | フロー実行コードのフラッシュアップデート |
 
 #### エラーログ
 

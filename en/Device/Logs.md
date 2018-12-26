@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-05-25
+lastUpdated: 2018-12-26
 ---
 
 # Logs
@@ -82,18 +82,12 @@ For further information please contact ** support@enebular.com**.
 | device manager initialized |
 | flow def manager initialized | 
 | uhuru red initialized | 
-| flow URL length checked | 
-| flow downloaded | 
-| flow integrity checked | 
-| flow size checked | 
-| flow saved | 
 | SD initialized | 
 | flow deployed | 
 | flow executing |
 | flow executed | 
 | flash updated: device bandle | 
 | flash updated: flow define | 
-| flash updated: javascript code |
 
 #### error log
 
