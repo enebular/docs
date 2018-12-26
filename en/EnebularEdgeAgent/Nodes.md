@@ -41,9 +41,9 @@ For details, refer to the help of each node.
 
 ### Node Description
 
-| Classification | Node         | Overview                                                                                      | Remarks                                 |
-| -------------- | ------------ | --------------------------------------------------------------------------------------------- | --------------------------------------- |
-| input          | inject       | Start flow at regular intervals                                                               | There are multiple restrictions ※ 1     |
+| Classification | Node | Overview | Remarks |
+| --- | --- | --- | --- |
+| input          | inject       | Start flow at regular intervals                                                               | There are multiple restrictions *1     |
 | output         | debug        | Output debug messages                                                                         | Can not output to the console           |
 | function       | http request | make a http request                                                                           | There are multiple restrictions※1       |
 | function       | change       | Convert and delete msg properties                                                             | -                                       |
@@ -55,13 +55,13 @@ For details, refer to the help of each node.
 | EEA            | analogin     | Acquire the input value from the A / D converter                                              | -                                       |
 | EEA            | interruptin  | Detect rising edge or falling edge of digital input and perform interrupt input               | The maximum simultaneous use limit is 5 |
 
-※ 1 The following restrictions apply to **inject node**.
+\* 1 The following restrictions apply to **inject node**.
 
 -   cron execution not supported
 -   Does not support `After n seconds of Node-RED activation, do the following`
 -   Only timestamp is output
 
-※ 2 **http request node** has the following restrictions.
+\* 2 **http request node** has the following restrictions.
 
 -   The maximum number of http request nodes that can be used simultaneously is 5
 -   Only supports `GET`,`POST` methods

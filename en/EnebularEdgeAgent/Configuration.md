@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-12-19
+lastUpdated: 2018-12-25
 ---
 
 # Configuration
@@ -7,7 +7,6 @@ lastUpdated: 2018-12-19
 enebular-edge-agent configures wireless LAN using ** enebular Reference Board Configuration Tool ** (hereinafter: eRB Config. Tool).
 
 1. [Install](#install)
-1. [Before starting](#before)
 1. [Usage](#usage)
 1. [Troubleshooting](#troubleShooting)
 
@@ -18,19 +17,16 @@ enebular-edge-agent configures wireless LAN using ** enebular Reference Board Co
 
 ## Usage {#usage}
 
-![Application screen](./../../img/EnebularEdgeAgent/Configuration-GUI.png)
 
-(The image is in read mode.)
-
-1. Connect the device and the PC in device mode and start the device in the setting mode. (For the settings mode, refer to the page of each device.)
-   Connect the
-1. Select the serial port to which the device is connected from "Port" ①.
-1. Select the setting mode from the radio button ②.
-   - Loading · · · "Loading" ③ is displayed in the text area ④.
-   - Writing・・・enter each setting value in the text area ④, and press "Write" ③ to set it.
+1. Connect the device and the PC in device mode and start the device in the setting mode. (For the `settings mode`, learn more to the page of each device.)
+    - Case of RAVEN:  Press and hold `USER SW` until`USER LED` lights red. RAVEN starts up in `setting mode`. 
+    \* If you want to know more, refer to to the page of each device.
+1. Select the serial port to which the device is connected from "Port".
+1. Select the setting mode from "R/W Mode".
+    - Read · · · Press "Read" is displayed in the text area.
+    - Write・・・Enter each setting value in the text area , and press "Write" to set it.
 
 - Once the serial port is selected, setting will be saved. You will not need to set it next time you start up. (Except when serial port name changes)
-  2
 
 ## TroubleShooting {##troubleShooting}
 
