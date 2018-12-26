@@ -76,5 +76,5 @@ Flow editorでノードを使用する際に表示されるヘルプテキスト
 ※2 **http request node**には以下の制限があります。
 - 同時に使用できるhttp request nodeの最大値は5個
 - `GET` ,`POST` のメソッドのみに対応
-- 256byteがレスポンスの上限で、超えると `size over` が `msg.payload` に代入される
+- 256byteがレスポンスの上限。（超えると `size over` が `msg.payload` に代入されますが、Requestしないでください）
 - `http://` で始まるアドレスのみに対応

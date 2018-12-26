@@ -11,6 +11,7 @@ enebular Reference Board "RAVEN"は、IoTオーケストレーションサービ
 enebular-edge-agentのソフトウェアでフローの実行などの諸機能を使用できます。詳しくは[Introduction](./../EnebularEdgeAgent/Introduction.md)をご参照ください。
 
 ### Table of Contents
+
 1. [内容物](#contents)
 1. [各部説明](#parts)
 1. [使用前の準備](#preparation)
@@ -28,6 +29,7 @@ enebular-edge-agentのソフトウェアでフローの実行などの諸機能�
 * 本体貼り付け用ステッカー
 
 ## 各部説明{#parts}
+
 ![RAVEN-parts](./../../img/Board/RAVEN-parts.png)
 
 * USB … 電源供給及びPC本体と接続する為の端子(USB microB)です。
@@ -36,11 +38,11 @@ enebular-edge-agentのソフトウェアでフローの実行などの諸機能�
 * RESET SW … リセットスイッチです。本体に異常が起きた際に使用します。
 * PORT1-4 … フロー経由で機能を設定出来るI/Oコネクタです。
 
-ハードウェアについて詳細な情報が知りたい方は[TechnicalDetail](./../Other/TechDetail-RAVEN.md)をご参照ください。
+ハードウェアについて詳細な情報が知りたい方は[TechnicalDetail](./../Other/HWSpec-RAVEN.md)をご参照ください。
 
 ## 使用前の準備{#preparation}
 
-RAVENをお使い頂くには、以下の準備が必要です。
+RAVENをお使いいただくには、以下の準備が必要です。
 * 1ポート以上のUSB-A端子を持つPC、またはACアダプタ
     * 5V/0.5A以上を供給出来る機器を使用して下さい。
 * インターネット(enebularサーバー)にアクセス出来る無線機器
@@ -48,22 +50,24 @@ RAVENをお使い頂くには、以下の準備が必要です。
     * IEEE 802.11 b/g/nに対応したアクセスポイントをご準備下さい。
 * Portに接続したいセンサ/アクチュエーター
     * RAVENは、市販のセンサ及びアクチュエーターを使用する事が出来ます。  
-    * 3.3V動作、ADC/UART/I2C/PWM/GPIO インターフェース、消費電流200mA ( 4ポート合計 ) 迄に対応します。  
+    * 3.3V動作、ADC/UART/I2C/PWM/GPIO インターフェース、消費電流200mA ( 4ポート合計 ) までに対応します。※1  
     * 使用可能なセンサは[こちら](http://wiki.seeedstudio.com/Grove_System/)を参照して下さい。  
     * 利用可能なインターフェースの組み合わせには制限が有ります。  
+
+※1 フローエディタのノードから設定可能なインターフェースは、ADC/GPIO、また一部I2Cに限られます。詳しくはフローエディタから各ノードの説明をご覧ください。
 
 ## 初期設定{#initialsetting}
 
 ネットワーク設定の手順を説明します。
 
 * RAVENを`SettingMode`で起動します。
-    1. RAVENに`USBケーブル`を接続します。
+    1. RAVENを`USBケーブル`で電源に接続します。
     1. `USER SW`を押したままの状態で`RESET SW`を押して直ぐに離します。
     1. `USER LED`が赤く点灯するまで`USER SW`を押し続けます。( 5秒前後 )
     1. `USER SW`を離して下さい。離した後も`USER LED`が赤く点灯したままになる事を確認して下さい。
     1. RAVENが`SettingMode`で起動しています。
 * [Configration](./../EnebularEdgeAgent/Configuration.md)を参照してSSID、及びパスワードの設定を行います。
-* 設定完了後`RESET SW`を押して直ぐに離します。RAVENが`Default Mode`で起動します。
+* 設定完了後 `RESET SW`を押して直ぐに離します。RAVENが`Default Mode`で起動します。
 
 ## 免責事項{#disclaimer}
 
