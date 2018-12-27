@@ -166,3 +166,10 @@ enebular-edge-agent 1.0.1は、下記のハードウェアを対象としてい�
 * [0.10.0](./enebular-edge-agent/0.10.0.md) (Apr 27th, 2018)
 * [0.9.1](./enebular-edge-agent/0.9.1.md) (Feb 28th, 2018)
 * [0.9.0](./enebular-edge-agent/0.9.0.md) (Jan 30th, 2018)
+
+# enebular Reference Board Configuration Tool Release Notes
+
+## Latest Release - 1.0.0 (Junuary xxx, 2019)
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+[最新版のリンクをはる](xxxxxx)
