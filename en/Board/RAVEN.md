@@ -71,22 +71,23 @@ It is the procedure of network setting.
 * Use **enebular Reference Board Configuration Tool** to set up SSID and password. Refer to** [Configuration](./../EnebularEdgeAgent/Configuration.md).
 * Please restart after setting.
 
-## Disclaimer{#disclaimer}
+## Disclaimer and Indemnification{#disclaimer}
 
-本製品は、お客様にご利用いただき、評価をしていただく目的で開発されております。
-従いまして、本製品をご利用いただいた場合の、お客様のアプリケーションについての動作、不具合の不発生その他の事項に対しては、明示又は黙示を問わず、一切の保証を致しません。
-本書は、製品の保証に関するものではありません。この製品の保証については、お買い上げの販売店にお問い合わせ下さい。
+This product has been developed for the purpose of use and evaluation by customers. As such, this product is offered as-is, with no warranty, explicit or implicit, for any operation,  malfunction, etc. of the customers’ applications that occur during use of this product. This document does not provide guarantee for the product. For inquiries concerning guarantees, please contact the store where the product was purchased. 
 
-### Usage Notes
+### Cautions
 
-- 直射日光の当たる場所、水気や湿気の有る場所では保管及び使用を行わないで下さい。故障、火災や感電の原因となる恐れが有ります。
-- 強い衝撃や圧力(落下、重量物を乗せる等)を掛けないで下さい。誤動作や故障の原因となる恐れが有ります。
-- 乳幼児の手の届く場所では使用しないで下さい。誤飲や怪我の恐れが有ります。
-- 不安定な場所で使用しないで下さい。製品の落下により、けがや破損の原因となる恐れが有ります。
-- 無線機器の使用を制限されている場所(医療機関、航空機内等)では使用しないで下さい。計器誤動作の原因となる恐れが有ります。
-- 紙、布、布団等で覆った状態で放置しないで下さい。発火や発煙の原因となる恐れが有ります。
-- 端子や筐体に異物を入れないで下さい。誤動作や故障の原因となる恐れが有ります。
-- 濡れた手で製品に触らないで下さい。感電の原因となる恐れが有ります。
-- 動作中にセンサコネクタの挿抜を行わないで下さい。誤動作や故障の原因となる恐れが有ります。
-- 本製品に付された表示を消去、除去又は汚損しないでください。
-- その他、本書に記載のない事項については、本製品に適用される利用規約の定めに従うものとします。
+- To reduce the risk of malfunction, fire and electric shock, please do not store or use the 
+product in direct sunlight or in places with high moisture and humidity.
+- To prevent malfunction and breakdown do subject the product to strong impact or pressure, such as dropping or stacking heavy items on top of the product. 
+- Keep out of reach of small children to avoid accidental swallowing and injury.
+- Do not use on unstable surfaces. Injury or damage to the product could result from the product falling. 
+- To avoid causing instrument malfunctions, do not use in areas where use of wireless devices is restricted (healthcare facilities, inside airplanes, etc.) 
+- To reduce the risk of fire and smoke, do not leave the product covered in paper, 
+cloth, blankets, etc. 
+- To avoid malfunction, do not insert foreign objects into the connection terminal 
+or the casing. 
+- To avoid electrocution, do not touch the product with wet hands. 
+- To reduce risk of malfunction, do not insert or remove sensor connectors while the product is in operation. 
+- Do not erase, remove or damage the markings attached to this product.
+- For other subjects not described in this document, please follow the terms of use.
