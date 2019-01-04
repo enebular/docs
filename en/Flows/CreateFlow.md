@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-11-30
+lastUpdated: 2019-01-04
 ---
 
 # Create Flows
@@ -42,3 +42,16 @@ The flow has now been created.
 From here, the flow is edited by starting up the flow editor. Please refer to the following example.
 
 - [Milkcocoa Flow](./FlowExampleMilkcocoa.md)
+
+
+## Restrictions
+
+Web Flow Editor is not execution environment but development one.
+
+There are the following restrictions.
+
+* A hardware dependent node can not be used.
+* A node that depends on the development environment can not be used.
+* A large size node can not be imported and used.
+    *  Reloading may be repeated.
+* The generated URL is temporary.
