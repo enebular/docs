@@ -1,14 +1,14 @@
 ---
-lastUpdated: 2018-05-14
+lastUpdated: 2019-01-04
 ---
 
-# Deploying to Mbed Cloud
+# Deploying to Pelion Device Management
 
-In terms of the flow's deploy destination, if you press the deploy button it will just be deployed to the server that enebular is using. The Mbed Cloud deploy feature allows flows to be deployed to registered devices via Mbed Cloud.
+In terms of the flow's deploy destination, if you press the deploy button it will just be deployed to the server that enebular is using. The Pelion Device Management deploy feature allows flows to be deployed to registered devices via Pelion Device Management.
 
 For supported devices, please see [Supported Environments](../../../Other/Support.md).
 
-This page covers the steps required to deploy flows to devices via Mbed Cloud.
+This page covers the steps required to deploy flows to devices via Pelion Device Management.
 
 ## Creating a New Flow
 
@@ -85,11 +85,11 @@ The "Create Connection" screen will open.
 * Connection Name
     * An easy to understand name
 * MBED API Key
-    * This can be found in the Mbed Cloud Portal
+    * This can be found in the Pelion Device Management Portal
 
-The MBED API Key can be obtained from the [Mbed Cloud Portal](https://portal.us-east-1.mbedcloud.com/).
+The MBED API Key can be obtained from the [Pelion Device Management Portal](https://portal.us-east-1.mbedcloud.com/).
 
-Select "Create new API key" from the Access management's API keys page on the Mbed Cloud Portal.
+Select "Create new API key" from the Access management's API keys page on the Pelion Device Management Portal.
 
 ![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_09.png)
 
