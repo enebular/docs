@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-10-16
+lastUpdated: 2019-01-04
 ---
 
 # Data Visualization
@@ -62,7 +62,7 @@ This tutorial only set uo Firebase Node.
 
 ### Credentials needed for Firebase.
 
-At the overview page click on `Add firebase to your web app`.
+At the overview page click on `</>`. Opend mordal(`Add firebase to your web app`).
 ![firebase](./../../img/GetStarted/DataVisualization-fireBase-en.png)
 
 databaseURL will be used in the Flow.

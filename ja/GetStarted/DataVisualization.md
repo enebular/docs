@@ -1,10 +1,10 @@
 ---
-lastUpdated: 2018-10-16
+lastUpdated: 2018-01-04
 ---
 
 # Data Visualization
 
-enebular の InfoMotion の機能を使うことによって、データの可視化し、visualize することが可能です。
+enebular の InfoMotion の機能を使うことによって、データを可視化し、visualize することが可能です。
 このチュートリアルでは、以下のことを行います。
 
 - フローの検索とインポート
@@ -60,7 +60,8 @@ InfoMotion は現在下記に挙げるリアルタイムデータベースに対
 
 ### databaseURL の取得
 
-データストア作成済みのアカウントで Firebase にログインし、 `ウェブアプリに Firebase を追加`をクリックします。
+データストア作成済みのアカウントで Firebase にログインし、 `</>`のアイコンをクリックします。
+「ウェブアプリに Firebase を追加する」のモーダルが開きます。
 ![fireBase](./../../img/GetStarted/DataVisualization-fireBase-ja.png)
 
 databaseURL をフローの中で使用します。
@@ -115,7 +116,7 @@ enebular のユーザーはアセットを公開すること、また公開さ�
 
 ![discoverInfoType](./../../img/GetStarted/DataVisualization-discoverInfoType.png)
 
-検索結果に出てきたものをクリックし、下記のようなプレビューは表示されていることを確認してください。
+検索結果に出てきたものをクリックし、下記のようなプレビューが表示されていることを確認してください。
 右の `Import` ボタンよりフローをインポートできます。
 
 ![sampleBarChart](./../../img/GetStarted/DataVisualization-discover2.png)
