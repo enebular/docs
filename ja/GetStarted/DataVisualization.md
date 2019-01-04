@@ -22,7 +22,7 @@ enebular のユーザーはアセットを公開すること、また公開さ�
 右のカテゴリーから `Flow` を選択して、「getting-started」と検索バーに入力してください。
 ![discover](./../../img/GetStarted/DataVisualization-discover.png)
 
-検索結果に出てきたものをクリックし、下記のようなフロープレビューが表示されていることを確認してください。
+検索結果に出てきたenebularラベルのあるものをクリックし、下記のようなフロープレビューが表示されていることを確認してください。
 右の `Import` ボタンよりフローをインポートできます。
 ![discoverflow](./../../img/GetStarted/DataVisualization-discoverflow.png)
 
@@ -115,7 +115,7 @@ enebular のユーザーはアセットを公開すること、また公開さ�
 
 ![discoverInfoType](./../../img/GetStarted/DataVisualization-discoverInfoType.png)
 
-検索結果に出てきたものをクリックし、下記のようなプレビューは表示されていることを確認してください。
+検索結果に出てきたenebularラベルのあるものをクリックし、下記のようなプレビューは表示されていることを確認してください。
 右の `Import` ボタンよりフローをインポートできます。
 
 ![sampleBarChart](./../../img/GetStarted/DataVisualization-discover2.png)
