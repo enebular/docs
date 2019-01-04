@@ -22,9 +22,9 @@ Select Flow and search `getting-started`.
 
 ![discover](./../../img/GetStarted/DataVisualization-discover.png)
 
-Click Import to open the import modal.
+Click Import(marked by enebular) to open the import modal.
 
-![discover2](./../../img/GetStarted/flow-discover.png)
+![discoverflow](./../../img/GetStarted/DataVisualization-discoverflow.png)
 
 Select the project to import to and the Default asset role. (For now select superdev)
 
@@ -112,7 +112,7 @@ Select InfoType and search `barchart`.
 
 ![discoverInfoType](./../../img/GetStarted/DataVisualization-discoverInfoType.png)
 
-Click import to open the import modal.
+Click import (marked by enebular) to open the import modal.
 
 ![sampleBarChart](./../../img/GetStarted/DataVisualization-discover2.png)
 

@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-01-04
+lastUpdated: 2019-01-04
 ---
 
 # Data Visualization
@@ -22,9 +22,9 @@ enebular のユーザーはアセットを公開すること、また公開さ�
 右のカテゴリーから `Flow` を選択して、「getting-started」と検索バーに入力してください。
 ![discover](./../../img/GetStarted/DataVisualization-discover.png)
 
-検索結果に出てきたものをクリックし、下記のようなフロープレビューが表示されていることを確認してください。
+検索結果に出てきたenebularラベルのあるものをクリックし、下記のようなフロープレビューが表示されていることを確認してください。
 右の `Import` ボタンよりフローをインポートできます。
-![discover2](./../../img/GetStarted/DataVisualization-discover2.png)
+![discoverflow](./../../img/GetStarted/DataVisualization-discoverflow.png)
 
 インポート先の適当なプロジェクトに初期値のロール設定(superdev)で import してください。
 ![import](./../../img/GetStarted/DataVisualization-import.png)
@@ -116,7 +116,7 @@ enebular のユーザーはアセットを公開すること、また公開さ�
 
 ![discoverInfoType](./../../img/GetStarted/DataVisualization-discoverInfoType.png)
 
-検索結果に出てきたものをクリックし、下記のようなプレビューが表示されていることを確認してください。
+検索結果に出てきたenebularラベルのあるものをクリックし、下記のようなプレビューは表示されていることを確認してください。
 右の `Import` ボタンよりフローをインポートできます。
 
 ![sampleBarChart](./../../img/GetStarted/DataVisualization-discover2.png)

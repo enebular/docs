@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-05-14
+lastUpdated: 2019-01-04
 ---
 
 # デプロイについて
@@ -23,7 +23,7 @@ Node-RED のフローエディタで作成したデータフローである Flow
 
 ![deploy diagram](../_asset/images/Introduction/enebular-developers-deploy.png)
 
-AWS IoT や mbed Cloud などエッジデバイスにデプロイをするクラウドサービスの場合、エッジデバイスが**デバイス**となり、クラウドサービス自体は**デバイスマスター**となります。
+AWS IoT や Pelion Device Management などエッジデバイスにデプロイをするクラウドサービスの場合、エッジデバイスが**デバイス**となり、クラウドサービス自体は**デバイスマスター**となります。
 
 Heroku や AWS Lambda などクラウド上に実行環境が存在する場合は、クラウドサービスが**デバイス**と**デバイスマスター**の両方の役割を担います。
 
@@ -48,7 +48,7 @@ Heroku や AWS Lambda などクラウド上に実行環境が存在する場合�
 
 ### エッジ
 
-* [mbed Cloud](./DeployFlow/mbed/index.md)
+* [Pelion Device Management](./DeployFlow/mbed/index.md)
 * [AWS IoT](./DeployFlow/AWSIoT/index.md)
 
 ### クラウド
