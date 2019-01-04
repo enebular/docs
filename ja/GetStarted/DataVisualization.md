@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-10-16
+lastUpdated: 2019-01-04
 ---
 
 # Data Visualization
