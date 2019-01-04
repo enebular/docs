@@ -24,7 +24,7 @@ enebular のユーザーはアセットを公開すること、また公開さ�
 
 検索結果に出てきたものをクリックし、下記のようなフロープレビューが表示されていることを確認してください。
 右の `Import` ボタンよりフローをインポートできます。
-![discover2](./../../img/GetStarted/DataVisualization-discover2.png)
+![discoverflow](./../../img/GetStarted/DataVisualization-discoverflow.png)
 
 インポート先の適当なプロジェクトに初期値のロール設定(superdev)で import してください。
 ![import](./../../img/GetStarted/DataVisualization-import.png)
