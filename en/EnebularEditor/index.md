@@ -7,7 +7,6 @@ lastUpdated: 2018-11-29
 ## Overview
 
 The enebular editor is a tool for your PC(Win/Mac) to edit and deploy flows to: `AWS IoT`, `Pelion Device Management`, `AWS Lambda`, `Heroku`
-Since it is restricted release, please contact **support@enebular.com** to use.
 
 ## Modes
 
@@ -16,7 +15,9 @@ The enebular editor has 2 modes: `Desktop`, `Remote`.
 ### Desktop
 
 For editing flows where node support is limited to nodes that can interact with PC/Browser APIs.
-enebular editor loads the flow from the app itself
+enebular editor loads the flow from the app itself.
+
+Desktop Mode runs on port `1888`.
 
 ### Remote
 
@@ -30,7 +31,7 @@ For Pelion Device Management, [enebular-runtime-agent-cloud-connector 2.3.0](htt
 
 - An available enebular account
 - Your PC must be connected to network
-- See [Supported environment](./../Other/Support.md)
+- [Node 10.14.2 LTS](https://nodejs.org/en/)
 
 ## How to install
 

@@ -2,21 +2,20 @@
 lastUpdated: 2018-08-09
 ---
 
-# データを返す Lambda の作成
+## Using Lambda to return data
 
-Lambda の作成を始めます。
+Getting started with Lambda.
 
+![CreateLambdaFunction-CreateLambdaFunction-lambda-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-lambda-en.png)
 
+Create author from scratch using Node.js version 6.
 
-![CreateLambdaFunction-CreateLambdaFunction-lambda-ja](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-lambda-ja.png)
+![CreateLambdaFunction-authorFromScratch-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-authorFromScratch-en.png)
 
-一から作成で Node.js バージョン 6 で Lambda を作成します。
+Daterange picker passes `start` and `end` parameters.
+The following code returns data based on the parameters.
 
-![CreateLambdaFunction-authorFromScratch-ja](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-authorFromScratch-ja.png)
-
-Daterange picker の開始日時と終了日時は `start` と `end` というパラメータで渡されるので、以下のようなコードを作成します。
-
-![CreateLambdaFunction-testLambda-ja](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-testLambda-ja.png)
+![CreateLambdaFunction-testLambda-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-testLambda-en.png)
 
 ```javascript
 exports.handler = (event, context, callback) => {
@@ -26,12 +25,9 @@ exports.handler = (event, context, callback) => {
     let arr = []
     for (var i = 100; i >= 1; i--) {
       arr.push({
-        timestamp: Number(event.start) + Math.floor(timeunit*i),
-        value:{
+        ts: Number(event.start) + Math.floor(timeunit*i),
             category:category[Math.floor(Math.random()*4)],
-            value: Math.floor(Math.random()*10),
-            created:Number(event.start) + Math.floor(timeunit*i)
-        }
+            value: Math.floor(Math.random()*10)
       })
     }
     return arr
@@ -40,51 +36,52 @@ exports.handler = (event, context, callback) => {
 };
 ```
 
-次に作成した Lambda 関数につながる API Gateway を作成します。
+Creating an API Gateway that connects to the Lambda function.
 
-![CreateLambdaFunction-amazonApiGgateway-ja](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-amazonApiGgateway-ja.png)
+![CreateLambdaFunction-amazonApiGgateway-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-amazonApiGgateway-en.png)
 
-新しい API で作成します。
+Creating a new API.
 
-![CreateLambdaFunction-newApi-ja](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-newApi-ja.png)
+![CreateLambdaFunction-newApi-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-newApi-en.png)
 
-新しいリソースを作成します。
+Creating a new resource.
 
-![CreateLambdaFunction-newResource-ja](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-newResource-ja.png)
+![CreateLambdaFunction-newResource-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-newResource-en.png)
 
-適当なパス名を入力して、「API Gateway CORS を有効にする」にチェックを入れます。
+Enter the path name and check "Enable API Gateway CORS".
 
-![CreateLambdaFunction-newResourceChild-ja](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-newResourceChild-ja.png)
+![CreateLambdaFunction-newResourceChild-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-newResourceChild-en.png)
 
-リソースを作成したら、GET メソッドを作成します。
+With resource completed create a GET method.
 
-![CreateLambdaFunction-createGetMethod-ja](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-createGetMethod-ja.png)
+![CreateLambdaFunction-createGetMethod-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-createGetMethod-en.png)
 
-メソッドのセットアップをします。作成した Lamnda 関数を選択します（Lamdbaを作成したリージョンを選択しないと出てきません）。
+Setting a method.
+Select the Lamnda function created (It will not appear unless you select the region where you created Lamdba).
 
-![CreateLambdaFunction-setupMethod-ja](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-setupMethod-ja.png)
+![CreateLambdaFunction-setupMethod-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-setupMethod-en.png)
 
-作成したらまずは「メソッドレスポンス」を変更します。
+Once a method is created edit the method response.
 
-![CreateLambdaFunction-methodResponse-ja](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-methodResponse-ja.png)
+![CreateLambdaFunction-methodResponse-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-methodResponse-en.png)
 
-200 のレスポンスヘッダーに「Access-Control-Allow-Origin」を追加します。
+Create the 200 hedder as "Access-Control-Allow-Origin".
 
-![CreateLambdaFunction-200Header-ja](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-200Header-ja.png)
+![CreateLambdaFunction-200Header-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-200Header-en.png)
 
-次に「統合レスポンス」を変更します。
+Create an intergration response.
 
-![CreateLambdaFunction-intergrationResponse-ja](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-intergrationResponse-ja.png)
+![CreateLambdaFunction-intergrationResponse-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-intergrationResponse-en.png)
 
-「Access-Control-Allow-Origin」」に `'*'` を追加します。
+Set「Access-Control-Allow-Origin」」 as`'*'`.
 
-![CreateLambdaFunction-accessControl-ja](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-accessControl-ja.png)
+![CreateLambdaFunction-accessControl-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-accessControl-en.png)
 
-最後に「統合リクエスト」を変更します。
+Lastly, change "Intergration Request".
 
-![CreateLambdaFunction-intergrationRequest-ja](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-intergrationRequest-ja.png)
+![CreateLambdaFunction-intergrationRequest-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-intergrationRequest-en.png)
 
-以下のように「本文マッピングテンプレート」を「`application/json`」で以下のようなマッピングを作成します。
+Create the following mapping of "body mapping template" with "application / json" as shown below
 
 ```json
 {
@@ -93,20 +90,20 @@ exports.handler = (event, context, callback) => {
 }
 ```
 
-![CreateLambdaFunction-bodyMapping-ja](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-bodyMapping-ja.png)
+![CreateLambdaFunction-bodyMapping-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-bodyMapping-en.png)
+Next create a "deploy api".
 
-ここまで終わったら最後に「APIのデプロイ」をします。
+![CreateLambdaFunction-deployApi-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-deployApi-en.png)
 
-![CreateLambdaFunction-deployApi-ja](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-deployApi-ja.png)
+Input a deploy name.
 
-適当な名前をつけてデプロイします。
+![CreateLambdaFunction-deployName-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-deployName-en.png)
 
-![CreateLambdaFunction-deployName-ja](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-deployName-ja.png)
-
-URL の呼び出しの URL に 今回作成したリソース名 `/test` をつけたものが DataSource で登録する endpoint になります。画像の例だと以下になります。
+The resource named `/ test` becomes the endpoint to be registered with DataSource.
 
 ```
+*example endpoint.
 https://*********.execute-api.ap-northeast-1.amazonaws.com/teststage/test
 ```
 
-![CreateLambdaFunction-exampleEndpoint-ja](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-exampleEndpoint-ja.png)
+![CreateLambdaFunction-exampleEndpoint-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-exampleEndpoint-en.png)

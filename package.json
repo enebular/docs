@@ -29,7 +29,6 @@
     "glob": "^7.1.2",
     "markdown-it": "^8.4.0",
     "markdown-it-meta": "0.0.1",
-    "mocha": "^4.0.1",
-    "netlify-cli": "^2.2.0"
+    "mocha": "^4.0.1"
   }
 }

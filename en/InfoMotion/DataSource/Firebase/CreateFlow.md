@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-08-09
+lastUpdated: 2018-10-29
 ---
 
 ###Create Flow 
@@ -40,12 +40,9 @@ Double click the function node and set the function as below.
 
 ```javascript
 var data = {
-        timestamp: Date.now(),
-        value:{
-            category:['A','B','C','D'][Math.floor(Math.random()*4)],
-            value: Math.floor(Math.random()*10),
-            created:Date.now()
-        }
+        ts: Date.now(),
+        category:['A','B','C','D'][Math.floor(Math.random()*4)],
+        value: Math.floor(Math.random()*10)
       }
       
 msg.payload = data;
@@ -76,6 +73,6 @@ Check your debug log tab to see if data is being pushed correctly.
 ![CreateFlow-debugLog](./../../../../img/InfoMotion/DataSource/Firebase/CreateFlow-debugLog.png)
 
 
-You can also check your firebase project database to see the data being saved.
+You can also check your Firebase project database to see the data being saved.
 
 ![CreateFlow-firebaseProjectDatabase-en](./../../../../img/InfoMotion/DataSource/Firebase/CreateFlow-firebaseProjectDatabase-en.png)

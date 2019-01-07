@@ -30,7 +30,6 @@ Click on the Demo Keyset to view the keys.
 
 ![Setup-keys](./../../../../img/InfoMotion/DataSource/Pubnub/Setup-Keys.png)
 
-
 Data pushed to Pubnub will have to be saved. 
 In the Demo Keyset scroll down to storage and playback.  
 Turn the switch on and set the Retention to 1 day or more. Make sure you click on save to set this settings.  

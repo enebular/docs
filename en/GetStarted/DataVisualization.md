@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-12-20
+lastUpdated: 2019-01-04
 ---
 
 # Data Visualization
@@ -8,7 +8,9 @@ Using InfoMotion to visualize data.
 
 This tutorial will do 'Import assets and visualise Flow data in an InfoMotion'.(Time required 50 minutes)
 
-## Table of Contents
+- Discovering and Importing a flow
+- Discovering and Importing a graph (InfoType)
+- Visualising Flow data in an InfoMotion
 
 1. [Import a Flow](#importFlow)
 1. [Creating a Datasource](#CreateDatasourse)
@@ -27,21 +29,21 @@ Select Flow and search `getting-started`.
 
 ![discover](./../../img/GetStarted/DataVisualization-discover.png)
 
-Click import to open the import modal.
+Click Import(marked by enebular) to open the import modal.
 
-![discover2](./../../img/GetStarted/DataVisualization-discover2.png)
+![discoverflow](./../../img/GetStarted/DataVisualization-discoverflow.png)
 
 Select the project to import to and the Default asset role. (For now select superdev)
 
-![fork](./../../img/GetStarted/DataVisualization-fork.png)
+![import](./../../img/GetStarted/DataVisualization-import.png)
 
 Go back to your project dashboard to see the new asset you just imported.
 
-![addedForkFlow](./../../img/GetStarted/DataVisualization-addedForkFlow.png)
+![addedImportFlow](./../../img/GetStarted/DataVisualization-addedImportFlow.png)
 
 The imported Flow should look like this.
 
-![forkFlow](./../../img/GetStarted/DataVisualization-forkFlow.png)
+![importFlow](./../../img/GetStarted/DataVisualization-importFlow.png)
 
 The flow is set up in a way that all the user needs to
 edit in the flow is datasource credentials. before we deploy the flow lets register a datasource.
@@ -117,17 +119,17 @@ Select InfoType and search `barchart`.
 
 ![discoverInfoType](./../../img/GetStarted/DataVisualization-discoverInfoType.png)
 
-Click import to open the import modal.
+Click import (marked by enebular) to open the import modal.
 
 ![sampleBarChart](./../../img/GetStarted/DataVisualization-discover2.png)
 
 Select the project to import to.
 
-![forkInfoType](./../../img/GetStarted/DataVisualization-forkInfoType.png)
+![importInfoType](./../../img/GetStarted/DataVisualization-importInfoType.png)
 
 Go back to your project dashboard to see the new asset you just imported.
 
-![confirmForkedInfoType](./../../img/GetStarted/DataVisualization-confirmForkedInfoType.png)
+![confirmImportedInfoType](./../../img/GetStarted/DataVisualization-confirmImportedInfoType.png)
 
 ## Creating an InfoMotion{#CreateInfoMotion}
 

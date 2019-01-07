@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-12-20
+lastUpdated: 2019-01-04
 ---
 
 # Data Visualization
@@ -27,20 +27,20 @@ enebular のユーザーはアセットを公開すること、また公開さ�
 右のカテゴリーから `Flow` を選択して、「getting-started」と検索バーに入力してください。
 ![discover](./../../img/GetStarted/DataVisualization-discover.png)
 
-検索結果に出てきたものをクリックし、下記のようなフロープレビューが表示されていることを確認してください。
-右の `fork` ボタンよりフローをインポートできます。
-![discover2](./../../img/GetStarted/DataVisualization-discover2.png)
+検索結果に出てきたenebularラベルのあるものをクリックし、下記のようなフロープレビューが表示されていることを確認してください。
+右の `Import` ボタンよりフローをインポートできます。
+![discoverflow](./../../img/GetStarted/DataVisualization-discoverflow.png)
 
-インポート先の適当なプロジェクトに初期値のロール設定(superdev)で fork してください。
-![fork](./../../img/GetStarted/DataVisualization-fork.png)
+インポート先の適当なプロジェクトに初期値のロール設定(superdev)で import してください。
+![import](./../../img/GetStarted/DataVisualization-import.png)
 
 インポートしたプロジェクトのダッシュボードに新しくアセットが追加されています。
 
-![addedForkFlow](./../../img/GetStarted/DataVisualization-addedForkFlow.png)
+![addedImportFlow](./../../img/GetStarted/DataVisualization-addedImportFlow.png)
 
 インポートしたフローを開いて、同じフローがインポートされていることを確認してください。
 
-![forkFlow](./../../img/GetStarted/DataVisualization-forkFlow.png)
+![importFlow](./../../img/GetStarted/DataVisualization-importFlow.png)
 
 このフローはそれぞれのデータソースの認証情報がブランクになっているので、デプロイする前にフローを編集する必要があります。
 
@@ -120,18 +120,18 @@ enebular のユーザーはアセットを公開すること、また公開さ�
 
 ![discoverInfoType](./../../img/GetStarted/DataVisualization-discoverInfoType.png)
 
-検索結果に出てきたものをクリックし、下記のようなプレビューは表示されていることを確認してください。
-右の `Fork` ボタンよりフローをインポートできます。
+検索結果に出てきたenebularラベルのあるものをクリックし、下記のようなプレビューは表示されていることを確認してください。
+右の `Import` ボタンよりフローをインポートできます。
 
 ![sampleBarChart](./../../img/GetStarted/DataVisualization-discover2.png)
 
 インポートするプロジェクトを選択して下さい。
 
-![forkInfoType](./../../img/GetStarted/DataVisualization-forkInfoType.png)
+![importInfoType](./../../img/GetStarted/DataVisualization-importInfoType.png)
 
-プロジェクトのダッシュボードにから、今フインポートした InfoType が追加されていることを確認してください。
+プロジェクトのダッシュボードにから、今インポートした InfoType が追加されていることを確認してください。
 
-![confirmForkedInfoType](./../../img/GetStarted/DataVisualization-confirmForkedInfoType.png)
+![confirmImportedInfoType](./../../img/GetStarted/DataVisualization-confirmImportedInfoType.png)
 
 ## InfoMotion の作成{#CreateInfoMotion}
 
