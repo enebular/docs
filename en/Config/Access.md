@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-02-01
+lastUpdated: 2019-01-04
 ---
 
 # Editing Access Permissions
@@ -15,7 +15,7 @@ First, let's go over the user types. There are the following three types of user
 - Project Collaborator
 - Outside Collaborator
 
-![](../_asset/images/enebular-developers-aboutaccess.png)
+![assetPriviliege](./../../img/Config/Access-assetPriviliege.png)
 
 The **Project Owner** is the project manager. They can edit project members and manage access to all of the assets in a project.
 
@@ -29,11 +29,11 @@ The creator of a project automatically becomes the project owner.
 
 Project collaborators can be invited from the "Access" page which can be navigated to from "Access" in the project sidebar (You can only invite those who are signed up to enebular).
 
-![](https://i.gyazo.com/de4082a2bf03d51d473dbb1e9bf5f78b.png)
+![projectMembers](./../../img/Config/Access-projectMembers.png)
 
 Outside collaborators can be invited from the "Access" page which can be navigated to from the "Access" tab in the flow details screen (You can only invite those who are signed up to enebular).
 
-![](https://i.gyazo.com/cc774e8f901c3629f2c79098172dba61.png)
+![Access-invite](./../../img/Config/Access-invite.png)
 
 ## About Asset Privileges
 
@@ -50,10 +50,10 @@ Asset privileges can be set on the "Access" page which can be navigated to from 
 
 The permissions can be changes by selecting the "Role" for the member.
 
-![](https://i.gyazo.com/b6ba9650ebedf08291983c7e472146e0.png)
+![Access-role](./../../img/Config/Access-role.png)
 
 The "default privilege" is that automatically assigned to members when invited as a project collaborator.
 
-![](https://i.gyazo.com/5d2970b4226d5633c2e81f7abc5f721f.png)
+![Access-default](./../../img/Config/Access-default.png)
 
 Outside collaborators are assigned `user` by default regardless of the "default privilege".

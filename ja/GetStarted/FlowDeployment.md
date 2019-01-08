@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-01-04
+lastUpdated: 2019-01-09
 ---
 
 # Flow Deployment
@@ -36,7 +36,7 @@ Heroku に送りたいフローを作成して、デプロイして保存しま�
 表示された画面の Add Connection をクリックします。
 ![addConnection](./../../img/GetStarted/FlowDeployment-addConnection.png)
 
-Select Connection Type から Heroku を選択します。
+Create Connection Type から Heroku を選択します。
 Connection Name はわかりやすい名前をつけます。Heroku API Token は Heroku の設定画面で確認します。
 
 ![selectHeroku](./../../img/GetStarted/FlowDeployment-selectHeroku.png)
@@ -81,7 +81,7 @@ App name をわかりやすい名前で設定します。
 
 ![appName](./../../img/GetStarted/FlowDeployment-appName.png)
 
-作成後 の enebular Node-RED のログインするための USERNAME/PASSWORD を設定します。
+作成後 の enebular Node-RED にログインするための USERNAME/PASSWORD を設定します。
 
 ![userName](./../../img/GetStarted/FlowDeployment-userName.png)
 
@@ -106,6 +106,34 @@ Heroku にクレジットカード情報を登録していない場合、以下�
 さきほど設定したものを入力してログインします。エディタが表示されることを確認します。
 
 ![agentOnHeroku](./../../img/GetStarted/FlowDeployment-agentOnHeroku.png)
+
+## デプロイ設定
+
+Heroku アプリが作成できたらデプロイ設定をします。さきほどの画面に戻って設定を続けます。
+
+[New] を押します。
+
+![deployNewBottun](./../../img/GetStarted/FlowDeployment-deployNewBottun.png)
+
+Connection Name はわかりやすい名前をつけます。Heroku API Token は Heroku の設定画面で確認します。
+
+![connectionModal](./../../img/GetStarted/FlowDeployment-connectionModal.png)
+
+[Account Settings] を押します。
+
+![accountSettings](./../../img/GetStarted/FlowDeployment-accountSettings.png)
+
+Manage Account ページで Account ページに移動します。
+
+![account](./../../img/GetStarted/FlowDeployment-account.png)
+
+API Key 欄に移動し [Reveal] を押して API Key を表示、コピーします。
+
+![revealApikey](./../../img/GetStarted/FlowDeployment-revealApikey.png)
+
+Heroku API Token にコピーした API Key を貼り付け、[Save] を押します。
+
+![saveConnection](./../../img/GetStarted/FlowDeployment-saveConnection.png)
 
 ## デプロイ
 
