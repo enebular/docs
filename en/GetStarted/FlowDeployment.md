@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-07-20
+lastUpdated: 2019-01-04
 ---
 
 # Flow Deployment
@@ -7,7 +7,7 @@ lastUpdated: 2018-07-20
 Deploying flows to various environments and operating systems is a feature of Enebular.
 In this tutorial we will be deploying a flow to Heroku.
 
-To complete this tutorial you will need to understand how to create an [Asset(Flow)](./Introduction.md).
+To complete this tutorial you will need to understand how to create an [Asset(Flow)](./Introduction.md) and registered [Heroku](https://heroku.com).
 
 ## Ready to deploy flow to Heroku
 
@@ -17,7 +17,7 @@ Create flow (If flow has already been created, it can also be used).
 
 ![createFlow](./../../img/GetStarted/FlowDeployment-createFlow.png)
 
-Click on the "Deploy" botton to save the flow.
+Click on the "Deploy" button to save the flow.
 
 ![deployButton](./../../img/GetStarted/FlowDeployment-deployButton.png)
 
@@ -27,11 +27,37 @@ Configure your flow deployment by clicking on Deploy.
 
 ![otherEnvDeploy](./../../img/GetStarted/FlowDeployment-otherEnvDeploy.png)
 
+Click on the "Add Connection".
+
+![addConnection](./../../img/GetStarted/FlowDeployment-addConnection.png)
+
 Select "Heroku" for "Select Connection Type".
+
+Input a "Connection Name". Get the "Heroku API Token" from the Heroku settings screen.
 
 ![selectHeroku](./../../img/GetStarted/FlowDeployment-selectHeroku.png)
 
-After selecting "Heroku", we can create a Heroku app from the "Deploy to Heroku" button on the right.
+Click "Account Settings".
+
+![accountSettings](./../../img/GetStarted/FlowDeployment-accountSettings.png)
+
+Go to "Account" on the "Manage Account" page.
+
+![account](./../../img/GetStarted/FlowDeployment-account.png)
+
+Go to the API Key section and display the API Key with "Reveal".
+
+![revealApikey](./../../img/GetStarted/FlowDeployment-revealApikey.png)
+
+Copy the API Key into "Heroku API Token" and click "Save".
+
+![inputAPIkey](./../../img/GetStarted/FlowDeployment-inputAPIkey.png)
+
+Click created connection.
+
+![createdConnection](./../../img/GetStarted/FlowDeployment-createdConnection.png)
+
+We can create a Heroku app from the "Deploy to Heroku" button on the bottom.
 
 ![herokuButton](./../../img/GetStarted/FlowDeployment-herokuButton.png)
 
@@ -78,34 +104,6 @@ Once it has been created click the "View" button to check it.
 
 You'll be asked to provide the USERNAME and PASSWORD to log into the enebular Node-RED, so enter those that you set above.
 
-## Deploy Settings
-
-Once the Heroku app has been created we configure the deploy settings. Return to the previous screen and continue on with the configuration.
-
-Click "New".
-
-![deployNewBottun](./../../img/GetStarted/FlowDeployment-deployNewBottun.png)
-
-Input a "Connection Name". Get the "Heroku API Token" from the Heroku settings screen.
-
-![connectionModal](./../../img/GetStarted/FlowDeployment-connectionModal.png)
-
-Click "Account Settings".
-
-![accountSettings](./../../img/GetStarted/FlowDeployment-accountSettings.png)
-
-Go to "Account" on the "Manage Account" page.
-
-![account](./../../img/GetStarted/FlowDeployment-account.png)
-
-Go to the API Key section and display the API Key with "Reveal".
-
-![revealApikey](./../../img/GetStarted/FlowDeployment-revealApikey.png)
-
-Copy the API Key into "Heroku API Token" and click "Save".
-
-![saveConnection](./../../img/GetStarted/FlowDeployment-saveConnection.png)
-
 ## Deploying
 
 With the connection saved and Heroku selected as a "Connection Type", a list of the apps on the Heroku account should be displayed. From here, select the Heroku application you just created and press "Deploy".
@@ -113,8 +111,6 @@ With the connection saved and Heroku selected as a "Connection Type", a list of 
 ![appList](./../../img/GetStarted/FlowDeployment-appList.png)
 
 Wait a moment for the "Deploy Added" to be displayed to confirm the app has been deployed.
-
-![deployFlow](./../../img/GetStarted/FlowDeployment-deployFlow.png)
 
 If you check the Heroku app you will be able to see that the flow has been deployed.
 
