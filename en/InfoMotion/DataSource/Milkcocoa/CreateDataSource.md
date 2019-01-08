@@ -2,7 +2,7 @@
 lastUpdated: 2018-08-09
 ---
 
-###Create a Data Source  {#reate a Data Source }
+###Create a Data Source  {#Create a Data Source}
 
 In the same enebular project click `Data Source` and the plus button to add a 
 `Data Source`. 
