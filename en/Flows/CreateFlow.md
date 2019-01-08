@@ -48,7 +48,7 @@ From here, the flow is edited by starting up the flow editor. Please refer to th
 
 Web Flow Editor is not an execution environment but a development environment.
 
-There are the following restrictions.
+The following are restrictions pertained to Web Flow Editor.
 
 * A hardware dependent node cannot be used
 * A node that depends on the development environment cannot be used
