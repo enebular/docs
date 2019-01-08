@@ -51,7 +51,7 @@ Web Flow Editor is not an execution environment but a development environment.
 There are the following restrictions.
 
 * A hardware dependent node cannot be used
-* A node that depends on the development environment can not be used
+* A node that depends on the development environment cannot be used
 * A large size node can not be imported and used
     *  Reloading may be repeated
 * The generated URL is temporary
