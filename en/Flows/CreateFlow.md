@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2019-01-04
+lastUpdated: 2019-01-08
 ---
 
 # Create Flows
@@ -50,8 +50,9 @@ Web Flow Editor is not execution environment but development one.
 
 There are the following restrictions.
 
-* A hardware dependent node can not be used.
-* A node that depends on the development environment can not be used.
-* A large size node can not be imported and used.
-    *  Reloading may be repeated.
-* The generated URL is temporary.
+* A hardware dependent node can not be used
+* A node that depends on the development environment can not be used
+* A large size node can not be imported and used
+    *  Reloading may be repeated
+* The generated URL is temporary
+* Some native Node-RED keyboard shortcuts do not function properly
