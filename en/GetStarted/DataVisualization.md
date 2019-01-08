@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-07-20
+lastUpdated: 2019-01-04
 ---
 
 # Data Visualization
@@ -8,13 +8,13 @@ Using InfoMotion to visualize data.
 
 This tutorial covers the following.
 
-- Discovering and Forking a flow
-- Discovering and Forking a graph (InfoType)
+- Discovering and Importing a flow
+- Discovering and Importing a graph (InfoType)
 - Visualising Flow data in an InfoMotion
 
 ## Import a Flow
 
-Enebular allows users to publish and fork Assets. At the right top part of the window click on `Discover`.
+Enebular allows users to publish and import Assets. At the right top part of the window click on `Discover`.
 
 ![discoverMenu](./../../img/GetStarted/DataVisualization-discoverMenu.png)
 
@@ -22,21 +22,21 @@ Select Flow and search `getting-started`.
 
 ![discover](./../../img/GetStarted/DataVisualization-discover.png)
 
-Click fork to open the fork modal.
+Click Import(marked by enebular) to open the import modal.
 
-![discover2](./../../img/GetStarted/DataVisualization-discover2.png)
+![discoverflow](./../../img/GetStarted/DataVisualization-discoverflow.png)
 
 Select the project to import to and the Default asset role. (For now select superdev)
 
-![fork](./../../img/GetStarted/DataVisualization-fork.png)
+![import](./../../img/GetStarted/DataVisualization-import.png)
 
-Go back to your project dashboard to see the new asset you just forked.
+Go back to your project dashboard to see the new asset you just imported.
 
-![addedForkFlow](./../../img/GetStarted/DataVisualization-addedForkFlow.png)
+![addedImportFlow](./../../img/GetStarted/DataVisualization-addedImportFlow.png)
 
 The imported Flow should look like this.
 
-![forkFlow](./../../img/GetStarted/DataVisualization-forkFlow.png)
+![importFlow](./../../img/GetStarted/DataVisualization-importFlow.png)
 
 The flow is set up in a way that all the user needs to
 edit in the flow is datasource credentials. before we deploy the flow lets register a datasource.
@@ -106,23 +106,23 @@ Click on save to save. Now the datasource is ready for InfoMotion to use.
 
 ## Import an InfoType
 
-Enebular allows users to publish and fork Assets. At the right top part of the window click on `Discover`.
+Enebular allows users to publish and import Assets. At the right top part of the window click on `Discover`.
 
 Select InfoType and search `barchart`.
 
 ![discoverInfoType](./../../img/GetStarted/DataVisualization-discoverInfoType.png)
 
-Click fork to open the fork modal.
+Click import (marked by enebular) to open the import modal.
 
 ![sampleBarChart](./../../img/GetStarted/DataVisualization-discover2.png)
 
 Select the project to import to.
 
-![forkInfoType](./../../img/GetStarted/DataVisualization-forkInfoType.png)
+![importInfoType](./../../img/GetStarted/DataVisualization-importInfoType.png)
 
-Go back to your project dashboard to see the new asset you just forked.
+Go back to your project dashboard to see the new asset you just imported.
 
-![confirmForkedInfoType](./../../img/GetStarted/DataVisualization-confirmForkedInfoType.png)
+![confirmImportedInfoType](./../../img/GetStarted/DataVisualization-confirmImportedInfoType.png)
 
 ## Creating an InfoMotion
 

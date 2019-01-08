@@ -36,6 +36,8 @@ Deploy では Flow を特定のサービスへデプロイできます。
 
 ![](https://i.gyazo.com/176869beb11cdec73fe02c8c09c4288f.png)
 
+Redeploy ボタンを使えば最後に実行した Deploy を再度実行することが可能です。
+
 それぞれのサービスへの詳しいデプロイ方法は [Deploy](../Deploy/index.md) をご覧ください。
 
 ## Devices
@@ -43,7 +45,6 @@ Deploy では Flow を特定のサービスへデプロイできます。
 Devices では外部サービスへデプロイしたデバイスの状態を一覧で見ることができます。なお、こちらは実装予定の有償機能になります。
 
 ![](https://i.gyazo.com/9f26dd5fa222389b4b90cb2eea5a1df7.png)
-
 
 ## Access
 

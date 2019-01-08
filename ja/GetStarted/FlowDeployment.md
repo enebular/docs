@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-07-20
+lastUpdated: 2019-01-04
 ---
 
 # Flow Deployment
@@ -32,7 +32,7 @@ Heroku に送りたいフローを作成して、デプロイして保存しま�
 
 ![otherEnvDeploy](./../../img/GetStarted/FlowDeployment-otherEnvDeploy.png)
 
-Select Connection Type から Heroku を選択します。
+Create Connection Type から Heroku を選択します。
 
 ![selectHeroku](./../../img/GetStarted/FlowDeployment-selectHeroku.png)
 
@@ -55,7 +55,7 @@ App name をわかりやすい名前で設定します。
 
 ![appName](./../../img/GetStarted/FlowDeployment-appName.png)
 
-作成後 の enebular Node-RED のログインするための USERNAME/PASSWORD を設定します。
+作成後 の enebular Node-RED にログインするための USERNAME/PASSWORD を設定します。
 
 ![userName](./../../img/GetStarted/FlowDeployment-userName.png)
 
@@ -101,11 +101,11 @@ Manage Account ページで Account ページに移動します。
 
 ![account](./../../img/GetStarted/FlowDeployment-account.png)
 
-API Key 欄に移動し [Reveal] で API Key を表示します。
+API Key 欄に移動し [Reveal] を押して API Key を表示、コピーします。
 
 ![revealApikey](./../../img/GetStarted/FlowDeployment-revealApikey.png)
 
-Heroku API Token に API Key をコピーして、[Save] を押します。
+Heroku API Token にコピーした API Key を貼り付け、[Save] を押します。
 
 ![saveConnection](./../../img/GetStarted/FlowDeployment-saveConnection.png)
 

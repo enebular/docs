@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-4-24
+lastUpdated: 2018-10-29
 ---
 
 # Sample InfoTypes 
@@ -25,7 +25,7 @@ Sample InfoTypes は、データをテストするための無料で利用でき
 {
   "id":String,
   "value":Number,
-  "created": UNIX timestamp
+  "ts": UNIX timestamp
 }
 ```
 
@@ -54,7 +54,7 @@ Sample InfoTypes は、データをテストするための無料で利用でき
 {
   "id":String,
   "value":Number,
-  "created": UNIX timestamp
+  "ts": UNIX timestamp
 }
 ```
 
@@ -83,7 +83,7 @@ Sample InfoTypes は、データをテストするための無料で利用でき
 {
   "id":String,
   "value":Number,
-  "created": UNIX timestamp
+  "ts": UNIX timestamp
 }
 ```
 
