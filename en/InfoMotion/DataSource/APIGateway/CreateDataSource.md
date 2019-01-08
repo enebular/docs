@@ -2,7 +2,7 @@
 lastUpdated: 2018-08-09
 ---
 
-###Create a Data Source (Not Applicable with livemode)  {#reate a Data Source (Not Applicable with livemode) }
+###Create a Data Source (Not Applicable with livemode)  {#Create a Data Source (Not Applicable with livemode) }
 
 In the same enebular project click `Data Sources` and the plus button to add a `Data Source`
 
