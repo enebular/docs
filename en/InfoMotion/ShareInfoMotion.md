@@ -21,7 +21,7 @@ https://docs.python.org/2/library/simplehttpserver.html.
 Enebular must be logged in the browser to display infotypes. 
 All infotypes are set as private. These settings are subject to change. 
 
-###InfoMotion scripts {#nfoMotion scripts}
+###InfoMotion scripts {#InfoMotion scripts}
 
 The InfoMotion source code gives developers a little more freedom in customizing or altering the behaviour of their Dashboards.
 
