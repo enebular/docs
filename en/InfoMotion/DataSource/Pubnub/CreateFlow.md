@@ -2,7 +2,7 @@
 lastUpdated: 2018-08-09
 ---
 
-###Create a Flow  {#reate a Flow }
+###Create a Flow  {#Create a Flow }
 
 The Pubnub datastore will be used to push data to. 
 At your enebular project create a new Flow. 
