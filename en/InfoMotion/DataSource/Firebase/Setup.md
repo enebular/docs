@@ -52,7 +52,7 @@ Anonymous should now be enabled.
 
 ![Setup-anonymousStatusEnabled-en](./../../../../img/InfoMotion/DataSource/Firebase/Setup-anonymousStatusEnabled-en.png)
 
-###Set up DataBase  {#et up DataBase }
+###Set up DataBase  {#Set up DataBase}
 
 To set up a database click database on the side bar. 
 
