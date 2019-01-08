@@ -80,7 +80,7 @@ Please see [infomotion share](./InfoMotionTool.md) for more details.
 
 ![](../_asset/images/InfoMotion/enebular-developers-infomotion-options.png)
 
-##Example of Filter.  {#xample of Filter. }
+##Example of Filter {#Example of Filter}
 
 Infomotion without a filter. 
 
