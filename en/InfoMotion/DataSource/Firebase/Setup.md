@@ -28,7 +28,7 @@ A modal will pop up with configuration keys. These keys will be used later on wi
 ![Setup-firebaseKeys-en](./../../../../img/InfoMotion/DataSource/Firebase/Setup-firebaseKeys-en.png)
 
 
-###Authentication {#uthentication}
+###Authentication {#Authentication}
 
 Before we create a Flow we will need to set up authentications. 
 In this example we will keep it simple with an Anonymous authentication. 
