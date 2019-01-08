@@ -3,7 +3,7 @@ lastUpdated: 2018-08-09
 ---
 
 
-###Set-up   {#et-up  }
+###Set-up   {#Set-up}
 
 Register at https://firebase.google.com/.
 Once you are registerd and logged in click on add project. 
