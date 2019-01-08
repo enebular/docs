@@ -2,7 +2,7 @@
 lastUpdated: 2018-08-10
 ---
 
-# DataSource の作成
+# DataSource の作成 {#DataSource の作成}
 
 
 フローを作成したものと同じプロジェクトの `Data Souce` のページを表示します。
@@ -24,7 +24,7 @@ DataSourceが追加されていることを確認してください。
 
 ![CreateDataSource-newOne](./../../../../img/InfoMotion/DataSource/Firebase/CreateDataSource-newOne.png)
 
-## 各設定項目の確認
+## 各設定項目の確認 {#各設定項目の確認}
 
 下記項目は、スニペットから確認できます。
 
@@ -50,7 +50,7 @@ Firebase の左部メニューの [Project Overview] をクリックし、プロ
 
 
 
-## InfoMotionの作成
+## InfoMotionの作成 {#InfoMotionの作成}
 
 DataSource を使用する準備ができました。
 InfoMotion ダッシュボードを作成する際に作った DataSource を選択することでデータをグラフに反映できます。

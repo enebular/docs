@@ -2,11 +2,11 @@
 lastUpdated: 2018-04-28
 ---
 
-# Milkcocoa のフロー
+# Milkcocoa のフロー {#Milkcocoa のフロー}
 
 Milkcocoa にデータを保存するフローを作成します。Milkcocoa DataSource として利用できます。
 
-## DataSource を確認
+## DataSource を確認 {#DataSource を確認}
 
 今回、操作したい DataSource を確認しておきます。この Flow を作成する前に、Milkcocoa の[チュートリアルページの Milkcocoa を使う準備をする](https://mlkcca.com/tutorial/page2.html)を参考に、アプリを作成して `app_id` と、Milkcocoa 管理画面内の「認証」タブから作成出来る`API Key`と`API Secret`を控えておいて下さい。
 
@@ -14,7 +14,7 @@ Milkcocoa にデータを保存するフローを作成します。Milkcocoa Dat
 
 DataSource 対象のデータストアは今回の場合、`mbed` という Milkcocoa データストアを使います。
 
-## Data Flow を起動
+## Data Flow を起動 {#Data Flow を起動}
 
 Data Flow を準備してDataSourceに向けてデータを加工して入力していきます。
 
@@ -26,25 +26,25 @@ Edit Flow ボタンをクリックします。
 
 Flow Editor が別ウィンドウで開きます。
 
-## DataSource にデータを加工する例
+## DataSource にデータを加工する例 {#DataSource にデータを加工する例}
 
-### 今回の仕組み
+### 今回の仕組み {#今回の仕組み}
 
 DataSourceにデータを加工する例では以下のように構成します。
 
-### フロー
+### フロー {#フロー}
 
 injectノード→functionノード→milkcocoaノード→debugノードの順に配置します。
 
 ![image](../_asset/images/Flow/CreateFlow/flow-create-flow_14.png)
 
-### injectノードの設定
+### injectノードの設定 {#injectノードの設定}
 
 ![image](../_asset/images/Flow/CreateFlow/flow-create-flow_15.png)
 
 injectノードの設定は配置時そのままの設定でOKです。
 
-### functionノードの設定
+### functionノードの設定 {#functionノードの設定}
 
 ![image](../_asset/images/Flow/CreateFlow/flow-create-flow_16.png)
 
@@ -65,7 +65,7 @@ msg.payload = data;
 return msg;
 ```
 
-### Milkcocoa出力ノードの設定
+### Milkcocoa出力ノードの設定 {#Milkcocoa出力ノードの設定}
 
 ![image](../_asset/images/Flow/CreateFlow/flow-create-flow_18.png)
 
@@ -100,13 +100,13 @@ Addを押して設定を登録します。
 
 ![image](../../img/InfoMotion/DataSource/Milkcocoa-v2/CreateFlow-milkcocoaSettingNode.png)
 
-### debugノードの設定
+### debugノードの設定 {#debugノードの設定}
 
 ![image](../_asset/images/Flow/CreateFlow/flow-create-flow_25.png)
 
 debugノードの設定は配置時そのままの設定でOKです。
 
-### デプロイ
+### デプロイ {#デプロイ}
 
 デプロイをしてウィンドウを閉じます。これでFlow Editorによる設定は終了です。
 
@@ -114,7 +114,7 @@ debugノードの設定は配置時そのままの設定でOKです。
 
 Flow一覧に今回のFlowが表示されます。
 
-### 動かしてみる
+### 動かしてみる {#動かしてみる}
 
 ![image](../_asset/images/Flow/CreateFlow/flow-create-flow_27.png)
 

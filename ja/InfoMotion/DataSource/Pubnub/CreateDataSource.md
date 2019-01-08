@@ -2,7 +2,7 @@
 lastUpdated: 2018-08-10
 ---
 
-## DataSource の作成
+## DataSource の作成 {#DataSource の作成}
 
 InfoMotionで表示したい  `Data Source` のページを表示します。
 右下の + ボタンをクリックして、 `Data Source`を追加します。
@@ -18,7 +18,7 @@ pubnub 用の設定画面が開きます。
 
 ![CreateDataSource-settings](./../../../../img/InfoMotion/DataSource/Pubnub/CreateDataSource-settings.png)
 
-## 設定項目の確認
+## 設定項目の確認 {#設定項目の確認}
 
 `Publish key`, `Subscribe key`  は pubnub アプリの keys から確認できます。
 
@@ -29,7 +29,7 @@ pubnub 用の設定画面が開きます。
 ![CreateFlow-pubnubOutNodeComplete](./../../../../img/InfoMotion/DataSource/Pubnub/CreateFlow-pubnubOutNodeComplete.png)
 
 
-## InfoMotionの作成
+## InfoMotionの作成 {#InfoMotionの作成}
 
 DataSource を使用する準備ができました。
 InfoMotion ダッシュボードを作成する際に作った DataSource を選択することでデータをグラフに反映できます。

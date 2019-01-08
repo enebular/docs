@@ -2,7 +2,7 @@
 lastUpdated: 2017-12-25
 ---
 
-# InfoMotion
+# InfoMotion {#InfoMotion}
 
 An `InfoMotion` visualizes data from a `DataSource`.
 
@@ -19,11 +19,11 @@ The created InfoMotion can been checked on enebular.
 
 Selecting an InfoMotion will take you to the InfoMotion details screen.
 
-## Overview
+## Overview {#Overview}
 
 The dashboard is displayed here. Please see [Dashboards](./CreateInfoMotion.md) for more details.
 
-## Access
+## Access {#Access}
 
 You can edit InfoMotion access permissions here.
 
@@ -31,7 +31,7 @@ You can edit InfoMotion access permissions here.
 
 Please see [Access Control](../Config/Access.md) for more details.
 
-## Settings
+## Settings {#Settings}
 
 You can change the name and description of the InfoMotion and delete the InfoMotion here.
 

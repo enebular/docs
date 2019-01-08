@@ -2,7 +2,7 @@
 lastUpdated: 2018-01-30
 ---
 
-# Mbed Cloudへのデプロイ
+# Mbed Cloudへのデプロイ {#Mbed Cloudへのデプロイ}
 
 フローのデプロイ先はそのままデプロイボタンを押すと、enebular が利用しているサーバーにデプロイされます。Mbed Cloud Deploy は enebular で Mbed Cloud を経由し、登録されているデバイスへフローをデプロイする機能です。
 
@@ -10,7 +10,7 @@ lastUpdated: 2018-01-30
 
 このページでは、Mbed Cloudを経由してデバイスにフローをデプロイする手順を説明します。
 
-## 新規フローの作成
+## 新規フローの作成 {#新規フローの作成}
 
 まずデバイスへデプロイするフローを作成します。（Project は作成済みとします）
 
@@ -22,9 +22,9 @@ lastUpdated: 2018-01-30
 
 この編集画面でデータフローを編集してFlowを作成します。
 
-## データフローの編集
+## データフローの編集 {#データフローの編集}
 
-### Raspberry Pi へのデプロイの場合
+### Raspberry Pi へのデプロイの場合 {#Raspberry Pi へのデプロイの場合}
 
 Raspberry Pi の Node-RED を起動し、スタンバイの状態にします。
 
@@ -37,7 +37,7 @@ Raspberry Pi へデプロイするフローを編集します。以下のよう�
 ![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_04.png)
 
 
-### enebular edge agent へのデプロイの場合
+### enebular edge agent へのデプロイの場合 {#enebular edge agent へのデプロイの場合}
 
 あらかじめ、デプロイに使用するデバイスの電源を入れます。
 
@@ -65,7 +65,7 @@ enebular edge agent へのデプロイは下記フローを使います。まず
 ![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_04.png)
 
 
-## デプロイ
+## デプロイ {#デプロイ}
 
 [Deploy] の右にある下矢印から [Export to Other Services] を選択します。
 
@@ -119,15 +119,15 @@ Create Connection の画面に MBED API Key の入力ができたら、[Save]で
 
 ![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_13.png)
 
-## 確認
+## 確認 {#確認}
 
-### Raspberry Pi へのデプロイの場合
+### Raspberry Pi へのデプロイの場合 {#Raspberry Pi へのデプロイの場合}
 
 ログでフローが更新されているのが確認してください。
 
 ![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_17.png)
 
 
-### enebular edge agent へのデプロイの場合
+### enebular edge agent へのデプロイの場合 {#enebular edge agent へのデプロイの場合}
 
 K64F の LED が緑色で点滅することを確認してください。
