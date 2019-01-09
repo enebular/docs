@@ -84,13 +84,13 @@ For detailed specifications, please contact support (support@enebular.com).
 
 #### Operating System
 
-- [Mbed OS 5.6.6](https://github.com/ARMmbed/mbed-os/tree/mbed-os-5.6.6) (ARM Ltd.)
+- [mbed OS 5.10.4](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.10.4) (ARM Ltd.)
 
 #### Hardware
 
-The following hardware is supported in enebular-edge-agent 0.9.1.
+The following hardware is supported in enebular-edge-agent 1.1.0.
 
-- [FRDM-K64F](https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/k-seriesperformancem4/k2x-usb/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F) (NXP Semiconductors N.V.) + Stag Beetle Board (Uhuru Corporation)
+* [enebular Reference Board RAVEN](./../Board/RAVEN.md) (Uhuru Corporation)
 
 #### Communication
 
@@ -99,10 +99,14 @@ The following hardware is supported in enebular-edge-agent 0.9.1.
 
 ### Known Issues {#Known Issues}
 
-- When using a BME280 node, it may not operate correctly if the flow size is large.
-- An Inject node can set only a Timestamp for the Payload and Repetition of the Interval.
-- Excessive deployment within a span of one minute may cause failure of flow initialization.
-  - The device will stop in case of a flow initialization failure. To resolve this, reboot the device by pressing the reset button.
+あとでかく
+
+## enebular Reference Board Configuration Tool{#eRB-Config.Tool}
+
+| OS | CPU | Memory | Other |
+| --- | --- | --- | --- |
+| Windows 10 | Core i5 2.90GHz and up | 8.0GB and up | .NET Framework v4.6.1 |
+
 
 ## Enebular Infomotion Tool {#Enebular Infomotion Tool}
 

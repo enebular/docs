@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-12-14
+lastUpdated: 2019-01-09
 ---
 
 ## Getting Started
@@ -117,6 +117,7 @@ lastUpdated: 2018-12-14
     - [2.1.0](Releases/enebular-agent/2.1.0.md)
     - [2.0.0](Releases/enebular-agent/2.0.0.md)
   - [enebular edge agent](Releases/index.md#enebular-edge-agent)
+    - [1.1.0](Releases/enebular-edge-agent/1.1.0.md)
     - [1.0.1](Releases/enebular-edge-agent/1.0.1.md)
     - [1.0.0](Releases/enebular-edge-agent/1.0.0.md)
     - [0.10.0](Releases/enebular-edge-agent/0.10.0.md)
