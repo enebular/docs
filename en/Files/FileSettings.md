@@ -6,6 +6,12 @@ lastUpdated: 2019-01-10
 
 File setting are as follows:
 
+## File {#File}
+
+Select the file to upload.
+
+- The maximum file size is 500MB.
+
 ## Title {#Title}
 
 The name of files
