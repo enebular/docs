@@ -169,7 +169,7 @@ The following hardware is supported in enebular-edge-agent 1.0.1.
 ## Latest Release - 1.0.0 (Junuary xxx, 2019)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-[最新版のリンクをはる](xxxxxx)
+[最新版のリンクをはる](https://download.enebular.com/eRB-Config-Tool/eRBConfigTool.msi)
 ---
 
 # enebular editor Release Notes {#enebular-editor}
