@@ -34,12 +34,12 @@ Setting for if you want to deploy execution files.
 ### Execute On Deploy
 
 If it's turned on, files run as the execution files.
-The user is same as enebular-runtime-agent. 
+The user is same as enebular-agent. 
 
 ### Max Execution Time
 
 You can set maximum execution time of **Execution**.
-Set times are from 0 to 300(5 min)sec.
+Set times are from 1 to 300 seconds (5 minutes).
 
 If the execution exceeds the maximum execution time, execution is forcibly stopped.
 
@@ -60,7 +60,7 @@ Setting environmental variables
 
 It's a functionality that allows you to execute files already deployed when you deploy new files.
 
-### Staging
+### Stage
 
 #### Pre-Deploy
 
@@ -83,14 +83,10 @@ The path of the asset you want to execute.
 ### Max Execution Time
 
 You can set maximum execution time of **Pre-Deploy/Post-Deploy**.
-Set times are from 0 to 300(5 min)sec.
+Set times are from 1 to 300 seconds (5 minutes).
 
 If the Pre-Deploy/Post-Deploy exceeds the maximum execution time, Pre-Deploy/Post-Deploy is forcibly stopped.
 
 ## Default Role {#Default Role}
 
 Select file's role.
-
-## Category {#Category}
-
-Choose file's category.
