@@ -2,11 +2,11 @@
 lastUpdated: 2019-01-04
 ---
 
-# About Deploying
+# About Deploying {#About Deploying}
 
 As stated in the [Introduction](../INDEX.md), assets created in enebular can be deployed to devices.
 
-## Deploying Flows
+## Deploying Flows {#Deploying Flows}
 
 Data flows created with the Node-RED based flow editor can be deployed to devices via third party services.
 
@@ -27,17 +27,17 @@ For cloud services that deploy to edge devices like AWS IoT and Pelion Device Ma
 
 If the execution environment exists in the cloud as with Heroku and AWS Lambda, then the cloud service takes on both the **device** and **device master** roles.
 
-### Flow size able to deploy
+### Flow size able to deploy {#Flow size able to deploy}
 
-### enebular-edge-agent
+### enebular-edge-agent {#enebular-edge-agent}
 
 Maximum Size : 3kB
 
-### enebular-agent
+### enebular-agent {#enebular-agent}
 
 Maximum Size : 100kB
 
-### cloud service
+### cloud service {#cloud service}
 
 | Target | Maximum Size |
 | --- | --- |
@@ -46,12 +46,12 @@ Maximum Size : 100kB
 
 The actual methods of deploying are as follows.
 
-### Edge
+### Edge {#Edge}
 
 * [Pelion Device Management](./DeployFlow/mbed/index.md)
 * [AWS IoT](./DeployFlow/AWSIoT/index.md)
 
-### Cloud
+### Cloud {#Cloud}
 
 * [Heroku](./DeployFlow/Heroku/index.md)
 * [AWS Lambda](./DeployFlow/Lambda/index.md)

@@ -2,13 +2,13 @@
 lastUpdated: 2018-10-09
 ---
 
-# Connections
+# Connections {#Connections}
 
 This feature allows you to manage connections to external services. You can view, add, edit and delete the connections.
 
 Connections can be used to deploy assets. See [Deploy](../Deploy/index.md) for further information.
 
-## List
+## List {#List}
 
 You can view the list of the all connections your project has. Item descriptions are follows:
 
@@ -21,7 +21,7 @@ You can view the list of the all connections your project has. Item descriptions
 | 3 | Last Updated | The date connection last updated |
 | 4 | Remove | Deleting connections |
 
-## Add
+## Add {#Add}
 
 You can add new connection.
 
@@ -35,7 +35,7 @@ At the pop up, select the "Connection Type" which you want to associate with.
 
 Settings are different each Connection Type. See [Deploy](../Deploy/index.md) for further information.
 
-## Edit
+## Edit {#Edit}
 
 You can edit registered connections.
 
@@ -47,7 +47,7 @@ Click on a connection you want to edit.
 
 Edit items and click the Save button.
 
-## Remove
+## Remove {#Remove}
 
 You can delete registered connections.
 

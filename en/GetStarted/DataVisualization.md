@@ -2,24 +2,20 @@
 lastUpdated: 2019-01-04
 ---
 
-# Data Visualization
+# Data Visualization {#Data Visualization}
 
 Using InfoMotion to visualize data.
 
 This tutorial will do 'Import assets and visualise Flow data in an InfoMotion'.(Time required 50 minutes)
 
-- Discovering and Importing a flow
-- Discovering and Importing a graph (InfoType)
-- Visualising Flow data in an InfoMotion
+1. [Import a Flow](#ImportaFlow)
+1. [Creating a Datasource](#CreatingaDatasource)
+1. [Editing and Deploying the Flow](#EditingandDeployingtheFlow)
+1. [Registering a DataSource for InfoMotion](#RegisteringaDataSourceforInfoMotion)
+1．[Import an InfoType](#ImportanInfoType)
+1. [Creating an InfoMotion](#CreatinganInfoMotion)
 
-1. [Import a Flow](#importFlow)
-1. [Creating a Datasource](#CreateDatasourse)
-1. [Editing and Deploying the Flow](#EditFlow)
-1. [Registering a DataSource for InfoMotion](#RegisterDataSource)
-1．[Import an InfoType](#ImportInfoType)
-1. [Creating an InfoMotion](#CreateInfoMotion)
-
-## Import a Flow{#importFlow}
+## Import a Flow {#Import a Flow}
 
 Enebular allows users to publish and import Assets. At the right top part of the window click on `Discover`.
 
@@ -48,7 +44,7 @@ The imported Flow should look like this.
 The flow is set up in a way that all the user needs to
 edit in the flow is datasource credentials. before we deploy the flow lets register a datasource.
 
-## Creating a Datasource{#CreateDatasourse}
+## Creating a Datasource {#Creating a Datasource}
 
 Below are the current real time databases used in InfoMotion.
 See documentation for simple registration and and set up configurations.
@@ -62,21 +58,21 @@ Before proceed to the next step, you have to register and create dataStore. Plea
 
 \*The following configurations are for testing usage only and not recommended for production.
 
-## Editing and Deploying the Flow{#EditFlow}
+## Editing and Deploying the Flow {#Editing and Deploying the Flow}
 
 Set credentials to Node and deploy flow.
 This tutorial only set uo Firebase Node.
 
-### Credentials needed for Firebase.
+### Credentials needed for Firebase. {#Credentials needed for Firebase.}
 
-At the overview page click on `Add firebase to your web app`.
+At the overview page click on `</>`. Opend mordal(`Add firebase to your web app`).
 ![firebase](./../../img/GetStarted/DataVisualization-fireBase-en.png)
 
 databaseURL will be used in the Flow.
 
 ![webApp](./../../img/GetStarted/DataVisualization-webApp-en.png)
 
-### Inputs in Flow
+### Inputs in Flow {#Inputs in Flow}
 
 Double click the firebase node and click on the pencil icon to edit a new firebase.
 
@@ -100,7 +96,7 @@ With data being pushed to a database we can create an datasource (endpoint) for 
 
 **\*Note 2**: If the flow editor is left open and unused for an extended period of time, an attempt to deploy may result with it failing with "Unauthorized". If this happens please reload.
 
-## Registering a DataSource for InfoMotion{#RegisterDataSource}
+## Registering a DataSource for InfoMotion {#Registering a DataSource for InfoMotion}
 
 We will next add datasources to our project for InfoMotion to visualise. At your project dashboard select `Data Source` on the left tab then click on the plus button to open the datasource modal.
 
@@ -111,7 +107,7 @@ Click on save to save. Now the datasource is ready for InfoMotion to use.
 
 ![dataSourceSettings](./../../img/GetStarted/DataVisualization-dataSourceSettings.png)
 
-## Import an InfoType{#ImportInfoType}
+## Import an InfoType {#Import an InfoType}
 
 Enebular allows users to publish and import Assets. At the right top part of the window click on `Discover`.
 
@@ -131,7 +127,7 @@ Go back to your project dashboard to see the new asset you just imported.
 
 ![confirmImportedInfoType](./../../img/GetStarted/DataVisualization-confirmImportedInfoType.png)
 
-## Creating an InfoMotion{#CreateInfoMotion}
+## Creating an InfoMotion {#Creating an InfoMotion}
 
 Here we'll create an InfoMotion using a DataSource and an InfoType. Press the "+" at the bottom right to open the dialog box.
 
@@ -168,7 +164,7 @@ To resize the graph drag its bottom right corner then press "Save" to save the s
 
 ![infomotion2](./../../img/GetStarted/DataVisualization-infomotion2.png)
 
-## Well Done!
+## Well Done! {#Well Done!}
 
 With that, we've been able to go from creating a data flow right through to displaying a graph that uses the data.
 

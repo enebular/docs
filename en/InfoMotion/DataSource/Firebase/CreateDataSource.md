@@ -3,7 +3,7 @@ lastUpdated: 2018-08-09
 ---
 
 
-# Create Data Source 
+# Create Data Source  {#Create Data Source }
 
 In the same enebular project click `Data Source` and the plus button to add a 
 `Data Source`. 
@@ -18,7 +18,7 @@ Check adding new one.
 
 ![CreateDataSource-newOne](./../../../../img/InfoMotion/DataSource/Firebase/CreateDataSource-newOne.png)
 
-## Input Items
+## Input Items {#Input Items}
 
 Get the fllowing items by snipet.
 
@@ -39,7 +39,7 @@ The ref can also be seen in your firebase database as the collection name. The `
 
 ![CreateFlow-firebaseNode](./../../../../img/InfoMotion/DataSource/Firebase/CreateFlow-firebaseNode.png)
 
-## Create InfoMotion
+## Create InfoMotion {#Create InfoMotion}
 
 Now your DataSource is ready to be used on an infotype see 
 [Sample infotypes](./../../SampleInfoTypes.md)to downoad a graph, 
