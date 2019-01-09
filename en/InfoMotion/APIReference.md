@@ -51,7 +51,7 @@ is needed. There are 4 types
 
 An InfoType has a Schema and a default settings.
 
-### text {#text}
+### text
 
 A basic key/value input setting.
 
@@ -71,7 +71,7 @@ A basic key/value input setting.
 
 ![](../_asset/images/InfoMotion/enebular-developers-type-text.png)
 
-### list {#list}
+### list
 
 A list of key/value input settings.
 
@@ -99,7 +99,7 @@ A list of key/value input settings.
 
 ![](../_asset/images/InfoMotion/enebular-developers-type-list.png)
 
-### select {#select}
+### select
 
 A select option setting.
 
@@ -120,7 +120,7 @@ A select option setting.
 
 ![](../_asset/images/InfoMotion/enebular-developers-type-select.png)
 
-### bool {#bool}
+### bool
 
 An on/off switch.
 

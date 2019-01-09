@@ -2,7 +2,7 @@
 lastUpdated: 2018-11-21
 ---
 
-# 動作環境 {#動作環境}
+# 動作環境
 
 ## enebular {#enebular}
 
@@ -23,7 +23,7 @@ enebular-agent は、Linux OS を搭載したゲートウェイ向けの enebula
 
 なお、詳しい仕様については、弊社サポート(support@enebular.com)までお問い合わせください。
 
-### 推奨ハードウェア (Recommended Hardware) {#推奨ハードウェア (Recommended Hardware)}
+### 推奨ハードウェア (Recommended Hardware)
 
 enebular-agent は、Linux 上で動作します。
 以下では、Linux が動作する安価なゲートウェイ環境としての推奨ハードウェアを列挙します。
@@ -33,7 +33,7 @@ enebular-agent は、Linux 上で動作します。
 | Raspberry PI3 Model B | [Version 3 Model B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) |
 | OpenBlocks            | 対応予定                                                                          |
 
-### 必要物 {#必要物}
+### 必要物
 
 - Network Interface (ethernet or WiFi)
   - WiFi については、IEEE802.11a/b/g 等を想定していますが、Linux から IP 接続ができるネットワークが使用できれば良いものとします
@@ -41,7 +41,7 @@ enebular-agent は、Linux 上で動作します。
 - RAM
 - Flash Memory
 
-### オペレーティングシステム (Operating System) {#オペレーティングシステム (Operating System)}
+### オペレーティングシステム (Operating System)
 
 enebular-agent は、[Debian GNU/Linux](https://www.debian.org/) 上で動作します。
 推奨ハードウェアである Raspberry PI では、Debian ベースの [Raspbian OS](https://www.raspbian.org/) が動作するため、これを利用します。
@@ -80,7 +80,7 @@ enebular-edge-agent は、[ARM Ltd.](https://www.arm.com/) の [Mbed OS](https:/
 
 なお、詳しい仕様については、弊社サポート(support@enebular.com)までお問い合わせください。
 
-### Operating Environment {#Operating Environment}
+### Operating Environment
 
 #### Operating System
 
@@ -97,14 +97,14 @@ enebular-edge-agent 0.9.1 は、下記のハードウェアを対象としてい
 - IEEE 802.11 b/g/n (IEEE 802.11n は 2.4GHz のみの対応です)
 - WPA/WPA2
 
-### Known Issues {#Known Issues}
+### Known Issues
 
 - BME280 ノードの使用時、フローのサイズが大きいと正常に動作しない場合があります
 - Inject ノードにおいて、Payload には Timestamp のみ、Repeat に Interval のみしか設定できません
 - 短い周期で繰り返しフローをデプロイした場合に、フローの初期化に失敗することがあります
   - フローの初期化に失敗するとデバイスがフリーズします。その際はリセットボタンを押下してデバイスを再起動してください
 
-## Enebular Infomotion Tool {#Enebular Infomotion Tool}
+## Enebular Infomotion Tool
 
 enebular-infomotion-tool が対象とする Web ブラウザは以下とします。
 
@@ -115,11 +115,11 @@ enebular-infomotion-tool が対象とする Web ブラウザは以下としま�
 | Safari         | Coming soon                                                                          | Mac         |
 | Microsoft Edge | Coming soon                                                                          | Windows     |
 
-### Npm Version {#Npm Version}
+### Npm Version
 
 nodejs >= 6 and npm 5.2+
 
-### Possible Issues {#Possible Issues}
+### Possible Issues
 
 permission error が起こった際には、以下のいずれかで解決ができることがあります。
 

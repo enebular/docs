@@ -2,11 +2,11 @@
 lastUpdated: 2017-04-12
 ---
 
-# Heroku へのデプロイ {#Heroku へのデプロイ}
+# Heroku へのデプロイ
 
 このページでは Heroku Deploy の説明をします。Heroku Deploy は enebular で作成したフローを Heroku で作成した enebular Node-RED に Deploy する機能です。
 
-## Heroku に送るフローを作成 {#Heroku に送るフローを作成}
+## Heroku に送るフローを作成
 
 ![](https://i.gyazo.com/194b5c56abc221193690461193e159a0.png)
 
@@ -18,7 +18,7 @@ Heroku に送りたいフローを作成して、デプロイして保存しま�
 
 ![](https://i.gyazo.com/bfb9c0e25ad5e4a372a149336bdef8b8.png)
 
-## デプロイの設定 {#デプロイの設定}
+## デプロイの設定
 
 つづいて、デプロイの設定をします。
 
@@ -34,7 +34,7 @@ Select Connection Type から Heroku を選択します。
 
 Heroku を選択すると右のカラムに出てくる [Deploy to Heroku] からアプリを作成します。
 
-## Heroku ボタンでアプリを作成 {#Heroku ボタンでアプリを作成}
+## Heroku ボタンでアプリを作成
 
 Heroku ボタンでアプリを作成します。すでに作成されている方は読み飛ばして下さい。
 
@@ -74,7 +74,7 @@ App name をわかりやすい名前で設定します。
 
 enebular Node-RED のログインするための USERNAME/PASSWORD が聞かれるので、さきほど設定したものを入力してログインします。
 
-## デプロイ設定 {#デプロイ設定}
+## デプロイ設定
 
 Heroku アプリが作成できたらデプロイ設定をします。さきほどの画面に戻って設定を続けます。
 
@@ -102,7 +102,7 @@ API Key 欄に移動し [Reveal] で API Key を表示します。
 
 Heroku API Token に API Key をコピーして、[Save] を押します。
 
-## デプロイ {#デプロイ}
+## デプロイ
 
 保存されると Select Connection Type から Heroku を選択すると、Heroku アカウントが持つアプリ一覧が出てきます。
 

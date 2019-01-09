@@ -2,7 +2,7 @@
 lastUpdated: 2018-08-09
 ---
 
-###Create a Data Source  {#Create a Data Source}
+###Create a Data Source 
 
 In the same enebular project click `Data Source` and the plus button to add a 
 `Data Source`. 
@@ -16,7 +16,7 @@ Click save to continue.
 ![CreateDataSource-settings](./../../../../img/InfoMotion/DataSource/Milkcocoa-v2/CreateDataSource-settings.png)
 
 
-## Input Items {#Input Items}
+## Input Items
 
 Get `App Id` from App top page.
 
@@ -28,7 +28,7 @@ The `DataStore` is you set in the flow editor.
 
  `API Key` and `Secret Key`  are able to confirm in 「認証」 page.
 
-## Create InfoMotion {#Create InfoMotion}
+## Create InfoMotion
 
 Now your DataSource is ready to be used on an infotype see 
 [Sample infotypes](./../../SampleInfoTypes.md)to downoad a graph, 

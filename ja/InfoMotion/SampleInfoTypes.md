@@ -2,11 +2,11 @@
 lastUpdated: 2018-4-24
 ---
 
-# Sample InfoTypes  {#Sample InfoTypes }
+# Sample InfoTypes 
 
 Sample InfoTypes は、データをテストするための無料で利用できるグラフです。
 
-## Line Chart  {#Line Chart }
+## Line Chart 
 
 <ul> 
   <li><a href="/_asset/sample/linechart.zip" target="_blank">Sample Line Chart Download (zip)</a></li> 
@@ -35,7 +35,7 @@ Sample InfoTypes は、データをテストするための無料で利用でき
 - 値の凡例 
 - 表示されるデータの数 
 
-## Bar Chart  {#Bar Chart }
+## Bar Chart 
 
 <ul> 
   <li><a href="/_asset/sample/barchart.zip" target="_blank">Sample Bar Chart Download (zip)</a>
@@ -63,7 +63,7 @@ Sample InfoTypes は、データをテストするための無料で利用でき
 - 値のkey名
 - 値の凡例 
 
-## Pie Chart  {#Pie Chart }
+## Pie Chart 
 
 <ul> 
   <li> 

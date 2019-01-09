@@ -4,31 +4,30 @@ lastUpdated: 2018-12-14
 
 # enebular Release Notes {#enebular}
 
-=======
 ## Latest Release - 2.7.0 (December 14th, 2018)
 
-## New {#New}
+## New
 
 - Device List can now be sorted by connection types or statuses.
 - "Redeploy" button is added to repeat the last deploy.
 
-## Fixed {#Fixed}
+## Fixed
 
 - The issue that caused a device to remain on Device List even if its license has been unregistered, such a device is to be deleted from the list.
 
-## Changed {#Changed}
+## Changed
 
 - Importing an asset from Discover page now redirects to the new imported asset page under the target project.
 - We have changed the title of AWS IoT configuration dialog box from "AWS IoT Settings" to more appropriate "AWS IoT Connection".
 - Attempting to publish flows which contain credential information now shows warnings to avoid information leaks.
 
-## Known Issues {#Known Issues}
+## Known Issues
 
 - Opening the flow editor from a web browser shows Japanese texts even if the browser is configured to show English.
 - The shared page with InfoMotion embedded, the filter function can not be used.
 - From the "Contact" page, clicking on enebular logo causes to show the top page based on the web browser's language instead of the language Contact page is showing.
 
-## Release History {#Release History}
+## Release History
 
 - [2.7.0](./enebular/2.7.0.md) (December 14th, 2018)
 - [2.6.1](./enebular/2.6.1.md) (December 4th, 2018)
@@ -56,17 +55,17 @@ lastUpdated: 2018-12-14
 
 # enebular agent Release Notes {#enebular-agent}
 
-## Latest Release - 2.3.0 (November 30th, 2018) {#Latest Release - 2.3.0 (November 30th, 2018)}
+## Latest Release - 2.3.0 (November 30th, 2018)
 
-## New {#New}
+## New
 
 - File Deploys, the new enebular function to allow enebular to deploy files, has been added.
 
-## Fixed {#Fixed}
+## Fixed
 
 - Fixed an issue where an invalid AWS IoT configuration file was included in the prebuilt package (*-prebuilt.tar.gz)
 
-## Changed {#Changed}
+## Changed
 
 - Updated the install script to add the enebular-agent user to the gpio group on Raspberry Pi devices so that the Node-RED nrgpio node types work by default.
 - Updated systemd service startup registration so that enebular-agent is automatically restarted after 60 seconds if it terminates abnormally for some reason.
@@ -75,15 +74,15 @@ lastUpdated: 2018-12-14
     - Changed mentions of “Mbed Cloud” to “Pelion Device Management”
     - Use shorter install script download URL
 
-## Known Issues {#Known Issues}
+## Known Issues
 
  N/A
 
-### Recommended Hardware {#Recommended Hardware}
+### Recommended Hardware
 The recommended hardware is as follows.
 * Raspberry PI3 Model B
 
-### Operating Environment {#Operating Environment}
+### Operating Environment
 
 The recommended operating environments are as follows.
 
@@ -111,7 +110,7 @@ The recommended operating environments are as follows.
 * npm 5.6.0
 * node-red 0.17.5
 
-## Release History {#Release History}
+## Release History
 
 - [2.3.0](./enebular-agent/2.3.0.md) (November 30th, 2018)
 - [2.2.0](./enebular-agent/2.2.0.md) (September 7th, 2018)
@@ -122,25 +121,25 @@ The recommended operating environments are as follows.
 
 # enebular edge agent Release Notes {#enebular-edge-agent}
 
-## Latest Release - 1.0.1 (June 7th, 2018) {#Latest Release - 1.0.1 (June 7th, 2018)}
+## Latest Release - 1.0.1 (June 7th, 2018)
 
 In 1.0.1 release, Updated Mbed Cloud Client to 1.3.1.1 General Availability (GA).
 
-## New {#New}
+## New
 N/A
 
-## Fixed {#Fixed}
+## Fixed
 * Network disconnected when running an agent for an extended period of time. This was due to the Wi-Fi module taking full control of the communication processing. Issue solved by updating Wi-Fi module's library.
 
-## Changed {#Changed}
+## Changed
 * Updated Mbed Cloud Client to 1.3.1.1 General Availability (GA)
 
-## Known Issues {#Known Issues}
+## Known Issues
 
 * * A BME280 node may not operate correctly if the flow size is too large.
 * An inject node can set only a Timestamp for the Payload and Repetition of the Interval.
 
-### Operating Environment {#Operating Environment}
+### Operating Environment
 
 #### Operating System
 
@@ -157,7 +156,7 @@ The following hardware is supported in enebular-edge-agent 1.0.1.
 * IEEE 802.11 b/g/n (only 2.4GHz is supported for IEEE 802.11n)
 * WPA/WPA2
 
-## Release History {#Release History}
+## Release History
 
 * [1.0.1](./enebular-edge-agent/1.0.1.md) (June 7th, 2018)
 * [1.0.0](./enebular-edge-agent/1.0.0.md) (May 18th, 2018)
@@ -169,24 +168,24 @@ The following hardware is supported in enebular-edge-agent 1.0.1.
 
 # enebular editor Release Notes {#enebular-editor}
 
-## Latest Release - 0.9.0 (November 30th, 2018) {#Latest Release - 0.9.0 (November 30th, 2018)}
+## Latest Release - 0.9.0 (November 30th, 2018)
 
-## New {#New}
+## New
 
 - We have released the beta version of "enebular editor" which allows you to edit enebular flows on your PC and deploy them directly from it. （[Win](https://s3-ap-northeast-1.amazonaws.com/enebular-editor/win/enebular+editor+Setup+0.9.0.exe)/[Mac](https://s3-ap-northeast-1.amazonaws.com/enebular-editor/mac/enebular+editor-0.9.0.dmg))
 
-## Fixed {#Fixed}
+## Fixed
 
 N/A
 
-## Changed {#Changed}
+## Changed
 
 N/A
 
-## Known Issues {#Known Issues}
+## Known Issues
 
 - AWS Lambda Request node cannot be used if the flow is edited from the enebular editor connected to an enebular-agent.
 
-## Release History {#Release History}
+## Release History
 
 * [0.9.0](./enebular-editor/0.9.0.md) (November 30th, 2018)

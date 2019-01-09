@@ -2,7 +2,7 @@
 lastUpdated: 2018-08-09
 ---
 
-## milkcocoa アカウントの登録 {#milkcocoa アカウントの登録}
+## milkcocoa アカウントの登録
 
 https://mlkcca.com/ にアクセスし、アカウントを登録します。
 milkcocoaにログインし、ダッシュボードの [新しいアプリを作る] をクリックしてください。

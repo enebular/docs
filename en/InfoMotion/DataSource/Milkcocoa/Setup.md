@@ -2,7 +2,7 @@
 lastUpdated: 2018-08-09
 ---
 
-###Set-up {#Set-up}
+###Set-up
 
 Register at https://mlkcca.com/. 
 Once you are registered and logged in at dashboard click on `新しいアプリを作る)`　

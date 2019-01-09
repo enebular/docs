@@ -2,13 +2,13 @@
 lastUpdated: 2018-01-16
 ---
 
-# Account Settings {#Account Settings}
+# Account Settings
 
 Account Settings では自分のアカウントの情報を閲覧・編集できます。
 
 ![](https://i.gyazo.com/c57c69b02e7e7362051ddb4a9c94af6b.png)
 
-## Profile {#Profile}
+## Profile
 
 自分のプロフィール情報を編集できます。
 
@@ -18,13 +18,13 @@ Account Settings では自分のアカウントの情報を閲覧・編集でき
 - Name: 個人情報としてのフルネームです
 - Email: 認証に利用するメールアドレスです
 
-## Update Password {#Update Password}
+## Update Password
 
 パスワードを変更できます。パスワードは8文字以上の英数字を利用ください。
 
 ![](https://i.gyazo.com/79695f6ffe9acaa5fca6723e022ebfdb.png)
 
-## Danger Zone {#Danger Zone}
+## Danger Zone
 
 アカウントを削除できます。
 

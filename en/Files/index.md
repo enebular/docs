@@ -2,7 +2,7 @@
 lastUpdated: 2018-11-30
 ---
 
-# Files {#Files}
+# Files
 
 **Files** deploys files to enebular agent.  
 A use case example can be running shell scripts in enebular agent or adding setting files.
@@ -16,8 +16,8 @@ A file is an asset with one of the following possible functionalities.
 Owner/Admin of the project are able to deploy files. Collaborators are unable to.
 Deployments can only be made by trusted users.
 
-## Screen description {#Screen description}
-### List {#List}
+## Screen description
+### List
 
 The list displays uploaded files.
 Select a file to view it's details.
@@ -28,7 +28,7 @@ Select a file to view it's details.
 | 2 | Type | The type of the files |
 | 3 | Last Updated |  The date connection last updated |
 
-### Add {#Add}
+### Add
 
 You can upload new files.
 
@@ -38,39 +38,39 @@ At the pop up, set the config of the file, Click on `upload` button.
 
 See **File settings** for further information about config.
 
-### Overview {#Overview}
+### Overview
 
 You can see general information about the uploaded files.
 
-### Deploy {#Deploy}
+### Deploy
 
 You can deploy files and view deployment history.
 
-### Devices {#Devices}
+### Devices
 
 You can delete files which are deployed in devices.
 
-### Access {#Access}
+### Access
 
 You can set the access to files.
 
-### Settings {#Settings}
+### Settings
 
 You can edit settings of files.
 
-## File settings {#File settings}
+## File settings
 
 File setting are as follows:
 
-### Title {#Title}
+### Title
 
 The name of files
 
-### Description {#Description}
+### Description
 
 The description of files (optional)
 
-### Deploy path {#Deploy path}
+### Deploy path
 
 You can set the path to deploy.
 
@@ -78,7 +78,7 @@ You can set the path to deploy.
 - folder name and file name
 - e.g. Setting hoge/hige.txt, saving as `<root>/enebular-runtime-agent/ports/awsiot/assets/hige.txt`.
 
-### Execution {#Execution}
+### Execution
 
 Setting for if you want to deploy execution files.
 
@@ -107,7 +107,7 @@ Setting environmental variables
 - VALUE
     - the value of enviromnetal variable
 
-### Deploy Hooks {#Deploy Hooks}
+### Deploy Hooks
 
 It's a functionality that allows you to execute files already deployed when you deploy new files.
 
@@ -138,10 +138,10 @@ Set times are from 0 to 300(5 min)sec.
 
 If the Pre-Deploy/Post-Deploy exceeds the maximum execution time, Pre-Deploy/Post-Deploy is forcibly stopped.
 
-### Default Role {#Default Role}
+### Default Role
 
 Select file's role.
 
-### Category {#Category}
+### Category
 
 Choose file's category.

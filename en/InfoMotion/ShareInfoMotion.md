@@ -2,7 +2,7 @@
 lastUpdated: 2018-4-24
 ---
 
-# Share InfoMotion {#Share InfoMotion}
+# Share InfoMotion
 
 The following code is subject to change.
 
@@ -21,7 +21,7 @@ https://docs.python.org/2/library/simplehttpserver.html.
 Enebular must be logged in the browser to display infotypes. 
 All infotypes are set as private. These settings are subject to change. 
 
-###InfoMotion scripts {#InfoMotion scripts}
+###InfoMotion scripts
 
 The InfoMotion source code gives developers a little more freedom in customizing or altering the behaviour of their Dashboards.
 
@@ -32,7 +32,7 @@ infomotion and infomotionUI script tags are needed to use infomotion.
 <script src="http://enebular.com/emi/enebular-infomotion/infomotionUI.js"></script>
 ```
 
-### Settings for graph component {#Settings for graph component}
+### Settings for graph component
 
 Settings is composed of three parts.
 
@@ -52,7 +52,7 @@ var settings = {
 ```
 
 
-### GraphContext {#GraphContext}
+### GraphContext
 
 A graphContext binds graphs and components.
 
@@ -62,7 +62,7 @@ Before we crate graphs and componets we need to set up a graphContext.
 var graphContext = infomotion.graphContext(settings);
 ```
 
-### DatePicker {#DatePicker}
+### DatePicker
 
 - withRange - start and end date
 - make - creates a date picker
@@ -73,7 +73,7 @@ var datePicker = infomotionUI.datePicker(document.querySelector('#enebularDatePi
 ```
 
 
-### Timeline {#Timeline}
+### Timeline
 
 ```javascript
 var timeline = infomotionUI.timeline(
@@ -82,14 +82,14 @@ var timeline = infomotionUI.timeline(
 ).make();
 ```
 
-### LiveButton {#LiveButton}
+### LiveButton
 
 ```javascript
 var liveButton = infomotionUI.liveButton(document.querySelector('#btnLive'))
                  .make();
 ```
 
-### Binding components to graphContext {#Binding components to graphContext}
+### Binding components to graphContext
 
 When all components are ready they can be bound to graphContext.
 
@@ -100,7 +100,7 @@ graphContext
   .useDatePicker(datePicker)
 ```
 
-### Graph settings {#Graph settings}
+### Graph settings
 
 graph settings is made up of 3 components.
 
@@ -147,32 +147,32 @@ var settingGraph = {
 }
 ```
 
-### Binding an InfoMotion to a div {#Binding an InfoMotion to a div}
+### Binding an InfoMotion to a div
 
 ```javascript
 var graph1 = infomotionUI.graph(document.querySelector('#graph'), settingGraph);
 ```
 
-### Setting graphs topic {#Setting graphs topic}
+### Setting graphs topic
 
 ```javascript
 graph1.useTopic('country-data');
 ```
 
-### Adding and displaying graphs to graphContext {#Adding and displaying graphs to graphContext}
+### Adding and displaying graphs to graphContext
 
 ```javascript
 graphContext.useGraphs(graph1);
 ```
 
 
-### Removing graphs from graphContext {#Removing graphs from graphContext}
+### Removing graphs from graphContext
 
 ```javascript
 graphContext.removeGraph(graph1)
 ```
 
-### Setting filters {#Setting filters}
+### Setting filters
 
 ```javascript
 graph0.useFilter([{
@@ -181,7 +181,7 @@ graph0.useFilter([{
 }]);
 ```
 
-### Example shared html {#Example shared html}
+### Example shared html
 
 ```html
 <link rel="stylesheet" href="https://enebular-v2.herokuapp.com/emi/enebular-infomotion/css/app.css">

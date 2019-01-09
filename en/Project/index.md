@@ -2,7 +2,7 @@
 lastUpdated: 2018-08-01
 ---
 
-# Projects {#Projects}
+# Projects
 
 A **Project** is, as the name suggests, the unit for organizing a set of work as a single project.
 
@@ -20,7 +20,7 @@ Selecting a project will take you to the project management screen.
 
 The project management screen includes the following pages.
 
-## Assets {#Assets}
+## Assets
 
 The content managed within the project.
 
@@ -28,7 +28,7 @@ The content managed within the project.
 - [InfoMotion](../InfoMotion/Introduction.md): Data visualization graphs dashboard
 - [InfoType](../InfoMotion/InfoTypeIntroduction.md): Graph types used with InfoMotion
 
-### Assets Searching {#Assets Searching}
+### Assets Searching
 
 You can search the Assets associated with your account by using the search box at the the top of the page.
 The results will be listed on the project management screen.
@@ -38,14 +38,14 @@ Searching by Project name will list all Project's Assets.
 
 ![search project](../../img/Projects/index-searchAssets.png)
 
-## Devices {#Devices}
+## Devices
 
 The devices managed within the project. The devices here are those to which assets have been deployed.
 
 - [Device List](../Device/DeviceList.md): The list of devices
 - Licence Manager: License management for using paid functionality
 
-## Config {#Config}
+## Config
 
 Project related configuration.
 

@@ -2,26 +2,26 @@
 lastUpdated: 2018-05-25
 ---
 
-# Device List {#Device List}
+# Device List
 
 The Device List displays the status and log of licensed devices (see [License Manager](./LicenseManager.md)).
 This feature is currently only supported in the enterprise plan. For further information please contact support@enebular.com. 
 
-## Select Connection Type  {#Select Connection Type }
+## Select Connection Type 
 
 ![select_connection_type](../_asset/images/Devices/device_list-select_connection-001.png)
 
 Select the connection that your device is connected to. 
 Current available connections are AWS IoT and MBED. 
 
-## Select Connection  {#Select Connection }
+## Select Connection 
 
 ![select_connection](../_asset/images/Devices/device_list-select_connection-002.png)
 
 Select a registered connection. If the connection has not been registered, click on New to create the connection.
 For details on how to create a connection, see [Example: AWS IoT](../Deploy/DeployFlow/AWSIoT/index.md) or [Example: mbed Cloud](../Deploy/DeployFlow/mbed/index.md)
 
-## Device List {#Device List}
+## Device List
 
 ![device_list](../_asset/images/Devices/device_list-device_list.png)
 

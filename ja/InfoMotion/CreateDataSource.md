@@ -2,7 +2,7 @@
 lastUpdated: 2018-03-29
 ---
 
-# DataSource の作成 {#DataSource の作成}
+# DataSource の作成
 
 DataSource とは、InfoMotion（グラフ）に表示する際に参照するデータ先です。
 

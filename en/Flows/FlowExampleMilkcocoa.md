@@ -2,11 +2,11 @@
 lastUpdated: 2018-04-28
 ---
 
-# A Milkcocoa Flow {#A Milkcocoa Flow}
+# A Milkcocoa Flow
 
 Here we create a flow to save data to Milkcocoa. The stored data can be used as a Milkcocoa DataSource.
 
-## Check the DataSource {#Check the DataSource}
+## Check the DataSource
 
 First, confirm the details of the DataSource that will be used. Before creating the flow, refer to the Milkcocoa tutorial page [Preparing to use Milkcocoa](https://mlkcca.com/tutorial/page2.html), create an app and make note of the `app_id`, and then also the `API Key` and `API Secret` from the  authentication tab in the Milkcocoa management screen.
 
@@ -15,7 +15,7 @@ First, confirm the details of the DataSource that will be used. Before creating 
 Here, we'll use a Milkcocoa data store called `mbed` for the DataSource.
 
 
-## Starting the Data Flow {#Starting the Data Flow}
+## Starting the Data Flow
 
 Here we prepare the data flow to process and input the data into the DataSource.
 
@@ -27,25 +27,25 @@ Click the "Edit Flow" button.
 
 The Flow Editor opens in a new window.
 
-## An Example of Processing Data into a DataSource {#An Example of Processing Data into a DataSource}
+## An Example of Processing Data into a DataSource
 
-### The Structure {#The Structure}
+### The Structure
 
 The example of processing data into a DataSource is structured as described below.
 
-### Flow {#Flow}
+### Flow
 
 The flow is configured in the order: inject node → function node → milkcocoa node → debug node.
 
 ![image](../_asset/images/Flow/CreateFlow/flow-create-flow_14.png)
 
-### inject Node Settings {#inject Node Settings}
+### inject Node Settings
 
 ![image](../_asset/images/Flow/CreateFlow/flow-create-flow_15.png)
 
 The inject node settings are OK as they are when the node is added.
 
-### function Node Settings {#function Node Settings}
+### function Node Settings
 
 ![image](../_asset/images/Flow/CreateFlow/flow-create-flow_16.png)
 
@@ -67,7 +67,7 @@ msg.payload = data;
 return msg;
 ```
 
-### Milkcocoa Output Node Settings {#Milkcocoa Output Node Settings}
+### Milkcocoa Output Node Settings
 
 ![image](../_asset/images/Flow/CreateFlow/flow-create-flow_18.png)
 
@@ -102,13 +102,13 @@ Returning to the Milkcocoa output node settings, also set the DataSource name.
 
 ![image](../../img/InfoMotion/DataSource/Milkcocoa-v2/CreateFlow-milkcocoaSettingNode.png)
 
-### debug Node Settings {#debug Node Settings}
+### debug Node Settings
 
 ![image](../_asset/images/Flow/CreateFlow/flow-create-flow_25.png)
 
 The debug node settings are OK as they are when the node is added.
 
-### Deploying {#Deploying}
+### Deploying
 
 Deploy and close the window. This completes all configuration using the Flow Editor.
 
@@ -116,7 +116,7 @@ Deploy and close the window. This completes all configuration using the Flow Edi
 
 The new flow is shown in the flow list.
 
-### Running It {#Running It}
+### Running It
 
 ![image](../_asset/images/Flow/CreateFlow/flow-create-flow_27.png)
 

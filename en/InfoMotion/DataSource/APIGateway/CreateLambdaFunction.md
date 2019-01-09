@@ -2,7 +2,7 @@
 lastUpdated: 2018-08-09
 ---
 
-## Using Lambda to return data {#Using Lambda to return data}
+## Using Lambda to return data
 
 Getting started with Lambda.
 

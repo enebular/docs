@@ -2,7 +2,7 @@
 lastUpdated: 2018-07-27
 ---
 
-# InfoMotion Tool {#InfoMotion Tool}
+# InfoMotion Tool
 
 InfoType を作成するには `infomotion-tool` が必要です。
 
@@ -10,7 +10,7 @@ InfoType を作成するには `infomotion-tool` が必要です。
 
 `infomotion-tool` を使ってローカル環境で編集とテストができます。完成した InfoType はパッケージにして enebular にアップロードすることができます。
 
-## infomotion-tool のインストール {#infomotion-tool のインストール}
+## infomotion-tool のインストール
 
 ```
 npm install @uhuru/enebular-infomotion-tool-v2 -g
@@ -32,7 +32,7 @@ permission error が起こった際には、以下のいずれかで解決がで
 
 3) npm の[デフォルトのディレクトリ](https://docs.npmjs.com/getting-started/fixing-npm-permissions)を変更する。
 
-## 利用可能なコマンド {#利用可能なコマンド}
+## 利用可能なコマンド
 
 ```
 eit create [graph name]  = Creates an InfoType with the [graph name] 
@@ -42,7 +42,7 @@ eit package [graph name] = Creates files to upload on enebular
 eit help                 = help
 ```
 
-## グラフの作成 {#グラフの作成}
+## グラフの作成
 
 以下のコマンドから始めます。
 
@@ -60,7 +60,7 @@ eit create myfirstgraph
 
 ![InfoMotionTool-creatingGraph.png](./../../img/InfoMotion/InfoMotionTool-creatingGraph.png)
 
-### datasource.json {#datasource.json}
+### datasource.json
 
 *このファイルはテスト用途です。*
 
@@ -116,7 +116,7 @@ eit create myfirstgraph
 }
 ```
 
-### API Gateway Adaptor {#API Gateway Adaptor}
+### API Gateway Adaptor
 
 [AWS API Gateway](https://aws.amazon.com/) をエンドポイントとしてデータを取得します。いくつかの値を自分のアプリのもので置き換えてください。
 
@@ -168,17 +168,17 @@ eit create myfirstgraph
 }
 ```
 
-### plugin.css {#plugin.css}
+### plugin.css
 
 グラフで利用する CSS です。グローバルに指定されるので、衝突しないように命名に注意してください。
 
-### plugin.js {#plugin.js}
+### plugin.js
 
 グラフの主なロジックが入った、メインとなるファイルです。
 
 デフォルトで D3.js がグローバルにインストールされています。詳しくは [API Reference](./APIReference.md) をご覧ください。
 
-### plugin.json {#plugin.json}
+### plugin.json
 
 グラフを enebular にアップロードした際のプレビューのために必要なファイルです。
 
@@ -203,7 +203,7 @@ eit create myfirstgraph
 }
 ```
 
-## テンプレート {#テンプレート}
+## テンプレート
 
 デフォルトで作成されるグラフはデータをそのまま表示する `DataLogger` です。
 
@@ -216,7 +216,7 @@ eit create [graph name] -t piechart
 eit create [graph name] -t map
 ```
 
-# InfoType の依存性 {#InfoType の依存性}
+# InfoType の依存性
 
 グラフはそれぞれの依存性を持ちます。グラフのインストールをする際は `npm install` を使います。`npm install` が完了すると、グラフをパッケージングして実行することができます。
 
@@ -226,7 +226,7 @@ npm install
 Check the InfoTypes read.me for more details.
 ```
 
-## パッケージング {#パッケージング}
+## パッケージング
 
 以下の場合にパッケージングが必要になります。
 - 新しく `eit create`  で InfoType を作成したとき
@@ -244,7 +244,7 @@ eit package [graph name]
 - `plugin.css`
 - `plugin.json`
 
-## ブラウザでのテスト {#ブラウザでのテスト}
+## ブラウザでのテスト
 
 以下のコマンドで http://localhost:3000 にアクセスすることで、テストできます。テスト前にはパッケージしてください。
 
