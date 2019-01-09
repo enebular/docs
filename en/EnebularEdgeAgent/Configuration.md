@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-12-25
+lastUpdated: 2019-01-09
 ---
 
 # Configuration
@@ -12,7 +12,7 @@ enebular-edge-agent configures wireless LAN using ** enebular Reference Board Co
 
 ## Install {#install}
 
-1. Download the installer from [here](xxxxxxxxx).
+1. Download the installer from [here](https://download.enebular.com/eRB-Config-Tool/eRBConfigTool.msi).
 1. Execute "setup.exe" and install according to the screen display.
 
 ## Usage {#usage}
