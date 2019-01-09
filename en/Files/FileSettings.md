@@ -4,89 +4,89 @@ lastUpdated: 2019-01-10
 
 # File Settings {#File settings}
 
-File setting are as follows:
+Files have the following settings.
 
 ## File {#File}
 
-Select the file to upload.
+The file to upload to enebular.
 
 - The maximum file size is 500MB.
 
 ## Title {#Title}
 
-The name of files
+The asset name of the file.
 
 ## Description {#Description}
 
-The description of files (optional)
+The description of the file (optional).
 
 ## Deploy Directory {#Deploy Directory}
 
 The directory name when deploying.
 
 - This will be the directory name under enebular-agent's `ports/<port>/assets` directory. 
-- For example, when using the AWS IoT enebular-agent port and uploading a file called `hige.txt` and specifying a directory name of `hoge`, the file will be saved as `ports/awsiot/assets/hoge/hige.txt` under enebular-agent.
+- For example, when using the AWS IoT enebular-agent port and uploading a file called `hige.txt` with a deploy directory of `hoge`, the file will be saved as `ports/awsiot/assets/hoge/hige.txt` under enebular-agent.
 
 ## Execution {#Execution}
 
-Setting for if you want to deploy execution files.
+These are settings for executing the file on deploy.
 
 ### Execute On Deploy
 
-If it's turned on, files run as the execution files.
-The user is same as enebular-agent. 
+When enabled, the file is treated as an executable and executed on deploy.
+The file is executed as the same user as enebular-agent.
 
 ### Max Execution Time
 
-You can set maximum execution time of **Execution**.
-Set times are from 1 to 300 seconds (5 minutes).
+The maximum time of the file's execution.
+Any number of seconds between 1 and 300 (5 minutes) can be specified.
 
-If the execution exceeds the maximum execution time, execution is forcibly stopped.
+If the file's execution exceeds the maximum execution time, the execution is forcibly stopped.
 
 ### Execution Arguments
 
-Setting execution arguments
+The arguments passed to the file when executed.
 
-### Environmental Variables
+### Environment Variables
 
-Setting environmental variables
+The environment variables provided to the file when executed.
 
 - KEY
-    - the name of enviromnetal variable
+    - The enviromnetal variable name
 - VALUE
-    - the value of enviromnetal variable
+    - The enviromnetal variable value
 
 ## Deploy Hooks {#Deploy Hooks}
 
-It's a functionality that allows you to execute files already deployed when you deploy new files.
+This is for executing other files already deployed when deploying this file.
 
 ### Stage
 
 #### Pre-Deploy
 
-Pre-Deploy executes a file in enebular agent before a deployment.
-If you don't specify Pre-Deploy it doesn't run.
+Selecting Pre-Deploy executes the existing file immediately before this file is deployed.
+If no file is specified then the hook doesn't run.
 
-e.g.)You want to run a shell script before deployment that deletes some files you don't need anymore in enebular agent.
+For example, you could run a shell script before deployment that deletes some files from the deploy directory which are no longer needed.
 
 #### Post-Deploy
 
-Post-Deploy executes a file in enebular agent after deployment.
-If you don't specify Post-Deploy it doesn't run.
+Selecting Post-Deploy executes the existing file immediately after this file is deployed.
+If no file is specified then the hook doesn't run.
 
-e.g.) You want to run a shell script after deployment which deletes some files you don't need anymore in enebular agent.
+For example, you could run a shell script after deployment that deletes some files from the deploy directory which are no longer needed.
 
 ### Asset Path
 
-The path of the asset you want to execute.
+The path of the asset to execute.
 
 ### Max Execution Time
 
-You can set maximum execution time of **Pre-Deploy/Post-Deploy**.
-Set times are from 1 to 300 seconds (5 minutes).
+The maximum time of the hook's execution.
+Any number of seconds between 1 and 300 (5 minutes) can be specified.
 
-If the Pre-Deploy/Post-Deploy exceeds the maximum execution time, Pre-Deploy/Post-Deploy is forcibly stopped.
+If the hook's execution exceeds the maximum execution time, the execution is forcibly stopped.
 
 ## Default Role {#Default Role}
 
-Select file's role.
+The file's role.

@@ -8,13 +8,13 @@ lastUpdated: 2019-01-10
 
 ## File {#File}
 
-アップロードするファイルを選択します。
+enebularにアップロードするファイルを選択します。
 
 - 最大ファイルサイズは500MBです。
 
 ## Title {#Title}
 
-ファイル名を入力します。
+ファイルのアセット名を入力します。
 
 ## Description {#Description}
 
@@ -47,7 +47,7 @@ Execution の最大実行時間を設定します。
 
 実行時の引数を設定します。
 
-### Environmental Variables
+### Environment Variables
 
 環境変数の設定を行います。
 
