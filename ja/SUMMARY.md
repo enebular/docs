@@ -41,7 +41,7 @@ lastUpdated: 2019-01-07
   - [enebular editor](Releases/index.md#enebular-editor)
     - [0.9.0](Releases/enebular-editor/0.9.0.md)
   - [eRB Config. Tool](Releases/index.md#eRB-config-tool)
-    - [0.9.0](Releases/eRB-config-tool/1.0.0.md)
+    - [1.0.0](Releases/eRB-config-tool/1.0.0.md)
 - [Getting Started](GetStarted/index.md)
   - [Introduction](GetStarted/Introduction.md)
   - [Flow Deployment](GetStarted/FlowDeployment.md)

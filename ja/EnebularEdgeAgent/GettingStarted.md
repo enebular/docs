@@ -24,7 +24,7 @@ enebular-edge-agentでは、enebularのeditorを使い、フローを作成し�
 ## ネットワークの設定{#network}
 
 1. デバイスとPCをUSBケーブルで接続してください。
-1. **enebular Reference Board Configuration Tool**（以下: **eRB Config. Tool**）を[こちら](！！！！！！！！あとでリンクはる！！！！！！！！！！！！！)からダウンロードし、インストールします。
+1. **enebular Reference Board Configuration Tool**（以下: **eRB Config. Tool**）を[こちら](https://download.enebular.com/eRB-Config-Tool/eRBConfigTool.msi)からダウンロードし、インストールします。
 1. デバイスを `Setting Mode` で起動します。
     - RAVENの場合･･･起動時にUSER SWを押したままの状態にする。（RESET SWを押した直後にUSER SWを押したままにするとUSER LEDが赤く点灯し、`Setting Mode`で起動します。）
 1. **eRB Config. Tool** でSSIDとPasswordを設定します。（詳しくは[Configuration](./Configuration.md)のページを参照してください。）
