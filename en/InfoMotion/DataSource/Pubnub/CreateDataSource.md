@@ -2,7 +2,7 @@
 lastUpdated: 2018-08-09
 ---
 
-###Create a Data Source  {#Create a Data Source}
+###Create a Data Source 
 
 In the same enebular project click `Data Source` and the plus button to add a 
 `Data Source`. 
@@ -16,7 +16,7 @@ Leave count to 100 for now then click save to continue.
 
 ![CreateDataSource-settings](./../../../../img/InfoMotion/DataSource/Pubnub/CreateDataSource-settings.png)
 
-## Input Items {#Input Items}
+## Input Items
 
 `Publish key`, `Subscribe key`  are checked pubnub app's keys.
 
@@ -26,7 +26,7 @@ Leave count to 100 for now then click save to continue.
 
 ![CreateFlow-pubnubOutNodeComplete](./../../../../img/InfoMotion/DataSource/Pubnub/CreateFlow-pubnubOutNodeComplete.png)
 
-## Create InfoMotion {#Create InfoMotion}
+## Create InfoMotion
 
 Now your DataSource is ready to be used on an infotype see 
 [Sample infotypes](./../../SampleInfoTypes.md)to downoad a graph, 

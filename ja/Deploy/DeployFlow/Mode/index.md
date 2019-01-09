@@ -2,11 +2,11 @@
 lastUpdated: 2017-12-01
 ---
 
-# Mode デプロイ用の設定 {#Mode デプロイ用の設定}
+# Mode デプロイ用の設定
 
 Mode へデプロイする際に必要な設定の方法です。
 
-## 事前準備 {#事前準備}
+## 事前準備
 
 enebular MODE deployの内容を把握しておきましょう。
 
@@ -38,7 +38,7 @@ Connection Nameは自由な名前をつけて良いです。MODE Project ID・MO
 * MODE Home ID
     * （設定待ち）
 
-## アカウント作成 {#アカウント作成}
+## アカウント作成
 
 MODE – Make IoT a reality for your business
 http://www.tinkermode.com/
@@ -73,7 +73,7 @@ Sign up!でユーザー登録をしましょう。
 
 メールが届くのでアクティベーションしましょう。
 
-## MODE Project ID Projectの作成 {#MODE Project ID Projectの作成}
+## MODE Project ID Projectの作成
 
 MyProjectページがトップページです。
 
@@ -104,7 +104,7 @@ Project IDをメモしておきましょう。
 * MODE Home ID
     * （設定待ち）
 
-## Project API Key {#Project API Key}
+## Project API Key
 
 ![image](../../../_asset/images/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_16.png)
 
@@ -137,7 +137,7 @@ v1ではじまるAPI KEYがあるのでこれをMODE Project API Keyとしてメ
 * MODE Home ID
     * （設定待ち）
 
-## デバイス作成 {#デバイス作成}
+## デバイス作成
 
 HomeIDをつくるためにデバイスとAPPが必要です。まずデバイスを作成します。
 
@@ -169,7 +169,7 @@ TAGは適当でOKです。
 
 デバイスの作成完了です。
 
-## APPS作成 {#APPS作成}
+## APPS作成
 
 APPを作成します。
 
@@ -187,7 +187,7 @@ Newボタンを押して新規作成します。
 
 ![image](../../../_asset/images/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_32.png)
 
-## ユーザーの作成 {#ユーザーの作成}
+## ユーザーの作成
 
 ![image](../../../_asset/images/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_33.png)
 
@@ -197,7 +197,7 @@ Newボタンを押して新規作成します。
 
 まだ作成されていないので作成します。
 
-### アプリシミュレーターでユーザーを登録する {#アプリシミュレーターでユーザーを登録する}
+### アプリシミュレーターでユーザーを登録する
 
 ![image](../../../_asset/images/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_35.png)
 
@@ -235,7 +235,7 @@ Sign Upページに移動するので、各項目を入力しましてRegister �
 
 これでユーザーの登録が完了です。
 
-### ホーム画面の作成 {#ホーム画面の作成}
+### ホーム画面の作成
 
 ![image](../../../_asset/images/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_44.png)
 
@@ -253,7 +253,7 @@ Newボタンを押します。
 
 ホーム画面の作成完了です。
 
-### ホーム画面のデバイスの関連付け {#ホーム画面のデバイスの関連付け}
+### ホーム画面のデバイスの関連付け
 
 ![image](../../../_asset/images/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_48.png)
 
@@ -275,7 +275,7 @@ Newボタンを押します。
 
 Newボタンを押すとCLAIM CODEというコードが聞かれるのでそのままにします。
 
-### デバイスシミュレータを起動する {#デバイスシミュレータを起動する}
+### デバイスシミュレータを起動する
 
 CLAIM CODEはデバイスシミュレータで取得します。
 
@@ -334,7 +334,7 @@ Home IDがあるのでメモします。
 * MODE Home ID
     * 000
 
-## 反映 {#反映}
+## 反映
 
 ![image](../../../_asset/images/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_64.png)
 
@@ -352,7 +352,7 @@ Deployを押すと反映されます。
 
 Devicesのログにも無事残りました。
 
-### disconnectになっていたら {#disconnectになっていたら}
+### disconnectになっていたら
 
 ![image](../../../_asset/images/Deploy/DeployFlow/Mode/deploy-deployflow-mode-settings_68.png)
 

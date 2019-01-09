@@ -2,11 +2,11 @@
 lastUpdated: 2018-09-19
 ---
 
-# Deploying to AWS IoT {#Deploying to AWS IoT}
+# Deploying to AWS IoT
 
 Flows created on enebular can be deployed to AWS IoT.
 
-## Creating a Flow {#Creating a Flow}
+## Creating a Flow
 
 For this example, make a flow like the following.
 
@@ -24,11 +24,11 @@ This will take you do the "Deploy Flow" screen. Choose `AWS IoT` for "Select Con
 
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_04.png)
 
-## Creating the Configuration on AWS IoT {#Creating the Configuration on AWS IoT}
+## Creating the Configuration on AWS IoT
 
 We'll create a configuration on AWS IoT to use this time.
 
-### Creating a Thing {#Creating a Thing}
+### Creating a Thing
 
 Select "Manage > Things" from the menu and press "Register a thing".
 
@@ -42,7 +42,7 @@ Give it an appropriate name and move to the next step.
 
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_07.png)
 
-### Creating the Certificates {#Creating the Certificates}
+### Creating the Certificates
 
 Press the "Create certificate" of One-click certificate creation.
 
@@ -56,7 +56,7 @@ The activation will complete.
 
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_10.png)
 
-### Creating the New Policies {#Creating the New Policies}
+### Creating the New Policies
 
 Select "Secure > Policies" from the menu and press "Create a policy".
 
@@ -85,7 +85,7 @@ Press the create button to save the policy.
 
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_15.png)
 
-### Attaching the Policy to the Certificates {#Attaching the Policy to the Certificates}
+### Attaching the Policy to the Certificates
 
 As things are now the policy and certificates are not tied together, so we will attached them here. Move to the details screen of the thing you created just before, and select the certificate from the security section in the menu.
 
@@ -105,7 +105,7 @@ Once that completes, you can confirm that the certificate is tied to the policy 
 
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_20.png)
 
-### Creating an IAM User for AWS IoT {#Creating an IAM User for AWS IoT}
+### Creating an IAM User for AWS IoT
 
 In order to use AWS IoT from enebular, create an Access Key ID and Secret Access Key.
 
@@ -129,7 +129,7 @@ Once completed, download the CSV file that contains the Access Key ID and Secret
 
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_25.png)
 
-### Creating a Rule for Connection State Detection {#Creating a Rule for Connection State Detection}
+### Creating a Rule for Connection State Detection
 
 We'll add a rule to allow the connection state between the thing and AWS IoT to be correctly detected. Select "Act" from the menu and press "Create a rule".
 
@@ -189,7 +189,7 @@ The created rule will be displayed.
 
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_10.png)
 
-## Update the Flow with the AWS IoT Settings {#Update the Flow with the AWS IoT Settings}
+## Update the Flow with the AWS IoT Settings
 
 We return to the AWS IoT settings screen from before and update the AWS IoT settings.
 
@@ -220,7 +220,7 @@ The thing will still be disconnected. Here, 'disconnected' means that the AWS Io
 
 Let's now leave the enebular side and prepare a device setup on a PC.
 
-## Device (Agent) Setup {#Device (Agent) Setup}
+## Device (Agent) Setup
 
 Here we set up a device. Note that the wrapper device code base that receives commands from the device manager and carries out the appropriate operations is referred to the **agent** here.
 
@@ -283,7 +283,7 @@ You can confirm `<THING SHADOW REST API ENDPOINT>`, `<THING NAME>` in the "Inter
 (refer to the image below)
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_36.png)
 
-### Running {#Running}
+### Running
 
 Once the above setup has been completed, enebular-agent can be started from the example directory with the `npm run start` command.
 
@@ -306,7 +306,7 @@ internal: aws-iot: Connected to AWS IoT
 
 Once that message is displayed, the device can be used with enebular.
 
-## Deploying the Flow {#Deploying the Flow}
+## Deploying the Flow
 
 We're now ready to deploy the flow. Move back to the screen below.
 

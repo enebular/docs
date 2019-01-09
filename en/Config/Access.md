@@ -2,11 +2,11 @@
 lastUpdated: 2018-02-01
 ---
 
-# Editing Access Permissions {#Editing Access Permissions}
+# Editing Access Permissions
 
 The following covers enebular's project and asset access permissions.
 
-## User Types {#User Types}
+## User Types
 
 First, let's go over the user types. There are the following three types of users.
 
@@ -32,7 +32,7 @@ Outside collaborators can be invited from the "Access" page which can be navigat
 
 ![](https://i.gyazo.com/cc774e8f901c3629f2c79098172dba61.png)
 
-## About Asset Privileges {#About Asset Privileges}
+## About Asset Privileges
 
 Next, permissions called "Asset privileges" can be configured for each of the assets of the three user types.
 

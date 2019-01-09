@@ -2,7 +2,7 @@
 lastUpdated: 2018-03-29
 ---
 
-# Connecting DataSource {#Connecting DataSource}
+# Connecting DataSource
 
 A DataSource is a data connection used by an InfoMotion (Graph). 
 Registering a DataSource is necessary to use InfoMotion. 

@@ -49,7 +49,7 @@ InfoType のスキーマ
 
 スキーマに加え、デフォルトの設定を指定することができます。
 
-### text {#text}
+### text
 
 基本的な key-value の設定です。
 
@@ -69,7 +69,7 @@ InfoType のスキーマ
 
 ![](../_asset/images/InfoMotion/enebular-developers-type-text.png)
 
-### list {#list}
+### list
 
 基本的な key-value のリストです。
 
@@ -97,7 +97,7 @@ InfoType のスキーマ
 
 ![](../_asset/images/InfoMotion/enebular-developers-type-list.png)
 
-### select {#select}
+### select
 
 用意された選択肢から選択する場合に利用します。
 
@@ -118,7 +118,7 @@ InfoType のスキーマ
 
 ![](../_asset/images/InfoMotion/enebular-developers-type-select.png)
 
-### bool {#bool}
+### bool
 
 true / false を選択させるときに利用します。
 

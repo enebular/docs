@@ -2,7 +2,7 @@
 lastUpdated: 2017-01-29
 ---
 
-# Introduction {#Introduction}
+# Introduction
 
 enebular is a development and operating service that comprehensively supports the creation of IoT products and services.
 
@@ -18,7 +18,7 @@ In general terms there are three things handled in enebular.
 
 The primary way of using enebular is likely to be along the lines of **developing the assets on enebular.com and then once each asset is complete deploying and operating it on devices.**
 
-## Assets {#Assets}
+## Assets
 
 The currently available assets are as follows (there are also other assets, like machine learning models, planned to be supported).
 
@@ -34,7 +34,7 @@ Details on each of these is shown below.
 | **InfoMotion** | Dashboard | Data source, InfoType and panel placement information | Websites (iframe copy-paste) |
 | **InfoType** | Plug-in file |  JavaScript, CSS | Used in InfoMotion (InfoType are not used by themselves) |
 
-## Devices {#Devices}
+## Devices
 
 Developed assets can be deployed to devices via third-party services. Currently the following services can be used.
 

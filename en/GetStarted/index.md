@@ -2,7 +2,7 @@
 lastUpdated: 2018-07-31
 ---
 
-# Getting Started  {#Getting Started }
+# Getting Started 
 
 This page contains the the basics of getting started with enebular. 
 

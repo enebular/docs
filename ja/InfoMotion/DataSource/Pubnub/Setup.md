@@ -2,7 +2,7 @@
 lastUpdated: 2018-08-09
 ---
 
-## Pubnub アカウントの準備 {#Pubnub アカウントの準備}
+## Pubnub アカウントの準備
 
 https://www.pubnub.com/ にアクセスし、アカウントを登録します。
 Pubnub にログインし、ダッシュボード右上の [CREATE NEW APP +] をクリックしてください。 

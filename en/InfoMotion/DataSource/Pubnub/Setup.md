@@ -3,7 +3,7 @@ lastUpdated: 2018-08-09
 ---
 
 
-###Set-up {#Set-up}
+###Set-up
 
 Register at https://www.pubnub.com/.
 Once you are registered and logged in at the main dashboard click on create a new app. 

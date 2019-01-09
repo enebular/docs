@@ -2,7 +2,7 @@
 lastUpdated: 2017-12-14
 ---
 
-# InfoMotion ダッシュボード {#InfoMotion ダッシュボード}
+# InfoMotion ダッシュボード
 
 DataSource の作成と InfoType のアップロードが完了したら、InfoMotioin ダッシュボード が作成できます。
 
@@ -57,7 +57,7 @@ Datarange、Timeline、Playボタン、Liveボタン を使って InfoMotion で
 詳細は、 [Infomotion Share](./InfoMotionTool.md) をご覧ください。
 
 
-## ダッシュボードの操作 {#ダッシュボードの操作}
+## ダッシュボードの操作
 
 ダッシュボードでいくつかの操作ができます。
 
@@ -67,7 +67,7 @@ Datarange、Timeline、Playボタン、Liveボタン を使って InfoMotion で
 
 ![](../_asset/images/InfoMotion/enebular-developer-dashboard-options.png)
 
-## グラフの操作 {#グラフの操作}
+## グラフの操作
 
 グラフに対してもいくつかの操作ができます。
 
@@ -79,7 +79,7 @@ Datarange、Timeline、Playボタン、Liveボタン を使って InfoMotion で
 
 ![](../_asset/images/InfoMotion/enebular-developers-infomotion-options.png)
 
-## フィルターの使い方 {#フィルターの使い方}
+## フィルターの使い方
 
 まず、以下はフィルターを使っていないグラフです。
 

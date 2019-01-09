@@ -2,7 +2,7 @@
 lastUpdated: 2018-03-28
 ---
 
-# InfoType {#InfoType}
+# InfoType
 
 An InfoType represents the graph type which can be used with InfoMotion.
 
@@ -38,7 +38,7 @@ InfoTypes that are uploaded can be seen on enebular.
 
 Selecting an InfoType will take you to the InfoType details screen.
 
-## Overview {#Overview}
+## Overview
 
 You can preview the graph here. From the left is the graph, schema settings and then the sample data. If you change the schema and sample data then click "Preview" the graph will update.
 
@@ -48,7 +48,7 @@ The InfoType's files can be updated with "Update" at the top right.
 
 ![](../_asset/images/InfoMotion/infotype-update.png) 
 
-## Settings {#Settings}
+## Settings
 
 You can check the name, change the description and delete the InfoType here.
 

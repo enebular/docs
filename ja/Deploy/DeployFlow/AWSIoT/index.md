@@ -2,11 +2,11 @@
 lastUpdated: 2018-09-19
 ---
 
-# AWS IoT へのデプロイ {#AWS IoT へのデプロイ}
+# AWS IoT へのデプロイ
 
 enebular では作成した Flow を AWS IoT にも書き出すことができます。
 
-## Flow の作成 {#Flow の作成}
+## Flow の作成
 
 今回は以下のような Flow を作成します。
 
@@ -24,11 +24,11 @@ Deploy Flow 画面に移動するので、 [Select Connection Type] を `AWS IoT
 
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_04.png)
 
-## AWS IoT で設定を作成 {#AWS IoT で設定を作成}
+## AWS IoT で設定を作成
 
 AWS IoT で今回用の設定を作成します。
 
-### モノの作成 {#モノの作成}
+### モノの作成
 
 メニューから 管理＞モノ を選択し、[モノの登録]を押します。
 
@@ -43,7 +43,7 @@ AWS IoT で今回用の設定を作成します。
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_07.png)
 
 
-### 証明書の作成 {#証明書の作成}
+### 証明書の作成
 
 1-Click 証明書作成の[証明書の作成]を押します。
 
@@ -57,7 +57,7 @@ AWS IoT で今回用の設定を作成します。
 
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_10.png)
 
-### 新規ポリシーの作成 {#新規ポリシーの作成}
+### 新規ポリシーの作成
 
 メニューの 安全性＞ポリシー から[ポリシーの作成]を押します。
 
@@ -86,7 +86,7 @@ AWS IoT で今回用の設定を作成します。
 
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_15.png)
 
-### 証明書へのポリシーのアタッチ {#証明書へのポリシーのアタッチ}
+### 証明書へのポリシーのアタッチ
 
 このままだとポリシーと証明書が結びついてないのでアタッチします。さきほど作成したモノの画面に移動して、メニューのセキュリティから作成した証明書を選択します。
 
@@ -106,7 +106,7 @@ AWS IoT で今回用の設定を作成します。
 
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_20.png)
 
-### AWS IoT 用 IAM ユーザーの作成 {#AWS IoT 用 IAM ユーザーの作成}
+### AWS IoT 用 IAM ユーザーの作成
 
 enebular から AWS IoT を利用するための Access Key ID と Secret Access Key を作成します。
 
@@ -130,7 +130,7 @@ IAM のメニューのユーザーから[ユーザーを追加]を押します�
 
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_25.png)
 
-### 接続状態検知用ルールの作成 {#接続状態検知用ルールの作成}
+### 接続状態検知用ルールの作成
 
 モノとAWS IoTの接続状態を正しく検知出来るためのルールを追加します。メニューから ACT を選択し、[ルールの作成]を押します。
 
@@ -190,7 +190,7 @@ SELECT * FROM 'enebular/things/+/shadow/update'
 
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_10.png)
 
-## フローに AWS IoT の設定を反映 {#フローに AWS IoT の設定を反映}
+## フローに AWS IoT の設定を反映
 
 先ほどの AWS IoT 設定画面に戻りフローに AWS IoT の設定を反映します。
 
@@ -221,7 +221,7 @@ Select Connection の右の [New] を押します。必要な情報を入力し�
 
 enebular 側の操作は一旦置いておいて、次はパソコン上でデバイスのセットアップをしましょう。
 
-## デバイス（エージェント）のセットアップ {#デバイス（エージェント）のセットアップ}
+## デバイス（エージェント）のセットアップ
 
 デバイスのセットアップを行います。なお、デバイスマスターからくる命令を受けて処理を行うコードベースのデバイスのラッパーのことを**エージェント**と呼びます。
 
@@ -285,7 +285,7 @@ npm install
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_36.png)
 
 
-### 実行 {#実行}
+### 実行
 
 上記のセットアップが完了したら、エージェントは `npm run start` コマンドで `example` モジュールのディレクトリから起動できます。
 
@@ -307,7 +307,7 @@ internal: aws-iot: Connected to AWS IoT
 
 これが表示されると、enebular でデバイスを使用することができます。
 
-## フローのデプロイ {#フローのデプロイ}
+## フローのデプロイ
 
 デプロイの準備ができました。再度以下の画面に戻ってください。
 

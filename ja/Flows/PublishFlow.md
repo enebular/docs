@@ -2,7 +2,7 @@
 lastUpdated: 2018-01-28
 ---
 
-# Flow の公開 {#Flow の公開}
+# Flow の公開
 
 Flow の Overview ページの [Publish] から Flow を公開することが出来ます。公開された Flow は他のユーザーがインポートして使うことができます。
 
@@ -12,7 +12,7 @@ Flow の Overview ページの [Publish] から Flow を公開することが出
 
 ![](https://i.gyazo.com/cc23d123e109024feaa6e55fd216cfdf.png)
 
-## 公開された Flow のインポート {#公開された Flow のインポート}
+## 公開された Flow のインポート
 
 公開されたフローは、上部のグローバルナビの Discover から探すことが出来ます。
 

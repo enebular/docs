@@ -2,7 +2,7 @@
 lastUpdated: 2018-07-27
 ---
 
-# InfoMotion Tool {#InfoMotion Tool}
+# InfoMotion Tool
 
 In order to create an InfoType the infomotion-tool must be installed. 
 
@@ -10,7 +10,7 @@ For ready to use sample InfoTypes see [Sample InfoTypes](./SampleInfoTypes.md)
 
 The infomotion-tool allows the developer to run, test and edit InfoMotions locally. Once the InfoType is completed intomotion-tool packages the scripts to be uploaded to enebular. 
 
-## Installing infomotion-tool  {#Installing infomotion-tool }
+## Installing infomotion-tool 
 
 ```
 npm install @uhuru/enebular-infomotion-tool-v2 -g
@@ -33,7 +33,7 @@ Windows: https://github.com/coreybutler/nvm-windows
 
 3) Change npm's Default Directory https://docs.npmjs.com/getting-started/fixing-npm-permissions see `Option Two`. 
 
-## Commands  {#Commands }
+## Commands 
 
 ```
 eit create [graph name]  = Creates an InfoType with the [graph name] 
@@ -43,7 +43,7 @@ eit package [graph name] = Creates files to upload on enebular
 eit help                 = help
 ```
 
-## Creating a graph {#Creating a graph}
+## Creating a graph
 
 ```
 eit create myfirstgraph
@@ -59,7 +59,7 @@ eit create myfirstgraph
 
 ![InfoMotionTool-creatingGraph.png](./../../img/InfoMotion/InfoMotionTool-creatingGraph.png)
 
-### datasource.json {#datasource.json}
+### datasource.json
 
 *This file is for testing.*
 
@@ -140,7 +140,7 @@ Replace the specified values with your app details.
 ```
 
 
-### API Gateway Adaptor {#API Gateway Adaptor}
+### API Gateway Adaptor
 
 Using [AWS API Gateway](https://aws.amazon.com/) as a datasource.
 Replace the specified values with your app details.
@@ -227,7 +227,7 @@ The plugin.json is created to supply the InfoMotion with sample data to preview 
 }
 ```
 
-## InfoType templates {#InfoType templates}
+## InfoType templates
 
 The default graph is `DataLogger` InfoMotion.
 `Data Logger` simply logs data to the screen.
@@ -240,7 +240,7 @@ eit create [graph name] -t linechart
 eit create [graph name] -t piechart
 ```
 
-# InfoType dependencies {#InfoType dependencies}
+# InfoType dependencies
 
 Each graph has it's own dependencies. To install them you will have to use npm install. Once installed you can continue on to packaging and running the graph.
 
@@ -250,7 +250,7 @@ npm install
 Check the InfoTypes read.me for more details.
 ```
 
-## Packaging {#Packaging}
+## Packaging
 
 Packaging is needed when
 - An InfoType is created (`eit create`)
@@ -268,7 +268,7 @@ This will create a target folder containing three files.
 - `plugin.css`
 - `plugin.json`
 
-## Running locally in the browser {#Running locally in the browser}
+## Running locally in the browser
 
 The `run [graph name]` command and open http://localhost:3000 after `eit package`.
 

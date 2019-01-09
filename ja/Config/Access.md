@@ -2,11 +2,11 @@
 lastUpdated: 2017-12-01
 ---
 
-# アクセス権の編集 {#アクセス権の編集}
+# アクセス権の編集
 
 enebular の Project や Asset のアクセス権についてのドキュメントです。
 
-## ユーザーの種類 {#ユーザーの種類}
+## ユーザーの種類
 
 まずはユーザーの種類について把握しましょう。以下の 3 種類のユーザーがいます。
 
@@ -32,7 +32,7 @@ Outside Collaborator は Flow の詳細画面の Access タブから行くこと
 
 ![](https://i.gyazo.com/cc774e8f901c3629f2c79098172dba61.png)
 
-## Asset privilege について {#Asset privilege について}
+## Asset privilege について
 
 そして、3 種類のユーザーにはそれぞれの Asset に対して Asset privilege という権限を設定できます。
 

@@ -2,14 +2,14 @@
 lastUpdated: 2018-11-16
 ---
 
-# Data Source Schema  {#Data Source Schema }
+# Data Source Schema 
 
 データソースに格納されるデータは、下記のスキーマに従う必要があります。
 `timestamp` には、Unix タイムスタンプ値を入れます。
 InfoMotion は `timestamp` を daterange picker と timeline、query に使用します。 
 `value` にはInfoType のビジュアライズに必要なデータを入れます。 
 
-## Sample Data  {#Sample Data }
+## Sample Data 
 
 ```javascript
 {
@@ -20,7 +20,7 @@ InfoMotion は `timestamp` を daterange picker と timeline、query に使用�
 } 
 ``` 
 
-## JSON Data Schema {#JSON Data Schema}
+## JSON Data Schema
 
 ```json
  {

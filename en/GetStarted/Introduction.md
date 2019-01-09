@@ -2,7 +2,7 @@
 lastUpdated: 2018-07-31
 ---
 
-# Introduction {#Introduction}
+# Introduction
 
 This tutorial covers the following.
 
@@ -11,7 +11,7 @@ This tutorial covers the following.
 - Creating an asset
 - Editing a flow
 
-## Signing up {#Signing up}
+## Signing up
 
 ** Notice : enebular v1 accounts are no longer supported, please sign-up to an enebular v2 account. **
 
@@ -32,7 +32,7 @@ Click on `Go To Dashboard` then create a project.
 
 ![inputUserInfo](./../../img/GetStarted/Introduction-verified.png)
 
-### Didn't you get verification mail? {#Didn't you get verification mail?}
+### Didn't you get verification mail?
 
 Please check the following.
 
@@ -40,7 +40,7 @@ Please check the following.
 1. Did you set a filter for enebular.com?
 1. If you have not received an verification mail please contact ** support@enebular.com **.
 
-## Creating a Project {#Creating a Project}
+## Creating a Project
 
 To start using enebular we first create a project. In the screen after signing in, create a project with "Create Project".
 
@@ -54,7 +54,7 @@ Confirm created project in this list.
 
 ![createdProject](./../../img/GetStarted/Introduction-createdProject.png)
 
-## Creating an Asset {#Creating an Asset}
+## Creating an Asset
 
 With the project added let's now create a flow. Select the project to go to the project management screen.
 Press the "+" at the bottom right to open the asset creation dialog box.
@@ -76,7 +76,7 @@ Press "Edit Flow".
 
 ![flowEditor](./../../img/GetStarted/Introduction-flowEditor.png)
 
-## Editing a flow {#Editing a flow}
+## Editing a flow
 
 This section explains how to create a simple flow that logs `Hello World !` to the debug tab.
 
@@ -106,6 +106,6 @@ Double click the Change Node and set up the node input to `Hello World!` and cli
 Save flow by clicking on the `Deploy` button and start the flow. The debug tab should now be displaying `Hello World !`
 ![hello_world](./../../img/GetStarted/Introduction-hello_world.png)
 
-## Well Done! {#Well Done!}
+## Well Done!
 
 You can now create a project, an asset and edit a simple flow on Enebular. 

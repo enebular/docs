@@ -2,7 +2,7 @@
 lastUpdated: 2017-12-13
 ---
 
-# InfoMotion について {#InfoMotion について}
+# InfoMotion について
 
 `InfoMotion` は `DataSource` のデータを表示します。
 
@@ -19,11 +19,11 @@ lastUpdated: 2017-12-13
 
 InfoMotion を選択すると InfoMotion の詳細画面へ移動します。
 
-## Overview {#Overview}
+## Overview
 
 InfoMotion ダッシュボードを表示します。詳しくは [Dashboard](./CreateInfoMotion.md) をご覧ください。
 
-## Access {#Access}
+## Access
 
 Access では InfoMotion のアクセス権を編集できます。
 
@@ -31,7 +31,7 @@ Access では InfoMotion のアクセス権を編集できます。
 
 詳しくは [Access Control](../Config/Access.md) をご覧ください。
 
-## Settings {#Settings}
+## Settings
 
 Settings では InfoMotion の名前や説明の編集、InfoMotion の削除ができます。
 
