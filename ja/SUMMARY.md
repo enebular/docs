@@ -23,6 +23,7 @@ lastUpdated: 2019-01-10
 
 - [Files]()
   - [Introduction](Files/index.md)
+  - [File Settings](Files/FileSettings.md)
 
 - [InfoMotion]()
   - [Introduction](InfoMotion/Introduction.md)
