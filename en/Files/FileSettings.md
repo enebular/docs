@@ -20,13 +20,12 @@ The name of files
 
 The description of files (optional)
 
-## Deploy path {#Deploy path}
+## Deploy Directory {#Deploy Directory}
 
-You can set the path to deploy.
+The directory name when deploying.
 
-- path under `<root>/enebular-runtime-agent/ports/awsiot/assets/`
-- folder name and file name
-- e.g. Setting hoge/hige.txt, saving as `<root>/enebular-runtime-agent/ports/awsiot/assets/hige.txt`.
+- This will be the directory name under enebular-agent's `ports/<port>/assets` directory. 
+- For example, when using the AWS IoT enebular-agent port and uploading a file called `hige.txt` and specifying a directory name of `hoge`, the file will be saved as `ports/awsiot/assets/hoge/hige.txt` under enebular-agent.
 
 ## Execution {#Execution}
 

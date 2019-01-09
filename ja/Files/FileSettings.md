@@ -20,13 +20,12 @@ lastUpdated: 2019-01-10
 
 ファイルの説明を入力します。
 
-## Deploy path {#Deploy path}
+## Deploy Directory {#Deploy Directory}
 
-デプロイした際の保存先を指定します。  
+ファイルをデプロイした際のディレクトリ名を指定します。  
 
-- <root>/enebular-runtime-agent/ports/awsiot/assets/ 以下の自由なパス
-- パスの指定は、<root>/enebular-runtime-agent/ports/awsiot/assets/以下のフォルダ名とファイル名です
-- e.g. hoge/hige.txtを指定すると、`<root>/enebular-runtime-agent/ports/awsiot/assets/hoge/hige.txt` として保存されます
+- enebular-agentの`ports/<port>/assets` ディレクトリ以下のディレクトリ名になります
+- 例えば、enebular-agentのAWS IoTポートを利用して、アップロードするファイルのファイル名が`hige.txt`で、ディレクトリ名に`hoge`を指定した場合、ファイルが`ports/awsiot/assets/hoge/hige.txt`としてenebular-agentの以下に保存されます
 
 ## Execution {#Execution}
 
