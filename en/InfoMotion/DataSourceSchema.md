@@ -1,8 +1,8 @@
 ---
-lastUpdated: 2018-12-24
+lastUpdated: 2019-01-09
 ---
 
-# Data Source Schema
+# Data Source Schema  {#Data Source Schema}
 
 All datasource data must contain a `ts` key with a Unix Timestamp value as shown below.
 InfoMotion uses the `ts` for daterange picker, timeline and querying historical data.
@@ -15,7 +15,7 @@ This data is also used with in the InfoType (graph/chart).
 }
 ```
 
-#InfoType sample data
+#InfoType sample data {#InfoType sample data}
 
 Each InfoType may require specific keys and values.
 The type of data required for each InfoType can be seen on the right hand side
@@ -25,7 +25,7 @@ in preview of the InfoType.
 
 For an enebular sample barchart the folowing data is required.
 
-## Sample Data
+## Sample Data{#Sample Data}
 
 ```javascript
 {
@@ -35,7 +35,7 @@ For an enebular sample barchart the folowing data is required.
 }
 ```
 
-## JSON Data Schema
+## JSON Data Schema {#JSON Data Schema}
 
 ```json
 {

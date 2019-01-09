@@ -1,12 +1,12 @@
 ---
-lastUpdated: 2019-01-04
+lastUpdated: 2019-01-09
 ---
 
-# Deploying to Heroku
+# Deploying to Heroku {#Deploying to Heroku}
 
 This page covers Heroku deploys. A Heroku deploy is the ability to deploy a flow created in enebular to an enebular Node-RED on Heroku.
 
-## Creating the Flow to Send to Heroku
+## Creating the Flow to Send to Heroku {#Creating the Flow to Send to Heroku}
 
 ![Heroku-index-createflow](./../../../../img/Deploy/Heroku-index-createflow.png)
 
@@ -18,7 +18,7 @@ Create the flow you want to send to Heroku, and then deploy it to save it.
 
 ![Heroku-index-deploybutton](./../../../../img/Deploy/Heroku-index-deploybutton.png)
 
-## Deploy Settings
+## Deploy Settings {#Deploy Settings}
 
 Configure your flow deployment by clicking on Deploy.
 
@@ -58,7 +58,7 @@ We can create a Heroku app from the "Deploy to Heroku" button on the bottom.
 
 ![herokuButton](./../../../../img/GetStarted/FlowDeployment-herokuButton.png)
 
-## Creating an app with the Heroku Button
+## Creating an app with the Heroku Button {#Creating an app with the Heroku Button}
 
 Use the Heroku button to create the app. This step can be skipped for those who have already created one.
 
@@ -101,7 +101,7 @@ Once it has been created click the "View" button to check it.
 
 You'll be asked to provide the USERNAME and PASSWORD to log into the enebular Node-RED, so enter those that you set above.
 
-## Deploying
+## Deploying {#Deploying}
 
 With the connection saved and Heroku selected as a "Connection Type", a list of the apps on the Heroku account should be displayed. From here, select the Heroku application you just created and press "Deploy".
 

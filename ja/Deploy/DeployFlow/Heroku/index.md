@@ -2,11 +2,11 @@
 lastUpdated: 2019-01-04
 ---
 
-# Heroku へのデプロイ
+# Heroku へのデプロイ {#Heroku へのデプロイ}
 
 このページでは Heroku Deploy の説明をします。Heroku Deploy は enebular で作成したフローを Heroku で作成した enebular Node-RED に Deploy する機能です。
 
-## Heroku に送るフローを作成
+## Heroku に送るフローを作成 {#Heroku に送るフローを作成}
 
 ![Heroku-index-createflow](./../../../../img/Deploy/Heroku-index-createflow.png)
 まず、Assets から新しいフローを作成します。
@@ -17,7 +17,7 @@ Heroku に送りたいフローを作成して、デプロイして保存しま�
 
 ![Heroku-index-deploybutton](./../../../../img/Deploy/Heroku-index-deploybutton.png)
 
-## デプロイの設定
+## デプロイの設定 {#デプロイの設定}
 
 つづいて、デプロイの設定をします。  
 フローが作成できたら上部のメニューから Deploy ページに移動します。
@@ -57,7 +57,7 @@ Heroku API Token に API Key をコピーして、[Save] を押します。
 
 ![herokuButton](./../../../../img/GetStarted/FlowDeployment-herokuButton.png)
 
-## Heroku ボタンでアプリを作成
+## Heroku ボタンでアプリを作成 {#Heroku ボタンでアプリを作成}
 
 Heroku ボタンでアプリを作成します。すでに作成されている方は読み飛ばして下さい。  
 Heroku ボタンを押すとログインしていない場合、Heroku のログイン画面が出てくるのでログインします。
@@ -98,7 +98,7 @@ Heroku にクレジットカード情報を登録していない場合、以下�
 
 ![agentOnHeroku](./../../../../img/GetStarted/FlowDeployment-agentOnHeroku.png)
 
-## デプロイ
+## デプロイ {#デプロイ}
 
 保存されると Select Connection Type から Heroku を選択すると、Heroku アカウントが持つアプリ一覧が出てきます。
 

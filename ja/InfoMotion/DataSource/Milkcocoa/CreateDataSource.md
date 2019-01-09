@@ -2,7 +2,7 @@
 lastUpdated: 2018-08-10
 ---
 
-## Data Source の作成
+## Data Source の作成 {#Data Source の作成}
 
 フローを作成したものと同じプロジェクトの `Data Source` のページを表示します。
 右下の + ボタンをクリックして、 `Data Source`を追加します。
@@ -21,7 +21,7 @@ milkcocoa 用の設定画面が開きます。
 
 ※ milkcocoa アプリの設定で API認証を有効にした場合は`API Key` と `API Secret` の入力が必要となります。
 
-## 各設定項目の確認
+## 各設定項目の確認 {#各設定項目の確認}
 
 milkcocoa の `AppId` は App画面のトップより確認できます。
 
@@ -35,7 +35,7 @@ DataStoreは、フローで入力し作成したもの、あるいはこれか�
 
 `API Key` と `API Secret` は認証のページから確認できます。
 
-## InfoMotionの作成
+## InfoMotionの作成 {#InfoMotionの作成}
 
 DataSource を使用する準備ができました。
 InfoMotion ダッシュボードを作成する際に作った DataSource を選択することでデータをグラフに反映できます。

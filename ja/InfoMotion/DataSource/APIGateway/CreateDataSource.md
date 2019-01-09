@@ -2,7 +2,7 @@
 lastUpdated: 2018-08-09
 ---
 
-# API Gateway DataSource の作成
+# API Gateway DataSource の作成 {#API Gateway DataSource の作成}
 
 ※ InfoMotionのライブモードは使用できません
 
@@ -22,7 +22,7 @@ Project のダッシュボードの左メニューの `Data Sources` をクリ�
 
 ![CreateDataSource-addNewOne](./../../../../img/InfoMotion/DataSource/APIGateway/CreateDataSource-addNewOne.png)
 
-## Endpoint
+## Endpoint {#Endpoint}
 
 Endpoint は `https://[固有id].execute-api.ap-northeast-1.amazonaws.com/[ステージ名]/[メソッド名]` の形式です。
 [Setup & Create Lambda Function](./CreateLambdaFunction.md) で作成したAPI Gatewayを例に挙げると`https://*********.execute-api.ap-northeast-1.amazonaws.com/teststage/test`  が Endpoint として入力する URL です。
@@ -38,7 +38,7 @@ Endpoint は `https://[固有id].execute-api.ap-northeast-1.amazonaws.com/[ス�
 
 
 
-## API key
+## API key {#API key}
 
 Amazon API Gateway の API Key を作成方法を説明します。
 詳しくは[公式ドキュメント](https://aws.amazon.com/jp/documentation/apigateway/?icmpid=docs_menu)を参考にしてください。
@@ -58,7 +58,7 @@ Amazon API Gateway の API Key を作成方法を説明します。
 
 
 
-## InfoMotionの作成
+## InfoMotionの作成 {#InfoMotionの作成}
 
 DataSource を使用する準備ができました。
 InfoMotion ダッシュボードを作成する際に作った DataSource を選択することでデータをグラフに反映できます。

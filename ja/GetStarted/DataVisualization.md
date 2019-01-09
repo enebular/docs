@@ -2,7 +2,7 @@
 lastUpdated: 2019-01-04
 ---
 
-# Data Visualization
+# Data Visualization {#Data Visualization}
 
 enebular の InfoMotion の機能を使うことによって、データを可視化し、visualize することが可能です。
 このチュートリアルでは、以下のことを行います。
@@ -11,7 +11,7 @@ enebular の InfoMotion の機能を使うことによって、データを可�
 - グラフ(InfoType)の検索とインポート
 - InfoMotion によるデータの可視化
 
-## flow のインポート
+## flow のインポート {#flow のインポート}
 
 enebular のユーザーはアセットを公開すること、また公開されているアセットをインポートすることができます。
 公開されているフローをインポートする手順を説明します。
@@ -39,7 +39,7 @@ enebular のユーザーはアセットを公開すること、また公開さ�
 
 このフローはそれぞれのデータソースの認証情報がブランクになっているので、デプロイする前にフローを編集する必要があります。
 
-## Datasource の作成
+## Datasource の作成 {#Datasource の作成}
 
 InfoMotion は現在下記に挙げるリアルタイムデータベースに対応しています。詳しくは各ページを参照してください。
 
@@ -52,13 +52,13 @@ InfoMotion は現在下記に挙げるリアルタイムデータベースに対
 
 ※ GetStarted の設定はテストに向けたものなので、実際に使用する際には推奨しません。
 
-## Flow の編集とデプロイ
+## Flow の編集とデプロイ {#Flow の編集とデプロイ}
 
 データストアの認証情報をフローに入力し、デプロイをします。
 
 今回は Firebase のノードのみに認証情報を入力します。
 
-### databaseURL の取得
+### databaseURL の取得 {#databaseURL の取得}
 
 データストア作成済みのアカウントで Firebase にログインし、 `</>`のアイコンをクリックします。
 「ウェブアプリに Firebase を追加する」のモーダルが開きます。
@@ -68,7 +68,7 @@ databaseURL をフローの中で使用します。
 
 ![webApp](./../../img/GetStarted/DataVisualization-webApp-ja.png)
 
-### ノードの編集
+### ノードの編集 {#ノードの編集}
 
 フロー編集画面から、 Firebase ノードをクリックし編集画面を開きます。さらに、Firebase の欄右にある鉛筆アイコンをクリックします。
 ![fireBaseNode](./../../img/GetStarted/DataVisualization-fireBaseNode.png)
@@ -92,7 +92,7 @@ InfoMotion を使うにはこのようなデータがプッシュされている
 
 **\*注 2**: 30 分を超えてフローエディタを立ち上げていると、デプロイ時「Unauthorized」と表示され、デプロイができません。この現象が起こった場合、ページを更新してください。
 
-## DataSource の登録
+## DataSource の登録 {#DataSource の登録}
 
 次に、作業しているプロジェクトにデータソースを登録します。
 プロジェクトのダッシュボードの左のメニューから `Data Source` を選択して、+ ボタンをクリックしてください。
@@ -106,7 +106,7 @@ Title に任意の名前を入力し、DataSource Type から [Firebase] を選�
 
 ![dataSourceSettings](./../../img/GetStarted/DataVisualization-dataSourceSettings.png)
 
-## InfoType のインポート
+## InfoType のインポート {#InfoType のインポート}
 
 enebular のユーザーはアセットを公開すること、また公開されているアセットをインポートすることができます。
 公開されている InfoType をインポートする手順を説明します。
@@ -129,7 +129,7 @@ enebular のユーザーはアセットを公開すること、また公開さ�
 
 ![confirmImportedInfoType](./../../img/GetStarted/DataVisualization-confirmImportedInfoType.png)
 
-## InfoMotion の作成
+## InfoMotion の作成 {#InfoMotion の作成}
 
 これまでに追加した DataSource と InfoType を使用して InfoMotion を作成します。
 左メニューから InfoMotion を選択し、ページ右下の「+」ボタンをクリックして、ダイアログを開きます。
@@ -171,7 +171,7 @@ Value は `value` と入力してください。グラフの Y 軸 に対応し�
 
 ![infomotion2](./../../img/GetStarted/DataVisualization-infomotion2.png)
 
-## Well Done!
+## Well Done! {#Well Done!}
 
 データフローの作成から、InfoMotion によるデータの可視化までのチュートリアルが終わりました。
 
