@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-05-23
+lastUpdated: 2019-01-04
 ---
 
 # Logs {#Logs}
@@ -112,7 +112,7 @@ enebular edge agent の動作ログ及びエラーログです。
 | writing flow failed | SD カードへのフロー書き込み失敗 |
 | reading flow failed | SD カードからのフロー読み込み失敗 |
 | flow URL size over | フローダウンロードURL のサイズオーバー |
-| mbed cloud factory configurator client error | mbed cloud との接続エラー |
+| mbed cloud factory configurator client error | Pelion Device Management との接続エラー |
 | flow runtime not found | フロー実行コードが見つからない |
 | flow file not found | フロー定義が見つからない |
 | js interpreter error | javascript 実行ライブラリのエラー |

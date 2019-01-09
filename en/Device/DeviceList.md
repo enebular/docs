@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-05-25
+lastUpdated: 2019-01-04
 ---
 
 # Device List {#Device List}
@@ -19,7 +19,7 @@ Current available connections are AWS IoT and MBED.
 ![select_connection](../_asset/images/Devices/device_list-select_connection-002.png)
 
 Select a registered connection. If the connection has not been registered, click on New to create the connection.
-For details on how to create a connection, see [Example: AWS IoT](../Deploy/DeployFlow/AWSIoT/index.md) or [Example: mbed Cloud](../Deploy/DeployFlow/mbed/index.md)
+For details on how to create a connection, see [Example: AWS IoT](../Deploy/DeployFlow/AWSIoT/index.md) or [Example: Pelion Device Management](../Deploy/DeployFlow/mbed/index.md)
 
 ## Device List {#Device List}
 

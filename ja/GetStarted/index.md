@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-07-10
+lastUpdated: 2018-10-16
 ---
 
 # Getting Started {#Getting Started}
@@ -12,4 +12,4 @@ enebularを初めて利用する場合、下記のチュートリアルを通し
 - [Flow Deployment](./FlowDeployment.md)
   - アセットの1つであるフローを他の環境にデプロイする方法のチュートリアルです
 - [Data Visualization](./DataVisualization.md)
-  - アセットの1つであるInfoMotionを使用したデータの可視化についてのチュートリアルです。アセットのフォークについても触れます
+  - アセットの1つであるInfoMotionを使用したデータの可視化についてのチュートリアルです。アセットのインポートについても触れます

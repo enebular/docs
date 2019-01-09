@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-4-24
+lastUpdated: 2018-10-29
 ---
 
 # Sample InfoTypes  {#Sample InfoTypes }
@@ -20,9 +20,9 @@ Discription:
 Data schema:
 ```json
 {
-  "id":String
+  "id":String,
   "value":Number,
-  "created": UNIX timestamp
+  "ts": UNIX timestamp
 }
 ```
 
@@ -49,7 +49,7 @@ Data schema:
 {
   "id":String,
   "value":Number,
-  "created": UNIX timestamp
+  "ts": UNIX timestamp
 }
 ```
 
@@ -75,7 +75,7 @@ Data schema:
 {
   "id":String,
   "value":Number,
-  "created": UNIX timestamp
+  "ts": UNIX timestamp
 }
 ```
 

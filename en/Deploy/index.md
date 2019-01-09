@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-05-14
+lastUpdated: 2019-01-04
 ---
 
 # About Deploying {#About Deploying}
@@ -23,7 +23,7 @@ As mentioned in the [Introduction](../INDEX.md), when doing a deploy there are t
 
 ![deploy diagram](../_asset/images/Introduction/enebular-developers-deploy.png)
 
-For cloud services that deploy to edge devices like AWS IoT and mbed Cloud, the edge device is the **device** and the cloud service is the **device master**.
+For cloud services that deploy to edge devices like AWS IoT and Pelion Device Management, the edge device is the **device** and the cloud service is the **device master**.
 
 If the execution environment exists in the cloud as with Heroku and AWS Lambda, then the cloud service takes on both the **device** and **device master** roles.
 
@@ -48,7 +48,7 @@ The actual methods of deploying are as follows.
 
 ### Edge {#Edge}
 
-* [mbed Cloud](./DeployFlow/mbed/index.md)
+* [Pelion Device Management](./DeployFlow/mbed/index.md)
 * [AWS IoT](./DeployFlow/AWSIoT/index.md)
 
 ### Cloud {#Cloud}

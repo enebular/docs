@@ -4,19 +4,7 @@ lastUpdated: 2018-5-24
 
 # InfoMotion の共有 {#InfoMotion の共有}
 
-## 共有機能を使用する前に {#共有機能を使用する前に}
-
-### ローカル環境での使用に際して {#ローカル環境での使用に際して}
-
-milkcocoa のDataSource をローカル環境で使用するには、http サーバーからサーブする必要があります。
-Node.js, npm を使用し、 ローカル環境の `index.html` に npm モジュール [http-server](https://www.npmjs.com/package/http-server) を用いることをお勧めします。
-
-### Infotype 共有における既知の問題 {#Infotype 共有における既知の問題}
-
-Infotype を表示するためにブラウザで enebular にログインする必要があります。
-Infotype は 現在 private 権限のみの対応となっています。 
-
-## InfoMotion スクリプト {#InfoMotion スクリプト}
+## InfoMotion スクリプト{#InfoMotion スクリプト}
 
 ダッシュボードを外部サイトへ埋め込む場合、API を使って自由にダッシュボードの表示をカスタマイズできます。
 

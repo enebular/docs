@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-07-20
+lastUpdated: 2019-01-09
 ---
 
 # Flow Deployment {#Flow Deployment}
@@ -11,7 +11,8 @@ enebular の特徴として、作成したフローを様々な環境にデプ�
 
 - Heroku へのフローデプロイ
 
-なお、本ページは [Introduction](./Introduction.md) のチュートリアルで Asset(フロー) の作成方法については理解していることを前提としています。
+なお、本ページは [Introduction](./Introduction.md) のチュートリアルで Asset(フロー) の作成方法については理解していること、Herokuアカウントを取得していることを前提としています。
+Herokuアカウントの取得については、[Heroku](https://heroku.com) から進めてください。
 
 ## Heroku に送るフローを作成 {#Heroku に送るフローを作成}
 
@@ -32,11 +33,36 @@ Heroku に送りたいフローを作成して、デプロイして保存しま�
 
 ![otherEnvDeploy](./../../img/GetStarted/FlowDeployment-otherEnvDeploy.png)
 
-Select Connection Type から Heroku を選択します。
+表示された画面の Add Connection をクリックします。
+![addConnection](./../../img/GetStarted/FlowDeployment-addConnection.png)
+
+Create Connection Type から Heroku を選択します。
+Connection Name はわかりやすい名前をつけます。Heroku API Token は Heroku の設定画面で確認します。
 
 ![selectHeroku](./../../img/GetStarted/FlowDeployment-selectHeroku.png)
 
-Heroku を選択すると右のカラムに出てくる [Deploy to Heroku] からアプリを作成します。
+
+Herokuにログイン後ページ右上にある [Account Settings] を押します。
+
+![accountSettings](./../../img/GetStarted/FlowDeployment-accountSettings.png)
+
+Manage Account ページで Account ページに移動します。
+
+![account](./../../img/GetStarted/FlowDeployment-account.png)
+
+API Key 欄に移動し [Reveal] で API Key を表示します。
+
+![revealApikey](./../../img/GetStarted/FlowDeployment-revealApikey.png)
+
+Heroku API Token に API Key をコピーして、[Save] を押します。
+
+![inputAPIkey](./../../img/GetStarted/FlowDeployment-inputAPIkey.png)
+
+新しくconnectionが追加されたので、クリックしてください。
+
+![createdConnection](./../../img/GetStarted/FlowDeployment-createdConnection.png)
+
+開いた画面の下部にある [Deploy to Heroku] からアプリを作成します。
 
 ![herokuButton](./../../img/GetStarted/FlowDeployment-herokuButton.png)
 
@@ -55,7 +81,7 @@ App name をわかりやすい名前で設定します。
 
 ![appName](./../../img/GetStarted/FlowDeployment-appName.png)
 
-作成後 の enebular Node-RED のログインするための USERNAME/PASSWORD を設定します。
+作成後 の enebular Node-RED にログインするための USERNAME/PASSWORD を設定します。
 
 ![userName](./../../img/GetStarted/FlowDeployment-userName.png)
 
@@ -101,11 +127,11 @@ Manage Account ページで Account ページに移動します。
 
 ![account](./../../img/GetStarted/FlowDeployment-account.png)
 
-API Key 欄に移動し [Reveal] で API Key を表示します。
+API Key 欄に移動し [Reveal] を押して API Key を表示、コピーします。
 
 ![revealApikey](./../../img/GetStarted/FlowDeployment-revealApikey.png)
 
-Heroku API Token に API Key をコピーして、[Save] を押します。
+Heroku API Token にコピーした API Key を貼り付け、[Save] を押します。
 
 ![saveConnection](./../../img/GetStarted/FlowDeployment-saveConnection.png)
 
@@ -118,8 +144,6 @@ Heroku API Token に API Key をコピーして、[Save] を押します。
 ![appList](./../../img/GetStarted/FlowDeployment-appList.png)
 
 しばらく待っていると Deploy Added が表示されてデプロイが完了します。
-
-![deployFlow](./../../img/GetStarted/FlowDeployment-deployFlow.png)
 
 Heroku アプリで確認すると無事フローがデプロイされています。
 
