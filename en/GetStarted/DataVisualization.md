@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2019-01-04
+lastUpdated: 2019-01-09
 ---
 
 # Data Visualization {#Data Visualization}
@@ -7,6 +7,8 @@ lastUpdated: 2019-01-04
 Using InfoMotion to visualize data.
 
 This tutorial will do 'Import assets and visualise Flow data in an InfoMotion'.(Time required 50 minutes)
+
+## Table of Contents {#Table of Contents}
 
 1. [Import a Flow](#ImportaFlow)
 1. [Creating a Datasource](#CreatingaDatasource)
