@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2019-01-09
+lastUpdated: 2019-01-10
 ---
 
 ## Getting Started
@@ -81,6 +81,16 @@ lastUpdated: 2019-01-09
 - [enebular editor]()
   - [Introduction](EnebularEditor/index.md)
   - [Remote Mode](EnebularEditor/RemoteMode.md)
+
+- [enebular edge agent]()
+  - [Introduction](EnebularEdgeAgent/Introduction.md)
+  - [GettingStarted](EnebularEdgeAgent/GettingStarted.md)
+  - [Features](EnebularEdgeAgent/Features.md)
+  - [Configuration](EnebularEdgeAgent/Configuration.md)
+  - [Nodes](EnebularEdgeAgent/Nodes.md)
+  - [SampleFlows](EnebularEdgeAgent/SampleFlows.md)
+  - [Board](Board/Introduction.md)
+    - [RAVEN](Board/RAVEN.md)
 
 ## Resources
 
