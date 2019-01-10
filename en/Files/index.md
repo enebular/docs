@@ -66,9 +66,10 @@ For details on file settings refer to [File Settings](FileSettings.md).
 
 ## Device File Management {#Device File Management}
 
-TODO
+Deployed files can be managed on a per device basis.
+
+Selecting **Device List** from the project menu and then selecting a device from the list will display the device's information. From here, it's possible to check the status of and delete files deployed to the device by clicking the **Manage Files** button.
 
 ## File Access From Flows {#File Access From Flows}
 
 TODO
-
