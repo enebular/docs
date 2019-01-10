@@ -17,45 +17,59 @@ A file is an asset with one of the following possible functionalities.
 Owner/Admin of the project are able to deploy files. Collaborators are unable to.
 Deployments can only be made by trusted users.
 
-## Screen description {#Screen description}
+The following introduces file asset related functionality.
 
-### List {#List}
+## File Listing {#File Listing}
 
-The list displays uploaded files.
-Select a file to view it's details.
+A list of registered files can be displayed by selecting **Files** from the project menu. Selecting a file will display the file management options.
 
-| # | Item | Description |
-| --- | --- | --- |
-| 1 | File | The name of the file assets |
-| 2 | Type | The type of the files |
-| 3 | Last Updated |  The date connection last updated |
+| Item | Description |
+| --- | --- |
+| Files | The file's asset name |
+| Type | The asset type |
+| Last Updated | The date the asset was last edited |
 
-### Add {#Add}
+A new file can be registered by pressing the **+** button at the bottom right of the file list.
 
-You can upload new files.
+## File Registration {#File Registration}
 
-Click on the plus ("+") button.
+New files can be uploaded and registered.
 
-At the pop up, set the config of the file, Click on `upload` button.
+For details on adding files refer to [Adding Files](AddFlow.md).
 
-See **File settings** for further information about config.
+## File Management {#File Management}
+
+The following features are available in the file management menu.
 
 ### Overview {#Overview}
 
-You can see general information about the uploaded files.
+Overall information on the registered file can be seen in the overivew.
+
+It's also possible to deploy the file to devices from here.
+
+For details on deploying files refer to [Deploying Files](DeployFlow.md).
 
 ### Deploy {#Deploy}
 
-You can deploy files and view deployment history.
+The file's deployment history is shown here.
 
-### Devices {#Devices}
-
-You can delete files which are deployed in devices.
+It's also possible to deploy the file to devices from here.
 
 ### Access {#Access}
 
-You can set the access to files.
+The file's access permissions can be configured here.
 
 ### Settings {#Settings}
 
-You can edit settings of files.
+The file's settings can be changed here.
+
+For details on file settings refer to [File Settings](FileSettings.md).
+
+## Device File Management {#Device File Management}
+
+TODO
+
+## File Access From Flows {#File Access From Flows}
+
+TODO
+
