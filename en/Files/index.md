@@ -4,18 +4,17 @@ lastUpdated: 2019-01-10
 
 # Files {#Files}
 
-**Files** deploys files to enebular agent.
+With **Files** it's possible to deploy files to devices.
 
-A use case example can be running shell scripts in enebular agent or adding setting files.
+This can be used to, for example, execute shell scripts on a device or add configuration files to a device.
 
-A file is an asset with one of the following possible functionalities.
+Files are one type of asset, and refer to the following.
 
-- executing files for enebular agent
-- setting files for enebular agent
-- other files for enebular agent (image files, movie files)
+- Device executable files
+- Configuration files for use on devices
+- Other types of files used on devices (like image and video files)
 
-Owner/Admin of the project are able to deploy files. Collaborators are unable to.
-Deployments can only be made by trusted users.
+Only project Owner and Admin users can deploy files. A Collaborator user cannot deploy a file. Allowing only trusted users to deploy files helps prevent the deployment of untrusted files.
 
 The following introduces file asset related functionality.
 
@@ -35,7 +34,7 @@ A new file can be registered by pressing the **+** button at the bottom right of
 
 New files can be uploaded and registered.
 
-For details on adding files refer to [Adding Files](AddFlow.md).
+For details on adding files refer to [Registering Files](RegisterFile.md).
 
 ## File Management {#File Management}
 
@@ -47,7 +46,7 @@ Overall information on the registered file can be seen in the overivew.
 
 It's also possible to deploy the file to devices from here.
 
-For details on deploying files refer to [Deploying Files](DeployFlow.md).
+For details on deploying files refer to [Deploying Files](DeployFile.md).
 
 ### Deploy {#Deploy}
 
