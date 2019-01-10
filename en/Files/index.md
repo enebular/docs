@@ -14,6 +14,8 @@ Files are one type of asset, and refer to the following.
 - Configuration files for use on devices
 - Other types of files used on devices (like image and video files)
 
+For executable files, it's possible to have the file executed when it is deployed to the device. Additionally, for any type of file, the **Hook** feature can be used to execute other files already deployed.
+
 Only project Owner and Admin users can deploy files. A Collaborator user cannot deploy a file. Allowing only trusted users to deploy files helps prevent the deployment of untrusted files.
 
 The following introduces file asset related functionality.
