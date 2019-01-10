@@ -23,6 +23,9 @@ lastUpdated: 2019-01-10
 
 - [Files]()
   - [Introduction](Files/index.md)
+  - [Registering Files](Files/RegisterFile.md)
+  - [Deploying Files](Files/DeployFile.md)
+  - [Accessing Files From Flows](Files/AccessFileFromFlow.md)
   - [File Settings](Files/FileSettings.md)
 
 - [InfoMotion]()
