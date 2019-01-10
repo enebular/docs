@@ -6,13 +6,13 @@ lastUpdated: 2019-01-10
 
 With **Files** it's possible to deploy files to devices.
 
-This can be used to, for example, execute shell scripts on a device or add configuration files to a device.
-
 Files are one type of asset, and refer to the following.
 
 - Device executable files
 - Configuration files for use on devices
 - Other types of files used on devices (like image and video files)
+
+It's possble to, for example, execute shell scripts on a device or add configuration files to a device.
 
 For executable files, it's possible to have the file executed when it is deployed to the device. Additionally, for any type of file, the **Hook** feature can be used to execute other files already deployed.
 
@@ -74,4 +74,6 @@ Selecting **Device List** from the project menu and then selecting a device from
 
 ## File Access From Flows {#File Access From Flows}
 
-TODO
+It's possible to access files deployed to a device from flows also deployed to the same device.
+
+For details on file access from flows refer to [Accessing Files From Flows](AccessFileFromFlow.md).
