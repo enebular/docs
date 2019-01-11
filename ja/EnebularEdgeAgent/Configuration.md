@@ -13,7 +13,7 @@ enebular-edge-agent は **enebular Reference Board Configuration Tool**(以下:e
 ## インストール {#install}
 
 1. [こちら](https://download.enebular.com/eRB-Config-Tool/eRBConfigTool.msi)からインストーラをダウンロードします。
-1. 「setup.exe」を実行し画面の表示に従い、インストールを行います。
+1. 「eRBConfigTool.msi」を実行し画面の表示に従い、インストールを行います。
 
 ## 使用方法 {#usage}
 

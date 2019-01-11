@@ -23,7 +23,7 @@ Please prepare accounts and projects in enebular in advance. (This flow is descr
 
 ## Setting up the network {#network}
 
-1. 1. Connect to the PC's USB port using the enclosed USB cable.
+1. Connect to the PC's USB port using the enclosed USB cable.
 1. **enebular Reference Board Configuration Tool**（**eRB Config. Tool**）click [Here](https://download.enebular.com/eRB-Config-Tool/eRBConfigTool.msi) to download and install.
 1. Start the device in `configuration mode`.
    - Case RAVEN ... Press RESET SW and hold the USER SW after rebooting, it will be in 'settings mode'. Make sure the USER LED is lit in red.

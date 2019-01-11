@@ -99,6 +99,9 @@ lastUpdated: 2019-01-10
   - [enebular agent](Other/Support.md#enebular-agent)
   - [enebular edge agent](Other/Support.md#enebular-edge-agent)
 
+- [Hardware TechnicalDetail]()
+  - [RAVEN](Other/HWSpec-RAVEN.md)
+
 - [Release Notes]()
   - [enebular](Releases/index.md#enebular)
     - [2.7.0](Releases/enebular/2.7.0.md)

@@ -1,53 +1,46 @@
 ---
-lastUpdated: 2018-12-21
+lastUpdated: 2019-01-10
 ---
 # RAVEN HardWare Specification
 
-<big>仮置き</big>
-
-
-このページでは、RAVENのハードウェアの詳細について説明します。
+Detailed hardware information about RAVEN.
 
 ### Table of Contents
 
-- [機能](#Function)
-- [Portについて](#Port)
-- [仕様](#Spec)
-- [資料](#Document)
+- [Features](#Features)
+- [General Specifications](#GeneralSpec)
+- [Technical Specifications](#TechnicalDocument)
 
-## 機能{#Function}
-* MCUにSTM32F767を採用( Cortex®-M7@216MHz, 2MB Flash, 512KB SRAM )
-* RTC用 32kHzローパワーオシレータ
-* SPI接続の64Mbitフラッシュ
-* WLAN( 802.11 b/g/n )モジュール
-* ユーザー制御可能なスイッチとLED
-* MbedEnabledに対応
-    * ドラッグアンドドロップ書き込み
-    * USB仮想シリアルポート
-    * CMSIS-DAP経由のデバッグ及び書き込み
-* 4系統の多機能I/Oコネクタ
-    * 3.3V動作のセンサ、及びアクチュエーターが使用可能
-    * 各端子は複数の機能に対応( ADC/UART/I2C/PWM 組み合わせに制限有 )
-    * 4ポート200mA迄の電源供給
+## Features{#Features}
+* STM32F767 MCU( Cortex®-M7@216MHz, 2MB Flash, 512KB SRAM )
+* 64Mbit SPI Serial Flash
+* WLAN module( 802.11 b/g/n )
+* User defined LED and Switch
+* DAPLink interface
+    * Drag-and-drop programming
+    * USB Virtual COM Port
+    * CMSIS-DAP Debugger
+* Four Multi-function I/O Connectors
+    * Compatible with 3.3V sensor and actuators
+    * Multiple peripheral functions( ADC/UART/I2C/PWM )
+    * Each port is capable of supplying up to 50 mA
 
 ![HWSpec-RAVEN-BlockDiagram_Summary](./../../img/Other/HWSpec-RAVEN-BlockDiagram_Summary.png)
 
-## Portについて{#Port}
-各Portは、フローから切り替えが出来る機能の制限が存在します。
-以下資料を参考にして下さい。
+## General Specifications{#GeneralSpec}
 
+* Dimensions
+    * 75mm x 35mm x 12mm( WxDxH )( excluding projections )
+* Rating
+    * Approx. 5V/2.5W( Power Supply : via micro-USB terminal )
+* Weight
+    * Approx. 22g
+
+## Technical Specifications{#TechnicalDocument}
+
+* Multi-function I/O Ports
 ![HWSpec-RAVEN-PhrPin_ManualVer](./../../img/Other/HWSpec-RAVEN-PhrPin_ManualVer.png)
 
-## 仕様{#Spec}
-* 外形サイズ
-    * 75mm x 35mm x 12mm( WxDxH )( 突起部を含まない )
-* 定格
-    * 5V/2.5W( microUSB端子にて電源供給 )
-* 使用温度範囲
-    * 0℃-40℃( 結露無きこと )
-
-## 資料{#Document}
-ブロック図
-
+* Block Diagram
 ![HWSpec-RAVEN-PhrPin_ManualVer](./../../img/Other/HWSpec-RAVEN-BlockDiagram-1.png)
 ![HWSpec-RAVEN-PhrPin_ManualVer](./../../img/Other/HWSpec-RAVEN-BlockDiagram-2.png)
