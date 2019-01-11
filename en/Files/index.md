@@ -4,7 +4,7 @@ lastUpdated: 2019-01-10
 
 # Files {#Files}
 
-With **Files** it's possible to deploy files to devices.
+With **Files** it's possible to deploy files to 'paid' devices.
 
 Files are one type of asset, and refer to the following.
 
