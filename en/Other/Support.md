@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-11-21
+lastUpdated: 2019-01-11
 ---
 
 # Operating Environments {#Operating Environments}
@@ -99,7 +99,8 @@ The following hardware is supported in enebular-edge-agent 1.1.0.
 
 ### Known Issues {#Known Issues}
 
-あとでかく
+* When Wi-Fi is disconnected, in rare cases, even if the Wi-Fi environment recovers, it may remain disconnected and communications may not be restored
+    * Restart to recover 
 
 ## enebular Reference Board Configuration Tool{#eRB-Config.Tool}
 

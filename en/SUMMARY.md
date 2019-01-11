@@ -83,7 +83,7 @@ lastUpdated: 2019-01-10
   - [Remote Mode](EnebularEditor/RemoteMode.md)
 
 - [enebular edge agent]()
-  - [Introduction](EnebularEdgeAgent/Introduction.md)
+  - [Introduction](EnebularEdgeAgent/introduction.md)
   - [GettingStarted](EnebularEdgeAgent/GettingStarted.md)
   - [Features](EnebularEdgeAgent/Features.md)
   - [Configuration](EnebularEdgeAgent/Configuration.md)

@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-12-14
+lastUpdated: 2019-01-11
 ---
 
 # enebular Release Notes {#enebular}
@@ -122,43 +122,71 @@ The recommended operating environments are as follows.
 
 # enebular edge agent Release Notes {#enebular-edge-agent}
 
-## Latest Release - 1.0.1 (June 7th, 2018) {#Latest Release - 1.0.1 (June 7th, 2018)}
-
-In 1.0.1 release, Updated Mbed Cloud Client to 1.3.1.1 General Availability (GA).
+## Latest Release - 1.1.0 (January 18th, 2019) {#Latest Release - 1.1.0 January 18th, 2019}
 
 ## New {#New}
-N/A
+
+* Enable to work with enebular Reference Board RAVEN (RAVEN below)
+    * Network configuration is done using enebular Reference Board Configuration Tool
+* The http request node is now available
 
 ## Fixed {#Fixed}
-* Network disconnected when running an agent for an extended period of time. This was due to the Wi-Fi module taking full control of the communication processing. Issue solved by updating Wi-Fi module's library.
+
+* When using the BME 280 node, a bug may appear when a flow size exceeds 2kbs
 
 ## Changed {#Changed}
-* Updated Mbed Cloud Client to 1.3.1.1 General Availability (GA)
 
-## Known Issues {#Known Issues}
+* Updated to [mbed OS 5.10.4](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.10.4)
+* Updated to [Device Management Client 2.0.1.1 General Availability (GA)](https://github.com/ARMmbed/mbed-cloud-client/releases/tag/2.0.1.1)
+* The maximum size of flow that RAVEN can execute is 5 KB
 
-* * A BME280 node may not operate correctly if the flow size is too large.
-* An inject node can set only a Timestamp for the Payload and Repetition of the Interval.
+## Known Issues {#KnownIssues}
+
+* When Wi-Fi is disconnected, in rare cases, even if the Wi-Fi environment recovers, it may remain disconnected and communications may not be restored
+    * Restart to recover 
 
 ### Operating Environment {#Operating Environment}
 
 #### Operating System
 
-* [Mbed OS 5.8.2](https://github.com/ARMmbed/mbed-os/tree/mbed-os-5.8.2) (ARM Ltd.)
+* [mbed OS 5.10.4](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.10.4)
 
 #### Hardware
 
-The following hardware is supported in enebular-edge-agent 1.0.1.
+The following hardware is supported in enebular-edge-agent 1.1.0.
 
-* [FRDM-K64F](https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/k-seriesperformancem4/k2x-usb/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F) (NXP Semiconductors N.V.) + Stag Beetle Board (Uhuru Corporation)
+* [enebular Reference Board RAVEN](./../Board/RAVEN.md) (Uhuru Corporation)
 
 #### Communication
 
 * IEEE 802.11 b/g/n (only 2.4GHz is supported for IEEE 802.11n)
 * WPA/WPA2
 
+### Tools {#Tools}
+
+#### enebular Reference Board Configuration Tool 1.0.0 {#enebular Reference Board Configuration Tool 1.0.0}
+
+##### New {#New}
+
+
+-  We have released "enebular Reference Board Configuration Tool" which used in network setting reference board for enebular-edge-agent
+    -Download is [here](https://download.enebular.com/eRB-Config-Tool/eRBConfigTool.msi). This software is Windows only
+
+##### Fixed {#Fixed}
+
+N/A
+
+##### Changed {#Changed}
+
+N/A
+
+##### Known Issues {}
+
+N/A
+
 ## Release History {#Release History}
 
+* [1.1.0](./enebular-edge-agent/1.0.0.md) (Jan 18th, 2019)
 * [1.0.1](./enebular-edge-agent/1.0.1.md) (June 7th, 2018)
 * [1.0.0](./enebular-edge-agent/1.0.0.md) (May 18th, 2018)
 * [0.10.0](./enebular-edge-agent/0.10.0.md) (Apr 27th, 2018)
