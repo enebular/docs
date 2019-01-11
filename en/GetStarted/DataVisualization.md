@@ -1,16 +1,21 @@
 ---
-lastUpdated: 2019-01-04
+lastUpdated: 2019-01-09
 ---
 
 # Data Visualization {#Data Visualization}
 
 Using InfoMotion to visualize data.
 
-This tutorial covers the following.
+This tutorial will do 'Import assets and visualise Flow data in an InfoMotion'.(Time required 50 minutes)
 
-- Discovering and Importing a flow
-- Discovering and Importing a graph (InfoType)
-- Visualising Flow data in an InfoMotion
+## Table of Contents {#Table of Contents}
+
+1. [Import a Flow](#ImportaFlow)
+1. [Creating a Datasource](#CreatingaDatasource)
+1. [Editing and Deploying the Flow](#EditingandDeployingtheFlow)
+1. [Registering a DataSource for InfoMotion](#RegisteringaDataSourceforInfoMotion)
+1．[Import an InfoType](#ImportanInfoType)
+1. [Creating an InfoMotion](#CreatinganInfoMotion)
 
 ## Import a Flow {#Import a Flow}
 

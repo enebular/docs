@@ -1,15 +1,20 @@
 ---
-lastUpdated: 2019-01-04
+lastUpdated: 2019-01-09
 ---
 
 # Data Visualization {#Data Visualization}
 
 enebular の InfoMotion の機能を使うことによって、データを可視化し、visualize することが可能です。
-このチュートリアルでは、以下のことを行います。
+このチュートリアルでは、「アセットをインポートし、InfoMotionでデータを可視化する」ということを行います。（所要時間50分）
 
-- フローの検索とインポート
-- グラフ(InfoType)の検索とインポート
-- InfoMotion によるデータの可視化
+## Table of Contents{#TableofContents}
+
+1. [flow のインポート](#flowのインポート)
+1. [Datasource の作成](#Datasourceの作成)
+1. [Flow の編集とデプロイ](#Flowの編集とデプロイ)
+1. [DataSource の登録](#DataSourceの登録)
+1．[InfoType のインポート](#InfoTypeのインポート)
+1. [InfoMotion の作成](#InfoMotionの作成)
 
 ## flow のインポート {#flow のインポート}
 
