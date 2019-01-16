@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2019-01-04
+lastUpdated: 2019-01-16
 ---
 
 # About Deploying {#About Deploying}
@@ -31,7 +31,7 @@ If the execution environment exists in the cloud as with Heroku and AWS Lambda, 
 
 ### enebular-edge-agent {#enebular-edge-agent}
 
-Maximum Size : 3kB
+Maximum Size : 5kB
 
 ### enebular-agent {#enebular-agent}
 

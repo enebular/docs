@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2019-01-04
+lastUpdated: 2019-01-16
 ---
 
 # デプロイについて {#デプロイについて}
@@ -31,7 +31,7 @@ Heroku や AWS Lambda などクラウド上に実行環境が存在する場合�
 
 ### enebular-edge-agent {#enebular-edge-agent}
 
-最大サイズ：3kB
+最大サイズ：5kB
 
 ### enebular-agent {#enebular-agent}
 
