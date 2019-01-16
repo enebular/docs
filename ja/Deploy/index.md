@@ -12,7 +12,7 @@ Node-RED のフローエディタで作成したデータフローである Flow
 
 下の画像のように enebular から立ち上げるフローエディタで [Deploy] という操作ができますが、こちらは Flow を保存することが目的で**数分間でスリープ**します。
 
-![](https://i.gyazo.com/bfb9c0e25ad5e4a372a149336bdef8b8.png)
+![deploybutton](./../../img/Deploy/Index-deploybutton.png)
 
 永続的に稼働させるには外部サービスを利用してデバイスへデプロイする必要があります。
 
@@ -21,7 +21,7 @@ Node-RED のフローエディタで作成したデータフローである Flow
 - **デバイス**：アセットの実行環境となるデバイス本体
 - **デバイスマスター**：enebular からのデプロイのリクエストを受けてデバイスにデプロイを行ったり、デバイスの監視や enebular へのログ送信を行うデバイスのマスター
 
-![deploy diagram](../_asset/images/Introduction/enebular-developers-deploy.png)
+![devices](./../../img/Deploy/Index-devices.png)
 
 AWS IoT や Pelion Device Management などエッジデバイスにデプロイをするクラウドサービスの場合、エッジデバイスが**デバイス**となり、クラウドサービス自体は**デバイスマスター**となります。
 
