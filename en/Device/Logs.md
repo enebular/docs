@@ -36,7 +36,7 @@ If you want to output the log of the Debug node, output to the console is enable
 
 This is an example of the enebular agent's log screen.
 
-![cloud_logs](../_asset/images/Device/Logs/cloud_logs.png)
+![cloud_logs](./../../img/Device/Logs-cloud_logs.png)
 
 1. Timestamp of log output
 2. Log
