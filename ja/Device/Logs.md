@@ -1,8 +1,8 @@
 ---
-lastUpdated: 2018-05-23
+lastUpdated: 2019-01-04
 ---
 
-# Logs
+# Logs {#Logs}
 
 enebularでは、有償デバイスのログを確認することができます。
 ログを閲覧したいデバイスのモニタリング設定を ON にしてください。
@@ -15,7 +15,7 @@ enebular agent と enebular edge agent で出力されるログの仕様が異�
 ログを閲覧するには Device List よりログを見たい対象デバイスの右部にある [View Logs] を押してください。
 
 
-## enebular agent のログ
+## enebular agent のログ {#enebular agent のログ}
 
 enebular agent はコンソール( stdout / stderr )に出力したログを enebular に送信します。
 デフォルトで`info`レベルのログのみの出力となっています。環境変数 DEBUG により出力設定を`debug`レベルへ変更することができます。
@@ -25,7 +25,7 @@ enebular agent はコンソール( stdout / stderr )に出力したログを ene
 起動後、フローデプロイ後の3分間は30秒毎にログを送信し、他の場合は5分毎にログを送信します。
 また、システム終了時にログの送信を行います。
 
-### Node-RED のログ
+### Node-RED のログ {#Node-RED のログ}
 
 Node-RED が出力するログは Node-RED の設定やノードの設定に依存します。
 詳しくは[Node-REDのドキュメント](https://nodered.org/)をご覧ください。
@@ -34,7 +34,7 @@ Node-RED が出力するログは Node-RED の設定やノードの設定に依�
 
 ![view_logs](../_asset/images/Device/Logs/debug_node_config.png)
 
-### ログ画面の見方
+### ログ画面の見方 {#ログ画面の見方}
 
 enebular agentのログ画面の例です。
 
@@ -54,14 +54,14 @@ enebular agentのログ画面の例です。
 ![cloud_logs](../_asset/images/Device/Logs/debug_node.png)
 
 
-## enebular edge agent のログ
+## enebular edge agent のログ {#enebular edge agent のログ}
 
 enebular edge agent は動作ログ及びエラーログをenebularに送信します。
 
 デバイスの起動後30秒でログを送信し、以降5分毎にログを送信します。
 
 
-### ログ画面の見方
+### ログ画面の見方 {#ログ画面の見方}
 
 enebular edge agent のログ画面の例です。
 
@@ -73,7 +73,7 @@ enebular edge agent のログ画面の例です。
 1. enebularがログを受信したタイムスタンプ
 ※ タイムスタンプをクリックすることによって、閲覧するログの時刻を選択できます
 
-### enebular edge agent ログリスト
+### enebular edge agent ログリスト {#enebular edge agent ログリスト}
 
 enebular edge agent の動作ログ及びエラーログです。
 さらに情報が必要な方は **support@enebular.com** に連絡してください。
@@ -88,18 +88,12 @@ enebular edge agent の動作ログ及びエラーログです。
 | device manager initalized | デバイス管理機能の初期化 |
 | flow def manager initialized | フロー管理機能の初期化 |
 | uhuru red initialized | フロー実行機能の初期化 |
-| flow URL length checked | フローのダウンロードにおける URL 検証 |
-| flow downloaded | フローのダウンロード |
-| flow integrity checked | フローの整合性チェック |
-| flow size checked | フローのサイズチェック |
-| flow saved | フローの保存 |
 | SD initialized | SD カードの初期化 |
 | flow deployed | フローのデプロイ |
 | flow executing | フロー実行中 |
 | flow executed | フロー実行終了 |
 | flash updated: device bandle | デバイスバンドルのフラッシュアップデート |
 | flash updated: flow define | フロー定義のフラッシュアップデート |
-| flash updated: javascript code | フロー実行コードのフラッシュアップデート |
 
 #### エラーログ
 
@@ -112,7 +106,7 @@ enebular edge agent の動作ログ及びエラーログです。
 | writing flow failed | SD カードへのフロー書き込み失敗 |
 | reading flow failed | SD カードからのフロー読み込み失敗 |
 | flow URL size over | フローダウンロードURL のサイズオーバー |
-| mbed cloud factory configurator client error | mbed cloud との接続エラー |
+| mbed cloud factory configurator client error | Pelion Device Management との接続エラー |
 | flow runtime not found | フロー実行コードが見つからない |
 | flow file not found | フロー定義が見つからない |
 | js interpreter error | javascript 実行ライブラリのエラー |

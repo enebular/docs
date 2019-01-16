@@ -1,8 +1,8 @@
 ---
-lastUpdated: 2018-11-21
+lastUpdated: 2019-01-11
 ---
 
-# Operating Environments
+# Operating Environments {#Operating Environments}
 
 ## enebular {#enebular}
 
@@ -23,7 +23,7 @@ enebular-agent is IoT agent software for enebular and designed for Linux OS gate
 
 For detailed specifications, please contact support (support@enebular.com).
 
-### Recommended Hardware
+### Recommended Hardware {#Recommended Hardware}
 
 The enebular-agent runs on Linux.
 The following are examples of recommended hardware for inexpensive gateway environments which run Linux.
@@ -33,7 +33,7 @@ The following are examples of recommended hardware for inexpensive gateway envir
 | Raspberry PI3 Model B | [Version 3 Model B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) |
 | OpenBlocks            | Coming soon                                                                       |
 
-### Requirements
+### Requirements {#Requirements}
 
 - Network Interface (ethernet or WiFi)
   - For WiFi, IEEE802.11a/b/g etc is assumed, but anything where an IP network connection from Linux can be used is OK.
@@ -41,7 +41,7 @@ The following are examples of recommended hardware for inexpensive gateway envir
 - RAM
 - Flash Memory
 
-### Operating System
+### Operating System {#Operating System}
 
 The enebular-agent runs on [Debian GNU/Linux](https://www.debian.org/).
 For the recommended Raspberry PI hardware, use the Debian based [Raspbian OS](https://www.raspbian.org/).
@@ -80,31 +80,36 @@ enebular-edge-agent is IoT agent software for enebular and designed for microcon
 
 For detailed specifications, please contact support (support@enebular.com).
 
-### Operating Environment
+### Operating Environment {#Operating Environment}
 
 #### Operating System
 
-- [Mbed OS 5.6.6](https://github.com/ARMmbed/mbed-os/tree/mbed-os-5.6.6) (ARM Ltd.)
+- [mbed OS 5.10.4](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.10.4) (ARM Ltd.)
 
 #### Hardware
 
-The following hardware is supported in enebular-edge-agent 0.9.1.
+The following hardware is supported in enebular-edge-agent 1.1.0.
 
-- [FRDM-K64F](https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/k-seriesperformancem4/k2x-usb/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F) (NXP Semiconductors N.V.) + Stag Beetle Board (Uhuru Corporation)
+* [enebular Reference Board RAVEN](./../Board/RAVEN.md) (Uhuru Corporation)
 
 #### Communication
 
 - IEEE 802.11 b/g/n (only 2.4GHz is supported for IEEE 802.11n)
 - WPA/WPA2
 
-### Known Issues
+### Known Issues {#Known Issues}
 
-- When using a BME280 node, it may not operate correctly if the flow size is large.
-- An Inject node can set only a Timestamp for the Payload and Repetition of the Interval.
-- Excessive deployment within a span of one minute may cause failure of flow initialization.
-  - The device will stop in case of a flow initialization failure. To resolve this, reboot the device by pressing the reset button.
+* When Wi-Fi is disconnected, in rare cases, even if the Wi-Fi environment recovers, it may remain disconnected and communications may not be restored
+    * Restart to recover 
 
-## Enebular Infomotion Tool
+## enebular Reference Board Configuration Tool{#eRB-Config.Tool}
+
+| OS | CPU | Memory | Other |
+| --- | --- | --- | --- |
+| Windows 10 | Core i5 2.90GHz and up | 8.0GB and up | .NET Framework v4.6.1 |
+
+
+## Enebular Infomotion Tool {#Enebular Infomotion Tool}
 
 The web browsers supported by enebular-infomotion-tool are as follows.
 
@@ -115,11 +120,11 @@ The web browsers supported by enebular-infomotion-tool are as follows.
 | Safari         | Coming soon                                                                          | Mac         |
 | Microsoft Edge | Coming soon                                                                          | Windows     |
 
-### Npm Version
+### Npm Version {#Npm Version}
 
 nodejs >= 6 and npm 5.2+
 
-### Possible Issues
+### Possible Issues {#Possible Issues}
 
 If a permission error occur the following solutions may solve it.
 

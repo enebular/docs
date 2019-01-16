@@ -1,8 +1,8 @@
 ---
-lastUpdated: 2018-05-25
+lastUpdated: 2018-12-26
 ---
 
-# Logs
+# Logs {#Logs}
 
 In enebular, you can check the logging of a paid device by
 turning on the monitoring setting of the device.
@@ -14,7 +14,7 @@ The specifications of the log output by enebular agent and enebular edge agent a
 
 To view the log, please click [View Logs] in the right part of the target device.
 
-## enebular agent log
+## enebular agent log {#enebular agent log}
 
 The enebular agent sends the log output to the console (stdout / stderr) to enebular.
 By default, only logs of `info` level are output. You can change the output setting to the `debug` level with the environment variable DEBUG.
@@ -23,7 +23,7 @@ The enebuar agent also captures all logs that Node-RED outputs to the console. A
 
 After startup, logs are sent every 30 seconds for 3 minutes after flow deployment, then every 5 minutes thereafter. Logs are also sent when the system shuts down. 
 
-### Node-RED log
+### Node-RED log {#Node-RED log}
 
 The log output by Node-RED depends on Node-RED setting and node setting.
 For details, please refer to [Node-RED Documentation](https://nodered.org/).
@@ -32,7 +32,7 @@ If you want to output the log of the Debug node, output to the console is enable
 
 ![view_logs](../_asset/images/Device/Logs/debug_node_config.png)
 
-### How to read the log screen
+### How to read the log screen {#How to read the log screen}
 
 This is an example of the enebular agent's log screen.
 
@@ -49,12 +49,12 @@ The log output from the Debug node is displayed as follows.
 ![cloud_logs](../_asset/images/Device/Logs/debug_node.png)
 
 
-## enebular edge agent log
+## enebular edge agent log {#enebular edge agent log}
 
 Enebular Edge Agent sends operation logs and error logs to enebular.
 Logs are sent 30 seconds after booting the device, thereafter every 5 minutes.
 
-### How to read the log screen
+### How to read the log screen {#How to read the log screen}
 
 This is an example of the enebular edge agent log screen.
 
@@ -67,7 +67,7 @@ This is an example of the enebular edge agent log screen.
 
 By clicking the timestamp, you can select the time of the log to be viewed
 
-### enebular edge agent log list
+### enebular edge agent log list {#enebular edge agent log list}
 
 Below are the operation logs and error logs of the enebular edge agent. 
 For further information please contact ** support@enebular.com**.
@@ -82,18 +82,12 @@ For further information please contact ** support@enebular.com**.
 | device manager initialized |
 | flow def manager initialized | 
 | uhuru red initialized | 
-| flow URL length checked | 
-| flow downloaded | 
-| flow integrity checked | 
-| flow size checked | 
-| flow saved | 
 | SD initialized | 
 | flow deployed | 
 | flow executing |
 | flow executed | 
 | flash updated: device bandle | 
 | flash updated: flow define | 
-| flash updated: javascript code |
 
 #### error log
 

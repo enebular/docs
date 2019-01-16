@@ -2,7 +2,7 @@
 lastUpdated: 2017-12-15
 ---
 
-# Uploading InfoType to enebular
+# Uploading InfoType to enebular {#Uploading InfoType to enebular}
 
 Once the InfoType has been packaged [see InfoMotion tool](./InfoMotionTool.md)
 The InfoType is ready to be uploaded.

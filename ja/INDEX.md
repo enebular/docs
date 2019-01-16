@@ -1,8 +1,8 @@
 ---
-lastUpdated: 2017-01-28
+lastUpdated: 2019-01-04
 ---
 
-# Introduction
+# Introduction {#Introduction}
 
 enebular（エネブラー）は、IoT製品・サービスづくりを包括的に支援する、開発・運用サービスです。
 
@@ -18,7 +18,7 @@ enebular で扱うものには大まかに以下の3つがあります。
 
 enebular の主な利用方法は、**enebular.com でアセットを開発して、開発が終わったものをそれぞれデバイスへデプロイして運用する**、というふうになるかと思います。
 
-## アセット
+## アセット {#アセット}
 
 現在利用できるアセットは以下になります（その他にも、機械学習モデルなど対応予定のアセットがあります）。
 
@@ -34,11 +34,11 @@ enebular の主な利用方法は、**enebular.com でアセットを開発し�
 | **InfoMotion** | ダッシュボード | 利用するデータソース情報・利用する InfoType 情報・パネルの配置情報 | Web サイト（iframe貼り付け） |
 | **InfoType** | プラグインファイル |  JavaScript, CSS | InfoMotion で利用（InfoType 単体では利用しない） |
 
-## デバイス
+## デバイス {#デバイス}
 
 外部のサービスと連携することで、開発したアセットをデバイスにデプロイできます。現在以下のようなサービスが利用可能です。
 
-- [mbed Cloud](https://cloud.mbed.com/)
+- [Pelion Device Management](https://cloud.mbed.com/)
 - [AWS IoT](https://aws.amazon.com/jp/iot/)
 - [AWS Lambda](https://aws.amazon.com/jp/lambda/)
 - [Heroku](https://www.heroku.com/home)
@@ -52,8 +52,8 @@ enebular の主な利用方法は、**enebular.com でアセットを開発し�
 
 ![deploy diagram](./_asset/images/Introduction/enebular-developers-deploy.png)
 
-AWS IoT や mbed Cloud などエッジデバイスにデプロイをするクラウドサービスの場合、エッジデバイスが**デバイス**となり、クラウドサービス自体は**デバイスマスター**となります。
+AWS IoT や Pelion Device Management などエッジデバイスにデプロイをするクラウドサービスの場合、エッジデバイスが**デバイス**となり、クラウドサービス自体は**デバイスマスター**となります。
 
 Heroku や AWS Lambda などクラウド上に実行環境が存在する場合は、クラウドサービスが**デバイス**と**デバイスマスター**の両方の役割を担います。
 
-センサーなど物理的な情報を必要とするアセットのデプロイは AWS IoT や mbed Cloud を、その他の管理などが目的のアセットのデプロイは Heroku や AWS Lambda といったふうに使い分けることができます。
+センサーなど物理的な情報を必要とするアセットのデプロイは AWS IoT や Pelion Device Management を、その他の管理などが目的のアセットのデプロイは Heroku や AWS Lambda といったふうに使い分けることができます。

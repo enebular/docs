@@ -1,22 +1,26 @@
 ---
-lastUpdated: 2018-07-20
+lastUpdated: 2019-01-09
 ---
 
-# Flow Deployment
+# Flow Deployment {#Flow Deployment}
 
 enebular の特徴として、作成したフローを様々な環境にデプロイし動作させるというものがあります。
-このチュートリアルでは、フローを別のサービス（Heroku）にデプロイし動作をさせてみましょう。
+このチュートリアルでは、「フローを別のサービス（Heroku）にデプロイし動作する」ということをします。（所要時間40分）
 
 このチュートリアルでは以下のことを行います。
 
-- Heroku へのフローデプロイ
-
 なお、本ページは [Introduction](./Introduction.md) のチュートリアルで Asset(フロー) の作成方法については理解していることを前提としています。
+Herokuアカウントの取得については、[Heroku](https://heroku.com) から進めてください。
 
-## Heroku に送るフローを作成
+## Table of Contents {#TableofContents}
+1. [Heroku に送るフローを作成](#Herokuに送るフローを作成)
+1. [デプロイの設定](#デプロイの設定)
+1. [Heroku ボタンでアプリを作成](#Herokuボタンでアプリを作成)
+1. [フローのデプロイ](#フローのデプロイ)
+
+## Heroku に送るフローを作成 {#Heroku に送るフローを作成}
 
 ![flow](./../../img/GetStarted/FlowDeployment-flow.png)
-
 Assets からフローを作成します（既にフローを作成済みの場合、それを利用することも可能です）。
 
 ![createFlow](./../../img/GetStarted/FlowDeployment-createFlow.png)
@@ -25,22 +29,47 @@ Heroku に送りたいフローを作成して、デプロイして保存しま�
 
 ![deployButton](./../../img/GetStarted/FlowDeployment-deployButton.png)
 
-## デプロイの設定
+## デプロイの設定 {#デプロイの設定}
 
 つづいて、デプロイの設定をします。  
 フローが作成できたら上部のメニューから Deploy ページに移動します。
 
 ![otherEnvDeploy](./../../img/GetStarted/FlowDeployment-otherEnvDeploy.png)
 
+表示された画面の Add Connection をクリックします。
+![addConnection](./../../img/GetStarted/FlowDeployment-addConnection.png)
+
 Select Connection Type から Heroku を選択します。
+Connection Name はわかりやすい名前をつけます。Heroku API Token は Heroku の設定画面で確認します。
 
 ![selectHeroku](./../../img/GetStarted/FlowDeployment-selectHeroku.png)
 
-Heroku を選択すると右のカラムに出てくる [Deploy to Heroku] からアプリを作成します。
+
+Herokuにログイン後ページ右上にある [Account Settings] を押します。
+
+![accountSettings](./../../img/GetStarted/FlowDeployment-accountSettings.png)
+
+Manage Account ページで Account ページに移動します。
+
+![account](./../../img/GetStarted/FlowDeployment-account.png)
+
+API Key 欄に移動し [Reveal] で API Key を表示します。
+
+![revealApikey](./../../img/GetStarted/FlowDeployment-revealApikey.png)
+
+Heroku API Token に API Key をコピーして、[Save] を押します。
+
+![inputAPIkey](./../../img/GetStarted/FlowDeployment-inputAPIkey.png)
+
+新しくconnectionが追加されたので、クリックしてください。
+
+![createdConnection](./../../img/GetStarted/FlowDeployment-createdConnection.png)
+
+開いた画面の下部にある [Deploy to Heroku] からアプリを作成します。
 
 ![herokuButton](./../../img/GetStarted/FlowDeployment-herokuButton.png)
 
-## Heroku ボタンでアプリを作成
+## Heroku ボタンでアプリを作成 {#Heroku ボタンでアプリを作成}
 
 Heroku ボタンでアプリを作成します。すでに作成されている方は読み飛ばして下さい。  
 Heroku ボタンを押すとログインしていない場合、Heroku のログイン画面が出てくるのでログインします。
@@ -81,35 +110,7 @@ Heroku にクレジットカード情報を登録していない場合、以下�
 
 ![agentOnHeroku](./../../img/GetStarted/FlowDeployment-agentOnHeroku.png)
 
-## デプロイ設定
-
-Heroku アプリが作成できたらデプロイ設定をします。さきほどの画面に戻って設定を続けます。
-
-[New] を押します。
-
-![deployNewBottun](./../../img/GetStarted/FlowDeployment-deployNewBottun.png)
-
-Connection Name はわかりやすい名前をつけます。Heroku API Token は Heroku の設定画面で確認します。
-
-![connectionModal](./../../img/GetStarted/FlowDeployment-connectionModal.png)
-
-[Account Settings] を押します。
-
-![accountSettings](./../../img/GetStarted/FlowDeployment-accountSettings.png)
-
-Manage Account ページで Account ページに移動します。
-
-![account](./../../img/GetStarted/FlowDeployment-account.png)
-
-API Key 欄に移動し [Reveal] で API Key を表示します。
-
-![revealApikey](./../../img/GetStarted/FlowDeployment-revealApikey.png)
-
-Heroku API Token に API Key をコピーして、[Save] を押します。
-
-![saveConnection](./../../img/GetStarted/FlowDeployment-saveConnection.png)
-
-## デプロイ
+## フローのデプロイ {#フローのデプロイ}
 
 保存されると Select Connection Type から Heroku を選択すると、Heroku アカウントが持つアプリ一覧が出てきます。
 
@@ -119,8 +120,6 @@ Heroku API Token に API Key をコピーして、[Save] を押します。
 
 しばらく待っていると Deploy Added が表示されてデプロイが完了します。
 
-![deployFlow](./../../img/GetStarted/FlowDeployment-deployFlow.png)
-
 Heroku アプリで確認すると無事フローがデプロイされています。
 
 ![openApp](./../../img/GetStarted/FlowDeployment-openApp.png)
@@ -129,6 +128,6 @@ Heroku アプリで確認すると無事フローがデプロイされていま�
 
 ![confirmDeployed](./../../img/GetStarted/FlowDeployment-confirmDeployed.png)
 
-## Well Done!
+## Well Done! {#Well Done!}
 
 enebular のデプロイ機能を使用して、作成した Asset(フロー)を別のサービスにデプロイすることが出来るようになりました。
