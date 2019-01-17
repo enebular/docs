@@ -1,12 +1,12 @@
 ---
-lastUpdated: 2019-01-04
+lastUpdated: 2019-01-16
 ---
 
 # Introduction {#Introduction}
 
 enebular（エネブラー）は、IoT製品・サービスづくりを包括的に支援する、開発・運用サービスです。
 
-![](https://i.gyazo.com/64b4e448bcbf896a9d53d8587e554554.png)
+![overview](./../img/Introduction/overview.png)
 
 enebular で扱うものには大まかに以下の3つがあります。
 
@@ -14,7 +14,7 @@ enebular で扱うものには大まかに以下の3つがあります。
 - **デバイス**: アセットをデプロイするデバイスのことです。デバイスにはエッジ（マイコンなど）とクラウド（サーバレス環境やVMなど）の両方が含まれます。
 - **その他設定**: 運用や開発に必要な設定（可視化を行うデータのデータソースやアクセス権限）などを指します。
 
-![enebular overview](./_asset/images/Introduction/enebular-developers-project-overview.png)
+![devices](./../img/Introduction/devices.png)
 
 enebular の主な利用方法は、**enebular.com でアセットを開発して、開発が終わったものをそれぞれデバイスへデプロイして運用する**、というふうになるかと思います。
 
@@ -50,10 +50,35 @@ enebular の主な利用方法は、**enebular.com でアセットを開発し�
 
 具体的なサービスを例に挙げてみましょう。
 
-![deploy diagram](./_asset/images/Introduction/enebular-developers-deploy.png)
+![example](./../img/Introduction/example.png)
 
 AWS IoT や Pelion Device Management などエッジデバイスにデプロイをするクラウドサービスの場合、エッジデバイスが**デバイス**となり、クラウドサービス自体は**デバイスマスター**となります。
 
 Heroku や AWS Lambda などクラウド上に実行環境が存在する場合は、クラウドサービスが**デバイス**と**デバイスマスター**の両方の役割を担います。
 
 センサーなど物理的な情報を必要とするアセットのデプロイは AWS IoT や Pelion Device Management を、その他の管理などが目的のアセットのデプロイは Heroku や AWS Lambda といったふうに使い分けることができます。
+
+問い合わせは**support@enebular.com**もしくは、ダッシュボード右上のアカウント名から表示されるメニューの**Support**からお願いします。
+
+<!-- 一旦コメントアウト
+## DashBorad画面の見方 {#DashBoard画面の見方}
+
+enebularのアカウント 登録後、ログインして表示される画面の説明をします。
+アカウントの登録に関しては[Getting Started > Introduction](./GetStarted/Introduction.md)を参照して下さい。
+
+![overview](./../img/Introduction/dashboard.png)
+
+画面上部のタブはDashboard内を移動しても固定して表示します。
+
+| No. | 項目名 | 説明 |
+| --- | --- | --- |
+| 1 | enebular ロゴマーク | DashBoardのトップ画面に戻ります |
+| 2 | サーチバー | 入力文字列をアクセス権の持っているassetsから検索します |
+| 3 | Discover | PublishされたAssetsページに移行します。詳しくは[Discoverのマニュアルページ](./Discover/index.md)をご覧ください |
+| 4 | Docs | enebular-docsを開きます。現在見ているこのページです |
+| 5 | User | アカウント名が表示されます。アカウントの設定(AccountSetting)や問い合わせ(Support)に移動するメニューを開きます。サインアウトもここから行います |
+| 6 | 表示切替スイッチ | 表示する項目をAssetsとProjectsで切り替えることができます |
+| 7 | Createボタン | AssetまたはProjectを作成します。作成対象は表示切替スイッチに依存します |
+| 8 | 項目一覧 | AssetまたはProjectが一覧できます。閲覧対象は表示切替スイッチに依存します |
+
+-->
