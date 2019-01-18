@@ -6,7 +6,7 @@ lastUpdated: 2017-12-13
 
 `InfoMotion` は `DataSource` のデータを表示します。
 
-![](../_asset/images/enebular-developers-aboutinfotype.png)
+![about](./../../img/InfoMotion/Introduction-about.png)
 
 デフォルトで用意されている単純なグラフに加えて、さらに複雑なグラフを購入、自作できます（[自作方法はこちら](./InfoMotionTool.md)）。
 
@@ -15,7 +15,7 @@ lastUpdated: 2017-12-13
 
 作成した InfoMotion は enebular 上で確認できます。
 
-![](https://i.gyazo.com/a92f72b76d3d38eb1409c5ba72964720.png)
+![created](./../../img/InfoMotion/Introduction-created.png)
 
 InfoMotion を選択すると InfoMotion の詳細画面へ移動します。
 
@@ -27,7 +27,7 @@ InfoMotion ダッシュボードを表示します。詳しくは [Dashboard](./
 
 Access では InfoMotion のアクセス権を編集できます。
 
-![](https://i.gyazo.com/e16a84b1278a85d74e024350c6daae4b.png)
+![access](./../../img/InfoMotion/Introduction-access.png)
 
 詳しくは [Access Control](../Config/Access.md) をご覧ください。
 
@@ -35,4 +35,4 @@ Access では InfoMotion のアクセス権を編集できます。
 
 Settings では InfoMotion の名前や説明の編集、InfoMotion の削除ができます。
 
-![](https://i.gyazo.com/a5d7bf668507515b5ecf4a52c1821871.png)
+![settings](./../../img/InfoMotion/Introduction-settings.png)

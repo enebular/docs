@@ -8,19 +8,19 @@ lastUpdated: 2019-01-09
 
 プロジェクト一覧からプロジェクトを選択してプロジェクトの管理画面に移動します。
 
-![](https://i.gyazo.com/69a5b817e8681349f45373eb7aead486.png)
+![projects](./../../img/Flow/CreateFlow-projects.png)
 
 右下の + ボタンからモーダルを立ち上げます。
 
-![](https://i.gyazo.com/e521afd4d489291aa774fe9429cf3321.png)
+![plus](./../../img/Flow/CreateFlow-plus.png)
 
 モーダルが立ち上がるのでまず Asset Type に flow を指定します。
 
-![image](../_asset/images/Flow/CreateFlow/flow-create-flow_07.png)
+![asettype](./../../img/Flow/CreateFlow-asettype.png)
 
 flow を指定すると、アイコンやタイトルの指定、および、アクセス権限の設定ができます。
 
-![](https://i.gyazo.com/046b8c6b177e0edaf9cc3f56af67e9ac.png)
+![modal](./../../img/Flow/CreateFlow-modal.png)
 
 * タイトル
     * 任意のフローのタイトル
@@ -31,11 +31,11 @@ flow を指定すると、アイコンやタイトルの指定、および、ア
 * カテゴリー
     * 今回の用途に合ったカテゴリを指定
 
-![image](../_asset/images/Flow/CreateFlow/flow-create-flow_10.png)
+![continue](./../../img/Flow/CreateFlow-continue.png)
 
 設定ができたらContinueボタンをクリックします。
 
-![image](../_asset/images/Flow/CreateFlow/flow-create-flow_11.png)
+![created](./../../img/Flow/CreateFlow-created.png)
 
 フローが作成されました。
 
