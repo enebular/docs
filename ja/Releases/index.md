@@ -1,26 +1,31 @@
 ---
-lastUpdated: 2019-01-09
+lastUpdated: 2019-01-18
 ---
 
 # enebular Release Notes {#enebular}
 
-=======
-## Latest Release - 2.7.0 (December 14th, 2018)
+## Latest Release - 2.7.1 (January 18th, 2019)
 
 ## New {#New}
 
-- Device ListのConnection Type、Statusによるソートが出来るようになりました
-- 最後に行ったデプロイを再度実行することの出来る「Redeploy」ボタンを追加しました
+- None
 
 ## Fixed {#Fixed}
 
-- ライセンスが登録解除されたデバイスがDevice Listに残ってしまう問題を修正し、表示されないようにしました
+- 各AssetsのDefault Privilegeを変更しても、ユーザーの権限が変更されないように修正しました
+- Device List画面でMonitoringボタンを押した際、レイアウトが崩れてしまう問題を修正しました
+- ダウンロードしたInfoMotionのデータがUndefinedとなってしまう問題を修正しました
 
 ## Changed {#Changed}
 
-- DiscoverページからAssetをImportする際、Import後に取り込んだAssetのページに移動するようになりました
-- ConnectionのAWS IoTの設定ダイアログのタイトルを「AWS IoT Settings」から「AWS IoT Connection」に修正しました
-- クレデンシャル情報を含むフローをPublishしようとすると情報漏洩を防ぐための警告が表示されるよう修正しました
+- FlowのDeployプロセスを非同期Deployに変更しました
+- FlowのDeploy状況を通知領域で表示するようにしました
+- FlowのOverview画面の各ボタンにあった「Flow」の文字を削除し、Deploy画面の各ボタンと表記を統一しました
+- HerokuにDeployする際、Node-REDのバージョンをv0.18にアップデートしました　※今後HerokuにDeployする際は、新規Herokuアプリを作成する必要があります
+- メッセージ通知領域がより見やすくなるようデザインを変更しました
+- InfoMotionを、他のAssetと同様にcollaboratorの招待ができるようにしました
+- License Managerのライセンス登録時に、対象デバイスを選択する画面のボタンをCheckboxからRadioボタンに変更し、デバイスを1つだけ選択できるようにしました
+- ダウンロードできるInfoMotionのデータの最大サイズを10MBに制限しました
 
 ## Known Issues {#Known Issues}
 
@@ -30,6 +35,7 @@ lastUpdated: 2019-01-09
 
 ## Release History {#Release History}
 
+- [2.7.1](./enebular/2.7.1.md) (January 18th, 2019)
 - [2.7.0](./enebular/2.7.0.md) (December 14th, 2018)
 - [2.6.1](./enebular/2.6.1.md) (December 4th, 2018)
 - [2.6.0](./enebular/2.6.0.md) (November 30th, 2018)

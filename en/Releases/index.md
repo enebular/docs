@@ -1,26 +1,31 @@
 ---
-lastUpdated: 2019-01-11
+lastUpdated: 2019-01-18
 ---
 
 # enebular Release Notes {#enebular}
 
-=======
-## Latest Release - 2.7.0 (December 14th, 2018)
+## Latest Release - 2.7.1 (January 18th, 2019)
 
 ## New {#New}
 
-- Device List can now be sorted by connection types or statuses.
-- "Redeploy" button is added to repeat the last deploy.
+- None
 
 ## Fixed {#Fixed}
 
-- The issue that caused a device to remain on Device List even if its license has been unregistered, such a device is to be deleted from the list.
+- Fixed the user interface so that user privilege does not change when the "Default Privilege" of an asset is changed.
+- Fixed the issue that caused Device List screen to fall apart when "Monitoring" button is pressed.
+- Fixed the issue that caused the downloaded InfoMotion data to be "Undefined."
 
 ## Changed {#Changed}
 
-- Importing an asset from Discover page now redirects to the new imported asset page under the target project.
-- We have changed the title of AWS IoT configuration dialog box from "AWS IoT Settings" to more appropriate "AWS IoT Connection".
-- Attempting to publish flows which contain credential information now shows warnings to avoid information leaks.
+- Asynchronized the deploy process of flows.
+- Now the status of flows being deployed can be observed at the notification section.
+- Deleted the word "Flow" on each button appeared in Flow Overview screen to match the buttons in Deploy screen.
+- The node-RED to deploy to Heroku is now upgraded to v0.18. * Please note that a new Heroku app must be made in order to deploy to Heroku next time.
+- The UI design has been improved for a better visibility on the message notification section.
+- Other users can now be invited to InfoMotion just like other assets.
+- Updated the "Register License to a Device" selection screen at License Manager and changed device selection controls from check boxes to radio buttons.
+- The downloadable maximum InfoMotion data size is set to 10MB.
 
 ## Known Issues {#Known Issues}
 
@@ -30,6 +35,7 @@ lastUpdated: 2019-01-11
 
 ## Release History {#Release History}
 
+- [2.7.1](./enebular/2.7.1.md) (January 18th, 2019)
 - [2.7.0](./enebular/2.7.0.md) (December 14th, 2018)
 - [2.6.1](./enebular/2.6.1.md) (December 4th, 2018)
 - [2.6.0](./enebular/2.6.0.md) (November 30th, 2018)
