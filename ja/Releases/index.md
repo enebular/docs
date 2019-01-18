@@ -1,25 +1,31 @@
 ---
-lastUpdated: 2018-12-14
+lastUpdated: 2019-01-18
 ---
 
 # enebular Release Notes {#enebular}
 
-## Latest Release - 2.7.0 (December 14th, 2018)
+## Latest Release - 2.7.1 (January 18th, 2019)
 
 ## New
 
-- Device ListのConnection Type、Statusによるソートが出来るようになりました
-- 最後に行ったデプロイを再度実行することの出来る「Redeploy」ボタンを追加しました
+- None
 
 ## Fixed
 
-- ライセンスが登録解除されたデバイスがDevice Listに残ってしまう問題を修正し、表示されないようにしました
+- 各AssetsのDefault Privilegeを変更しても、ユーザーの権限が変更されないように修正しました
+- Device List画面でMonitoringボタンを押した際、レイアウトが崩れてしまう問題を修正しました
+- ダウンロードしたInfoMotionのデータがUndefinedとなってしまう問題を修正しました
 
 ## Changed
 
-- DiscoverページからAssetをImportする際、Import後に取り込んだAssetのページに移動するようになりました
-- ConnectionのAWS IoTの設定ダイアログのタイトルを「AWS IoT Settings」から「AWS IoT Connection」に修正しました
-- クレデンシャル情報を含むフローをPublishしようとすると情報漏洩を防ぐための警告が表示されるよう修正しました
+- FlowのDeployプロセスを非同期Deployに変更しました
+- FlowのDeploy状況を通知領域で表示するようにしました
+- FlowのOverview画面の各ボタンにあった「Flow」の文字を削除し、Deploy画面の各ボタンと表記を統一しました
+- HerokuにDeployする際、Node-REDのバージョンをv0.18にアップデートしました　※今後HerokuにDeployする際は、新規Herokuアプリを作成する必要があります
+- メッセージ通知領域がより見やすくなるようデザインを変更しました
+- InfoMotionを、他のAssetと同様にcollaboratorの招待ができるようにしました
+- License Managerのライセンス登録時に、対象デバイスを選択する画面のボタンをCheckboxからRadioボタンに変更し、デバイスを1つだけ選択できるようにしました
+- ダウンロードできるInfoMotionのデータの最大サイズを10MBに制限しました
 
 ## Known Issues
 
@@ -29,6 +35,7 @@ lastUpdated: 2018-12-14
 
 ## Release History
 
+- [2.7.1](./enebular/2.7.1.md) (January 18th, 2019)
 - [2.7.0](./enebular/2.7.0.md) (December 14th, 2018)
 - [2.6.1](./enebular/2.6.1.md) (December 4th, 2018)
 - [2.6.0](./enebular/2.6.0.md) (November 30th, 2018)
@@ -120,42 +127,66 @@ lastUpdated: 2018-12-14
 
 # enebular edge agent Release Notes {#enebular-edge-agent}
 
-## Latest Release - 1.0.1 (June 7th, 2018)
+## Latest Release - 1.1.0 (January 18th, 2019) {#1.1.0January18th,2019}
 
-enebular-edge-agent 1.0.1 では、バージョンを Mbed Cloud Client 1.3.1.1 General Availability (GA) アップデートしました。
+## New {#New}
+* enebular Reference Board RAVEN(以下:**RAVEN**)で動作できるようになりました。
+    * ネットワークの設定は[enebular Reference Board Configuration Tool](#enebularReferenceBoardConfigurationTool1.0.0)を用いて行います。
+* http request ノードが使用できるようになりました
 
-## New
-- N/A
+## Fixed {#Fixed}
+* BME280 ノードの使用時、フローのサイズが2KB以上になると正常に動作しない場合がある不具合を修正しました
 
-## Fixed
-- Wi-Fiモジュールとの通信処理の排他制御が原因で長時間起動時にネットワークが切断される問題を、Wi-Fiモジュールのライブラリを更新することで修正しました
+## Changed {#Changed}
+* [mbed OS 5.10.4](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.10.4) へのアップデートを行いました
+* [Device Management Client 2.0.1.1 General Availability (GA)](https://github.com/ARMmbed/mbed-cloud-client/releases/tag/2.0.1.1)へのアップデートを行いました
+* RAVENで実行できるフローの最大サイズが5KBになりました
 
-## Changed
-- Mbed Cloud Client 1.3.1.1 General Availability (GA) へアップデートを行いました
-
-## Known Issues
-- BME280 ノードの使用時、フローのサイズが大きいと正常に動作しない場合があります
-- Inject ノードにおいて、PayloadにはTimestampのみ、RepeatにIntervalのみしか設定できません
+## Known Issues {#Known Issues}
+* Wi-Fiが切断された際、ごくまれにWi-Fi環境が復旧しても切断されたままになり通信が復旧しないことがあります
+    * 再起動で復旧します
 
 ### Operating Environment
 
 #### Operating System
 
-* [Mbed OS 5.8.2](https://github.com/ARMmbed/mbed-os/tree/mbed-os-5.8.2) (ARM Ltd.)
+* [mbed OS 5.10.4](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.10.4) (ARM Ltd.)
 
 #### Hardware
 
-enebular-edge-agent 1.0.1は、下記のハードウェアを対象としています。
+enebular-edge-agent 1.1.0 は、下記のハードウェアを対象としています。
 
-* [FRDM-K64F](https://www.nxp.com/jp/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F) (NXP Semiconductors N.V.) + Stag Beetle Board (Uhuru Corporation)
+* [enebular Reference Board RAVEN](./../Board/RAVEN.md) (Uhuru Corporation)
 
 #### Communication
 
 * IEEE 802.11 b/g/n (IEEE 802.11n は2.4GHzのみの対応です)
 * WPA/WPA2
 
-## Release History
+### Tools {#Tools}
 
+#### enebular Reference Board Configuration Tool 1.0.0 {#enebular Reference Board Configuration Tool 1.0.0}
+
+##### New {#New}
+
+- enebular-edge-agent向け評価ボードのネットワーク設定を行う "enebular Reference Board Configuration Tool"をリリースしました
+    -（[こちら](https://download.enebular.com/eRB-Config-Tool/eRBConfigTool.msi)からダウンロードしてください。Windows専用ソフトです。)
+
+##### Fixed {#Fixed}
+
+N/A
+
+##### Changed {#Changed}
+
+N/A
+
+##### Known Issues {}
+
+N/A
+
+## Release History {#Release History}
+
+* [1.1.0](./enebular-edge-agent/1.0.0.md) (Jan 18th, 2019)
 * [1.0.1](./enebular-edge-agent/1.0.1.md) (June 7th, 2018)
 * [1.0.0](./enebular-edge-agent/1.0.0.md) (May 18th, 2018)
 * [0.10.0](./enebular-edge-agent/0.10.0.md) (Apr 27th, 2018)

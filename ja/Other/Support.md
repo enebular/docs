@@ -36,7 +36,7 @@ enebular-agent は、Linux 上で動作します。
 ### 必要物
 
 - Network Interface (ethernet or WiFi)
-  - WiFi については、IEEE802.11a/b/g 等を想定していますが、Linux から IP 接続ができるネットワークが使用できれば良いものとします
+    - WiFi については、IEEE802.11a/b/g 等を想定していますが、Linux から IP 接続ができるネットワークが使用できれば良いものとします
 - SD-Card
 - RAM
 - Flash Memory
@@ -84,13 +84,13 @@ enebular-edge-agent は、[ARM Ltd.](https://www.arm.com/) の [Mbed OS](https:/
 
 #### Operating System
 
-- [Mbed OS 5.6.6](https://github.com/ARMmbed/mbed-os/tree/mbed-os-5.6.6) (ARM Ltd.)
+- [mbed OS 5.10.4](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.10.4) (ARM Ltd.)
 
 #### Hardware
 
-enebular-edge-agent 0.9.1 は、下記のハードウェアを対象としています。
+enebular-edge-agent 1.1.0 は、下記のハードウェアを対象としています。
 
-- [FRDM-K64F](https://www.nxp.com/jp/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F) (NXP Semiconductors N.V.) + Stag Beetle Board (Uhuru Corporation)
+* [enebular Reference Board RAVEN](./../Board/RAVEN.md) (Uhuru Corporation)
 
 #### Communication
 
@@ -99,10 +99,16 @@ enebular-edge-agent 0.9.1 は、下記のハードウェアを対象としてい
 
 ### Known Issues
 
-- BME280 ノードの使用時、フローのサイズが大きいと正常に動作しない場合があります
-- Inject ノードにおいて、Payload には Timestamp のみ、Repeat に Interval のみしか設定できません
-- 短い周期で繰り返しフローをデプロイした場合に、フローの初期化に失敗することがあります
-  - フローの初期化に失敗するとデバイスがフリーズします。その際はリセットボタンを押下してデバイスを再起動してください
+* Wi-Fiが切断された際、ごくまれにWi-Fi環境が復旧しても切断されたままになり通信が復旧しないことがあります
+    * 再起動で復旧します
+
+## enebular Reference Board Configuration Tool{#eRB-Config.Tool}
+
+enebular Reference Board Configuration Toolの動作環境は以下です。
+
+| OS | CPU | メモリ | その他 |
+| --- | --- | --- | --- |
+| Windows 10 | Core i5 2.90GHz以上推奨 | 8.0GB以上推奨 | .NET Framework v4.6.1 |
 
 ## Enebular Infomotion Tool
 
@@ -134,3 +140,5 @@ permission error が起こった際には、以下のいずれかで解決がで
 - Windows: https://github.com/coreybutler/nvm-windows
 
 3. npm の[デフォルトのディレクトリ](https://docs.npmjs.com/getting-started/fixing-npm-permissions)を変更する。
+
+

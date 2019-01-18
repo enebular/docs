@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-05-23
+lastUpdated: 2019-01-04
 ---
 
 # Logs
@@ -88,18 +88,12 @@ enebular edge agent の動作ログ及びエラーログです。
 | device manager initalized | デバイス管理機能の初期化 |
 | flow def manager initialized | フロー管理機能の初期化 |
 | uhuru red initialized | フロー実行機能の初期化 |
-| flow URL length checked | フローのダウンロードにおける URL 検証 |
-| flow downloaded | フローのダウンロード |
-| flow integrity checked | フローの整合性チェック |
-| flow size checked | フローのサイズチェック |
-| flow saved | フローの保存 |
 | SD initialized | SD カードの初期化 |
 | flow deployed | フローのデプロイ |
 | flow executing | フロー実行中 |
 | flow executed | フロー実行終了 |
 | flash updated: device bandle | デバイスバンドルのフラッシュアップデート |
 | flash updated: flow define | フロー定義のフラッシュアップデート |
-| flash updated: javascript code | フロー実行コードのフラッシュアップデート |
 
 #### エラーログ
 
@@ -112,7 +106,7 @@ enebular edge agent の動作ログ及びエラーログです。
 | writing flow failed | SD カードへのフロー書き込み失敗 |
 | reading flow failed | SD カードからのフロー読み込み失敗 |
 | flow URL size over | フローダウンロードURL のサイズオーバー |
-| mbed cloud factory configurator client error | mbed cloud との接続エラー |
+| mbed cloud factory configurator client error | Pelion Device Management との接続エラー |
 | flow runtime not found | フロー実行コードが見つからない |
 | flow file not found | フロー定義が見つからない |
 | js interpreter error | javascript 実行ライブラリのエラー |

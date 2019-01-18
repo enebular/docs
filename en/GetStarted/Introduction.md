@@ -1,15 +1,17 @@
 ---
-lastUpdated: 2018-07-31
+lastUpdated: 2019-01-09
 ---
 
 # Introduction
 
-This tutorial covers the following.
+This tutorial will do 'Sign Up to enebular and edit a flow'.(Time required 20 minutes)
 
-- Signing up
-- Creating a project
-- Creating an asset
-- Editing a flow
+## Table of Contents {#Table of Contents}
+
+1. [Signing up](#Signingup)
+1. [Creating a project](#Creatingaproject)
+1. [Creating an asset](#Creatinganasset)
+1. [Editing a flow](#Editingaflow)
 
 ## Signing up
 
@@ -72,7 +74,7 @@ Press "Edit Flow".
 
 ![editFlow](./../../img/GetStarted/Introduction-editFlow.png)
 
- Open the Node-RED editor.
+Open the Node-RED editor.
 
 ![flowEditor](./../../img/GetStarted/Introduction-flowEditor.png)
 

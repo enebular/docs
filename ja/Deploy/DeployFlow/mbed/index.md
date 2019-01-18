@@ -1,14 +1,14 @@
 ---
-lastUpdated: 2018-01-30
+lastUpdated: 2019-01-09
 ---
 
-# Mbed Cloudへのデプロイ
+# Pelion Device Managementへのデプロイ{#Pelion Device Managementへのデプロイ}
 
-フローのデプロイ先はそのままデプロイボタンを押すと、enebular が利用しているサーバーにデプロイされます。Mbed Cloud Deploy は enebular で Mbed Cloud を経由し、登録されているデバイスへフローをデプロイする機能です。
+フローのデプロイ先はそのままデプロイボタンを押すと、enebular が利用しているサーバーにデプロイされます。Pelion Device Management Deploy は enebular で Pelion Device Management を経由し、登録されているデバイスへフローをデプロイする機能です。
 
 対応デバイスについては  [Supported Environments](../../../Other/Support.md) をご覧ください。
 
-このページでは、Mbed Cloudを経由してデバイスにフローをデプロイする手順を説明します。
+このページでは、Pelion Device Managementを経由してデバイスにフローをデプロイする手順を説明します。
 
 ## 新規フローの作成
 
@@ -88,11 +88,11 @@ Create Connection を画面が開きます。
 * Connection Name
     * 分かりやすい名前を任意で
 * MBED API Key
-    * mbed Cloud Portalで確認
+    * Pelion Device Management Portalで確認
 
-必要な MBED API Key は [Mbed Cloud Portal](https://portal.us-east-1.mbedcloud.com/) より取得できます。
+必要な MBED API Key は [Pelion Device Management Portal](https://portal.us-east-1.mbedcloud.com/) より取得できます。
 
-Mbed Cloud Portal の Access management の APIキーページの [新しいAPIキーの作成] を選択します。
+Pelion Device Management Portal の Access management の APIキーページの [新しいAPIキーの作成] を選択します。
 
 ![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_09.png)
 

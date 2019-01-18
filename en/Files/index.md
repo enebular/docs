@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-11-30
+lastUpdated: 2018-12-13
 ---
 
 # Files
@@ -127,9 +127,9 @@ If you don't specify Post-Deploy it doesn't run.
 
 e.g.) You want to run a shell script after deployment which deletes some files you don't need anymore in enebular agent.
 
-#### Command
+#### Asset Path
 
-Command you want to execute.
+The path of the asset you want to execute.
 
 #### Max Execution Time
 

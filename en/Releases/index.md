@@ -1,25 +1,31 @@
 ---
-lastUpdated: 2018-12-14
+lastUpdated: 2019-01-18
 ---
 
 # enebular Release Notes {#enebular}
 
-## Latest Release - 2.7.0 (December 14th, 2018)
+## Latest Release - 2.7.1 (January 18th, 2019)
 
 ## New
 
-- Device List can now be sorted by connection types or statuses.
-- "Redeploy" button is added to repeat the last deploy.
+- None
 
 ## Fixed
 
-- The issue that caused a device to remain on Device List even if its license has been unregistered, such a device is to be deleted from the list.
+- Fixed the user interface so that user privilege does not change when the "Default Privilege" of an asset is changed.
+- Fixed the issue that caused Device List screen to fall apart when "Monitoring" button is pressed.
+- Fixed the issue that caused the downloaded InfoMotion data to be "Undefined."
 
 ## Changed
 
-- Importing an asset from Discover page now redirects to the new imported asset page under the target project.
-- We have changed the title of AWS IoT configuration dialog box from "AWS IoT Settings" to more appropriate "AWS IoT Connection".
-- Attempting to publish flows which contain credential information now shows warnings to avoid information leaks.
+- Asynchronized the deploy process of flows.
+- Now the status of flows being deployed can be observed at the notification section.
+- Deleted the word "Flow" on each button appeared in Flow Overview screen to match the buttons in Deploy screen.
+- The node-RED to deploy to Heroku is now upgraded to v0.18. * Please note that a new Heroku app must be made in order to deploy to Heroku next time.
+- The UI design has been improved for a better visibility on the message notification section.
+- Other users can now be invited to InfoMotion just like other assets.
+- Updated the "Register License to a Device" selection screen at License Manager and changed device selection controls from check boxes to radio buttons.
+- The downloadable maximum InfoMotion data size is set to 10MB.
 
 ## Known Issues
 
@@ -29,6 +35,7 @@ lastUpdated: 2018-12-14
 
 ## Release History
 
+- [2.7.1](./enebular/2.7.1.md) (January 18th, 2019)
 - [2.7.0](./enebular/2.7.0.md) (December 14th, 2018)
 - [2.6.1](./enebular/2.6.1.md) (December 4th, 2018)
 - [2.6.0](./enebular/2.6.0.md) (November 30th, 2018)
@@ -121,43 +128,71 @@ The recommended operating environments are as follows.
 
 # enebular edge agent Release Notes {#enebular-edge-agent}
 
-## Latest Release - 1.0.1 (June 7th, 2018)
+## Latest Release - 1.1.0 (January 18th, 2019) {#Latest Release - 1.1.0 January 18th, 2019}
 
-In 1.0.1 release, Updated Mbed Cloud Client to 1.3.1.1 General Availability (GA).
+## New {#New}
 
-## New
-N/A
+* Enable to work with enebular Reference Board RAVEN (RAVEN below)
+    * Network configuration is done using enebular Reference Board Configuration Tool
+* The http request node is now available
 
-## Fixed
-* Network disconnected when running an agent for an extended period of time. This was due to the Wi-Fi module taking full control of the communication processing. Issue solved by updating Wi-Fi module's library.
+## Fixed {#Fixed}
 
-## Changed
-* Updated Mbed Cloud Client to 1.3.1.1 General Availability (GA)
+* When using the BME 280 node, a bug may appear when a flow size exceeds 2kbs
 
-## Known Issues
+## Changed {#Changed}
 
-* * A BME280 node may not operate correctly if the flow size is too large.
-* An inject node can set only a Timestamp for the Payload and Repetition of the Interval.
+* Updated to [mbed OS 5.10.4](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.10.4)
+* Updated to [Device Management Client 2.0.1.1 General Availability (GA)](https://github.com/ARMmbed/mbed-cloud-client/releases/tag/2.0.1.1)
+* The maximum size of flow that RAVEN can execute is 5 KB
+
+## Known Issues {#KnownIssues}
+
+* When Wi-Fi is disconnected, in rare cases, even if the Wi-Fi environment recovers, it may remain disconnected and communications may not be restored
+    * Restart to recover 
 
 ### Operating Environment
 
 #### Operating System
 
-* [Mbed OS 5.8.2](https://github.com/ARMmbed/mbed-os/tree/mbed-os-5.8.2) (ARM Ltd.)
+* [mbed OS 5.10.4](https://github.com/ARMmbed/mbed-os/releases/tag/mbed-os-5.10.4)
 
 #### Hardware
 
-The following hardware is supported in enebular-edge-agent 1.0.1.
+The following hardware is supported in enebular-edge-agent 1.1.0.
 
-* [FRDM-K64F](https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/k-seriesperformancem4/k2x-usb/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F) (NXP Semiconductors N.V.) + Stag Beetle Board (Uhuru Corporation)
+* [enebular Reference Board RAVEN](./../Board/RAVEN.md) (Uhuru Corporation)
 
 #### Communication
 
 * IEEE 802.11 b/g/n (only 2.4GHz is supported for IEEE 802.11n)
 * WPA/WPA2
 
-## Release History
+### Tools {#Tools}
 
+#### enebular Reference Board Configuration Tool 1.0.0 {#enebular Reference Board Configuration Tool 1.0.0}
+
+##### New {#New}
+
+
+-  We have released "enebular Reference Board Configuration Tool" which used in network setting reference board for enebular-edge-agent
+    -Download is [here](https://download.enebular.com/eRB-Config-Tool/eRBConfigTool.msi). This software is Windows only
+
+##### Fixed {#Fixed}
+
+N/A
+
+##### Changed {#Changed}
+
+N/A
+
+##### Known Issues {}
+
+N/A
+
+## Release History {#Release History}
+
+* [1.1.0](./enebular-edge-agent/1.0.0.md) (Jan 18th, 2019)
 * [1.0.1](./enebular-edge-agent/1.0.1.md) (June 7th, 2018)
 * [1.0.0](./enebular-edge-agent/1.0.0.md) (May 18th, 2018)
 * [0.10.0](./enebular-edge-agent/0.10.0.md) (Apr 27th, 2018)

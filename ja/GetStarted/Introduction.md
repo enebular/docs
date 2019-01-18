@@ -1,17 +1,19 @@
 ---
-lastUpdated: 2018-07-31
+lastUpdated: 2018-01-09
 ---
 
 # Introduction
 
-このチュートリアルでは以下のことを行います。
+このチュートリアルでは「enebularにサインアップし、フローを編集する」ということを実施します。（所要時間20分）
 
-- enebularへのサインアップ
-- Project の作成
-- Asset(フロー)の作成
-- フローの編集
+## Table of Contents
 
-## enebularへのサインアップ
+1. [enebularへのサインアップ](#enebularへのサインアップ)
+1. [Project の作成](#Projectの作成)
+1. [Asset(フロー)の作成](#Assetの作成)
+1. [フローの編集](#フローの編集)
+
+## enebularへのサインアップ{#enebularへのサインアップ}
 
 ** 注意 : enebular v1のアカウントではenebular v2にはサインインできません。enebular v1 ユーザーの方でenebular v2を使用したい場合、新しくアカウントを作成してください。**
 
