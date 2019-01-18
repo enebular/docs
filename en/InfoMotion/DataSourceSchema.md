@@ -35,7 +35,7 @@ For an enebular sample barchart the folowing data is required.
 }
 ```
 
-## JSON Data Schema
+## JSON Data Schema {#JSON Data Schema}
 
 ```json
 {

@@ -2,7 +2,7 @@
 lastUpdated: 2018-03-28
 ---
 
-# InfoType
+# InfoType {#InfoType}
 
 InfoType とは InfoMotion で利用するグラフのタイプのことです。
 
@@ -34,7 +34,7 @@ InfoType をアップロードすると、enebular 上で確認できます。
 
 InfoType を選択すると InfoType の詳細画面へ移動します。
 
-## Overview
+## Overview {#Overview}
 
 Overview ではグラフのプレビューができます。左からグラフ、スキーマ設定、データになります。スキーマとデータを変更して Preview を押すとグラフプレビューを更新できます。
 
@@ -44,7 +44,7 @@ Overview ではグラフのプレビューができます。左からグラフ�
 
 ![](../_asset/images/InfoMotion/infotype-update.png)
 
-## Settings
+## Settings {#Settings}
 
 Settings では InfoType の名前の確認、説明の編集、InfoType の削除ができます。
 

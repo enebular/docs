@@ -2,7 +2,7 @@
 lastUpdated: 2018-5-24
 ---
 
-# InfoMotion の共有
+# InfoMotion の共有 {#InfoMotion の共有}
 
 ## InfoMotion スクリプト{#InfoMotion スクリプト}
 
@@ -11,11 +11,11 @@ lastUpdated: 2018-5-24
 埋め込みには以下の2つのファイルを読み込む必要があります。
 
 ```html
-<script src="http://enebular-v2.herokuapp.com/emi/enebular-infomotion/infomotion.js"></script>
-<script src="http://enebular-v2.herokuapp.com/emi/enebular-infomotion/infomotionUI.js"></script>
+<script src="https://s3-ap-northeast-1.amazonaws.com/enebular-infomotion/1.0.18/infomotion.js"></script>
+<script src="https://s3-ap-northeast-1.amazonaws.com/enebular-infomotion/1.0.18/infomotionUI.js"></script>
 ```
 
-## グラフコンポーネントの設定
+## グラフコンポーネントの設定 {#グラフコンポーネントの設定}
 
 ダッシュボードの設定です。3つの設定があります。
 
@@ -35,7 +35,7 @@ var settings = {
 ```
 
 
-## GraphContext
+## GraphContext {#GraphContext}
 
 グラフとコンポーネントをバインドします。
 
@@ -45,7 +45,7 @@ var settings = {
 var graphContext = infomotion.graphContext(settings);
 ```
 
-## DatePicker
+## DatePicker {#DatePicker}
 
 日付指定コンポーネントです。
 
@@ -58,7 +58,7 @@ var datePicker = infomotionUI.datePicker(document.querySelector('#enebularDatePi
 ```
 
 
-## Timeline
+## Timeline {#Timeline}
 
 DatePicker より細かい時間指定をするコンポーネントです。
 
@@ -69,7 +69,7 @@ var timeline = infomotionUI.timeline(
 ).make();
 ```
 
-## LiveButton
+## LiveButton {#LiveButton}
 
 リアルタイムモードに切り替えるボタンコンポーネントです。
 
@@ -78,7 +78,7 @@ var liveButton = infomotionUI.liveButton(document.querySelector('#btnLive'))
                  .make();
 ```
 
-## GraphContext  へコンポーネントを登録
+## GraphContext  へコンポーネントを登録 {#GraphContext  へコンポーネントを登録}
 
 すべてのコンポーネントが `make` されたら、GraphContext へ登録します。
 
@@ -89,7 +89,7 @@ graphContext
   .useDatePicker(datePicker)
 ```
 
-## グラフの設定
+## グラフの設定 {#グラフの設定}
 
 グラフの設定です。3つの設定があります。
 
@@ -136,31 +136,31 @@ var settingGraph = {
 }
 ```
 
-## DOM の作成
+## DOM の作成 {#DOM の作成}
 
 ```javascript
 var graph1 = infomotionUI.graph(document.querySelector('#graph'), settingGraph);
 ```
 
-## Topic の設定
+## Topic の設定 {#Topic の設定}
 
 ```javascript
 graph1.useTopic('country-data');
 ```
 
-## graphContext へのグラフの登録
+## graphContext へのグラフの登録 {#graphContext へのグラフの登録}
 
 ```javascript
 graphContext.useGraphs(graph1);
 ```
 
-## graphContext からグラフを削除
+## graphContext からグラフを削除 {#graphContext からグラフを削除}
 
 ```javascript
 graphContext.removeGraph(graph1)
 ```
 
-## フィルターの設定
+## フィルターの設定 {#フィルターの設定}
 
 ```javascript
 graph0.useFilter([{
@@ -169,14 +169,14 @@ graph0.useFilter([{
 }]);
 ```
 
-## 例
+## 例 {#例}
 
 ```html
 <link rel="stylesheet" href="http://localhost:3000/emi/enebular-infomotion/css/app.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://cdn.mlkcca.com/v2.0.0/milkcocoa.js"></script>
-<script src="https://enebular-v2.herokuapp.com/emi/enebular-infomotion/infomotion.js"></script>
-<script src="https://enebular-v2.herokuapp.com/emi/enebular-infomotion/infomotionUI.js"></script>
+<script src="https://s3-ap-northeast-1.amazonaws.com/enebular-infomotion/1.0.18/infomotion.js"></script>
+<script src="https://s3-ap-northeast-1.amazonaws.com/enebular-infomotion/1.0.18/infomotionUI.js"></script>
 <style>
 .container {
   padding-right: 15px;

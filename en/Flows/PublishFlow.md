@@ -2,7 +2,7 @@
 lastUpdated: 2018-01-30
 ---
 
-# Publishing Flows
+# Publishing Flows {#Publishing Flows}
 
 Flows can be published with "Publish" on the flow overview page. Flows that have been published can be imported and used by other users.
 
@@ -12,7 +12,7 @@ You can confirm and alter the name and description, and then publish the flow.
 
 ![](https://i.gyazo.com/cc23d123e109024feaa6e55fd216cfdf.png)
 
-## Importing Published Flows
+## Importing Published Flows {#Importing Published Flows}
 
 Published flows can be found in "Discover" on the top navigation bar.
 

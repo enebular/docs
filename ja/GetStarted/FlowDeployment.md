@@ -2,7 +2,7 @@
 lastUpdated: 2019-01-09
 ---
 
-# Flow Deployment
+# Flow Deployment {#Flow Deployment}
 
 enebular の特徴として、作成したフローを様々な環境にデプロイし動作させるというものがあります。
 このチュートリアルでは、「フローを別のサービス（Heroku）にデプロイし動作する」ということをします。（所要時間40分）
@@ -18,7 +18,7 @@ Herokuアカウントの取得については、[Heroku](https://heroku.com) か
 1. [Heroku ボタンでアプリを作成](#Herokuボタンでアプリを作成)
 1. [フローのデプロイ](#フローのデプロイ)
 
-## Heroku に送るフローを作成
+## Heroku に送るフローを作成 {#Heroku に送るフローを作成}
 
 ![flow](./../../img/GetStarted/FlowDeployment-flow.png)
 Assets からフローを作成します（既にフローを作成済みの場合、それを利用することも可能です）。
@@ -29,7 +29,7 @@ Heroku に送りたいフローを作成して、デプロイして保存しま�
 
 ![deployButton](./../../img/GetStarted/FlowDeployment-deployButton.png)
 
-## デプロイの設定
+## デプロイの設定 {#デプロイの設定}
 
 つづいて、デプロイの設定をします。  
 フローが作成できたら上部のメニューから Deploy ページに移動します。
@@ -69,7 +69,7 @@ Heroku API Token に API Key をコピーして、[Save] を押します。
 
 ![herokuButton](./../../img/GetStarted/FlowDeployment-herokuButton.png)
 
-## Heroku ボタンでアプリを作成
+## Heroku ボタンでアプリを作成 {#Heroku ボタンでアプリを作成}
 
 Heroku ボタンでアプリを作成します。すでに作成されている方は読み飛ばして下さい。  
 Heroku ボタンを押すとログインしていない場合、Heroku のログイン画面が出てくるのでログインします。
@@ -128,6 +128,6 @@ Heroku アプリで確認すると無事フローがデプロイされていま�
 
 ![confirmDeployed](./../../img/GetStarted/FlowDeployment-confirmDeployed.png)
 
-## Well Done!
+## Well Done! {#Well Done!}
 
 enebular のデプロイ機能を使用して、作成した Asset(フロー)を別のサービスにデプロイすることが出来るようになりました。

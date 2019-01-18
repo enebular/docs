@@ -2,7 +2,7 @@
 lastUpdated: 2018-08-01
 ---
 
-# Project
+# Project {#Project}
 
 **Project** とは文字通りプロジェクトの単位です。[Introduction](../INDEX.md) でも触れたように、アセットやデバイスの管理ができます（画像内でデバイスがプロジェクトに含まれていないのは、デプロイされている実際の場所が外部のサービスの環境であるためです）。
 
@@ -18,7 +18,7 @@ lastUpdated: 2018-08-01
 
 プロジェクトの管理画面には以下のようなページがあります。
 
-## Assets
+## Assets {#Assets}
 
 プロジェクト内で管理するコンテンツです。
 
@@ -26,7 +26,7 @@ lastUpdated: 2018-08-01
 - [InfoMotion](../InfoMotion/Introduction.md): データの可視化を行うグラフダッシュボード
 - [InfoType](../InfoMotion/InfoTypeIntroduction.md): InfoMotion で利用するグラフのタイプ
 
-### Assets 検索
+### Assets 検索 {#Assets 検索}
 
 アカウントに紐づく Asset を、ページ上部の検索ボックスから検索することが出来ます。
 検索結果はプロジェクトの管理画面に一覧表示されます。
@@ -36,14 +36,14 @@ Project名 で検索した場合、Project に紐づく Asset が一覧表示さ
 
 ![select project](../../img/Projects/index-searchAssets.png)
 
-## Devices
+## Devices {#Devices}
 
 プロジェクト内で管理するデバイスです。ここでいうデバイスとは Asset がデプロイされているデバイスを指します。
 
 - [Device List](../Device/DeviceList.md): デバイスの一覧
 - Licence Manager: 有償機能を利用するためのライセンス管理
 
-## Config
+## Config {#Config}
 
 プロジェクトに関する設定です。
 

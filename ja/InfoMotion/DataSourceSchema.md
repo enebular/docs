@@ -2,7 +2,7 @@
 lastUpdated: 2018-12-14
 ---
 
-# Data Source Schema  {#Data Source Schema}
+# Data Source Schema {#Data Source Schema}
 
 すべてのデータソースのデータは、下記のスキーマに示すように Unix タイムスタンプ値を含む `ts` キーを持つ必要があります。
 `ts` の値は、daterange picker や timeline によりビジュアライズするデータ範囲を特定する際に InfoMotion で利用されます。
@@ -15,7 +15,7 @@ lastUpdated: 2018-12-14
 }
 ```
 
-#InfoType サンプルデータ{#InfoType サンプルデータ}
+#InfoType サンプルデータ {#InfoType サンプルデータ}
 
 InfoType 毎に、データに特定のキーと値が含まれることが必要となります。
 InfoType に応じて必要となるキーと値を知るには、InfoType のプレビューの右側に表示されるサンプルデータが役に立ちます。
@@ -32,7 +32,7 @@ InfoType に応じて必要となるキーと値を知るには、InfoType の�
 }
 ```
 
-## JSON Data Schema
+## JSON Data Schema {#JSON Data Schema}
 
 ```json
 {

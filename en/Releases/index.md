@@ -6,17 +6,17 @@ lastUpdated: 2019-01-18
 
 ## Latest Release - 2.7.1 (January 18th, 2019)
 
-## New
+## New {#New}
 
 - None
 
-## Fixed
+## Fixed {#Fixed}
 
 - Fixed the user interface so that user privilege does not change when the "Default Privilege" of an asset is changed.
 - Fixed the issue that caused Device List screen to fall apart when "Monitoring" button is pressed.
 - Fixed the issue that caused the downloaded InfoMotion data to be "Undefined."
 
-## Changed
+## Changed {#Changed}
 
 - Asynchronized the deploy process of flows.
 - Now the status of flows being deployed can be observed at the notification section.
@@ -27,13 +27,12 @@ lastUpdated: 2019-01-18
 - Updated the "Register License to a Device" selection screen at License Manager and changed device selection controls from check boxes to radio buttons.
 - The downloadable maximum InfoMotion data size is set to 10MB.
 
-## Known Issues
+## Known Issues {#Known Issues}
 
-- Opening the flow editor from a web browser shows Japanese texts even if the browser is configured to show English.
 - The shared page with InfoMotion embedded, the filter function can not be used.
 - From the "Contact" page, clicking on enebular logo causes to show the top page based on the web browser's language instead of the language Contact page is showing.
 
-## Release History
+## Release History {#Release History}
 
 - [2.7.1](./enebular/2.7.1.md) (January 18th, 2019)
 - [2.7.0](./enebular/2.7.0.md) (December 14th, 2018)
@@ -62,17 +61,17 @@ lastUpdated: 2019-01-18
 
 # enebular agent Release Notes {#enebular-agent}
 
-## Latest Release - 2.3.0 (November 30th, 2018)
+## Latest Release - 2.3.0 (November 30th, 2018) {#Latest Release - 2.3.0 (November 30th, 2018)}
 
-## New
+## New {#New}
 
 - File Deploys, the new enebular function to allow enebular to deploy files, has been added.
 
-## Fixed
+## Fixed {#Fixed}
 
 - Fixed an issue where an invalid AWS IoT configuration file was included in the prebuilt package (*-prebuilt.tar.gz)
 
-## Changed
+## Changed {#Changed}
 
 - Updated the install script to add the enebular-agent user to the gpio group on Raspberry Pi devices so that the Node-RED nrgpio node types work by default.
 - Updated systemd service startup registration so that enebular-agent is automatically restarted after 60 seconds if it terminates abnormally for some reason.
@@ -81,15 +80,15 @@ lastUpdated: 2019-01-18
     - Changed mentions of “Mbed Cloud” to “Pelion Device Management”
     - Use shorter install script download URL
 
-## Known Issues
+## Known Issues {#Known Issues}
 
  N/A
 
-### Recommended Hardware
+### Recommended Hardware {#Recommended Hardware}
 The recommended hardware is as follows.
 * Raspberry PI3 Model B
 
-### Operating Environment
+### Operating Environment {#Operating Environment}
 
 The recommended operating environments are as follows.
 
@@ -117,7 +116,7 @@ The recommended operating environments are as follows.
 * npm 5.6.0
 * node-red 0.17.5
 
-## Release History
+## Release History {#Release History}
 
 - [2.3.0](./enebular-agent/2.3.0.md) (November 30th, 2018)
 - [2.2.0](./enebular-agent/2.2.0.md) (September 7th, 2018)
@@ -151,7 +150,7 @@ The recommended operating environments are as follows.
 * When Wi-Fi is disconnected, in rare cases, even if the Wi-Fi environment recovers, it may remain disconnected and communications may not be restored
     * Restart to recover 
 
-### Operating Environment
+### Operating Environment {#Operating Environment}
 
 #### Operating System
 
@@ -203,24 +202,24 @@ N/A
 
 # enebular editor Release Notes {#enebular-editor}
 
-## Latest Release - 0.9.0 (November 30th, 2018)
+## Latest Release - 0.9.0 (November 30th, 2018) {#Latest Release - 0.9.0 (November 30th, 2018)}
 
-## New
+## New {#New}
 
 - We have released the beta version of "enebular editor" which allows you to edit enebular flows on your PC and deploy them directly from it. （[Win](https://s3-ap-northeast-1.amazonaws.com/enebular-editor/win/enebular+editor+Setup+0.9.0.exe)/[Mac](https://s3-ap-northeast-1.amazonaws.com/enebular-editor/mac/enebular+editor-0.9.0.dmg))
 
-## Fixed
+## Fixed {#Fixed}
 
 N/A
 
-## Changed
+## Changed {#Changed}
 
 N/A
 
-## Known Issues
+## Known Issues {#Known Issues}
 
 - AWS Lambda Request node cannot be used if the flow is edited from the enebular editor connected to an enebular-agent.
 
-## Release History
+## Release History {#Release History}
 
 * [0.9.0](./enebular-editor/0.9.0.md) (November 30th, 2018)

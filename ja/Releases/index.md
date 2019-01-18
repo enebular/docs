@@ -6,17 +6,17 @@ lastUpdated: 2019-01-18
 
 ## Latest Release - 2.7.1 (January 18th, 2019)
 
-## New
+## New {#New}
 
 - None
 
-## Fixed
+## Fixed {#Fixed}
 
 - 各AssetsのDefault Privilegeを変更しても、ユーザーの権限が変更されないように修正しました
 - Device List画面でMonitoringボタンを押した際、レイアウトが崩れてしまう問題を修正しました
 - ダウンロードしたInfoMotionのデータがUndefinedとなってしまう問題を修正しました
 
-## Changed
+## Changed {#Changed}
 
 - FlowのDeployプロセスを非同期Deployに変更しました
 - FlowのDeploy状況を通知領域で表示するようにしました
@@ -27,13 +27,12 @@ lastUpdated: 2019-01-18
 - License Managerのライセンス登録時に、対象デバイスを選択する画面のボタンをCheckboxからRadioボタンに変更し、デバイスを1つだけ選択できるようにしました
 - ダウンロードできるInfoMotionのデータの最大サイズを10MBに制限しました
 
-## Known Issues
+## Known Issues {#Known Issues}
 
-- 言語設定を英語にしたブラウザでフローエディタを開いても、一部の説明文が日本語で表示されます
 - InfoMotionを埋め込んだ共有ページでは、filter機能が使用できません
 - 英語のContact画面からenebularロゴを押してトップページに移動した場合、日本語で表示されます
 
-## Release History
+## Release History {#Release History}
 
 - [2.7.1](./enebular/2.7.1.md) (January 18th, 2019)
 - [2.7.0](./enebular/2.7.0.md) (December 14th, 2018)
@@ -62,17 +61,17 @@ lastUpdated: 2019-01-18
 
 # enebular agent Release Notes {#enebular-agent}
 
-## Latest Release - 2.3.0 (November 30th, 2018)
+## Latest Release - 2.3.0 (November 30th, 2018) {#Latest Release - 2.3.0 (November 30th, 2018)}
 
-## New
+## New {#New}
 
 - enebular から enebular agent にファイルをデプロイすることの出来る"Files Deploy"機能が新たに追加されました
 
-## Fixed
+## Fixed {#Fixed}
 
 - 不正なAWS IoT用設定ファイルがビルド済みパッケージ（*-prebuilt.tar.gz）に含まれていた不具合に対応しました
 
-## Changed
+## Changed {#Changed}
 
 - Raspberry Piのデバイスで、Node-REDのnrgpioノードがデフォルトで正しく動作するように、enebular-agentのユーザがgpioグループに追加されるようにインストールスクリプトを変更しました
 - enebular-agentが何らかの理由で異常終了した場合、60秒後に自動的に再起動されるようにsystemd用のサービス起動登録機能を変更しました
@@ -81,15 +80,15 @@ lastUpdated: 2019-01-18
     - "Mbed Cloud"と記載されているところを全て"Pelion Device Management"に変更しました
     - インストールスクリプトのダウンロード用URLを短縮したものに変更しました
 
-## Known Issues
+## Known Issues {#Known Issues}
 
  N/A
 
-### Recommended Hardware
+### Recommended Hardware {#Recommended Hardware}
 推奨動作ハードウェアは下記の通りです。
 * Raspberry PI3 Model B
 
-### Operating Environment
+### Operating Environment {#Operating Environment}
 推奨動作環境は下記の通りです。
 
 #### Raspberry PI3 Model B
@@ -116,7 +115,7 @@ lastUpdated: 2019-01-18
 * npm 5.6.0
 * node-red 0.17.5
 
-## Release History
+## Release History {#Release History}
 
 - [2.3.0](./enebular-agent/2.3.0.md) (November 30th, 2018)
 - [2.2.0](./enebular-agent/2.2.0.md) (September 7th, 2018)
@@ -146,7 +145,7 @@ lastUpdated: 2019-01-18
 * Wi-Fiが切断された際、ごくまれにWi-Fi環境が復旧しても切断されたままになり通信が復旧しないことがあります
     * 再起動で復旧します
 
-### Operating Environment
+### Operating Environment {#Operating Environment}
 
 #### Operating System
 
@@ -197,24 +196,24 @@ N/A
 
 # enebular editor Release Notes {#enebular-editor}
 
-## Latest Release - 0.9.0 (November 30th, 2018)
+## Latest Release - 0.9.0 (November 30th, 2018) {#Latest Release - 0.9.0 (November 30th, 2018)}
 
-## New
+## New {#New}
 
 - enebularのフローをPC上で編集しデプロイするためのツール ”enebular editor"のβ版をリリースしました （[Win版](https://s3-ap-northeast-1.amazonaws.com/enebular-editor/win/enebular+editor+Setup+0.9.0.exe)/[Mac版](https://s3-ap-northeast-1.amazonaws.com/enebular-editor/mac/enebular+editor-0.9.0.dmg))
 
-## Fixed
+## Fixed {#Fixed}
 
 N/A
 
-## Changed
+## Changed {#Changed}
 
 N/A
 
-## Known Issues
+## Known Issues {#Known Issues}
 
 - enebular editorをenebular-agentに接続してflowを編集する場合、AWS Lambda Requestノードが使えません
 
-## Release History
+## Release History {#Release History}
 
 * [0.9.0](./enebular-editor/0.9.0.md) (November 30th, 2018)
