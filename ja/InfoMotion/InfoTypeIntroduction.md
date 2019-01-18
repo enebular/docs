@@ -18,21 +18,21 @@ InfoType とは InfoMotion で利用するグラフのタイプのことです�
 ```
 
 - Bar Chart
-![barchart](./../../img/InfoMotion/Infotype/Introduction-barchart.png)
+![barchart](./../../img/InfoMotion/InfoType/barchart.png)
 
 - Line Chart
-![linechart](./../../img/InfoMotion/Infotype/Introduction-linechart.png)
+![linechart](./../../img/InfoMotion/InfoType/linechart.png)
 
 
 - Pie Chart
-![piechart](./../../img/InfoMotion/Infotype/Introduction-piechart.png)
+![piechart](./../../img/InfoMotion/InfoType/piechart.png)
 
 - [InfoType の作成方法はこちら](./InfoMotionTool.md)
 - [作成した InfoType を enebular へアップロードする方法はこちら](./UploadInfoType.md)
 
 InfoType をアップロードすると、enebular 上で確認できます。
 
-![uploaded](./../../img/InfoMotion/Infotype/Introduction-uploaded.png)
+![uploaded](./../../img/InfoMotion/InfoType/Introduction-uploaded.png)
 
 InfoType を選択すると InfoType の詳細画面へ移動します。
 
@@ -40,14 +40,14 @@ InfoType を選択すると InfoType の詳細画面へ移動します。
 
 Overview ではグラフのプレビューができます。左からグラフ、スキーマ設定、データになります。スキーマとデータを変更して Preview を押すとグラフプレビューを更新できます。
 
-![overview](./../../img/InfoMotion/Infotype/Introduction-overview.png)
+![overview](./../../img/InfoMotion/InfoType/Introduction-overview.png)
 
 右上の Update から InfoType のファイルが更新ができます。
 
-![update](./../../img/InfoMotion/Infotype/Introduction-update.png)
+![update](./../../img/InfoMotion/InfoType/Introduction-update.png)
 
 ## Settings {#Settings}
 
 Settings では InfoType の名前の確認、説明の編集、InfoType の削除ができます。
 
-![settings](./../../img/InfoMotion/Infotype/Introduction-settings.png)
+![settings](./../../img/InfoMotion/InfoType/Introduction-settings.png)

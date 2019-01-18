@@ -18,15 +18,15 @@ The following are examples of default graphs.
 ```
 
 - Bar Chart
-![barchart](./../../img/InfoMotion/Infotype/Introduction-barchart.png)
+![barchart](./../../img/InfoMotion/InfoType/barchart.png)
 
 
 - Line Chart
-![linechart](./../../img/InfoMotion/Infotype/Introduction-linechart.png)
+![linechart](./../../img/InfoMotion/InfoType/linechart.png)
 
 
 - Pie Chart
-![piechart](./../../img/InfoMotion/Infotype/Introduction-piechart.png)
+![piechart](./../../img/InfoMotion/InfoType/piechart.png)
 
 
 - [See here for creating an InfoType](./InfoMotionTool.md)
@@ -34,7 +34,7 @@ The following are examples of default graphs.
 
 InfoTypes that are uploaded can be seen on enebular.
 
-![uploaded](./../../img/InfoMotion/Infotype/Introduction-uploaded.png)
+![uploaded](./../../img/InfoMotion/InfoType/Introduction-uploaded.png)
 
 Selecting an InfoType will take you to the InfoType details screen.
 
@@ -42,14 +42,14 @@ Selecting an InfoType will take you to the InfoType details screen.
 
 You can preview the graph here. From the left is the graph, schema settings and then the sample data. If you change the schema and sample data then click "Preview" the graph will update.
 
-![overview](./../../img/InfoMotion/Infotype/Introduction-overview.png)
+![overview](./../../img/InfoMotion/InfoType/Introduction-overview.png)
 
 The InfoType's files can be updated with "Update" at the top right. 
 
-![update](./../../img/InfoMotion/Infotype/Introduction-update.png)
+![update](./../../img/InfoMotion/InfoType/Introduction-update.png)
 
 ## Settings {#Settings}
 
 You can check the name, change the description and delete the InfoType here.
 
-![settings](./../../img/InfoMotion/Infotype/Introduction-settings.png)
+![settings](./../../img/InfoMotion/InfoType/Introduction-settings.png)

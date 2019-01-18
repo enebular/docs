@@ -6,13 +6,13 @@ lastUpdated: 2018-01-16
 
 Account Settings では自分のアカウントの情報を閲覧・編集できます。
 
-![profile](./../img/Account/index-overview.png)
+![profile](./../../img/Account/index-overview.png)
 
 ## Profile {#Profile}
 
 自分のプロフィール情報を編集できます。
 
-![profile](./../img/Account/index-profile.png)
+![profile](./../../img/Account/index-profile.png)
 
 - Username: Discover に表示されるニックネームです
 - Name: 個人情報としてのフルネームです
@@ -22,11 +22,11 @@ Account Settings では自分のアカウントの情報を閲覧・編集でき
 
 パスワードを変更できます。パスワードは8文字以上の英数字を利用ください。
 
-![profile](./../img/Account/index-updatePassword.png)
+![profile](./../../img/Account/index-updatePassword.png)
 
 ## Danger Zone {#Danger Zone}
 
 アカウントを削除できます。
 
-![profile](./../img/Account/index-dangerZone.png)
+![profile](./../../img/Account/index-dangerZone.png)
 
