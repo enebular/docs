@@ -11,6 +11,9 @@
         },
         {
             "pattern": "^https://www.arm.com/"
+        },
+        {
+            "pattern":"^https://www.raspbian.org/"
         }
     ]
 }
