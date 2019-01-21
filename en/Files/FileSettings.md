@@ -18,7 +18,7 @@ The asset name of the file.
 
 ## Description {#Description}
 
-The description of the file (optional).
+The description of the file.
 
 ## Deploy Directory {#Deploy Directory}
 
@@ -52,9 +52,9 @@ The arguments passed to the file when executed.
 The environment variables provided to the file when executed.
 
 - KEY
-    - The enviromnetal variable name
+    - The environment variable name
 - VALUE
-    - The enviromnetal variable value
+    - The environment variable value
 
 ## Deploy Hooks {#Deploy Hooks}
 

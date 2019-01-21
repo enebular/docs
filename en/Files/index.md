@@ -12,7 +12,7 @@ Files are one type of asset, and refer to the following.
 - Configuration files for use on devices
 - Other types of files used on devices (like image and video files)
 
-It's possble to, for example, execute shell scripts on a device or add configuration files to a device.
+It's possible to, for example, execute shell scripts on a device or add configuration files to a device.
 
 For executable files, it's possible to have the file executed when it is deployed to the device. Additionally, for any type of file, the **Hook** feature can be used to execute other files already deployed.
 

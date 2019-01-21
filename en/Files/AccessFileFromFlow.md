@@ -4,7 +4,7 @@ lastUpdated: 2019-01-22
 
 # Accessing Files From Flows {#Accessing Files From Flows}
 
-Files that have been deployed to a device can be accessed from a flow that has also been deployed to the same device. The following explains about that access.
+Files that have been deployed to a device can be accessed from a flow that has also been deployed to the same device. The following explains how to go about that access.
 
 ## File Paths {#File Paths}
 

@@ -4,7 +4,7 @@ lastUpdated: 2019-01-22
 
 # Deploying Files {#Deploying Files}
 
-Files that have been registered as assets on enebular can be deployed to 'paid' devices. The following explains about that deployment.
+Files that have been registered as assets on enebular can be deployed to 'paid' devices. The following explains how to go about that deployment.
 
 ## Supported Devices {#Supported Devices}
 
