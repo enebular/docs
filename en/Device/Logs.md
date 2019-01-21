@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2018-05-25
+lastUpdated: 2019-01-16
 ---
 
 # Logs {#Logs}
@@ -10,7 +10,7 @@ turning on the monitoring setting of the device.
 
 The specifications of the log output by enebular agent and enebular edge agent are different.
 
-![view_logs](../_asset/images/Device/Logs/view_logs.png)
+![view_logs](./../../img/Device/Logs-view_logs.png)
 
 To view the log, please click [View Logs] in the right part of the target device.
 
@@ -30,13 +30,13 @@ For details, please refer to [Node-RED Documentation](https://nodered.org/).
 
 If you want to output the log of the Debug node, output to the console is enabled by setting the Debug node to `debug tab and console`.
 
-![view_logs](../_asset/images/Device/Logs/debug_node_config.png)
+![debug_node_config](./../../img/Device/Logs-debug_node_config.png)
 
 ### How to read the log screen {#How to read the log screen}
 
 This is an example of the enebular agent's log screen.
 
-![cloud_logs](../_asset/images/Device/Logs/cloud_logs.png)
+![cloud_logs](./../../img/Device/Logs-cloud_logs.png)
 
 1. Timestamp of log output
 2. Log
@@ -46,7 +46,7 @@ This is an example of the enebular agent's log screen.
 
 The log output from the Debug node is displayed as follows.
 
-![cloud_logs](../_asset/images/Device/Logs/debug_node.png)
+![debug_node](./../../img/Device/Logs-debug_node.png)
 
 
 ## enebular edge agent log {#enebular edge agent log}
@@ -58,7 +58,7 @@ Logs are sent 30 seconds after booting the device, thereafter every 5 minutes.
 
 This is an example of the enebular edge agent log screen.
 
-![device_logs](../_asset/images/Device/Logs/eea_logs.png)
+![eea_logs](./../../img/Device/Logs-eea_logs.png)
 
 1. Log 
 2. Function name that output log 
@@ -82,18 +82,12 @@ For further information please contact ** support@enebular.com**.
 | device manager initialized |
 | flow def manager initialized | 
 | uhuru red initialized | 
-| flow URL length checked | 
-| flow downloaded | 
-| flow integrity checked | 
-| flow size checked | 
-| flow saved | 
 | SD initialized | 
 | flow deployed | 
 | flow executing |
 | flow executed | 
 | flash updated: device bandle | 
 | flash updated: flow define | 
-| flash updated: javascript code |
 
 #### error log
 

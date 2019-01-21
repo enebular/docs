@@ -5,6 +5,12 @@
         },
         {
             "pattern": "^https://download.enebular.com/enebular-editor/"
+        },
+        {
+            "pattern": "^https://download.enebular.com/eRB-Config-Tool/eRBConfigTool.msi"
+        },
+        {
+            "pattern": "^https://www.arm.com/"
         }
     ]
 }

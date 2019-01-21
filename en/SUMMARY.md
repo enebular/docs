@@ -86,12 +86,25 @@ lastUpdated: 2019-01-10
   - [Introduction](EnebularEditor/index.md)
   - [Remote Mode](EnebularEditor/RemoteMode.md)
 
+- [enebular edge agent]()
+  - [Introduction](EnebularEdgeAgent/introduction.md)
+  - [GettingStarted](EnebularEdgeAgent/GettingStarted.md)
+  - [Features](EnebularEdgeAgent/Features.md)
+  - [Configuration](EnebularEdgeAgent/Configuration.md)
+  - [Nodes](EnebularEdgeAgent/Nodes.md)
+  - [SampleFlows](EnebularEdgeAgent/SampleFlows.md)
+  - [Board](Board/Introduction.md)
+    - [RAVEN](Board/RAVEN.md)
+
 ## Resources
 
 - [Supported Environments]()
   - [enebular](Other/Support.md#enebular)
   - [enebular agent](Other/Support.md#enebular-agent)
   - [enebular edge agent](Other/Support.md#enebular-edge-agent)
+
+- [Hardware TechnicalDetail]()
+  - [RAVEN](Other/HWSpec-RAVEN.md)
 
 - [Release Notes]()
   - [enebular](Releases/index.md#enebular)
@@ -121,6 +134,7 @@ lastUpdated: 2019-01-10
     - [2.1.0](Releases/enebular-agent/2.1.0.md)
     - [2.0.0](Releases/enebular-agent/2.0.0.md)
   - [enebular edge agent](Releases/index.md#enebular-edge-agent)
+    - [1.1.0](Releases/enebular-edge-agent/1.1.0.md)
     - [1.0.1](Releases/enebular-edge-agent/1.0.1.md)
     - [1.0.0](Releases/enebular-edge-agent/1.0.0.md)
     - [0.10.0](Releases/enebular-edge-agent/0.10.0.md)

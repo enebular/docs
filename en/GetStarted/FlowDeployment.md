@@ -5,9 +5,16 @@ lastUpdated: 2019-01-09
 # Flow Deployment {#Flow Deployment}
 
 Deploying flows to various environments and operating systems is a feature of Enebular.
-In this tutorial we will be deploying a flow to Heroku.
+This tutorial will do 'deploy a flow to Heroku'.(Time required 40 minutes)
 
 To complete this tutorial you will need to understand how to create an [Asset(Flow)](./Introduction.md) and registered [Heroku](https://heroku.com).
+
+
+## Table of Contents {#Table of Contents}
+1. [Ready to deploy flow to Heroku](#ReadytodeployflowtoHeroku)
+1. [Deploy Settings](#DeploySettings)
+1. [Creating an app with the Heroku Button](#CreatinganappwiththeHerokuButton)
+1. [Deploying](#Deploying)
 
 ## Ready to deploy flow to Heroku {#Ready to deploy flow to Heroku}
 

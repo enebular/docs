@@ -1,12 +1,12 @@
 ---
-lastUpdated: 2019-01-04
+lastUpdated: 2019-01-16
 ---
 
 # Introduction {#Introduction}
 
 enebular is a development and operating service that comprehensively supports the creation of IoT products and services.
 
-![](https://i.gyazo.com/64b4e448bcbf896a9d53d8587e554554.png)
+![overview](./../img/Introduction/overview.png)
 
 In general terms there are three things handled in enebular.
 
@@ -14,7 +14,7 @@ In general terms there are three things handled in enebular.
 - **Devices**: These are devices to which assets can be deployed. This incorporates instances on both the edge side (microcontrollers and so on) and the cloud side (like serverless environments and VMs).
 - **Other Configuration**: This refers to any configuration needed for development and operation like the data sources of the data to be visualized and access permissions.
 
-![enebular overview](./_asset/images/Introduction/enebular-developers-project-overview.png)
+![devices](./../img/Introduction/devices.png)
 
 The primary way of using enebular is likely to be along the lines of **developing the assets on enebular.com and then once each asset is complete deploying and operating it on devices.**
 
@@ -50,10 +50,13 @@ While these services are utilized to deploy assets to devices, when doing a depl
 
 Let's look at an example of an actual service.
 
-![deploy diagram](./_asset/images/Introduction/enebular-developers-deploy.png)
+![example](./../img/Introduction/example.png)
 
 For cloud services that deploy to edge devices like AWS IoT and Pelion Device Management, the edge device is the **device** and the cloud service is the **device master**.
 
 If the execution environment exists in the cloud as with Heroku and AWS Lambda, then the cloud service takes on both the **device** and **device master** roles.
 
 The services to be used can be selected by the intended function of the assets being deployed. For example, AWS IoT and Pelion Device Management can be used for deploying assets that require information from physical devices like sensors, and Heroku and AWS Lambda can be used and for deploying assets designed for other management processes.
+
+
+If you have any questions, please contact support.(**support@enebular.com** or **Support form** in top right of Dashboard)
