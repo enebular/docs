@@ -6,7 +6,7 @@ lastUpdated: 2019-01-11
 
 デバイスにデプロイしたファイルを同じデバイスにデプロイしたFlowから参照することが出来ます。ここでその参照方法について説明します。
 
-## ファイルのパス
+## ファイルのパス {#File Paths}
 
 デバイスにデプロイされたFlowで `ENEBULAR_ASSETS_DATA_PATH` 環境変数によってデバイス上のファイル保存先のベースディレクトリを参照できるようになっています。
 
@@ -17,7 +17,7 @@ lastUpdated: 2019-01-11
 <ENEBULAR_ASSETS_DATA_PATH>/<Deploy Directory>/<Filename>
 ```
 
-## 事例
+## 事例 {#Example}
 
 この例には、ファイルの **Deploy Directory** が `hoge`、ファイル名が `hige.txt` だとします。
 
@@ -27,11 +27,11 @@ Flowで **process-env** タイプのノードを利用して環境変数を取�
 | --- | --- |
 | Key | 環境変数名 | ENEBULAR_ASSETS_DATA_PATH |
 
-次に、**function** タイプのノードを追加し、**Function** プロパティで **Deploy Directory** とファイル名を結合するJAVASCRIPTを入力します。
+次に、**function** タイプのノードを追加し、**Function** プロパティで以下のように **Deploy Directory** とファイル名をベースディレクトリに結合するJavaScriptのコードを入力します。
 
 ```
 msg.payload = msg.payload + '/hoge/hige.txt';
 return msg;
 ```
 
-これで、このノードからのメッセージの`payload`を次のノードでファイル名として利用できます。
+これで、このノードからのメッセージの`payload`を次のノードでファイルのフルパスとして利用できます。
