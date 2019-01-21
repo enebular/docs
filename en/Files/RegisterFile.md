@@ -6,7 +6,7 @@ lastUpdated: 2019-01-21
 
 In order to deploy a file to a device, it first must be registered as an asset on enebular. The following explains how to register a file.
 
-First, select **Files** from the project menu to display the registered file list.
+First, select **Files** from the project menu to display the registered file asset list.
 
 TODO: screenshot
 
