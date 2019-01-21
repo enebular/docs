@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2019-01-10
+lastUpdated: 2019-01-21
 ---
 
 # ファイルの登録 {#Registering Files}
@@ -22,7 +22,7 @@ TODO: screenshot
 
 | 項目名 | 説明 | 設定内容 |
 | --- | --- |
-| Title | ファイルのアセット名 | 分かりやすい任意の名前を入力します |
+| Name | ファイルのアセット名 | 分かりやすい任意の名前を入力します |
 
 TODO: screenshot
 

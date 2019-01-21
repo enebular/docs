@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2019-01-10
+lastUpdated: 2019-01-21
 ---
 
 # File Settings {#File settings}
@@ -12,7 +12,7 @@ The file to upload to enebular.
 
 - The maximum file size is 500MB.
 
-## Title {#Title}
+## Name {#Name}
 
 The asset name of the file.
 
