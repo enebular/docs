@@ -18,22 +18,22 @@ Files can be deployed to devices that meet the following conditions.
 
 First, select **Files** from the project menu to display the registered file asset list.
 
-TODO: screenshot
+![File List](./../../img/File/File-list.png)
 
 Select the file to deploy from the list and the file's **Overview** will be displayed.
 
-TODO: screenshot
+![File List](./../../img/File/File-overview.png)
 
 In the **Overview** click the ** Deploy ** button and a device connection list will be displayed. Select the connection of the devices to deploy to from the list. If the connection hasn't been registered yet, add it by referring to the explanation in [flow deploys](../Deploy/index.md).
 
-TODO: screenshot
+![File List](./../../img/File/DeployFile-connection.png)
 
 After choosing a connection from the list, a list of the connection's devices will be displayed. Select the devices to deploy to and click the ** Deploy ** button.
 
-TODO: screenshot
+![File List](./../../img/File/DeployFile-device.png)
 
 When the ** Deploy ** button is clicked the deploy process starts and the file's **Deployment History** is displayed. The status of the deployment to the devices can be checked here.
 
-TODO: screenshot
+![File List](./../../img/File/DeployFile-deployHistory.png)
 
 Once the deploy process completes successfully ** Deployed ** is displayed in the ** Deploy Status ** column.

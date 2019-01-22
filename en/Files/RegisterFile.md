@@ -8,15 +8,13 @@ In order to deploy a file to a device, it first must be registered as an asset o
 
 First, select **Files** from the project menu to display the registered file asset list.
 
-TODO: screenshot
+![File List](./../../img/File/File-list.png)
 
 Click the **+** button at the bottom right of the file list.
 
-TODO: screenshot
-
 The **Add File** popup will be displayed. Here, first select the file to register.
 
-TODO: screenshot
+![File List](./../../img/File/RegisterFile-addFile.png)
 
 After selecting the file, specify its settings. At a minimum, the following item must be set.
 
@@ -24,13 +22,11 @@ After selecting the file, specify its settings. At a minimum, the following item
 | --- | --- |
 | Name | File asset name | A descriptive name of your choosing |
 
-TODO: screenshot
-
 For details on the settings aside from that above such as the deploy directory, deploy time execution and hooks, refer to [File Settings](FileSettings.md).
 
-Once the settings are done, click the ** Upload ** button to upload the file.
+Once the settings are done, click the ** Upload ** button at the bottom to upload the file.
 
-TODO: screenshot
+![File List](./../../img/File/RegisterFile-upload.png)
 
 When the upload completes, the file is registered as an asset and the file's ** Overview ** is displayed.
 

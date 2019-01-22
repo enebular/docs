@@ -8,15 +8,13 @@ lastUpdated: 2019-01-21
 
 まずは、プロジェクトのメニューから **Files** を選択して登録済みファイルアセットの一覧を表示します。
 
-TODO: screenshot
+![File List](./../../img/File/File-list.png)
 
 ファイル一覧の右下にある **+** ボタンをクリックします。
 
-TODO: screenshot
-
 **Add File** ポップアップが表示されます。ここでまずは登録したいファイルを選択します。
 
-TODO: screenshot
+![File List](./../../img/File/RegisterFile-addFile.png)
 
 ファイルを選択してから、ファイルの設定を指定します。少なくとも、以下の項目を設定する必要があります。
 
@@ -24,13 +22,11 @@ TODO: screenshot
 | --- | --- |
 | Name | ファイルのアセット名 | 分かりやすい任意の名前を入力します |
 
-TODO: screenshot
-
 デプロイ先のディレクトリや、デプロイ時の実行、Hookなど、上記以外の設定項目の詳細については、[File Settings](FileSettings.md)を参照してください。
 
 設定項目の指定ができたら、下にある ** Upload ** ボタンをクリックしてファイルをアップロードします。
 
-TODO: screenshot
+![File List](./../../img/File/RegisterFile-upload.png)
 
 アップロードが完了すると、ファイルがアセットとして登録され、ファイルの **Overview** が表示されます。
 
