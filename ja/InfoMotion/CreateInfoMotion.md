@@ -24,11 +24,11 @@ enebular の管理画面の Create InfoMotion から作成できます。
 
 ![](../_asset/images/InfoMotion/enebular-developers-create-infomotion.png)
 
-項目を埋めたら Add graph で作成後、プラスボタンでダッシュボードに追加できます。
+項目を埋めたら Save ボタンを押すことで保存した後、Add ボタンでダッシュボードに追加できます。
 
 ![](../_asset/images/InfoMotion/enebular-developers-display-infomotion.png)
 
-サイドバーに複数のグラフを追加できます。
+サイドバーには複数のグラフを追加できます。
 
 ![](../_asset/images/InfoMotion/enebular-developers-display-infomotion-multi.png)
 
@@ -76,7 +76,8 @@ Daterange、Timeline、Playボタン を使って InfoMotion で使うデータ�
 
 ## フィルターの使い方 {#フィルターの使い方}
 
-フィルターを利用していないグラフを以下に示します。`category` の値が `A`・`B`・`C`・`D` であるデータを使ってグラフを描画しています。
+フィルターを利用していないグラフを以下に示します。
+このグラフでは、`category` の値が `A`・`B`・`C`・`D` であるデータを使ってグラフを描画しています。
 
 ![](../_asset/images/InfoMotion/enebular-developers-infomotion-prefilter.png)
 
