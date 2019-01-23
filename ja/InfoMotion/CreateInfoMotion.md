@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2019-1-23
+lastUpdated: 2019-01-23
 ---
 
 # InfoMotion ダッシュボード {#InfoMotion ダッシュボード}
