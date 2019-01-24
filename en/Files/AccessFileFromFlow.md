@@ -29,7 +29,7 @@ Environment variables can be obtained in a flow by using the **process-env** nod
 Next, add a **function** type node and enter the JavaScript code as shown below to join the **Deploy Directory** and the filename to the base directory.
 
 ```
-msg.payload = msg.payload + '/hoge/hige.txt';
+msg.payload = msg.payload + '/hoge/foo.txt';
 return msg;
 ```
 
