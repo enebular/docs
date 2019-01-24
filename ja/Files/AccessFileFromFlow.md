@@ -19,7 +19,7 @@ lastUpdated: 2019-01-11
 
 ## 例 {#Example}
 
-この例には、ファイルの **Deploy Directory** が `hoge`、ファイル名が `hige.txt` だとします。
+ここでは、**Deploy Directory** を `bar`、ファイル名を `foo.txt` としています。
 
 Flowで **process-env** タイプのノードを利用して環境変数を取得できます。このノードのプロパティを以下のように設定します。
 
