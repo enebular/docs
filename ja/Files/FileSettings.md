@@ -63,6 +63,8 @@ Execution の最大実行時間を設定します。
 
 ### Stage {#Stage}
 
+Pre-Deployあるいは、Post-Deployを選択します。
+
 #### Pre-Deploy {#Pre-Deploy}
 
 デプロイの実施前に、Pre-Deployとしてデプロイ済みのファイルを実行します。
