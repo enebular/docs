@@ -17,7 +17,7 @@ lastUpdated: 2019-01-11
 <ENEBULAR_ASSETS_DATA_PATH>/<Deploy Directory>/<Filename>
 ```
 
-## 事例 {#Example}
+## 例 {#Example}
 
 この例には、ファイルの **Deploy Directory** が `hoge`、ファイル名が `hige.txt` だとします。
 
