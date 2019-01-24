@@ -30,7 +30,7 @@ Flowで **process-env** タイプのノードを利用して環境変数を取�
 次に、**function** タイプのノードを追加し、**Function** プロパティで以下のように **Deploy Directory** とファイル名をベースディレクトリに結合するJavaScriptのコードを入力します。
 
 ```
-msg.payload = msg.payload + '/hoge/hige.txt';
+msg.payload = msg.payload + '/hoge/foo.txt';
 return msg;
 ```
 
