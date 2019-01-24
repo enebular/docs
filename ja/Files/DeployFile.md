@@ -24,7 +24,9 @@ enebularにアセットとして登録したファイルを有償デバイスに
 
 ![File List](./../../img/File/File-overview.png)
 
-この **Overview** で **Deploy** ボタンをクリックすると、デバイス接続の一覧が表示されます。デバイス接続の一覧からデプロイしたいデバイスの接続を選択します。デバイスの接続をまだ登録していない場合、[Flowデプロイの説明](../Deploy/index.md)を参考にして登録してください。
+**Deploy** ボタンをクリックし、表示されるConnection一覧から、デプロイしたいデバイスのあるConnectionを選択してください。
+
+※Connectionをまだ登録していない場合、[Flowデプロイの説明](../Deploy/index.md)を参考にして登録してください。
 
 ![File List](./../../img/File/DeployFile-connection.png)
 
