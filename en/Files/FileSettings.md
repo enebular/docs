@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2019-01-21
+lastUpdated: 2019-01-24
 ---
 
 # File Settings {#File settings}
@@ -31,23 +31,23 @@ The directory name when deploying.
 
 These are settings for executing the file on deploy.
 
-### Execute On Deploy
+### Execute On Deploy {#Execute On Deploy}
 
 When enabled, the file is treated as an executable and executed on deploy.
 The file is executed as the same user as enebular-agent.
 
-### Max Execution Time
+### Max Execution Time {#Max Execution Time}
 
 The maximum time of the file's execution.
 Any number of seconds between 1 and 300 (5 minutes) can be specified.
 
 If the file's execution exceeds the maximum execution time, the execution is forcibly stopped.
 
-### Execution Arguments
+### Execution Arguments {#Execution Arguments}
 
 The arguments passed to the file when executed.
 
-### Environment Variables
+### Environment Variables {#Environment Variables}
 
 The environment variables provided to the file when executed.
 
@@ -60,27 +60,27 @@ The environment variables provided to the file when executed.
 
 This is for executing other files already deployed when deploying this file.
 
-### Stage
+### Stage {#Stage}
 
-#### Pre-Deploy
+#### Pre-Deploy {#Pre-Deploy}
 
 Selecting Pre-Deploy executes the existing file immediately before this file is deployed.
 If no file is specified then the hook doesn't run.
 
 For example, you could run a shell script before deployment that deletes some files from the deploy directory which are no longer needed.
 
-#### Post-Deploy
+#### Post-Deploy {#Post-Deploy}
 
 Selecting Post-Deploy executes the existing file immediately after this file is deployed.
 If no file is specified then the hook doesn't run.
 
 For example, you could run a shell script after deployment that deletes some files from the deploy directory which are no longer needed.
 
-### Asset Path
+### Asset Path {#Asset Path}
 
 The path of the asset to execute.
 
-### Max Execution Time
+### Max Execution Time {#Max Execution Time}
 
 The maximum time of the hook's execution.
 Any number of seconds between 1 and 300 (5 minutes) can be specified.
