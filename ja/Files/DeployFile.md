@@ -34,7 +34,7 @@ Connectionに登録されているデバイスの一覧が表示されます。�
 
 ![File List](./../../img/File/DeployFile-device.png)
 
-**Deploy** ボタンをクリックすると、デプロイ処理が開始し、ファイルの **Deployment History** が表示されます。ここでデバイスへのデプロイ状態を確認できます。
+デプロイ処理が始まり、ファイルの **Deployment History** が表示されます。デバイスへのデプロイ状態を確認できます。
 
 ![File List](./../../img/File/DeployFile-deployHistory.png)
 
