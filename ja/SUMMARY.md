@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2019-01-18
+lastUpdated: 2019-01-24
 ---
 
 ## Getting Started
@@ -104,6 +104,7 @@ lastUpdated: 2019-01-18
 
 - [Release Notes]()
   - [enebular](Releases/index.md#enebular)
+    - [2.7.2](Releases/enebular/2.7.2.md)
     - [2.7.1](Releases/enebular/2.7.1.md)
     - [2.7.0](Releases/enebular/2.7.0.md)
     - [2.6.1](Releases/enebular/2.6.1.md)
