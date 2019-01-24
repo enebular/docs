@@ -30,7 +30,7 @@ enebularにアセットとして登録したファイルを有償デバイスに
 
 ![File List](./../../img/File/DeployFile-connection.png)
 
-デバイス接続の一覧から接続を選択すると、その接続のデバイスの一覧が表示されます。デプロイしたいデバイスを選択して **Deploy** ボタンをクリックします。
+Connectionに登録されているデバイスの一覧が表示されます。デプロイしたいデバイスを選択して **Deploy** ボタンをクリックします。
 
 ![File List](./../../img/File/DeployFile-device.png)
 
