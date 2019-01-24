@@ -18,7 +18,7 @@ As files are stored in the **Deploy Directory** directory under the path specifi
 
 ## Example {#Example}
 
-In this example `hoge` is used for the file's **Deploy Directory** and `hige.txt` is used for the file's filename.
+In this example `bar` is used for the file's **Deploy Directory** and `foo.txt` is used for the file's filename.
 
 Environment variables can be obtained in a flow by using the **process-env** node type. The node's properties should be configured as shown below.
 
