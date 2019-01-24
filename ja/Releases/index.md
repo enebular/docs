@@ -1,10 +1,10 @@
 ---
-lastUpdated: 2019-01-18
+lastUpdated: 2019-01-24
 ---
 
 # enebular Release Notes {#enebular}
 
-## Latest Release - 2.7.1 (January 18th, 2019)
+## Latest Release - 2.7.2 (January 24th, 2019)
 
 ## New {#New}
 
@@ -12,29 +12,20 @@ lastUpdated: 2019-01-18
 
 ## Fixed {#Fixed}
 
-- 各AssetsのDefault Privilegeを変更しても、ユーザーの権限が変更されないように修正しました
-- Device List画面でMonitoringボタンを押した際、レイアウトが崩れてしまう問題を修正しました
-- ダウンロードしたInfoMotionのデータがUndefinedとなってしまう問題を修正しました
+- ProjectのAccess画面にて、コラボレータを招待しようとしてもメールアドレスが入力できない問題を修正しました
 
 ## Changed {#Changed}
 
-- FlowのDeployプロセスを非同期Deployに変更しました
-- FlowのDeploy状況を通知領域で表示するようにしました
-- FlowのOverview画面の各ボタンにあった「Flow」の文字を削除し、Deploy画面の各ボタンと表記を統一しました
-- HerokuにDeployする際、Node-REDのバージョンをv0.18にアップデートしました　※今後HerokuにDeployする際は、新規Herokuアプリを作成する必要があります
-- メッセージ通知領域がより見やすくなるようデザインを変更しました
-- InfoMotionを、他のAssetと同様にcollaboratorの招待ができるようにしました
-- License Managerのライセンス登録時に、対象デバイスを選択する画面のボタンをCheckboxからRadioボタンに変更し、デバイスを1つだけ選択できるようにしました
-- ダウンロードできるInfoMotionのデータの最大サイズを10MBに制限しました
+- None
 
 ## Known Issues {#Known Issues}
 
-- 言語設定を英語にしたブラウザでフローエディタを開いても、一部の説明文が日本語で表示されます
 - InfoMotionを埋め込んだ共有ページでは、filter機能が使用できません
 - 英語のContact画面からenebularロゴを押してトップページに移動した場合、日本語で表示されます
 
 ## Release History {#Release History}
 
+- [2.7.2](./enebular/2.7.2.md) (January 24th, 2019)
 - [2.7.1](./enebular/2.7.1.md) (January 18th, 2019)
 - [2.7.0](./enebular/2.7.0.md) (December 14th, 2018)
 - [2.6.1](./enebular/2.6.1.md) (December 4th, 2018)

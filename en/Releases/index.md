@@ -1,10 +1,10 @@
 ---
-lastUpdated: 2019-01-18
+lastUpdated: 2019-01-24
 ---
 
 # enebular Release Notes {#enebular}
 
-## Latest Release - 2.7.1 (January 18th, 2019)
+## Latest Release - 2.7.2 (January 24th, 2019)
 
 ## New {#New}
 
@@ -12,29 +12,20 @@ lastUpdated: 2019-01-18
 
 ## Fixed {#Fixed}
 
-- Fixed the user interface so that user privilege does not change when the "Default Privilege" of an asset is changed.
-- Fixed the issue that caused Device List screen to fall apart when "Monitoring" button is pressed.
-- Fixed the issue that caused the downloaded InfoMotion data to be "Undefined."
+- Fixed the issue which was causing to lock the e-mail address on Access screen in a project to invite another user.
 
 ## Changed {#Changed}
 
-- Asynchronized the deploy process of flows.
-- Now the status of flows being deployed can be observed at the notification section.
-- Deleted the word "Flow" on each button appeared in Flow Overview screen to match the buttons in Deploy screen.
-- The node-RED to deploy to Heroku is now upgraded to v0.18. * Please note that a new Heroku app must be made in order to deploy to Heroku next time.
-- The UI design has been improved for a better visibility on the message notification section.
-- Other users can now be invited to InfoMotion just like other assets.
-- Updated the "Register License to a Device" selection screen at License Manager and changed device selection controls from check boxes to radio buttons.
-- The downloadable maximum InfoMotion data size is set to 10MB.
+- None
 
 ## Known Issues {#Known Issues}
 
-- Opening the flow editor from a web browser shows Japanese texts even if the browser is configured to show English.
 - The shared page with InfoMotion embedded, the filter function can not be used.
 - From the "Contact" page, clicking on enebular logo causes to show the top page based on the web browser's language instead of the language Contact page is showing.
 
 ## Release History {#Release History}
 
+- [2.7.2](./enebular/2.7.2.md) (January 24th, 2019)
 - [2.7.1](./enebular/2.7.1.md) (January 18th, 2019)
 - [2.7.0](./enebular/2.7.0.md) (December 14th, 2018)
 - [2.6.1](./enebular/2.6.1.md) (December 4th, 2018)
