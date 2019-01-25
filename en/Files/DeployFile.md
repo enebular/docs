@@ -32,7 +32,7 @@ After choosing a connection from the list, a list of the connection's devices wi
 
 ![File List](./../../img/File/DeployFile-device.png)
 
-When the ** Deploy ** button is clicked the deploy process starts and the file's **Deployment History** is displayed. The status of the deployment to the devices can be checked here.
+The deploy process then starts and the file's **Deployment History** is displayed. The status of the deployment to the devices can be checked here.
 
 ![File List](./../../img/File/DeployFile-deployHistory.png)
 
