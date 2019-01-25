@@ -26,6 +26,7 @@ The directory name when deploying.
 
 - This will be the directory name under enebular-agent's `ports/<port>/assets` directory. 
 - For example, when using the AWS IoT enebular-agent port and uploading a file called `foo.txt` with a deploy directory of `bar`, the file will be saved as `ports/awsiot/assets/bar/foo.txt` under enebular-agent.
+- If no deploy directory is specified, then the file is saved directly under the `ports/<port>/assets` directory.
 
 ## Execution {#Execution}
 

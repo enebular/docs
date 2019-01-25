@@ -26,6 +26,7 @@ enebularにアップロードするファイルを選択します。
 
 - enebular-agentの`ports/<port>/assets` ディレクトリ以下のディレクトリ名になります
 - 例えば、enebular-agentのAWS IoTポートを利用して、アップロードするファイルのファイル名が`foo.txt`で、Deploy Directoryに`bar`を入力した場合、enebular-agent下の`ports/awsiot/assets/bar/foo.txt`にファイルが保存されます
+- Deploy Directoryが指定されない場合は、ファイルがそのまま`ports/<port>/assets`ディレクトリの下に保存されます
 
 ## Execution {#Execution}
 
