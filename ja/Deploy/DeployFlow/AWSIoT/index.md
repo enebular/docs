@@ -1,5 +1,5 @@
 ﻿---
-lastUpdated: 2018-09-19
+lastUpdated: 2019-01-16
 ---
 
 # AWS IoT へのデプロイ {#AWS IoT へのデプロイ}
@@ -40,6 +40,8 @@ AWS IoT で今回用の設定を作成します。
 
 適当な名前をつけて次に進みます。
 
+他の項目は空欄でも構いません。
+
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_07.png)
 
 
@@ -50,8 +52,13 @@ AWS IoT で今回用の設定を作成します。
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_08.png)
 
 鍵ファイルを全てダウンロードして有効化します。
+AWS IoTのルートCAはダウンロードを押したリンク先より、`RSA 2048 ビットキー: Amazon ルート CA 1`をダウンロードしてください。
+
+後で使用するので、わかりやすい場所にまとめて保存してください。
 
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_09.png)
+
+![image](./../../../../img/Deploy/AWSIoT-rootCA-ja.png)
 
 有効化が完了します。
 
@@ -106,30 +113,6 @@ AWS IoT で今回用の設定を作成します。
 
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_20.png)
 
-### AWS IoT 用 IAM ユーザーの作成 {#AWS IoT 用 IAM ユーザーの作成}
-
-enebular から AWS IoT を利用するための Access Key ID と Secret Access Key を作成します。
-
-IAM のメニューのユーザーから[ユーザーを追加]を押します。
-
-![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_21.png)
-
-詳細では、わかりやすい名前をつけて [プログラムによるアクセス] にチェックをつけます。
-
-![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_22.png)
-
-アクセス権限では、[既存のポリシーを直接アタッチ]を選択して、[AWSIoTFullAccess]というポリシーを選択して次に進みます。
-
-![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_23.png)
-
-最後に間違いがないか確認します。
-
-![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_24.png)
-
-完了したら、アクセスキー ID とシークレットアクセスキーが記載された CSV ファイルをダウンロードします（このタイミングでしかダウンロードできないので注意して下さい）。
-
-![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_25.png)
-
 ### 接続状態検知用ルールの作成 {#接続状態検知用ルールの作成}
 
 モノとAWS IoTの接続状態を正しく検知出来るためのルールを追加します。メニューから ACT を選択し、[ルールの作成]を押します。
@@ -140,22 +123,15 @@ IAM のメニューのユーザーから[ユーザーを追加]を押します�
 
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_02.png)
 
-[メッセージのリソース]でルールの属性とトピックフィルターを以下のように指定します。
-
-* 属性
-    * `*`
-* トピックフィルター
-    * `enebular/things/+/shadow/update`
-
-属性とトピックフィルターを指定すると、ルールクエリステートメントが以下のように表示されます。
+[ルールのクエリステートメント]を以下のように指定します。
+SQLバージョンは`2016-03-23`のものを使用してください。
 
 ```
 SELECT * FROM 'enebular/things/+/shadow/update'
 ```
 
-[メッセージのリソース]で属性とトピックフィルター以外の設定は不要ですが、必要に応じて設定してください。
+![query](./../../../../img/Deploy/AWSIoT-query-ja.png)
 
-![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_03.png)
 
 [アクションの追加]を押してルールにアクションを追加します。
 
@@ -190,6 +166,31 @@ SELECT * FROM 'enebular/things/+/shadow/update'
 
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_10.png)
 
+### AWS IoT 用 IAM ユーザーの作成 {#AWS IoT 用 IAM ユーザーの作成}
+
+enebular から AWS IoT を利用するための Access Key ID と Secret Access Key を作成します。
+
+IAM のメニューのユーザーから[ユーザーを追加]を押します。
+
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_21.png)
+
+詳細では、わかりやすい名前をつけて [プログラムによるアクセス] にチェックをつけます。
+
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_22.png)
+
+アクセス権限では、[既存のポリシーを直接アタッチ]を選択して、[AWSIoTFullAccess]というポリシーを選択して次に進みます。
+タグの追加は何も入力せず次に進みます。
+
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_23.png)
+
+最後に間違いがないか確認します。
+
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_24.png)
+
+完了したら、アクセスキー ID とシークレットアクセスキーが記載された CSV ファイルをダウンロードします（このタイミングでしかダウンロードできないので注意して下さい）。
+
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_25.png)
+
 ## フローに AWS IoT の設定を反映 {#フローに AWS IoT の設定を反映}
 
 先ほどの AWS IoT 設定画面に戻りフローに AWS IoT の設定を反映します。
@@ -198,7 +199,7 @@ SELECT * FROM 'enebular/things/+/shadow/update'
 
 Select Connection の右の [New] を押します。必要な情報を入力して Connection を作成します。
 
-![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_27.png)
+![connection](./../../../../img/Deploy/AWSIoT-connection.png)
 
 * Connection Name
     * 任意の英数字
@@ -206,12 +207,10 @@ Select Connection の右の [New] を押します。必要な情報を入力し�
     * ダウンロードした CSV からコピーする
 * AWS Secret Access Key
     * ダウンロードした CSV からコピーする
-* Region
-    * 下記 AWS IoT Endpoint URL の `amazonaws.com` の前の部分
 * AWS IoT Endpoint URL
     * モノのメニューの**操作**より確認できます（下の画像参照）
 
-![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_28.png)
+![interact](./../../../../img/Deploy/AWSIoT-interact-ja.png)
 
 作成した Connection を選択すると登録されているモノが表示されます。
 
@@ -261,7 +260,8 @@ npm install
 
 少し前の手順でダウンロードした AWS IoT Thing 用の証明書ファイルを `example` モジュールの `certs` ディレクトリににコピーします。
 
-![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_30.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_09.png)
+※ここでダウンロードしたファイルです。
 
 コピーした証明書ファイルの正しいパスを含めて、この接続情報で `example` モジュールの `config.json`ファイルを更新します。
 
@@ -271,7 +271,7 @@ npm install
   "port": 8883,
   "clientId": "<THING NAME>",
   "thingName": "<THING NAME>",
-  "caCert": "./certs/VeriSign-Class 3-Public-Primary-Certification-Authority-G5.pem",
+  "caCert": "./certs/AmazonRootCA1.pem",
   "clientCert": "./certs/<THING CERT>",
   "privateKey": "./certs/<THING PRIVATE KEY>",
   "topic": "aws/things/<THING NAME>/shadow/update"
@@ -282,7 +282,7 @@ npm install
 
 `<THING SHADOW REST API ENDPOINT>`, `<THING NAME>` はモノのメニューの**操作**より確認できます。(下記画像参照)
 
-![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_36.png)
+![interact](./../../../../img/Deploy/AWSIoT-interact-ja.png)
 
 
 ### 実行 {#実行}
