@@ -21,6 +21,13 @@ lastUpdated: 2019-01-10
   - [Example: Milkcocoa](Flows/FlowExampleMilkcocoa.md)
   - [Publishing Flows](Flows/PublishFlow.md)
 
+- [Files]()
+  - [Introduction](Files/index.md)
+  - [Registering Files](Files/RegisterFile.md)
+  - [Deploying Files](Files/DeployFile.md)
+  - [Accessing Files From Flows](Files/AccessFileFromFlow.md)
+  - [File Settings](Files/FileSettings.md)
+
 - [InfoMotion]()
   - [Introduction](InfoMotion/Introduction.md)
   - [InfoType](InfoMotion/InfoTypeIntroduction.md)
@@ -50,9 +57,6 @@ lastUpdated: 2019-01-10
       - [How to use Random DataSource](InfoMotion/DataSource/Random/SetUp.md)
   - [Dashboards](InfoMotion/CreateInfoMotion.md)
   - [Sharing an InfoMotion](InfoMotion/ShareInfoMotion.md)
-
-- [Files]()
-  - [Introduction](Files/index.md)
 
 - [Deploys]()
   - [Introduction](Deploy/index.md)

@@ -1,147 +1,79 @@
 ---
-lastUpdated: 2018-12-13
+lastUpdated: 2019-01-10
 ---
 
 # Files {#Files}
 
-**Files** deploys files to enebular agent.  
-A use case example can be running shell scripts in enebular agent or adding setting files.
+With **Files** it's possible to deploy files to 'paid' devices.
 
-A file is an asset with one of the following possible functionalities.
+Files are one type of asset, and refer to the following.
 
-- executing files for enebular agent
-- setting files for enebular agent
-- other files for enebular agent (image files, movie files)
+- Device executable files
+- Configuration files for use on devices
+- Other types of files used on devices (like image and video files)
 
-Owner/Admin of the project are able to deploy files. Collaborators are unable to.
-Deployments can only be made by trusted users.
+It's possible to, for example, execute shell scripts on a device or add configuration files to a device.
 
-## Screen description {#Screen description}
-### List {#List}
+For executable files, it's possible to have the file executed when it is deployed to the device. Additionally, for any type of file, the **Hook** feature can be used to execute other files already deployed.
 
-The list displays uploaded files.
-Select a file to view it's details.
+Only project Owner and Admin users can deploy files. A Collaborator user cannot deploy a file. Allowing only trusted users to deploy files helps prevent the deployment of untrusted files.
 
-| # | Item | Description |
-| --- | --- | --- |
-| 1 | File | The name of the file assets |
-| 2 | Type | The type of the files |
-| 3 | Last Updated |  The date connection last updated |
+The following introduces file asset related functionality.
 
-### Add {#Add}
+## File Listing {#File Listing}
 
-You can upload new files.
+A list of registered files can be displayed by selecting **Files** from the project menu. Selecting a file will display the file management options.
 
-Click on the plus ("+") button.
+| Item | Description |
+| --- | --- |
+| Files | The file's asset name |
+| Type | The asset type |
+| Last Updated | The date the asset was last edited |
 
-At the pop up, set the config of the file, Click on `upload` button.
+A new file can be registered by pressing the **+** button at the bottom right of the file list.
 
-See **File settings** for further information about config.
+## File Registration {#File Registration}
+
+New files can be uploaded and registered.
+
+For details on adding files refer to [Registering Files](RegisterFile.md).
+
+## File Management {#File Management}
+
+The following features are available in the file management menu.
 
 ### Overview {#Overview}
 
-You can see general information about the uploaded files.
+Overall information on the registered file can be seen in the overivew.
+
+It's also possible to deploy the file to devices from here.
+
+For details on deploying files refer to [Deploying Files](DeployFile.md).
 
 ### Deploy {#Deploy}
 
-You can deploy files and view deployment history.
+The file's deployment history is shown here.
 
-### Devices {#Devices}
-
-You can delete files which are deployed in devices.
+It's also possible to deploy the file to devices from here.
 
 ### Access {#Access}
 
-You can set the access to files.
+The file's access permissions can be configured here.
 
 ### Settings {#Settings}
 
-You can edit settings of files.
+The file's settings can be changed here.
 
-## File settings {#File settings}
+For details on file settings refer to [File Settings](FileSettings.md).
 
-File setting are as follows:
+## Device File Management {#Device File Management}
 
-### Title {#Title}
+Deployed files can be managed on a per device basis.
 
-The name of files
+Selecting **Device List** from the project menu and then selecting a device from the list will display the device's information. From here, it's possible to check the status of and delete files deployed to the device by clicking the **Manage Files** button.
 
-### Description {#Description}
+## File Access From Flows {#File Access From Flows}
 
-The description of files (optional)
+It's possible to access files deployed to a device from flows also deployed to the same device.
 
-### Deploy path {#Deploy path}
-
-You can set the path to deploy.
-
-- path under `<root>/enebular-runtime-agent/ports/awsiot/assets/`
-- folder name and file name
-- e.g. Setting hoge/hige.txt, saving as `<root>/enebular-runtime-agent/ports/awsiot/assets/hige.txt`.
-
-### Execution {#Execution}
-
-Setting for if you want to deploy execution files.
-
-#### Execute On Deploy
-
-If it's turned on, files run as the execution files.
-The user is same as enebular-runtime-agent. 
-
-#### Max Execution Time
-
-You can set maximum execution time of **Execution**.
-Set times are from 0 to 300(5 min)sec.
-
-If the execution exceeds the maximum execution time, execution is forcibly stopped.
-
-#### Execution Arguments
-
-Setting execution arguments
-
-#### Environmental Variables
-
-Setting environmental variables
-
-- KEY
-    - the name of enviromnetal variable
-- VALUE
-    - the value of enviromnetal variable
-
-### Deploy Hooks {#Deploy Hooks}
-
-It's a functionality that allows you to execute files already deployed when you deploy new files.
-
-#### Staging
-
-##### Pre-Deploy
-
-Pre-Deploy executes a file in enebular agent before a deployment.
-If you don't specify Pre-Deploy it doesn't run.
-
-e.g.)You want to run a shell script before deployment that deletes some files you don't need anymore in enebular agent.
-
-##### Post-Deploy
-
-Post-Deploy executes a file in enebular agent after deployment.
-If you don't specify Post-Deploy it doesn't run.
-
-e.g.) You want to run a shell script after deployment which deletes some files you don't need anymore in enebular agent.
-
-#### Asset Path
-
-The path of the asset you want to execute.
-
-#### Max Execution Time
-
-You can set maximum execution time of **Pre-Deploy/Post-Deploy**.
-Set times are from 0 to 300(5 min)sec.
-
-If the Pre-Deploy/Post-Deploy exceeds the maximum execution time, Pre-Deploy/Post-Deploy is forcibly stopped.
-
-### Default Role {#Default Role}
-
-Select file's role.
-
-### Category {#Category}
-
-Choose file's category.
+For details on file access from flows refer to [Accessing Files From Flows](AccessFileFromFlow.md).
