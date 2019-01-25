@@ -2,7 +2,7 @@
 lastUpdated: 2019-01-21
 ---
 
-# ファイル設定 {#ファイル設定}
+# ファイル設定 {#File settings}
 
 ファイルの設定項目について説明します。
 
@@ -25,7 +25,7 @@ enebularにアップロードするファイルを選択します。
 ファイルをデプロイした際のディレクトリ名を指定します。  
 
 - enebular-agentの`ports/<port>/assets` ディレクトリ以下のディレクトリ名になります
-- 例えば、enebular-agentのAWS IoTポートを利用して、アップロードするファイルのNameが`foo.txt`で、Deploy Directoryに`bar`を入力した場合、enebular-agent下の`ports/awsiot/assets/bar/foo.txt`にファイルが保存されます
+- 例えば、enebular-agentのAWS IoTポートを利用して、アップロードするファイルのファイル名が`foo.txt`で、Deploy Directoryに`bar`を入力した場合、enebular-agent下の`ports/awsiot/assets/bar/foo.txt`にファイルが保存されます
 
 ## Execution {#Execution}
 

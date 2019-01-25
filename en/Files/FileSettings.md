@@ -4,7 +4,7 @@ lastUpdated: 2019-01-24
 
 # File Settings {#File settings}
 
-Files have the following settings.
+The following explains about the file configuration options.
 
 ## File {#File}
 
@@ -35,6 +35,7 @@ These are settings for executing the file on deploy.
 
 When enabled, the file is treated as an executable and executed on deploy.
 The file is executed as the same user as enebular-agent.
+The following options are displayed when this option is toggled on.
 
 ### Max Execution Time {#Max Execution Time}
 
@@ -61,6 +62,8 @@ The environment variables provided to the file when executed.
 This is for executing other files already deployed when deploying this file.
 
 ### Stage {#Stage}
+
+Either Pre-Deploy or Post-Deploy can be selected here.
 
 #### Pre-Deploy {#Pre-Deploy}
 
