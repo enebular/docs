@@ -1,35 +1,32 @@
 ---
-lastUpdated: 2019-01-09
+lastUpdated: 2019-01-24
 ---
 
 # enebular Release Notes {#enebular}
 
-=======
-## Latest Release - 2.7.0 (December 14th, 2018)
+## Latest Release - 2.7.2 (January 24th, 2019)
 
 ## New {#New}
 
-- Device ListのConnection Type、Statusによるソートが出来るようになりました
-- 最後に行ったデプロイを再度実行することの出来る「Redeploy」ボタンを追加しました
+- None
 
 ## Fixed {#Fixed}
 
-- ライセンスが登録解除されたデバイスがDevice Listに残ってしまう問題を修正し、表示されないようにしました
+- ProjectのAccess画面にて、コラボレータを招待しようとしてもメールアドレスが入力できない問題を修正しました
 
 ## Changed {#Changed}
 
-- DiscoverページからAssetをImportする際、Import後に取り込んだAssetのページに移動するようになりました
-- ConnectionのAWS IoTの設定ダイアログのタイトルを「AWS IoT Settings」から「AWS IoT Connection」に修正しました
-- クレデンシャル情報を含むフローをPublishしようとすると情報漏洩を防ぐための警告が表示されるよう修正しました
+- None
 
 ## Known Issues {#Known Issues}
 
-- 言語設定を英語にしたブラウザでフローエディタを開いても、一部の説明文が日本語で表示されます
 - InfoMotionを埋め込んだ共有ページでは、filter機能が使用できません
 - 英語のContact画面からenebularロゴを押してトップページに移動した場合、日本語で表示されます
 
 ## Release History {#Release History}
 
+- [2.7.2](./enebular/2.7.2.md) (January 24th, 2019)
+- [2.7.1](./enebular/2.7.1.md) (January 18th, 2019)
 - [2.7.0](./enebular/2.7.0.md) (December 14th, 2018)
 - [2.6.1](./enebular/2.6.1.md) (December 4th, 2018)
 - [2.6.0](./enebular/2.6.0.md) (November 30th, 2018)

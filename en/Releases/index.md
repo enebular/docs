@@ -1,35 +1,32 @@
 ---
-lastUpdated: 2019-01-11
+lastUpdated: 2019-01-24
 ---
 
 # enebular Release Notes {#enebular}
 
-=======
-## Latest Release - 2.7.0 (December 14th, 2018)
+## Latest Release - 2.7.2 (January 24th, 2019)
 
 ## New {#New}
 
-- Device List can now be sorted by connection types or statuses.
-- "Redeploy" button is added to repeat the last deploy.
+- None
 
 ## Fixed {#Fixed}
 
-- The issue that caused a device to remain on Device List even if its license has been unregistered, such a device is to be deleted from the list.
+- Fixed the issue which was causing to lock the e-mail address on Access screen in a project to invite another user.
 
 ## Changed {#Changed}
 
-- Importing an asset from Discover page now redirects to the new imported asset page under the target project.
-- We have changed the title of AWS IoT configuration dialog box from "AWS IoT Settings" to more appropriate "AWS IoT Connection".
-- Attempting to publish flows which contain credential information now shows warnings to avoid information leaks.
+- None
 
 ## Known Issues {#Known Issues}
 
-- Opening the flow editor from a web browser shows Japanese texts even if the browser is configured to show English.
 - The shared page with InfoMotion embedded, the filter function can not be used.
 - From the "Contact" page, clicking on enebular logo causes to show the top page based on the web browser's language instead of the language Contact page is showing.
 
 ## Release History {#Release History}
 
+- [2.7.2](./enebular/2.7.2.md) (January 24th, 2019)
+- [2.7.1](./enebular/2.7.1.md) (January 18th, 2019)
 - [2.7.0](./enebular/2.7.0.md) (December 14th, 2018)
 - [2.6.1](./enebular/2.6.1.md) (December 4th, 2018)
 - [2.6.0](./enebular/2.6.0.md) (November 30th, 2018)
