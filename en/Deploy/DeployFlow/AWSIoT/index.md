@@ -1,5 +1,5 @@
 ﻿---
-lastUpdated: 2018-09-19
+lastUpdated: 2019-01-16
 ---
 
 # Deploying to AWS IoT {#Deploying to AWS IoT}
@@ -40,6 +40,8 @@ Press "Create a single thing".
 
 Give it an appropriate name and move to the next step.
 
+Other items are left blank.
+
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_07.png)
 
 ### Creating the Certificates {#Creating the Certificates}
@@ -50,7 +52,11 @@ Press the "Create certificate" of One-click certificate creation.
 
 Download all of the files and activate it.
 
+You select `RSA 2048 bit key: Amazon Root CA1` for root CA for AWS IoT.
+
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_09.png)
+
+![image](./../../../../img/Deploy/AWSIoT-rootCA-en.png)
 
 The activation will complete.
 
@@ -105,30 +111,6 @@ Once that completes, you can confirm that the certificate is tied to the policy 
 
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_20.png)
 
-### Creating an IAM User for AWS IoT {#Creating an IAM User for AWS IoT}
-
-In order to use AWS IoT from enebular, create an Access Key ID and Secret Access Key.
-
-In the "Users" section of the IAM menu, press "Add user".
-
-![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_21.png)
-
-In the details section, set an easy to understand name and enable "Programmatic access".
-
-![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_22.png)
-
-For the permissions, select "Attach existing policies directly", then select the "AWSIoTFullAccess" policy and move to the next step.
-
-![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_23.png)
-
-Finally confirm there are no mistakes.
-
-![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_24.png)
-
-Once completed, download the CSV file that contains the Access Key ID and Secret Access Key (note that this is the only chance to download it).
-
-![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_25.png)
-
 ### Creating a Rule for Connection State Detection {#Creating a Rule for Connection State Detection}
 
 We'll add a rule to allow the connection state between the thing and AWS IoT to be correctly detected. Select "Act" from the menu and press "Create a rule".
@@ -139,22 +121,15 @@ Specify an easy to understand name.
 
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_02.png)
 
-Under "Message source", specify the attribute and topic filter as shown below.
-
-* Attribute
-    * `*`
-* Topic filter
-    * `enebular/things/+/shadow/update`
-
-After specifying the attribute and topic filter, the rule query statement will be displayed as shown below.
+Set "Rule query statement" as shown below.
+"Using SQL version" is "2016-03-23".
 
 ```
 SELECT * FROM 'enebular/things/+/shadow/update'
 ```
 
-Aside from the attribute and topic filter, you don't need to specify any other settings under "Message source".
+![image](./../../../../img/Deploy/AWSIoT-query-en.png)
 
-![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_03.png)
 
 Add an action to the rule by pressing "Add action".
 
@@ -189,6 +164,31 @@ The created rule will be displayed.
 
 ![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_rule_10.png)
 
+### Creating an IAM User for AWS IoT {#Creating an IAM User for AWS IoT}
+
+In order to use AWS IoT from enebular, create an Access Key ID and Secret Access Key.
+
+In the "Users" section of the IAM menu, press "Add user".
+
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_21.png)
+
+In the details section, set an easy to understand name and enable "Programmatic access".
+
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_22.png)
+
+For the permissions, select "Attach existing policies directly", then select the "AWSIoTFullAccess" policy and move to the next step.
+
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_23.png)
+
+Finally confirm there are no mistakes.
+
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_24.png)
+
+Once completed, download the CSV file that contains the Access Key ID and Secret Access Key (note that this is the only chance to download it).
+
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_25.png)
+
+
 ## Update the Flow with the AWS IoT Settings {#Update the Flow with the AWS IoT Settings}
 
 We return to the AWS IoT settings screen from before and update the AWS IoT settings.
@@ -197,7 +197,7 @@ We return to the AWS IoT settings screen from before and update the AWS IoT sett
 
 Press "New" to the right of "Select Connection". Enter the required information and create the connection.
 
-![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_27.png)
+![connection](./../../../../img/Deploy/AWSIoT-connection.png)
 
 * Connection Name
     * Any alphameric characters
@@ -205,12 +205,10 @@ Press "New" to the right of "Select Connection". Enter the required information 
     * Copy from the downloaded CSV file
 * AWS Secret Access Key
     * Copy from the downloaded CSV file
-* Region
-    * The part before the `amazonaws.com` section of the AWS IoT Endpoint URL (below)
 * AWS IoT Endpoint URL
     *  This can be seen in the "Interact" section of the thing menu (refer to the image below)
 
-![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_28.png)
+![interact](./../../../../img/Deploy/AWSIoT-interact-en.png)
 
 When you select the created connection the registered things are displayed.
 
@@ -260,7 +258,8 @@ npm install
 
 Copy the AWS IoT Thing certificate files you downloaded just before to the `certs` directory in the example folder.
 
-![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_30.png)
+![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_09.png)
+\* these files
 
 Update the example's `config.json` file with the connection details (including the correct paths of the certificate files).
 
@@ -270,7 +269,7 @@ Update the example's `config.json` file with the connection details (including t
   "port": 8883,
   "clientId": "<THING NAME>",
   "thingName": "<THING NAME>",
-  "caCert": "./certs/VeriSign-Class 3-Public-Primary-Certification-Authority-G5.pem",
+  "caCert": "./certs/AmazonRootCA1.pem",
   "clientCert": "./certs/<THING CERT>",
   "privateKey": "./certs/<THING PRIVATE KEY>",
   "topic": "aws/things/<THING NAME>/shadow/update"
@@ -281,7 +280,7 @@ Update the example's `config.json` file with the connection details (including t
 
 You can confirm `<THING SHADOW REST API ENDPOINT>`, `<THING NAME>` in the "Interact" section of the thing menu AWS IoT.
 (refer to the image below)
-![image](../../../_asset/images/Deploy/DeployFlow/AWSIoT/deploy-deployflow-awsiot_36.png)
+![interact](./../../../../img/Deploy/AWSIoT-interact-en.png)
 
 ### Running {#Running}
 
