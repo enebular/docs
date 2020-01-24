@@ -2,19 +2,16 @@ version: 2 # use CircleCI 2.0
 jobs: # a collection of steps
 
   clamav:
-    working_directory:  ./
+    working_directory:  ~/docs
     docker: # run the steps with Docker
-      - image: circleci/node:8.9.4
+      - image: mkodockx/docker-clamav
     steps:
       - run:
           name: cramAV test
           command: |
-            echo 'The time was ${{ steps.hello.outputs.time }}.'
-            sudo apt-get -y update
-            sudo apt-get -y install clamav
-            sudo freshclam
+            freshclam
             ls -la
-            sudo clamscan --infected --remove --recursive
+            clamscan --infected --remove --recursive
   linkcheck: # runs not using Workflows must have a `build` job as entry point
     working_directory: ~/mern-starter # directory where steps will run
     docker: # run the steps with Docker
