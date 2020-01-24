@@ -12,7 +12,6 @@ jobs: # a collection of steps
           command: |
             sudo apt-get -y update
             sudo apt-get -y install clamav
-            wget http://www.eicar.org/download/eicar.com ;\
             sudo freshclam
             sudo clamscan --infected --remove --recursive ~/docs
 
