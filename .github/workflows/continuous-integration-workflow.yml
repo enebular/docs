@@ -15,9 +15,9 @@ jobs:
       # This step uses GitHub's hello-world-javascript-action: https://github.com/actions/hello-world-javascript-action
       - name: clamAV tets
         run: echo 'The time was ${{ steps.hello.outputs.time }}.'
-      - name: apt-get -y update
+      - name: sudo apt-get -y update
         run: apt-get -y update
-      - name: apt-get -y install clamav
+      - name: sudo apt-get -y install clamav
         run: apt-get -y install clamav
       - name: freshclam
         run: freshclam
