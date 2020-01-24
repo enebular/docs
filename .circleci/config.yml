@@ -13,6 +13,8 @@ jobs: # a collection of steps
             # sudo apt-get -y install clamav
             # sudo freshclam
             pwd
+            cat package.json
+            cat .circleci/config.yml
             # sudo clamscan --infected --remove --recursive ~/docs
   test:
     working_directory: ~/docs
