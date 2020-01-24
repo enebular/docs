@@ -2,10 +2,11 @@ version: 2 # use CircleCI 2.0
 jobs: # a collection of steps
 
   clamav:
-    working_directory:  ~/docs
+    working_directory: 
     docker: # run the steps with Docker
       - image: circleci/node
     steps:
+      - checkout
       - run:
           name: cramAV test
           command: |
@@ -16,6 +17,7 @@ jobs: # a collection of steps
             cat package.json
             cat .circleci/config.yml
             # sudo clamscan --infected --remove --recursive ~/docs
+
   test:
     working_directory: ~/docs
     docker:
