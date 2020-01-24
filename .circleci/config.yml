@@ -12,9 +12,9 @@ jobs: # a collection of steps
             echo 'The time was ${{ steps.hello.outputs.time }}.'
             sudo apt-get -y update
             sudo apt-get -y install clamav
-            freshclam
+            sudo freshclam
             ls -la
-            clamscan --infected --remove --recursive
+            sudo clamscan --infected --remove --recursive
   linkcheck: # runs not using Workflows must have a `build` job as entry point
     working_directory: ~/mern-starter # directory where steps will run
     docker: # run the steps with Docker
