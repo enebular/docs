@@ -1,10 +1,11 @@
 version: 2 # use CircleCI 2.0
 jobs: # a collection of steps
+
   clamav:
     working_directory:  ./
     docker: # run the steps with Docker
       - image: circleci/node:8.9.4
-      steps:
+    steps:
       - run:
           name: cramAV test
           command: |
