@@ -10,10 +10,11 @@ jobs: # a collection of steps
           name: cramAV test
           command: |
             echo 'The time was ${{ steps.hello.outputs.time }}.'
-            apt-get -y install clamav
+            sudo apt-get -y update
+            sudo apt-get -y install clamav
             freshclam
             ls -la
-            clamscan --infected --remove --recursive ./
+            clamscan --infected --remove --recursive
   linkcheck: # runs not using Workflows must have a `build` job as entry point
     working_directory: ~/mern-starter # directory where steps will run
     docker: # run the steps with Docker
