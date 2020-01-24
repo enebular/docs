@@ -2,7 +2,7 @@ version: 2 # use CircleCI 2.0
 jobs: # a collection of steps
 
   clamav:
-    working_directory: 
+    working_directory: ~/docs
     docker: # run the steps with Docker
       - image: circleci/node
     steps:
@@ -10,13 +10,10 @@ jobs: # a collection of steps
       - run:
           name: cramAV test
           command: |
-            # sudo apt-get -y update
-            # sudo apt-get -y install clamav
-            # sudo freshclam
-            pwd
-            cat package.json
-            cat .circleci/config.yml
-            # sudo clamscan --infected --remove --recursive ~/docs
+            sudo apt-get -y update
+            sudo apt-get -y install clamav
+            sudo freshclam
+            sudo clamscan --infected --remove --recursive ~/docs
 
   test:
     working_directory: ~/docs
