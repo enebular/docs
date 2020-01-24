@@ -9,11 +9,11 @@ jobs: # a collection of steps
       - run:
           name: cramAV test
           command: |
-            sudo apt-get -y update
-            sudo apt-get -y install clamav
-            sudo freshclam
-            ls -la
-            sudo clamscan --infected --remove --recursive ~/docs
+            # sudo apt-get -y update
+            # sudo apt-get -y install clamav
+            # sudo freshclam
+            pwd
+            # sudo clamscan --infected --remove --recursive ~/docs
   test:
     working_directory: ~/docs
     docker:
