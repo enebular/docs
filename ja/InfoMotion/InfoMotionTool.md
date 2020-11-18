@@ -1,14 +1,10 @@
----
-lastUpdated: 2018-07-27
----
-
 # InfoMotion Tool {#InfoMotion Tool}
 
 InfoType を作成するには `infomotion-tool` が必要です。
 
-[Sample InfoTypes](./SampleInfoTypes.md) でサンプルの InfoType を使用する準備することができます。
+[Sample InfoTypes](./SampleInfoTypes.md) でサンプルの InfoType を使用する準備ができます。
 
-`infomotion-tool` を使ってローカル環境で編集とテストができます。完成した InfoType はパッケージにして enebular にアップロードすることができます。
+`infomotion-tool` を使うとローカル環境で編集とテストができます。完成した InfoType はパッケージし、 enebular にアップロードできます。
 
 ## infomotion-tool のインストール {#infomotion-tool のインストール}
 
@@ -16,21 +12,21 @@ InfoType を作成するには `infomotion-tool` が必要です。
 npm install @uhuru/enebular-infomotion-tool-v2 -g
 ```
 
-InfoMotion-tool には `nodejs >= 6 and npm 5.2+` が必要です。
+InfoMotion-tool を実行するには `nodejs >= 6 and npm 5.2+` が必要です。
 
-permission error が起こった際には、以下のいずれかで解決ができることがあります。
+permission error が起こった際には、以下のいずれかで解決することがあります。
 
-1) 現在のユーザーに `/usr/local/lib/` 内の `node_modules` に権限を与えます。権限を与えたのち、再度グローバルインストールください。
+1. 現在のユーザーに `/usr/local/lib/` 内の `node_modules` に権限を与えます。権限を与えたのち、再度グローバルインストールください。
 
 - MacOSX: https://support.apple.com/kb/PH25287?locale=en_US 
 - Windows: https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754344(v=ws.11) 
 
-2) NVM を利用する**（推奨）**
+2. NVM を利用する**（推奨）**
 
 - MacOSX: https://github.com/creationix/nvm  
 - Windows: https://github.com/coreybutler/nvm-windows 
 
-3) npm の[デフォルトのディレクトリ](https://docs.npmjs.com/getting-started/fixing-npm-permissions)を変更する。
+3. npm の[デフォルトのディレクトリ](https://docs.npmjs.com/getting-started/fixing-npm-permissions)を変更する。
 
 ## 利用可能なコマンド {#利用可能なコマンド}
 
@@ -62,13 +58,12 @@ eit create myfirstgraph
 
 ### datasource.json {#datasource.json}
 
-*このファイルはテスト用途です。*
+_このファイルはテスト用途です。_
 
-ブラウザでテストする際に利用する DataSource の指定ができます。
+ブラウザでテストする際に利用する DataSource を指定できます。
 
-`adaptor` に DataSource の種類を指定します。具体的には以下があります。
+`adaptor` に DataSource の種類を指定します。DataSource の種類には以下があります。
 
-- `milkcocoa`
 - `pubnnub`
 - `apigateway`
 - `random`
@@ -77,43 +72,52 @@ eit create myfirstgraph
 
 具体的には以下のように指定します。
 
-#### Milkcocoa adaptor
-
-[Milkcocoa](https://mlkcca.com) のデータを使います。いくつかの値を自分のアプリのもので置き換えてください。
-
-```json
-{
-  "adaptor": "milkcocoa",
-  "apikey": "YOUR_API_KEY",
-  "apisecret": "YOUR_API_SECRET",
-  "appId": "YOUR_APP_ID",
-  "dataStore": "YOUR_DATASTORE",
-  "id": "milkcocoa",
-  "title": "milkcocoa",
-  "name": "milkcocoa"
-}
-* API Key, API Secret がない場合は空にします。
-```
-
 #### Pubnub adaptor
 
 [Pubnub](https://pubnub.com) のデータを使います。いくつかの値を自分のアプリのもので置き換えてください。
 
 ```json
-{
-  "adaptor": "pubnub",
-  "pubnub": {
-    "publishKey": "YOUR_PUBLISH_KEY",
-    "subscribeKey": "YOUR_SUBSCRIBE_KEY",
-    "ssl": true,
-  },
-  "chanel" : "YOUR_CHANNEL",
-  "count" : 100
-  "appId": "pubnub",
-  "id": "pubnub",
-  "title": "pubnub",
-  "name": "pubnub"
-}
+[
+  {
+    "adaptor": "pubnub",
+    "pubnub": {
+      "publishKey": "YOUR_PUBLISH_KEY",
+      "subscribeKey": "YOUR_SUBSCRIBE_KEY",
+      "ssl": true
+    },
+    "channel" : "YOUR_CHANNEL",
+    "count" : 1000,
+    "appId": "pubnub",
+    "id": "pubnub",
+    "title": "pubnub",
+    "name": "pubnub"
+  }
+]
+```
+
+#### Firebase adaptor
+
+[Firebase](https://firebase.google.com/) のデータを使います。いくつかの値を自分のアプリのもので置き換えてください。
+
+```json
+[
+  {
+    "adaptor": "firebase",
+    "firebase": {
+      "apiKey": "YOUR_API_KEY",
+      "authDomain": "YOUR_AUTH_DOMAIN",
+      "databaseURL": "YOUR_DATABASE_URL",
+      "projectId": "YOUR_PROJECT_ID",
+      "storageBucket": "YOUR_STOREAGE_BUCKET",
+      "messagingSenderId": "YOUR_MESSAGE_SENDER_ID"
+    },
+    "limit": 1000,
+    "ref": "REF_OF_YOUR_DATASOURCE",
+    "title": "firebase",
+    "id": "fireabse",
+    "name": "firebase"
+  }
+]
 ```
 
 ### API Gateway Adaptor {#API Gateway Adaptor}
@@ -121,14 +125,16 @@ eit create myfirstgraph
 [AWS API Gateway](https://aws.amazon.com/) をエンドポイントとしてデータを取得します。いくつかの値を自分のアプリのもので置き換えてください。
 
 ```json
-{
-  "apiKey": "YOUR_API_KEY",
-  "endpoint": "YOUR_ENDPOINT",
-  "id": "apigateway",
-  "projectId": "YOUR_PROJECT_ID",
-  "title": "apigateway",
-  "adaptor": "apigateway"
-}
+[
+  {
+    "apiKey": "YOUR_API_KEY",
+    "endpoint": "YOUR_ENDPOINT",
+    "id": "apigateway",
+    "projectId": "YOUR_PROJECT_ID",
+    "title": "apigateway",
+    "adaptor": "apigateway"
+  }
+]
 ```
 
 #### Random adaptor
@@ -136,12 +142,18 @@ eit create myfirstgraph
 ランダムに生成されるデータを使います。
 
 ```json
-{
-  "adaptor": "random",
-  "id": "random",
-  "title": "random",
-  "name": "random"
-}
+[
+  {
+    "adaptor": "random",
+    "apikey": "",
+    "apisecret": "",
+    "appId": "",
+    "dataStore": "random",
+    "id": "random",
+    "title": "random",
+    "name": "random"
+  }
+]
 ```
 
 データは以下のようなスキームになります。
@@ -157,15 +169,16 @@ eit create myfirstgraph
 
 素早くテストするために、自分で書いたデータを使うことができます。データ数が少ない場合、同じデータが繰り返して補完されます。
 
-
 ```json
-{
-  "adaptor": "mock",
-  "id": "mock",
-  "title": "mock",
-  "name": "mock"
-  "data": [{"id": "a", "value": 1}, {"id": "b", "value": 21}, {"id": "c", "value": 512}]
-}
+[
+  {
+    "adaptor": "mock",
+    "id": "mock",
+    "title": "mock",
+    "name": "mock",
+    "data": [{"id": "a", "value": 1}, {"id": "b", "value": 21}, {"id": "c", "value": 512}]
+  }
+]
 ```
 
 ### plugin.css {#plugin.css}
@@ -187,17 +200,19 @@ eit create myfirstgraph
 ```json
 {
   "defaultSettings": {
-    "label" : "country",
-    "value": "v"
+    "label": "country",
+    "value": "value"
   },
   "sampleData": [
     {
-      "country": "JP",
-      "v": 1
+      "country": "A",
+      "value": 10,
+      "ts": 1548929863657
     },
     {
-      "country": "CN",
-      "v": 2
+      "country": "B",
+      "value": 20,
+      "ts": 1548929863657
     }
   ]
 }
@@ -218,7 +233,7 @@ eit create [graph name] -t map
 
 # InfoType の依存性 {#InfoType の依存性}
 
-グラフはそれぞれの依存性を持ちます。グラフのインストールをする際は `npm install` を使います。`npm install` が完了すると、グラフをパッケージングして実行することができます。
+グラフはそれぞれの依存性を持ちます。グラフをインストールする際は `npm install` を使います。`npm install` が完了すると、グラフをパッケージングして実行することができます。
 
 ```bash
 cd [graph name]

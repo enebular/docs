@@ -1,11 +1,10 @@
----
-lastUpdated: 2019-01-09
----
+>### お知らせ {#Notice202004}
+>チュートリアルで使用している`node-red-contrib-firebase`が現在のFirebaseに対応していないため、下記のチュートリアルは正しく動作しません。近日中に新しいチュートリアルを公開予定です。
 
 # Data Visualization {#Data Visualization}
 
 enebular の InfoMotion の機能を使うことによって、データを可視化し、visualize することが可能です。
-このチュートリアルでは、「アセットをインポートし、InfoMotionでデータを可視化する」ということを行います。（所要時間50分）
+このチュートリアルでは、「アセットをインポートし、InfoMotion でデータを可視化する」ということを行います。（所要時間 50 分）
 
 ## Table of Contents{#TableofContents}
 
@@ -13,7 +12,7 @@ enebular の InfoMotion の機能を使うことによって、データを可�
 1. [Datasource の作成](#Datasourceの作成)
 1. [Flow の編集とデプロイ](#Flowの編集とデプロイ)
 1. [DataSource の登録](#DataSourceの登録)
-1．[InfoType のインポート](#InfoTypeのインポート)
+   1．[InfoType のインポート](#InfoTypeのインポート)
 1. [InfoMotion の作成](#InfoMotionの作成)
 
 ## flow のインポート {#flow のインポート}
@@ -27,11 +26,11 @@ enebular のユーザーはアセットを公開すること、また公開さ�
 右のカテゴリーから `Flow` を選択して、「getting-started」と検索バーに入力してください。
 ![discover](./../../img/GetStarted/DataVisualization-discover.png)
 
-検索結果に出てきたenebularラベルのあるものをクリックし、下記のようなフロープレビューが表示されていることを確認してください。
+検索結果に出てきた enebular ラベルのあるものをクリックし、下記のようなフロープレビューが表示されていることを確認してください。
 右の `Import` ボタンよりフローをインポートできます。
 ![discoverflow](./../../img/GetStarted/DataVisualization-discoverflow.png)
 
-インポート先の適当なプロジェクトに初期値のロール設定(superdev)で import してください。
+インポート先の適当なプロジェクトに初期値のロール設定(edit, deploy, publish)で import してください。
 ![import](./../../img/GetStarted/DataVisualization-import.png)
 
 インポートしたプロジェクトのダッシュボードに新しくアセットが追加されています。
@@ -48,7 +47,6 @@ enebular のユーザーはアセットを公開すること、また公開さ�
 
 InfoMotion は現在下記に挙げるリアルタイムデータベースに対応しています。詳しくは各ページを参照してください。
 
-- [Milkcocoa-v2 DataSource](./../InfoMotion/DataSource/Milkcocoa/CreateDataSource.md)
 - [Firebase DataSource](./../InfoMotion/DataSource/Firebase/CreateDataSource.md)
 - [Pubnub DataSource](./../InfoMotion/DataSource/Pubnub/CreateDataSource.md)
 
@@ -121,7 +119,7 @@ enebular のユーザーはアセットを公開すること、また公開さ�
 
 ![discoverInfoType](./../../img/GetStarted/DataVisualization-discoverInfoType.png)
 
-検索結果に出てきたenebularラベルのあるものをクリックし、下記のようなプレビューは表示されていることを確認してください。
+検索結果に出てきた enebular ラベルのあるものをクリックし、下記のようなプレビューは表示されていることを確認してください。
 右の `Import` ボタンよりフローをインポートできます。
 
 ![sampleBarChart](./../../img/GetStarted/DataVisualization-discover2.png)
@@ -150,16 +148,16 @@ enebular のユーザーはアセットを公開すること、また公開さ�
 
 ![infoMotionDashBoard](./../../img/GetStarted/DataVisualization-InfoMotionDashBoard.png)
 
-画面右側の「Add Graph」を選択してサイドバーを開いてください。ここではダッシュボードに追加されたグラフを見ることができます。
+画面上部の「Manage Graphs」を選択してサイドバーを開いてください。ここではダッシュボードに追加されたグラフを見ることができます。
 今は何も追加していない状態なので、何も表示されていません。
 
 ![newGraph](./../../img/GetStarted/DataVisualization-newGraph.png)
 
-`New Graph` をクリックして、作成モーダルを開きます。
+`Create Graph` をクリックして、作成モーダルを開きます。
 デフォルトで先ほど追加した、項目がそれぞれ入力されています。
-Lavel は `category` と入力してください。グラフの X 軸 に対応します。
+Label は `category` と入力してください。グラフの X 軸 に対応します。
 Value は `value` と入力してください。グラフの Y 軸 に対応します。
-任意の名前を付けて `Create Graph` のボタンを押してください。
+任意の名前を付けて `Save` のボタンを押してください。
 
 ![graphConfig](./../../img/GetStarted/DataVisualization-graphConfig.png)
 
@@ -167,8 +165,8 @@ Value は `value` と入力してください。グラフの Y 軸 に対応し�
 
 ![graphList](./../../img/GetStarted/DataVisualization-graphList.png)
 
-名前の左にある「+」ボタンをクリックするとダッシュボードにグラフが追加されます。
-グラフが表示されない場合は、選択している時間範囲が適切でない可能性があります。右上の日付の項目からデータが保存されている時間に設定を変更してください。
+名前の左にある「Add」ボタンをクリックするとダッシュボードにグラフが追加されます。
+グラフが表示されない場合は、選択している時間範囲が適切でない可能性があります。右上の日付の項目からデータが保存されている時間を設定してください。
 
 ![infomotion](./../../img/GetStarted/DataVisualization-infomotion.png)
 

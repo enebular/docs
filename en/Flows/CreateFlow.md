@@ -8,41 +8,39 @@ The following covers how to create flows.
 
 First, select a project from the project list and you'll be taken to the project management screen.
 
-![](https://i.gyazo.com/69a5b817e8681349f45373eb7aead486.png)
+![projects](./../../img/Flow/CreateFlow-projects.png)
 
 Open the dialog box with the "+" button on the bottom right.
 
-![](https://i.gyazo.com/e521afd4d489291aa774fe9429cf3321.png)
+![plus](./../../img/Flow/CreateFlow-plus.png)
 
 Select "flow" for the asset type in the dialog box.
 
-![image](../_asset/images/Flow/CreateFlow/flow-create-flow_07.png)
+![asettype](./../../img/Flow/CreateFlow-asettype.png)
 
-After selecting "flow", you'll be able to set the icon, title and access permissions.
+After selecting "flow", you'll be able to set the icon, title, privileges and category.
 
-![](https://i.gyazo.com/046b8c6b177e0edaf9cc3f56af67e9ac.png)
+![modal](./../../img/Flow/CreateFlow-modal.png)
 
-* Title
-    * An appropriate title for the flow
-* Description
-    * This can be left blank
-* Access Permissions
-    * superdev
-* Category
-    * An appropriate category for the flow
+- Title
+  - An appropriate title for the flow
+- Description
+  - This can be left blank
+- Access Privileges
+  - edit, deploy, publish
+- Category
+  - An appropriate category for the flow
 
-![image](../_asset/images/Flow/CreateFlow/flow-create-flow_10.png)
+![continue](./../../img/Flow/CreateFlow-continue.png)
 
 Once you've completed the settings, click the "Continue" button.
 
-![image](../_asset/images/Flow/CreateFlow/flow-create-flow_11.png)
+![created](./../../img/Flow/CreateFlow-created.png)
 
 The flow has now been created.
 
-From here, the flow is edited by starting up the flow editor. Please refer to the following example.
-
-- [Milkcocoa Flow](./FlowExampleMilkcocoa.md)
-
+Node-RED on enebular and enebular-agent does not support all nodes. Nodes developed by the open source community should be used at your own risk.  
+There is a particular restriction on available nodes for the enebular-edge-agent.For more details, [enebular-edge-agent > Nodes](./../EnebularEdgeAgent/Nodes.md).
 
 ## Restrictions
 
@@ -50,9 +48,21 @@ Web Flow Editor is not an execution environment but a development environment.
 
 The following are restrictions pertained to Web Flow Editor.
 
-* A hardware dependent node cannot be used
-* A node that depends on the development environment cannot be used
-* A large size node cannot be imported and used
-    *  Reloading may be repeated
-* The generated URL is temporary
-* Some native Node-RED keyboard shortcuts do not function properly
+- A hardware dependent node cannot be used
+- A node that depends on the development environment cannot be used
+- A large size node cannot be imported and used
+  - Reloading may be repeated
+- The generated URL is temporary
+- Some native Node-RED keyboard shortcuts do not function properly
+
+## Node-RED Compatibility {#NoteNodeREDCompatibility}
+
+### Enabling or disabling a node
+
+enebular v2.25.0 or higher is using Node-RED v1. It brings Node-RED [Enabling or disabling a node](https://nodered.org/docs/user-guide/editor/workspace/nodes#enabling-or-disabling-a-node) feature.
+This feature can be used when deploying the flow to the following:
+
+- Web Flow Editor (Node-RED 1.0.5 is used)
+- enebular editor: 1.0.0 or higher
+
+Please refer to [Deploys](../Deploy/index.md#NodeEnabledDisabled) for more information.

@@ -1,41 +1,43 @@
----
-lastUpdated: 2018-11-29
----
-
 # Loading a Flow in Remote Mode {#Loading a Flow in Remote Mode}
 
-First you need [enebular-runtime-agent 2.3.0](https://github.com/enebular/enebular-runtime-agent/releases) and above running on a device (Raspberry Pi).
+It's possible to use enebular editor's remote mode to edit a flow on a device with enebular-agent installed in developer mode.
 
-Make sure your computer and your device are connected in the **same** local WiFi network.
+- Please use enebular-agent version 2.3.0 or later.
+- For details on installing enebular-agent, please see [enebular-agent installation](../EnebularAgent/Installation.md).
 
-## AWS IoT {#AWS IoT}
+The steps to use enebular editor's remote mode to edit a flow are as follows.
 
-Assuming you have all your credentials and config setup in the `awsiot` folder:
+1. Ensure that both the PC running enebular editor and the device are connected to the same local network.
+2. Start enebular-agent. Note that enebular-agent may have already been configured as a startup program.
 
-```
-cd ports/awsiot
-DEBUG=info ./bin/enebular-awsiot-agent --dev-mode
-```
+3. Open the flow in remote mode from **enebular editor** on the PC.
 
-## Pelion Device Management {#Pelion Device Management}
+    ![remote mode](../../img/EnebularEditor/remote-mode-overview.png)
 
-```
-cd ports/local
-DEBUG=info NODE_RED_DIR=../../node-red ./bin/enebular-local-agent --dev-mode
-```
+4. Select enebular editor IP Address (If previously you have checked `Remember IP Address` when you selected an IP Address, this step can be skipped).
 
-## Next... {#Next...}
+- Selected IP Address can be changed by pressing `Change IP` button in connection selection form.
 
-From **enebular editor** open a flow by the `Remote` mode.
+    ![select IP](../../img/EnebularEditor/remote-mode-select-ip.png)
 
-1. Select a AWS or Pelion Device Management Connection
+5. Select the AWS or Pelion Device Management connection.
 
-1. Select the corresponding Thing/Device
+    ![select connection](../../img/EnebularEditor/remote-mode-select-connection.png)
 
-1. Click Load
+6. Select the Thing or Device.
 
-## Debugging {#Debugging}
+    ![select device](../../img/EnebularEditor/remote-mode-select-thing.png)
 
-- Please make sure your firewall allows enebular editor to talk with the internets.
+7. Click load.
 
-- Make sure your computer is running with 1 IP Address only. Having softwares such as Virtual Box running at the same time can cause your computer to have multiple IP Addresses and can prevent enebular editor from communicating with the device.
+    ![loading](../../img/EnebularEditor/remote-mode-loading.png)
+
+Press the cancel button to cancel loading. If the cancelation is successful, the flow would be reverted to the previous state.
+
+## Notes {#Notes}
+
+- Ensure that enebular editor's network communications haven't been blocked by a firewall.
+- In order to use remote mode to load a flow on a device with enebular-agent installed in normal mode, enebular-agent will need to be restarted in developer mode.
+- If you edit and deploy a flow in the enebular editor's remote mode, the flow will be in a running state. In this case, the flow status on the Devices screen and the flow execution status of the enebular-agent may be different due to the enebular itself cannot detect the flow execution status. In such case, please restart the enebular-agent after the flow editing in remote mode is finished.
+- The cancellation feature is available only for enebular-agent version 2.14.0 or higher.
+- If project contains [Private nodes](../PrivateNodes/index.md) the enebular-agent version 2.15.0 or higher is required for Private nodes to be displayed in the pallette.

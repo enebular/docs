@@ -1,4 +1,8 @@
-[![CircleCI](https://circleci.com/gh/enebular/docs.svg?style=svg)](https://circleci.com/gh/enebular/docs)
+# 運用方法  
+
+enebular docsの管理運用方法については下記を参照してください
+
+https://uhuru-docs.herokuapp.com/products/enebular-docs
 
 # Preview
 
@@ -6,15 +10,13 @@ https://enebular-docs.netlify.com @`develop` branch.
 
 ```
 $ npm i
-$ npm i gitbook-cli -g
-$ gitbook install
-$ gitbook build
+$ npm run build
 ```
 
 ## Test at local
 
 ```
-$ gitbook serve
+$ npm run serve
 ```
 
 # On hold
@@ -31,12 +33,6 @@ $ gitbook serve
 
 * Resolution 2,560 x 1,600
 * Window size 1,440 x 900
-
-# CI
-- circle ci v2.0
-
-## Setting file
-.circleci/config.yml
 
 # Deploy
 - Netlify

@@ -1,8 +1,4 @@
----
-lastUpdated: 2018-08-09
----
-
-# API Gateway DataSource の作成 {#API Gateway DataSource の作成}
+# API Gateway Data Source の作成 {#Create API Gateway Data Source}
 
 ※ InfoMotionのライブモードは使用できません
 
@@ -16,9 +12,9 @@ Project のダッシュボードの左メニューの `Data Sources` をクリ�
 * API Key
 	* 下記を参考に API Gateway の API Key を作成し、入力してください。
 
-各項目の入力が終わったら Save を押して、DataSourceを保存します。
+各項目の入力が終わったら Save を押して、Data Sourceを保存します。
 
-新しくAPI GatewayのDataSourceが作成されていることを確認してください。
+新しくAPI GatewayのData Sourceが作成されていることを確認してください。
 
 ![CreateDataSource-addNewOne](./../../../../img/InfoMotion/DataSource/APIGateway/CreateDataSource-addNewOne.png)
 
@@ -52,19 +48,19 @@ Amazon API Gateway の API Key を作成方法を説明します。
 
 ![CreateDataSource-nameAPIKey-ja](./../../../../img/InfoMotion/DataSource/APIGateway/CreateDataSource-nameAPIKey-ja.png)
 
-作成したら API キーの文字列を DataSource で登録する API Key が表示されます。
+作成したら API キーの文字列を Data Source で登録する API Key が表示されます。
 
 ![CreateDataSource-confirmAPIKey-ja](./../../../../img/InfoMotion/DataSource/APIGateway/CreateDataSource-confirmAPIKey-ja.png)
 
 
 
-## InfoMotionの作成 {#InfoMotionの作成}
+## InfoMotionの作成 {#Create InfoMotion}
 
-DataSource を使用する準備ができました。
-InfoMotion ダッシュボードを作成する際に作った DataSource を選択することでデータをグラフに反映できます。
+Data Source を使用する準備ができました。
+InfoMotion ダッシュボードを作成する際に作った Data Source を選択することでデータをグラフに反映できます。
 
 詳しくは以下のページを順に参照してください。
 
-* [Sample infotypes](./../../SampleInfoTypes.md)
+* [Sample InfoTypes](./../../SampleInfoTypes.md)
 * [Upload an InfoType](./../../UploadInfoType.md)
 * [Create InfoMotion](./../../CreateInfoMotion.md)

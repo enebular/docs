@@ -1,15 +1,14 @@
----
-lastUpdated: 2018-12-20
----
-
 # Sample Flows
 
-This section contains Sample Flows for enebular-edge-agent and Grove modules.
-Intended for users who have completed enebular's GettingStared particularly
-flow deployment to heroku.
+Sample flows for enebular-edge-agent there are.
 
-### Table of Contents
+These flows are desined for [RAVEN](./../Board/RAVEN.md).  
+If you use other kind of IoT devices, you can easy to make it applicable by changing node settings for your device.
 
+This section is for advanced learners, since you will use sensors, actuators and extarnal web services on the market. 
+Before your challenging, we reccomend you try enebular's [GettingStarted](./../GetStarted/index.md) and enebular-edge-agent's [GettingStarted](./GettingStarted.md).
+
+### Table of Contents  
 - [Flow in which LED flashes using switch](#switchLchika)
 - [Flow to operate LEDs remotely from browser](#cloudLchika)
   - Use heroku's environment.
@@ -19,39 +18,44 @@ flow deployment to heroku.
 
 ## Switch cotrolling LED Flow {#switchLchika}
 
-The USER LED lights switches on or off when you press the USER SW.
+You can control the USER LED by pressing USER SW.
+The USER SW functions as a toggle switch, pressing the USER SW switches the USER LED lights on or off.  
+- See [here](./../Board/RAVEN.md#parts) more infomation about RAVEN parts 
 
 ![SampleFlows-switchLchika-flow](./../../img/EnebularEdgeAgent/SampleFlows-switchLchika-flow.png)
 
 ```json
 [{"id":"35aa62d8.b7976e","type":"digitalout","z":"90d9de00.d40e1","board":"RAVEN","pin":"ULED","value":"false","si":false,"name":"","x":440,"y":60,"wires":[["fd60c779.49cf98"]]},{"id":"74691d65.fe28d4","type":"digitalout","z":"90d9de00.d40e1","board":"RAVEN","pin":"ULED","value":"true","si":false,"name":"","x":440,"y":140,"wires":[["3dd5ff6a.7aed9"]]},{"id":"fd60c779.49cf98","type":"change","z":"90d9de00.d40e1","name":"","rules":[{"t":"set","p":"led","pt":"flow","to":"false","tot":"bool"}],"action":"","property":"","from":"","to":"","reg":false,"x":610,"y":60,"wires":[[]]},{"id":"3dd5ff6a.7aed9","type":"change","z":"90d9de00.d40e1","name":"","rules":[{"t":"set","p":"led","pt":"flow","to":"true","tot":"bool"}],"action":"","property":"","from":"","to":"","reg":false,"x":610,"y":140,"wires":[[]]},{"id":"4cd3cf19.805ae","type":"interruptin","z":"90d9de00.d40e1","board":"RAVEN","pin":"USWITCH","mode":3,"trigger":"rise","name":"","x":120,"y":100,"wires":[["917d7fc1.6570c"]]},{"id":"917d7fc1.6570c","type":"switch","z":"90d9de00.d40e1","name":"","property":"led","propertyType":"flow","rules":[{"t":"true"},{"t":"else"}],"checkall":"true","repair":false,"outputs":2,"x":270,"y":100,"wires":[["35aa62d8.b7976e"],["74691d65.fe28d4"]]}]
 ```
-
 <!--
 [こちら]()からimportできます。
 -->
 
 ### Plus One
 
-You can easily change input and output using a (commercially available) Grove module.
+You can easily change input and output by using commercially available sensor or actuator modules.
 
-- When using Grove switch type module as input, change the Port of the interruptIn node to the corresponding value.
+- When using switch type module as input, change the Port of the interruptIn node to the corresponding value.
+    - Example of switch type module : http://wiki.seeedstudio.com/Grove-Button/
 
-- When using Grove's LED module etc. as output, change the port of the digitalOut node to the corresponding value.
+- When using modules similar to LED as output, change the port of the digitalOut node to the corresponding value.
+    - Example of LED module : http://wiki.seeedstudio.com/Grove-Red_LED/
 
 ![SampleFlows-switchLchika-setting](./../../img/EnebularEdgeAgent/SampleFlows-switchLchika-setting-en.png)
 ※Image of interruptIn node
+
+<!--あとで例示イラストを追加する-->
 
 ## Flow to operate LEDs remotely from browser {#cloudLchika}
 
 ![SampleFlows-cloudLchika-image](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-image.png)
 
-<!--あとで差し替え-->
-
 Building an app on heroku that manages the device.
 The flow changes the state of the LED through the browser.
 
-### heroku
+heroku's parameters are editable from browsers.
+
+### Flow on heroku
 
 Using an app that connects to the device.
 
@@ -84,7 +88,7 @@ Check from deploy list
 
 When accessing「**set value! -> [value]**」is displayed.
 
-### device
+### Flow on RAVEN
 
 Access the app in 5 second intervals to get the status.
 
@@ -114,6 +118,8 @@ SlackBot allows direct access from slack.
 
 ![SampleFlows-cloudLchika-slackFlow](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-slackFlow-en.png)
 
+#### Flow on heroku
+
 Add your slack api token and URL to the slack node to set the request.
 
 ```json
@@ -130,15 +136,19 @@ Slack example.
 
 ## Sending data to the cloud {#sensorData}
 
+>### Notice {#Notice202004}
+>The flow described in this tutorial will not function properly since ‘node-red-contrib-firebase’ is no longer maintenanced and it is no longer compatible with the current Firebase. A new tutorial will be provided shortly.
+
 ![SampleFlows-postData-image](./../../img/EnebularEdgeAgent/SampleFlows-postData-image.png)
 
 <!--あとで差し替え-->
 
 This application receives data from the sensor then
 stores the data in firebase.
-This Sample Flow uses the analog sensor of the Grove module.
+This Sample Flow uses the analog sensor module.
+- Example of module : http://wiki.seeedstudio.com/Grove-Slide_Potentiometer/
 
-## heroku
+## Flow on heroku
 
 Prepare the app to be connected to the device on heroku.
 Put data into Firebase via heroku.
@@ -161,7 +171,7 @@ After importing, please change the settings of the Firebase node.
 1. Enter your Firebase's appid and Set Auth Type to "None".
    ![SampleFlows-postData-firebase2](./../../img/EnebularEdgeAgent/SampleFlows-postData-firebase2-en.png)
 
-## device
+## Flow on RAVEN
 
 Send port 4 data of the Grove module at 5 second intervals.
 Use an analog sensor with the Grove module.

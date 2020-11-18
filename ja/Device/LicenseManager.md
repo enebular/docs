@@ -1,7 +1,3 @@
----
-lastUpdated: 2018-05-22
----
-
 # License Manager {#License Manager}
 
 License ManagerではAWS IoTにデプロイされたデバイスの **ステータス** と **ログ** を監視するために必要なライセンスを購入することが出来ます。この機能は現在エンタープライズプランでのみのサポートです。さらに情報が必要な方は **support@enebular.com** に連絡してください。
@@ -27,13 +23,18 @@ License ManagerではAWS IoTにデプロイされたデバイスの **ステー�
 
 ステータスが **issued** になったら、デバイスにライセンスを登録することができます。登録するとステータスは **register** となり、監視機能が有効になります。
 
+もし、ライセンスを **register** に変更したときにデバイスが起動していない場合は、監視機能を有効にするために以下の手順を実施する必要があります。
+
+1. デバイス(enebular-agent又はenebular-edge-agent)を起動します
+2. Device List画面で、Monitoringをオフにした後、再度オンにします
+
 **issued** をクリックして、ライセンスを登録します。[deploying a flow](../Deploy/index.md)の手順で作成済みの、AWS IoTのコネクションを選択します。ライセンスを割り当てたいデバイスを選択します。enebular-agentが動作しているデバイスの場合、登録する必要はありません。 登録されると、ステータスは**registered**になります。
 
 登録時にデバイスの電源がオフの場合は、監視のアクティベーションのために電源をオンにしてください。登録時にデバイスの電源がオンの場合は、デバイスは自動的に監視のアクティベーションをオンにします。
 
 ## Reserving a License {#Reserving a License}
 
-こちらは実装予定の有償機能になります。しばらくお待ちください。
+こちらは実装予定の有料機能になります。しばらくお待ちください。
 
 ## Deleting a License {#Deleting a License}
 

@@ -1,12 +1,10 @@
----
-lastUpdated: 2019-01-09
----
-
-# Deploying to Heroku {#Deploying to Heroku}
+# Deploying to Heroku {#DeployingToHeroku}
 
 This page covers Heroku deploys. A Heroku deploy is the ability to deploy a flow created in enebular to an enebular Node-RED on Heroku.
 
-## Creating the Flow to Send to Heroku {#Creating the Flow to Send to Heroku}
+**Note: Heroku applications created in enebular version 2.25.3 or below can no longer be used as of November 10, 2020.Please refer to “[How to Recreate Heroku Applications to Correspond with the Removal of Heroku mLab MongoDB Add-on](recreating-by-postgres-addon.md)” and recreate Heroku applications, as necessary.**
+
+## Creating the Flow to Send to Heroku {#CreatingTheFlowToSendToHeroku}
 
 ![Heroku-index-createflow](./../../../../img/Deploy/Heroku-index-createflow.png)
 
@@ -18,7 +16,7 @@ Create the flow you want to send to Heroku, and then deploy it to save it.
 
 ![Heroku-index-deploybutton](./../../../../img/Deploy/Heroku-index-deploybutton.png)
 
-## Deploy Settings {#Deploy Settings}
+## Deploy Settings {#DeploySettings}
 
 Configure your flow deployment by clicking on Deploy.
 
@@ -34,7 +32,7 @@ Input a "Connection Name". Get the "Heroku API Token" from the Heroku settings s
 
 ![selectHeroku](./../../../../img/GetStarted/FlowDeployment-selectHeroku.png)
 
-## Creating an app with the Heroku Button {#Creating an app with the Heroku Button}
+## Creating an app with the Heroku Button {#CreatingAnAppWithTheHerokuButton}
 
 ![accountSettings](./../../../../img/GetStarted/FlowDeployment-accountSettings.png)
 
@@ -58,7 +56,7 @@ We can create a Heroku app from the "Deploy to Heroku" button on the bottom.
 
 ![herokuButton](./../../../../img/GetStarted/FlowDeployment-herokuButton.png)
 
-## Creating an app with the Heroku Button {#Creating an app with the Heroku Button}
+## Creating an app with the Heroku Button {#CreatingAnAppWithTheHerokuButton}
 
 Use the Heroku button to create the app. This step can be skipped for those who have already created one.
 
@@ -72,17 +70,16 @@ Heroku The Heroku app settings will be displayed.
 
 ![appName](./../../../../img/GetStarted/FlowDeployment-appName.png)
 
-## Deploy Settings {#Deploy Settings}
+Set the USERNAME and PASSWORD to be used for login after the enebular Node-RED has been created.
+Please do not change the value of AGENT_HEROKU_VERSION.
 
 ![userName](./../../../../img/GetStarted/FlowDeployment-userName.png)
 
-Set the USERNAME and PASSWORD to be used for login after the enebular Node-RED has been created.
+After confirming the settings press the "Deploy" button.
 
 ![deployApp](./../../../../img/GetStarted/FlowDeployment-deployApp.png)
 
-After confirming the settings press the "Deploy" button. ¥
-
-After confirming the settings click the "Deploy" button. If you haven't added your credit card information to heroku before, the following modal will show up.
+If you haven't added your credit card information to heroku before, the following modal will show up.
 Using the Enebular app is free so one needs to not worry about Enebular charging.
 
 ![creditCard](./../../../../img/GetStarted/FlowDeployment-creditCard.png)

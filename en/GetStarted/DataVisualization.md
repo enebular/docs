@@ -1,6 +1,5 @@
----
-lastUpdated: 2019-01-09
----
+>### Notice {#Notice202004}
+>The flow described in this tutorial will not function properly since ‘node-red-contrib-firebase’ is no longer maintenanced and it is no longer compatible with the current Firebase. A new tutorial will be provided shortly.
 
 # Data Visualization {#Data Visualization}
 
@@ -14,7 +13,7 @@ This tutorial will do 'Import assets and visualise Flow data in an InfoMotion'.(
 1. [Creating a Datasource](#CreatingaDatasource)
 1. [Editing and Deploying the Flow](#EditingandDeployingtheFlow)
 1. [Registering a DataSource for InfoMotion](#RegisteringaDataSourceforInfoMotion)
-1．[Import an InfoType](#ImportanInfoType)
+   1．[Import an InfoType](#ImportanInfoType)
 1. [Creating an InfoMotion](#CreatinganInfoMotion)
 
 ## Import a Flow {#Import a Flow}
@@ -31,7 +30,7 @@ Click Import(marked by enebular) to open the import modal.
 
 ![discoverflow](./../../img/GetStarted/DataVisualization-discoverflow.png)
 
-Select the project to import to and the Default asset role. (For now select superdev)
+Select the project to import to and the Default asset role. (For now select edit, deploy, publish)
 
 ![import](./../../img/GetStarted/DataVisualization-import.png)
 
@@ -51,7 +50,6 @@ edit in the flow is datasource credentials. before we deploy the flow lets regis
 Below are the current real time databases used in InfoMotion.
 See documentation for simple registration and and set up configurations.
 
-- [Milkcocoa-v2 DataSource](./../InfoMotion/DataSource/Milkcocoa/CreateDataSource.md)
 - [Firebase DataSource](./../InfoMotion/DataSource/Firebase/CreateDataSource.md)
 - [Pubnub DataSource](./../InfoMotion/DataSource/Pubnub/CreateDataSource.md)
 
@@ -143,22 +141,22 @@ Once you've created it you'll be taken to the InfoMotion dashboard screen.
 
 ![infoMotionDashBoard](./../../img/GetStarted/DataVisualization-InfoMotionDashBoard.png)
 
-Open the sidebar with "Add Graph". A list of the graphs shown on the dashboard is shown in the sidebar. In this procjet no graphs have been added yet.
+Open the sidebar with "Manage Graphs". A list of the graphs shown on the dashboard is shown in the sidebar. In this procjet no graphs have been added yet.
 
 ![newGraph](./../../img/GetStarted/DataVisualization-newGraph.png)
 
-Click on `New Graph` to open the the creation modal.
+Click on `Create Graph` to open the the creation modal.
 By default the Type will be set to `barchart` and DATASOURCE to `test-datasource`.
 The Label corresponds to x axis set as `category` and Value to the y axis `value`. These are set by default.
-Edit the name as you like then `create graph`.
+Edit the name as you like then `Save`.
 
 ![graphConfig](./../../img/GetStarted/DataVisualization-graphConfig.png)
 
-"test-graph" will now be added to the list.
+The created graph will now be added to the list.
 
 ![graphList](./../../img/GetStarted/DataVisualization-graphList.png)
 
-If you click the plus icon to the left of test-graph it will be added to the dashboard. If data is not displayed you may have no data being stored. Select a daterange to a date when data was stored.
+If you click the `Add` to the left of the graph name it will be added to the dashboard. If data is not displayed you may have no data being stored. Select a daterange to a date when data was stored.
 
 ![infomotion](./../../img/GetStarted/DataVisualization-infomotion.png)
 

@@ -1,8 +1,6 @@
----
-lastUpdated: 2018-08-09
----
+###Create API Gateway Data Source {#Create API Gateway Data Source}
 
-###Create a Data Source (Not Applicable with livemode)  {#Create a Data Source (Not Applicable with livemode) }
+※ Not Applicable with livemode
 
 In the same enebular project click `Data Sources` and the plus button to add a `Data Source`
 
@@ -14,9 +12,9 @@ In the same enebular project click `Data Sources` and the plus button to add a `
 * API Key
 	* API Key for the API Gateway. Please refer to the following.
 
-Cick Save to set the DataSource.
+Click Save to set the Data Source.
 
-You should see a new DataSource created.
+You should see a new Data Source created.
 
 ![CreateDataSource-addNewOne](./../../../../img/InfoMotion/DataSource/APIGateway/CreateDataSource-addNewOne.png)
 
@@ -39,7 +37,7 @@ See `Resource`  for checking `method` .
 ## APIKey {#APIKey}
 
 Create Amazon API Gateway's API Key.
-If you know more, see [official document](https://aws.amazon.com/documentation/apigateway/?nc1=h_ls) for details.
+If you know more, see [official documentation](https://aws.amazon.com/documentation/apigateway/?nc1=h_ls) for details.
 
 Click left menu's `API Key`.
 
@@ -51,13 +49,13 @@ Create a name for the key.
 
 ![CreateDataSource-nameAPIKey-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateDataSource-nameAPIKey-en.png)
 
-Now it becomes a registered apikey to be used for a DataSource.
+Now it becomes a registered apikey to be used for a Data Source.
 
 ![CreateDataSource-confirmAPIKey-en](./../../../../img/InfoMotion/DataSource/APIGateway/CreateDataSource-confirmAPIKey-en.png)
 
 ## Create InfoMotion {#Create InfoMotion}
 
-Now your DataSource is ready to be used on an infotype see 
-[Sample infotypes](./../../SampleInfoTypes.md)to downoad a graph, 
+Now your Data Source is ready to be used on an InfoType see 
+[Sample InfoTypes](./../../SampleInfoTypes.md) to downoad a graph, 
 [Upload an InfoType](./../../UploadInfoType.md) to upload a graph to enebular, 
-and [Create InfoMotion](./../../CreateInfoMotion.md) to create an InfoMotion dashboard
+and [Create InfoMotion](./../../CreateInfoMotion.md) to create an InfoMotion dashboard.

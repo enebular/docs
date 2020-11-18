@@ -1,12 +1,10 @@
----
-lastUpdated: 2019-01-04
----
-
-# Heroku へのデプロイ {#Heroku へのデプロイ}
+# Heroku へのデプロイ {#DeployingToHeroku}
 
 このページでは Heroku Deploy の説明をします。Heroku Deploy は enebular で作成したフローを Heroku で作成した enebular Node-RED に Deploy する機能です。
 
-## Heroku に送るフローを作成 {#Heroku に送るフローを作成}
+**注意: enebular v2.25.3以下のバージョンで作成したHerokuアプリは2020/11/10に利用できなくなります。[HerokuのmLab MongoDB Add-onの廃止に伴うHerokuアプリの再作成](recreating-by-postgres-addon.md)を参照し、必要に応じ、Herokuアプリの再作成を実施してください。**
+
+## Heroku に送るフローを作成 {#CreatingTheFlowToSendToHeroku}
 
 ![Heroku-index-createflow](./../../../../img/Deploy/Heroku-index-createflow.png)
 まず、Assets から新しいフローを作成します。
@@ -17,7 +15,7 @@ Heroku に送りたいフローを作成して、デプロイして保存しま�
 
 ![Heroku-index-deploybutton](./../../../../img/Deploy/Heroku-index-deploybutton.png)
 
-## デプロイの設定 {#デプロイの設定}
+## デプロイの設定 {#DeploySetting}
 
 つづいて、デプロイの設定をします。  
 フローが作成できたら上部のメニューから Deploy ページに移動します。
@@ -57,7 +55,7 @@ Heroku API Token に API Key をコピーして、[Save] を押します。
 
 ![herokuButton](./../../../../img/GetStarted/FlowDeployment-herokuButton.png)
 
-## Heroku ボタンでアプリを作成 {#Heroku ボタンでアプリを作成}
+## Heroku ボタンでアプリを作成 {#CreatingAnAppWithTheHerokuButton}
 
 Heroku ボタンでアプリを作成します。すでに作成されている方は読み飛ばして下さい。  
 Heroku ボタンを押すとログインしていない場合、Heroku のログイン画面が出てくるのでログインします。
@@ -72,7 +70,8 @@ App name をわかりやすい名前で設定します。
 
 ![appName](./../../../../img/GetStarted/FlowDeployment-appName.png)
 
-作成後 の enebular Node-RED のログインするための USERNAME/PASSWORD を設定します。
+作成したアプリにデプロイしたenebular Node-REDにログインする際に利用するUSERNAME/PASSWORDを設定します。  
+AGENT_HEROKU_VERSIONの値は変更しないでください。
 
 ![userName](./../../../../img/GetStarted/FlowDeployment-userName.png)
 
@@ -98,7 +97,7 @@ Heroku にクレジットカード情報を登録していない場合、以下�
 
 ![agentOnHeroku](./../../../../img/GetStarted/FlowDeployment-agentOnHeroku.png)
 
-## デプロイ {#デプロイ}
+## デプロイ {#Deploying}
 
 保存されると Select Connection Type から Heroku を選択すると、Heroku アカウントが持つアプリ一覧が出てきます。
 

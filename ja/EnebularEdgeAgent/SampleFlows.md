@@ -1,13 +1,14 @@
----
-lastUpdated: 2018-12-20
----
-
 # Sample Flows
-enebular-edge-agentを使用したSample Flowです。市販のセンサやアクチュエータを使用したフローも含まれます。
 
-herokuへのフローデプロイなどもあるので、enebularのGettingStaredを一通り終えた方に向けとなっています。
+enebular-edge-agentのユースケースごとにサンプルのフローを準備しました。
 
-### Table of Contents
+本ドキュメントに登場するフローは、読者がIoTデバイスとして[RAVEN](./../Board/RAVEN.md)を使用しているものとして記述しています。  
+RAVEN以外のIoTデバイスをお使いの場合は、IoTデバイスに合わせてノードの設定を変更することで簡単に適応することが出来ます。
+
+IoTデバイスー、アクチュエーター、外部サービスを利用するため、少し上級者向けのフローとなっています。
+本ページを読み進める前にenebularの[GettingStarted](./../GetStarted/index.md)およびenebular-edge-agentの[GettingStarted](./GettingStarted.md) を実施することをおすすめします。
+
+## Table of Contents
 - [スイッチを使用してLEDが明滅するフロー](#switchLchika)
 - [ブラウザから遠隔でLEDを操作するフロー](#cloudLchika)
     - herokuを使用します。
@@ -17,7 +18,9 @@ herokuへのフローデプロイなどもあるので、enebularのGettingStare
 
 ## スイッチを使用してLEDが明滅するフロー{#switchLchika}
 
-USER SWを押すことによってUSER LEDが点灯し、もう一度押すと消灯します。
+RAVEN本体のUSER SWを押すと、USER LEDが点灯、消灯を繰り返すフローです。
+USER SWはトグルスイッチになっており、押すたびに点灯と消灯を交互に繰り返します。  
+- USER SW、USER LEDの場所については、[RAVEN 各部説明](./../Board/RAVEN.md#parts)を確認してください
 
 ![SampleFlows-switchLchika-flow](./../../img/EnebularEdgeAgent/SampleFlows-switchLchika-flow.png)
 
@@ -30,29 +33,29 @@ USER SWを押すことによってUSER LEDが点灯し、もう一度押すと�
 
 ### Plus One
 
-市販のセンサやアクチュエータを使って、inputやoutputを容易に変更できます。
-詳しくはボード毎のページを参照してください。
+RAVENに市販のセンサーやアクチュエーターを接続することで、inputやoutputを容易に変更できます。
 
-* スイッチ系のモジュールをinputとして使用をする場合は、interruptInノードのPortを該当する値に変更してください。
-* LEDモジュールなどをoutputとして使用する場合は、digitalOutノードのPortを該当する値に変更してください。
+- スイッチ系のモジュールをinputとして使用をする場合は、interruptInノードのPortを該当する値に変更してください。
+    - スイッチ系のモジュールの例：http://wiki.seeedstudio.com/Grove-Button/
+
+- LEDモジュールなどをoutputとして使用する場合は、digitalOutノードのPortを該当する値に変更してください。
+    - LEDモジュールの例：http://wiki.seeedstudio.com/Grove-Red_LED/
 
 ![SampleFlows-switchLchika-setting](./../../img/EnebularEdgeAgent/SampleFlows-switchLchika-setting.png)
 ※画像はinterruptInノードのものです。
 
 <!--あとで例示イラストを追加する-->
 
-
 ## ブラウザから遠隔でLEDを操作するフロー{#cloudLchika}
 
 ![SampleFlows-cloudLchika-image](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-image.png)
-<!--あとで差し替え-->
 
 herokuにLEDをONにするかOFFにするかのパラメータを持たせ、デバイスがそれを確認するフローです。
 heroku用、デバイス用の二つのフローを使用します。
 
 herokuのパラメータは、任意のブラウザから変更できます。
 
-### heroku
+### heroku で動作させるフロー
 
 heroku上に、デバイスが接続するappを用意します。
 
@@ -71,7 +74,7 @@ heroku上に、デバイスが接続するappを用意します。
 [こちら]()からimportできます。
 -->
 
-### device
+### RAVEN で動作させるフロー
 
 5秒周期でappにアクセスしてパラメータを取得します。
 
@@ -107,6 +110,8 @@ SlackBotを利用して、することでブラウザからではなくSlackか�
 
 ![SampleFlows-cloudLchika-slackFlow](./../../img/EnebularEdgeAgent/SampleFlows-cloudLchika-slackFlow.png)
 
+#### heroku で動作させるフロー
+
 slackの「API Token」、http requestノードの「URL」を自分のものに書き換えてください。
 ```json
 [{"id":"be195e5f.c0068","type":"Slack Bot In","z":"a38fc59f.c0d678","name":"","apiToken":"your-token","channel":"","x":90,"y":140,"wires":[["b5b64af1.81fd48"]]},{"id":"b5b64af1.81fd48","type":"switch","z":"a38fc59f.c0d678","name":"slackのメッセージの判別","property":"payload","propertyType":"msg","rules":[{"t":"cont","v":"ON","vt":"str"},{"t":"cont","v":"OFF","vt":"str"}],"checkall":"true","repair":false,"outputs":2,"x":270,"y":140,"wires":[["d5b9995c.161358","804d5fac.a6ee9"],["dd681792.451928","7040eb7d.ec80f4"]]},{"id":"bed1928d.16612","type":"Slack Bot Out","z":"a38fc59f.c0d678","name":"","apiToken":"your-token","channel":"","x":750,"y":140,"wires":[]},{"id":"804d5fac.a6ee9","type":"change","z":"a38fc59f.c0d678","name":"trueのときのレスポンス","rules":[{"t":"set","p":"payload","pt":"msg","to":"つけたよ！","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":570,"y":120,"wires":[["bed1928d.16612"]]},{"id":"d5b9995c.161358","type":"http request","z":"a38fc59f.c0d678","name":"true","method":"GET","ret":"txt","url":"https://[your-heroku-app].herokuapp.com/set_value?v=true","tls":"","x":370,"y":80,"wires":[[]]},{"id":"dd681792.451928","type":"http request","z":"a38fc59f.c0d678","name":"false","method":"GET","ret":"txt","url":"https://[your-heroku-app].herokuapp.com/set_value?v=false","tls":"","x":370,"y":200,"wires":[[]]},{"id":"7040eb7d.ec80f4","type":"change","z":"a38fc59f.c0d678","name":"falseのときのレスポンス","rules":[{"t":"set","p":"payload","pt":"msg","to":"けしたよ","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":570,"y":160,"wires":[["bed1928d.16612"]]}]
@@ -123,14 +128,18 @@ slackの「API Token」、http requestノードの「URL」を自分のものに
 
 ## センサーデータをクラウドストレージに入れるフロー{#sensorData}
 
+>### お知らせ {#Notice202004}
+>チュートリアルで使用している`node-red-contrib-firebase`が現在のFirebaseに対応していないため、下記のチュートリアルは正しく動作しません。近日中に新しいチュートリアルを公開予定です。
+
 ![SampleFlows-postData-image](./../../img/EnebularEdgeAgent/SampleFlows-postData-image.png)
 <!--あとで差し替え-->
 
-このサンプルフローは、スライドバーや水分センサといったアナログ値をとれるモジュールを使用します。
+このサンプルフローは、スライドバーや水分センサーといったアナログ値をとれるモジュールを使用します。  
+- アナログ値をとれるモジュールの例： http://wiki.seeedstudio.com/Grove-Slide_Potentiometer/
 
-デバイスで取ったセンサの値にクラウドでメタデータを付与し、Firebaseにためるフローです。
+デバイスで取ったセンサーの値にクラウドでメタデータを付与し、Firebaseにためるフローです。
 
-## heroku
+### heroku で動作させるフロー
 
 heroku上に、デバイスが接続するappを用意します。
 このappからFirebaseにデータを入れます。
@@ -152,9 +161,9 @@ importした後、Firebaseノードの設定を自分のものに書き換えて
 1. config dialogが開くので、自分のFirebaseのappidを入力してください。Auth Typeは「None」にしてください。
 ![SampleFlows-postData-firebase2](./../../img/EnebularEdgeAgent/SampleFlows-postData-firebase2.png)
 
-## device
+### RAVEN で動作させるフロー
 
-5秒周期でport4に接続されたアナログセンサのデータをappに送信します。
+5秒周期でport4に接続されたアナログセンサーのデータをappに送信します。
 
 
 ![SampleFlows-postData-device](./../../img/EnebularEdgeAgent/SampleFlows-postData-device.png)
@@ -168,7 +177,7 @@ import後、http requestノードの「URL」を自分のappのアドレスに�
 [こちら]()からimportできます。
 -->
 
-## Plus One
+### Plus One
 
 使用したFirebaseをDatastoreとして登録すれば、Infomotionで簡単に可視化することができます。
 

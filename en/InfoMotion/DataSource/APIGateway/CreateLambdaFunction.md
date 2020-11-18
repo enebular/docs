@@ -1,7 +1,3 @@
----
-lastUpdated: 2018-08-09
----
-
 ## Using Lambda to return data {#Using Lambda to return data}
 
 Getting started with Lambda.
@@ -25,9 +21,9 @@ exports.handler = (event, context, callback) => {
     let arr = []
     for (var i = 100; i >= 1; i--) {
       arr.push({
-        ts: Number(event.start) + Math.floor(timeunit*i),
-            category:category[Math.floor(Math.random()*4)],
-            value: Math.floor(Math.random()*10)
+        category:category[Math.floor(Math.random()*4)],
+        value: Math.floor(Math.random()*10),
+        ts: Number(event.start) + Math.floor(timeunit*i)
       })
     }
     return arr
