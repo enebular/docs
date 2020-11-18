@@ -27,6 +27,11 @@ Once you have purchased a License you will receive a License key. The status of 
 
 When the status of a License is **issued**, you can **register** it to a Device. Registering a License activates the monitoring capabilities.
 
+When you **register** a license to a device, please make sure your device is online. If it is offline, when you **registered** it, the device cannot be monitored. In order to fix that issue, follow the steps below.
+
+1. Start a device with (enebular-agent / enebular-edge-agent) running
+2. From the Device List, toggle _Monitoring_ to **OFF**, then **ON** again
+
 Click on an **issued** License, to register a License. Similar to [deploying a flow](../Deploy/index.md), you choose a connection you created from for example AWS IoT. Select a device to register the License. Your device with enebular-agent running does not have to be turned on to register. Once registered, your License status will become **registered**.
 
 If your device was turned off when registering, just turn it on to activate monitoring. If your device was turned on when registering, your device will automatically activate monitoring.

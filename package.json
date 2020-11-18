@@ -4,10 +4,11 @@
   "description": "## Get Started",
   "main": "README.md",
   "scripts": {
-    "postinstall": "gitbook install",
+    "start": "npx gitbook serve",
     "test": "mocha test.js",
     "build": "gitbook build",
-    "check": "node check.js"
+    "check": "node check.js",
+    "serve": "gitbook serve"
   },
   "repository": {
     "type": "git",
@@ -22,13 +23,14 @@
   "dependencies": {
     "gitbook-cli": "^2.3.2",
     "gitbook-plugin-expandable-chapters-interactive": "^0.1.0",
-    "gitbook-plugin-language-picker": "^0.1.0"
+    "gitbook-plugin-language-picker": "^0.1.0",
+    "gitbook-plugin-theme-default-uhuru": "file:theme-default-uhuru"
   },
   "devDependencies": {
-    "assert": "^1.4.1",
-    "glob": "^7.1.2",
-    "markdown-it": "^8.4.0",
+    "assert": "^1.5.0",
+    "glob": "^7.1.6",
+    "markdown-it": "^8.4.2",
     "markdown-it-meta": "0.0.1",
-    "mocha": "^4.0.1"
+    "mocha": "^8.2.1"
   }
 }

@@ -1,7 +1,3 @@
----
-lastUpdated: 2019-01-09
----
-
 # Introduction {#Introduction}
 
 This tutorial will do 'Sign Up to enebular and edit a flow'.(Time required 20 minutes)
@@ -15,9 +11,7 @@ This tutorial will do 'Sign Up to enebular and edit a flow'.(Time required 20 mi
 
 ## Signing up {#Signing up}
 
-** Notice : enebular v1 accounts are no longer supported, please sign-up to an enebular v2 account. **
-
-Go to https://enebular.com/en and click `SIGN UP`.
+Go to https://www.enebular.com/en and click `Sign Up`.
 
 ![signUp](./../../img/GetStarted/Introduction-signUp-en.png)
 
@@ -63,11 +57,10 @@ Press the "+" at the bottom right to open the asset creation dialog box.
 
 ![createAsset](./../../img/GetStarted/Introduction-createAsset.png)
 
-Select `flow` for the asset type and give the flow a title. For the flow's default access permissions, this time just set it to `superdev`. The category at the bottom can be set to anything appropriate.
+Select `flow` for the asset type and give the flow a title. For the flow's default access permissions, this time just set it to `edit, deploy, publish`. The category at the bottom can be set to anything appropriate.
 Press "Continue" to complete the creation.
 
 ![createAssetModal](./../../img/GetStarted/Introduction-createAssetModal.png)
-
 
 Once created you'll be taken to the flow details page.
 Press "Edit Flow".
@@ -89,15 +82,15 @@ Inject Node triggers the flow to start.
 ![set_inject_node](./../../img/GetStarted/Introduction-inject_node.gif)
 
 Next, deploy Debug Node. Debug Node is classified as an "output" on the node pallet.
-Debug Node is the node that displays debug messages on the right hand side tab. 
+Debug Node is the node that displays debug messages on the right hand side tab.
 ![set_debug_node](./../../img/GetStarted/Introduction-debug_node.gif)
 
-Connect Inject Node and Debug Node. 
-Save the flow by clicking on the `Deploy` button at the top right. 
-You can start the flow by clicking the left end of the Inject Node. The debug tab should be logging timestamps. 
+Connect Inject Node and Debug Node.
+Save the flow by clicking on the `Deploy` button at the top right.
+You can start the flow by clicking the left end of the Inject Node. The debug tab should be logging timestamps.
 ![connect_nodes](./../../img/GetStarted/Introduction-connect_nodes.gif)
 
-Now you have a flow working. Let's next log `Hello World !` instead of timestamps. By default Debug Node exports `msg.payload` as the logging value. We will have to change this value to `Hello World !`. To do this a Change Node can help. 
+Now you have a flow working. Let's next log `Hello World !` instead of timestamps. By default Debug Node exports `msg.payload` as the logging value. We will have to change this value to `Hello World !`. To do this a Change Node can help.
 
 Change Node is classified as a "function" node on the pallet.
 ![set_change_node](./../../img/GetStarted/Introduction-set_change_node.gif)
@@ -110,4 +103,4 @@ Save flow by clicking on the `Deploy` button and start the flow. The debug tab s
 
 ## Well Done! {#Well Done!}
 
-You can now create a project, an asset and edit a simple flow on Enebular. 
+You can now create a project, an asset and edit a simple flow on Enebular.

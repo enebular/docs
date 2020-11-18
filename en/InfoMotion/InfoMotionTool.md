@@ -1,44 +1,40 @@
----
-lastUpdated: 2018-07-27
----
-
 # InfoMotion Tool {#InfoMotion Tool}
 
-In order to create an InfoType the infomotion-tool must be installed. 
+In order to create an InfoType the infomotion-tool must be installed.
 
-For ready to use sample InfoTypes see [Sample InfoTypes](./SampleInfoTypes.md) 
+For ready to use sample InfoTypes see [Sample InfoTypes](./SampleInfoTypes.md)
 
-The infomotion-tool allows the developer to run, test and edit InfoMotions locally. Once the InfoType is completed intomotion-tool packages the scripts to be uploaded to enebular. 
+The infomotion-tool allows the developer to run, test and edit InfoMotions locally. Once the InfoType is completed intomotion-tool packages the scripts to be uploaded to enebular.
 
-## Installing infomotion-tool  {#Installing infomotion-tool }
+## Installing infomotion-tool {#Installing infomotion-tool }
 
 ```
 npm install @uhuru/enebular-infomotion-tool-v2 -g
 ```
 
-* Requirements for running InfoMotion-tool
-`nodejs >= 6 and npm 5.2+`
+- Requirements for running InfoMotion-tool
+  `nodejs >= 6 and npm 5.2+`
 
-If a permission error occur the following solutions may solve it. 
+If a permission error occur the following solutions may solve it.
 
-1) Give permission to current user to global node_modules in /usr/local/lib/ node_modules. Once persmission given retry global install. 
+1. Give permission to current user to global node_modules in /usr/local/lib/ node_modules. Once persmission given retry global install.
 
-MacOSX: https://support.apple.com/kb/PH25287?locale=en_US 
+MacOSX: https://support.apple.com/kb/PH25287?locale=en_US
 
-Windows: https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754344(v=ws.11) 
+Windows: https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754344(v=ws.11)
 
-2) Install nvm to handle node and npm installations. (recommended) 
-MacOSX: https://github.com/creationix/nvm  
-Windows: https://github.com/coreybutler/nvm-windows 
+2. Install nvm to handle node and npm installations. (recommended)
+   MacOSX: https://github.com/creationix/nvm  
+   Windows: https://github.com/coreybutler/nvm-windows
 
-3) Change npm's Default Directory https://docs.npmjs.com/getting-started/fixing-npm-permissions see `Option Two`. 
+3. Change npm's Default Directory https://docs.npmjs.com/getting-started/fixing-npm-permissions see `Option Two`.
 
-## Commands  {#Commands }
+## Commands {#Commands }
 
 ```
-eit create [graph name]  = Creates an InfoType with the [graph name] 
-eit run [graph name]     = Runs [graph name] on localhost:3000 
-eit run [graph name] -l  = Runs livereload [graph name] on localhost:3000 
+eit create [graph name]  = Creates an InfoType with the [graph name]
+eit run [graph name]     = Runs [graph name] on localhost:3000
+eit run [graph name] -l  = Runs livereload [graph name] on localhost:3000
 eit package [graph name] = Creates files to upload on enebular
 eit help                 = help
 ```
@@ -61,38 +57,18 @@ eit create myfirstgraph
 
 ### datasource.json {#datasource.json}
 
-*This file is for testing.*
+_This file is for testing._
 
 This file allows you to connect your infomotion to datasources
 for local browser tests.
 
 The adapter types are
 
-- `milkcocoa` (v2) (v3 coming soon)
 - `pubnub`
 - `firebase`
 - `apigateway`
 - `random`
 - `mock`
-
-#### Milkcocoa adoptor
-
-Using [Milkcocoa](https://mlkcca.com) datasource.
-Replace the specified values with your app details.
-
-```json
-{
-  "adaptor": "milkcocoa",
-  "apikey": "YOUR_API_KEY",
-  "apisecret": "YOUR_API_SECRET",
-  "appId": "YOUR_APP_ID",
-  "dataStore": "YOUR_DATASTORE",
-  "id": "milkcocoa",
-  "title": "milkcocoa",
-  "name": "milkcocoa"
-}
-* If no apikey or secret leave blank.
-```
 
 #### Pubnub adaptor
 
@@ -100,45 +76,49 @@ Using [Pubnub](https://www.pubnub.com/) as a datasource.
 Replace the specified values with your app details.
 
 ```json
-{
-  "adaptor": "pubnub",
-  "pubnub": {
-    "publishKey": "YOUR_PUBLISH_KEY",
-    "subscribeKey": "YOUR_SUBSCRIBE_KEY",
-    "ssl": true,
-  },
-  "chanel" : "YOUR_CHANNEL",
-  "count" : 100
-  "appId": "pubnub",
-  "id": "pubnub",
-  "title": "pubnub",
-  "name": "pubnub"
-}
+[
+  {
+    "adaptor": "pubnub",
+    "pubnub": {
+      "publishKey": "YOUR_PUBLISH_KEY",
+      "subscribeKey": "YOUR_SUBSCRIBE_KEY",
+      "ssl": true
+    },
+    "channel": "YOUR_CHANNEL",
+    "count": 1000,
+    "appId": "pubnub",
+    "id": "pubnub",
+    "title": "pubnub",
+    "name": "pubnub"
+  }
+]
 ```
 
-#### Firebase adaptor 
+#### Firebase adaptor
 
 Using [Firebase](https://firebase.google.com/) as a datasource.
 Replace the specified values with your app details.
 
 ```json
-{
-  "adapter": "firebase",
-  "firebase": {
-    "apiKey": "YOUR_API_KEY",
-    "authDomain": "YOUR_AUTH_DOMAIN",
-    "databaseURL": "YOUR_DATABASE_URL",
-    "projectId": "YOUR_PROJECT_ID",
-    "storageBucket": "YOUR_STOREAGE_BUCKET",
-    "messagingSenderId": "YOUR_MESSAGE_SENDER_ID"
-  },
-    "limit": 100,
-    "ref": '/test',
+[
+  {
+    "adaptor": "firebase",
+    "firebase": {
+      "apiKey": "YOUR_API_KEY",
+      "authDomain": "YOUR_AUTH_DOMAIN",
+      "databaseURL": "YOUR_DATABASE_URL",
+      "projectId": "YOUR_PROJECT_ID",
+      "storageBucket": "YOUR_STOREAGE_BUCKET",
+      "messagingSenderId": "YOUR_MESSAGE_SENDER_ID"
+    },
+    "limit": 1000,
+    "ref": "REF_OF_YOUR_DATASOURCE",
     "title": "firebase",
+    "id": "fireabse",
     "name": "firebase"
-}
+  }
+]
 ```
-
 
 ### API Gateway Adaptor {#API Gateway Adaptor}
 
@@ -146,14 +126,16 @@ Using [AWS API Gateway](https://aws.amazon.com/) as a datasource.
 Replace the specified values with your app details.
 
 ```json
-{
-  "apiKey": "YOUR_API_KEY",
-  "endpoint": "YOUR_ENDPOINT",
-  "id": "apigateway",
-  "projectId": "YOUR_PROJECT_ID",
-  "title": "apigateway",
-  "adaptor": "apigateway"
-}
+[
+  {
+    "apiKey": "YOUR_API_KEY",
+    "endpoint": "YOUR_ENDPOINT",
+    "id": "apigateway",
+    "projectId": "YOUR_PROJECT_ID",
+    "title": "apigateway",
+    "adaptor": "apigateway"
+  }
+]
 ```
 
 #### Random adaptor
@@ -161,12 +143,18 @@ Replace the specified values with your app details.
 Random is given as a default datastore and generates sets of the following data schema.
 
 ```json
-{
-  "adaptor": "random",
-  "id": "random",
-  "title": "random",
-  "name": "random"
-}
+[
+  {
+    "adaptor": "random",
+    "apikey": "",
+    "apisecret": "",
+    "appId": "",
+    "dataStore": "random",
+    "id": "random",
+    "title": "random",
+    "name": "random"
+  }
+]
 ```
 
 ```javascript
@@ -182,13 +170,15 @@ Mock adapter allows for an array of data to be passed to the InfoMotion
 for quick testing. Live and Daterange picker return this same piece of data.
 
 ```json
-{
-  "adaptor": "mock",
-  "id": "mock",
-  "title": "mock",
-  "name": "mock"
-  "data": [{"id": "a", "value": 1}, {"id": "b", "value": 21}, {"id": "c", "value": 512}]
-}
+[
+  {
+    "adaptor": "mock",
+    "id": "mock",
+    "title": "mock",
+    "name": "mock",
+    "data": [{"id": "a", "value": 1}, {"id": "b", "value": 21}, {"id": "c", "value": 512}]
+  }
+]
 ```
 
 #### plugin.css
@@ -211,17 +201,19 @@ The plugin.json is created to supply the InfoMotion with sample data to preview 
 ```json
 {
   "defaultSettings": {
-    "label" : "country",
-    "value": "v"
+    "label": "catrgory",
+    "value": "value"
   },
   "sampleData": [
     {
-      "country": "JP",
-      "value": 1
+      "country": "A",
+      "value": 10,
+      "ts": 1548929863657
     },
     {
-      "country": "CN",
-      "value": 2
+      "country": "B",
+      "value": 20,
+      "ts": 1548929863657
     }
   ]
 }
@@ -253,6 +245,7 @@ Check the InfoTypes read.me for more details.
 ## Packaging {#Packaging}
 
 Packaging is needed when
+
 - An InfoType is created (`eit create`)
 - Before uploading an InfoType to enebular
 
@@ -276,8 +269,8 @@ The `run [graph name]` command and open http://localhost:3000 after `eit package
 eit run [graph name]
 ```
 
-The `run [graph name] -l` command runs scripts in live reload mode. 
-Editing then saving a file will automatically restart the server. 
+The `run [graph name] -l` command runs scripts in live reload mode.
+Editing then saving a file will automatically restart the server.
 
 ```
 eit run [graph name] -l

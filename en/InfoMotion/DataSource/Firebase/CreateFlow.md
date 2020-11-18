@@ -1,6 +1,5 @@
----
-lastUpdated: 2018-10-29
----
+>### Notice {#Notice202004}
+>The flow described in this tutorial will not function properly since ‘node-red-contrib-firebase’ is no longer maintenanced and it is no longer compatible with the current Firebase. A new tutorial will be provided shortly.
 
 ###Create Flow  {#Create Flow}
 

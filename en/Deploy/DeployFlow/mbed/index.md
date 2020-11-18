@@ -2,15 +2,20 @@
 lastUpdated: 2019-01-09
 ---
 
-# Deploying to Pelion Device Management {#Pelion Device Management}
+# Deploying to Pelion Device Management {#DeployToPelionDeviceManagement}
 
-In terms of the flow's deploy destination, if you press the deploy button it will just be deployed to the server that enebular is using. The Pelion Device Management deploy feature allows flows to be deployed to registered devices via Pelion Device Management.
+The Pelion Device Management Deploy feature allows flows to be deployed to registered devices via Pelion Device Management.
 
 For supported devices, please see [Supported Environments](../../../Other/Support.md).
 
 This page covers the steps required to deploy flows to devices via Pelion Device Management.
 
-## Creating a New Flow {#Creating a New Flow}
+## Notes
+
+Please creating only one connection per Pelion subtenant.
+Creating multiple connections from a single subtenant can cause problems.
+
+## Creating a New Flow {#MakeNewFlow}
 
 First we'll create a flow to deploy to the device (we assume that the project has already been created).
 
@@ -22,7 +27,7 @@ After creating the flow and pressing "Edit Flow" the Node-RED editor will start 
 
 We'll create the flow by editing it in the editor.
 
-## Editing the Data Flow {#Editing the Data Flow}
+## Editing the Data Flow {#EditingDataFlow}
 
 ### When Deploying to Raspberry Pi {#When Deploying to Raspberry Pi}
 
@@ -36,15 +41,13 @@ Press the red "Deploy" button at the top right to save it.
 
 ![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_04.png)
 
-### When Deploying to enebular edge agent {#When Deploying to enebular edge agent}
+### When Deploying to enebular-edge-agent {#When Deploying to enebular-edge-agent}
 
 Turn on the device to be used for the deploy in advance.
 
-For the deploy to the enebular edge agent we'll use the flow below. First, copy the JSON data from below.
+For the deploy to the enebular-edge-agent we'll use the flow below. First, copy the JSON data from below.
 
-```
-[{"id":"165c03e8.b6cbdc","type":"inject","z":"ebd56ac3.b5f1d8","name":"","topic":"","payload":"","payloadType":"date","repeat":"5","crontab":"","once":false,"x":110,"y":100,"wires":[["c82f1f55.78329"]]},{"id":"c82f1f55.78329","type":"switch","z":"ebd56ac3.b5f1d8","name":"","property":"led","propertyType":"flow","rules":[{"t":"eq","v":"1","vt":"num"},{"t":"else"}],"checkall":"true","outputs":2,"x":170,"y":180,"wires":[["31c8aef7.fda952"],["cf93bcf1.04a5"]]},{"id":"31c8aef7.fda952","type":"digitalout","z":"ebd56ac3.b5f1d8","pinName":"LED2","value":"true","signalInversion":true,"name":"","x":340,"y":140,"wires":[["6d2afea9.fd836"]]},{"id":"cf93bcf1.04a5","type":"digitalout","z":"ebd56ac3.b5f1d8","pinName":"LED2","value":"false","signalInversion":true,"name":"","x":340,"y":240,"wires":[["f8f4c712.0302c8"]]},{"id":"6d2afea9.fd836","type":"change","z":"ebd56ac3.b5f1d8","name":"","rules":[{"p":"led","t":"set","pt":"flow","to":"0","tot":"num"}],"action":"","property":"","from":"","to":"","reg":false,"x":530,"y":140,"wires":[[]]},{"id":"f8f4c712.0302c8","type":"change","z":"ebd56ac3.b5f1d8","name":"","rules":[{"p":"led","t":"set","pt":"flow","to":"1","tot":"num"}],"action":"","property":"","from":"","to":"","reg":false,"x":530,"y":240,"wires":[[]]}]
-```
+    [{"id":"165c03e8.b6cbdc","type":"inject","z":"ebd56ac3.b5f1d8","name":"","topic":"","payload":"","payloadType":"date","repeat":"5","crontab":"","once":false,"x":110,"y":100,"wires":[["c82f1f55.78329"]]},{"id":"c82f1f55.78329","type":"switch","z":"ebd56ac3.b5f1d8","name":"","property":"led","propertyType":"flow","rules":[{"t":"eq","v":"1","vt":"num"},{"t":"else"}],"checkall":"true","outputs":2,"x":170,"y":180,"wires":[["31c8aef7.fda952"],["cf93bcf1.04a5"]]},{"id":"31c8aef7.fda952","type":"digitalout","z":"ebd56ac3.b5f1d8","pinName":"LED2","value":"true","signalInversion":true,"name":"","x":340,"y":140,"wires":[["6d2afea9.fd836"]]},{"id":"cf93bcf1.04a5","type":"digitalout","z":"ebd56ac3.b5f1d8","pinName":"LED2","value":"false","signalInversion":true,"name":"","x":340,"y":240,"wires":[["f8f4c712.0302c8"]]},{"id":"6d2afea9.fd836","type":"change","z":"ebd56ac3.b5f1d8","name":"","rules":[{"p":"led","t":"set","pt":"flow","to":"0","tot":"num"}],"action":"","property":"","from":"","to":"","reg":false,"x":530,"y":140,"wires":[[]]},{"id":"f8f4c712.0302c8","type":"change","z":"ebd56ac3.b5f1d8","name":"","rules":[{"p":"led","t":"set","pt":"flow","to":"1","tot":"num"}],"action":"","property":"","from":"","to":"","reg":false,"x":530,"y":240,"wires":[[]]}]
 
 From the top right menu button select "Import" > "Clipboard".
 
@@ -82,12 +85,12 @@ The "Create Connection" screen will open.
 
 ![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_08.png)
 
-* Connection Name
-    * An easy to understand name
-* MBED API Key
-    * This can be found in the Pelion Device Management Portal
+- Connection Name
+  - An easy to understand name
+- MBED API Key
+  - This can be found in the Pelion Device Management Portal
 
-The MBED API Key can be obtained from the [Pelion Device Management Portal](https://portal.us-east-1.mbedcloud.com/).
+The MBED API Key can be obtained from the [Pelion Device Management Portal](https://portal.mbedcloud.com/).
 
 Select "Create new API key" from the Access management's API keys page on the Pelion Device Management Portal.
 
@@ -123,6 +126,6 @@ Check that the flow has been updated in the log messages.
 
 ![image](../../../_asset/images/Deploy/DeployFlow/mbed/deploy-deployflow-mbed_17.png)
 
-### When Deploying to enebular edge agent {#When Deploying to enebular edge agent}
+### When Deploying to enebular-edge-agent {#When Deploying to enebular-edge-agent}
 
 Check that the green LED on the K64F is blinking.

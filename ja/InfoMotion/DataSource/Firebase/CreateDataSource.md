@@ -1,8 +1,4 @@
----
-lastUpdated: 2018-08-10
----
-
-# DataSource の作成 {#DataSource の作成}
+# Firebase Data Source の作成 {#Create Firebase Data Source}
 
 
 フローを作成したものと同じプロジェクトの `Data Souce` のページを表示します。
@@ -11,7 +7,7 @@ lastUpdated: 2018-08-10
 ![CreateDataSource-datasource](./../../../../img/InfoMotion/DataSource/Firebase/CreateDataSource-datasource.png)
 
 
-`Title` に任意の名前を入力し、DataSource Type から [Firebase] を選択してください。
+`Title` に任意の名前を入力し、Data Source Type から [Firebase] を選択してください。
 Firebase 用の設定画面が開きます。
 設定項目を入力し [Save] を押して保存してください。
 各設定項目の確認方法は下記を参考にしてください。
@@ -20,7 +16,7 @@ Firebase 用の設定画面が開きます。
 ![CreateDataSource-settings](./../../../../img/InfoMotion/DataSource/Firebase/CreateDataSource-settings.png)
 
 
-DataSourceが追加されていることを確認してください。
+Data Sourceが追加されていることを確認してください。
 
 ![CreateDataSource-newOne](./../../../../img/InfoMotion/DataSource/Firebase/CreateDataSource-newOne.png)
 
@@ -48,15 +44,13 @@ Firebase の左部メニューの [Project Overview] をクリックし、プロ
 
 `Ref` の設定値には `/(スラッシュ)` が前方に必要なので「/test」としてください。
 
+## InfoMotionの作成 {#Create InfoMotion}
 
-
-## InfoMotionの作成 {#InfoMotionの作成}
-
-DataSource を使用する準備ができました。
-InfoMotion ダッシュボードを作成する際に作った DataSource を選択することでデータをグラフに反映できます。
+Data Source を使用する準備ができました。
+InfoMotion ダッシュボードを作成する際に作った Data Source を選択することでデータをグラフに反映できます。
 
 詳しくは以下のページを順に参照してください。
 
-* [Sample infotypes](./../../SampleInfoTypes.md)
+* [Sample InfoTypes](./../../SampleInfoTypes.md)
 * [Upload an InfoType](./../../UploadInfoType.md)
 * [Create InfoMotion](./../../CreateInfoMotion.md)

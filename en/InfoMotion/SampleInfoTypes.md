@@ -12,8 +12,7 @@ The following InfoTypes are free sample charts/graphs for you to test your data 
   <li><a href="/_asset/sample/linechart.zip" target="_blank">Sample Line Chart  Download (zip)</a></li> 
 </ul> 
 
-![](../_asset/images/InfoMotion/enebular-developers-template-linechart.png)
-
+![linechart](./../../img/InfoMotion/InfoType/linechart.png)
 Discription: 
 	A generic line chart with x-axis data points as time and y-axis as given numerical value. 
 
@@ -38,8 +37,7 @@ Editable properties:
   </li> 
 </ul> 
 
-![](../_asset/images/InfoMotion/enebular-developers-template-barchart.png)
-
+![barchart](./../../img/InfoMotion/InfoType/barchart.png)
 
 Discription: 
 		A generic Bar chart that presents categorical data with with heights or lengths proportional to the given values. 
@@ -64,8 +62,7 @@ Editable properties:
     <a href="/_asset/sample/piechart.zip" target="_blank">Sample Pie Chart Download (zip)</a></li> 
 </ul> 
 
-![](../_asset/images/InfoMotion/enebular-developers-template-piechart.png)
-
+![piechart](./../../img/InfoMotion/InfoType/piechart.png)
 
 Discription: 
 	A generic pie chart dividing slices of given values into numerical proportions. 

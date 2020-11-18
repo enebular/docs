@@ -1,23 +1,17 @@
----
-lastUpdated: 2019-01-09
----
-
 # Introduction {#Introduction}
 
-このチュートリアルでは「enebularにサインアップし、フローを編集する」ということを実施します。（所要時間20分）
+このチュートリアルでは「enebular にサインアップし、フローを編集する」ということを実施します。（所要時間 20 分）
 
 ## Table of Contents {#Table of Contents}
 
-1. [enebularへのサインアップ](#enebularへのサインアップ)
+1. [enebular へのサインアップ](#enebularへのサインアップ)
 1. [Project の作成](#Projectの作成)
 1. [Asset(フロー)の作成](#Assetの作成)
 1. [フローの編集](#フローの編集)
 
-## enebularへのサインアップ {#enebularへのサインアップ}
+## enebular へのサインアップ {#enebular へのサインアップ}
 
-** 注意 : enebular v1のアカウントではenebular v2にはサインインできません。enebular v1 ユーザーの方でenebular v2を使用したい場合、新しくアカウントを作成してください。**
-
-https://enebular.com にアクセスし、`新規登録`ボタンを押下します。
+https://www.enebular.com にアクセスし、`新規登録`ボタンを押下します。
 
 ![signUp](./../../img/GetStarted/Introduction-signUp-ja.png)
 
@@ -42,7 +36,7 @@ https://enebular.com にアクセスし、`新規登録`ボタンを押下しま
 1. enebular.com からのメールがフィルタリングされていないことを確認してください
 1. ** support@enebular.com **まで連絡をお願いします
 
-## Projectの作成 {#Projectの作成}
+## Project の作成 {#Project の作成}
 
 enebular を始めるには、まず Project を作成します。サインイン後の画面にある Create Project からプロジェクトを作成します。
 
@@ -56,15 +50,14 @@ enebular を始めるには、まず Project を作成します。サインイ�
 
 ![createdProject](./../../img/GetStarted/Introduction-createdProject.png)
 
-## Assetの作成 {#Assetの作成}
+## Asset の作成 {#Asset の作成}
 
-Project を作成したら、enebular の Asset の1つである Flow を作成しましょう。作成した Project を選択して Project の管理画面に移動します。  
+Project を作成したら、enebular の Asset の 1 つである Flow を作成しましょう。作成した Project を選択して Project の管理画面に移動します。  
 右下の + を押すと Asset を作成するモーダルが開きます。
 
 ![createAsset](./../../img/GetStarted/Introduction-createAsset.png)
 
-
-Asset Type は `flow` を選択して、Flow のタイトルをつけます。Flow へのデフォルトのアクセス権（default role to asset）は今回は `superdev` に設定してください。一番下の category は任意のものを選択してください。  
+Asset Type は `flow` を選択して、Flow のタイトルをつけます。Flow へのデフォルトのアクセス権（default role to asset）は今回は `edit, deploy, publish` に設定してください。一番下の category は任意のものを選択してください。  
 Continue を押すと作成が完了し、Flow の詳細ページに移動します。
 
 ![createAssetModal](./../../img/GetStarted/Introduction-createAssetModal.png)
@@ -101,19 +94,19 @@ Deploy ボタンを押下しフローを保存した後、画面右上の debug 
 
 しかし今回はタイムスタンプではなく `Hello World !` と出力するフローを作成したいので、今作ったフローをさらに編集します。
 
-`debugノード`はデフォルトの設定では、`msg.payload`に設定された値を debugタブに出力します。  
+`debugノード`はデフォルトの設定では、`msg.payload`に設定された値を debug タブに出力します。  
 したがって`msg.payload`オブジェクトの値を `Hello World !` という文字列で置き換えることによって、目的を達成することができます。  
 `msg.payload`の値を文字列に置き換えるには `changeノード`を使用します。
 
 `injectノード`と`debugノード`の間に新しく`changeノード`を配置します。`changeノード`はパレットの中で function に分類されています。
 ![set_change_node](./../../img/GetStarted/Introduction-set_change_node.gif)
 
-配置した`changeノード`をダブルクリックしノードの設定を行います。赤線で囲んだ部分に`Hello World !`と入力しDoneボタンを押下します。
+配置した`changeノード`をダブルクリックしノードの設定を行います。赤線で囲んだ部分に`Hello World !`と入力し Done ボタンを押下します。
 ![change_node_setting](./../../img/GetStarted/Introduction-change_node_setting.png)
 
-Deployボタンを押下しフローを保存した後、injectノードのボタンを押下します。debugタブに`Hello World !`と出力されます。
+Deploy ボタンを押下しフローを保存した後、inject ノードのボタンを押下します。debug タブに`Hello World !`と出力されます。
 ![hello_world](./../../img/GetStarted/Introduction-hello_world.png)
 
 ## Well Done! {#Well Done!}
 
-enebularの Projectの作成方法、Asset(フロー)の作成方法、そしてシンプルなフローの編集が出来るようになりました。
+enebular の Project の作成方法、Asset(フロー)の作成方法、そしてシンプルなフローの編集が出来るようになりました。

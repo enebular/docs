@@ -2,7 +2,7 @@
 lastUpdated: 2018-12-21
 ---
 
-# enebular edge agent
+# enebular-edge-agent
 
 ## Overview
 

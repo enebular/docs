@@ -1,0 +1,56 @@
+# This is a sample build configuration for Other.
+# Check our guides at https://confluence.atlassian.com/x/5Q4SMw for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+# image: atlassian/default-image:latest
+
+image: atlassian/default-image:2
+
+pipelines:
+  branches:
+    develop:
+    - step:
+        script:
+            - apt-get update
+            - npm install -g gitbook-cli@2.3.2
+            - npm install -g markdown-link-check@3.7.2
+            - npm install
+            - find . -name \*.md -not -name \RAVEN.md -exec markdown-link-check {} -q -c config.json \; 2>error_log
+            - if [ -s ./error_log ]; then echo "Broken links have been found in the documents."; exit 1; fi
+            - gitbook build
+            - cd _book
+            - find . -name \*.html -not -name 'InfoMotionTool.html' -exec node ./prohibited_strings_checker.js {} \\.md \; 1>error_log
+            - if [ -s ./error_log ]; then echo "Prohibited strings have been found in the documents."; cat error_log; exit 1; fi
+    release:
+    - step:
+        script:
+            - apt-get update
+            - npm install -g gitbook-cli@2.3.2
+            - npm install -g markdown-link-check@3.7.2
+            - npm install
+            - find . -name \*.md -not -name \RAVEN.md -exec markdown-link-check {} -q -c config.json \; 2>error_log
+            - if [ -s ./error_log ]; then echo "Broken links have been found in the documents."; exit 1; fi
+            - gitbook build
+            - cd _book
+            - find . -name \*.html -not -name 'InfoMotionTool.html' -exec node ./prohibited_strings_checker.js {} \\.md \; 1>error_log
+            - if [ -s ./error_log ]; then echo "Prohibited strings have been found in the documents."; cat error_log; exit 1; fi
+    - step:
+          name: ClamAV scan
+          script:
+            - apt-get -y update
+            - apt-get -y install clamav
+            - freshclam
+            - clamscan --infected --remove --recursive ./
+    master:
+    - step:
+          name: ClamAV scan
+          script:
+            - apt-get -y update
+            - apt-get -y install clamav
+            - npm install -g gitbook-cli@2.3.2
+            - npm install -g markdown-link-check@3.7.2
+            - npm install
+            - gitbook build
+            - freshclam
+            - clamscan --infected --remove --recursive ./

@@ -37,23 +37,31 @@ Outside collaborators can be invited from the "Access" page which can be navigat
 
 ## About Asset Privileges {#About Asset Privileges}
 
-Next, permissions called "Asset privileges" can be configured for each of the assets of the three user types.
+There are up to 4 basic privileges that come with assets: `read`, `edit`, `deploy`, `publish`.
 
-- owner: view / edit / deploy / delete / add or delete Outside collaborators / change privilege of project collaborator
-- admin: view / edit / deploy / delete / add or delete Outside collaborators / change privilege of project collaborator
-- superdev: view / edit / deploy
-- developer: view / edit
-- operator: view / deploy
-- user: view
+|            | read | edit | deploy | publish |
+| :--------- | :--- | :--- | :----- | :------ |
+| flow       | o    | o    | o      | o       |
+| file       | o    | o    | o      | -       |
+| infomotion | o    | o    | -      | -       |
+| infotype   | o    | o    | -      | o       |
 
-Asset privileges can be set on the "Access" page which can be navigated to from the "Access" tab in the flow details screen.
+The Project Owner, Project Admin, and Project Collaborators who create Assets automatically have all privileges plus an additional privilege `delete`.
 
-The permissions can be changes by selecting the "Role" for the member.
+| privilege | description                                                                                  |
+| :-------- | :------------------------------------------------------------------------------------------- |
+| read      | user can read the asset                                                                      |
+| edit      | user can edit the asset                                                                      |
+| deploy    | user can deploy the asset                                                                    |
+| publish   | user can publish the asset to share it publicly in [Discover](https://enebular.com/discover) |
+| delete    | user can delete the asset                                                                    |
+
+(`edit`, `deploy`, `publish` automatically comes with the `read` privilege.)
+
+Asset privilege can be set on the "Access" page which can be navigated to from the "Access" tab in the flow details screen.
 
 ![Access-role](./../../img/Config/Access-role.png)
 
-The "default privilege" is that automatically assigned to members when invited as a project collaborator.
+The "default privilege" is automatically assigned to members when invited as a project collaborator.
 
-![Access-default](./../../img/Config/Access-default.png)
-
-Outside collaborators are assigned `user` by default regardless of the "default privilege".
+Outside collaborators are assigned `read` by default when invited regardless of the "default privilege".

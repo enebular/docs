@@ -1,12 +1,6 @@
----
-lastUpdated: 2018-08-09
----
-
 # データを返す Lambda の作成 {#データを返す Lambda の作成}
 
 Lambda の作成を始めます。
-
-
 
 ![CreateLambdaFunction-CreateLambdaFunction-lambda-ja](./../../../../img/InfoMotion/DataSource/APIGateway/CreateLambdaFunction-lambda-ja.png)
 
@@ -26,9 +20,9 @@ exports.handler = (event, context, callback) => {
     let arr = []
     for (var i = 100; i >= 1; i--) {
       arr.push({
-        ts: Number(event.start) + Math.floor(timeunit*i),
         category:category[Math.floor(Math.random()*4)],
-        value: Math.floor(Math.random()*10)
+        value: Math.floor(Math.random()*10),
+        ts: Number(event.start) + Math.floor(timeunit*i)
       })
     }
     return arr

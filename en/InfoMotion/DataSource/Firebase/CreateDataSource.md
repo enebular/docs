@@ -1,9 +1,4 @@
----
-lastUpdated: 2018-08-09
----
-
-
-# Create Data Source  {#Create Data Source }
+# Create Firebase Data Source  {#Create Firebase Data Source }
 
 In the same enebular project click `Data Source` and the plus button to add a 
 `Data Source`. 
@@ -41,7 +36,7 @@ The ref can also be seen in your firebase database as the collection name. The `
 
 ## Create InfoMotion {#Create InfoMotion}
 
-Now your DataSource is ready to be used on an infotype see 
-[Sample infotypes](./../../SampleInfoTypes.md)to downoad a graph, 
+Now your Data Source is ready to be used on an InfoType see 
+[Sample InfoTypes](./../../SampleInfoTypes.md) to downoad a graph, 
 [Upload an InfoType](./../../UploadInfoType.md) to upload a graph to enebular, 
-and [Create InfoMotion](./../../CreateInfoMotion.md) to create an InfoMotion dashboard
+and [Create InfoMotion](./../../CreateInfoMotion.md) to create an InfoMotion dashboard.

@@ -1,19 +1,23 @@
----
-lastUpdated: 2018-10-16
----
+# Discover {#Discover}
 
-# Searching Other User's Assets {#Searching Other User's Assets}
+Assets become available for use by other users after they are published in Discover. 
 
-You can allow other users to use your assets by publishing them on enebular.com.
+Users can find assets that they want to use by browsing or searching Discover. When the asset of choice is found, import it to your own project to use the asset. 
 
-Assets published by other users can be imported into your own project from "Discover".
+As described below, there are three types of assets that can be published on Discover. 
+-	Flow (blue card) 
+-	InfoType (yellow card) 
+-	Private node (pink card) 
+There are free and paid private nodes. They will be indicated as `Free for Enterprise / Paid for Enterprise.`  
+Private nodes are only available for Enterprise Plan projects.
 
-![discover](./../../img/Discover/SearchingOtherUsersAssets-discover.png)
+To import an asset to a project, follow the steps described below.
+1.	Open the Discover screen. 
+2.	Click on the asset you want to use. Description about the asset, etc. will appear. 
+3.	Click the `Import` button on the right. 
+4.	Select the import destination project and default privilege. 
+5.	Click the `Import` button. 
 
-Import the asset you like into your project by selecting the asset and pressing "Import".
+The process above will make Flows, InfoTypes and free private nodes available for use. 
 
-![discover2](./../../img/Discover/SearchingOtherUsersAssets-discover2.png)
-
-Select the project you'd like to import to and the default permissions, and then press "Import" to complete the import.
-
-![import](./../../img/Discover/SearchingOtherUsersAssets-import.png)
+A contract with Uhuru is necessary for the use of paid private nodes. After the steps above are completed, Uhuru’s staff will contact the user to process the agreement. When the agreement between the user and Uhuru is closed, paid private nodes become available for use in projects.

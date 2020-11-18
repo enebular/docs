@@ -37,23 +37,31 @@ Outside Collaborator は Flow の詳細画面の Access タブから行くこと
 
 ## Asset privilege について {#Asset privilege について}
 
-そして、3 種類のユーザーにはそれぞれの Asset に対して Asset privilege という権限を設定できます。
+アセットは基本４つの privilege があります: `read`, `edit`, `deploy`, `publish`.
 
-- owner: 閲覧・編集・デプロイ・削除・Outside Collaborator の追加・削除・Project Collaborator の権限を変更
-- admin: 閲覧・編集・デプロイ・削除・Outside Collaborator の追加・削除・Project Collaborator の権限を変更
-- superdev: 閲覧・編集・デプロイ
-- developer: 閲覧・編集
-- operator: 閲覧・デプロイ
-- user: 閲覧
+|            | read | edit | deploy | publish |
+| :--------- | :--- | :--- | :----- | :------ |
+| flow       | o    | o    | o      | o       |
+| file       | o    | o    | o      | -       |
+| infomotion | o    | o    | -      | -       |
+| infotype   | o    | o    | -      | o       |
+
+Project Owner、 Project Admin、 そして Asset を作成した Project Collaborators は上記の権限を含め `delete`の権限もあります。
+
+| 権限    | 説明                                                                              |
+| :------ | :-------------------------------------------------------------------------------- |
+| read    | ユーザーは Asset の閲覧が可能                                                     |
+| edit    | ユーザーは Asset の編集が可能                                                     |
+| deploy  | ユーザーは Asset のデプロイが可能                                                 |
+| publish | ユーザーは Asset を [Discover](https://enebular.com/discover)に公開することが可能 |
+| delete  | ユーザーは Asset の削除が可能                                                     |
+
+(`edit`, `deploy`, `publish` の権限を持つユーザは `read` の権限が与えられます。)
 
 Asset privilege は Flow の詳細画面の Access タブから行くことができる Access ページで設定できます。
-
-メンバーの Role の部分を選択することで権限を変更できます。
 
 ![Access-role](./../../img/Config/Access-role.png)
 
 default privilege は Project Collaborator を Invite した際に、そのメンバーに自動的に与えられる権限です。
 
-![Access-default](./../../img/Config/Access-default.png)
-
-なお Outside Collaborator は、default privilege に関わらずデフォルトで user 権限が与えられます。
+なお Outside Collaborator は、default privilege に関わらずデフォルトで `read` 権限が与えられます。

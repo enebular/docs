@@ -21,3 +21,9 @@ a preview of the InfoMotion will be displayed along with the
 
 Now the Infomotion is loaded to Enebular let's see how we can
 connect it to a [DataSource](./CreateDataSource.md) and view/edit it in [Dashboard](./CreateInfoMotion.md).
+
+## Restrictions
+
+Please note that there is an restriction on InfoTypes which can be uploaded. 
+
+- The maximum total file size must not exceed 1MB.

@@ -1,28 +1,26 @@
----
-lastUpdated: 2018-10-16
----
+# Flowの公開 {#Flowの公開}
 
-# Flow の公開 {#Flow の公開}
+FlowのOverviewページのPublishから[Discover](../Discover)にFlowを公開できます。公開されたFlowは他のユーザーがインポートして使うことができます。
 
-Flow の Overview ページの [Publish] から Flow を公開することが出来ます。公開された Flow は他のユーザーがインポートして使うことができます。
+※ ただし、[プライベートノード](../PrivateNodes/index.md)を含むFlowを公開することはできません(Publishボタンは非表示になります)
 
 ![overview](./../../img/Flow/PublishFlow-overview.png)
 
-名前と説明を確認・追記して、公開できます。
+名前と説明を確認・追記して公開できます。
 
 ![publish](./../../img/Flow/PublishFlow-publish.png)
 
-## 公開された Flow のインポート {#公開された Flow のインポート}
+## 公開されたFlowのインポート {#公開されたFlowのインポート}
 
-公開されたフローは、上部のグローバルナビの Discover から探すことが出来ます。
+公開されたフローは、上部のグローバルナビのDiscoverから探すことができます。
 
 ![discover](./../../img/Flow/PublishFlow-discover.png)
 
-公開された Flow のインポートは、Flow 情報の [Import] からできます。
+公開されたFlowのインポートは、Flow情報のImportからできます。
 
 ![importButton](./../../img/Flow/PublishFlow-importButton.png)
 
-インポートするプロジェクトとデフォルトのアクセス権限を選択して [Import] を押してインポートします。
+インポートするプロジェクトとデフォルトのアクセス権限を選択してImportを押してインポートします。
 
 ![import](./../../img/Flow/PublishFlow-import.png)
 

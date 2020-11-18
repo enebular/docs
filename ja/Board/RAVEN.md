@@ -1,8 +1,6 @@
----
-lastUpdated: 2018-12-20
----
-
 # RAVEN
+_\* 他の言語で閲覧するときは右記リンクを参照してください: [English](./../../en/Board/RAVEN.html), [日本語](./../../ja/Board/RAVEN.html)_
+
 
 enebular Reference Board "RAVEN"は、IoTオーケストレーションサービスenebularのエッジデバイス向け評価ボードです。 
 
@@ -10,71 +8,96 @@ enebular Reference Board "RAVEN"は、IoTオーケストレーションサービ
 
 enebular-edge-agentのソフトウェアでフローの実行などの諸機能を使用できます。詳しくは[Introduction](./../EnebularEdgeAgent/Introduction.md)をご参照ください。
 
-### Table of Contents
+### Table of Contents {#tableOfContents}
 
+1. [価格](#price)
+1. [購入のフロー](#flow)
 1. [内容物](#contents)
 1. [各部説明](#parts)
 1. [使用前の準備](#preparation)
 1. [初期設定](#initialsetting)
 1. [免責事項](#disclaimer)
 
+## 価格{#price}
+単価 20,000円（税別）
+
+## 購入のフロー{#flow}
+1. enebularにサインアップ後、ユーザー名をクリックして表示されるメニューより「Purchase RAVEN」をクリックするとRAVEN購入フォームが表示されます ※1
+1. RAVEN購入フォームに必要事項を入力し、Submitボタンを押下してください
+1. 弊社よりお見積り書を返信いたします
+1. お見積り書に記載の振込先に代金をお支払いください
+1. 入金の確認後、送り先住所にRAVENを発送いたします
+1. RAVENを利用します。初期設定方法は[Getting Started](./../EnebularEdgeAgent/GettingStarted.md)を参照ください
+
+※1 RAVENを購入するにはenebularのProjectが1つ以上必要です。Projectの作り方は[Introduction](./../GetStarted/Introduction.md)を参照ください。
+
+RAVENの購入方法について、ご不明な点がございましたら **support@enebular.com** までお問い合わせください。
+
 ## 内容物{#contents}
 以下のものが内容物です。
 
 ![RAVEN-package](./../../img/Board/RAVEN-Package.jpg)
 
-* RAVEN本体
-* USBケーブル
-* クイックスタートガイド
-* 本体貼り付け用ステッカー
+- RAVEN本体
+- USBケーブル
+- クイックスタートガイド
+- 本体貼り付け用ステッカー
 
 ## 各部説明{#parts}
 
 ![RAVEN-parts](./../../img/Board/RAVEN-parts.png)
 
-* USB … 電源供給及びPC本体と接続する為の端子(USB microB)です。
-* USER SW … フロー経由で状態を読み取れるスイッチです。無線LAN設定時にも使用します。
-* USER LED … フロー経由で点灯状態を設定出来るLEDです。
-* RESET SW … リセットスイッチです。本体に異常が起きた際に使用します。
-* PORT1-4 … フロー経由で機能を設定出来るI/Oコネクタです。
+- USB … 電源供給及びPC本体と接続する為の端子(USB microB)です
+- USER SW … フロー経由で状態を読み取れるスイッチです。無線LAN設定時にも使用します
+- USER LED … フロー経由で点灯状態を設定出来るLEDです
+- RESET SW … リセットスイッチです。本体に異常が起きた際に使用します
+- PORT1-4 … フロー経由で機能を設定出来るI/Oコネクタです
 
 ハードウェアについて詳細な情報が知りたい方は[TechnicalDetail](./../Other/HWSpec-RAVEN.md)をご参照ください。
 
 ## 使用前の準備{#preparation}
 
 RAVENをお使いいただくには、以下の準備が必要です。
-* 1ポート以上のUSB-A端子を持つPC、またはACアダプタ
-    * 5V/0.5A以上を供給出来る機器を使用して下さい。
-* インターネット(enebularサーバー)にアクセス出来る無線機器
-    * RAVENは、ネットワークへの接続に2.4GHz帯(5GHz帯は非サポート)を使用します。
-    * IEEE 802.11 b/g/nに対応したアクセスポイントをご準備下さい。
-* Portに接続したいセンサ/アクチュエーター
-    * RAVENは、市販のセンサ及びアクチュエーターを使用する事が出来ます。  
-    * 3.3V動作、ADC/UART/I2C/PWM/GPIO インターフェース、消費電流200mA ( 4ポート合計 ) までに対応します。※1  
-    * 使用可能なセンサは[こちら](http://wiki.seeedstudio.com/Grove_System/)を参照して下さい。  
-    * 利用可能なインターフェースの組み合わせには制限が有ります。  
+- 1ポート以上のUSB-A端子を持つPC、またはACアダプタ
+    - 5V/0.5A以上を供給出来る機器を使用して下さい
+- インターネット(enebularサーバー)にアクセス出来る無線機器
+    - RAVENは、ネットワークへの接続に2.4GHz帯(5GHz帯は非サポート)を使用します
+    - IEEE 802.11 b/g/nに対応したアクセスポイントをご準備下さい
+- Portに接続したいセンサ/アクチュエーター
+    - RAVENは、市販のセンサ及びアクチュエーターを使用する事が出来ます  
+    - 3.3V動作、ADC/UART/I2C/PWM/GPIO インターフェース、消費電流200mA ( 4ポート合計 ) までに対応します　※1  
+    - 使用可能なセンサは[こちら](http://wiki.seeedstudio.com/Grove_System/)を参照して下さい  
+    - 利用可能なインターフェースの組み合わせには制限が有ります  
 
 ※1 フローエディタのノードから設定可能なインターフェースは、ADC/GPIO、また一部I2Cに限られます。詳しくはフローエディタから各ノードの説明をご覧ください。
 
 ## 初期設定{#initialsetting}
 
-ネットワーク設定の手順を説明します。
+無線LAN設定の手順を説明します。
 
-* RAVENを`SettingMode`で起動します。
-    1. RAVENを`USBケーブル`で電源に接続します。
-    1. `USER SW`を押したままの状態で`RESET SW`を押して直ぐに離します。
-    1. `USER LED`が赤く点灯するまで`USER SW`を押し続けます。( 5秒前後 )
-    1. `USER SW`を離して下さい。離した後も`USER LED`が赤く点灯したままになる事を確認して下さい。
-    1. RAVENが`SettingMode`で起動しています。
-* [Configration](./../EnebularEdgeAgent/Configuration.md)を参照してSSID、及びパスワードの設定を行います。
-* 設定完了後 `RESET SW`を押して直ぐに離します。RAVENが`Default Mode`で起動します。
+- RAVENを`Setting Mode`で起動します。電源を入れ、セットアップが終わったときに`USER SW`が押されていると`Setting Mode`に入ります。以下の方法が容易です
+    1. RAVENを`USBケーブル`で電源に接続します
+    1. `RESET SW`を押してすぐ離し、`USER SW`を押し続けます
+    1. `USER LED`が赤く点灯するまで`USER SW`を押し続けます( 5秒前後 )
+    1. `USER SW`を離して下さい。離した後も`USER LED`が赤く点灯したままになる事を確認して下さい
+    1. RAVENが`Setting Mode`で起動しています
+- [Configuration](./../EnebularEdgeAgent/Configuration.md)を参照してSSID、及びパスワードの設定を行います
+- 設定完了後 `RESET SW`を押して直ぐに離します。RAVENが`Default Mode`で起動します
+- 起動時にRAVENが無線LANへの接続を試みている間、`USER LED`が点滅(0.1秒間隔)を繰り返します　※1
+    - RAVENが無線LANの接続に成功すると`USER LED`が消灯します
+    - `USER LED`が点滅を続ける場合、RAVENは無線LANに接続できていません。次のことを確認してください
+        - お使いの無線LAN環境が利用可能なことを確認してください
+        - RAVENへのSSIDとパスワードの設定が正しいことを確認してください
 
-## 免責事項{#disclaimer}
+※1 enebular-edge-agent 1.3.0 以降の場合の動きです。それ以前バージョンの場合は`USER LED`は消灯したままです。enebular-edge-agentのバージョンを知る方法は[こちら](../EnebularEdgeAgent/Configuration.md#version)を参照してください。
 
-本製品は、お客様にご利用いただき、評価をしていただく目的で開発されております。従いまして、本製品をご利用いただいた場合の、お客様のアプリケーションについての動作、不具合の不発生その他の事項に対しては、明示又は黙示を問わず、一切の保証を致しません。
+<!-- 以下、法務レビューが必要なため安易に変更しないこと -->
+## 免責事項{#disclaimer} 
+
+本製品は、お客様にご利用いただき、評価をしていただく目的で開発されております。従いまして、本製品をご利用いただいた場合の、お客様のアプリケーションについての動作、不具合の発生その他の事項に対しては、明示又は黙示を問わず、一切の保証を致しません。
 本書は、製品の保証に関するものではありません。この製品の保証については、お買い上げの販売店にお問い合わせ下さい。
 
-### 使用上の注意
+### 使用上の注意{#attention}
 
 - 直射日光の当たる場所、水気や湿気の有る場所では保管及び使用を行わないで下さい。故障、火災や感電の原因となる恐れが有ります。
 - 強い衝撃や圧力(落下、重量物を乗せる等)を掛けないで下さい。誤動作や故障の原因となる恐れが有ります。
